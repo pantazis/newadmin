@@ -1,2 +1,2 @@
-# dnhost
-mydnhost new template
+# newadmin template
+

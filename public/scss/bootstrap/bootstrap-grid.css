@@ -1,41 +1,22 @@
 /*
-Error: Invalid CSS after "... Family: Roboto": expected "{", was ";"
-        on line 2 of C:/wamp64/www/mydnhost/dnhost/public/scss/theme_scss/_includes/_custom-font-styles.scss
-        from line 1 of C:/wamp64/www/mydnhost/dnhost/public/scss/theme_scss/custom.scss
-        from line 55 of C:\wamp64\www\mydnhost\dnhost\public\scss\bootstrap\bootstrap.scss
+Error: Duplicate key "red" in map ("blue": $blue, "indigo": $indigo, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green, "teal": $teal, "cyan": $cyan, "white": $white, "gray": $gray-600, "gray-dark": $gray-800, "ice": $ice, "light_grey": $light_grey, "pal_pink": $pal_pink, "green2": $green, "sky_blue": $sky_blue, "orange2": $orange, "pomegranade": $pomegranade, "blue_grey": $blue_grey, "red": $red, "blue_purple": $blue_purple, "dark_grey": $dark_grey, "dark_blue": $dark_blue, "black_blue": $black_blue).
+        on line 66 of C:/wamp64/www/mydnhost/dnhost/public/scss/bootstrap/_variables.scss
+        from line 11 of C:\wamp64\www\mydnhost\dnhost\public\scss\bootstrap\bootstrap-grid.scss
 
-1: .Roboto-Medium-13px{
-2: Font Family: Roboto;
-3: Font Weight: Medium;
-4: Font Size: 0.8125rem; /* 13px *\/
-5: Color: #CACAD5;
-6: Character Spacing: 0;
-7: Line Spacing: 15;
+61:     "padding-start",
+62:   )
+63: );
+64: 
+65: @import "utilities/api";
 
 Backtrace:
-C:/wamp64/www/mydnhost/dnhost/public/scss/theme_scss/_includes/_custom-font-styles.scss:2
-C:/wamp64/www/mydnhost/dnhost/public/scss/theme_scss/custom.scss:1
-C:\wamp64\www\mydnhost\dnhost\public\scss\bootstrap\bootstrap.scss:55
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/wamp64/www/mydnhost/dnhost/public/scss/bootstrap/_variables.scss:66
+C:\wamp64\www\mydnhost\dnhost\public\scss\bootstrap\bootstrap-grid.scss:11
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/map_literal.rb:55:in `block in _perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/map_literal.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/map_literal.rb:52:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:482:in `visit_variable'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -81,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"... Family: Roboto\": expected \"{\", was \";\"\A         on line 2 of C:/wamp64/www/mydnhost/dnhost/public/scss/theme_scss/_includes/_custom-font-styles.scss\A         from line 1 of C:/wamp64/www/mydnhost/dnhost/public/scss/theme_scss/custom.scss\A         from line 55 of C:\wamp64\www\mydnhost\dnhost\public\scss\bootstrap\bootstrap.scss\A \A 1: .Roboto-Medium-13px{\A 2: Font Family: Roboto;\A 3: Font Weight: Medium;\A 4: Font Size: 0.8125rem; /* 13px */\A 5: Color: #CACAD5;\A 6: Character Spacing: 0;\A 7: Line Spacing: 15;"; }
+  content: "Error: Duplicate key \"red\" in map (\"blue\": $blue, \"indigo\": $indigo, \"purple\": $purple, \"pink\": $pink, \"red\": $red, \"orange\": $orange, \"yellow\": $yellow, \"green\": $green, \"teal\": $teal, \"cyan\": $cyan, \"white\": $white, \"gray\": $gray-600, \"gray-dark\": $gray-800, \"ice\": $ice, \"light_grey\": $light_grey, \"pal_pink\": $pal_pink, \"green2\": $green, \"sky_blue\": $sky_blue, \"orange2\": $orange, \"pomegranade\": $pomegranade, \"blue_grey\": $blue_grey, \"red\": $red, \"blue_purple\": $blue_purple, \"dark_grey\": $dark_grey, \"dark_blue\": $dark_blue, \"black_blue\": $black_blue).\A         on line 66 of C:/wamp64/www/mydnhost/dnhost/public/scss/bootstrap/_variables.scss\A         from line 11 of C:\wamp64\www\mydnhost\dnhost\public\scss\bootstrap\bootstrap-grid.scss\A \A 61:     \"padding-start\",\A 62:   )\A 63: );\A 64: \A 65: @import \"utilities/api\";"; }

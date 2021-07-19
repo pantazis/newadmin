@@ -1,0 +1,2 @@
+# dnhost
+mydnhost new template

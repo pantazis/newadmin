@@ -18,13 +18,22 @@
             <div class="col-md-4">3</div>
             <div class="col-md-4">4</div>
         </div>
-    </div>
-    
+
+
+        <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+    </div>    
     <script src="./public/js/libraries/popper.min.js"></script>
     <script src="./public/js/libraries/bootstrap.min.js"></script>
     <script src="./public/js/libraries/is.min.js"></script>   
-    <script src="./public/js/libraries/all.min.js"></script>
-   
-    
+    <script src="./public/js/libraries/all.min.js"></script>  
 </body>
 </html>

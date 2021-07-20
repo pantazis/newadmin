@@ -1,5 +1,5 @@
 //font colors
-.light{
+
 	.roboto-medium-13px-light_grey{
              color: $light_grey;
           }
@@ -79,7 +79,23 @@
     .roboto-regular-12px-red2{
              color: $red2;
           }
-      }
+
+
+//nav menu colors
+
+          nav.sidebar.navbar {         
+            background: $black_blue;
+        }
+        
+        nav.sidebar.top {          
+            background-color: $white;         
+        }
+       
+        
+        .logo {        
+            background: $ice;
+        }
+   
 
 
 

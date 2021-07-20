@@ -1,0 +1,62 @@
+$sidebarWidth:15.5rem;
+$sidebarWidthClosed:4.8125rem;
+$navSidebarTop: 4.68rem;
+
+nav.sidebar.navbar,main,.logo {
+    transition-duration: .3s ;
+    transition-timing-function: ease-in;
+    
+    
+}
+
+
+nav.sidebar.navbar {
+    width: $sidebarWidth;
+    transition-property: width;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: red;
+}
+
+nav.sidebar.top {
+    height: $navSidebarTop;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1;
+}
+main{
+    padding-top: $navSidebarTop;
+    padding-left: $sidebarWidth;
+    transition-property:padding-left;   
+
+
+}
+
+.logo {  
+    width: $sidebarWidth;
+    transition-property: width;
+    height: 100%;
+    background: green;
+}
+.closeNav{
+
+    nav.sidebar.navbar {
+        width: $sidebarWidthClosed;       
+    }
+
+    main{
+        padding-left: $sidebarWidthClosed;       
+    
+    }
+
+    .logo {
+        width: $sidebarWidthClosed;      
+    }
+    
+
+}

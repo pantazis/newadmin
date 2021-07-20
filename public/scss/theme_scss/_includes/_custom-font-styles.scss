@@ -1,200 +1,205 @@
-.roboto-medium-13px{
+.roboto-medium-13px-light_grey{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.8125rem; /* 13px */
-    color: #cacad5;
+    font-size: 0.8125rem; // 13px 
+    color: $light_grey;
     letter-spacing: 0;
-    line-height: 0.9375rem; /* 15px */
+    line-height: 0.9375rem; // 15px 
     }
-    .roboto-medium-13px{
+    .roboto-medium-13px-ice{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.8125rem; /* 13px */
-    color: #efeff6;
+    font-size: 0.8125rem; // 13px 
+    color: $ice;
     letter-spacing: 0;
-    line-height: 0.9375rem; /* 15px */
+    line-height: 0.9375rem; // 15px 
     }
-    .roboto-regular-15px{
+    .roboto-regular-15px-black_blue{
     font-family: Roboto;
     font-weight: regular;
-    font-size: 0.9375rem; /* 15px */
-    color: #0e0c28;
+    font-size: 0.9375rem; // 15px 
+    color: $black_blue;
     letter-spacing: 45;
-    line-height: 1.125rem; /* 18px */
+    line-height: 1.125rem; // 18px 
     }
-    .roboto-bold-30px{
+    .roboto-bold-30px-black_blue{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 1.875rem; /* 30px */
-    color: #0e0c28;
+    font-size: 1.875rem; // 30px 
+    color: $black_blue;
     letter-spacing: 45;
-    line-height: 2.3125rem; /* 37px */
+    line-height: 2.3125rem; // 37px 
     }
-    .roboto-bold-27px{
+    .roboto-bold-27px-green2{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 1.6875rem; /* 27px */
-    color: #18bf93;
+    font-size: 1.6875rem; // 27px 
+    color: $green2;
     letter-spacing: 45;
-    line-height: 2.0625rem; /* 33px */
+    line-height: 2.0625rem; // 33px 
     }
-    .roboto-medium-37px{
+    .roboto-medium-37px-black_blue{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 2.3125rem; /* 37px */
-    color: #0e0c28;
+    font-size: 2.3125rem; // 37px 
+    color: $black_blue;
     letter-spacing: 0;
-    line-height: 2.75rem; /* 44px */
+    line-height: 2.75rem; // 44px 
     }
-    .breadcrump{
+   
+    .breadcrump-blue_grey{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.75rem; /* 12px */
-    color: #9a9ab4;
+    font-size: 0.75rem; // 12px 
+    color: $blue_grey;
     letter-spacing: 0;
-    line-height: 0.875rem; /* 14px */
+    line-height: 0.875rem; // 14px 
     }
-    .active-tab{
+    .active-tab-black_blue{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.75rem; /* 12px */
-    color: #0e0c28;
+    font-size: 0.75rem; // 12px 
+    color: $black_blue;
     letter-spacing: 0;
-    line-height: 0.875rem; /* 14px */
+    line-height: 0.875rem; // 14px 
     }
-    .tab-label-active{
+    .tab-label-active-black_blue{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.8125rem; /* 13px */
-    color: #0e0c28;
+    font-size: 0.8125rem; // 13px 
+    color: $black_blue;
     letter-spacing: 0;
-    line-height: 0.9375rem; /* 15px */
+    line-height: 0.9375rem; // 15px 
     }
-    .roboto-bold-14px{
+    .roboto-bold-14px-black_blue{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 0.875rem; /* 14px */
-    color: #0e0c28;
+    font-size: 0.875rem; // 14px 
+    color: $black_blue;
     letter-spacing: 0;
-    line-height: 1.0625rem; /* 17px */
+    line-height: 1.0625rem; // 17px 
     }
-    .table-row-labels{
+     
+    .table-row-labels-black_blue{
     font-family: Roboto;
     font-weight: light;
-    font-size: 0.875rem; /* 14px */
-    color: #0e0c28;
+    font-size: 0.875rem; // 14px 
+    color: $black_blue;
     letter-spacing: 0;
-    line-height: 1.0625rem; /* 17px */
+    line-height: 1.0625rem; // 17px 
     }
-    .table-row-data{
+    .table-row-data-black_blue{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.875rem; /* 14px */
-    color: #0e0c28;
+    font-size: 0.875rem; // 14px 
+    color: $black_blue;
     letter-spacing: 0;
-    line-height: 1.0625rem; /* 17px */
+    line-height: 1.0625rem; // 17px 
     }
-    .roboto-medium-9px{
+    .roboto-medium-9px-light_grey{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.5625rem; /* 9px */
-    color: #cacad5;
+    font-size: 0.5625rem; // 9px 
+    color: $light_grey;
     letter-spacing: 0;
-    line-height: 0.6875rem; /* 11px */
+    line-height: 0.6875rem; // 11px 
     }
-    .roboto-medium-14px{
+    .roboto-medium-14px-green2{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.875rem; /* 14px */
-    color: #18bf93;
+    font-size: 0.875rem; // 14px 
+    color: $green2;
     letter-spacing: 0;
-    line-height: 1.0625rem; /* 17px */
+    line-height: 1.0625rem; // 17px 
     }
-    .roboto-medium-14px{
+    .roboto-medium-14px-blue_purple{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.875rem; /* 14px */
-    color: #5b5bdc;
+    font-size: 0.875rem; // 14px 
+    color: $blue_purple;
     letter-spacing: 0;
-    line-height: 1.0625rem; /* 17px */
+    line-height: 1.0625rem; // 17px 
     }
-    .roboto-bold-16px{
+    .roboto-bold-16px-ice{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 1rem; /* 16px */
-    color: #efeff6;
+    font-size: 1rem; // 16px 
+    color: $ice;
     letter-spacing: 0;
-    line-height: 1.1875rem; /* 19px */
+    line-height: 1.1875rem; // 19px 
     }
-    .roboto-bold-16px{
+    .roboto-bold-16px-blue_purple{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 1rem; /* 16px */
-    color: #5b5bdc;
+    font-size: 1rem; // 16px 
+    color: $blue_purple;
     letter-spacing: 0;
-    line-height: 1.1875rem; /* 19px */
+    line-height: 1.1875rem; // 19px 
     }
-    .roboto-bold-16px{
+    .roboto-bold-16px-green2{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 1rem; /* 16px */
-    color: #61cdac;
+    font-size: 1rem; // 16px 
+    color: $green2;
     letter-spacing: 0;
-    line-height: 1.1875rem; /* 19px */
+    line-height: 1.1875rem; // 19px 
     }
-    .roboto-bold-16px{
+    .roboto-bold-16px-red2{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 1rem; /* 16px */
-    color: #d83438;
+    font-size: 1rem; // 16px 
+    color: $red2;
     letter-spacing: 0;
-    line-height: 1.1875rem; /* 19px */
+    line-height: 1.1875rem; // 19px 
     }
-    .roboto-regular-13px{
+    .roboto-regular-13px-black_blue{
     font-family: Roboto;
     font-weight: regular;
-    font-size: 0.8125rem; /* 13px */
-    color: #0e0c28;
+    font-size: 0.8125rem; // 13px 
+    color: $black_blue;
     letter-spacing: 0;
-    line-height: 0.9375rem; /* 15px */
+    line-height: 0.9375rem; // 15px 
     }
-    .roboto-bold-13px{
+    .roboto-bold-13px-black_blue{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 0.8125rem; /* 13px */
-    color: #0e0c28;
+    font-size: 0.8125rem; // 13px 
+    color: $black_blue;
     letter-spacing: 0;
-    line-height: 0.9375rem; /* 15px */
+    line-height: 0.9375rem; // 15px 
     }
-    .roboto-regular-13px{
+    .roboto-regular-13px-light_grey{
     font-family: Roboto;
     font-weight: regular;
-    font-size: 0.8125rem; /* 13px */
-    color: #cacad5;
+    font-size: 0.8125rem; // 13px 
+    color: $light_grey;
     letter-spacing: 0;
-    line-height: 0.9375rem; /* 15px */
+    line-height: 0.9375rem; // 15px 
     }
-    .label-text-form{
+    .label-text-form-light_grey{
     font-family: Roboto;
     font-weight: medium;
-    font-size: 0.875rem; /* 14px */
-    color: #cacad5;
+    font-size: 0.875rem; // 14px 
+    color: $light_grey;
     letter-spacing: 0;
-    line-height: 1.0625rem; /* 17px */
+    line-height: 1.0625rem; // 17px 
     }
-    .roboto-bold-15px{
+  
+    .roboto-bold-15px-green2{
     font-family: Roboto;
     font-weight: bold;
-    font-size: 0.9375rem; /* 15px */
-    color: #18bf93;
+    font-size: 0.9375rem; // 15px 
+    color: $green2;
     letter-spacing: 0;
-    line-height: 1.125rem; /* 18px */
+    line-height: 1.125rem; // 18px 
     }
-    .roboto-regular-12px{
+    
+    .roboto-regular-12px-red2{
     font-family: Roboto;
     font-weight: regular;
-    font-size: 0.75rem; /* 12px */
-    color: #d83438;
+    font-size: 0.75rem; // 12px 
+    color: $red2;
     letter-spacing: 0;
-    line-height: 0.875rem; /* 14px */
+    line-height: 0.875rem; // 14px 
     }
+    

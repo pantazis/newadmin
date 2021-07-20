@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include "./_include/nav.php" ?>
+   
 
 <?php $arr =["primary",
   "secondary",
@@ -78,8 +78,31 @@
 <?php foreach($arr2 as $value ){ ?>
 <p class="<?=$value?>"><?=$value?></p>
 <?php }?>
-<h1>asasas</h1>
-<p>asas</p>
+
+<style>
+  .container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 50px 50px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
+}
+</style>
+<div class="container">  
+<?php for ($i = 5; $i >= -5; $i--) {?>
+  <style>
+
+.lavel-<?=$i?>{
+  box-shadow: 0 <?=$i-3?>px 5px rgb(0 0 0 / 20%);
+}
+</style>
+<div class="box lavel-<?=$i?>"><?=$i?></div>
+<?php } ?>
+</div>
+
 
 
     </div>    

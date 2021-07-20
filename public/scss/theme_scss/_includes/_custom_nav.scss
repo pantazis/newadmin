@@ -5,19 +5,46 @@ $transitiontime:.3s;
 
 nav.sidebar.navbar,main,.logo,img.curve {
     transition-duration: $transitiontime ;
-    transition-timing-function: ease-in;
-    
-    
+    transition-timing-function: ease-in;  
+   
+}
+
+.img.logo-img {
+    width: 40px;
+}
+
+.logo-box {
+    height:  $navSidebarTop;
+    width:$sidebarWidthClosed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-nav.sidebar.navbar {
+nav.sidebar.navbar {    
+    align-items: flex-start;
+    justify-content: flex-start;
     width: $sidebarWidth;
     transition-property: width;
     height: 100vh;
     position: fixed;
-    top: 0;
-    left: 0;   
+    top:  $navSidebarTop;
+    left: 0;
+    
+    ul.side-nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }  
+    .img-box{
+        height:  $navSidebarTop;
+        width:$sidebarWidthClosed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    } 
 }
 
 nav.sidebar.top {
@@ -69,15 +96,17 @@ main{
 img.curve {
     height: 100%;
     position: absolute;
-    right: -1px;
+    right: -0.06rem;
     transition-property: width;
-    transition-timing-function: linear;
+   
 }
 
 img.curve {
+    top:0;
    height: 100%;
     position: absolute;
     right: -0.06rem;
+    transition-duration: #{$transitiontime / 2};
 }
 img.curve.c2 {
     left: 99%;
@@ -85,24 +114,34 @@ img.curve.c2 {
 }
 
 img.curve.c1{
-    width:29.95px;
+    width:1.871rem;   
+    transition-delay: #{$transitiontime / 2};
+
 }
 img.curve.c2{
+    transition-delay: 0s;   
     width:0;
 }
-/*skata*/
+
 .closeNav{
     img.curve.c1{
+       
+        transition-delay: 0s;
         width:0;
         
         
     }
     img.curve.c2{
-        width:29.95px;
-        transition-delay: $transitiontime;
+        width:1.871rem;
+        transition-delay:  #{$transitiontime / 2};    
        
         
     }
 
 }
+
+
+
+
+
 

@@ -183,6 +183,6 @@
     <script src="./public/js/libraries/bootstrap.min.js"></script>
     <script src="./public/js/libraries/is.min.js"></script>   
     <script src="./public/js/libraries/all.min.js"></script>
-    <script src="./public/js/template_scripts.js"></script>  
+    <script src="./public/js/template_scripts.js?<?php rand(0,1000)?>"></script>  
 </body>
 </html>

@@ -3,7 +3,7 @@ $sidebarWidthClosed:4.8125rem;
 $navSidebarTop: 4.68rem;
 $transitiontime:.3s;
 
-nav.sidebar.navbar,main,.logo,img.curve {
+nav.sidebar.navbar,main,.logo,img.curve,.burger-menu {
     transition-duration: $transitiontime ;
     transition-timing-function: ease-in;  
    
@@ -138,6 +138,27 @@ img.curve.c2{
         
     }
 
+}
+
+.burger-menu {
+    position: absolute;
+    top: 0;
+    right: -0.312rem;
+    z-index: 1;
+    height:$navSidebarTop;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: right;
+    img{
+        width:1.25pem;
+    }
+}
+
+.closeNav{
+    .burger-menu { 
+        right: -1.187rem;  
+    }
 }
 
 

@@ -1,9 +1,12 @@
 
 <nav class="sidebar top shadow-2-strong">
     <div class="logo">
-        <div class="logo-box">
+        <div class="logo-box">       
             <img src="./public/img/nav/logo.svg" alt="" class="logo-img">
-        </div>       
+        </div>  
+        <div class="burger-menu">
+            <span class="icon-fi-sr-menu-burger" alt=""></span>
+        </div>     
         <img class="curve c1" src="./public/img/nav/1menu_bg.svg" alt="">
         <img class="curve c2" src="./public/img/nav/2menu_bg.svg" alt="">
         
@@ -15,19 +18,19 @@
 <nav class="sidebar navbar">
 
 <?php $arr = [
-"fi-sr-grid.svg",
-"fi-sr-globe.svg",
-"fi-sr-database.svg",
-"fi-sr-shield-check.svg",
-"fi-sr-users.svg",
-"fi-sr-money.svg",
-"fi-sr-box.svg",
+"fi-sr-grid",
+"fi-sr-globe",
+"fi-sr-database",
+"fi-sr-shield-check",
+"fi-sr-users",
+"fi-sr-money",
+"fi-sr-box",
 ];?>
 <ul class="side-nav-list">
 <?php foreach($arr as $value){ ?>
     <li>
         <div class="img-box">
-            <img class="nav-icons-side" src="./public/img/nav/<?=$value?>" alt="">
+            <span class="nav-icons-side icon-<?=$value?>" alt="">
         </div>
     </li>
 <?php } ?>

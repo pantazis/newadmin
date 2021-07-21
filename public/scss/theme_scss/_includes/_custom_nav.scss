@@ -3,7 +3,7 @@ $sidebarWidthClosed:4.8125rem;
 $navSidebarTop: 4.68rem;
 $transitiontime:.3s;
 
-nav.sidebar.navbar,main,.logo,img.curve,.burger-menu {
+nav.sidebar.navbar,main,.logo,img.curve,.burger-menu,.logo-text {
     transition-duration: $transitiontime ;
     transition-timing-function: ease-in;  
    
@@ -15,7 +15,7 @@ nav.sidebar.navbar,main,.logo,img.curve,.burger-menu {
 
 .logo-box {
     height:  $navSidebarTop;
-    width:$sidebarWidthClosed;
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +43,10 @@ nav.sidebar.navbar {
         display: flex;
         justify-content: center;
         align-items: center;
+        span.nav-icons-side {
+            color: $light_grey;
+            font-size:1.5rem;
+        }
 
     } 
 }
@@ -68,6 +72,35 @@ main{
     transition-property: width;
     height: 100%;    
     position: relative;
+    justify-content: center;
+    display: flex;
+   
+    .logo-text{
+        height:100%;
+        display: flex;
+        align-items: center;
+        transition-property: width,opacity;
+        overflow: hidden;
+        width: 109.95px;
+        opacity: 1;
+        
+       
+        
+        .closeNav &{
+            width:0;
+            opacity: 0;
+            
+
+        }
+
+    }
+     span.icon-logo_text {
+        font-size: 25.73px;
+        position: relative;
+        left: 0;
+        padding-left: 11px;
+        padding-right: 15px;
+    }
 }
 .closeNav{
 
@@ -81,7 +114,8 @@ main{
     }
 
     .logo {
-        width: $sidebarWidthClosed;      
+        width: $sidebarWidthClosed;
+            
     }
     
 

@@ -2,8 +2,11 @@
 <nav class="sidebar top shadow-2-strong">
     <div class="logo">
         <div class="logo-box">       
-            <img src="./public/img/nav/logo.svg" alt="" class="logo-img">
-        </div>  
+            <img src="./public/img/nav/logo.svg" alt="" class="logo-img">            
+        </div> 
+        <div class="logo-text">
+        <span class="icon-logo_text" alt=""></span>
+        </div> 
         <div class="burger-menu">
             <span class="icon-fi-sr-menu-burger" alt=""></span>
         </div>     

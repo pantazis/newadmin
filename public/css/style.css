@@ -9586,7 +9586,7 @@ textarea.form-control-lg {
   letter-spacing: 0;
   line-height: 0.875rem; }
 
-nav.sidebar.navbar, main, .logo, img.curve, .burger-menu {
+nav.sidebar.navbar, main, .logo, img.curve, .burger-menu, .logo-text {
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
 
@@ -9595,7 +9595,6 @@ nav.sidebar.navbar, main, .logo, img.curve, .burger-menu {
 
 .logo-box {
   height: 4.68rem;
-  width: 4.8125rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -9619,6 +9618,9 @@ nav.sidebar.navbar {
     display: flex;
     justify-content: center;
     align-items: center; }
+    nav.sidebar.navbar .img-box span.nav-icons-side {
+      color: #cacad5;
+      font-size: 1.5rem; }
 
 nav.sidebar.top {
   height: 4.68rem;
@@ -9637,7 +9639,26 @@ main {
   width: 15.5rem;
   transition-property: width;
   height: 100%;
-  position: relative; }
+  position: relative;
+  justify-content: center;
+  display: flex; }
+  .logo .logo-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition-property: width,opacity;
+    overflow: hidden;
+    width: 109.95px;
+    opacity: 1; }
+    .closeNav .logo .logo-text {
+      width: 0;
+      opacity: 0; }
+  .logo span.icon-logo_text {
+    font-size: 25.73px;
+    position: relative;
+    left: 0;
+    padding-left: 11px;
+    padding-right: 15px; }
 
 .closeNav nav.sidebar.navbar {
   width: 4.8125rem; }

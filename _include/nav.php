@@ -15,6 +15,35 @@
         
     </div>
     <div class="nav-container">
+        <div class="nav-list list1">
+        <?php $arrmenu =[
+"An Ubavicious",
+"Πίνακας Ελέγχου",
+"Λογαριασμός",
+"Domains",
+"Hosting",
+"SSL Certificates",
+"Οικονομικά",]
+ ?>
+
+ <?php foreach($arrmenu as $value ){?>
+<div class="nav-list-item">
+    <span class="nav-text1"><?=$value?></span><div class="icon-fi-sr-caret-down navdown"></div>
+</div>
+<?php }?>
+ 
+
+        </div>
+        <div class="nav-list search">
+            1
+
+        </div>
+        <div class="nav-list user-icons">
+            2
+
+        </div> 
+       
+        
 
     </div>    
 </nav>

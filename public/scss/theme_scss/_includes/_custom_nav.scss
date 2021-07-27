@@ -3,14 +3,24 @@ $sidebarWidthClosed:4.8125rem;
 $navSidebarTop: 4.68rem;
 $transitiontime:.3s;
 
-nav.sidebar.navbar,main,.logo,img.curve,.burger-menu,.logo-text {
+.navbar{
+    padding:0;    
+}
+
+.navdown{
+    color:#CACAD5;
+    font-size: 0.9375rem;
+    margin-right:0.5rem ;
+}
+
+nav.sidebar.navbar,main,.logo,img.curve,.burger-menu,.logo-text,.icon-fi-sr-menu-burger {
     transition-duration: $transitiontime ;
     transition-timing-function: ease-in;  
    
 }
 
 .img.logo-img {
-    width: 40px;
+    width: 2.5rem;
 }
 
 .logo-box {
@@ -31,6 +41,11 @@ nav.sidebar.navbar {
     position: fixed;
     top:  $navSidebarTop;
     left: 0;
+    z-index: 1;
+
+    .closeNav.hover &{        
+      width:$sidebarWidth;        
+    }
     
     ul.side-nav-list {
         list-style: none;
@@ -58,6 +73,32 @@ nav.sidebar.top {
     left: 0;
     width: 100%;   
     z-index: 1;
+    display:flex;
+    .nav-container {
+        flex-grow: 1;
+        display: flex;
+    }
+    .nav-list.list1 {
+        display: flex;
+        height:$navSidebarTop;
+        position: relative;
+        left: 0.25rem;
+        
+    }
+
+    .nav-list-item {
+        display: flex;
+        align-items: center;       
+      
+        padding: 0 1.406rem;
+        &:first-of-type{
+            padding-left:2.5rem;
+        }
+    }
+    .nav-list.search{
+        margin-left:auto;
+    }
+
 }
 main{
     padding-top: $navSidebarTop;
@@ -81,7 +122,7 @@ main{
         align-items: center;
         transition-property: width,opacity;
         overflow: hidden;
-        width: 109.95px;
+        width:  6.87rem;
         opacity: 1;
         
        
@@ -92,17 +133,24 @@ main{
             
 
         }
+        .closeNav.hover &{
+            width: 6.87rem;
+            opacity: 1;
+            
+
+        }
 
     }
      span.icon-logo_text {
-        font-size: 25.73px;
+        font-size: 1.6081rem; /* 25.73px */
         position: relative;
         left: 0;
-        padding-left: 11px;
-        padding-right: 15px;
+        padding-left: 0.6875rem; /* 11px */
+        padding-right: 0.9375rem; /* 15px */
     }
 }
 .closeNav{
+  
 
     nav.sidebar.navbar {
         width: $sidebarWidthClosed;       
@@ -115,11 +163,22 @@ main{
 
     .logo {
         width: $sidebarWidthClosed;
+        img{
+            width: 2.5rem;
+        }
+      
             
     }
     
 
 }
+
+.closeNav.hover {  
+    .logo{      
+    width:$sidebarWidth;
+    }       
+  }
+
 
 
 
@@ -184,9 +243,14 @@ img.curve.c2{
     justify-content: center;
     align-items: center;
     transition-property: right;
-    img{
-        width:1.25pem;
+    .icon-fi-sr-menu-burger{
+        font-size:1.25rem;
+        transition-property: transform;
+        .closeNav &{
+            transform: rotate(90deg);
+        }
     }
+    
 }
 
 .closeNav{

@@ -13,6 +13,16 @@
         $("body").toggleClass("dark");
     });
 
+    $("nav.sidebar.navbar").mouseenter(function () {
+        
+        $("body").addClass("hover");
+
+    })
+    $("nav.sidebar.navbar").mouseleave(function () {
+        $("body").removeClass("hover");
+
+    });
+
 
 
 

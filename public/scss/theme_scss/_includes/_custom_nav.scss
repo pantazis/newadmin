@@ -85,6 +85,28 @@ nav.sidebar.top {
         left: 0.25rem;
         
     }
+    .nav-list.user-icons{
+        display: flex;
+        font-size: 1.125rem;
+        height:$navSidebarTop;
+        padding:0.781rem 0;
+    nav.sidebar.top .nav-list.user-icons {
+    display: flex;
+    font-size: 1.125rem;
+    height: 4.68rem;
+    padding: 1.0416rem 0;
+}
+        .nav-icon-3{
+            height: auto;
+            width: 79px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 0.025rem solid $light_grey; 
+
+        }
+    }
+
 
     .nav-list-item {
         display: flex;

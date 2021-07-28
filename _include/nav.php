@@ -39,8 +39,22 @@
 
         </div>
         <div class="nav-list user-icons">
-            2
+        <?php $arr=[
+        "icon-fi-sr-bell1",
+        "icon-fi-sr-shopping-cart",
+        "icon-fi-sr-user",
+       
+        ];
+        ?>
+            <?php foreach($arr as $val){ ?>
+                <div class="nav-icon-3">
+                    <div class="rel-icon">
+                    <i class="<?=$val?>"></i>
+                    </div>
 
+                </div>
+            <?php } ?>
+            
         </div> 
        
         

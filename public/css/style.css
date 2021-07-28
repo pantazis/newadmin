@@ -9455,6 +9455,23 @@ nav.sidebar.top {
     height: 4.68rem;
     position: relative;
     left: 0.25rem; }
+  nav.sidebar.top .nav-list.user-icons {
+    display: flex;
+    font-size: 1.125rem;
+    height: 4.68rem;
+    padding: 0.781rem 0; }
+    nav.sidebar.top .nav-list.user-icons nav.sidebar.top .nav-list.user-icons {
+      display: flex;
+      font-size: 1.125rem;
+      height: 4.68rem;
+      padding: 1.0416rem 0; }
+    nav.sidebar.top .nav-list.user-icons .nav-icon-3 {
+      height: auto;
+      width: 79px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: 0.025rem solid #cacad5; }
   nav.sidebar.top .nav-list-item {
     display: flex;
     align-items: center;

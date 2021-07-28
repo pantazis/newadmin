@@ -23,6 +23,35 @@
 
     });
 
+    var arr= [];
+    $(".nav-list-item2").click(function(){
+        arr.push(this);
+        debugger;
+        
+       
+        $(".nav-list-item2").removeClass("opennav1");
+        if( arr.length >= 2 && arr[arr.length-1]==arr[arr.length-2]){
+            $(this).removeClass("opennav1");
+        }else{
+            $(this).addClass("opennav1");
+
+        }    
+                
+       
+        
+
+    });
+
+    $("li.nav-list-item2").each(function(){
+        
+        if($(this).find(".sub-category").length!=0){
+            $(this).addClass("subcategory");
+            
+        };
+    })
+        
+    
+
 
 
 

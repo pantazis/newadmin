@@ -2,6 +2,7 @@ $sidebarWidth:15.5rem;
 $sidebarWidthClosed:4.8125rem;
 $navSidebarTop: 4.68rem;
 $transitiontime:.3s;
+$hover-move:7px;
 
 .navbar{
     padding:0;    
@@ -61,22 +62,38 @@ nav.sidebar.navbar {
         color: #CACAD5;
         flex-wrap: wrap;
         cursor: pointer;
-        transition: padding-left .3s;
+        transition: padding-left  .3s, background .3s;
         a {
+            transition: all .3s;
            color:#fff;
             text-decoration: none;
+            opacity: 0;
+            display:block;
         }
         .list-pad {
             height: 0px;           
-            transition:height.3s;
+            transition:height.3s,padding-left .3s;
             padding-left:$sidebarWidthClosed;
             font-size:15px;
+            display:flex;           
+            align-items: center;
+           
+            &:hover{
+                padding-left:calc( #{$sidebarWidthClosed} + #{$hover-move});
+
+            }
+            
+            
         }
         &:hover{
-            padding-left: 7px;
-            .list-pad {
-                height: 39px;
-            }
+           
+            padding-left: $hover-move;
+           
+        }
+        &.opennav1:hover{
+           
+            padding-left: 0px;
+           
         }
         .sub-category {
             width: 100%;            
@@ -85,6 +102,8 @@ nav.sidebar.navbar {
       
 
         }
+
+       
     
     
     .nav-text2 {
@@ -100,6 +119,9 @@ nav.sidebar.navbar {
             position:absolute;           
             font-size: 15px;
             right: 19px;
+            .icon-fi-sr-angle-right{
+                transition:transform .3s;
+            }
             &.hide{
                 display: none;
             }
@@ -362,6 +384,51 @@ img.curve.c2{
         right: -1.187rem;  
     }
 }
+
+
+
+body:not(.closeNav) nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1,
+body.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 {          
+    color: #000;  
+    background: #fff;
+    a {
+        color: #000;
+        text-decoration: none;
+        opacity: 1;
+        
+    }
+    .icon-fi-sr-angle-right {
+        transform: rotate(90deg);
+    }
+     .img-box span.nav-icons-side {
+        color: #000;
+        
+    }
+     .list-pad{
+         height:39px;
+
+    }
+   
+    
+    
+}
+
+
+nav.sidebar.navbar li.nav-list-item2{
+
+ .nav-text2 span.arrow-right .icon-fi-sr-angle-right {
+    transition: transform .3s;
+    display: none;
+}
+&.subcategory{
+
+    .nav-text2 span.arrow-right .icon-fi-sr-angle-right {        
+        display: block;
+    }
+
+}
+}
+
 
 
 

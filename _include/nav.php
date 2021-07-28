@@ -46,9 +46,12 @@
        
         ];
         ?>
-            <?php foreach($arr as $val){ ?>
+            <?php foreach($arr as $key => $val){ ?>
                 <div class="nav-icon-3">
                     <div class="rel-icon">
+                    <?php if($key < 2){ ?>
+                        <span class="num"><?=rand(1,99)?></span>
+                    <?php } ?>    
                     <i class="<?=$val?>"></i>
                     </div>
 
@@ -71,13 +74,47 @@
 "fi-sr-users",
 "fi-sr-money",
 "fi-sr-box",
-];?>
+];
+
+$arr2 = [
+"Dashboard",
+"Domains",
+"Hosting",
+"SSL Certificates",
+"Users",
+"Οικονομικά",
+"Προϊόντα"
+    ];
+
+
+
+
+?>
 <ul class="side-nav-list">
-<?php foreach($arr as $value){ ?>
-    <li>
+<?php foreach($arr as $key => $value){ ?>
+    <li class="nav-list-item2">
         <div class="img-box">
-            <span class="nav-icons-side icon-<?=$value?>" alt="">
+            <span class="nav-icons-side icon-<?=$value?>" alt=""></span>           
         </div>
+        <div class="nav-text2"><?=$arr2[$key]?>
+            <span class="arrow-right">
+                <div class="icon-fi-sr-angle-right"></div>
+            </span>
+        </div>
+           <?php if($key > 0 && $key < count($arr)-1   ){ ;?>
+         
+                <div class="sub-category">
+                    
+                
+                    <?php for($i = 0; $i < rand(3,7); $i++ ){ ?>
+                       
+                        <a href="#"><div class="list-pad">subcategory</div></a>
+                      
+                    <?php } ?>
+                               
+                </div>
+           
+            <?php } ?>
     </li>
 <?php } ?>
 </ul>

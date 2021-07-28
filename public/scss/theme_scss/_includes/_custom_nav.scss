@@ -42,6 +42,8 @@ nav.sidebar.navbar {
     top:  $navSidebarTop;
     left: 0;
     z-index: 1;
+    padding-top: 1.28125rem;
+    overflow: hidden;
 
     .closeNav.hover &{        
       width:$sidebarWidth;        
@@ -51,13 +53,75 @@ nav.sidebar.navbar {
         list-style: none;
         margin: 0;
         padding: 0;
-    }  
+      
+    }
+    li.nav-list-item2 {
+        width: $sidebarWidth;      
+        display: flex;
+        color: #CACAD5;
+        flex-wrap: wrap;
+        cursor: pointer;
+        transition: padding-left .3s;
+        a {
+           color:#fff;
+            text-decoration: none;
+        }
+        .list-pad {
+            height: 0px;           
+            transition:height.3s;
+            padding-left:$sidebarWidthClosed;
+            font-size:15px;
+        }
+        &:hover{
+            padding-left: 7px;
+            .list-pad {
+                height: 39px;
+            }
+        }
+        .sub-category {
+            width: 100%;            
+            overflow: hidden;
+      
+      
+
+        }
+    
+    
+    .nav-text2 {
+        position:relative;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        font-size: 15px;
+        flex-grow: 1;
+        
+      
+        span.arrow-right {
+            position:absolute;           
+            font-size: 15px;
+            right: 19px;
+            &.hide{
+                display: none;
+            }
+        }
+
+
+        
+       
+        
+
+
+    }
+    
+    }
+      
     .img-box{
         height:  $navSidebarTop;
         width:$sidebarWidthClosed;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-shrink: 0;
         span.nav-icons-side {
             color: $light_grey;
             font-size:1.5rem;
@@ -102,8 +166,27 @@ nav.sidebar.top {
             display: flex;
             justify-content: center;
             align-items: center;
-            border-left: 0.025rem solid $light_grey; 
+            border-left: 0.025rem solid $light_grey;
+            .rel-icon{
+                position: relative;
+                .num{
+                    position:absolute;                   
+                    top: -8px;
+                    right: -4px;
+                    font-size: 9px;
+                    background: $red;
+                    color: #fff;
+                    border-radius: 50%;
+                    height: 16px;
+                    width: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 0;
+                }
 
+            }
+          
         }
     }
 
@@ -157,9 +240,8 @@ main{
         }
         .closeNav.hover &{
             width: 6.87rem;
-            opacity: 1;
+            opacity: 1;            
             
-
         }
 
     }

@@ -9422,19 +9422,57 @@ nav.sidebar.navbar {
   position: fixed;
   top: 4.68rem;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  padding-top: 1.28125rem;
+  overflow: hidden; }
   .closeNav.hover nav.sidebar.navbar {
     width: 15.5rem; }
   nav.sidebar.navbar ul.side-nav-list {
     list-style: none;
     margin: 0;
     padding: 0; }
+  nav.sidebar.navbar li.nav-list-item2 {
+    width: 15.5rem;
+    display: flex;
+    color: #CACAD5;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: padding-left .3s; }
+    nav.sidebar.navbar li.nav-list-item2 a {
+      color: #fff;
+      text-decoration: none; }
+    nav.sidebar.navbar li.nav-list-item2 .list-pad {
+      height: 0px;
+      transition: height 0.3s;
+      padding-left: 4.8125rem;
+      font-size: 15px; }
+    nav.sidebar.navbar li.nav-list-item2:hover {
+      padding-left: 7px; }
+      nav.sidebar.navbar li.nav-list-item2:hover .list-pad {
+        height: 39px; }
+    nav.sidebar.navbar li.nav-list-item2 .sub-category {
+      width: 100%;
+      overflow: hidden; }
+    nav.sidebar.navbar li.nav-list-item2 .nav-text2 {
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      display: flex;
+      font-size: 15px;
+      flex-grow: 1; }
+      nav.sidebar.navbar li.nav-list-item2 .nav-text2 span.arrow-right {
+        position: absolute;
+        font-size: 15px;
+        right: 19px; }
+        nav.sidebar.navbar li.nav-list-item2 .nav-text2 span.arrow-right.hide {
+          display: none; }
   nav.sidebar.navbar .img-box {
     height: 4.68rem;
     width: 4.8125rem;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-shrink: 0; }
     nav.sidebar.navbar .img-box span.nav-icons-side {
       color: #cacad5;
       font-size: 1.5rem; }
@@ -9472,6 +9510,22 @@ nav.sidebar.top {
       justify-content: center;
       align-items: center;
       border-left: 0.025rem solid #cacad5; }
+      nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon {
+        position: relative; }
+        nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
+          position: absolute;
+          top: -8px;
+          right: -4px;
+          font-size: 9px;
+          background: #D83438;
+          color: #fff;
+          border-radius: 50%;
+          height: 16px;
+          width: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 0; }
   nav.sidebar.top .nav-list-item {
     display: flex;
     align-items: center;

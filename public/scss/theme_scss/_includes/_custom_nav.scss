@@ -2,7 +2,7 @@ $sidebarWidth:15.5rem;
 $sidebarWidthClosed:4.8125rem;
 $navSidebarTop: 4.68rem;
 $transitiontime:.3s;
-$hover-move:7px;
+$hover-move:0.4375rem; /* 7px */
 
 .navbar{
     padding:0;    
@@ -71,10 +71,10 @@ nav.sidebar.navbar {
             display:block;
         }
         .list-pad {
-            height: 0px;           
+            height: 0rem; /* 0px */           
             transition:height.3s,padding-left .3s;
             padding-left:$sidebarWidthClosed;
-            font-size:15px;
+            font-size:0.9375rem; /* 15px */
             display:flex;           
             align-items: center;
            
@@ -92,7 +92,7 @@ nav.sidebar.navbar {
         }
         &.opennav1:hover{
            
-            padding-left: 0px;
+            padding-left: 0rem; /* 0px */
            
         }
         .sub-category {
@@ -111,14 +111,14 @@ nav.sidebar.navbar {
         justify-content: flex-start;
         align-items: center;
         display: flex;
-        font-size: 15px;
+        font-size: 0.9375rem; /* 15px */
         flex-grow: 1;
         
       
         span.arrow-right {
             position:absolute;           
-            font-size: 15px;
-            right: 19px;
+            font-size: 0.9375rem; /* 15px */
+            right: 1.1875rem; /* 19px */
             .icon-fi-sr-angle-right{
                 transition:transform .3s;
             }
@@ -184,7 +184,7 @@ nav.sidebar.top {
 }
         .nav-icon-3{
             height: auto;
-            width: 79px;
+            width: 4.9375rem; /* 79px */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -193,14 +193,14 @@ nav.sidebar.top {
                 position: relative;
                 .num{
                     position:absolute;                   
-                    top: -8px;
-                    right: -4px;
-                    font-size: 9px;
+                    top: -0.5rem; /* -8px */
+                    right: -0.25rem; /* -4px */
+                    font-size: 0.5625rem; /* 9px */
                     background: $red;
                     color: #fff;
                     border-radius: 50%;
-                    height: 16px;
-                    width: 16px;
+                    height: 1rem; /* 16px */
+                    width: 1rem; /* 16px */
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -405,7 +405,7 @@ body.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1
         
     }
      .list-pad{
-         height:39px;
+         height:2.4375rem; /* 39px */
 
     }
    

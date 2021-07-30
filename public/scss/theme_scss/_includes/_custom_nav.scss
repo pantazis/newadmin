@@ -4,11 +4,8 @@ $navSidebarTop: 4.68rem;
 $transitiontime:.3s;
 $hover-move:0.4375rem; /* 7px */
 
-html{
-   
-        font-size: 0.7813vw;
-    
-
+html{   
+font-size: 0.7813vw;  
 }
 
 .navbar{
@@ -195,7 +192,10 @@ nav.sidebar.top {
             width: 254px;
             border-radius: 5px;
             padding: 0 31px;
-            background:$white;           
+            background:$white;
+
+          
+
             a{display: flex;
                 justify-content: space-between;
                 height: 40px;
@@ -252,7 +252,14 @@ nav.sidebar.top {
 
     .nav-list-item {
         display: flex;
-        align-items: center;       
+        align-items: center;
+        span.user_mail {
+            position: absolute;
+            bottom: 12px;
+            font-size: 9px;
+            font-weight: normal;
+            color:$black_blue;
+        }       
       
         padding: 0 1.406rem;
         &:first-of-type{
@@ -340,6 +347,14 @@ main{
             
     }
     
+
+}
+
+
+.nav-list-item.first-el{
+    .custom-popup{
+        left:0;
+    }
 
 }
 
@@ -510,6 +525,41 @@ input.search-top {
     }
 
 }
+
+
+
+//nav top popup animation
+
+.nav-list-item{
+    .custom-popup{
+        transition: width 0s,opacity .3s,transform .3s;
+        opacity:0;
+        transform: translate(50px, 50px);
+        width:0;
+      
+    
+    }
+
+
+
+
+
+
+
+    &.opennav1{
+
+        .custom-popup{
+            width:100%;
+            transform: translate(0px, 0px);
+            opacity:1;
+    
+        }
+
+    }
+
+}
+
+
 
 
 

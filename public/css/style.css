@@ -9582,6 +9582,12 @@ nav.sidebar.top {
     display: flex;
     align-items: center;
     padding: 0 1.406rem; }
+    nav.sidebar.top .nav-list-item span.user_mail {
+      position: absolute;
+      bottom: 12px;
+      font-size: 9px;
+      font-weight: normal;
+      color: #0e0c28; }
     nav.sidebar.top .nav-list-item:first-of-type {
       padding-left: 2.5rem; }
   nav.sidebar.top .nav-list.search {
@@ -9635,6 +9641,9 @@ main {
   width: 4.8125rem; }
   .closeNav .logo img {
     width: 2.5rem; }
+
+.nav-list-item.first-el .custom-popup {
+  left: 0; }
 
 .closeNav.hover .logo {
   width: 15.5rem; }
@@ -9755,6 +9764,16 @@ input.search-top {
     top: 0.1563rem;
     /* 2.5px */
     position: relative; }
+
+.nav-list-item .custom-popup {
+  transition: width 0s,opacity .3s,transform .3s;
+  opacity: 0;
+  transform: translate(50px, 50px);
+  width: 0; }
+.nav-list-item.opennav1 .custom-popup {
+  width: 100%;
+  transform: translate(0px, 0px);
+  opacity: 1; }
 
 .roboto-medium-13px-light_grey {
   color: #cacad5; }

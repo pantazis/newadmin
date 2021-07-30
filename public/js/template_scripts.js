@@ -7,46 +7,41 @@
     });
 
 
-    $("a.btn.btn-primary.my-2").click(function (event) {
-        
+    $("a.btn.btn-primary.my-2").click(function (event) {        
         event.preventDefault(),
         $("body").toggleClass("dark");
     });
 
-    $("nav.sidebar.navbar").mouseenter(function () {
-        
+    $("nav.sidebar.navbar").mouseenter(function () {        
         $("body").addClass("hover");
-
     })
     $("nav.sidebar.navbar").mouseleave(function () {
         $("body").removeClass("hover");
-
     });
 
-    var arr= [];
-    var i = 0;
+
+    var side_nav= {};
+    side_nav.arr=[];
+    side_nav.num = 0;
     $(".nav-list-item2").click(function(){
-        arr.push(this);
+        if(side_nav.arr.length>2){
+            side_nav.arr.shift();
+        }
+        side_nav.arr.push(this);
        
         $(".nav-list-item2").removeClass("opennav1");
         
-        if( arr.length >= 2 && arr[arr.length-1]==arr[arr.length-2]){
+        if( side_nav.arr.length >= 2 && side_nav.arr[side_nav.arr.length-1]==side_nav.arr[side_nav.arr.length-2]){
             
-            i++
+            side_nav.num++
         }else{
-            i=0;
+            side_nav.num=0;
         }
-        if(i%2==0){
+        if(side_nav.num%2==0){
             $(this).addClass("opennav1");
             }else{
             $(this).removeClass("opennav1");
-
             }
-       
-            
-                
-       
-        
 
     });
 
@@ -56,7 +51,39 @@
             $(this).addClass("subcategory");
             
         };
-    })
+    });
+
+
+    //top nav popup open close
+
+    var top_nav= {};
+    top_nav.arr=[];
+    top_nav.num = 0;
+    $(".nav-list-item").click(function(){
+        if(top_nav.arr.length>2){
+            top_nav.arr.shift();
+        }
+        top_nav.arr.push(this);
+       
+        $(".nav-list-item").removeClass("opennav1");
+        
+        if( top_nav.arr.length >= 2 && top_nav.arr[top_nav.arr.length-1]==top_nav.arr[top_nav.arr.length-2]){
+            
+            top_nav.num++
+        }else{
+            top_nav.num=0;
+        }
+        if(top_nav.num%2==0){
+            $(this).addClass("opennav1");
+            }else{
+            $(this).removeClass("opennav1");
+            }
+
+    });
+    
+
+
+
         
     
 

@@ -24,7 +24,7 @@
     side_nav.arr=[];
     side_nav.num = 0;
     $(".nav-list-item2").click(function(){
-        if(side_nav.arr.length>2){
+        if(side_nav.arr.length>1){
             side_nav.arr.shift();
         }
         side_nav.arr.push(this);
@@ -57,17 +57,21 @@
     //top nav popup open close
 
     var top_nav= {};
-    top_nav.arr=[];
+    top_nav.arr=[];    
     top_nav.num = 0;
-    $(".nav-list-item").click(function(){
-        if(top_nav.arr.length>2){
+    top_nav.isopen = false;
+    $(".nav-list-item").click(function(){ 
+         
+        if(top_nav.arr.length>1){
             top_nav.arr.shift();
         }
         top_nav.arr.push(this);
+        
        
         $(".nav-list-item").removeClass("opennav1");
+      
         
-        if( top_nav.arr.length >= 2 && top_nav.arr[top_nav.arr.length-1]==top_nav.arr[top_nav.arr.length-2]){
+        if( top_nav.arr.length >= 2 && top_nav.arr[top_nav.arr.length-1]==top_nav.arr[top_nav.arr.length-2]||top_nav.isopen){
             
             top_nav.num++
         }else{
@@ -79,7 +83,21 @@
             $(this).removeClass("opennav1");
             }
 
+            top_nav.isopen =false;
+          
+
     });
+
+    $("body").click(function(e){
+        if($(e.target).closest(".nav-list-item").length==0){          
+            
+            var element = top_nav.arr[top_nav.arr.length-1];
+            top_nav.isopen =true;           
+            $(element).click();
+           
+
+        };
+    })
     
 
 

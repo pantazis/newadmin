@@ -9525,7 +9525,7 @@ nav.sidebar.top {
     left: 0.25rem; }
     nav.sidebar.top .nav-list.list1 .custom-popup {
       position: absolute;
-      top: 90px;
+      top: 69px;
       text-align: center;
       width: 254px;
       border-radius: 5px;
@@ -9768,7 +9768,7 @@ input.search-top {
 .nav-list-item .custom-popup {
   transition: width 0s,opacity .3s,transform .3s;
   opacity: 0;
-  transform: translate(50px, 50px);
+  transform: translate(20px, 50px);
   width: 0; }
 .nav-list-item.opennav1 .custom-popup {
   width: 100%;

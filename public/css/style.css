@@ -9391,6 +9391,8 @@ textarea.form-control-lg {
   align-items: center;
   font-size: 0.8125rem;
   color: #0e0c28; }
+  .first-el .nav-text1 > span {
+    font-weight: bold; }
 
 /* 7px */
 html {
@@ -9426,7 +9428,7 @@ nav.sidebar.navbar {
   position: fixed;
   top: 4.68rem;
   left: 0;
-  z-index: 1;
+  z-index: 0;
   padding-top: 1.28125rem;
   overflow: hidden; }
   .closeNav.hover nav.sidebar.navbar {
@@ -9504,6 +9506,15 @@ nav.sidebar.top {
   width: 100%;
   z-index: 1;
   display: flex; }
+  nav.sidebar.top .nav-text1 {
+    justify-content: center; }
+    nav.sidebar.top .nav-text1 span.light {
+      width: 10px;
+      height: 10px;
+      background: #18bf93;
+      border-radius: 5px;
+      box-shadow: 0px 0px 6px 5px rgba(24, 191, 147, 0.2);
+      margin-right: 10px; }
   nav.sidebar.top .nav-container {
     flex-grow: 1;
     display: flex; }
@@ -9512,6 +9523,22 @@ nav.sidebar.top {
     height: 4.68rem;
     position: relative;
     left: 0.25rem; }
+    nav.sidebar.top .nav-list.list1 .custom-popup {
+      position: absolute;
+      top: 90px;
+      text-align: center;
+      width: 254px;
+      border-radius: 5px;
+      padding: 0 31px;
+      background: #fff; }
+      nav.sidebar.top .nav-list.list1 .custom-popup a {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        transition: padding-left .3s; }
+        nav.sidebar.top .nav-list.list1 .custom-popup a:hover {
+          padding-left: 0.4375rem; }
   nav.sidebar.top .nav-list.user-icons {
     display: flex;
     font-size: 1.125rem;
@@ -9561,6 +9588,8 @@ nav.sidebar.top {
     margin-left: auto;
     padding-right: 1.7337rem;
     /* 27.74px */ }
+    nav.sidebar.top .nav-list.search .nav-text1 {
+      justify-content: center; }
 
 main {
   padding-top: 4.68rem;

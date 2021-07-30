@@ -26,13 +26,22 @@
 "Οικονομικά",]
  ?>
 
- <?php foreach($arrmenu as $value ){?>
-<div class="nav-list-item">
-    <span class="nav-text1"><?=$value?></span><div class="icon-fi-sr-caret-down navdown"></div>
-</div>
+ <?php foreach($arrmenu as $key1 => $value ){?>
+<div class="nav-list-item <?php if($key1==0){echo "first-el";} ?>">
+    <span class="nav-text1">
+        <?php if($key1==0){echo '<span class ="light"></span>';} ?><span><?=$value?></span>
+        <?php if($key1==0){ ?>
+            <div class="custom-popup shadow-2-strong">
+                <?php for($i=1; $i<=2;$i++){ ?>                
+                    <a href="#" class="<?php if($i==3){echo "activate";}?>">
+                        subcategory  <span class="icon-fi-sr-caret-down navdown"></span>
+                    </a>
+                <?php } ?>       
+            </div>
+        <?php } ?> 
+    </span>
+        <div class="icon-fi-sr-caret-down navdown"></div></div>
 <?php }?>
- 
-
         </div>
         <div class="nav-list search">
             <div class="search-cont">

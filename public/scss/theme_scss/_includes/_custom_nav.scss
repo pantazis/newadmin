@@ -49,7 +49,7 @@ nav.sidebar.navbar {
     position: fixed;
     top:  $navSidebarTop;
     left: 0;
-    z-index: 1;
+    z-index: 0;
     padding-top: 1.28125rem;
     overflow: hidden;
 
@@ -167,6 +167,17 @@ nav.sidebar.top {
     width: 100%;   
     z-index: 1;
     display:flex;
+    .nav-text1 {
+     justify-content: center;
+     span.light {
+        width: 10px;
+        height: 10px;
+        background: rgba(24, 191, 147, 1);
+        border-radius: 5px;
+        box-shadow: 0px 0px 6px 5px rgba(24, 191, 147, .2);
+        margin-right: 10px;
+    }
+    }
     .nav-container {
         flex-grow: 1;
         display: flex;
@@ -176,6 +187,25 @@ nav.sidebar.top {
         height:$navSidebarTop;
         position: relative;
         left: 0.25rem;
+
+        .custom-popup {
+            position: absolute;
+            top: 90px;
+            text-align: center;         
+            width: 254px;
+            border-radius: 5px;
+            padding: 0 31px;
+            background:$white;           
+            a{display: flex;
+                justify-content: space-between;
+                height: 40px;
+                align-items: center;
+                transition: padding-left .3s;
+                &:hover {
+                    padding-left: 0.4375rem;
+                }
+            }
+        }
         
     }
     .nav-list.user-icons{
@@ -232,6 +262,12 @@ nav.sidebar.top {
     .nav-list.search{
         margin-left:auto;
         padding-right: 1.7337rem; /* 27.74px */
+
+        .nav-text1{
+            justify-content: center;
+
+        }
+       
     }
 
 }

@@ -3,5 +3,14 @@
     align-items: center;
     font-size: 0.8125rem;
     color: $black_blue;
+    > span{
+        .first-el &{
+            font-weight: bold;
+    
+        }
+
+    }
+  
+
     
 }

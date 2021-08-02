@@ -26,12 +26,13 @@
     //top nav popup open close
 
     function menu_subcategory_open (parent_Element,open_class){
-
+  
     var top_nav= {};
     top_nav.arr=[];    
     top_nav.num = 0;
     top_nav.isopen = false;
     $(parent_Element).click(function(){ 
+        debugger;
          
         if(top_nav.arr.length>1){
             top_nav.arr.shift();

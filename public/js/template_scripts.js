@@ -32,7 +32,7 @@
     top_nav.num = 0;
     top_nav.isopen = false;
     $(parent_Element).click(function(){ 
-        debugger;
+        
          
         if(top_nav.arr.length>1){
             top_nav.arr.shift();
@@ -43,12 +43,17 @@
         $(parent_Element).removeClass(open_class);
       
         
-        if( top_nav.arr.length >= 2 && top_nav.arr[top_nav.arr.length-1]==top_nav.arr[top_nav.arr.length-2]||top_nav.isopen){
+        if( top_nav.arr.length >= 2 && top_nav.arr[top_nav.arr.length-1]==top_nav.arr[top_nav.arr.length-2]){
             
             top_nav.num++
         }else{
             top_nav.num=0;
         }
+        if(top_nav.isopen==true){
+            top_nav.num = 1;
+
+        }
+        
         if(top_nav.num%2==0){
             $(this).addClass(open_class);
             }else{
@@ -80,7 +85,8 @@
 
 
 
-menu_subcategory_open (".nav-list-item","open_class")
+menu_subcategory_open (".nav-list-item","opennav1");
+//menu_subcategory_open (".nav-list-item","opennav1")
 
 
 

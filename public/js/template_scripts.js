@@ -105,12 +105,13 @@ $("body").click(function(e){
     $(e.target).closest(top_nav.parent_Element).addClass(top_nav.class);
     top_nav.num=0;
 };
+});
 
-
-
-  
-
-  
+$("li.nav-list-item2").each(function(){        
+    if($(this).find(".sub-category").length!=0){
+        $(this).addClass("subcategory");
+        
+    };
 });
     
 

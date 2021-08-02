@@ -20,47 +20,18 @@
     });
 
 
-    var side_nav= {};
-    side_nav.arr=[];
-    side_nav.num = 0;
-    $(".nav-list-item2").click(function(){
-        if(side_nav.arr.length>1){
-            side_nav.arr.shift();
-        }
-        side_nav.arr.push(this);
-       
-        $(".nav-list-item2").removeClass("opennav1");
-        
-        if( side_nav.arr.length >= 2 && side_nav.arr[side_nav.arr.length-1]==side_nav.arr[side_nav.arr.length-2]){
-            
-            side_nav.num++
-        }else{
-            side_nav.num=0;
-        }
-        if(side_nav.num%2==0){
-            $(this).addClass("opennav1");
-            }else{
-            $(this).removeClass("opennav1");
-            }
 
-    });
-
-    $("li.nav-list-item2").each(function(){
-        
-        if($(this).find(".sub-category").length!=0){
-            $(this).addClass("subcategory");
-            
-        };
-    });
 
 
     //top nav popup open close
+
+    function menu_subcategory_open (parent_Element,open_class){
 
     var top_nav= {};
     top_nav.arr=[];    
     top_nav.num = 0;
     top_nav.isopen = false;
-    $(".nav-list-item").click(function(){ 
+    $(parent_Element).click(function(){ 
          
         if(top_nav.arr.length>1){
             top_nav.arr.shift();
@@ -68,7 +39,7 @@
         top_nav.arr.push(this);
         
        
-        $(".nav-list-item").removeClass("opennav1");
+        $(parent_Element).removeClass(open_class);
       
         
         if( top_nav.arr.length >= 2 && top_nav.arr[top_nav.arr.length-1]==top_nav.arr[top_nav.arr.length-2]||top_nav.isopen){
@@ -78,9 +49,9 @@
             top_nav.num=0;
         }
         if(top_nav.num%2==0){
-            $(this).addClass("opennav1");
+            $(this).addClass(open_class);
             }else{
-            $(this).removeClass("opennav1");
+            $(this).removeClass(open_class);
             }
 
             top_nav.isopen =false;
@@ -89,7 +60,7 @@
     });
 
     $("body").click(function(e){
-        if($(e.target).closest(".nav-list-item").length==0){          
+        if($(e.target).closest(parent_Element).length==0){          
             
             var element = top_nav.arr[top_nav.arr.length-1];
             top_nav.isopen =true;           
@@ -98,6 +69,7 @@
 
         };
     })
+}
     
 
 
@@ -107,7 +79,7 @@
 
 
 
-
+menu_subcategory_open (".nav-list-item","open_class")
 
 
 

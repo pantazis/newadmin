@@ -24,7 +24,7 @@ nav.sidebar.navbar,main,.logo,img.curve,.burger-menu,.logo-text,.icon-fi-sr-menu
    
 }
 
-.img.logo-img {
+img.logo-img {
     width: 2.5rem;
 }
 
@@ -34,6 +34,7 @@ nav.sidebar.navbar,main,.logo,img.curve,.burger-menu,.logo-text,.icon-fi-sr-menu
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -167,12 +168,12 @@ nav.sidebar.top {
     .nav-text1 {
      justify-content: center;
      span.light {
-        width: 10px;
-        height: 10px;
+        width: 0.625rem; /* 10px */
+        height: 0.625rem; /* 10px */
         background: rgba(24, 191, 147, 1);
-        border-radius: 5px;
-        box-shadow: 0px 0px 6px 5px rgba(24, 191, 147, .2);
-        margin-right: 10px;
+        border-radius: 0.3125rem; /* 5px */
+        box-shadow: 0rem 0rem 0.375rem 0.3125rem /* 0px 0px 6px 5px */ rgba(24, 191, 147, .2);
+        margin-right: 0.625rem; /* 10px */
     }
     }
     .nav-container {
@@ -187,18 +188,18 @@ nav.sidebar.top {
 
         .custom-popup {
             position: absolute;
-            top: 69px;
+            top: 4.3125rem; /* 69px */
             text-align: center;         
-            width: 254px;
-            border-radius: 5px;
-            padding: 0 31px;
+            width: 15.875rem; /* 254px */
+            border-radius: 0.3125rem; /* 5px */
+            padding: 0 1.9375rem; /* 31px */
             background:$white;
 
           
 
             a{display: flex;
                 justify-content: space-between;
-                height: 40px;
+                height: 2.5rem; /* 40px */
                 align-items: center;
                 transition: padding-left .3s;
                 &:hover {
@@ -255,8 +256,8 @@ nav.sidebar.top {
         align-items: center;
         span.user_mail {
             position: absolute;
-            bottom: 12px;
-            font-size: 9px;
+            bottom: 0.75rem; /* 12px */
+            font-size: 0.5625rem; /* 9px */
             font-weight: normal;
             color:$black_blue;
         }       

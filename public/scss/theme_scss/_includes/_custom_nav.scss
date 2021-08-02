@@ -188,11 +188,12 @@ nav.sidebar.top {
         .custom-popup {
             position: absolute;
             top: 69px;
-            text-align: center;         
-            width: 254px;
+            text-align: center; 
+           
             border-radius: 5px;
-            padding: 0 31px;
+            padding: 0;
             background:$white;
+            overflow: hidden;
 
           
 
@@ -201,6 +202,7 @@ nav.sidebar.top {
                 height: 40px;
                 align-items: center;
                 transition: padding-left .3s;
+                padding:0 30px;
                 &:hover {
                     padding-left: 0.4375rem;
                 }
@@ -531,39 +533,47 @@ input.search-top {
 //nav top popup animation
 
 .nav-list-item{
-    .custom-popup{
-        transition: width 0s,opacity .3s,transform .3s;
-        opacity:0;
+    .custom-popup{ 
+        
+        transition: width .001s .299s, transform .3s, opacity .3s ;            
+        width:0px; 
         transform: translate(20px, 50px);
-        width:0;
-      
-    
+        opacity:0;
+     
     }
 
-
-
-
-
-
-
     &.opennav1{
-
         .custom-popup{
-            width:100%;
+           
+            transition: width .0s .0s, transform .3s, opacity .3s ;           
             transform: translate(0px, 0px);
             opacity:1;
-    
+            width: 254px;                     
+               
         }
 
     }
 
+    @include keyframe(animation-slide-up) {
+        0% {
+            transform: translate(0px, 0px);
+            opacity:1;
+            width: 254px;        
+        }
+        99.99%{
+            visibility:visible ;
+            width: 254px;   
+
+        }
+    
+        100% {
+            width:0px; 
+            transform: translate(20px, 50px);
+            opacity:0;
+         
+        }
+    }
+
 }
-
-
-
-
-
-
-
 
 

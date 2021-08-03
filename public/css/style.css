@@ -52,7 +52,7 @@
   --bs-dark_grey: #707070;
   --bs-dark_blue: #2e435e;
   --bs-black_blue: #0e0c28;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: Roboto;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); }
 
@@ -9776,6 +9776,82 @@ input.search-top {
   transform: translate(0px, 0px);
   opacity: 1;
   width: 15.875em; }
+
+.arrow-div {
+  width: 21px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 59px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+
+.popup-notifications {
+  width: 475px;
+  background: #fff;
+  position: fixed;
+  top: 69px;
+  right: 0; }
+
+span.text1 {
+  line-height: 2.6; }
+
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .box1.bottom-box {
+    font-size: 13px;
+    line-height: 2; }
+  .box1 hr {
+    margin: 0;
+    padding: 0;
+    max-width: 376px;
+    width: 100%;
+    height: 0.5px; }
+  .box1 .actions-b {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px; }
+
+.mm {
+  height: 100%;
+  width: 300px;
+  padding-left: 20px; }
+
+.date_m {
+  height: 100%;
+  width: 100px;
+  text-align: center;
+  padding-left: 10px; }
+
+.remove {
+  flex: 1;
+  height: 100%; }
+
+.flex-c {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: .8rem; }
+
+/*pppppppp*/
+.message {
+  border-left: 7px solid;
+  margin: 10px 0;
+  height: 71px;
+  width: 100%;
+  background: #efeff6;
+  display: flex; }
+  .message.color1 {
+    border-color: #d83438; }
+  .message.color2 {
+    border-color: #f08a24; }
+  .message.color3 {
+    border-color: #18bf93; }
+  .message:last-of-type {
+    margin-bottom: 0; }
 
 .roboto-medium-13px-light_grey {
   color: #cacad5; }

@@ -62,6 +62,9 @@
         "icon-fi-sr-user",
        
         ];
+        function random_lipsum($amount = 1, $what = 'paras', $start = 0) {
+            return simplexml_load_file("http://www.lipsum.com/feed/xml?amount=$amount&what=$what&start=$start")->lipsum;
+        }
         ?>
             <?php foreach($arr as $key => $val){ ?>
                 <div class="nav-icon-3">
@@ -71,6 +74,47 @@
                     <?php } ?>    
                     <i class="<?=$val?>"></i>
                     </div>
+                    <div class="arrow-div"></div>
+                    <?php if($key == 0){?>                        
+                        <div class="popup-notifications shadow-5-strong">
+                            <div class="top-box box1">
+                                    <span class="text1">οι ειδοποιήσεις μου</span>
+                                <hr>
+                            </div>
+                            <?php for ($x = 0; $x <= 2; $x++) { ?>
+                                <div class="message color<?=$x+1?>">
+                                <div class="mm flex-c">
+                                <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci pellentesque, pulvinar diam a, euismod lacus.</span>                                
+
+
+                                </div>
+                                <div class="date_m flex-c">
+                                    <span class="date">
+                                        12/07/2021<br>
+                                        23:05
+                                    </span>
+                                </div>
+                                <div class="remove flex-c">
+                                    <i class="icon-fi-sr-cross-small"></i>
+                                </div>
+                                    
+
+                                </div>
+                                
+
+
+
+                            <?php }?>
+                            <div class="bottom-box box1">
+                            <hr>
+                                <div class="actions-b">
+                                    <span class="text1">οι ειδοποιήσεις μου</span>
+                                    <a class="text1">οι ειδοποιήσεις μου</a>
+                                </div>
+
+                            </div>                      
+                        </div>
+                    <?php } ?>
 
                 </div>
             <?php } ?>

@@ -536,18 +536,15 @@ input.search-top {
 //nav top popup animation
 
 .nav-list-item{
-    .custom-popup{ 
-        
+    .custom-popup{         
         transition: width .001s .299s, transform .3s, opacity .3s ;            
         width:0em; 
         transform: translate(20px, 50px);
-        opacity:0;
-     
+        opacity:0;     
     }
 
     &.opennav1{
-        .custom-popup{
-           
+        .custom-popup{           
             transition: width .0s .0s, transform .3s, opacity .3s ;           
             transform: translate(0px, 0px);
             opacity:1;
@@ -564,17 +561,17 @@ input.search-top {
     height: 10px;
     background-color: #fff;
     position: absolute;
-    top: 59px;
+    top: 76px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 1;
 }
 
 .popup-notifications {
-    width: 475px;
-    
+    width: 475px;    
     background: #fff;
     position: fixed;
-    top: 69px;
-    right: 0;
+    top: 85px;
+    right: 9px;
     
 }
 
@@ -639,7 +636,7 @@ span.text1 {
 }
 
 
-/*pppppppp*/
+
 .message {
     border-left: 7px solid;
     margin: 10px 0;

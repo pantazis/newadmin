@@ -9782,15 +9782,16 @@ input.search-top {
   height: 10px;
   background-color: #fff;
   position: absolute;
-  top: 59px;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+  top: 76px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  z-index: 1; }
 
 .popup-notifications {
   width: 475px;
   background: #fff;
   position: fixed;
-  top: 69px;
-  right: 0; }
+  top: 85px;
+  right: 9px; }
 
 span.text1 {
   line-height: 2.6; }
@@ -9836,7 +9837,6 @@ span.text1 {
   display: flex;
   font-size: .8rem; }
 
-/*pppppppp*/
 .message {
   border-left: 7px solid;
   margin: 10px 0;

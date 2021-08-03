@@ -59,12 +59,10 @@
         <?php $arr=[
         "icon-fi-sr-bell1",
         "icon-fi-sr-shopping-cart",
-        "icon-fi-sr-user",
-       
+        "icon-fi-sr-user",       
         ];
-        function random_lipsum($amount = 1, $what = 'paras', $start = 0) {
-            return simplexml_load_file("http://www.lipsum.com/feed/xml?amount=$amount&what=$what&start=$start")->lipsum;
-        }
+      
+        
         ?>
             <?php foreach($arr as $key => $val){ ?>
                 <div class="nav-icon-3">
@@ -73,9 +71,9 @@
                         <span class="num"><?=rand(1,99)?></span>
                     <?php } ?>    
                     <i class="<?=$val?>"></i>
-                    </div>
-                    <div class="arrow-div"></div>
-                    <?php if($key == 0){?>                        
+                    </div>                   
+                    <?php if($key ==0){?>
+                        <div class="arrow-div"></div>                                                
                         <div class="popup-notifications shadow-5-strong">
                             <div class="top-box box1">
                                     <span class="text1">οι ειδοποιήσεις μου</span>
@@ -83,11 +81,9 @@
                             </div>
                             <?php for ($x = 0; $x <= 2; $x++) { ?>
                                 <div class="message color<?=$x+1?>">
-                                <div class="mm flex-c">
-                                <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci pellentesque, pulvinar diam a, euismod lacus.</span>                                
-
-
-                                </div>
+                                    <div class="mm flex-c">
+                                      <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci pellentesque, pulvinar diam a, euismod lacus.</span>
+                                    </div>
                                 <div class="date_m flex-c">
                                     <span class="date">
                                         12/07/2021<br>
@@ -97,13 +93,7 @@
                                 <div class="remove flex-c">
                                     <i class="icon-fi-sr-cross-small"></i>
                                 </div>
-                                    
-
                                 </div>
-                                
-
-
-
                             <?php }?>
                             <div class="bottom-box box1">
                             <hr>

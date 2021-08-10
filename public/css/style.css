@@ -9932,6 +9932,9 @@ span.text1 {
   .logo {
     display: none; } }
 @media screen and (max-width: 800px) {
+  html {
+    font-size: 85%; }
+
   nav.sidebar.top .nav-list-item:first-of-type {
     display: none; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/

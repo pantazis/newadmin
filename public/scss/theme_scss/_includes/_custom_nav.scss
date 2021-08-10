@@ -742,11 +742,12 @@ span.text1 {
     nav.sidebar.navbar li.nav-list-item2 {
 
     }
-    nav.sidebar.navbar{        
+    nav.sidebar.navbar{
+    padding-top: 0;        
     align-items: center;
     justify-content: center;
-    width: 0;  
-    height: 100vh;         
+    width: 0; 
+           
     top: 0;
     left: 0;  
     z-index: 2;

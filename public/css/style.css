@@ -9919,10 +9919,10 @@ span.text1 {
     right: 0; }
 
   nav.sidebar.navbar {
+    padding-top: 0;
     align-items: center;
     justify-content: center;
     width: 0;
-    height: 100vh;
     top: 0;
     left: 0;
     z-index: 2;

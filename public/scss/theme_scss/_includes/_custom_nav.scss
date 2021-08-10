@@ -3,6 +3,8 @@ $sidebarWidthClosed:4.8125rem;
 $navSidebarTop: 4.68rem;
 $transitiontime:.3s;
 $hover-move:0.4375rem; /* 7px */
+$topMargin: #{$navSidebarTop + 0.625};//85px;
+$border-radius:10px;
 
 html{   
 font-size: 0.7813vw;  
@@ -190,10 +192,9 @@ nav.sidebar.top {
 
         .custom-popup {
             position: absolute;
-            top: 4.3125em;
-            text-align: center; 
-           
-            border-radius: 0.3125em;
+            top: $topMargin;
+            text-align: center;            
+            border-radius: $border-radius;
             padding: 0;
             background:$white;
             overflow: hidden;
@@ -556,6 +557,8 @@ input.search-top {
 }
 
 //notifications popups
+$popup-notifications-width: 475px;
+$popup-notifications-right: 9px;
 .arrow-div {
     width: 21px;
     height: 10px;
@@ -567,11 +570,12 @@ input.search-top {
 }
 
 .popup-notifications {
-    width: 475px;    
+    width: $popup-notifications-width;    
     background: #fff;
     position: fixed;
-    top: 85px;
-    right: 9px;
+    top: $topMargin;
+    right: $popup-notifications-right;
+    border-radius:$border-radius;
     
 }
 
@@ -657,5 +661,43 @@ span.text1 {
         margin-bottom:0;
     }
 }
+
+//-----------------------------notification popup animation--------------------------//
+//$popup-notifications-width: 475px;
+//$popup-notifications-right: 9px;
+
+
+.nav-icon-3{
+    
+    .arrow-div,.popup-notifications{
+        transition: transform .3s ease-in;        
+        transform: translateX(#{$popup-notifications-width+$popup-notifications-right});
+    }
+
+
+}
+
+.nav-icon-3.opennav1{     
+    .arrow-div,.popup-notifications{
+        transform: translateX(0);
+    }
+
+     
+}
+//-----------------------------notification popup animation end--------------------------//
+
+/*-----------------------------------------responsive nav properties--------------------------------------------*/
+@media screen and (max-width:$menuMobileMax ){
+    nav.sidebar.top,nav.sidebar.navbar{
+        display: none;
+    }
+    main {
+        padding-top: 0;
+        padding-left: 0;        
+    }
+}
+/*-----------------------------------------responsive nav properties end--------------------------------------------*/
+
+
 
   

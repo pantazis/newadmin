@@ -124,6 +124,7 @@ $("li.nav-list-item2").each(function(){
 
 menu_subcategory_open (".nav-list-item","opennav1",".custom-popup");
 menu_subcategory_open (".nav-list-item2","opennav1",".sub-category");
+menu_subcategory_open (".nav-icon-3","opennav1",".popup-notifications");
 
 
 

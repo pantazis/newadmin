@@ -12,6 +12,7 @@
 </head>
 <body>
     <?php include "./_include/nav.php" ?>
+    <?php include "./_include/mobile-nav.php" ?>
     <main role="main">
 
       <section class="jumbotron text-center">

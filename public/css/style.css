@@ -9525,9 +9525,9 @@ nav.sidebar.top {
     left: 0.25rem; }
     nav.sidebar.top .nav-list.list1 .custom-popup {
       position: absolute;
-      top: 4.3125em;
+      top: 5.305rem;
       text-align: center;
-      border-radius: 0.3125em;
+      border-radius: 10px;
       padding: 0;
       background: #fff;
       overflow: hidden; }
@@ -9790,8 +9790,9 @@ input.search-top {
   width: 475px;
   background: #fff;
   position: fixed;
-  top: 85px;
-  right: 9px; }
+  top: 5.305rem;
+  right: 9px;
+  border-radius: 10px; }
 
 span.text1 {
   line-height: 2.6; }
@@ -9853,6 +9854,22 @@ span.text1 {
   .message:last-of-type {
     margin-bottom: 0; }
 
+.nav-icon-3 .arrow-div, .nav-icon-3 .popup-notifications {
+  transition: transform .3s ease-in;
+  transform: translateX(484px); }
+
+.nav-icon-3.opennav1 .arrow-div, .nav-icon-3.opennav1 .popup-notifications {
+  transform: translateX(0); }
+
+/*-----------------------------------------responsive nav properties--------------------------------------------*/
+@media screen and (max-width: 1000px) {
+  nav.sidebar.top, nav.sidebar.navbar {
+    display: none; }
+
+  main {
+    padding-top: 0;
+    padding-left: 0; } }
+/*-----------------------------------------responsive nav properties end--------------------------------------------*/
 .roboto-medium-13px-light_grey {
   color: #cacad5; }
 

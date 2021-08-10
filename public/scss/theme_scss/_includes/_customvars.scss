@@ -1,2 +1,6 @@
-$menuMobileMax: 1000px;
-$menuDesktopMin: $menuMobileMax + 1px;
+
+$menuMobileMax: 800px;
+$menuTabletMax:1440px;
+$menuDesktopMin:$menuTabletMax+1px;
+$menutabletmin:$menuMobileMax + 1px;
+

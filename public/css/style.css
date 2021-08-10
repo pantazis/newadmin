@@ -9442,10 +9442,11 @@ nav.sidebar.navbar {
   justify-content: flex-start;
   width: 15.5rem;
   transition-property: width;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 4.68rem;
   left: 0;
+  bottom: 0;
   z-index: 0;
   padding-top: 1.28125rem;
   overflow: hidden; }
@@ -9908,6 +9909,9 @@ span.text1 {
   nav.sidebar.top .nav-list.search {
     display: none; } }
 @media screen and (max-width: 1440px) {
+  body.openMenuLeft {
+    overflow: hidden; }
+
   .close-menu-cont {
     display: block;
     position: absolute;
@@ -9924,7 +9928,8 @@ span.text1 {
     z-index: 2;
     display: flex;
     transition-property: width;
-    border-right: 0px; }
+    border-right: 0px;
+    overflow: auto; }
 
   .openMenuLeft nav.sidebar.navbar {
     width: 100%;

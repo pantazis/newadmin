@@ -9,6 +9,8 @@ $border-radius:0.625rem; /* 10px */
 html{   
 font-size: 0.7813vw;  
 }
+
+
 .close-menu{
     fill:$ice;
 }
@@ -66,10 +68,11 @@ nav.sidebar.navbar {
     justify-content: flex-start;
     width: $sidebarWidth;
     transition-property: width;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top:  $navSidebarTop;
-    left: 0;
+    left: 0;    
+    bottom: 0;
     z-index: 0;
     padding-top: 1.28125rem;
     overflow: hidden;
@@ -726,6 +729,9 @@ span.text1 {
 
 
 @media screen and (max-width:$menuTabletMax ){
+    body.openMenuLeft{
+        overflow: hidden;
+    }
     .close-menu-cont{
         display: block;     
         position: absolute;
@@ -747,6 +753,7 @@ span.text1 {
     display:flex;
     transition-property:width ;
     border-right:0px;
+    overflow:auto;
     }
     .openMenuLeft nav.sidebar.navbar{       
         width: 100%;

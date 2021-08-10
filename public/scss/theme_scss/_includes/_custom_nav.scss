@@ -11,6 +11,8 @@ font-size: 0.7813vw;
 }
 
 
+
+
 .close-menu{
     fill:$ice;
 }
@@ -729,6 +731,14 @@ span.text1 {
 
 
 @media screen and (max-width:$menuTabletMax ){
+    nav.sidebar.navbar li.nav-list-item2 .nav-text2.title  {
+        font-size: 20px;
+        width: 100%;
+        justify-content: center;
+        font-weight: 700;
+        margin-bottom: 49px;
+    }
+
     body.openMenuLeft{
         overflow: hidden;
     }

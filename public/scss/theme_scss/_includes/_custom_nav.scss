@@ -146,6 +146,9 @@ nav.sidebar.navbar {
         display: flex;
         font-size: 0.9375rem; /* 15px */
         flex-grow: 1;
+        &.title{
+            display:none
+        }
         
       
         span.arrow-right {
@@ -737,6 +740,7 @@ span.text1 {
         justify-content: center;
         font-weight: 700;
         margin-bottom: 49px;
+        display:flex;
     }
 
     body.openMenuLeft{
@@ -822,6 +826,43 @@ main {
        display:none;
     }
   
+}
+
+
+@media screen and (max-width:$menuTabletMax ) and (min-width:$menuTabletMin ){
+
+nav.sidebar.navbar li.nav-list-item2 .nav-text2.title {
+    font-size: 25px;   
+    margin-bottom: 61.25px;
+   
+}
+nav.sidebar.navbar .img-box span.nav-icons-side {
+ 
+    font-size: 1.875rem;
+}
+nav.sidebar.navbar li.nav-list-item2 .nav-text2 {
+
+    font-size: 1.17rem;
+
+}
+
+nav.sidebar.navbar li.nav-list-item2.subcategory .nav-text2 span.arrow-right .icon-fi-sr-angle-right {
+    font-size: 1.17rem;
+ 
+}
+nav.sidebar.navbar li.nav-list-item2{
+    width:19.375rem;
+
+}
+
+nav.sidebar.navbar .img-box {
+    height: 5.85rem;
+    width:6.015rem;
+}
+
+
+
+
 }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
 

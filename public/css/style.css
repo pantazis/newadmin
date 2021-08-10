@@ -9496,6 +9496,8 @@ nav.sidebar.navbar {
       font-size: 0.9375rem;
       /* 15px */
       flex-grow: 1; }
+      nav.sidebar.navbar li.nav-list-item2 .nav-text2.title {
+        display: none; }
       nav.sidebar.navbar li.nav-list-item2 .nav-text2 span.arrow-right {
         position: absolute;
         font-size: 0.9375rem;
@@ -9914,7 +9916,8 @@ span.text1 {
     width: 100%;
     justify-content: center;
     font-weight: 700;
-    margin-bottom: 49px; }
+    margin-bottom: 49px;
+    display: flex; }
 
   body.openMenuLeft {
     overflow: hidden; }
@@ -9972,6 +9975,26 @@ span.text1 {
 @media screen and (max-width: 800px) {
   nav.sidebar.top .nav-list-item:first-of-type {
     display: none; } }
+@media screen and (max-width: 1440px) and (min-width: 801px) {
+  nav.sidebar.navbar li.nav-list-item2 .nav-text2.title {
+    font-size: 25px;
+    margin-bottom: 61.25px; }
+
+  nav.sidebar.navbar .img-box span.nav-icons-side {
+    font-size: 1.875rem; }
+
+  nav.sidebar.navbar li.nav-list-item2 .nav-text2 {
+    font-size: 1.17rem; }
+
+  nav.sidebar.navbar li.nav-list-item2.subcategory .nav-text2 span.arrow-right .icon-fi-sr-angle-right {
+    font-size: 1.17rem; }
+
+  nav.sidebar.navbar li.nav-list-item2 {
+    width: 19.375rem; }
+
+  nav.sidebar.navbar .img-box {
+    height: 5.85rem;
+    width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
 .roboto-medium-13px-light_grey {
   color: #cacad5; }

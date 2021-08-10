@@ -9,6 +9,9 @@ $border-radius:0.625rem; /* 10px */
 html{   
 font-size: 0.7813vw;  
 }
+.close-menu{
+    fill:$ice;
+}
 
 .logo-button{
     position: fixed;
@@ -21,6 +24,9 @@ font-size: 0.7813vw;
     height: 144px;
 
     }
+}
+.close-menu-cont{
+    display: none;
 }
 
 .navbar{
@@ -720,6 +726,35 @@ span.text1 {
 
 
 @media screen and (max-width:$menuTabletMax ){
+    .close-menu-cont{
+        display: block;     
+        position: absolute;
+        top: 0;
+        right: 0;
+       
+    }
+    nav.sidebar.navbar li.nav-list-item2 {
+
+    }
+    nav.sidebar.navbar{        
+    align-items: center;
+    justify-content: center;
+    width: 0;  
+    height: 100vh;         
+    top: 0;
+    left: 0;  
+    z-index: 2;
+    display:flex;
+    transition-property:width ;
+    border-right:0px;
+    }
+    .openMenuLeft nav.sidebar.navbar{       
+        width: 100%;
+        border-right: 10px solid $ice;
+    }
+
+
+
     nav.sidebar.top .nav-list-item:first-of-type {
         padding-left: 94px;
     }
@@ -745,9 +780,7 @@ nav.sidebar.top .nav-list.search{
     display: none;
 
 }
-nav.sidebar.navbar{
-    display: none;
-}
+
 main {
     padding-top: 0;
     padding-left: 0;        
@@ -762,6 +795,10 @@ main {
 
 
 @media screen and (max-width:$menuMobileMax ){
+
+
+    
+    
    
     nav.sidebar.top .nav-list-item:first-of-type{
        display:none;

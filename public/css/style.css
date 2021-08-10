@@ -9400,6 +9400,9 @@ textarea.form-control-lg {
 html {
   font-size: 0.7813vw; }
 
+.close-menu {
+  fill: #efeff6; }
+
 .logo-button {
   position: fixed;
   top: 0;
@@ -9409,6 +9412,9 @@ html {
   .logo-button img {
     width: 74px;
     height: 144px; }
+
+.close-menu-cont {
+  display: none; }
 
 .navbar {
   padding: 0; }
@@ -9902,6 +9908,28 @@ span.text1 {
   nav.sidebar.top .nav-list.search {
     display: none; } }
 @media screen and (max-width: 1440px) {
+  .close-menu-cont {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+  nav.sidebar.navbar {
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    transition-property: width;
+    border-right: 0px; }
+
+  .openMenuLeft nav.sidebar.navbar {
+    width: 100%;
+    border-right: 10px solid #efeff6; }
+
   nav.sidebar.top .nav-list-item:first-of-type {
     padding-left: 94px; }
 
@@ -9921,9 +9949,6 @@ span.text1 {
     display: none; }
 
   nav.sidebar.top .nav-list.search {
-    display: none; }
-
-  nav.sidebar.navbar {
     display: none; }
 
   main {

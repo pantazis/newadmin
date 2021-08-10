@@ -6,6 +6,18 @@
         $("body").toggleClass("closeNav")
     });
 
+    $(".logo-button").click(function () {
+        $("body").addClass("openMenuLeft");
+    });
+
+    $("nav.sidebar.navbar").click(function(e){                
+       if( $(e.target).closest(".side-nav-list").length==0){
+          $("body").removeClass("openMenuLeft"); 
+       }
+    }); 
+
+
+
 
     $("a.btn.btn-primary.my-2").click(function (event) {        
         event.preventDefault(),
@@ -38,10 +50,6 @@
         top_nav.parent_Element = parent_Element;
         top_nav.listChildElement = listChildElement;
         top_nav.class = open_class;
-        
-
-     
-        
         
          
         if(top_nav.arr.length>1){
@@ -92,7 +100,7 @@ $("body").click(function(e){
    // top_nav.class;
 
 
-   console.log(top_nav.parent_Element);
+  
 
   
 

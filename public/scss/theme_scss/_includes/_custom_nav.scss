@@ -800,16 +800,30 @@ span.text1 {
         overflow: hidden;
     }
     .close-menu-cont{
+        $hidenW: -116px;
         display: block;
         position: fixed;
         top: 0;
-        right: -116px;
+        right:$hidenW;
         bottom:0;
         z-index: 1;
         width: 4.625rem;
         height:100%;
         border-right: 10px solid $ice;
         transition: .3s right;
+        .right{
+            left:$hidenW;
+            right:auto;
+
+        }
+
+/*1212323*/
+
+
+
+    
+     
+
 
         .relative {
             width: 100%;
@@ -831,10 +845,7 @@ span.text1 {
        
     }
 
-    .openMenuLeft .close-menu-cont {
-        right: 0px;
-
-    }
+   
    
        
        
@@ -845,8 +856,7 @@ span.text1 {
     padding-top: 0;        
     align-items: center;
     justify-content: center;
-    width: 0; 
-           
+    width: 0;
     top: 0;
     left: 0;  
     z-index: 2;
@@ -854,9 +864,9 @@ span.text1 {
     transition-property:width ;
     border-right:0rem; /* 0px */
     overflow:auto;
-    &.right{
+    &.right{        
         left: auto;
-        right: 0;
+        right: 0;      
 
     }
     }
@@ -911,7 +921,19 @@ main {
 }
 .logo{
     display:none;
+}/*
+.close-menu-cont.right {   
+        right: auto;
+        left: 0;
+        border-right: 0;
+        border-left: 10px solid $black_blue;
+    
 }
+.close-menu-cont.left {
+    right: 0;
+    left: auto;
+}*/
+
 } 
 
 

@@ -9963,7 +9963,11 @@ span.text1 {
     width: 4.625rem;
     height: 100%;
     border-right: 10px solid #efeff6;
-    transition: .3s right; }
+    transition: .3s right;
+    /*1212323*/ }
+    .close-menu-cont .right {
+      left: -116px;
+      right: auto; }
     .close-menu-cont .relative {
       width: 100%;
       height: 100%;
@@ -9973,9 +9977,6 @@ span.text1 {
       height: 218px;
       position: absolute;
       right: 0; }
-
-  .openMenuLeft .close-menu-cont {
-    right: 0px; }
 
   nav.sidebar.navbar {
     padding-top: 0;
@@ -10032,7 +10033,20 @@ span.text1 {
     padding-left: 0; }
 
   .logo {
-    display: none; } }
+    display: none; }
+
+ /*
+.close-menu-cont.right {   
+        right: auto;
+        left: 0;
+        border-right: 0;
+        border-left: 10px solid $black_blue;
+    
+}
+.close-menu-cont.left {
+    right: 0;
+    left: auto;
+}*/ }
 @media screen and (max-width: 800px) {
   html {
     font-size: 3.5vw; }

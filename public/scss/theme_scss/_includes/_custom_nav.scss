@@ -9,23 +9,40 @@ $border-radius:0.625rem; /* 10px */
 html{   
 font-size: 0.7813vw;  
 }
+
+.nav-text1{
+    display: flex;
+    align-items: center;
+    font-size: 0.8125rem;
+    color: $black_blue;
+    > span{
+        .first-el &{
+            font-weight: bold;
+    
+        }
+
+    }
+  
+
+    
+}
 .side-nav-list{
 .nav-text1 span.light {
-    width: 10px;
-    height: 10px;   
-    border-radius: 5px;  
+    width: 0.625rem; /* 10px */
+    height: 0.625rem; /* 10px */   
+    border-radius: 0.3125rem; /* 5px */  
     margin-right: 0.625em;
-    flex-basis: 14px;
+    flex-basis: 0.875rem; /* 14px */
 }
 .user_name{
-    font-size: 19px;
+    font-size: 1.1875rem; /* 19px */
     word-break: normal;
     white-space: nowrap;
 
 }
 .icon-t {
-    font-size: 26px;
-    margin-left: 32px;
+    font-size: 1.625rem; /* 26px */
+    margin-left: 2rem; /* 32px */
 }
 
 
@@ -50,8 +67,8 @@ font-size: 0.7813vw;
     z-index: 1;
     display:none;
     img{
-        width: 74px;
-    height: 144px;
+        width: 4.625rem; /* 74px */
+    height: 9rem; /* 144px */
 
     }
 }
@@ -749,7 +766,7 @@ span.text1 {
 //-----------------------------notification popup animation end--------------------------//
 
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
-@media screen and (max-width:1640px) {
+@media screen and (max-width:102.5rem /* 1640px */) {
     nav.sidebar.top .nav-list.user-icons .nav-icon-3.tablet-only.search-icon{
         display: flex;
 
@@ -769,25 +786,26 @@ span.text1 {
         display: flex;
     }
     nav.sidebar.navbar li.nav-list-item2 .nav-text2.title  {
-        font-size: 20px;
+        font-size: 1.25rem; /* 20px */
         width: 100%;
         justify-content: center;
         font-weight: 700;
-        margin-bottom: 49px;
+        margin-bottom: 3.0625rem; /* 49px */
         display:flex;
     }
 
-    body.openMenuLeft{
+    body.openMenuLeft,body.openMenuRight{
         overflow: hidden;
     }
     .close-menu-cont{
         display: block;     
         position: absolute;
-        top: 20px;
-        right: 9px;
+        top: 1.25rem; /* 20px */
+        right: 0.5625rem; /* 9px */
+        z-index:1;
         .right &{
             right: auto;
-            left:9px;
+            left:0.5625rem; /* 9px */
         }
        
     }
@@ -803,7 +821,7 @@ span.text1 {
     z-index: 2;
     display:flex;
     transition-property:width ;
-    border-right:0px;
+    border-right:0rem; /* 0px */
     overflow:auto;
     &.right{
         left: auto;
@@ -813,7 +831,7 @@ span.text1 {
     }
     .openMenuLeft nav.sidebar.navbar{       
         width: 100%;
-        border-right: 10px solid $ice;
+        border-right: 0.625rem /* 10px */ solid $ice;
         &.right{
             width: 0;
             border-right: 0;
@@ -825,13 +843,13 @@ span.text1 {
     }
     .openMenuRight nav.sidebar.navbar.right{ 
         width: 100%;
-        border-right: 10px solid $ice; 
+        border-right: 0.625rem /* 10px */ solid $ice; 
     }     
 
 
 
     nav.sidebar.top .nav-list-item:first-of-type {
-        padding-left: 94px;
+        padding-left: 5.875rem; /* 94px */
     }
  
     .logo-button{
@@ -870,6 +888,23 @@ main {
 
 
 @media screen and (max-width:$menuMobileMax ){
+    html {
+        font-size: 3.5vw;
+    }
+    .nav-text1{
+        flex-wrap: wrap;
+
+    }
+    .side-nav-list .nav-text1 span.light {
+        flex-basis: 0.625rem; /* 10px */
+    }
+    .side-nav-list .icon-t {
+        font-size: 1.625rem; /* 26px */
+         margin-left: 0;
+        width: 50%;
+        text-align: center;
+        margin-top: 2.75rem; /* 44px */
+    }
 
 
     
@@ -885,8 +920,8 @@ main {
 @media screen and (max-width:$menuTabletMax ) and (min-width:$menuTabletMin ){
 
 nav.sidebar.navbar li.nav-list-item2 .nav-text2.title {
-    font-size: 25px;   
-    margin-bottom: 61.25px;
+    font-size: 1.5625rem; /* 25px */   
+    margin-bottom: 3.8281rem; /* 61.25px */
    
 }
 nav.sidebar.navbar .img-box span.nav-icons-side {

@@ -222,8 +222,10 @@ $arr2 = [
         
         <div class="nav-text2 title">
         <span class="nav-text1">
+      
         <span class="light"></span>
-        <span class="user_name">An Ubavicious Ubavicious</span>
+        <span class="user_name">An Ubavicious</span>
+    
         <span class="icon-fi-sr-sign-out icon-t"></span> 
         <span class="icon-fi-sr-power icon-t"></span>
         

@@ -131,7 +131,7 @@ input.search-top {
    position:absolute;
    top:0;
    right:0;
-   width:10px;
+   width:0.625rem; /* 10px */
    bottom:0;
    height:100%;
    background-color:$ice;
@@ -146,7 +146,7 @@ input.search-top {
      position:absolute;
      top:0;
      left:0;
-     width:10px;
+     width:0.625rem; /* 10px */
      bottom:0;
      height:100%;
      background-color:$black_blue;

@@ -5,7 +5,7 @@
 
 }
 .side-nav-list span.icon-fi-sr-sign-out.icon-t{
-   color:$dark_blue;
+   color:$dark_blue ;
 
 }
 
@@ -67,7 +67,7 @@ nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
 nav.sidebar.top .nav-list-item span.user_mail {
   color: $black_blue;
 }
-body:not(.closeNav)
+:not(.closeNav)
   nav.sidebar.navbar
   li.nav-list-item2.nav-list-item2.opennav1,
 body.closeNav.hover
@@ -136,6 +136,166 @@ nav.sidebar.top {
   background: $ice;
 }
 
+
+
+/*Dark Mode*/
+
+
 .dark {
-   
+
+  
+.side-nav-list span.icon-fi-sr-power.icon-t{
+  color:$red2;
+
+}
+.side-nav-list span.icon-fi-sr-sign-out.icon-t{
+  color:$dark_blue ;
+
+}
+
+nav.sidebar.navbar {
+ background: $black_blue;
+ .close-menu {
+  fill: $ice;
+}
+.arrow {
+fill: $black_blue;
+}
+}
+nav.sidebar.navbar.right {
+  background: $white;
+  .close-menu {
+     fill: $black_blue;
+ }
+ .arrow {
+  fill: $white;
+}
+}
+nav.sidebar.top {
+ background-color: $black_blue;
+}
+.logo {
+ background: $bluedarkbl;
+}
+.nav-text1 {
+ color: $white;
+}
+.navdown {
+ color: $light_grey;
+}
+nav.sidebar.navbar li.nav-list-item2 {
+ color: $light_grey;
+
+}
+nav.sidebar.navbar.right li.nav-list-item2 {
+  color: $black_blue;
+ 
+}
+
+nav.sidebar.navbar .img-box span.nav-icons-side {
+ color: $light_grey;
+}
+nav.sidebar.navbar.right .img-box span.nav-icons-side {
+  color: $black_blue;
+}
+nav.sidebar.top {
+ background: $green2;
+}
+nav.sidebar.top .nav-list.list1 .custom-popup {
+ background: $white;
+}
+nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
+ background: $red2;
+ color: $white;
+}
+nav.sidebar.top .nav-list-item span.user_mail {
+ color: $black_blue;
+}
+&:not(.closeNav)
+ nav.sidebar.navbar
+ li.nav-list-item2.nav-list-item2.opennav1,
+&.closeNav.hover
+ nav.sidebar.navbar
+ li.nav-list-item2.nav-list-item2.opennav1 {
+ color: $white;
+ background: $bluedarkbl;
+}
+&:not(.closeNav)
+ nav.sidebar.navbar
+ li.nav-list-item2.nav-list-item2.opennav1
+ a,
+&.closeNav.hover
+ nav.sidebar.navbar
+ li.nav-list-item2.nav-list-item2.opennav1
+ a {
+ color: $light_grey;
+}
+&:not(.closeNav)
+ nav.sidebar.navbar
+ li.nav-list-item2.nav-list-item2.opennav1
+ .img-box
+ span.nav-icons-side,
+&.closeNav.hover
+ nav.sidebar.navbar
+ li.nav-list-item2.nav-list-item2.opennav1
+ .img-box
+ span.nav-icons-side {
+ color: $white;
+}
+input.search-top {
+ border: 0.025rem solid $bluedarkbl;
+}
+.search-cont {
+ border: 0.025rem solid $bluedarkbl;
+ background-color: $white;
+}
+.arrow-div {
+ background-color: $bluedarkbl;
+}
+.popup-notifications {
+ background: $bluedarkbl;
+}
+.message {
+ background: $blue_grey;
+}
+.message.color1 {
+ border-color: $red;
+}
+.message.color2 {
+ border-color: $orange2;
+}
+.message.color3 {
+ border-color: $green2;
+}
+
+
+nav.sidebar.navbar {
+ background: $black_blue;
+}
+
+nav.sidebar.top {
+ background-color:$black_blue;
+}
+.logo {
+ background: $bluedarkbl;
+}
+  
+.logo-text {
+  color: $white
+
+}
+
+span.text1{
+  color: $white
+}
+
+.rel-icon {
+  color: $white
+}
+
+.flex-c {
+    color:$white
+
+}
+
 }

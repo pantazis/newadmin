@@ -9955,19 +9955,27 @@ span.text1 {
 
   .close-menu-cont {
     display: block;
-    position: absolute;
-    top: 1.25rem;
-    /* 20px */
-    right: 0.5625rem;
-    /* 9px */
-    z-index: 1; }
+    position: fixed;
+    top: 0;
+    right: -116px;
+    bottom: 0;
+    z-index: 1;
+    width: 4.625rem;
+    height: 100%;
+    border-right: 10px solid #efeff6;
+    transition: .3s right; }
+    .close-menu-cont .relative {
+      width: 100%;
+      height: 100%;
+      position: relative; }
     .close-menu-cont svg {
-      width: 4.625rem;
-      height: 9rem; }
-    .right .close-menu-cont {
-      right: auto;
-      left: 0.5625rem;
-      /* 9px */ }
+      width: 105px;
+      height: 218px;
+      position: absolute;
+      right: 0; }
+
+  .openMenuLeft .close-menu-cont {
+    right: 0px; }
 
   nav.sidebar.navbar {
     padding-top: 0;
@@ -10182,30 +10190,6 @@ input.search-top {
 
 .message.color3 {
   border-color: #18bf93; }
-
-nav.sidebar.navbar::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0.625rem;
-  /* 10px */
-  bottom: 0;
-  height: 100%;
-  background-color: #efeff6; }
-
-nav.sidebar.navbar.right::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0.625rem;
-  /* 10px */
-  bottom: 0;
-  height: 100%;
-  background-color: #0e0c28; }
 
 nav.sidebar.navbar {
   background: #0e0c28; }

@@ -123,35 +123,8 @@ input.search-top {
 .message.color3 {
   border-color: $green2;
 }
- nav.sidebar.navbar {
- // $ice;
- &::after{
-   content: " ";
-   display: block;
-   position:absolute;
-   top:0;
-   right:0;
-   width:0.625rem; /* 10px */
-   bottom:0;
-   height:100%;
-   background-color:$ice;
-}
-}
- nav.sidebar.navbar.right {
-   
-  // $black_blue;
-  &::after{
-     content: " ";
-     display: block;
-     position:absolute;
-     top:0;
-     left:0;
-     width:0.625rem; /* 10px */
-     bottom:0;
-     height:100%;
-     background-color:$black_blue;
-  }
-}
+
+ 
 nav.sidebar.navbar {
   background: $black_blue;
 }

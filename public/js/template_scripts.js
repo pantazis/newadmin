@@ -8,13 +8,21 @@
 
     $(".logo-button").click(function () {
         $("body").addClass("openMenuLeft");
+        $("body").removeClass("openMenuRight"); 
     });
 
     $("nav.sidebar.navbar").click(function(e){                
        if( $(e.target).closest(".side-nav-list").length==0){
-          $("body").removeClass("openMenuLeft"); 
+          $("body").removeClass("openMenuLeft");
+          $("body").removeClass("openMenuRight"); 
        }
-    }); 
+    });
+    
+    $(".fi-sr-menu-burger").click(function(){
+        $("body").addClass("openMenuRight");
+        $("body").removeClass("openMenuLeft");    
+
+    })
 
 
 
@@ -43,6 +51,7 @@
     top_nav.open_class = [];
 
     function menu_subcategory_open (parent_Element,open_class,listChildElement){
+       
         
  
     $(parent_Element).click(function(){ 
@@ -75,7 +84,7 @@
             top_nav.num=0;
         } 
 
-        console.log(top_nav.num);
+     
         
         if(top_nav.num%2==0){
            

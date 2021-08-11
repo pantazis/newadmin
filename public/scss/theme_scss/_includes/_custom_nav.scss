@@ -78,6 +78,9 @@ nav.sidebar.navbar {
     z-index: 0;
     padding-top: 1.28125rem;
     overflow: hidden;
+    &.right{
+        display: none;
+    }
 
     .closeNav.hover &{        
       width:$sidebarWidth;        
@@ -92,7 +95,7 @@ nav.sidebar.navbar {
     li.nav-list-item2 {
         width: $sidebarWidth;      
         display: flex;
-        color: #CACAD5;
+        color:   $light_grey;
         flex-wrap: wrap;
         cursor: pointer;
         transition: padding-left  .3s, background .3s;
@@ -734,6 +737,9 @@ span.text1 {
 
 
 @media screen and (max-width:$menuTabletMax ){
+    nav.sidebar.navbar.right {
+        display: flex;
+    }
     nav.sidebar.navbar li.nav-list-item2 .nav-text2.title  {
         font-size: 20px;
         width: 100%;
@@ -769,11 +775,28 @@ span.text1 {
     transition-property:width ;
     border-right:0px;
     overflow:auto;
+    &.right{
+        left: auto;
+        right: 0;
+
+    }
     }
     .openMenuLeft nav.sidebar.navbar{       
         width: 100%;
         border-right: 10px solid $ice;
+        &.right{
+            width: 0;
+            border-right: 0;
+
+
+        }
+       
+         
     }
+    .openMenuRight nav.sidebar.navbar.right{ 
+        width: 100%;
+        border-right: 10px solid $ice; 
+    }     
 
 
 

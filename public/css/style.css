@@ -9450,6 +9450,8 @@ nav.sidebar.navbar {
   z-index: 0;
   padding-top: 1.28125rem;
   overflow: hidden; }
+  nav.sidebar.navbar.right {
+    display: none; }
   .closeNav.hover nav.sidebar.navbar {
     width: 15.5rem; }
   nav.sidebar.navbar ul.side-nav-list {
@@ -9459,7 +9461,7 @@ nav.sidebar.navbar {
   nav.sidebar.navbar li.nav-list-item2 {
     width: 15.5rem;
     display: flex;
-    color: #CACAD5;
+    color: #cacad5;
     flex-wrap: wrap;
     cursor: pointer;
     transition: padding-left  .3s, background .3s; }
@@ -9911,6 +9913,9 @@ span.text1 {
   nav.sidebar.top .nav-list.search {
     display: none; } }
 @media screen and (max-width: 1440px) {
+  nav.sidebar.navbar.right {
+    display: flex; }
+
   nav.sidebar.navbar li.nav-list-item2 .nav-text2.title {
     font-size: 20px;
     width: 100%;
@@ -9940,8 +9945,18 @@ span.text1 {
     transition-property: width;
     border-right: 0px;
     overflow: auto; }
+    nav.sidebar.navbar.right {
+      left: auto;
+      right: 0; }
 
   .openMenuLeft nav.sidebar.navbar {
+    width: 100%;
+    border-right: 10px solid #efeff6; }
+    .openMenuLeft nav.sidebar.navbar.right {
+      width: 0;
+      border-right: 0; }
+
+  .openMenuRight nav.sidebar.navbar.right {
     width: 100%;
     border-right: 10px solid #efeff6; }
 
@@ -9996,140 +10011,16 @@ span.text1 {
     height: 5.85rem;
     width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
-.roboto-medium-13px-light_grey {
-  color: #cacad5; }
-
-.roboto-medium-13px-ice {
-  color: #efeff6; }
-
-.roboto-regular-15px-black_blue {
-  color: #0e0c28; }
-
-.roboto-bold-30px-black_blue {
-  color: #0e0c28; }
-
-.roboto-bold-27px-green2 {
-  color: #18bf93; }
-
-.roboto-medium-37px-black_blue {
-  color: #0e0c28; }
-
-.breadcrump-blue_grey {
-  color: #9a9ab4; }
-
-.active-tab-black_blue {
-  color: #0e0c28; }
-
-.tab-label-active-black_blue {
-  color: #0e0c28; }
-
-.roboto-bold-14px-black_blue {
-  color: #0e0c28; }
-
-.table-row-labels-black_blue {
-  color: #0e0c28; }
-
-.table-row-data-black_blue {
-  color: #0e0c28; }
-
-.roboto-medium-9px-light_grey {
-  color: #cacad5; }
-
-.roboto-medium-14px-green2 {
-  color: #18bf93; }
-
-.roboto-medium-14px-blue_purple {
-  color: #5b5bdc; }
-
-.roboto-bold-16px-ice {
-  color: #efeff6; }
-
-.roboto-bold-16px-blue_purple {
-  color: #5b5bdc; }
-
-.roboto-bold-16px-green2 {
-  color: #18bf93; }
-
-.roboto-bold-16px-red2 {
-  color: #d83438; }
-
-.roboto-regular-13px-black_blue {
-  color: #0e0c28; }
-
-.roboto-bold-13px-black_blue {
-  color: #0e0c28; }
-
-.roboto-regular-13px-light_grey {
-  color: #cacad5; }
-
-.label-text-form-light_grey {
-  color: #cacad5; }
-
-.roboto-bold-15px-green2 {
-  color: #18bf93; }
-
-.roboto-regular-12px-red2 {
-  color: #d83438; }
-
 nav.sidebar.navbar {
   background: #0e0c28; }
+  nav.sidebar.navbar.right {
+    background: #492b2b; }
 
 nav.sidebar.top {
   background-color: #fff; }
 
 .logo {
   background: #efeff6; }
-
-.dark .roboto-medium-13px-light_grey {
-  color: #cacad5; }
-.dark .roboto-medium-13px-ice {
-  color: #efeff6; }
-.dark .roboto-regular-15px-black_blue {
-  color: #0e0c28; }
-.dark .roboto-bold-30px-black_blue {
-  color: #0e0c28; }
-.dark .roboto-bold-27px-green2 {
-  color: #18bf93; }
-.dark .roboto-medium-37px-black_blue {
-  color: #0e0c28; }
-.dark .breadcrump-blue_grey {
-  color: #9a9ab4; }
-.dark .active-tab-black_blue {
-  color: #0e0c28; }
-.dark .tab-label-active-black_blue {
-  color: #0e0c28; }
-.dark .roboto-bold-14px-black_blue {
-  color: #0e0c28; }
-.dark .table-row-labels-black_blue {
-  color: #0e0c28; }
-.dark .table-row-data-black_blue {
-  color: #0e0c28; }
-.dark .roboto-medium-9px-light_grey {
-  color: #cacad5; }
-.dark .roboto-medium-14px-green2 {
-  color: #18bf93; }
-.dark .roboto-medium-14px-blue_purple {
-  color: #5b5bdc; }
-.dark .roboto-bold-16px-ice {
-  color: #efeff6; }
-.dark .roboto-bold-16px-blue_purple {
-  color: #5b5bdc; }
-.dark .roboto-bold-16px-green2 {
-  color: #18bf93; }
-.dark .roboto-bold-16px-red2 {
-  color: #d83438; }
-.dark .roboto-regular-13px-black_blue {
-  color: #0e0c28; }
-.dark .roboto-bold-13px-black_blue {
-  color: #0e0c28; }
-.dark .roboto-regular-13px-light_grey {
-  color: #cacad5; }
-.dark .label-text-form-light_grey {
-  color: #cacad5; }
-.dark .roboto-bold-15px-green2 {
-  color: #18bf93; }
-.dark .roboto-regular-12px-red2 {
-  color: #d83438; }
 
 @font-face {
   font-family: 'icomoon';

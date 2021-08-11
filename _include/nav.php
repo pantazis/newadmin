@@ -57,24 +57,25 @@
         </div>
         <div class="nav-list user-icons">
         <?php $arr=[
-        "icon-search",
-        "icon-fi-sr-bell1",
-        "icon-fi-sr-shopping-cart",
-        "icon-fi-sr-user",
-        "icon-fi-sr-menu-burger",       
+        "search",
+        "fi-sr-bell1",
+        "fi-sr-shopping-cart",
+        "fi-sr-user",
+        "fi-sr-menu-burger",       
         ];
       
         
         ?>
             <?php foreach($arr as $key => $val){ ?>
-                <div class="nav-icon-3  <?php if($key == 0 || $key == 4){ echo "tablet-only";}?> <?php if($key == 0 ){ echo "search-icon";}?> ">
+                <div class="nav-icon-3 <?=$val?>  <?php if($key == 0 || $key == 4){ echo "tablet-only";}?> <?php if($key == 0 ){ echo "search-icon";}?> ">
                     <div class="rel-icon">
                     <?php if($key == 1 || $key == 2){ ?>
                         <span class="num"><?=rand(1,99)?></span>
-                    <?php } ?>    
-                    <i class="<?=$val?>"></i>
+                    <?php } ?>
+                    
+                    <i class="icon-<?=$val?>"></i>
                     </div>                   
-                    <?php if($key ==0){?>
+                    <?php if($val =="fi-sr-bell1"){?>
                         <div class="arrow-div"></div>                                                
                         <div class="popup-notifications shadow-5-strong">
                             <div class="top-box box1">
@@ -143,6 +144,71 @@ $arr2 = [
 "Users",
 "Οικονομικά",
 "Προϊόντα"
+    ];
+
+
+
+
+?>
+<ul class="side-nav-list">
+<li class="nav-list-item2">
+        
+        <div class="nav-text2 title">
+            ADMIN MENU         
+        </div>
+               </li>
+<?php foreach($arr as $key => $value){ ?>
+    <li class="nav-list-item2">
+        <div class="img-box">
+            <span class="nav-icons-side icon-<?=$value?>" alt=""></span>           
+        </div>
+        <div class="nav-text2"><?=$arr2[$key]?>
+            <span class="arrow-right">
+                <div class="icon-fi-sr-angle-right"></div>
+            </span>
+        </div>
+           <?php if($key > 0 && $key < count($arr)-1   ){ ;?>
+         
+                <div class="sub-category">
+                    
+                
+                    <?php for($i = 0; $i < rand(3,7); $i++ ){ ?>
+                       
+                        <a href="#"><div class="list-pad">subcategory</div></a>
+                      
+                    <?php } ?>
+                               
+                </div>
+           
+            <?php } ?>
+    </li>
+<?php } ?>
+</ul>
+
+</nav>
+<nav class="sidebar navbar right">
+  
+   
+    <div class="close-menu-cont">
+    <svg class="close-menu" xmlns="http://www.w3.org/2000/svg" width="54.03" height="112.601" viewBox="0 0 54.03 112.601"><g transform="translate(-320.97 -4)"><path d="M0,56.278C0,40.251,12.709,26.584,30.548,21.309h0q1.407-.311,2.766-.74h0C43.6,17.323,54.03,9.337,54.03,0h0V112.6h0c0-9.6-10.838-17.769-21.581-20.829l-.009,0q-.494-.14-1-.266l-.006,0C13.134,86.424.87,75.022,0,56.278Z" transform="translate(320.97 4)" /><g transform="translate(344.718 51.035)"><path d="M.455,8.2,8.165.491a1.557,1.557,0,0,1,2.2,2.2L3.759,9.3l6.608,6.608a1.557,1.557,0,1,1-2.2,2.2L.455,10.4A1.556,1.556,0,0,1,.455,8.2Zm9.27-.467,6.121-6.451a1.519,1.519,0,0,1,2.226,0,1.722,1.722,0,0,1,0,2.346L13.064,8.906l5.008,5.278a1.722,1.722,0,0,1,0,2.346,1.519,1.519,0,0,1-2.226,0L9.725,10.079A1.722,1.722,0,0,1,9.725,7.733Z" transform="translate(0.001 -0.035)" fill="#0e0c28"/></g></g></svg>
+
+    </div>
+
+<?php $arr = [
+"fi-sr-user",
+"fi-sr-globe",
+"fi-sr-database",
+"fi-sr-shield-check",
+"fi-sr-money",
+
+];
+
+$arr2 = [
+"Λογαρισμός",
+"Domains",
+"Hosting",
+"SSL Certificates",
+"Οικονομικά",
     ];
 
 

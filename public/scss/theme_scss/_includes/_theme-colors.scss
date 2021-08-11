@@ -1,90 +1,12 @@
-//font colors
-
-	.roboto-medium-13px-light_grey{
-             color: $light_grey;
-          }
-    .roboto-medium-13px-ice{
-             color: $ice;
-          }
-    .roboto-regular-15px-black_blue{
-             color: $black_blue;
-          }
-    .roboto-bold-30px-black_blue{
-             color: $black_blue;
-          }
-    .roboto-bold-27px-green2{
-             color: $green2;
-          }
-    .roboto-medium-37px-black_blue{
-             color: $black_blue;
-          }
-   
-    .breadcrump-blue_grey{
-             color: $blue_grey;
-          }
-    .active-tab-black_blue{
-             color: $black_blue;
-          }
-    .tab-label-active-black_blue{
-             color: $black_blue;
-          }
-    .roboto-bold-14px-black_blue{
-             color: $black_blue;
-          }
-     
-    .table-row-labels-black_blue{
-             color: $black_blue;
-          }
-    .table-row-data-black_blue{
-             color: $black_blue;
-          }
-    .roboto-medium-9px-light_grey{
-             color: $light_grey;
-          }
-    .roboto-medium-14px-green2{
-             color: $green2;
-          }
-    .roboto-medium-14px-blue_purple{
-             color: $blue_purple;
-          }
-    .roboto-bold-16px-ice{
-             color: $ice;
-          }
-    .roboto-bold-16px-blue_purple{
-             color: $blue_purple;
-          }
-    .roboto-bold-16px-green2{
-             color: $green2;
-          }
-    .roboto-bold-16px-red2{
-             color: $red2;
-          }
-    .roboto-regular-13px-black_blue{
-             color: $black_blue;
-          }
-    .roboto-bold-13px-black_blue{
-             color: $black_blue;
-          }
-    .roboto-regular-13px-light_grey{
-             color: $light_grey;
-          }
-    .label-text-form-light_grey{
-             color: $light_grey;
-          }
-  
-    .roboto-bold-15px-green2{
-             color: $green2;
-          }
-    
-    .roboto-regular-12px-red2{
-             color: $red2;
-          }
-
 
 //nav menu colors
 
           nav.sidebar.navbar {         
             background: $black_blue;
+            &.right{
+               background:rgb(73, 43, 43);
+
+            }
         }
         
         nav.sidebar.top {          
@@ -100,86 +22,5 @@
 
 
       .dark{
-
-    .roboto-medium-13px-light_grey{
-             color: $light_grey;
-          }
-    .roboto-medium-13px-ice{
-             color: $ice;
-          }
-    .roboto-regular-15px-black_blue{
-             color: $black_blue;
-          }
-    .roboto-bold-30px-black_blue{
-             color: $black_blue;
-          }
-    .roboto-bold-27px-green2{
-             color: $green2;
-          }
-    .roboto-medium-37px-black_blue{
-             color: $black_blue;
-          }
-   
-    .breadcrump-blue_grey{
-             color: $blue_grey;
-          }
-    .active-tab-black_blue{
-             color: $black_blue;
-          }
-    .tab-label-active-black_blue{
-             color: $black_blue;
-          }
-    .roboto-bold-14px-black_blue{
-             color: $black_blue;
-          }
-     
-    .table-row-labels-black_blue{
-             color: $black_blue;
-          }
-    .table-row-data-black_blue{
-             color: $black_blue;
-          }
-    .roboto-medium-9px-light_grey{
-             color: $light_grey;
-          }
-    .roboto-medium-14px-green2{
-             color: $green2;
-          }
-    .roboto-medium-14px-blue_purple{
-             color: $blue_purple;
-          }
-    .roboto-bold-16px-ice{
-             color: $ice;
-          }
-    .roboto-bold-16px-blue_purple{
-             color: $blue_purple;
-          }
-    .roboto-bold-16px-green2{
-             color: $green2;
-          }
-    .roboto-bold-16px-red2{
-             color: $red2;
-          }
-    .roboto-regular-13px-black_blue{
-             color: $black_blue;
-          }
-    .roboto-bold-13px-black_blue{
-             color: $black_blue;
-          }
-    .roboto-regular-13px-light_grey{
-             color: $light_grey;
-          }
-    .label-text-form-light_grey{
-             color: $light_grey;
-          }
-  
-    .roboto-bold-15px-green2{
-             color: $green2;
-          }
-    
-    .roboto-regular-12px-red2{
-             color: $red2;
-          }
-      
 
       }

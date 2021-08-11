@@ -803,6 +803,11 @@ span.text1 {
         top: 1.25rem; /* 20px */
         right: 0.5625rem; /* 9px */
         z-index:1;
+       
+        svg{
+            width: 4.625rem;
+            height: 9rem;
+        }
         .right &{
             right: auto;
             left:0.5625rem; /* 9px */

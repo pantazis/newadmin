@@ -9961,6 +9961,9 @@ span.text1 {
     right: 0.5625rem;
     /* 9px */
     z-index: 1; }
+    .close-menu-cont svg {
+      width: 4.625rem;
+      height: 9rem; }
     .right .close-menu-cont {
       right: auto;
       left: 0.5625rem;

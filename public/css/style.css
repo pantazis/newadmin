@@ -9400,6 +9400,20 @@ textarea.form-control-lg {
 html {
   font-size: 0.7813vw; }
 
+.side-nav-list .nav-text1 span.light {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-right: 0.625em;
+  flex-basis: 14px; }
+.side-nav-list .user_name {
+  font-size: 19px;
+  word-break: normal;
+  white-space: nowrap; }
+.side-nav-list .icon-t {
+  font-size: 26px;
+  margin-left: 32px; }
+
 .close-menu {
   fill: #efeff6; }
 
@@ -9521,6 +9535,16 @@ nav.sidebar.navbar {
       color: #cacad5;
       font-size: 1.5rem; }
 
+.nav-text1 {
+  justify-content: center; }
+  .nav-text1 span.light {
+    width: 0.625em;
+    height: 0.625em;
+    background: #18bf93;
+    border-radius: 0.3125em;
+    box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2);
+    margin-right: 0.625em; }
+
 nav.sidebar.top {
   height: 4.68rem;
   position: fixed;
@@ -9529,15 +9553,6 @@ nav.sidebar.top {
   width: 100%;
   z-index: 1;
   display: flex; }
-  nav.sidebar.top .nav-text1 {
-    justify-content: center; }
-    nav.sidebar.top .nav-text1 span.light {
-      width: 0.625em;
-      height: 0.625em;
-      background: #18bf93;
-      border-radius: 0.3125em;
-      box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2);
-      margin-right: 0.625em; }
   nav.sidebar.top .nav-container {
     flex-grow: 1;
     display: flex; }
@@ -9930,8 +9945,11 @@ span.text1 {
   .close-menu-cont {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0; }
+    top: 20px;
+    right: 9px; }
+    .right .close-menu-cont {
+      right: auto;
+      left: 9px; }
 
   nav.sidebar.navbar {
     padding-top: 0;
@@ -10011,10 +10029,143 @@ span.text1 {
     height: 5.85rem;
     width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
+.side-nav-list span.icon-fi-sr-power.icon-t {
+  color: #d83438; }
+
+.side-nav-list span.icon-fi-sr-sign-out.icon-t {
+  color: #2e435e; }
+
 nav.sidebar.navbar {
   background: #0e0c28; }
-  nav.sidebar.navbar.right {
-    background: #492b2b; }
+  nav.sidebar.navbar .close-menu {
+    fill: #efeff6; }
+  nav.sidebar.navbar .arrow {
+    fill: #0e0c28; }
+
+nav.sidebar.navbar.right {
+  background: #fff; }
+  nav.sidebar.navbar.right .close-menu {
+    fill: #0e0c28; }
+  nav.sidebar.navbar.right .arrow {
+    fill: #fff; }
+
+nav.sidebar.top {
+  background-color: #fff; }
+
+.logo {
+  background: #efeff6; }
+
+.nav-text1 {
+  color: #0e0c28; }
+
+.navdown {
+  color: #cacad5; }
+
+nav.sidebar.navbar li.nav-list-item2 {
+  color: #cacad5; }
+
+nav.sidebar.navbar.right li.nav-list-item2 {
+  color: #0e0c28; }
+
+nav.sidebar.navbar .img-box span.nav-icons-side {
+  color: #cacad5; }
+
+nav.sidebar.navbar.right .img-box span.nav-icons-side {
+  color: #0e0c28; }
+
+nav.sidebar.top {
+  background: #18bf93; }
+
+nav.sidebar.top .nav-list.list1 .custom-popup {
+  background: #fff; }
+
+nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
+  background: #d83438;
+  color: #fff; }
+
+nav.sidebar.top .nav-list-item span.user_mail {
+  color: #0e0c28; }
+
+body:not(.closeNav)
+nav.sidebar.navbar
+li.nav-list-item2.nav-list-item2.opennav1,
+body.closeNav.hover
+nav.sidebar.navbar
+li.nav-list-item2.nav-list-item2.opennav1 {
+  color: #0e0c28;
+  background: #efeff6; }
+
+body:not(.closeNav)
+nav.sidebar.navbar
+li.nav-list-item2.nav-list-item2.opennav1
+a,
+body.closeNav.hover
+nav.sidebar.navbar
+li.nav-list-item2.nav-list-item2.opennav1
+a {
+  color: #0e0c28; }
+
+body:not(.closeNav)
+nav.sidebar.navbar
+li.nav-list-item2.nav-list-item2.opennav1
+.img-box
+span.nav-icons-side,
+body.closeNav.hover
+nav.sidebar.navbar
+li.nav-list-item2.nav-list-item2.opennav1
+.img-box
+span.nav-icons-side {
+  color: #0e0c28; }
+
+input.search-top {
+  border: 0.025rem solid #cacad5; }
+
+.search-cont {
+  border: 0.025rem solid #cacad5;
+  background-color: #efeff6; }
+
+.arrow-div {
+  background-color: #fff; }
+
+.popup-notifications {
+  background: #fff; }
+
+.message {
+  background: #efeff6; }
+
+.message.color1 {
+  border-color: #D83438; }
+
+.message.color2 {
+  border-color: #f08a24; }
+
+.message.color3 {
+  border-color: #18bf93; }
+
+nav.sidebar.navbar::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  bottom: 0;
+  height: 100%;
+  background-color: #efeff6; }
+
+nav.sidebar.navbar.right::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  bottom: 0;
+  height: 100%;
+  background-color: #0e0c28; }
+
+nav.sidebar.navbar {
+  background: #0e0c28; }
 
 nav.sidebar.top {
   background-color: #fff; }

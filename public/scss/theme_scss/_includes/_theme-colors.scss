@@ -1,26 +1,168 @@
-
 //nav menu colors
 
-          nav.sidebar.navbar {         
-            background: $black_blue;
-            &.right{
-               background:rgb(73, 43, 43);
+.side-nav-list span.icon-fi-sr-power.icon-t{
+   color:$red2;
 
-            }
-        }
-        
-        nav.sidebar.top {          
-            background-color: $white;         
-        }
-       
-        
-        .logo {        
-            background: $ice;
-        }
+}
+.side-nav-list span.icon-fi-sr-sign-out.icon-t{
+   color:$dark_blue;
+
+}
+
+nav.sidebar.navbar {
+  background: $black_blue;
+  .close-menu {
+   fill: $ice;
+}
+.arrow {
+fill: $black_blue;
+}
+}
+nav.sidebar.navbar.right {
+   background: $white;
+   .close-menu {
+      fill: $black_blue;
+  }
+  .arrow {
+   fill: $white;
+}
+ }
+nav.sidebar.top {
+  background-color: $white;
+}
+.logo {
+  background: $ice;
+}
+.nav-text1 {
+  color: $black_blue;
+}
+.navdown {
+  color: $light_grey;
+}
+nav.sidebar.navbar li.nav-list-item2 {
+  color: $light_grey;
+ 
+}
+nav.sidebar.navbar.right li.nav-list-item2 {
+   color: $black_blue;
+  
+ }
+
+nav.sidebar.navbar .img-box span.nav-icons-side {
+  color: $light_grey;
+}
+nav.sidebar.navbar.right .img-box span.nav-icons-side {
+   color: $black_blue;
+ }
+nav.sidebar.top {
+  background: $green2;
+}
+nav.sidebar.top .nav-list.list1 .custom-popup {
+  background: $white;
+}
+nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
+  background: $red2;
+  color: $white;
+}
+nav.sidebar.top .nav-list-item span.user_mail {
+  color: $black_blue;
+}
+body:not(.closeNav)
+  nav.sidebar.navbar
+  li.nav-list-item2.nav-list-item2.opennav1,
+body.closeNav.hover
+  nav.sidebar.navbar
+  li.nav-list-item2.nav-list-item2.opennav1 {
+  color: $black_blue;
+  background: $ice;
+}
+body:not(.closeNav)
+  nav.sidebar.navbar
+  li.nav-list-item2.nav-list-item2.opennav1
+  a,
+body.closeNav.hover
+  nav.sidebar.navbar
+  li.nav-list-item2.nav-list-item2.opennav1
+  a {
+  color: $black_blue;
+}
+body:not(.closeNav)
+  nav.sidebar.navbar
+  li.nav-list-item2.nav-list-item2.opennav1
+  .img-box
+  span.nav-icons-side,
+body.closeNav.hover
+  nav.sidebar.navbar
+  li.nav-list-item2.nav-list-item2.opennav1
+  .img-box
+  span.nav-icons-side {
+  color: $black_blue;
+}
+input.search-top {
+  border: 0.025rem solid $light_grey;
+}
+.search-cont {
+  border: 0.025rem solid $light_grey;
+  background-color: $ice;
+}
+.arrow-div {
+  background-color: $white;
+}
+.popup-notifications {
+  background: $white;
+}
+.message {
+  background: $ice;
+}
+.message.color1 {
+  border-color: $red;
+}
+.message.color2 {
+  border-color: $orange2;
+}
+.message.color3 {
+  border-color: $green2;
+}
+ nav.sidebar.navbar {
+ // $ice;
+ &::after{
+   content: " ";
+   display: block;
+   position:absolute;
+   top:0;
+   right:0;
+   width:10px;
+   bottom:0;
+   height:100%;
+   background-color:$ice;
+}
+}
+ nav.sidebar.navbar.right {
    
+  // $black_blue;
+  &::after{
+     content: " ";
+     display: block;
+     position:absolute;
+     top:0;
+     left:0;
+     width:10px;
+     bottom:0;
+     height:100%;
+     background-color:$black_blue;
+  }
+}
+nav.sidebar.navbar {
+  background: $black_blue;
+}
 
+nav.sidebar.top {
+  background-color: $white;
+}
+.logo {
+  background: $ice;
+}
 
-
-      .dark{
-
-      }
+.dark {
+   
+}

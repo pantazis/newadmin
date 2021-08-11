@@ -9,6 +9,32 @@ $border-radius:0.625rem; /* 10px */
 html{   
 font-size: 0.7813vw;  
 }
+.side-nav-list{
+.nav-text1 span.light {
+    width: 10px;
+    height: 10px;   
+    border-radius: 5px;  
+    margin-right: 0.625em;
+    flex-basis: 14px;
+}
+.user_name{
+    font-size: 19px;
+    word-break: normal;
+    white-space: nowrap;
+
+}
+.icon-t {
+    font-size: 26px;
+    margin-left: 32px;
+}
+
+
+
+
+}
+
+
+
 
 
 
@@ -191,6 +217,18 @@ nav.sidebar.navbar {
     } 
 }
 
+.nav-text1 {
+    justify-content: center;
+    span.light {
+       width: 0.625em;
+       height: 0.625em;
+       background: rgba(24, 191, 147, 1);
+       border-radius: 0.3125em;
+       box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, .2);
+       margin-right: 0.625em;
+   }
+   }
+
 nav.sidebar.top {
     height: $navSidebarTop;
     position: fixed;
@@ -199,17 +237,7 @@ nav.sidebar.top {
     width: 100%;   
     z-index: 1;
     display:flex;
-    .nav-text1 {
-     justify-content: center;
-     span.light {
-        width: 0.625em;
-        height: 0.625em;
-        background: rgba(24, 191, 147, 1);
-        border-radius: 0.3125em;
-        box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, .2);
-        margin-right: 0.625em;
-    }
-    }
+ 
     .nav-container {
         flex-grow: 1;
         display: flex;
@@ -755,13 +783,15 @@ span.text1 {
     .close-menu-cont{
         display: block;     
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 20px;
+        right: 9px;
+        .right &{
+            right: auto;
+            left:9px;
+        }
        
     }
-    nav.sidebar.navbar li.nav-list-item2 {
-
-    }
+   
     nav.sidebar.navbar{
     padding-top: 0;        
     align-items: center;

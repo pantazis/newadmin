@@ -26,12 +26,12 @@ font-size: 0.7813vw;
     width: 20em;
     border: 0.3125em solid #E4E7EC;
     border-radius: 10em;
-    background-color: white;
+    background-color: transparent;
    
     transition: background-color 250ms;
   }
   .toggle-checkbox:checked ~ .toggle-slot {
-    background-color: #374151;
+    background-color: $ice;
   }
   .toggle-button {
     transform: translate(11.75em, 1.75em);

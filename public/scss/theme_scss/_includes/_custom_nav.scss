@@ -368,9 +368,9 @@ nav.sidebar.top {
                 height: 2.5em;
                 align-items: center;
                 transition: padding-left .3s;
-                padding:0 1.875em;
+                padding:0 1.2em;
                 &:hover {
-                    padding-left: 0.4375rem;
+                    padding-left: 1.875rem;
                 }
             }
         }
@@ -692,7 +692,7 @@ input.search-top {
     }
     .navdown{
         margin-right: 0;
-        top: 0.1563rem; /* 2.5px */
+        top: 0.1rem;
         position: relative;
     }
 

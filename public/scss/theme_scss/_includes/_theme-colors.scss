@@ -220,6 +220,7 @@ nav.sidebar.top {
 }
 nav.sidebar.top .nav-list.list1 .custom-popup {
  background: $black_blue;
+ border: solid $ice 0.1rem;
 }
 nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
  background: $red2;
@@ -377,9 +378,11 @@ background-color: $bluedarkbl;
   fill:$ice;
 
 }
-body {
 
-  background-color: $bluedarkbl
 
-}
+  background-color: $bluedarkbl;
+
+
+
+
 }

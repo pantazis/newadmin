@@ -9711,7 +9711,7 @@ nav.sidebar.top {
     nav.sidebar.top .nav-list-item span.user_mail {
       position: absolute;
       bottom: 0.75rem;
-      font-size: 0.5625rem;
+      font-size: 0.625rem;
       font-weight: normal;
       color: #0e0c28; }
     nav.sidebar.top .nav-list-item:first-of-type {
@@ -10176,6 +10176,10 @@ span.text1 {
     height: 5.85rem;
     width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
+.section-main {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem; }
+
 .noTransition * {
   transition: none !important; }
 
@@ -10321,11 +10325,11 @@ nav.sidebar.top {
   .dark nav.sidebar.navbar .arrow {
     fill: #0e0c28; }
 .dark nav.sidebar.navbar.right {
-  background: #fff; }
+  background: #0e0c28; }
   .dark nav.sidebar.navbar.right .close-menu {
-    fill: #0e0c28; }
+    fill: #efeff6; }
   .dark nav.sidebar.navbar.right .arrow {
-    fill: #fff; }
+    fill: #0e0c28; }
 .dark nav.sidebar.top {
   background-color: #0e0c28; }
 .dark .logo {
@@ -10337,11 +10341,11 @@ nav.sidebar.top {
 .dark nav.sidebar.navbar li.nav-list-item2 {
   color: #cacad5; }
 .dark nav.sidebar.navbar.right li.nav-list-item2 {
-  color: #0e0c28; }
+  color: #efeff6; }
 .dark nav.sidebar.navbar .img-box span.nav-icons-side {
   color: #cacad5; }
 .dark nav.sidebar.navbar.right .img-box span.nav-icons-side {
-  color: #0e0c28; }
+  color: #efeff6; }
 .dark nav.sidebar.top {
   background: #18bf93; }
 .dark nav.sidebar.top .nav-list.list1 .custom-popup {
@@ -10419,8 +10423,8 @@ span.nav-icons-side {
   fill: #0e0c28; }
 .dark .curve.c2 {
   fill: #1E1C36; }
-.dark .bg-light {
-  background-color: #0e0c28 !important; }
+.dark .section-main {
+  background-color: #0e0c28; }
 .dark .body-container {
   background-color: #1E1C36; }
 .dark nav.sidebar.navbar
@@ -10429,6 +10433,10 @@ nav.sidebar.navbar
 li.nav-list-item2.nav-list-item2.opennav1 {
   color: #fff;
   background: #1E1C36; }
+.dark .relative {
+  color: #efeff6; }
+.dark .close-menu-cont.right {
+  border-left: 10px solid #efeff6; }
 
 @font-face {
   font-family: 'icomoon';

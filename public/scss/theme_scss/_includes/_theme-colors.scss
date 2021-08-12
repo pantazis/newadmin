@@ -174,12 +174,12 @@ fill: $black_blue;
 }
 }
 nav.sidebar.navbar.right {
-  background: $white;
+  background: $black_blue;
   .close-menu {
-     fill: $black_blue;
+     fill: $ice;
  }
  .arrow {
-  fill: $white;
+  fill: $black_blue;
 }
 }
 nav.sidebar.top {
@@ -199,7 +199,7 @@ nav.sidebar.navbar li.nav-list-item2 {
 
 }
 nav.sidebar.navbar.right li.nav-list-item2 {
-  color: $black_blue;
+  color: $ice;
  
 }
 
@@ -207,7 +207,7 @@ nav.sidebar.navbar .img-box span.nav-icons-side {
  color: $light_grey;
 }
 nav.sidebar.navbar.right .img-box span.nav-icons-side {
-  color: $black_blue;
+  color: $ice;
 }
 nav.sidebar.top {
  background: $green2;
@@ -334,9 +334,9 @@ background-color: $bluedarkbl;
   fill: $bluedarkbl ;
 }
 
-.bg-light {
+.section-main {
 
-  background-color: $black_blue !important;
+  background-color: $black_blue;
 }
 
 .body-container {
@@ -354,5 +354,13 @@ background-color: $bluedarkbl;
   color: $white;
   background:  $bluedarkbl;
 
+}
+.relative {
+  color: $ice;
+}
+
+.close-menu-cont.right{
+
+  border-left: 10px solid $ice;
 }
 }

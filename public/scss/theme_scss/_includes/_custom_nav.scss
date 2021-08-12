@@ -1055,8 +1055,17 @@ main {
     nav.sidebar.top .nav-list-item:first-of-type{
        display:none;
     }
+
+   
   
 }
+
+@media screen and (max-width:$menuMobileMax ) and (orientation: landscape) {
+    /*panta123*/
+    html {
+        font-size: 1.57vw;}
+
+ }
 
 
 @media screen and (max-width:$menuTabletMax ) and (min-width:$menuTabletMin ){

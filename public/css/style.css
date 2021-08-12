@@ -10154,6 +10154,10 @@ span.text1 {
 
   nav.sidebar.top .nav-list-item:first-of-type {
     display: none; } }
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  /*panta123*/
+  html {
+    font-size: 1.57vw; } }
 @media screen and (max-width: 1440px) and (min-width: 801px) {
   nav.sidebar.navbar li.nav-list-item2 .nav-text2.title {
     font-size: 1.5625rem;

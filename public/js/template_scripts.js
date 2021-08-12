@@ -24,24 +24,43 @@
 
     })
 
+   
+    isDark = localStorage.getItem('dark');
+ 
+    
+    if(isDark==null){localStorage.setItem('dark', 'false');}
+  
+
+    if(isDark=="true"){
+        $(".toggle-container .toggle-checkbox").prop( "checked",false );
+        $("body").addClass("dark");
+
+    }
+    if(isDark=="false"){
+        $(".toggle-container .toggle-checkbox").prop( "checked",true );
+        $("body").removeClass("dark");
+
+    }
+
+
+
 
     $(".toggle-container").click(function(){
       var isChecked =  $(this).find(".toggle-checkbox").prop( "checked" );
       
       if(isChecked){
-        $("body").removeClass("dark");       
+        $("body").removeClass("dark");
+        localStorage.setItem('dark', 'false');       
 
       }else{
       
         $("body").addClass("dark");
+        localStorage.setItem('dark',"true");
       }
 
     });
 
-    $("a.btn.btn-primary.my-2").click(function (event) {        
-        event.preventDefault(),
-        $("body").toggleClass("dark");
-    });
+    
 
     $("nav.sidebar.navbar").mouseenter(function () {        
         $("body").addClass("hover");

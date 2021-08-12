@@ -91,7 +91,7 @@
                         <div class="arrow-div"></div>                                                
                         <div class="popup-notifications shadow-5-strong">
                             <div class="top-box box1">
-                                    <span class="text1">οι ειδοποιήσεις μου</span>
+                                    <span class="text1">Οι ειδοποιήσεις μου</span>
                                 <hr>
                             </div>
                             <?php for ($x = 0; $x <= 2; $x++) { ?>
@@ -113,8 +113,8 @@
                             <div class="bottom-box box1">
                             <hr>
                                 <div class="actions-b">
-                                    <span class="text1">οι ειδοποιήσεις μου</span>
-                                    <a class="text1">οι ειδοποιήσεις μου</a>
+                                    <span class="text1">Ανάγνωση Όλων</span>
+                                    <a class="text1">Καθαρισμός</a>
                                 </div>
 
                             </div>                      

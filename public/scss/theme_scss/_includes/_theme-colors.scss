@@ -136,6 +136,12 @@ nav.sidebar.top {
   background: $ice;
 }
 
+.curve.c1 {
+  fill: $white;
+}
+.curve.c2 {
+  fill: $ice ;
+}
 
 
 /*Dark Mode*/
@@ -314,6 +320,13 @@ background-color: $bluedarkbl;
 .bg-light {
 
   background-color: $bluedarkbl ;
+}
+
+.curve.c1 {
+  fill: $black_blue ;
+}
+.curve.c2 {
+  fill: $bluedarkbl ;
 }
 
 

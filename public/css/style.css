@@ -10214,6 +10214,12 @@ nav.sidebar.top {
 .logo {
   background: #efeff6; }
 
+.curve.c1 {
+  fill: #fff; }
+
+.curve.c2 {
+  fill: #efeff6; }
+
 /*Dark Mode*/
 .dark .side-nav-list span.icon-fi-sr-power.icon-t {
   color: #d83438; }
@@ -10320,6 +10326,10 @@ span.nav-icons-side {
   background-color: #1E1C36; }
 .dark .bg-light {
   background-color: #1E1C36; }
+.dark .curve.c1 {
+  fill: #0e0c28; }
+.dark .curve.c2 {
+  fill: #1E1C36; }
 
 @font-face {
   font-family: 'icomoon';

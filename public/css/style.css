@@ -10327,6 +10327,20 @@ nav.sidebar.top {
 .backg {
   fill: #0e0c28; }
 
+input.search-top::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cacad5;
+  opacity: 1;
+  /* Firefox */ }
+
+input.search-top::-webkit-input-placeholder {
+  /* Edge */
+  color: #cacad5; }
+
+input.search-top:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cacad5; }
+
 /*Dark Mode*/
 .dark {
   background-color: #1E1C36; }
@@ -10458,6 +10472,17 @@ nav.sidebar.top {
     border-left: 10px solid #efeff6; }
   .dark .backg {
     fill: #efeff6; }
+  .dark input.search-top::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #efeff6;
+    opacity: 1;
+    /* Firefox */ }
+  .dark input.search-top::-webkit-input-placeholder {
+    /* Edge */
+    color: #efeff6; }
+  .dark input.search-top:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #efeff6; }
 
 @font-face {
   font-family: 'icomoon';

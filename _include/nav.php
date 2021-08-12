@@ -61,7 +61,7 @@
         <div class="nav-list search">
             <div class="search-cont">
                 <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
-            <input class="search-top" type="search" name="" id="">
+            <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
             </div>
           
             

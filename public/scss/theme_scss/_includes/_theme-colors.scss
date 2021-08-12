@@ -152,7 +152,25 @@ nav.sidebar.top {
   
   fill:$black_blue;
 
+
 }
+
+
+  input.search-top::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $light_grey;
+    opacity: 1; /* Firefox */
+  }
+
+  input.search-top::-webkit-input-placeholder { /* Edge */
+    color: $light_grey;
+  }
+  
+  input.search-top:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $light_grey;
+  }
+
+
+
 
 
 /*Dark Mode*/
@@ -383,6 +401,18 @@ background-color: $bluedarkbl;
   background-color: $bluedarkbl;
 
 
+  input.search-top::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $ice;
+    opacity: 1; /* Firefox */
+  }
 
-
+  input.search-top::-webkit-input-placeholder { /* Edge */
+    color: $ice;
+  }
+  
+  input.search-top:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $ice;
+  }
+  
+  
 }

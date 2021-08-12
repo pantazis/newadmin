@@ -9927,7 +9927,9 @@ input.search-top {
   position: fixed;
   top: 5.305rem;
   right: 0.5625rem;
-  border-radius: 0.6rem; }
+  border-radius: 0.6rem;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem; }
 
 span.text1 {
   line-height: 2.6; }
@@ -10401,7 +10403,8 @@ span.nav-icons-side {
   background-color: #efeff6;
   border: solid #efeff6 0.1rem; }
 .dark .popup-notifications {
-  background: #1E1C36; }
+  background: #1E1C36;
+  border: solid #efeff6 0.1rem; }
 .dark .message {
   background: #9a9ab4; }
 .dark .message.color1 {

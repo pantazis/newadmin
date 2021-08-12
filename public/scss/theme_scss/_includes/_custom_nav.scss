@@ -800,46 +800,50 @@ span.text1 {
         overflow: hidden;
     }
     .close-menu-cont{
-        $hidenW: -116px;
         display: block;
         position: fixed;
-        top: 0;
-        right:$hidenW;
-        bottom:0;
-        z-index: 1;
-        width: 4.625rem;
+        top:0;
+        bottom: 0;
+        width: 105px;
         height:100%;
+        transition:0 transform .3s ease;
+        
+        &.left{                   
+        right: 0;
         border-right: 10px solid $ice;
-        transition: .3s right;
-        .right{
-            left:$hidenW;
-            right:auto;
-
+        transform: translateY(-100%);
+            .openMenuLeft &{
+                transition: .3s transform .3s ease;                
+                transform: translateY(0);
+            }
+            svg{
+                right:-1px;
+            } 
         }
-
-/*1212323*/
-
-
-
-    
-     
-
-
+        &.right{
+        left: 0; 
+        border-left: 10px solid $black_blue;
+        transform: translateY(-100%); 
+            .openMenuRight &{
+                transition: .3s transform .3s ease; 
+                transform: translateY(0);
+            }
+            svg{
+                left:-1px;
+            }  
+        }
         .relative {
             width: 100%;
             height: 100%;
             position: relative;
+            
         }
         
        
-        svg{
-           
-                width: 105px;
-                height: 218px;
-                position: absolute;
-                right: 0;
-            
-           
+        svg{          
+                width: 4.625rem;
+                height: auto;
+                position: absolute; 
         }
        
        
@@ -872,7 +876,7 @@ span.text1 {
     }
     .openMenuLeft nav.sidebar.navbar{       
         width: 100%;
-        border-right: 0.625rem /* 10px */ solid $ice;
+      
         &.right{
             width: 0;
             border-right: 0;

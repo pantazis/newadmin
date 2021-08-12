@@ -9409,7 +9409,6 @@ html {
   border: 0.3125em solid #E4E7EC;
   border-radius: 10em;
   background-color: white;
-  box-shadow: 0em 0.625em 1.5625em #E4E7EC;
   transition: background-color 250ms; }
 
 .toggle-checkbox:checked ~ .toggle-slot {

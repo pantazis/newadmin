@@ -86,7 +86,7 @@ font-size: 0.7813vw;
     margin-right:0.5rem ;
 }
 
-nav.sidebar.navbar,main,.logo,img.curve,.burger-menu,.logo-text,.icon-fi-sr-menu-burger {
+nav.sidebar.navbar,main,.logo,.curve,.burger-menu,.logo-text,.icon-fi-sr-menu-burger {
     transition-duration: $transitiontime ;
     transition-timing-function: ease-in;  
    
@@ -456,7 +456,7 @@ main{
     height: 100%;
 }
 
-img.curve {
+.curve {
     height: 100%;
     position: absolute;
     right: -0.06rem;
@@ -464,37 +464,37 @@ img.curve {
    
 }
 
-img.curve {
+.curve {
     top:0;
    height: 100%;
     position: absolute;
     right: -0.06rem;
     transition-duration: #{$transitiontime / 2};
 }
-img.curve.c2 {
+.curve.c2 {
     left: 99%;
    
 }
 
-img.curve.c1{
+.curve.c1{
     width:1.871rem;   
     transition-delay: #{$transitiontime / 2};
 
 }
-img.curve.c2{
+.curve.c2{
     transition-delay: 0s;   
     width:0;
 }
 
 .closeNav{
-    img.curve.c1{
+    .curve.c1{
        
         transition-delay: 0s;
         width:0;
         
         
     }
-    img.curve.c2{
+    .curve.c2{
         width:1.871rem;
         transition-delay:  #{$transitiontime / 2};    
        
@@ -800,16 +800,30 @@ span.text1 {
         overflow: hidden;
     }
     .close-menu-cont{
+        $hidenW: -116px;
         display: block;
         position: fixed;
         top: 0;
-        right: -116px;
+        right:$hidenW;
         bottom:0;
         z-index: 1;
         width: 4.625rem;
         height:100%;
         border-right: 10px solid $ice;
         transition: .3s right;
+        .right{
+            left:$hidenW;
+            right:auto;
+
+        }
+
+/*1212323*/
+
+
+
+    
+     
+
 
         .relative {
             width: 100%;
@@ -831,10 +845,7 @@ span.text1 {
        
     }
 
-    .openMenuLeft .close-menu-cont {
-        right: 0px;
-
-    }
+   
    
        
        
@@ -845,8 +856,7 @@ span.text1 {
     padding-top: 0;        
     align-items: center;
     justify-content: center;
-    width: 0; 
-           
+    width: 0;
     top: 0;
     left: 0;  
     z-index: 2;
@@ -854,9 +864,9 @@ span.text1 {
     transition-property:width ;
     border-right:0rem; /* 0px */
     overflow:auto;
-    &.right{
+    &.right{        
         left: auto;
-        right: 0;
+        right: 0;      
 
     }
     }
@@ -911,7 +921,19 @@ main {
 }
 .logo{
     display:none;
+}/*
+.close-menu-cont.right {   
+        right: auto;
+        left: 0;
+        border-right: 0;
+        border-left: 10px solid $black_blue;
+    
 }
+.close-menu-cont.left {
+    right: 0;
+    left: auto;
+}*/
+
 } 
 
 

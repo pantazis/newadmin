@@ -3,15 +3,36 @@
     <div class="logo">
         <div class="logo-box">       
             <img src="./public/img/nav/logo.svg" alt="" class="logo-img">            
-        </div> 
+        </div>
+        <style>
+          .curve.c1{
+            fill:#FFFFFF;
+          }
+
+          .curve.c2{
+            fill:#EFEFF6;            
+          }
+
+        </style> 
         <div class="logo-text">
         <span class="icon-logo_text" alt=""></span>
         </div> 
         <div class="burger-menu">
             <span class="icon-fi-sr-menu-burger" alt=""></span>
-        </div>     
-        <img class="curve c1" src="./public/img/nav/1menu_bg.svg" alt="">
-        <img class="curve c2" src="./public/img/nav/2menu_bg.svg" alt="">
+        </div>      
+        <svg class="curve c1" version="1.1" preserveAspectRatio="none" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 75" style="enable-background:new 0 0 30 75;" xml:space="preserve">
+
+<path class="st0" d="M18.2,60.9L18.2,60.9c0.2,0.1,0.4,0.1,0.6,0.2l0,0c6,2,10.6,7.5,10.6,13.9V0c0,6.2-4.4,11.5-10.1,13.7l0,0
+	c-0.5,0.2-1,0.4-1.5,0.5l0,0c-5,1.8-9.2,4.9-12.2,9s-4.8,9-4.8,14.3c0,5.4,1.8,10.4,4.9,14.5S13.1,59.3,18.2,60.9z"/>
+</svg>
+        
+    <svg class="curve c2" version="1.1" preserveAspectRatio="none" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 75" style="enable-background:new 0 0 30 75;" xml:space="preserve">
+
+<path class="st0" d="M11.8,14.1L11.8,14.1c-0.2-0.1-0.4-0.1-0.6-0.2l0,0C5.3,11.8,0.7,6.4,0.7,0v75c0-6.2,4.4-11.5,10.1-13.7l0,0
+	c0.5-0.2,1-0.4,1.5-0.5l0,0c5-1.8,9.2-4.9,12.2-9s4.8-9,4.8-14.3c0-5.4-1.8-10.4-4.9-14.5S16.9,15.7,11.8,14.1z"/>
+</svg>
         
     </div>
     <div class="nav-container">
@@ -118,10 +139,10 @@
 
     </div>    
 </nav>
-<nav class="sidebar navbar">
+<nav class="sidebar navbar left">
   
    
-    <div class="close-menu-cont">
+    <div class="close-menu-cont left">
     <div class="relative">
     <svg class="close-menu" xmlns="http://www.w3.org/2000/svg" width="54.03" height="112.601" viewBox="0 0 54.03 112.601"><g transform="translate(-320.97 -4)"><path d="M0,56.278C0,40.251,12.709,26.584,30.548,21.309h0q1.407-.311,2.766-.74h0C43.6,17.323,54.03,9.337,54.03,0h0V112.6h0c0-9.6-10.838-17.769-21.581-20.829l-.009,0q-.494-.14-1-.266l-.006,0C13.134,86.424.87,75.022,0,56.278Z" transform="translate(320.97 4)" /><g transform="translate(344.718 51.035)"><path d="M.455,8.2,8.165.491a1.557,1.557,0,0,1,2.2,2.2L3.759,9.3l6.608,6.608a1.557,1.557,0,1,1-2.2,2.2L.455,10.4A1.556,1.556,0,0,1,.455,8.2Zm9.27-.467,6.121-6.451a1.519,1.519,0,0,1,2.226,0,1.722,1.722,0,0,1,0,2.346L13.064,8.906l5.008,5.278a1.722,1.722,0,0,1,0,2.346,1.519,1.519,0,0,1-2.226,0L9.725,10.079A1.722,1.722,0,0,1,9.725,7.733Z" transform="translate(0.001 -0.035)" class="arrow" /></g></g></svg>
     </div>
@@ -191,7 +212,7 @@ $arr2 = [
 <nav class="sidebar navbar right">
   
    
-    <div class="close-menu-cont">
+    <div class="close-menu-cont right">
     <div class="relative">    
     <svg xmlns="http://www.w3.org/2000/svg" width="58" height="112.601" viewBox="0 0 58 112.601"><defs></defs><path class="close-menu" d="M58,56.278c0-16.027-13.643-29.694-32.793-34.969h0q-1.51-.311-2.969-.74h0C11.191,17.323,0,9.337,0,0H0V112.6H0C0,103,11.634,94.832,23.167,91.772l.01,0q.53-.14,1.069-.266l.006,0C43.9,86.424,57.066,75.022,58,56.278Z"/><g transform="translate(20.598 46.928)"><path class="arrow" d="M18.077,8.2,10.368.491a1.557,1.557,0,0,0-2.2,2.2L14.773,9.3,8.165,15.908a1.557,1.557,0,0,0,2.2,2.2L18.077,10.4A1.556,1.556,0,0,0,18.077,8.2Zm-9.27-.467L2.687,1.283a1.519,1.519,0,0,0-2.226,0,1.722,1.722,0,0,0,0,2.346L5.468,8.906.461,14.184a1.722,1.722,0,0,0,0,2.346,1.519,1.519,0,0,0,2.226,0l6.121-6.451A1.722,1.722,0,0,0,8.807,7.733Z" transform="translate(0.001 -0.035)"/></g></svg>
     </div>

@@ -10316,11 +10316,14 @@ nav.sidebar.top {
 .curve.c2 {
   fill: #efeff6; }
 
+.backg {
+  fill: #0e0c28; }
+
 /*Dark Mode*/
 .dark .side-nav-list span.icon-fi-sr-power.icon-t {
   color: #d83438; }
 .dark .side-nav-list span.icon-fi-sr-sign-out.icon-t {
-  color: #2e435e; }
+  color: #1eb6db; }
 .dark nav.sidebar.navbar {
   background: #0e0c28; }
   .dark nav.sidebar.navbar .close-menu {
@@ -10440,6 +10443,8 @@ li.nav-list-item2.nav-list-item2.opennav1 {
   color: #efeff6; }
 .dark .close-menu-cont.right {
   border-left: 10px solid #efeff6; }
+.dark .backg {
+  fill: #efeff6; }
 
 @font-face {
   font-family: 'icomoon';

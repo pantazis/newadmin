@@ -10366,7 +10366,7 @@ nav.sidebar.top {
     background: #18bf93; }
   .dark nav.sidebar.top .nav-list.list1 .custom-popup {
     background: #0e0c28;
-    border: solid #efeff6 0.1rem; }
+    border: solid #efeff6 0.02rem; }
   .dark nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
     background: #d83438;
     color: #fff; }

@@ -10325,11 +10325,11 @@ nav.sidebar.top {
   .dark nav.sidebar.navbar .arrow {
     fill: #0e0c28; }
 .dark nav.sidebar.navbar.right {
-  background: #fff; }
+  background: #0e0c28; }
   .dark nav.sidebar.navbar.right .close-menu {
-    fill: #0e0c28; }
+    fill: #efeff6; }
   .dark nav.sidebar.navbar.right .arrow {
-    fill: #fff; }
+    fill: #0e0c28; }
 .dark nav.sidebar.top {
   background-color: #0e0c28; }
 .dark .logo {
@@ -10341,11 +10341,11 @@ nav.sidebar.top {
 .dark nav.sidebar.navbar li.nav-list-item2 {
   color: #cacad5; }
 .dark nav.sidebar.navbar.right li.nav-list-item2 {
-  color: #0e0c28; }
+  color: #efeff6; }
 .dark nav.sidebar.navbar .img-box span.nav-icons-side {
   color: #cacad5; }
 .dark nav.sidebar.navbar.right .img-box span.nav-icons-side {
-  color: #0e0c28; }
+  color: #efeff6; }
 .dark nav.sidebar.top {
   background: #18bf93; }
 .dark nav.sidebar.top .nav-list.list1 .custom-popup {
@@ -10433,6 +10433,10 @@ nav.sidebar.navbar
 li.nav-list-item2.nav-list-item2.opennav1 {
   color: #fff;
   background: #1E1C36; }
+.dark .relative {
+  color: #efeff6; }
+.dark .close-menu-cont.right {
+  border-left: 10px solid #efeff6; }
 
 @font-face {
   font-family: 'icomoon';

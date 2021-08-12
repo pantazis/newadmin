@@ -10298,6 +10298,14 @@ span.nav-icons-side {
   color: #fff; }
 .dark .flex-c {
   color: #fff; }
+.dark .burger-menu {
+  color: #fff; }
+.dark input.search-top {
+  background: #1E1C36; }
+.dark main {
+  background-color: #1E1C36; }
+.dark .bg-light {
+  background-color: #1E1C36; }
 
 @font-face {
   font-family: 'icomoon';

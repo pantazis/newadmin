@@ -25,10 +25,11 @@
     })
 
    
-    isDark = localStorage.getItem('dark');
+    var isDark = localStorage.getItem('dark');
  
     
     if(isDark==null){localStorage.setItem('dark', 'false');}
+    isDark = localStorage.getItem('dark');
   
 
     if(isDark=="true"){
@@ -36,6 +37,7 @@
         $("body").addClass("dark");
 
     }
+
     if(isDark=="false"){
         $(".toggle-container .toggle-checkbox").prop( "checked",true );
         $("body").removeClass("dark");

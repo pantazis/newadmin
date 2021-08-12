@@ -10090,8 +10090,7 @@ span.text1 {
       border-right: 0; }
 
   .openMenuRight nav.sidebar.navbar.right {
-    width: 100%;
-    border-right: 0.625rem solid #efeff6; }
+    width: 100%; }
 
   nav.sidebar.top .nav-list-item:first-of-type {
     padding-left: 5.875rem;
@@ -10116,7 +10115,6 @@ span.text1 {
     display: none; }
 
   main {
-    padding-top: 0;
     padding-left: 0; }
 
   .logo {

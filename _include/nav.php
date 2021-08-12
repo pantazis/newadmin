@@ -79,7 +79,7 @@
         
         ?>
             <?php foreach($arr as $key => $val){ ?>
-                <div class="nav-icon-3 <?=$val?>  <?php if($key == 0 || $key == 4){ echo "tablet-only";}?> <?php if($key == 0 ){ echo "search-icon";}?> ">
+                <div class="nav-icon-3  <?=$val?>  <?php if($key == 0 || $key == 4){ echo "tablet-only";}?> <?php if($key == 0 ){ echo "search-icon";}?> ">
                     <div class="rel-icon">
                     <?php if($key == 1 || $key == 2){ ?>
                         <span class="num"><?=rand(1,99)?></span>

@@ -9652,7 +9652,7 @@ nav.sidebar.top {
       position: absolute;
       top: 5.305rem;
       text-align: center;
-      border-radius: 0.625rem;
+      border-radius: 0.6rem;
       padding: 0;
       background: #fff;
       overflow: hidden; }
@@ -9925,7 +9925,7 @@ input.search-top {
   position: fixed;
   top: 5.305rem;
   right: 0.5625rem;
-  border-radius: 0.625rem; }
+  border-radius: 0.6rem; }
 
 span.text1 {
   line-height: 2.6; }
@@ -10394,7 +10394,8 @@ span.nav-icons-side {
   border: 0.025rem solid #1E1C36;
   background-color: #fff; }
 .dark .arrow-div {
-  background-color: #1E1C36; }
+  background-color: #efeff6;
+  border: solid #efeff6 0.1rem; }
 .dark .popup-notifications {
   background: #1E1C36; }
 .dark .message {
@@ -10447,6 +10448,8 @@ li.nav-list-item2.nav-list-item2.opennav1 {
   border-left: 10px solid #efeff6; }
 .dark .backg {
   fill: #efeff6; }
+.dark body {
+  background-color: #1E1C36; }
 
 @font-face {
   font-family: 'icomoon';

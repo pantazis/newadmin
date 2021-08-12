@@ -267,7 +267,8 @@ input.search-top {
  background-color: $white;
 }
 .arrow-div {
- background-color: $bluedarkbl;
+ background-color: $ice;
+ border: solid $ice 0.1rem;
 }
 .popup-notifications {
  background: $bluedarkbl;
@@ -373,6 +374,11 @@ background-color: $bluedarkbl;
 .backg{
   
   fill:$ice;
+
+}
+body {
+
+  background-color: $bluedarkbl
 
 }
 }

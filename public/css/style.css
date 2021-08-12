@@ -10313,6 +10313,9 @@ nav.sidebar.top {
 .curve.c2 {
   fill: #efeff6; }
 
+.backg {
+  fill: #0e0c28; }
+
 /*Dark Mode*/
 .dark .side-nav-list span.icon-fi-sr-power.icon-t {
   color: #d83438; }

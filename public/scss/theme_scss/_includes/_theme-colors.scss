@@ -1,4 +1,7 @@
 //nav menu colors
+.noTransition *{
+  transition:none !important;
+}
 
 .side-nav-list span.icon-fi-sr-power.icon-t{
    color:$red2;

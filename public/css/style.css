@@ -9635,8 +9635,8 @@ nav.sidebar.top {
     padding: 0 1.406rem; }
     nav.sidebar.top .nav-list-item span.user_mail {
       position: absolute;
-      bottom: 0.75em;
-      font-size: 0.5625em;
+      bottom: 0.75rem;
+      font-size: 0.5625rem;
       font-weight: normal;
       color: #0e0c28; }
     nav.sidebar.top .nav-list-item:first-of-type {
@@ -10101,6 +10101,9 @@ span.text1 {
     height: 5.85rem;
     width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
+.noTransition * {
+  transition: none !important; }
+
 .side-nav-list span.icon-fi-sr-power.icon-t {
   color: #d83438; }
 

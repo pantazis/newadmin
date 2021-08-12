@@ -120,6 +120,36 @@
                             </div>                      
                         </div>
                     <?php } ?>
+                    <?php if($val =="fi-sr-user"){?>
+                        <div class="arrow-div"></div>                                                
+                        <div class="popup-notifications shadow-5-strong">
+                            <div class="top-box box1">
+                                    <span class="text1">usermenu</span>
+                                <hr>
+                            </div>
+                            <label>
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-slot">
+                                <div class="sun-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify sun-icon" data-icon="feather-sun" data-inline="false"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2"></path><path d="M12 21v2"></path><path d="M4.22 4.22l1.42 1.42"></path><path d="M18.36 18.36l1.42 1.42"></path><path d="M1 12h2"></path><path d="M21 12h2"></path><path d="M4.22 19.78l1.42-1.42"></path><path d="M18.36 5.64l1.42-1.42"></path></g></svg>
+                                </div>
+                                <div class="toggle-button"></div>
+                                <div class="moon-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify moon-icon" data-icon="feather-moon" data-inline="false"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79z"></path></g></svg>
+                                </div>
+                            </div>
+                            </label>
+                           
+                            <div class="bottom-box box1">
+                            <hr>
+                                <div class="actions-b">
+                                    <span class="text1"></span>
+                                    <a class="text1"></a>
+                                </div>
+
+                            </div>                      
+                        </div>
+                    <?php } ?>
 
                 </div>
             <?php } ?>

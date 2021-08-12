@@ -25,7 +25,18 @@
     })
 
 
+    $(".toggle-container").click(function(){
+      var isChecked =  $(this).find(".toggle-checkbox").prop( "checked" );
+      
+      if(isChecked){
+        $("body").removeClass("dark");       
 
+      }else{
+      
+        $("body").addClass("dark");
+      }
+
+    });
 
     $("a.btn.btn-primary.my-2").click(function (event) {        
         event.preventDefault(),

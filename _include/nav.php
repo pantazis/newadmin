@@ -127,7 +127,7 @@
                                     <span class="text1">usermenu</span>
                                 <hr>
                             </div>
-                            <label>
+                            <label class="toggle-container">
                             <input class="toggle-checkbox" type="checkbox">
                             <div class="toggle-slot">
                                 <div class="sun-icon-wrapper">

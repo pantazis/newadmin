@@ -9892,7 +9892,7 @@ input.search-top {
     align-items: center; }
   .search-cont .navdown {
     margin-right: 0;
-    top: 0.1rem;
+    top: 0rem;
     position: relative; }
 
 .nav-list-item .custom-popup {

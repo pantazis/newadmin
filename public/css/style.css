@@ -10330,6 +10330,10 @@ span.nav-icons-side {
   fill: #0e0c28; }
 .dark .curve.c2 {
   fill: #1E1C36; }
+.dark .bg-light {
+  background-color: #1E1C36 !important; }
+.dark .body-container {
+  background-color: #2e435e; }
 
 @font-face {
   font-family: 'icomoon';

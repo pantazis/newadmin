@@ -9447,7 +9447,7 @@ html {
   font-size: 0.9375rem;
   margin-right: 0.5rem; }
 
-nav.sidebar.navbar, main, .logo, img.curve, .burger-menu, .logo-text, .icon-fi-sr-menu-burger {
+nav.sidebar.navbar, main, .logo, .curve, .burger-menu, .logo-text, .icon-fi-sr-menu-burger {
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
 
@@ -9702,34 +9702,34 @@ main {
 .burger-menu-container {
   height: 100%; }
 
-img.curve {
+.curve {
   height: 100%;
   position: absolute;
   right: -0.06rem;
   transition-property: width; }
 
-img.curve {
+.curve {
   top: 0;
   height: 100%;
   position: absolute;
   right: -0.06rem;
   transition-duration: 0.15s; }
 
-img.curve.c2 {
+.curve.c2 {
   left: 99%; }
 
-img.curve.c1 {
+.curve.c1 {
   width: 1.871rem;
   transition-delay: 0.15s; }
 
-img.curve.c2 {
+.curve.c2 {
   transition-delay: 0s;
   width: 0; }
 
-.closeNav img.curve.c1 {
+.closeNav .curve.c1 {
   transition-delay: 0s;
   width: 0; }
-.closeNav img.curve.c2 {
+.closeNav .curve.c2 {
   width: 1.871rem;
   transition-delay: 0.15s; }
 

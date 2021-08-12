@@ -3,15 +3,36 @@
     <div class="logo">
         <div class="logo-box">       
             <img src="./public/img/nav/logo.svg" alt="" class="logo-img">            
-        </div> 
+        </div>
+        <style>
+          .curve.c1{
+            fill:#FFFFFF;
+          }
+
+          .curve.c2{
+            fill:#EFEFF6;            
+          }
+
+        </style> 
         <div class="logo-text">
         <span class="icon-logo_text" alt=""></span>
         </div> 
         <div class="burger-menu">
             <span class="icon-fi-sr-menu-burger" alt=""></span>
-        </div>     
-        <img class="curve c1" src="./public/img/nav/1menu_bg.svg" alt="">
-        <img class="curve c2" src="./public/img/nav/2menu_bg.svg" alt="">
+        </div>      
+        <svg class="curve c1" version="1.1" preserveAspectRatio="none" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 75" style="enable-background:new 0 0 30 75;" xml:space="preserve">
+
+<path class="st0" d="M18.2,60.9L18.2,60.9c0.2,0.1,0.4,0.1,0.6,0.2l0,0c6,2,10.6,7.5,10.6,13.9V0c0,6.2-4.4,11.5-10.1,13.7l0,0
+	c-0.5,0.2-1,0.4-1.5,0.5l0,0c-5,1.8-9.2,4.9-12.2,9s-4.8,9-4.8,14.3c0,5.4,1.8,10.4,4.9,14.5S13.1,59.3,18.2,60.9z"/>
+</svg>
+        
+    <svg class="curve c2" version="1.1" preserveAspectRatio="none" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 75" style="enable-background:new 0 0 30 75;" xml:space="preserve">
+
+<path class="st0" d="M11.8,14.1L11.8,14.1c-0.2-0.1-0.4-0.1-0.6-0.2l0,0C5.3,11.8,0.7,6.4,0.7,0v75c0-6.2,4.4-11.5,10.1-13.7l0,0
+	c0.5-0.2,1-0.4,1.5-0.5l0,0c5-1.8,9.2-4.9,12.2-9s4.8-9,4.8-14.3c0-5.4-1.8-10.4-4.9-14.5S16.9,15.7,11.8,14.1z"/>
+</svg>
         
     </div>
     <div class="nav-container">

@@ -86,7 +86,7 @@ font-size: 0.7813vw;
     margin-right:0.5rem ;
 }
 
-nav.sidebar.navbar,main,.logo,img.curve,.burger-menu,.logo-text,.icon-fi-sr-menu-burger {
+nav.sidebar.navbar,main,.logo,.curve,.burger-menu,.logo-text,.icon-fi-sr-menu-burger {
     transition-duration: $transitiontime ;
     transition-timing-function: ease-in;  
    
@@ -456,7 +456,7 @@ main{
     height: 100%;
 }
 
-img.curve {
+.curve {
     height: 100%;
     position: absolute;
     right: -0.06rem;
@@ -464,37 +464,37 @@ img.curve {
    
 }
 
-img.curve {
+.curve {
     top:0;
    height: 100%;
     position: absolute;
     right: -0.06rem;
     transition-duration: #{$transitiontime / 2};
 }
-img.curve.c2 {
+.curve.c2 {
     left: 99%;
    
 }
 
-img.curve.c1{
+.curve.c1{
     width:1.871rem;   
     transition-delay: #{$transitiontime / 2};
 
 }
-img.curve.c2{
+.curve.c2{
     transition-delay: 0s;   
     width:0;
 }
 
 .closeNav{
-    img.curve.c1{
+    .curve.c1{
        
         transition-delay: 0s;
         width:0;
         
         
     }
-    img.curve.c2{
+    .curve.c2{
         width:1.871rem;
         transition-delay:  #{$transitiontime / 2};    
        

@@ -14,7 +14,7 @@
     <?php include "./_include/nav.php" ?>
     <?php include "./_include/mobile-nav.php" ?>
     <main role="main">
-      <div class="body-container">
+      <div class="body-container text-center">
         <a href="#" class="btn btn-primary my-2">Main call to action</a>
        <?php 
        /* <section class="jumbotron text-center">

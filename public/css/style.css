@@ -10142,6 +10142,9 @@ nav.sidebar.navbar.right li.nav-list-item2 {
 nav.sidebar.navbar .img-box span.nav-icons-side {
   color: #cacad5; }
 
+nav.sidebar.navbar .opennav1 .img-box span.nav-icons-side {
+  color: #0e0c28; }
+
 nav.sidebar.navbar.right .img-box span.nav-icons-side {
   color: #0e0c28; }
 
@@ -10158,8 +10161,7 @@ nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
 nav.sidebar.top .nav-list-item span.user_mail {
   color: #0e0c28; }
 
-:not(.closeNav)
-nav.sidebar.navbar
+body nav.sidebar.navbar
 li.nav-list-item2.nav-list-item2.opennav1,
 body.closeNav.hover
 nav.sidebar.navbar
@@ -10343,6 +10345,12 @@ span.nav-icons-side {
   background-color: #1E1C36 !important; }
 .dark .body-container {
   background-color: #2e435e; }
+.dark nav.sidebar.navbar
+li.nav-list-item2.nav-list-item2.opennav1, .dark .closeNav.hover
+nav.sidebar.navbar
+li.nav-list-item2.nav-list-item2.opennav1 {
+  color: #fff;
+  background: #1E1C36; }
 
 @font-face {
   font-family: 'icomoon';

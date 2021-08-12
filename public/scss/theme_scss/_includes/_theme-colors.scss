@@ -51,6 +51,9 @@ nav.sidebar.navbar.right li.nav-list-item2 {
 nav.sidebar.navbar .img-box span.nav-icons-side {
   color: $light_grey;
 }
+nav.sidebar.navbar  .opennav1 .img-box span.nav-icons-side {
+  color: $black_blue;
+}
 nav.sidebar.navbar.right .img-box span.nav-icons-side {
    color: $black_blue;
  }
@@ -67,8 +70,7 @@ nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
 nav.sidebar.top .nav-list-item span.user_mail {
   color: $black_blue;
 }
-:not(.closeNav)
-  nav.sidebar.navbar
+body nav.sidebar.navbar
   li.nav-list-item2.nav-list-item2.opennav1,
 body.closeNav.hover
   nav.sidebar.navbar
@@ -338,5 +340,15 @@ background-color: $bluedarkbl;
 
   background-color:$dark_blue
 
+}
+
+& nav.sidebar.navbar
+  li.nav-list-item2.nav-list-item2.opennav1,
+& .closeNav.hover
+  nav.sidebar.navbar
+  li.nav-list-item2.nav-list-item2.opennav1 {
+    
+  color: $white;
+  background:  $bluedarkbl;
 }
 }

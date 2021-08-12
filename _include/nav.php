@@ -4,16 +4,7 @@
         <div class="logo-box">       
             <img src="./public/img/nav/logo.svg" alt="" class="logo-img">            
         </div>
-        <style>
-          .curve.c1{
-            fill:#FFFFFF;
-          }
-
-          .curve.c2{
-            fill:#EFEFF6;            
-          }
-
-        </style> 
+     
         <div class="logo-text">
         <span class="icon-logo_text" alt=""></span>
         </div> 

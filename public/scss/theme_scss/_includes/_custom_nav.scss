@@ -12,7 +12,12 @@ font-size: 0.7813vw;
 
 
 //--------------------------------------toggle button---------------------------------------------------------------//
-.toggle-container{font-size: 0.4rem;}
+.toggle-container {
+    font-size: 0.3rem;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
 .toggle-checkbox {
     position: absolute;
     opacity: 0;
@@ -40,13 +45,13 @@ font-size: 0.7813vw;
     width: 6.5em;
     border-radius: 50%;
     background-color: #FFECCF;
-    box-shadow: inset 0em 0em 0em 0.75em #FFBB52;
+    border: 6px solid  #FFBB52;
     transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
   }
   .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-    background-color: #485367;
-    box-shadow: inset 0em 0em 0em 0.75em white;
-    transform: translate(1.75em, 1.50em);
+    background-color: transparent;
+    border: 6px solid #485367;
+    transform: translate(1.75em, 1.5em);
   }
   .sun-icon {
     position: absolute;

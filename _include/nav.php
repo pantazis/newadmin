@@ -124,7 +124,7 @@
                         <div class="arrow-div"></div>                                                
                         <div class="popup-notifications shadow-5-strong">
                             <div class="top-box box1">
-                                    <span class="text1">usermenu</span>
+                                    <span class="text1">Ρυθμίσεις Προφίλ</span>
                                 <hr>
                             </div>
                             <label class="toggle-container">

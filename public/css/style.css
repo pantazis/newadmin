@@ -10510,6 +10510,8 @@ input.search-top:-ms-input-placeholder {
   .dark input.search-top:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #efeff6; }
+  .dark .dark-label {
+    color: #fff; }
 
 @font-face {
   font-family: 'icomoon';

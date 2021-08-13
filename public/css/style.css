@@ -9637,7 +9637,8 @@ nav.sidebar.top {
       top: 5.305rem;
       text-align: center;
       border-radius: 0.6rem;
-      padding: 0;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
       background: #fff;
       overflow: hidden; }
       nav.sidebar.top .nav-list.list1 .custom-popup a {
@@ -10150,6 +10151,14 @@ span.text1 {
     height: 5.85rem;
     width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
+/*---------------------------------------------TOP SECTION---------------------------------------------*/
+.top-section {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem; }
+
+/*---------------------------------------------MAIN SECTION---------------------------------------------*/
 .section-main {
   margin-left: 1.25rem;
   margin-right: 1.25rem;

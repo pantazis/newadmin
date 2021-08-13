@@ -357,7 +357,8 @@ nav.sidebar.top {
             top: $topMargin;
             text-align: center;            
             border-radius: $border-radius;
-            padding: 0;
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem;
             background:$white;
             overflow: hidden;
 
@@ -450,13 +451,14 @@ nav.sidebar.top {
     }
 
 }
+
+
 main{
     padding-top: $navSidebarTop;
     padding-left: $sidebarWidth;
     transition-property:padding-left;   
-
-
 }
+
 
 .logo {  
     width: $sidebarWidth;

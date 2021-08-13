@@ -10049,7 +10049,8 @@ span.text1 {
       height: 100%;
       position: relative; }
     .close-menu-cont svg {
-      width: 4.625rem;
+      width: 3rem;
+      /*gazis 4.625rem*/
       height: auto;
       position: absolute; }
 
@@ -10365,7 +10366,7 @@ main {
     background: #d83438;
     color: #fff; }
   .dark nav.sidebar.top .nav-list-item span.user_mail {
-    color: #0e0c28; }
+    color: #efeff6; }
   .dark:not(.closeNav) nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1, .dark.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 {
     color: #fff;
     background: #1E1C36; }

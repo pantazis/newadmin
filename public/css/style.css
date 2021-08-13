@@ -9407,7 +9407,7 @@ html {
   position: relative;
   height: 10.4em;
   width: 20em;
-  border: 0.3125em solid #E4E7EC;
+  border: 0.3125em solid #e4e7ec;
   border-radius: 10em;
   background-color: transparent;
   transition: background-color 250ms; }
@@ -9422,19 +9422,19 @@ html {
   width: 6.5em;
   border-radius: 50%;
   background-color: transparent;
-  border: 0.375rem  solid  #FFBB52;
+  border: 0.375rem solid #ffbb52;
   transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71); }
 
 .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
   background-color: transparent;
-  border: 0.375rem  solid #485367;
+  border: 0.375rem solid #485367;
   transform: translate(1.75em, 1.5em); }
 
 .sun-icon {
   position: absolute;
   height: 6em;
   width: 6em;
-  color: #FFBB52; }
+  color: #ffbb52; }
 
 .sun-icon-wrapper {
   position: absolute;
@@ -9510,11 +9510,17 @@ html {
   padding: 0; }
 
 .navdown {
-  color: #CACAD5;
+  color: #cacad5;
   font-size: 0.9375rem;
   margin-right: 0.5rem; }
 
-nav.sidebar.navbar, main, .logo, .curve, .burger-menu, .logo-text, .icon-fi-sr-menu-burger {
+nav.sidebar.navbar,
+main,
+.logo,
+.curve,
+.burger-menu,
+.logo-text,
+.icon-fi-sr-menu-burger {
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
 
@@ -9555,9 +9561,9 @@ nav.sidebar.navbar {
     color: #cacad5;
     flex-wrap: wrap;
     cursor: pointer;
-    transition: padding-left  .3s, background .3s; }
+    transition: padding-left 0.3s, background 0.3s; }
     nav.sidebar.navbar li.nav-list-item2 a {
-      transition: all .3s;
+      transition: all 0.3s;
       color: #fff;
       text-decoration: none;
       opacity: 0;
@@ -9570,7 +9576,7 @@ nav.sidebar.navbar {
       display: flex;
       align-items: center; }
       nav.sidebar.navbar li.nav-list-item2 .list-pad:hover {
-        padding-left: calc( 4.8125rem + 0.4375rem); }
+        padding-left: calc(4.8125rem + 0.4375rem); }
     nav.sidebar.navbar li.nav-list-item2:hover {
       padding-left: 0.4375rem; }
     nav.sidebar.navbar li.nav-list-item2.opennav1:hover {
@@ -9592,7 +9598,7 @@ nav.sidebar.navbar {
         font-size: 0.9375rem;
         right: 1.1875rem; }
         nav.sidebar.navbar li.nav-list-item2 .nav-text2 span.arrow-right .icon-fi-sr-angle-right {
-          transition: transform .3s; }
+          transition: transform 0.3s; }
         nav.sidebar.navbar li.nav-list-item2 .nav-text2 span.arrow-right.hide {
           display: none; }
   nav.sidebar.navbar .img-box {
@@ -9646,7 +9652,7 @@ nav.sidebar.top {
         justify-content: space-between;
         height: 2.5em;
         align-items: center;
-        transition: padding-left .3s;
+        transition: padding-left 0.3s;
         padding: 0 1.2em; }
         nav.sidebar.top .nav-list.list1 .custom-popup a:hover {
           padding-left: 1.875rem; }
@@ -9720,7 +9726,7 @@ main {
     height: 100%;
     display: flex;
     align-items: center;
-    transition-property: width,opacity;
+    transition-property: width, opacity;
     overflow: hidden;
     width: 6.87rem;
     opacity: 1; }
@@ -9825,7 +9831,7 @@ body.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1
     height: 2.4375rem; }
 
 nav.sidebar.navbar li.nav-list-item2 .nav-text2 span.arrow-right .icon-fi-sr-angle-right {
-  transition: transform .3s;
+  transition: transform 0.3s;
   display: none; }
 nav.sidebar.navbar li.nav-list-item2.subcategory .nav-text2 span.arrow-right .icon-fi-sr-angle-right {
   display: block; }
@@ -9959,10 +9965,10 @@ span.text1 {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: .8rem; }
+  font-size: 0.8rem; }
 
 .message {
-  border-left: 0.4375rem  solid;
+  border-left: 0.4375rem solid;
   margin: 0.625rem 0;
   height: 4.4375rem;
   width: 100%;
@@ -9977,11 +9983,13 @@ span.text1 {
   .message:last-of-type {
     margin-bottom: 0; }
 
-.nav-icon-3 .arrow-div, .nav-icon-3 .popup-notifications {
-  transition: transform .3s ease-in;
+.nav-icon-3 .arrow-div,
+.nav-icon-3 .popup-notifications {
+  transition: transform 0.3s ease-in;
   transform: translateX(30.25rem); }
 
-.nav-icon-3.opennav1 .arrow-div, .nav-icon-3.opennav1 .popup-notifications {
+.nav-icon-3.opennav1 .arrow-div,
+.nav-icon-3.opennav1 .popup-notifications {
   transform: translateX(0); }
 
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
@@ -10006,7 +10014,8 @@ span.text1 {
     margin-bottom: 3.0625rem;
     display: flex; }
 
-  body.openMenuLeft, body.openMenuRight {
+  body.openMenuLeft,
+  body.openMenuRight {
     overflow: hidden; }
 
   .close-menu-cont {
@@ -10016,13 +10025,13 @@ span.text1 {
     bottom: 0;
     width: 6.5625rem;
     height: 100%;
-    transition: 0 transform .3s ease; }
+    transition: 0 transform 0.3s ease; }
     .close-menu-cont.left {
       right: 0;
       border-right: 0.625rem solid #efeff6;
       transform: translateY(-100%); }
       .openMenuLeft .close-menu-cont.left {
-        transition: .3s transform .3s ease;
+        transition: 0.3s transform 0.3s ease;
         transform: translateY(0); }
       .close-menu-cont.left svg {
         right: -0.0625rem; }
@@ -10031,7 +10040,7 @@ span.text1 {
       border-left: 0.625rem solid #0e0c28;
       transform: translateY(-100%); }
       .openMenuRight .close-menu-cont.right {
-        transition: .3s transform .3s ease;
+        transition: 0.3s transform 0.3s ease;
         transform: translateY(0); }
       .close-menu-cont.right svg {
         left: -0.0625rem; }
@@ -10096,7 +10105,7 @@ span.text1 {
   .logo {
     display: none; }
 
- /*
+      /*
 .close-menu-cont.right {   
         right: auto;
         left: 0;
@@ -10156,7 +10165,8 @@ span.text1 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
   margin-bottom: 1.25rem;
-  margin-top: 1.25rem; }
+  margin-top: 1.25rem;
+  height: 10rem; }
 
 /*---------------------------------------------MAIN SECTION---------------------------------------------*/
 .section-main {
@@ -10227,34 +10237,17 @@ nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon .num {
 nav.sidebar.top .nav-list-item span.user_mail {
   color: #0e0c28; }
 
-body nav.sidebar.navbar
-li.nav-list-item2.nav-list-item2.opennav1,
-body.closeNav.hover
-nav.sidebar.navbar
-li.nav-list-item2.nav-list-item2.opennav1 {
+body nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1,
+body.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 {
   color: #0e0c28;
   background: #efeff6; }
 
-body:not(.closeNav)
-nav.sidebar.navbar
-li.nav-list-item2.nav-list-item2.opennav1
-a,
-body.closeNav.hover
-nav.sidebar.navbar
-li.nav-list-item2.nav-list-item2.opennav1
-a {
+body:not(.closeNav) nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 a,
+body.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 a {
   color: #0e0c28; }
 
-body:not(.closeNav)
-nav.sidebar.navbar
-li.nav-list-item2.nav-list-item2.opennav1
-.img-box
-span.nav-icons-side,
-body.closeNav.hover
-nav.sidebar.navbar
-li.nav-list-item2.nav-list-item2.opennav1
-.img-box
-span.nav-icons-side {
+body:not(.closeNav) nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 .img-box span.nav-icons-side,
+body.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 .img-box span.nav-icons-side {
   color: #0e0c28; }
 
 input.search-top {
@@ -10317,6 +10310,18 @@ input.search-top:-ms-input-placeholder {
 .nav-list-item.nav-list-item.opennav1 {
   border-bottom: solid #0e0c28 0.2rem; }
 
+body {
+  background-color: #efeff6; }
+
+.section-main {
+  background-color: #fff; }
+
+main {
+  background-color: #efeff6; }
+
+.backg {
+  fill: #efeff6; }
+
 /*=======================================================================================================================================
 =====================================================Dark Mode=========================================================================
 =======================================================================================================================================*/
@@ -10364,30 +10369,12 @@ input.search-top:-ms-input-placeholder {
     color: #fff; }
   .dark nav.sidebar.top .nav-list-item span.user_mail {
     color: #0e0c28; }
-  .dark:not(.closeNav)
-  nav.sidebar.navbar
-  li.nav-list-item2.nav-list-item2.opennav1, .dark.closeNav.hover
-  nav.sidebar.navbar
-  li.nav-list-item2.nav-list-item2.opennav1 {
+  .dark:not(.closeNav) nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1, .dark.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 {
     color: #fff;
     background: #1E1C36; }
-  .dark:not(.closeNav)
-  nav.sidebar.navbar
-  li.nav-list-item2.nav-list-item2.opennav1
-  a, .dark.closeNav.hover
-  nav.sidebar.navbar
-  li.nav-list-item2.nav-list-item2.opennav1
-  a {
+  .dark:not(.closeNav) nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 a, .dark.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 a {
     color: #cacad5; }
-  .dark:not(.closeNav)
-  nav.sidebar.navbar
-  li.nav-list-item2.nav-list-item2.opennav1
-  .img-box
-  span.nav-icons-side, .dark.closeNav.hover
-  nav.sidebar.navbar
-  li.nav-list-item2.nav-list-item2.opennav1
-  .img-box
-  span.nav-icons-side {
+  .dark:not(.closeNav) nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 .img-box span.nav-icons-side, .dark.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 .img-box span.nav-icons-side {
     color: #fff; }
   .dark input.search-top {
     border: 0.025rem solid #1E1C36; }
@@ -10438,10 +10425,7 @@ input.search-top:-ms-input-placeholder {
     background-color: #0e0c28; }
   .dark .body-container {
     background-color: #1E1C36; }
-  .dark nav.sidebar.navbar
-  li.nav-list-item2.nav-list-item2.opennav1, .dark .closeNav.hover
-  nav.sidebar.navbar
-  li.nav-list-item2.nav-list-item2.opennav1 {
+  .dark nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1, .dark .closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 {
     color: #fff;
     background: #1E1C36; }
   .dark .relative {

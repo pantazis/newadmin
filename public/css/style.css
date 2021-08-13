@@ -10314,7 +10314,12 @@ input.search-top:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #cacad5; }
 
-/*Dark Mode*/
+.nav-list-item.nav-list-item.opennav1 {
+  border-bottom: solid #0e0c28 0.2rem; }
+
+/*=======================================================================================================================================
+=====================================================Dark Mode=========================================================================
+=======================================================================================================================================*/
 .dark {
   background-color: #1E1C36; }
   .dark .side-nav-list span.icon-fi-sr-power.icon-t {
@@ -10458,6 +10463,8 @@ input.search-top:-ms-input-placeholder {
     color: #efeff6; }
   .dark .dark-label {
     color: #fff; }
+  .dark .nav-list-item.nav-list-item.opennav1 {
+    border-bottom: solid #efeff6 0.2rem; }
 
 @font-face {
   font-family: 'icomoon';

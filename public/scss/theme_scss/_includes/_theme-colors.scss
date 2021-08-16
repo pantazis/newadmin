@@ -164,6 +164,21 @@ main {
   background-color: $ice;
 }
 
+.modal-content {
+  .btn-secondary {
+    color: $bluedarkbl;
+    background-color: transparent;
+    border: transparent;
+    
+    &:focus{
+      outline: none;
+      box-shadow: none;
+    }
+
+  }
+}
+
+
 
 /*=======================================================================================================================================
 =====================================================Dark Mode=========================================================================

@@ -1,13 +1,13 @@
 /*--------------------------------------------MODAL---------------------------------------------------*/
 .modal-dialog{
 
-    max-width: 35rem;
+    max-width: 40rem;
     
     .modal-content {
 
         .modal-header{
 
-                justify-content: normal;
+                justify-content: space-between;
 
             .btn-close {
                 padding-top: 0.5rem;
@@ -31,6 +31,13 @@
 
 
             }
+        }
+        
+        .modal-footer {
+            .btn-secondary {
+                font-size: 0.71rem ;
+            }
+      
         }
     }
 }

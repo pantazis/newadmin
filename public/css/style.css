@@ -9643,8 +9643,6 @@ nav.sidebar.top {
       top: 5.305rem;
       text-align: center;
       border-radius: 0.6rem;
-      padding-top: 0.625rem;
-      padding-bottom: 0.625rem;
       background: #fff;
       overflow: hidden; }
       nav.sidebar.top .nav-list.list1 .custom-popup a {
@@ -9653,7 +9651,13 @@ nav.sidebar.top {
         height: 2.5em;
         align-items: center;
         transition: padding-left 0.3s;
-        padding: 0 1.2em; }
+        padding: 0 1.2em;
+        text-decoration: none;
+        color: #0e0c28; }
+        nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+          color: #ffffff;
+          background: #d83438;
+          border-radius: 0.6rem; }
         nav.sidebar.top .nav-list.list1 .custom-popup a:hover {
           padding-left: 1.875rem; }
   nav.sidebar.top .nav-list.user-icons {
@@ -9703,7 +9707,7 @@ nav.sidebar.top {
       font-weight: normal;
       color: #0e0c28; }
     nav.sidebar.top .nav-list-item:first-of-type {
-      padding-left: 2.5rem; }
+      margin-left: 1.094rem; }
   nav.sidebar.top .nav-list.search {
     margin-left: auto;
     padding-right: 1.7337rem; }

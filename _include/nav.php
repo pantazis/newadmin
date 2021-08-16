@@ -35,7 +35,14 @@
 "Domains",
 "Hosting",
 "SSL Certificates",
-"Οικονομικά",]
+"Οικονομικά",];
+
+$sub1 = [
+    ["text"=>"Πίνακας Ελέγχου","icon"=>"icon-fi-sr-sign-out","class"=>"","attr"=>""],
+    ["text"=>"Απενεργοποίηση","icon"=>"icon-fi-sr-power","class"=>"active button2","attr"=>'data-bs-toggle="modal" data-bs-target="#disableAccount"'],
+];
+
+
  ?>
 
  <?php foreach($arrmenu as $key1 => $value ){?>
@@ -45,15 +52,24 @@
         <span><?=$value?></span>
         <?php if($key1==0){echo '<span class ="user_mail">sunray69@gmail.com</span>';} ?>
         <span class="icon-fi-sr-caret-down navdown"></span>
-        <?php if($key1==0 || true){ ?>
-            <div class="custom-popup shadow-2-strong">
+        <?php if($value=="An Ubavicious" ){ ?>
+            <div class="custom-popup shadow-2-strong"> 
+            <!-- Button trigger modal -->           
+            <?php foreach($sub1 as  $value ){?>                  
+                    <a href="#" class="<?=$value["class"];?>" <?=$value["attr"]?>>
+                     <?=$value["text"];?> <span class="<?=$value["icon"];?>"></span>
+                    </a>
+            <?php }?>                   
+            </div>
+        <?php }else{ ?> 
+            <div class="custom-popup shadow-2-strong">                
                 <?php for($i=1; $i<=2;$i++){ ?>                
-                    <a href="#" class="<?php if($i==3){echo "activate";}?>">
+                    <a href="#" class="">
                         subcategory  <span class="icon-fi-sr-caret-down navdown"></span>
                     </a>
                 <?php } ?>       
             </div>
-        <?php } ?> 
+        <?php } ?>    
     </span>
       </div>
 <?php }?>

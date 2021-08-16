@@ -9621,26 +9621,6 @@ nav.sidebar.navbar {
     margin-right: 0.625em;
     transition: all .3s; }
 
-.isNotActive .nav-text1 span.light {
-  background: #18bf93;
-  box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2); }
-.isNotActive .activeText {
-  display: inline; }
-.isNotActive .notActiveText {
-  display: none; }
-.isNotActive nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
-  background: #d83438; }
-
-.isActive .nav-text1 span.light {
-  background: #d83438;
-  box-shadow: 0em 0em 0.375em 0.3125em rgba(216, 52, 56, 0.2); }
-.isActive .activeText {
-  display: none; }
-.isActive .notActiveText {
-  display: inline; }
-.isActive nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
-  background: #18bf93; }
-
 nav.sidebar.top {
   height: 4.68rem;
   position: fixed;
@@ -9671,8 +9651,7 @@ nav.sidebar.top {
         align-items: center;
         transition: padding-left 0.3s;
         padding: 0 1.2em;
-        text-decoration: none;
-        color: #0e0c28; }
+        text-decoration: none; }
         nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
           color: #ffffff;
           border-radius: 0.6rem; }
@@ -10367,11 +10346,45 @@ main {
     outline: none;
     box-shadow: none; }
 
+nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+  color: #fff; }
+
+.isNotActive #setActiveButton {
+  background: #d83438; }
+.isNotActive .nav-text1 span.light {
+  background: #18bf93;
+  box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2); }
+.isNotActive .activeText {
+  display: inline; }
+.isNotActive .notActiveText {
+  display: none; }
+.isNotActive nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+  background: #d83438; }
+
+.isActive #setActiveButton {
+  background: #18bf93; }
+.isActive .nav-text1 span.light {
+  background: #d83438;
+  box-shadow: 0em 0em 0.375em 0.3125em rgba(216, 52, 56, 0.2); }
+.isActive .activeText {
+  display: none; }
+.isActive .notActiveText {
+  display: inline; }
+.isActive nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+  background: #18bf93; }
+
+nav.sidebar.top .nav-list.list1 .custom-popup a {
+  color: #0e0c28; }
+
 /*=======================================================================================================================================
 =====================================================Dark Mode=========================================================================
 =======================================================================================================================================*/
 .dark {
   background-color: #1E1C36; }
+  .dark nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+    color: #efeff6; }
+  .dark nav.sidebar.top .nav-list.list1 .custom-popup a {
+    color: #efeff6; }
   .dark .side-nav-list span.icon-fi-sr-power.icon-t {
     color: #d83438; }
   .dark .side-nav-list span.icon-fi-sr-sign-out.icon-t {

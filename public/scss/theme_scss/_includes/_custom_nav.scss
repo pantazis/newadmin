@@ -289,34 +289,7 @@ nav.sidebar.navbar {
     }
 }
 
-.isNotActive {
-    .nav-text1 span.light{
-   
 
-        background:$green2;
-        box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2);
-           
-    }
-    .activeText{display: inline;}
-    .notActiveText{display: none;}
-    nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
-        background:$red2;
-
-    }
-}
-.isActive {
-    .nav-text1 span.light{
-        background:$red2;
-        box-shadow: 0em 0em 0.375em 0.3125em rgba(216, 52, 56, 0.2);
-           
-    }
-    .activeText{display: none;}
-    .notActiveText{display: inline;}
-    nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
-        background:$green2;
-
-    }
-}
 
 nav.sidebar.top {
     height: $navSidebarTop;
@@ -354,7 +327,7 @@ nav.sidebar.top {
                 transition: padding-left 0.3s;
                 padding: 0 1.2em;
                 text-decoration: none;
-                color:#0e0c28;
+               
                 &.button2{
                     color:#ffffff;
                 

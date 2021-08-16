@@ -178,6 +178,51 @@ main {
   }
 }
 
+nav.sidebar.top .nav-list.list1 .custom-popup a.button2{
+  color:$white;
+}
+
+.isNotActive {
+  #setActiveButton{
+      background:$red2;
+  }
+  .nav-text1 span.light{
+ 
+
+      background:$green2;
+      box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2);
+         
+  }
+  .activeText{display: inline;}
+  .notActiveText{display: none;}
+  nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+      background:$red2;
+
+  }
+}
+.isActive {
+  #setActiveButton{
+      background:$green2;
+  }
+  .nav-text1 span.light{
+      background:$red2;
+      box-shadow: 0em 0em 0.375em 0.3125em rgba(216, 52, 56, 0.2);
+         
+  }
+  .activeText{display: none;}
+  .notActiveText{display: inline;}
+  nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+      background:$green2;
+
+  }
+}
+
+
+nav.sidebar.top .nav-list.list1 .custom-popup a {
+
+  color: $black_blue;
+}
+
 
 
 /*=======================================================================================================================================
@@ -185,6 +230,12 @@ main {
 =======================================================================================================================================*/
 
 .dark {
+  nav.sidebar.top .nav-list.list1 .custom-popup a.button2{
+    color:$ice;
+  }
+  nav.sidebar.top .nav-list.list1 .custom-popup a {
+    color: $ice;
+  }
   .side-nav-list span.icon-fi-sr-power.icon-t {
     color: $red2;
   }

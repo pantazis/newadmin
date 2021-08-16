@@ -291,8 +291,8 @@ nav.sidebar.navbar {
 }
 
 .isNotActive {
-    .activeText{display: none;}
-    .notActiveText{display: inline;}
+    .activeText{display: inline;}
+    .notActiveText{display: none;}
     nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
         background:$red2;
 

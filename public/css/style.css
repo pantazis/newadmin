@@ -9623,9 +9623,9 @@ nav.sidebar.navbar {
     margin-right: 0.625em; }
 
 .isNotActive .activeText {
-  display: none; }
-.isNotActive .notActiveText {
   display: inline; }
+.isNotActive .notActiveText {
+  display: none; }
 .isNotActive nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
   background: #d83438; }
 
@@ -10178,6 +10178,20 @@ span.text1 {
     height: 5.85rem;
     width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
+/*--------------------------------------------MODAL---------------------------------------------------*/
+.modal-dialog {
+  max-width: 35rem; }
+  .modal-dialog .modal-content .modal-header {
+    justify-content: normal; }
+    .modal-dialog .modal-content .modal-header .btn-close {
+      padding-top: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 0.5rem;
+      margin: 0; }
+  .modal-dialog .modal-content .modal-body p {
+    text-align: center; }
+
 /*---------------------------------------------TOP SECTION---------------------------------------------*/
 .top-section {
   margin-left: 1.25rem;

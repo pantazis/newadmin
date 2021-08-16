@@ -39,7 +39,7 @@
 
 $sub1 = [
     ["text"=>"Πίνακας Ελέγχου","icon"=>"icon-fi-sr-sign-out","class"=>"","attr"=>""],
-    ["text"=>'<span class="activeText">Απενεργοποίηση</span><span class="notActiveText">Απενεργοποίηση</span>',"icon"=>"icon-fi-sr-power","class"=>"active button2","attr"=>'data-bs-toggle="modal" data-bs-target="#disableAccount"'],
+    ["text"=>'<span class="activeText">Απενεργοποίηση</span><span class="notActiveText">Eνεργοποίηση</span>',"icon"=>"icon-fi-sr-power","class"=>"active button2","attr"=>'data-bs-toggle="modal" data-bs-target="#disableAccount"'],
 ];
 
 

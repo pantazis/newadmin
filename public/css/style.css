@@ -10166,14 +10166,18 @@ span.text1 {
     width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
 /*--------------------------------------------MODAL---------------------------------------------------*/
-.modal-content .modal-header .btn-close {
-  padding-top: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  margin: 0; }
-.modal-content .modal-body p {
-  text-align: center; }
+.modal-dialog {
+  max-width: 35rem; }
+  .modal-dialog .modal-content .modal-header {
+    justify-content: normal; }
+    .modal-dialog .modal-content .modal-header .btn-close {
+      padding-top: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 0.5rem;
+      margin: 0; }
+  .modal-dialog .modal-content .modal-body p {
+    text-align: center; }
 
 /*---------------------------------------------TOP SECTION---------------------------------------------*/
 .top-section {

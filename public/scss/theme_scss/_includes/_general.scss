@@ -1,28 +1,36 @@
 /*--------------------------------------------MODAL---------------------------------------------------*/
-.modal-content {
+.modal-dialog{
 
-    .modal-header{
+    max-width: 35rem;
+    
+    .modal-content {
 
-        .btn-close {
-            padding-top: 0.5rem;
-            padding-right: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 0.5rem;
-            margin: 0;
-        
+        .modal-header{
+
+                justify-content: normal;
+
+            .btn-close {
+                padding-top: 0.5rem;
+                padding-right: 0.5rem;
+                padding-bottom: 0.5rem;
+                padding-left: 0.5rem;
+                margin: 0;
+
+            }
+         
+            .modal-title{
+
+
+            }
+         
         }
-
-                .modal-title{
-
-
-        }
-    }
-
-    .modal-body {
-        p{
-            text-align: center;
+     
+        .modal-body {
+            p{
+                text-align: center;
 
 
+            }
         }
     }
 }

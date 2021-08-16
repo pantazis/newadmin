@@ -6,7 +6,7 @@ $input = ["#0001 An Ubavicius", "#0005 Γιάννης Παπαδόπουλος",
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="disableAccountLabel">Modal title</h5>
+        <h5 class="modal-title" id="disableAccountLabel">Απενεργοποίηση λογαριασμού χρήστη</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

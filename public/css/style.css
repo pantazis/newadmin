@@ -9622,6 +9622,20 @@ nav.sidebar.navbar {
     box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2);
     margin-right: 0.625em; }
 
+.isNotActive .activeText {
+  display: none; }
+.isNotActive .notActiveText {
+  display: inline; }
+.isNotActive nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+  background: #d83438; }
+
+.isActive .activeText {
+  display: none; }
+.isActive .notActiveText {
+  display: inline; }
+.isActive nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+  background: #18bf93; }
+
 nav.sidebar.top {
   height: 4.68rem;
   position: fixed;
@@ -9656,7 +9670,6 @@ nav.sidebar.top {
         color: #0e0c28; }
         nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
           color: #ffffff;
-          background: #d83438;
           border-radius: 0.6rem; }
         nav.sidebar.top .nav-list.list1 .custom-popup a:hover {
           padding-left: 1.875rem; }

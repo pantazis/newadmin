@@ -24,6 +24,20 @@
 
     })
 
+    /*activate */
+    $(".light").click(function(){
+        if($("body").hasClass("isNotActive")){            
+     
+            $("body").addClass("isActive");
+            $("body").removeClass("isNotActive");
+
+        }else{
+            $("body").removeClass("isActive");
+            $("body").addClass("isNotActive");
+           
+        }
+    });
+
    
     var isDark = localStorage.getItem('dark');
  

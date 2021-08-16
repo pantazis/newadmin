@@ -290,6 +290,23 @@ nav.sidebar.navbar {
     }
 }
 
+.isNotActive {
+    .activeText{display: none;}
+    .notActiveText{display: inline;}
+    nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+        background:$red2;
+
+    }
+}
+.isActive {
+    .activeText{display: none;}
+    .notActiveText{display: inline;}
+    nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
+        background:$green2;
+
+    }
+}
+
 nav.sidebar.top {
     height: $navSidebarTop;
     position: fixed;
@@ -329,7 +346,7 @@ nav.sidebar.top {
                 color:#0e0c28;
                 &.button2{
                     color:#ffffff;
-                    background:$red2;
+                
                     border-radius: 0.6rem;
 
                 }

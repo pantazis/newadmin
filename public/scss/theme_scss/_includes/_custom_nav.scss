@@ -281,14 +281,12 @@ nav.sidebar.navbar {
     justify-content: center;
     span.light {
         width: 0.625em;
-        height: 0.625em;  
-        border-radius: 0.3125em;      
+        height: 0.625em;
+        border-radius: 0.3125em;
         margin-right: 0.625em;
-        transition:all .3s;
+        transition: all 0.3s;
     }
 }
-
-
 
 nav.sidebar.top {
     height: $navSidebarTop;
@@ -314,7 +312,7 @@ nav.sidebar.top {
             top: $topMargin;
             text-align: center;
             border-radius: $border-radius;
-           
+
             background: $white;
             overflow: hidden;
 
@@ -326,14 +324,12 @@ nav.sidebar.top {
                 transition: padding-left 0.3s;
                 padding: 0 1.2em;
                 text-decoration: none;
-               
-                &.button2{
-                    color:#ffffff;
-                
+
+                &.button2 {
+                    color: #ffffff;
+
                     border-radius: 0.6rem;
-
                 }
-
 
                 &:hover {
                     padding-left: 1.875rem;

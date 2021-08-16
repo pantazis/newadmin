@@ -9619,7 +9619,7 @@ nav.sidebar.navbar {
     height: 0.625em;
     border-radius: 0.3125em;
     margin-right: 0.625em;
-    transition: all .3s; }
+    transition: all 0.3s; }
 
 nav.sidebar.top {
   height: 4.68rem;

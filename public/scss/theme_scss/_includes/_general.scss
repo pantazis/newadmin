@@ -1,14 +1,12 @@
 /*--------------------------------------------MODAL---------------------------------------------------*/
-.modal-dialog{
-
+.modal-dialog {
     max-width: 40rem;
-    
+
     .modal-content {
-        border-radius:$border-radius ;
+        border-radius: $border-radius;
 
-        .modal-header{
-
-                justify-content: space-between;
+        .modal-header {
+            justify-content: space-between;
 
             .btn-close {
                 padding-top: 0.5rem;
@@ -16,31 +14,22 @@
                 padding-bottom: 0.5rem;
                 padding-left: 0.5rem;
                 margin: 0;
-
             }
-         
         }
-     
+
         .modal-body {
-            p{
+            p {
                 text-align: center;
-
-
             }
         }
-        
+
         .modal-footer {
             .btn-secondary {
-                font-size: 0.71rem ;
+                font-size: 0.71rem;
             }
-      
         }
     }
 }
-
-
-
-
 
 /*---------------------------------------------TOP SECTION---------------------------------------------*/
 .top-section {

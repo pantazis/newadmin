@@ -10356,6 +10356,9 @@ main {
   .modal-content .btn-secondary:focus {
     outline: none;
     box-shadow: none; }
+.modal-content .btn-primary:focus {
+  outline: none;
+  box-shadow: none; }
 
 /*====================*/
 nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {

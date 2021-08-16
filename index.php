@@ -28,6 +28,7 @@
 
 </head>
 <body class="isNotActive">
+    <?php include "./_include/loader.php" ?>
     <?php include "./_include/nav.php" ?>
     <?php include "./_include/mobile-nav.php" ?>
     <main role="main">

@@ -191,8 +191,16 @@ menu_subcategory_open (".nav-icon-3","opennav1",".popup-notifications");
 
 
 
+/*hide loader*/
 
+setTimeout(function(){
+
+  $(".coverdiv.loader").addClass("hide-loader");
+   
+    //display: none;
+   }, 2500);
 
 
    
   })();
+  

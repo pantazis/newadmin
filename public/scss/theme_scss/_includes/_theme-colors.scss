@@ -1,4 +1,8 @@
 //nav menu colors
+.coverdiv{
+  background: $ice;
+}
+
 .noTransition * {
   transition: none !important;
 }
@@ -235,6 +239,12 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
 =======================================================================================================================================*/
 
 .dark {
+
+  .coverdiv{
+
+    background: $black_blue;
+  }
+
   nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
     color: $ice;
   }

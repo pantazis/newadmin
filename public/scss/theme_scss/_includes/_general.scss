@@ -4,6 +4,7 @@
     max-width: 40rem;
     
     .modal-content {
+        border-radius:$border-radius ;
 
         .modal-header{
 
@@ -15,11 +16,6 @@
                 padding-bottom: 0.5rem;
                 padding-left: 0.5rem;
                 margin: 0;
-
-            }
-         
-            .modal-title{
-
 
             }
          

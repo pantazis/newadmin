@@ -126,6 +126,11 @@ html {
     fill: $ice;
 }
 
+.logo {
+    cursor: pointer;
+    
+}
+
 .logo-button {
     position: fixed;
     top: 0;
@@ -356,6 +361,7 @@ nav.sidebar.top {
             justify-content: center;
             align-items: center;
             border-left: 0.025rem solid $light_grey;
+            cursor: pointer;
             &.tablet-only {
                 display: none;
             }
@@ -383,6 +389,8 @@ nav.sidebar.top {
     .nav-list-item {
         display: flex;
         align-items: center;
+        cursor: pointer;
+
         span.user_mail {
             position: absolute;
             bottom: 0.75rem;
@@ -527,6 +535,7 @@ main {
     justify-content: center;
     align-items: center;
     transition-property: right;
+    cursor: pointer;
     .icon-fi-sr-menu-burger {
         font-size: 1.25rem;
         transition-property: transform;
@@ -596,6 +605,7 @@ input.search-top {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     .search-text {
         line-height: 0;
         font-size: 0.8125rem;

@@ -9493,6 +9493,9 @@ html {
 .close-menu {
   fill: #efeff6; }
 
+.logo {
+  cursor: pointer; }
+
 .logo-button {
   position: fixed;
   top: 0;
@@ -9674,7 +9677,8 @@ nav.sidebar.top {
       display: flex;
       justify-content: center;
       align-items: center;
-      border-left: 0.025rem solid #cacad5; }
+      border-left: 0.025rem solid #cacad5;
+      cursor: pointer; }
       nav.sidebar.top .nav-list.user-icons .nav-icon-3.tablet-only {
         display: none; }
       nav.sidebar.top .nav-list.user-icons .nav-icon-3 .rel-icon {
@@ -9696,6 +9700,7 @@ nav.sidebar.top {
   nav.sidebar.top .nav-list-item {
     display: flex;
     align-items: center;
+    cursor: pointer;
     padding: 0 1.406rem; }
     nav.sidebar.top .nav-list-item span.user_mail {
       position: absolute;
@@ -9802,7 +9807,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: right; }
+  transition-property: right;
+  cursor: pointer; }
   .burger-menu .icon-fi-sr-menu-burger {
     font-size: 1.25rem;
     transition-property: transform; }
@@ -9855,7 +9861,8 @@ input.search-top {
   border-radius: 0.9375rem;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
   .search-cont .search-text {
     line-height: 0;
     font-size: 0.8125rem;

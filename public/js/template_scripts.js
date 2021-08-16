@@ -25,7 +25,7 @@
     })
 
     /*activate */
-    $(".light").click(function(){
+    $("#setActiveButton").click(function(){
         if($("body").hasClass("isNotActive")){            
      
             $("body").addClass("isActive");

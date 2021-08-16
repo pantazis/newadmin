@@ -14,7 +14,7 @@ $input = ["#0001 An Ubavicius", "#0005 Γιάννης Παπαδόπουλος",
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
-        <button type="button" id="setactive" class="btn btn-primary"><span class="activeText">Απενεργοποίηση</span><span class="notActiveText">Eνεργοποίηση</span></button>
+        <button type="button" id="setActiveButton" class="btn btn-primary"><span class="activeText">Απενεργοποίηση</span><span class="notActiveText">Eνεργοποίηση</span></button>
       </div>
     </div>
   </div>

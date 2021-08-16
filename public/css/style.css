@@ -9617,11 +9617,13 @@ nav.sidebar.navbar {
   .nav-text1 span.light {
     width: 0.625em;
     height: 0.625em;
-    background: #18bf93;
     border-radius: 0.3125em;
-    box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2);
-    margin-right: 0.625em; }
+    margin-right: 0.625em;
+    transition: all .3s; }
 
+.isNotActive .nav-text1 span.light {
+  background: #18bf93;
+  box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2); }
 .isNotActive .activeText {
   display: inline; }
 .isNotActive .notActiveText {
@@ -9629,6 +9631,9 @@ nav.sidebar.navbar {
 .isNotActive nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
   background: #d83438; }
 
+.isActive .nav-text1 span.light {
+  background: #d83438;
+  box-shadow: 0em 0em 0.375em 0.3125em rgba(216, 52, 56, 0.2); }
 .isActive .activeText {
   display: none; }
 .isActive .notActiveText {
@@ -10340,7 +10345,8 @@ input.search-top:-ms-input-placeholder {
   color: #cacad5; }
 
 .nav-list-item.nav-list-item.opennav1 {
-  border-bottom: solid #0e0c28 0.2rem; }
+  border-bottom: solid #0e0c28 0.1rem;
+  border-top: solid transparent 0.1rem; }
 
 body {
   background-color: #efeff6; }

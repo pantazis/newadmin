@@ -147,7 +147,9 @@ input.search-top:-ms-input-placeholder {
 }
 
 .nav-list-item.nav-list-item.opennav1 {
-  border-bottom: solid $black_blue 0.2rem;
+  $border: 0.1rem;
+  border-bottom: solid $black_blue $border;
+  border-top: solid transparent $border;
 }
 
 body {

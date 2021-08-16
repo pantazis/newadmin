@@ -282,15 +282,21 @@ nav.sidebar.navbar {
     justify-content: center;
     span.light {
         width: 0.625em;
-        height: 0.625em;
-        background: rgba(24, 191, 147, 1);
-        border-radius: 0.3125em;
-        box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2);
+        height: 0.625em;  
+        border-radius: 0.3125em;      
         margin-right: 0.625em;
+        transition:all .3s;
     }
 }
 
 .isNotActive {
+    .nav-text1 span.light{
+   
+
+        background:$green2;
+        box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2);
+           
+    }
     .activeText{display: inline;}
     .notActiveText{display: none;}
     nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
@@ -299,6 +305,11 @@ nav.sidebar.navbar {
     }
 }
 .isActive {
+    .nav-text1 span.light{
+        background:$red2;
+        box-shadow: 0em 0em 0.375em 0.3125em rgba(216, 52, 56, 0.2);
+           
+    }
     .activeText{display: none;}
     .notActiveText{display: inline;}
     nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {

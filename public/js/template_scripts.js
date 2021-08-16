@@ -192,13 +192,20 @@ menu_subcategory_open (".nav-icon-3","opennav1",".popup-notifications");
 
 
 /*hide loader*/
+console.log(sessionStorage.getItem('loaded'));
+if(sessionStorage.getItem('loaded')=='true'){
+    $(".coverdiv.loader").addClass("hide-loader");
 
+}
 setTimeout(function(){
 
   $(".coverdiv.loader").addClass("hide-loader");
+  sessionStorage.setItem('loaded', 'true');
+
    
     //display: none;
    }, 2500);
+
 
 
    

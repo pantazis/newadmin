@@ -1,4 +1,4 @@
-<head>
+
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">    
@@ -24,4 +24,3 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="transparent">
 
-</head>

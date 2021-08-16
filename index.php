@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <?php include '_include\head.php'?>
+<head>
+  <?php include './_include/head.php'?>
+</head>
 
 <body class="isNotActive">
     <?php include "./_include/loader.php" ?>

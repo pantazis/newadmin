@@ -9886,12 +9886,12 @@ input.search-top {
     position: relative;
     left: 0.5rem; }
 
-.nav-list-item .custom-popup {
+.nav-list-item .custom-popup, .nav-list.search .custom-popup {
   transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
   width: 0em;
   transform: translate(20px, 50px);
   opacity: 0; }
-.nav-list-item.opennav1 .custom-popup {
+.nav-list-item.opennav1 .custom-popup, .nav-list.search.opennav1 .custom-popup {
   transition: width 0s 0s, transform 0.3s, opacity 0.3s;
   transform: translate(0px, 0px);
   opacity: 1;

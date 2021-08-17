@@ -643,7 +643,7 @@ input.search-top{
 
 //nav top popup animation
 
-.nav-list-item {
+.nav-list-item,.nav-list.search {
     .custom-popup {
         transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
         width: 0em;
@@ -790,6 +790,8 @@ span.text1 {
     justify-content: center;
     align-items: center;
     padding: 11px;
+   
+
 }
 
 .bubble {

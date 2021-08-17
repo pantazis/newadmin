@@ -10672,12 +10672,6 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
     color: #efeff6;
     opacity: 1;
     /* Firefox */ }
-  .dark input.search-top::-webkit-input-placeholder {
-    /* Edge */
-    color: #efeff6; }
-  .dark input.search-top:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #efeff6; }
   .dark .dark-label {
     color: #fff; }
   .dark .nav-list-item.nav-list-item.opennav1 {

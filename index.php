@@ -155,7 +155,7 @@
             </div>
           </div>
         </div>
-</section>
+      </section>
     </main>
  
     <?php include "_include/modals.php"?>
@@ -176,11 +176,6 @@
     <script src="./public/js/template_scripts.js?<?= rand(0,1000)?>"></script> 
     <script>
       var myModal = document.getElementById('disableAccount');
-      
-
-
-
-
     </script> 
-</body>
+  </body>
 </html>

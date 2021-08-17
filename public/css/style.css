@@ -10221,7 +10221,7 @@ span.b_in {
   fill: transparent;
   stroke-width: 6px;
   stroke: #1EB6DB;
-  r: 17;
+  r: 17px;
   stroke-dasharray: 107;
   stroke-dashoffset: -107;
   animation-name: circle_big;
@@ -10305,11 +10305,11 @@ span.b_in {
 /* The animation code */
 @keyframes circle_small {
   0% {
-    r: 0; }
+    r: 0px; }
   50% {
-    r: 17; }
+    r: 17px; }
   100% {
-    r: 17; } }
+    r: 17px; } }
 @keyframes circle_big {
   0% {
     stroke-dashoffset: -107; }

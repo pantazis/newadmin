@@ -204,7 +204,7 @@ setTimeout(function(){
 
    
     //display: none;
-   }, 2500);
+   }, 500000);
 
 
 

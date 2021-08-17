@@ -42,7 +42,7 @@
   fill: transparent;
   stroke-width: 6px;
   stroke: #1EB6DB;
-  r: 17;
+  r: 17px;
   stroke-dasharray: 107;
   stroke-dashoffset: -107;
   animation-name: circle_big;
@@ -131,11 +131,11 @@
 /* The animation code */
 @keyframes circle_small {
   0% {
-    r: 0; }
+    r: 0px; }
   50% {
-    r: 17; }
+    r: 17px; }
   100% {
-    r: 17; }
+    r: 17px; }
  }
 @keyframes circle_big {
   0% {
@@ -151,7 +151,7 @@
 
 
 
- 
+
 /*--------------------------------------------MODAL---------------------------------------------------*/
 .modal-dialog {
   max-width: 40rem;

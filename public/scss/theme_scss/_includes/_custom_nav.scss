@@ -782,16 +782,25 @@ span.text1 {
     }
 }
 
-.custom-popup.bubble-cont {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 300px;
-    justify-content: center;
-    align-items: center;
-    padding: 11px;
-   
+nav.sidebar.top  .custom-popup.ss{
+    overflow:visible;
+    .bubble-cont {
 
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        align-items: center;
+        padding: 11px;
+        position: relative;
+        .arrow-div{
+            position:absolute;
+            top: -9px;
+
+        }   
+
+    }
 }
 
 .bubble {

@@ -9985,14 +9985,20 @@ span.text1 {
 .nav-icon-3.opennav1 .popup-notifications {
   transform: translateX(0); }
 
-.custom-popup.bubble-cont {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 300px;
-  justify-content: center;
-  align-items: center;
-  padding: 11px; }
+nav.sidebar.top .custom-popup.ss {
+  overflow: visible; }
+  nav.sidebar.top .custom-popup.ss .bubble-cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+    position: relative; }
+    nav.sidebar.top .custom-popup.ss .bubble-cont .arrow-div {
+      position: absolute;
+      top: -9px; }
 
 .bubble {
   padding: 5px; }

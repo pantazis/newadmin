@@ -76,12 +76,29 @@ $sub1 = [
       </div>
 <?php }?>
         </div>
+<?php $bubbles=[
+"Διάλεξε πίνακα",
+" Domain",
+" Domain (orders)",
+" Domain (trades)",
+" Email (users)",
+" VAT",
+" Documents"] ?>
+
+
         <div class="nav-list search">
             <div class="search-cont">
                 <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
             <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
-            </div>
-          
+
+
+            <div class="arrow-div"></div>
+            <div class="custom-popup bubble-cont shadow-2-strong">
+               <?php foreach ($bubbles as  $value) {?>
+                <div class="bubble"><span class="b_in"><?=$value?></span></div>
+                <?php }?>
+                                         
+            </div>       
             
 
         </div>

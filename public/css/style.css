@@ -10189,6 +10189,8 @@ span.b_in {
 /*LOADER*/
 .coverdiv.hide-loader {
   left: -100%; }
+  .coverdiv.hide-loader .disable {
+    display: none; }
 
 .loaderimg {
   width: 100px;

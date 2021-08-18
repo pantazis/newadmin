@@ -2,12 +2,11 @@
 $request = $_SERVER['REQUEST_URI'];
 
 
-
 switch ($request) {
-    case '/mydnhost/dnhost/' :      
+    case $request :      
         include '_views/home.php';
         break;   
-    case '/mydnhost/dnhost/about' :
+    case $request.'about' :
         include '_views/about.php';
         break;
   //  default:

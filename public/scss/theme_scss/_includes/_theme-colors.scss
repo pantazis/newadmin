@@ -438,16 +438,6 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
     opacity: 1; /* Firefox */
   }
 
-  input.search-top::-webkit-input-placeholder {
-    /* Edge */
-    color: $ice;
-  }
-
-  input.search-top:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: $ice;
-  }
-
   .dark-label {
     color: $white;
   }

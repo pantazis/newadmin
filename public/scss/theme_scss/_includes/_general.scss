@@ -1,6 +1,9 @@
 /*LOADER*/
 .coverdiv.hide-loader{
   left:-100%;
+  .disable{
+    display: none;
+  }
 }
 .loaderimg {
   width: 100px;

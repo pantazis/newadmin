@@ -1296,3 +1296,11 @@
   .icon-enter:before {
     content: "\eaa6";
   }
+
+
+
+
+  @mixin fontSizeSmall {
+    font-size:12px;
+ 
+  }

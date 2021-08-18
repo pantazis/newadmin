@@ -1,5 +1,5 @@
       <section class="top-section ">
-        11111111111111111111111111111111111111111111
+      <?php include '_include/content_top.php'; ?>       
       </section>    
       <section class="section-main">
         <div class="container">

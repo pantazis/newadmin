@@ -10348,17 +10348,17 @@ span.b_in {
 
 /*---------------------------------------------TOP SECTION---------------------------------------------*/
 .top-section {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  margin-bottom: 1.25rem;
-  margin-top: 1.25rem;
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+  margin-bottom: 1.875rem;
+  margin-top: 1.875rem;
   height: 10rem; }
 
 /*---------------------------------------------MAIN SECTION---------------------------------------------*/
 .section-main {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  margin-bottom: 1.25rem; }
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+  margin-bottom: 1.875rem; }
 
 .coverdiv {
   background: #efeff6; }
@@ -11980,5 +11980,35 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
 
 .icon-enter:before {
   content: "\eaa6"; }
+
+.content_top {
+  display: flex;
+  justify-content: space-between; }
+
+.top_right {
+  display: flex;
+  width: 63%; }
+
+.top_frame {
+  width: 100%;
+  max-width: 255px;
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 21px;
+  text-align: center;
+  border-radius: 0.6rem; }
+
+li.breadcrumb-item {
+  font-size: 12px; }
+  li.breadcrumb-item.active a {
+    color: #0e0c28; }
+  li.breadcrumb-item a {
+    text-decoration: none;
+    color: #9a9ab4; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  font-size: 12px;
+  color: #9a9ab4; }
 
 /*# sourceMappingURL=style.css.map */

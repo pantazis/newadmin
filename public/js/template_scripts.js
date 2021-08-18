@@ -193,7 +193,7 @@ menu_subcategory_open (".nav-list.search","opennav1",".custom-popup");
 
 
 /*hide loader*/
-console.log(sessionStorage.getItem('loaded'));
+// console.log(sessionStorage.getItem('loaded'));
 if(sessionStorage.getItem('loaded')=='true'){
     $(".coverdiv.loader").addClass("hide-loader");
 

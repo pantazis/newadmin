@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+$request = $_SERVER['REQUEST_URI'];
+$url_without_last_part = substr($request, 0, strrpos($request, "/"));
+?>
 <html lang="en">
 <head>
   <?php include './_include/head.php'?>

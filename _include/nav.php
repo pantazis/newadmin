@@ -232,6 +232,20 @@ $arr2 = [
     ];
 
 
+$links =[
+    [$url_without_last_part."/","dashboard" ],
+    [$url_without_last_part.'/domain-list','domain-list' ],
+    [$url_without_last_part.'/domain','domain' ],
+    [$url_without_last_part.'/orders','orders' ],
+    [$url_without_last_part.'/order',"order" ],
+    [$url_without_last_part.'/ssl',"ssl" ],
+    [$url_without_last_part.'/ssl-list',"ssl-list" ],
+    [$url_without_last_part.'/billing-profile',"billing-profile" ],
+    [$url_without_last_part.'/billing-profiles','billing-profiles' ],
+    [$url_without_last_part.'/order-doc','order-doc']
+]; 
+
+
 
 
 ?>
@@ -257,9 +271,9 @@ $arr2 = [
                 <div class="sub-category">
                     
                 
-                    <?php for($i = 0; $i < rand(3,7); $i++ ){ ?>
+                    <?php  foreach($links as $value){ ; ?>
                        
-                        <a href="#"><div class="list-pad">subcategory</div></a>
+                        <a href="<?=$value[0]?>"><div class="list-pad"><?=$value[1]?></div></a>
                       
                     <?php } ?>
                                

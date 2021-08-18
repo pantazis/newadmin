@@ -1,6 +1,5 @@
 <?php
-$request = $_SERVER['REQUEST_URI'];
-$url_without_last_part = substr($request, 0, strrpos($request, "/"));
+
 
 
 
@@ -10,7 +9,7 @@ switch ($request) {
         case $url_without_last_part."/" :      
             include '_views/dashboard.php';
             break;   
-        case $url_without_last_part.'/domains' :
+        case $url_without_last_part.'/domain-list' :
             include '_views/table-list.php';
             break;
         case $url_without_last_part.'/domain' :
@@ -35,7 +34,7 @@ switch ($request) {
             include '_views/table-list.php';
             break;
         case $url_without_last_part.'/order-doc' :
-            include '_views/order-doct.php';
+            include '_views/order-doc.php';
             break;             
   //  default:
       //  http_response_code(404);

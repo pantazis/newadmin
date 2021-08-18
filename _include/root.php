@@ -7,7 +7,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
 
 
 switch ($request) { 
-        case $url_without_last_part :      
+        case $url_without_last_part."/" :      
             include '_views/dashboard.php';
             break;   
         case $url_without_last_part.'/domains' :

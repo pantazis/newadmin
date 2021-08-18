@@ -12,13 +12,6 @@
     <main role="main">
     <?php include "./_include/root.php" ?>
     
-   
-
-
-
-
-
-
     </main>
  
     <?php include "_include/modals.php"?>

@@ -176,6 +176,21 @@ $("li.nav-list-item2").each(function(){
         
     };
 });
+
+$(".tab-in").click(function(){
+    $(".tab-in").removeClass("active");
+    $(this).addClass("active");
+    var allTbas = $(".tab-in").length; 
+    var isEl=parseInt($(this).attr("data-active"));
+    var move =((100/allTbas)*isEl)+"%";
+    $(".activebox").css("left",move)
+
+
+
+});
+
+
+
     
 
 

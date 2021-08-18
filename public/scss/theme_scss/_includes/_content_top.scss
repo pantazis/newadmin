@@ -4,36 +4,90 @@
 }
 .top_right {
     display: flex;
-    width: 63%
+    width: auto;
+    flex: 1;
+    justify-content: flex-end;
 }
 .top_frame {
     width: 100%;
     max-width: 255px;
-    flex: 1;
-    background-color: #fff;
+    flex: 1;  
+    border:1px solid;  
+    @include themeColor("background-color",$white,$black_blue);
+    @include themeColor("color",$black_blue,$white);
+    @include themeColor("border-color",transparent,$white);
     padding: 20px;
     margin-left: 21px;
     text-align:center;
     border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+.breadcrumb {
+    font-size: 13px;
+    margin-bottom:0.5rem; 
 
 li.breadcrumb-item{
-    @include fontSizeSmall;
-    &.active{
-        a {    
-            color: $black_blue;           
-            }
-
+   
+    &.active{   
+         @include themeColor("color",$dark_blue,$white);             
+        
     }  
   a {
-    text-decoration: none;    
-    color: $blue_grey;
+    text-decoration: none; 
+    @include themeColor("color",$blue_grey,$light_grey);   
+   
    
     }
 }
-.breadcrumb-item + .breadcrumb-item::before {
-    @include fontSizeSmall;
-    color: $blue_grey;    
+}
+.breadcrumb-item + .breadcrumb-item::before {   
+    @include themeColor("color",$blue_grey,$light_grey);       
 
 }
+
+h2.page_title{
+    font-size: 37px;
+    @include themeColor("color",$black_blue,$white);
+
+}
+.h4.frame_title{
+    font-size:15px;
+    margin-bottom: 0.625rem;
+    font-weight:400;
+}
+.h2.frame_value{
+    font-size: 28px;
+}
+
+.h2.frame_value{
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+// scss-docs-start theme-color-variables
+
+.success .h2.frame_value{
+    color:$success;
+}
+
+.warning .h2.frame_value{
+    color:$warning;
+}
+.danger .h2.frame_value{
+    color:$danger;
+}
+.success,
+.warning, 
+.danger{
+    .h2.frame_value{
+        font-weight: 800;       
+
+    }
+
+}
+
+
 

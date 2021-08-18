@@ -1,4 +1,12 @@
+@mixin themeColor($prop,$light,$dark) {
+  #{$prop}:$light;
+    .dark &{
+      #{$prop}:$dark;
+    } 
+  }
+
 //nav menu colors
+
 .coverdiv{
   background: $ice;
 }

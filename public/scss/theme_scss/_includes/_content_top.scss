@@ -13,8 +13,8 @@
     max-width: 255px;
     flex: 1;  
     border:1px solid;  
-    @include themeColor("background-color",$white,$black_blue);
-    @include themeColor("color",$black_blue,$white);
+    @include themeColor("background-color",$white,$ice);
+    @include themeColor("color",$black_blue,$black_blue);
     @include themeColor("border-color",transparent,$white);
     padding: 20px;
     margin-left: 21px;

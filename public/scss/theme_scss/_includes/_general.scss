@@ -219,9 +219,9 @@ $section-padding:1.875rem;
 
 .tab-in {
   flex: 1;
-  padding: 20px;  
+  padding: 1.25rem;  
   @include themeColor("color",$dark_blue,$white);
-  @include themeColor("background",#F8F8FB,$dark_blue);
+  @include themeColor("background",#F8F8FB,$bluedarkbl);
   text-align: center;  
 
 }
@@ -231,7 +231,7 @@ $section-padding:1.875rem;
   left: 0;
   bottom: 0;
   @include themeColor("color",$dark_blue,$white);
-  @include themeColor("background",$white,$dark_blue);
+  @include themeColor("background",$white,#0e0c28);
   transition: left .3s;
   border-top-left-radius: $border-radius;
   border-top-right-radius:$border-radius;

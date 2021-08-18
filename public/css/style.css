@@ -10708,14 +10708,14 @@ span.b_in {
 
 .tab-in {
   flex: 1;
-  padding: 20px;
+  padding: 1.25rem;
   color: #2e435e;
   background: #F8F8FB;
   text-align: center; }
   .dark .tab-in {
     color: #fff; }
   .dark .tab-in {
-    background: #2e435e; }
+    background: #1E1C36; }
 
 .activebox {
   position: absolute;
@@ -10730,7 +10730,7 @@ span.b_in {
   .dark .activebox {
     color: #fff; }
   .dark .activebox {
-    background: #2e435e; }
+    background: #0e0c28; }
 
 .over {
   position: relative;
@@ -12038,14 +12038,14 @@ span.b_in {
 
 .top_frame {
   width: 100%;
-  max-width: 255px;
+  max-width: 15.9375rem;
   flex: 1;
-  border: 1px solid;
+  border: 0.0625rem solid;
   background-color: #fff;
   color: #0e0c28;
   border-color: transparent;
-  padding: 20px;
-  margin-left: 21px;
+  padding: 1.25rem;
+  margin-left: 1.3125rem;
   text-align: center;
   border-radius: 0.6rem;
   display: flex;
@@ -12059,7 +12059,7 @@ span.b_in {
     border-color: #fff; }
 
 .breadcrumb {
-  font-size: 13px;
+  font-size: 0.8125rem;
   margin-bottom: 0.5rem; }
   .breadcrumb li.breadcrumb-item.active {
     color: #2e435e; }
@@ -12077,21 +12077,21 @@ span.b_in {
     color: #cacad5; }
 
 h2.page_title, .page_title.h2 {
-  font-size: 37px;
+  font-size: 2.3125rem;
   color: #0e0c28; }
   .dark h2.page_title, .dark .page_title.h2 {
     color: #fff; }
 
 .h4.frame_title {
-  font-size: 15px;
+  font-size: 0.9375rem;
   margin-bottom: 0.625rem;
   font-weight: 400; }
 
 .h2.frame_value {
-  font-size: 28px; }
+  font-size: 1.75rem; }
 
 .h2.frame_value {
-  font-size: 28px;
+  font-size: 1.75rem;
   margin-bottom: 0; }
 
 .success .h2.frame_value {

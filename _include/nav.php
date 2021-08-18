@@ -91,7 +91,11 @@ $sub1 = [
                 <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
             <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
           
-                <div class="custom-popup ss  shadow-2-strong">
+            <div class="custom-popup ss  shadow-2-strong">
+                <div class="search-cont">
+                <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
+            <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">        
+            </div>
                 <div class="bubble-cont">
                 <div class="arrow-div"></div>
                     <?php foreach ($bubbles as  $value) {?>

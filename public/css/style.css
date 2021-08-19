@@ -505,8 +505,8 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 2.5rem);
+  padding-left: var(--bs-gutter-x, 2.5rem);
   margin-right: auto;
   margin-left: auto; }
 
@@ -526,7 +526,7 @@ progress {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     max-width: 100%; } }
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -4009,7 +4009,7 @@ textarea.form-control-lg {
   border-bottom-left-radius: calc(0.6rem - 1px); }
 
 .card-group > .card {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 2.5rem; }
 @media (min-width: 576px) {
   .card-group {
     display: flex;
@@ -4876,7 +4876,7 @@ textarea.form-control-lg {
   max-width: 100%;
   pointer-events: none; }
   .toast-container > :not(:last-child) {
-    margin-bottom: 0.75rem; }
+    margin-bottom: 2.5rem; }
 
 .toast-header {
   display: flex;
@@ -10737,6 +10737,13 @@ span.b_in {
   z-index: 1; }
 
 /*-----------------------------------tabs-end----------------------------------------*/
+.info-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2e435e; }
+  .dark .info-title {
+    color: #efeff6; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/fonts/icomoon.eot?cpos0e");

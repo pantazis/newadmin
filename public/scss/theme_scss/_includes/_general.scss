@@ -243,3 +243,8 @@ $section-padding:1.875rem;
 }
 
 /*-----------------------------------tabs-end----------------------------------------*/
+.info-title{
+  font-size:14px;
+  font-weight: bold;
+  @include themeColor("color",$dark_blue,$ice);
+}

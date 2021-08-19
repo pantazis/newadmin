@@ -1,6 +1,33 @@
 (function () {
     var $ = window.$
 
+// noanmetion
+$(document).ready(function(){
+     $("body").removeClass("noanimetion");
+});
+
+
+var rtime;
+var timeout = false;
+var delta = 200;
+$(window).resize(function() {
+    $("body").addClass("noanimetion");
+    rtime = new Date();
+    if (timeout === false) {
+        timeout = true;
+        setTimeout(resizeend, delta);
+    }
+});
+
+function resizeend() {
+    if (new Date() - rtime < delta) {
+        setTimeout(resizeend, delta);
+    } else {
+        timeout = false;
+        $("body").removeClass("noanimetion");
+    }               
+}
+
 // navgation open close
     $(".logo").click(function () {
         $("body").toggleClass("closeNav")

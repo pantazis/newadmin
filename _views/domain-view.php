@@ -47,7 +47,11 @@
                         "light",
                         "dark"];
 
-                      ?>
+                        foreach($arr as $val){?>
+
+                <button type="button" class="btn btn-block btn-outline-<?=$val?>"><?=$val?></button> 
+
+                <?php } ?> 
                 <?php foreach($arr as $val){?>
 
 <button type="button" class="btn btn-block btn-<?=$val?>"><?=$val?></button> 

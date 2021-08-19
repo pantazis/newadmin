@@ -10524,6 +10524,12 @@ span.b_in {
     height: 5.85rem;
     width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
+/*---------------------------------remove animations on load or resize-----------------------------------------*/
+body.noanimetion * {
+  transition: none !important;
+  animation-duration: 0 !important; }
+
+/*---------------------------------remove animations on load or resize /end------------------------------------*/
 /*LOADER*/
 .coverdiv.hide-loader {
   left: -100%; }

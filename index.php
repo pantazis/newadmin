@@ -8,7 +8,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   <?php include './_include/head.php'?>
 </head>
 
-<body class="isNotActive">
+<body class="isNotActive noanimetion">
     <?php include "./_include/loader.php" ?>
     <?php include "./_include/nav.php" ?>
     <?php include "./_include/mobile-nav.php" ?>

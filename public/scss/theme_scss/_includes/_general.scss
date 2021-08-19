@@ -221,7 +221,7 @@ $section-padding:1.875rem;
   flex: 1;
   padding: 1.25rem;  
   @include themeColor("color",$dark_blue,$white);
-  @include themeColor("background",#F8F8FB,$bluedarkbl);
+  @include themeColor("background",#efeff6,$bluedarkbl);
   text-align: center;  
 
 }

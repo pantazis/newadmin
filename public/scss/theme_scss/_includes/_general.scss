@@ -211,7 +211,7 @@ $section-padding:1.875rem;
   display: flex;
   width: 100%;
   position: relative;
-  margin-bottom: $section-padding ;
+  margin-bottom: $section-padding + 0.75rem ;
   border-top-left-radius: $border-radius;
   border-top-right-radius:$border-radius;
   overflow: hidden;
@@ -245,23 +245,30 @@ $section-padding:1.875rem;
 /*-----------------------------------tabs-end----------------------------------------*/
 
 .info-container {
-  padding-bottom: 50px;
+  padding-bottom: 6.25rem;
 }
 
 .info-title{
-  font-size:14px;
+  font-size:1rem;
   font-weight: bold;
   @include themeColor("color",$dark_blue,$ice);
+  margin-bottom: 1.25rem;
 }
 .info-row {
   display: flex;
   width: 100%;
-  border-bottom: 1px solid;
-  @include themeColor("border-color",$dark_blue,$ice);
+  border-bottom: 0.0625rem solid ;
+  @include themeColor("border-color",lighten($dark_blue, 65%),darken($ice, 65%));
   @include themeColor("color",$dark_blue,$ice);
-  margin-bottom: 12px;
+  line-height: 3.125rem;
 }
 
 .info-row > * {
   flex: 1;
+  font-size: 0.875rem ;
+}
+
+.info-icon {
+  text-align: end;
+  margin-right: 1.5rem;
 }

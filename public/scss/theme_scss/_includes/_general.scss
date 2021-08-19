@@ -230,8 +230,13 @@ $section-padding:1.875rem;
   flex: 1;
   padding: 1.25rem;  
   @include themeColor("color",$dark_blue,$white);
-  @include themeColor("background",#efeff6,$bluedarkbl);
-  text-align: center;  
+  @include themeColor("background",darken($ice,4%),lighten($bluedarkbl,5%));
+  text-align: center; 
+  font-size:0.9rem;
+  &:hover{
+    text-decoration: underline;
+
+  }
 
 }
 .activebox {
@@ -240,7 +245,7 @@ $section-padding:1.875rem;
   left: 0;
   bottom: 0;
   @include themeColor("color",$dark_blue,$white);
-  @include themeColor("background",$white,#0e0c28);
+  @include themeColor("background",$white,$black_blue);
   transition: left .3s;
   border-top-left-radius: $border-radius;
   border-top-right-radius:$border-radius;
@@ -250,6 +255,9 @@ $section-padding:1.875rem;
   z-index: 1;
   
 }
+
+
+
 
 /*-----------------------------------tabs-end----------------------------------------*/
 

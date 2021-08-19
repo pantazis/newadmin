@@ -10701,7 +10701,7 @@ span.b_in {
   display: flex;
   width: 100%;
   position: relative;
-  margin-bottom: 1.875rem;
+  margin-bottom: 2.625rem;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
   overflow: hidden; }
@@ -10738,29 +10738,35 @@ span.b_in {
 
 /*-----------------------------------tabs-end----------------------------------------*/
 .info-container {
-  padding-bottom: 50px; }
+  padding-bottom: 6.25rem; }
 
 .info-title {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
-  color: #2e435e; }
+  color: #2e435e;
+  margin-bottom: 1.25rem; }
   .dark .info-title {
     color: #efeff6; }
 
 .info-row {
   display: flex;
   width: 100%;
-  border-bottom: 1px solid;
-  border-color: #2e435e;
+  border-bottom: 0.0625rem solid;
+  border-color: #e5ebf2;
   color: #2e435e;
-  margin-bottom: 12px; }
+  line-height: 3.125rem; }
   .dark .info-row {
-    border-color: #efeff6; }
+    border-color: #373762; }
   .dark .info-row {
     color: #efeff6; }
 
 .info-row > * {
-  flex: 1; }
+  flex: 1;
+  font-size: 0.875rem; }
+
+.info-icon {
+  text-align: end;
+  margin-right: 1.5rem; }
 
 .action-cont .btn {
   width: 100%; }

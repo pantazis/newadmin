@@ -11256,8 +11256,7 @@ body.noanimetion * {
   margin-bottom: 2.625rem;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
-  overflow: hidden;
-  bottom: 70px; }
+  overflow: hidden; }
 
 .tab-in {
   flex: 1;

@@ -12,7 +12,7 @@
     </div>
     <div class="top_right ">
         <?php foreach ($label as $key => $value){?>
-            <div class="top_frame shadow-1-strong <?=$colorClass[$key]?> ">
+            <div class="top_frame  <?=$colorClass[$key]?> ">
             <div class="h4 frame_title"><?=$value?></div>
             <div class="h2 frame_value"><?=$labelval[$key]?></div>
 

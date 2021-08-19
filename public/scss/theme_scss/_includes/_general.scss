@@ -243,8 +243,25 @@ $section-padding:1.875rem;
 }
 
 /*-----------------------------------tabs-end----------------------------------------*/
+
+.info-container {
+  padding-bottom: 50px;
+}
+
 .info-title{
   font-size:14px;
   font-weight: bold;
   @include themeColor("color",$dark_blue,$ice);
+}
+.info-row {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid;
+  @include themeColor("border-color",$dark_blue,$ice);
+  @include themeColor("color",$dark_blue,$ice);
+  margin-bottom: 12px;
+}
+
+.info-row > * {
+  flex: 1;
 }

@@ -10737,12 +10737,30 @@ span.b_in {
   z-index: 1; }
 
 /*-----------------------------------tabs-end----------------------------------------*/
+.info-container {
+  padding-bottom: 50px; }
+
 .info-title {
   font-size: 14px;
   font-weight: bold;
   color: #2e435e; }
   .dark .info-title {
     color: #efeff6; }
+
+.info-row {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid;
+  border-color: #2e435e;
+  color: #2e435e;
+  margin-bottom: 12px; }
+  .dark .info-row {
+    border-color: #efeff6; }
+  .dark .info-row {
+    color: #efeff6; }
+
+.info-row > * {
+  flex: 1; }
 
 @font-face {
   font-family: 'icomoon';

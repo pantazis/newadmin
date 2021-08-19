@@ -224,6 +224,7 @@ $section-padding:1.875rem;
   border-top-left-radius: $border-radius;
   border-top-right-radius:$border-radius;
   overflow: hidden;
+  bottom:70px
 }
 
 .tab-in {
@@ -291,17 +292,18 @@ $section-padding:1.875rem;
 }
 .action-cont .btn{
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .border-strong{
-  border-width: 3px;
+  border-width: 0.1875rem;
 }
 .id-protect-text{
   @include themeColor("color",$dark_blue,$ice);
+  font-size:1.2rem
 }
 
 .btn-black_blue{
-  border-width:2px;
+  border-width:0.125rem;
   @include themeColor("border-color",none,$ice);
   &:hover{
     @include themeColor("background",lighten($dark_blue,5%),$ice);

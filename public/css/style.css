@@ -11256,7 +11256,8 @@ body.noanimetion * {
   margin-bottom: 2.625rem;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
-  overflow: hidden; }
+  overflow: hidden;
+  bottom: 70px; }
 
 .tab-in {
   flex: 1;
@@ -11325,18 +11326,19 @@ body.noanimetion * {
 
 .action-cont .btn {
   width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem; }
 
 .border-strong {
-  border-width: 3px; }
+  border-width: 0.1875rem; }
 
 .id-protect-text {
-  color: #2e435e; }
+  color: #2e435e;
+  font-size: 1.2rem; }
   .dark .id-protect-text {
     color: #efeff6; }
 
 .btn-black_blue {
-  border-width: 2px;
+  border-width: 0.125rem;
   border-color: none; }
   .dark .btn-black_blue {
     border-color: #efeff6; }

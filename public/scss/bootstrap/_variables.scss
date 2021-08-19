@@ -97,7 +97,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+$primary:       $blue_purple !default;
 $secondary:     $gray-600 !default;
 $success:       $green2 !default;
 $info:          $cyan !default;
@@ -118,7 +118,7 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "ice": $ice,
+  "ice":        $ice,
   "light_grey": $light_grey,
   "pal_pink": $pal_pink,
   "green2": $green2,

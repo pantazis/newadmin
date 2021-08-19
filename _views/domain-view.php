@@ -34,19 +34,26 @@
               </div>
 
             </div>
-            <div class="col-md-3">
-            <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+            <div class="col-md-3 action-cont">
+         
+            <?php
+                        $arr =[
+                        "primary",
+                        "secondary",
+                        "success",
+                        "info",
+                        "warning",
+                        "danger",
+                        "light",
+                        "dark"];
 
-<button type="button" class="btn btn-link">Link</button>
-                
-             </div>
+                      ?>
+                <?php foreach($arr as $val){?>
+
+<button type="button" class="btn btn-block btn-<?=$val?>"><?=$val?></button> 
+
+<?php } ?>                               
+            </div>
             
         
             </div>

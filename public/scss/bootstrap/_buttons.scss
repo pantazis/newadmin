@@ -16,7 +16,7 @@
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  @include button-size( 0.75rem, 0.75rem, 1rem, 0);
   @include transition($btn-transition);
 
   &:hover {

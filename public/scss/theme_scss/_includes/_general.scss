@@ -288,3 +288,19 @@ $section-padding:1.875rem;
 .border-strong{
   border-width: 3px;
 }
+.id-protect-text{
+  @include themeColor("color",$dark_blue,$ice);
+}
+
+.btn-black_blue{
+  border-width:2px;
+  @include themeColor("border-color",none,$ice);
+  &:hover{
+    @include themeColor("background",lighten($dark_blue,5%),$ice);
+    @include themeColor("color",lighten($dark_blue, 65%),$dark_blue);
+  }
+}
+
+.btn{
+  border-radius:$border-radius
+}

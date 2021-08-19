@@ -55,7 +55,7 @@
             </div>
             <div class="col-md-6  action-cont  order-md-5 order-1">
             <div class="info-title">ID Protect <span class="ms-4 icon-id_protect green2"></span></div>   
-                <p>Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
+                <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
                 <button type="button" class="btn  btn-outline-green2 border-strong">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</button>   
             </div>
             

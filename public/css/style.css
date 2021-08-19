@@ -11327,6 +11327,27 @@ body.noanimetion * {
 .border-strong {
   border-width: 3px; }
 
+.id-protect-text {
+  color: #2e435e; }
+  .dark .id-protect-text {
+    color: #efeff6; }
+
+.btn-black_blue {
+  border-width: 2px;
+  border-color: none; }
+  .dark .btn-black_blue {
+    border-color: #efeff6; }
+  .btn-black_blue:hover {
+    background: #364f6f;
+    color: #e5ebf2; }
+    .dark .btn-black_blue:hover {
+      background: #efeff6; }
+    .dark .btn-black_blue:hover {
+      color: #2e435e; }
+
+.btn {
+  border-radius: 0.6rem; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/fonts/icomoon.eot?cpos0e");

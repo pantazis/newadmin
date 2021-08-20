@@ -11262,13 +11262,13 @@ body.noanimetion * {
   flex: 1;
   padding: 1.25rem;
   color: #2e435e;
-  background: #e2e2ef;
+  background: #eaeaf3;
   text-align: center;
   font-size: 0.9rem; }
   .dark .tab-in {
     color: #fff; }
   .dark .tab-in {
-    background: #272547; }
+    background: #211f3b; }
   .tab-in:hover {
     text-decoration: underline; }
 
@@ -11281,7 +11281,8 @@ body.noanimetion * {
   background: #fff;
   transition: left .3s;
   border-top-left-radius: 0.6rem;
-  border-top-right-radius: 0.6rem; }
+  border-top-right-radius: 0.6rem;
+  box-shadow: 0rem -0.375rem 2.1875rem -0.75rem rgba(0, 0, 0, 0.29); }
   .dark .activebox {
     color: #fff; }
   .dark .activebox {
@@ -11297,15 +11298,21 @@ body.noanimetion * {
     border-radius: 0 0 0 0.625rem;
     -moz-border-radius: 0 0 0 0.625rem;
     -webkit-border-radius: 0 0 0 0.625rem;
-    -webkit-box-shadow: -0.625rem 0 0 0 #fff;
-    box-shadow: -0.625rem 0 0 0 #fff; }
+    -webkit-box-shadow: -0.625rem 0 0 0;
+    box-shadow: -0.625rem 0 0 0;
+    color: #fff; }
+    .dark .activebox:after {
+      color: #0e0c28; }
   .activebox:before {
     left: -1.25rem;
     border-radius: 0 0 0.625rem 0;
     -moz-border-radius: 0 0 0.625rem 0;
     -webkit-border-radius: 0 0 0.625rem 0;
-    -webkit-box-shadow: 0.625rem 0 0 0 #fff;
-    box-shadow: 0.625rem 0 0 0 #fff; }
+    -webkit-box-shadow: 0.625rem 0 0 0;
+    box-shadow: 0.625rem 0 0 0;
+    color: #fff; }
+    .dark .activebox:before {
+      color: #0e0c28; }
 
 .over {
   position: relative;

@@ -230,7 +230,7 @@ $section-padding:1.875rem;
   flex: 1;
   padding: 1.25rem;  
   @include themeColor("color",$dark_blue,$white);
-  @include themeColor("background",darken($ice,4%),lighten($bluedarkbl,5%));
+  @include themeColor("background",darken($ice,1.5%),lighten($bluedarkbl,1.5%));
   text-align: center; 
   font-size:0.9rem;
   &:hover{
@@ -249,6 +249,8 @@ $section-padding:1.875rem;
   transition: left .3s;
   border-top-left-radius: $border-radius;
   border-top-right-radius:$border-radius;
+  box-shadow: 0rem -0.375rem 2.1875rem -0.75rem rgba(0,0,0,0.29);
+
   &:before,
 	&:after {
 		content: "";
@@ -267,8 +269,10 @@ $section-padding:1.875rem;
 		-moz-border-radius: 0 0 0 0.625rem;
 		-webkit-border-radius: 0 0 0 0.625rem;
 
-		-webkit-box-shadow: -0.625rem 0 0 0 #fff;
-		box-shadow: -0.625rem 0 0 0 #fff;
+		-webkit-box-shadow: -0.625rem 0 0 0 ;
+		box-shadow: -0.625rem 0 0 0 ;
+
+    @include themeColor("color",$white,$black_blue);
 	}
 
 	&:before {
@@ -278,8 +282,12 @@ $section-padding:1.875rem;
 		-moz-border-radius: 0 0 0.625rem 0;
 		-webkit-border-radius: 0 0 0.625rem 0;
 
-		-webkit-box-shadow: 0.625rem 0 0 0 #fff;
-		box-shadow: 0.625rem 0 0 0 #fff;
+		-webkit-box-shadow: 0.625rem 0 0 0 ;
+		box-shadow: 0.625rem 0 0 0;
+    @include themeColor("color",$white,$black_blue);
+
+
+
 	}
 }
 .over {

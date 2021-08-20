@@ -11286,6 +11286,26 @@ body.noanimetion * {
     color: #fff; }
   .dark .activebox {
     background: #0e0c28; }
+  .activebox:before, .activebox:after {
+    content: "";
+    position: absolute;
+    height: 0.625rem;
+    width: 1.25rem;
+    bottom: 0; }
+  .activebox:after {
+    right: -1.25rem;
+    border-radius: 0 0 0 0.625rem;
+    -moz-border-radius: 0 0 0 0.625rem;
+    -webkit-border-radius: 0 0 0 0.625rem;
+    -webkit-box-shadow: -0.625rem 0 0 0 #fff;
+    box-shadow: -0.625rem 0 0 0 #fff; }
+  .activebox:before {
+    left: -1.25rem;
+    border-radius: 0 0 0.625rem 0;
+    -moz-border-radius: 0 0 0.625rem 0;
+    -webkit-border-radius: 0 0 0.625rem 0;
+    -webkit-box-shadow: 0.625rem 0 0 0 #fff;
+    box-shadow: 0.625rem 0 0 0 #fff; }
 
 .over {
   position: relative;

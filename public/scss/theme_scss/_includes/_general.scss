@@ -249,6 +249,38 @@ $section-padding:1.875rem;
   transition: left .3s;
   border-top-left-radius: $border-radius;
   border-top-right-radius:$border-radius;
+  &:before,
+	&:after {
+		content: "";
+		position: absolute;
+
+		height: 0.625rem;
+		width: 1.25rem;
+
+		bottom: 0;
+	}
+
+	&:after {
+		right: -1.25rem;
+
+		border-radius: 0 0 0 0.625rem;
+		-moz-border-radius: 0 0 0 0.625rem;
+		-webkit-border-radius: 0 0 0 0.625rem;
+
+		-webkit-box-shadow: -0.625rem 0 0 0 #fff;
+		box-shadow: -0.625rem 0 0 0 #fff;
+	}
+
+	&:before {
+		left: -1.25rem;
+
+		border-radius: 0 0 0.625rem 0;
+		-moz-border-radius: 0 0 0.625rem 0;
+		-webkit-border-radius: 0 0 0.625rem 0;
+
+		-webkit-box-shadow: 0.625rem 0 0 0 #fff;
+		box-shadow: 0.625rem 0 0 0 #fff;
+	}
 }
 .over {
   position: relative;

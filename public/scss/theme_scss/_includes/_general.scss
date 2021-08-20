@@ -265,12 +265,9 @@ $section-padding:1.875rem;
 	&:after {
 		right: -1.25rem;
 
-		border-radius: 0 0 0 0.625rem;
-		-moz-border-radius: 0 0 0 0.625rem;
-		-webkit-border-radius: 0 0 0 0.625rem;
+		border-radius: 0 0 0 $border-radius;
 
-		-webkit-box-shadow: -0.625rem 0 0 0 ;
-		box-shadow: -0.625rem 0 0 0 ;
+		box-shadow: -$border-radius 0 0 0 ;
 
     @include themeColor("color",$white,$black_blue);
 	}
@@ -278,12 +275,9 @@ $section-padding:1.875rem;
 	&:before {
 		left: -1.25rem;
 
-		border-radius: 0 0 0.625rem 0;
-		-moz-border-radius: 0 0 0.625rem 0;
-		-webkit-border-radius: 0 0 0.625rem 0;
+		border-radius: 0 0 $border-radius 0;
 
-		-webkit-box-shadow: 0.625rem 0 0 0 ;
-		box-shadow: 0.625rem 0 0 0;
+		box-shadow: $border-radius 0 0 0;
     @include themeColor("color",$white,$black_blue);
 
 

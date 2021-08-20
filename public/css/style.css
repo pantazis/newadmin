@@ -11295,21 +11295,15 @@ body.noanimetion * {
     bottom: 0; }
   .activebox:after {
     right: -1.25rem;
-    border-radius: 0 0 0 0.625rem;
-    -moz-border-radius: 0 0 0 0.625rem;
-    -webkit-border-radius: 0 0 0 0.625rem;
-    -webkit-box-shadow: -0.625rem 0 0 0;
-    box-shadow: -0.625rem 0 0 0;
+    border-radius: 0 0 0 0.6rem;
+    box-shadow: -0.6rem 0 0 0;
     color: #fff; }
     .dark .activebox:after {
       color: #0e0c28; }
   .activebox:before {
     left: -1.25rem;
-    border-radius: 0 0 0.625rem 0;
-    -moz-border-radius: 0 0 0.625rem 0;
-    -webkit-border-radius: 0 0 0.625rem 0;
-    -webkit-box-shadow: 0.625rem 0 0 0;
-    box-shadow: 0.625rem 0 0 0;
+    border-radius: 0 0 0.6rem 0;
+    box-shadow: 0.6rem 0 0 0;
     color: #fff; }
     .dark .activebox:before {
       color: #0e0c28; }

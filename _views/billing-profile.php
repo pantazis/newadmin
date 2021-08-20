@@ -50,6 +50,7 @@
                             <div class="info_sub">ΑΦΜ (*)</div>
                             <div class="info-val">12/34/2025</div>
                         </div>
+
                     </div>
                 </div>
             </div>

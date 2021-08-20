@@ -598,13 +598,13 @@ input.search-top {
     width: 16.4375rem;
     height: 1.625rem;
     border-radius: 0.8125rem;
-    border: 0.025rem solid #b7b7b7;
+    border: 0.025rem solid darken($ice,8%);
 }
 
 .search-cont {
-    border: 0.025rem solid #b7b7b7;
+    border: 0.025rem solid darken($ice,8%);
     padding: 0.125rem;
-    background-color: #dedede;
+    background-color: $ice;
     border-radius: 0.9375rem;
     display: flex;
     justify-content: center;

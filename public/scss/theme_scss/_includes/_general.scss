@@ -1,28 +1,27 @@
 /*---------------------------------remove animations on load or resize-----------------------------------------*/
-body.noanimetion  *{
+body.noanimetion * {
   transition: none !important;
-  animation-duration:0 !important;;
-
+  animation-duration: 0 !important;
 }
-
 
 /*---------------------------------remove animations on load or resize /end------------------------------------*/
 /*LOADER*/
-.coverdiv.hide-loader{
-  left:-100%;
-  .disable{
+.coverdiv.hide-loader {
+  left: -100%;
+  .disable {
     display: none;
   }
 }
 .loaderimg {
   width: 100px;
-  height: auto; }
+  height: auto;
+}
 
 .coverdiv {
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -30,13 +29,12 @@ body.noanimetion  *{
   align-items: center;
   background-color: #fff;
   overflow: hidden;
-  transition: left .5s ease-in;
-
-    
-   }
+  transition: left 0.5s ease-in;
+}
 
 .inner_div {
-  position: relative; }
+  position: relative;
+}
 
 .shadow {
   position: absolute;
@@ -48,158 +46,184 @@ body.noanimetion  *{
   height: 100px;
   border-radius: 50%;
   animation: shadow-pulse 1s infinite linear;
-  animation-delay: 1s; }
+  animation-delay: 1s;
+}
 
 .circle_big {
   fill: transparent;
   stroke-width: 6px;
-  stroke: #1EB6DB;
+  stroke: #1eb6db;
   r: 17px;
   stroke-dasharray: 107;
   stroke-dashoffset: -107;
   animation-name: circle_big;
   animation-duration: 1s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+}
 
 .circle_small {
-  fill: #2E435E;
+  fill: #2e435e;
   animation-name: circle_small;
-  animation-duration: 1s; }
+  animation-duration: 1s;
+}
 
 .inner_div {
   animation-name: inner_div;
   animation-duration: 1s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; }
+  animation-timing-function: linear;
+}
 
 .lines {
-  fill: #fff; }
+  fill: #fff;
+}
 
-.svgl1, .svgl2, .svgl3 {
+.svgl1,
+.svgl2,
+.svgl3 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100px; }
+  width: 100px;
+}
 
 .svgl1 {
   animation-name: svgl1;
-  animation-duration: 1s; }
+  animation-duration: 1s;
+}
 
 .svgl2 {
   animation-name: svgl2;
-  animation-duration: 1s; }
+  animation-duration: 1s;
+}
 
 .svgl3 {
   animation-name: svgl3;
-  animation-duration: 1s; }
+  animation-duration: 1s;
+}
 
 @keyframes inner_div {
   0% {
-    transform: scale(1); }
+    transform: scale(1);
+  }
   50% {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+  }
   100% {
-    transform: scale(1); }
- }
+    transform: scale(1);
+  }
+}
 @keyframes shadow-pulse {
   0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0); }
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+  }
   50% {
-    box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.05);
+  }
   100% {
-    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0); }
- }
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0);
+  }
+}
 @keyframes svgl1 {
   0% {
     top: -117px;
-    left: 71.2564px; }
+    left: 71.2564px;
+  }
   50% {
     top: -117px;
-    left: 71.2564px; }
+    left: 71.2564px;
+  }
   100% {
     top: 0;
-    left: 0; }
- }
+    left: 0;
+  }
+}
 @keyframes svgl2 {
   0% {
     top: 117px;
-    left: -71.2564px; }
+    left: -71.2564px;
+  }
   50% {
     top: 117px;
-    left: -71.2564px; }
+    left: -71.2564px;
+  }
   100% {
     top: 0;
-    left: 0; }
- }
+    left: 0;
+  }
+}
 @keyframes svgl3 {
   0% {
-    transform: scale(0); }
+    transform: scale(0);
+  }
   50% {
-    transform: scale(0); }
+    transform: scale(0);
+  }
   100% {
-    transform: scale(1); }
- }
+    transform: scale(1);
+  }
+}
 /* The animation code */
 @keyframes circle_small {
   0% {
-    r: 0px; }
+    r: 0px;
+  }
   50% {
-    r: 17px; }
+    r: 17px;
+  }
   100% {
-    r: 17px; }
- }
+    r: 17px;
+  }
+}
 @keyframes circle_big {
   0% {
-    stroke-dashoffset: -107; }
+    stroke-dashoffset: -107;
+  }
   50% {
-    stroke-dashoffset: -107; }
+    stroke-dashoffset: -107;
+  }
   100% {
-    stroke-dashoffset: 0; }
- }
-
-
-
-
-
-
+    stroke-dashoffset: 0;
+  }
+}
 
 /*--------------------------------------------MODAL---------------------------------------------------*/
 .modal-dialog {
   max-width: 40rem;
 
   .modal-content {
-      border-radius: $border-radius;
+    border-radius: $border-radius;
 
-      .modal-header {
-          justify-content: space-between;
+    .modal-header {
+      justify-content: space-between;
 
-          .btn-close {
-              padding-top: 0.5rem;
-              padding-right: 0.5rem;
-              padding-bottom: 0.5rem;
-              padding-left: 0.5rem;
-              margin: 0;
-          }
+      .btn-close {
+        padding-top: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        margin: 0;
       }
+    }
 
-      .modal-body {
-          p {
-              text-align: center;
-          }
+    .modal-body {
+      p {
+        text-align: center;
       }
+    }
 
-      .modal-footer {
-          .btn-secondary {
-              font-size: 0.71rem;
-          }
+    .modal-footer {
+      .btn-secondary {
+        font-size: 0.71rem;
       }
+    }
   }
 }
 
 /*---------------------------------------------TOP SECTION---------------------------------------------*/
-$section-padding:1.875rem;
-.top-section {  
+$section-padding: 1.875rem;
+.top-section {
   margin-left: $section-padding;
   margin-right: $section-padding;
   margin-bottom: $section-padding;
@@ -208,7 +232,7 @@ $section-padding:1.875rem;
 }
 
 /*---------------------------------------------MAIN SECTION---------------------------------------------*/
-.section-main {  
+.section-main {
   margin-left: $section-padding;
   margin-right: $section-padding;
   margin-bottom: $section-padding;
@@ -220,78 +244,69 @@ $section-padding:1.875rem;
   display: flex;
   width: 100%;
   position: relative;
-  margin-bottom: $section-padding + 0.75rem ;
+  margin-bottom: $section-padding + 0.75rem;
   border-top-left-radius: $border-radius;
-  border-top-right-radius:$border-radius;
+  border-top-right-radius: $border-radius;
   overflow: hidden;
 }
 
 .tab-in {
   flex: 1;
-  padding: 1.25rem;  
-  @include themeColor("color",$dark_blue,$white);
-  @include themeColor("background",darken($ice,1.5%),lighten($bluedarkbl,1.5%));
-  text-align: center; 
-  font-size:0.9rem;
-  &:hover{
+  padding: 1.25rem;
+  @include themeColor("color", $dark_blue, $white);
+  @include themeColor("background", darken($ice, 1.5%), lighten($bluedarkbl, 1.5%));
+  text-align: center;
+  font-size: 0.9rem;
+  &:hover {
     text-decoration: underline;
-
   }
-
 }
 .activebox {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  @include themeColor("color",$dark_blue,$white);
-  @include themeColor("background",$white,$black_blue);
-  transition: left .3s;
+  @include themeColor("color", $dark_blue, $white);
+  @include themeColor("background", $white, $black_blue);
+  transition: left 0.3s;
   border-top-left-radius: $border-radius;
-  border-top-right-radius:$border-radius;
-  box-shadow: 0rem -0.375rem 2.1875rem -0.75rem rgba(0,0,0,0.29);
+  border-top-right-radius: $border-radius;
+  box-shadow: 0rem -0.375rem 2.1875rem -0.75rem rgba(0, 0, 0, 0.29);
 
   &:before,
-	&:after {
-		content: "";
-		position: absolute;
+  &:after {
+    content: "";
+    position: absolute;
 
-		height: 0.625rem;
-		width: 1.25rem;
+    height: 0.625rem;
+    width: 1.25rem;
 
-		bottom: 0;
-	}
+    bottom: 0;
+  }
 
-	&:after {
-		right: -1.25rem;
+  &:after {
+    right: -1.25rem;
 
-		border-radius: 0 0 0 $border-radius;
+    border-radius: 0 0 0 $border-radius;
 
-		box-shadow: -$border-radius 0 0 0 ;
+    box-shadow: -$border-radius 0 0 0;
 
-    @include themeColor("color",$white,$black_blue);
-	}
+    @include themeColor("color", $white, $black_blue);
+  }
 
-	&:before {
-		left: -1.25rem;
+  &:before {
+    left: -1.25rem;
 
-		border-radius: 0 0 $border-radius 0;
+    border-radius: 0 0 $border-radius 0;
 
-		box-shadow: $border-radius 0 0 0;
-    @include themeColor("color",$white,$black_blue);
-
-
-
-	}
+    box-shadow: $border-radius 0 0 0;
+    @include themeColor("color", $white, $black_blue);
+  }
 }
 .over {
   position: relative;
   z-index: 1;
-  
 }
-
-
-
 
 /*-----------------------------------tabs-end----------------------------------------*/
 
@@ -299,51 +314,75 @@ $section-padding:1.875rem;
   padding-bottom: 6.25rem;
 }
 
-.info-title{
-  font-size:1rem;
+.info-title {
+  font-size: 1rem;
   font-weight: bold;
-  @include themeColor("color",$dark_blue,$ice);
+  @include themeColor("color", $dark_blue, $ice);
   margin-bottom: 1.25rem;
 }
 .info-row {
   display: flex;
   width: 100%;
-  border-bottom: 0.0625rem solid ;
-  @include themeColor("border-color",lighten($dark_blue, 65%),darken($ice, 65%));
-  @include themeColor("color",$dark_blue,$ice);
-  line-height: 3.125rem;
+  border-bottom: 0.0625rem solid;
+  @include themeColor("border-color", lighten($dark_blue, 65%), darken($ice, 65%));
+  @include themeColor("color", $dark_blue, $ice);
+  line-height: 2.5rem;
 }
 
 .info-row > * {
   flex: 1;
-  font-size: 0.875rem ;
+  font-size: 0.875rem;
 }
 
 .info-icon {
   text-align: end;
   margin-right: 1.5rem;
 }
-.action-cont .btn{
+.action-cont .btn {
   width: 100%;
   margin-bottom: 1.25rem;
 }
-.border-strong{
+.border-strong {
   border-width: 0.1875rem;
 }
-.id-protect-text{
-  @include themeColor("color",$dark_blue,$ice);
-  font-size:1.2rem
+.id-protect-text {
+  @include themeColor("color", $dark_blue, $ice);
+  font-size: 1.2rem;
 }
 
-.btn-black_blue{
-  border-width:0.125rem;
-  @include themeColor("border-color",none,$ice);
-  &:hover{
-    @include themeColor("background",lighten($dark_blue,5%),$ice);
-    @include themeColor("color",lighten($dark_blue, 65%),$dark_blue);
+.btn-black_blue {
+  border-width: 0.125rem;
+  @include themeColor("border-color", none, $ice);
+  &:hover {
+    @include themeColor("background", lighten($dark_blue, 5%), $ice);
+    @include themeColor("color", lighten($dark_blue, 65%), $dark_blue);
   }
 }
 
-.btn{
-  border-radius:$border-radius
+.btn {
+  border-radius: $border-radius;
+}
+
+/*===================== billig profile ==========================*/
+
+.form-right {
+  @include themeColor("color", $black_blue, $black_blue);
+  @include themeColor("background-color", $ice, lighten($bluedarkbl, 4%));
+  margin-bottom: 1.5rem;
+  margin-top: 1.25rem;
+
+  .arrow-div {
+    top: 27.75rem;
+    right: 6rem;
+    @include themeColor("background-color", $ice, lighten($bluedarkbl, 4%));
+    border: none;
+    margin-top: 1.25rem;
+
+    .addprofile-shortcut {
+      @include themeColor("color", $ice, $bluedarkbl);
+    }
+  }
+  .info-row {
+    @include themeColor("color", $bluedarkbl, $ice);
+  }
 }

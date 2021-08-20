@@ -10733,12 +10733,12 @@ input.search-top {
   width: 16.4375rem;
   height: 1.625rem;
   border-radius: 0.8125rem;
-  border: 0.025rem solid #b7b7b7; }
+  border: 0.025rem solid #d5d5e7; }
 
 .search-cont {
-  border: 0.025rem solid #b7b7b7;
+  border: 0.025rem solid #d5d5e7;
   padding: 0.125rem;
-  background-color: #dedede;
+  background-color: #efeff6;
   border-radius: 0.9375rem;
   display: flex;
   justify-content: center;
@@ -11098,7 +11098,7 @@ body.noanimetion * {
   align-items: center;
   background-color: #fff;
   overflow: hidden;
-  transition: left .5s ease-in; }
+  transition: left 0.5s ease-in; }
 
 .inner_div {
   position: relative; }
@@ -11118,7 +11118,7 @@ body.noanimetion * {
 .circle_big {
   fill: transparent;
   stroke-width: 6px;
-  stroke: #1EB6DB;
+  stroke: #1eb6db;
   r: 17px;
   stroke-dasharray: 107;
   stroke-dashoffset: -107;
@@ -11127,7 +11127,7 @@ body.noanimetion * {
   animation-fill-mode: forwards; }
 
 .circle_small {
-  fill: #2E435E;
+  fill: #2e435e;
   animation-name: circle_small;
   animation-duration: 1s; }
 
@@ -11141,7 +11141,9 @@ body.noanimetion * {
 .lines {
   fill: #fff; }
 
-.svgl1, .svgl2, .svgl3 {
+.svgl1,
+.svgl2,
+.svgl3 {
   position: absolute;
   left: 0;
   top: 0;
@@ -11279,7 +11281,7 @@ body.noanimetion * {
   bottom: 0;
   color: #2e435e;
   background: #fff;
-  transition: left .3s;
+  transition: left 0.3s;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
   box-shadow: 0rem -0.375rem 2.1875rem -0.75rem rgba(0, 0, 0, 0.29); }
@@ -11330,7 +11332,7 @@ body.noanimetion * {
   border-bottom: 0.0625rem solid;
   border-color: #e5ebf2;
   color: #2e435e;
-  line-height: 3.125rem; }
+  line-height: 2.5rem; }
   .dark .info-row {
     border-color: #373762; }
   .dark .info-row {
@@ -11372,6 +11374,33 @@ body.noanimetion * {
 
 .btn {
   border-radius: 0.6rem; }
+
+/*===================== billig profile ==========================*/
+.form-right {
+  color: #0e0c28;
+  background-color: #efeff6;
+  margin-bottom: 1.5rem;
+  margin-top: 1.25rem; }
+  .dark .form-right {
+    color: #0e0c28; }
+  .dark .form-right {
+    background-color: #252343; }
+  .form-right .arrow-div {
+    top: 27.75rem;
+    right: 6rem;
+    background-color: #efeff6;
+    border: none;
+    margin-top: 1.25rem; }
+    .dark .form-right .arrow-div {
+      background-color: #252343; }
+    .form-right .arrow-div .addprofile-shortcut {
+      color: #efeff6; }
+      .dark .form-right .arrow-div .addprofile-shortcut {
+        color: #1E1C36; }
+  .form-right .info-row {
+    color: #1E1C36; }
+    .dark .form-right .info-row {
+      color: #efeff6; }
 
 @font-face {
   font-family: 'icomoon';

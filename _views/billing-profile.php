@@ -55,7 +55,6 @@
                 </div>
             </div>
             <div class="col-md-6  action-cont  order-md-5 order-1">
-                <div class="info-title">ID Protect <span class="ms-4 icon-id_protect green2"></span></div>
                 <button type="button" class="btn  btn-outline-red2 border-strong">ΔΙΑΓΡΑΦΗ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</button>
             </div>
         </div>

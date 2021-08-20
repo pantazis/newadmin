@@ -11332,7 +11332,9 @@ body.noanimetion * {
   border-bottom: 0.0625rem solid;
   border-color: #e5ebf2;
   color: #2e435e;
-  line-height: 2.5rem; }
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
   .dark .info-row {
     border-color: #373762; }
   .dark .info-row {
@@ -11386,7 +11388,7 @@ body.noanimetion * {
   .dark .form-right {
     background-color: #252343; }
   .form-right .arrow-div {
-    top: 27.75rem;
+    top: 27.5rem;
     right: 6rem;
     background-color: #efeff6;
     border: none;
@@ -11398,7 +11400,8 @@ body.noanimetion * {
       .dark .form-right .arrow-div .addprofile-shortcut {
         color: #1E1C36; }
   .form-right .info-row {
-    color: #1E1C36; }
+    color: #1E1C36;
+    padding-left: 1rem; }
     .dark .form-right .info-row {
       color: #efeff6; }
 

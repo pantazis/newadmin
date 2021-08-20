@@ -326,7 +326,9 @@ $section-padding: 1.875rem;
   border-bottom: 0.0625rem solid;
   @include themeColor("border-color", lighten($dark_blue, 65%), darken($ice, 65%));
   @include themeColor("color", $dark_blue, $ice);
-  line-height: 2.5rem;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .info-row > * {
@@ -372,7 +374,7 @@ $section-padding: 1.875rem;
   margin-top: 1.25rem;
 
   .arrow-div {
-    top: 27.75rem;
+    top: 27.5rem;
     right: 6rem;
     @include themeColor("background-color", $ice, lighten($bluedarkbl, 4%));
     border: none;
@@ -384,5 +386,9 @@ $section-padding: 1.875rem;
   }
   .info-row {
     @include themeColor("color", $bluedarkbl, $ice);
+    padding-left: 1rem;
+
+    .info-shub {
+    }
   }
 }

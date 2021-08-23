@@ -6,7 +6,7 @@ $hover-move: 0.4375rem;
 $topMargin: #{$navSidebarTop + 0.625}; //5.3125rem;
 
 html {
-    font-size: 0.7813vw;
+  //  font-size: 0.7813vw;
 }
 
 
@@ -225,7 +225,7 @@ nav.sidebar.navbar {
             height: 0rem;
             transition: height.3s, padding-left 0.3s;
             padding-left: $sidebarWidthClosed;
-            font-size: 0.9375rem;
+            font-size: 1rem;
             display: flex;
             align-items: center;
 
@@ -249,7 +249,7 @@ nav.sidebar.navbar {
             justify-content: flex-start;
             align-items: center;
             display: flex;
-            font-size: 0.9375rem;
+            font-size: 1rem;
             flex-grow: 1;
             &.title {
                 display: none;
@@ -278,7 +278,7 @@ nav.sidebar.navbar {
         flex-shrink: 0;
         span.nav-icons-side {
             color: $light_grey;
-            font-size: 1.5rem;
+            font-size: 16px;
         }
     }
 }
@@ -351,7 +351,6 @@ nav.sidebar.top {
         font-size: 1.125rem;
         height: $navSidebarTop;
         padding: 0.781rem 0;
-        margin-left: auto;
         nav.sidebar.top .nav-list.user-icons {
             display: flex;
             font-size: 1.125rem;

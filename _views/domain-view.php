@@ -37,7 +37,7 @@
                 <?php foreach($info['text'] as $subtitle){?>
                 <div class="info-row">
                     <div class="info_sub"><?=$subtitle?></div>
-                    <div class="info-val">12/34/2025</div>
+                    <div class="info-val">16/04/2021   09:35   (Europe/Athens)</div>
                     <div class="info-icon">
                     <span class="icon-fi-sr-pencil" alt=""></span>
                     </div>

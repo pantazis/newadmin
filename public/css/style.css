@@ -10268,9 +10268,6 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
   -webkit-box-shadow: 0 1.25rem 2.5rem 0 rgba(14, 12, 40, 0.21) !important;
   box-shadow: 0 1.25rem 2.5rem 0 rgba(14, 12, 40, 0.21) !important; }
 
-html {
-  font-size: 0.7813vw; }
-
 .toggle-container {
   font-size: 0.2rem;
   display: flex;
@@ -10456,7 +10453,7 @@ nav.sidebar.navbar {
       height: 0rem;
       transition: height 0.3s, padding-left 0.3s;
       padding-left: 4.8125rem;
-      font-size: 0.9375rem;
+      font-size: 1rem;
       display: flex;
       align-items: center; }
       nav.sidebar.navbar li.nav-list-item2 .list-pad:hover {
@@ -10473,7 +10470,7 @@ nav.sidebar.navbar {
       justify-content: flex-start;
       align-items: center;
       display: flex;
-      font-size: 0.9375rem;
+      font-size: 1rem;
       flex-grow: 1; }
       nav.sidebar.navbar li.nav-list-item2 .nav-text2.title {
         display: none; }
@@ -10494,7 +10491,7 @@ nav.sidebar.navbar {
     flex-shrink: 0; }
     nav.sidebar.navbar .img-box span.nav-icons-side {
       color: #cacad5;
-      font-size: 1.5rem; }
+      font-size: 16px; }
 
 .nav-text1 {
   justify-content: center; }
@@ -10545,8 +10542,7 @@ nav.sidebar.top {
     display: flex;
     font-size: 1.125rem;
     height: 4.68rem;
-    padding: 0.781rem 0;
-    margin-left: auto; }
+    padding: 0.781rem 0; }
     nav.sidebar.top .nav-list.user-icons nav.sidebar.top .nav-list.user-icons {
       display: flex;
       font-size: 1.125rem;

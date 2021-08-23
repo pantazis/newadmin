@@ -10,14 +10,30 @@ $(document).ready(function(){
 var rtime;
 var timeout = false;
 var delta = 200;
+
+
+
+
+
 $(window).resize(function() {
+    noAnimetion();
+    
+  
+});
+
+
+
+
+
+function noAnimetion(){
     $("body").addClass("noanimetion");
     rtime = new Date();
     if (timeout === false) {
         timeout = true;
         setTimeout(resizeend, delta);
     }
-});
+
+}
 
 function resizeend() {
     if (new Date() - rtime < delta) {
@@ -27,6 +43,37 @@ function resizeend() {
         $("body").removeClass("noanimetion");
     }               
 }
+
+
+
+
+$(".info-title").click(function(){
+    
+    var parent = $(this).closest(".info-container");
+    var innercont=parent.find(".info-row-con");
+    if(parent.hasClass("open")){
+   
+        parent.removeClass("open");    
+        var heightEl=parent.find(".info-row-in").height();
+        innercont.css("height",heightEl+"px");      
+       
+    }else{    
+    parent.addClass("open");
+    var heightEl=parent.find(".info-row-in").height();
+    innercont.css("height",heightEl+"px");
+    } 
+    innercont[0].ontransitionend = () => {
+        innercont.attr("style","")
+      };
+      
+
+
+});
+
+
+
+
+
 
 // navgation open close
     $(".logo").click(function () {
@@ -208,9 +255,11 @@ $(".tab-in").click(function(){
     $(".tab-in").removeClass("active");
     $(this).addClass("active");
     var allTbas = $(".tab-in").length; 
-    var isEl=parseInt($(this).attr("data-active"));
-    var move =Math.ceil(((100/allTbas)*isEl))+"%";
-    $(".activebox").css("left",move)
+    var isEl=$(this).attr("data-active");
+    var elwidth =(100/allTbas);
+    var move =parseInt(Math.ceil((elwidth*isEl)))+"%";
+    elwidth = parseInt(elwidth)+"%";
+    $(".activebox").css("left",move).css("width",elwidth);
 
 
 

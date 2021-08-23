@@ -3,6 +3,9 @@
   @each $color, $value in $colors {
     --#{$variable-prefix}#{$color}: #{$value};
   }
+  @each $grid-breakpoint, $value in $grid-breakpoints {
+    --#{$grid-breakpoint}: #{$value};
+  }
 
   @each $color, $value in $theme-colors {
     --#{$variable-prefix}#{$color}: #{$value};

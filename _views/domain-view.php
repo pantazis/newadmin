@@ -33,18 +33,24 @@
                 <div class="col-xl-9 <?=$arr["desktop"][$key]?> <?=$arr["mobile"][$key]?>">            
               
               <div class="info-container">
-                <div class="info-title"><?=$info["title"]?></div>
-                <?php foreach($info['text'] as $subtitle){?>
-                <div class="info-row">
-                    <div class="info_sub"><?=$subtitle?></div>
-                    <div class="info-val">16/04/2021   09:35   (Europe/Athens)</div>
-                    <div class="info-icon">
-                    <span class="icon-fi-sr-pencil" alt=""></span>
+                <div class="info-title"><?=$info["title"]?>
+                          <div class="info-icon">
+                             <span class="icon-fi-sr-angle-down" alt=""></span>
+                          </div>
+                </div>
+                <div class="info-row-con">
+                  <div class="info-row-in">
+                    <?php foreach($info['text'] as $subtitle){?>
+                      <div class="info-row">
+                          <div class="info_sub"><?=$subtitle?></div>
+                          <div class="info-val">16/04/2021   09:35   (Europe/Athens)</div>
+                          <div class="info-icon">
+                          <span class="icon-fi-sr-pencil" alt=""></span>
+                          </div>
+                      </div>
+                    <?php }?>
                     </div>
-
-                  </div>
-
-                <?php }?>
+                </div>
                 </div>
               </div> 
         <?php }?>
@@ -54,8 +60,11 @@
                 <button type="button" class="btn  btn-outline-red2">ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</button>                              
             </div>
             <div class="col-xl-6  action-cont  order-xl-5 order-1">
-            <div class="info-title">ID Protect <span class="ms-4 icon-id_protect green2"></span></div>   
-                <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
+            <div class="d-none d-xl-block">
+              <div class="info-title">ID Protect <span class="ms-4 icon-id_protect green2"></span></div>   
+              <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
+            </div>
+
                 <button type="button" class="btn  btn-outline-green2 border-strong">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</button>   
             </div>
             

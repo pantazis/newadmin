@@ -25,15 +25,19 @@
                 <div class="col-xl-9 <?= $arr["desktop"][$key] ?> <?= $arr["mobile"][$key] ?>">
                     <div class="info-container">
                         <div class="info-title"><?= $info["title"] ?></div>
-                        <?php foreach ($info['text'] as $subtitle) { ?>
-                            <div class="info-row">
-                                <div class="info_sub"><?= $subtitle ?></div>
-                                <div class="info-val">12/34/2025</div>
-                                <div class="info-icon">
-                                    <span class="icon-fi-sr-pencil" alt=""></span>
-                                </div>
+                        <div class="info-row-con">
+                            <div class="info-row-in">
+                                <?php foreach ($info['text'] as $subtitle) { ?>
+                                    <div class="info-row">
+                                        <div class="info_sub"><?= $subtitle ?></div>
+                                        <div class="info-val">12/34/2025</div>
+                                        <div class="info-icon">
+                                            <span class="icon-fi-sr-pencil" alt=""></span>
+                                        </div>
+                                    </div>
+                                <?php } ?>
                             </div>
-                        <?php } ?>
+                        </div>
                     </div>
                 </div>
             <?php } ?>

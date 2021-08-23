@@ -311,15 +311,35 @@ $section-padding: 1.875rem;
 /*-----------------------------------tabs-end----------------------------------------*/
 
 .info-container {
+  @media (min-width: $xl){
   padding-bottom: 6.25rem;
+  }
 }
 
 .info-title {
+  .info-icon{
+    display: none;
+  }
+  position: relative;
+  display: flex;
   font-size: 1rem;
   font-weight: bold;
   @include themeColor("color", $dark_blue, $ice);
   margin-bottom: 1.25rem;
+  @media (max-width: #{$xl - 1}){
+    border-bottom: 1px solid;
+    padding: 13px 0;
+    .info-icon{
+      display: block;
+    }
+  }
 }
+.open{
+.icon-fi-sr-angle-down:before {
+  content: "\e94e";
+}
+}
+
 .info-row {
   display: flex;
   width: 100%;
@@ -331,6 +351,20 @@ $section-padding: 1.875rem;
   padding-bottom: 1rem;
   position:relative;
   flex-wrap: wrap;
+}
+
+.info-row-con{
+  height:0;  
+  @media (min-width: #{$xl}){
+    height:100%;  
+  }
+  
+  transition:height .3s;  
+  overflow: hidden;
+  .open &{
+    height:100%;
+  }
+
 }
 
 .info-row > * {

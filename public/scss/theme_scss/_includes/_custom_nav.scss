@@ -190,7 +190,7 @@ nav.sidebar.navbar {
     top: $navSidebarTop;
     left: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: 1;
     padding-top: 1.28125rem;
     overflow: hidden;
     &.right {
@@ -826,7 +826,7 @@ span.b_in {
 //-----------------------------notification popup animation end--------------------------//
 
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
-@media screen and (max-width: 102.5rem) {
+@media screen and (max-width: 1910px) {
     nav.sidebar.top .nav-list.user-icons .nav-icon-3.tablet-only.search-icon {
         display: flex;
     }
@@ -835,6 +835,9 @@ span.b_in {
     }
     nav.sidebar.top .nav-list.search {
         display: none;
+    }
+    nav.sidebar.top .nav-list.user-icons {    
+        margin-left: auto;
     }
 }
 

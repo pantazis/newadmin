@@ -32,6 +32,12 @@
   --bs-dark_grey: #707070;
   --bs-dark_blue: #2e435e;
   --bs-black_blue: #0e0c28;
+  --xs: 0;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
   --bs-primary: #5b5bdc;
   --bs-secondary: #0e0c28;
   --bs-success: #18bf93;
@@ -10424,7 +10430,7 @@ nav.sidebar.navbar {
   top: 4.68rem;
   left: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: 1;
   padding-top: 1.28125rem;
   overflow: hidden; }
   nav.sidebar.navbar.right {
@@ -10491,7 +10497,7 @@ nav.sidebar.navbar {
     flex-shrink: 0; }
     nav.sidebar.navbar .img-box span.nav-icons-side {
       color: #cacad5;
-      font-size: 16px; }
+      font-size: 1.2rem; }
 
 .nav-text1 {
   justify-content: center; }
@@ -10895,7 +10901,7 @@ span.b_in {
     box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important; }
 
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
-@media screen and (max-width: 102.5rem) {
+@media screen and (max-width: 1910px) {
   nav.sidebar.top .nav-list.user-icons .nav-icon-3.tablet-only.search-icon {
     display: flex; }
 
@@ -10903,7 +10909,10 @@ span.b_in {
     font-size: 90%; }
 
   nav.sidebar.top .nav-list.search {
-    display: none; } }
+    display: none; }
+
+  nav.sidebar.top .nav-list.user-icons {
+    margin-left: auto; } }
 @media screen and (max-width: 1440px) {
   nav.sidebar.navbar.right {
     display: flex; }
@@ -11314,16 +11323,30 @@ body.noanimetion * {
   z-index: 1; }
 
 /*-----------------------------------tabs-end----------------------------------------*/
-.info-container {
-  padding-bottom: 6.25rem; }
+@media (min-width: 1200px) {
+  .info-container {
+    padding-bottom: 6.25rem; } }
 
 .info-title {
+  position: relative;
+  display: flex;
   font-size: 1rem;
   font-weight: bold;
   color: #2e435e;
   margin-bottom: 1.25rem; }
+  .info-title .info-icon {
+    display: none; }
   .dark .info-title {
     color: #efeff6; }
+  @media (max-width: 1199px) {
+    .info-title {
+      border-bottom: 1px solid;
+      padding: 13px 0; }
+      .info-title .info-icon {
+        display: block; } }
+
+.open .icon-fi-sr-angle-down:before {
+  content: "\e94e"; }
 
 .info-row {
   display: flex;
@@ -11340,6 +11363,16 @@ body.noanimetion * {
     border-color: #373762; }
   .dark .info-row {
     color: #efeff6; }
+
+.info-row-con {
+  height: 0;
+  transition: height .3s;
+  overflow: hidden; }
+  @media (min-width: 1200px) {
+    .info-row-con {
+      height: 100%; } }
+  .open .info-row-con {
+    height: 100%; }
 
 .info-row > * {
   flex: 1;

@@ -209,7 +209,7 @@ $(".tab-in").click(function(){
     $(this).addClass("active");
     var allTbas = $(".tab-in").length; 
     var isEl=parseInt($(this).attr("data-active"));
-    var move =((100/allTbas)*isEl)+"%";
+    var move =Math.ceil(((100/allTbas)*isEl))+"%";
     $(".activebox").css("left",move)
 
 

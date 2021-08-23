@@ -329,15 +329,26 @@ $section-padding: 1.875rem;
   line-height: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  position:relative;
+  flex-wrap: wrap;
 }
 
 .info-row > * {
   flex: 1;
   font-size: 0.875rem;
 }
+.info_sub {
+  min-width: 12.5rem;
+}
+
+.info-val{
+  flex: 2;
+  padding-right: 3rem;
+}
 
 .info-icon {
-  text-align: end;
+  position:absolute;
+  right:0;
   margin-right: 1.5rem;
 }
 .action-cont .btn {
@@ -349,7 +360,7 @@ $section-padding: 1.875rem;
 }
 .id-protect-text {
   @include themeColor("color", $dark_blue, $ice);
-  font-size: 1.2rem;
+  font-size:0.875rem;
 }
 
 .btn-black_blue {

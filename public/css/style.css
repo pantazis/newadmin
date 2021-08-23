@@ -10381,7 +10381,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   display: none; }
   .logo-button .img {
     width: 4.625rem;
@@ -10511,7 +10511,7 @@ nav.sidebar.top {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   display: flex; }
   nav.sidebar.top .nav-container {
     flex-grow: 1;
@@ -10967,7 +10967,7 @@ span.b_in {
     width: 0;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 4;
     display: flex;
     transition-property: width;
     border-right: 0rem;
@@ -11337,7 +11337,9 @@ body.noanimetion * {
   color: #2e435e;
   line-height: 1.5rem;
   padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  position: relative;
+  flex-wrap: wrap; }
   .dark .info-row {
     border-color: #373762; }
   .dark .info-row {
@@ -11347,8 +11349,16 @@ body.noanimetion * {
   flex: 1;
   font-size: 0.875rem; }
 
+.info_sub {
+  min-width: 12.5rem; }
+
+.info-val {
+  flex: 2;
+  padding-right: 3rem; }
+
 .info-icon {
-  text-align: end;
+  position: absolute;
+  right: 0;
   margin-right: 1.5rem; }
 
 .action-cont .btn {
@@ -11360,7 +11370,7 @@ body.noanimetion * {
 
 .id-protect-text {
   color: #2e435e;
-  font-size: 1.2rem; }
+  font-size: 0.875rem; }
   .dark .id-protect-text {
     color: #efeff6; }
 

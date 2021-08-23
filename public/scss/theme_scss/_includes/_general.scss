@@ -253,13 +253,13 @@ $section-padding: 1.875rem;
 .tab-in {
   flex: 1;
   padding: 1.25rem;
-  @include themeColor("color", $dark_blue, $white);
+  &.active{ @include themeColor("color", $dark_blue,  $white)}
+  transition: color 0.15s;
+  @include themeColor("color", rgba($dark_blue,0.4),  rgba($white, 0.4));
   @include themeColor("background", darken($ice, 1.5%), lighten($bluedarkbl, 1.5%));
   text-align: center;
   font-size: 0.9rem;
-  &:hover {
-    text-decoration: underline;
-  }
+
 }
 .activebox {
   position: absolute;

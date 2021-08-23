@@ -11263,16 +11263,19 @@ body.noanimetion * {
 .tab-in {
   flex: 1;
   padding: 1.25rem;
-  color: #2e435e;
+  transition: color 0.15s;
+  color: rgba(46, 67, 94, 0.4);
   background: #eaeaf3;
   text-align: center;
   font-size: 0.9rem; }
+  .tab-in.active {
+    color: #2e435e; }
+    .dark .tab-in.active {
+      color: #fff; }
   .dark .tab-in {
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.4); }
   .dark .tab-in {
     background: #211f3b; }
-  .tab-in:hover {
-    text-decoration: underline; }
 
 .activebox {
   position: absolute;

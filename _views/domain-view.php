@@ -9,10 +9,10 @@
         <div class="container">
           <?php $arr =[
             "desktop"=>[
-                "order-md-0",
-                "order-md-3",
-                "order-md-1",
-                "order-md-4",
+                "order-xl-0",
+                "order-xl-3",
+                "order-xl-1",
+                "order-xl-4",
              
             ],
             
@@ -30,7 +30,7 @@
             
               <div class="row">
               <?php foreach($domaininfo as $key => $info){?> 
-                <div class="col-md-9 <?=$arr["desktop"][$key]?> <?=$arr["mobile"][$key]?>">            
+                <div class="col-xl-9 <?=$arr["desktop"][$key]?> <?=$arr["mobile"][$key]?>">            
               
               <div class="info-container">
                 <div class="info-title"><?=$info["title"]?></div>
@@ -48,12 +48,12 @@
                 </div>
               </div> 
         <?php }?>
-        <div class="col-md-6 action-cont order-md-2 order-0">
+        <div class="col-xl-6 action-cont order-xl-2 order-0">
                 <button type="button" class="btn  btn-black_blue">ΑΝΑΝΕΩΣΗ DOMAIN</button>
                 <button type="button" class="btn  btn-outline-blue_purple">ΕΣΩΤΕΡΙΚΗ ΜΕΤΑΦΟΡΑ</button>
                 <button type="button" class="btn  btn-outline-red2">ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</button>                              
             </div>
-            <div class="col-md-6  action-cont  order-md-5 order-1">
+            <div class="col-xl-6  action-cont  order-xl-5 order-1">
             <div class="info-title">ID Protect <span class="ms-4 icon-id_protect green2"></span></div>   
                 <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
                 <button type="button" class="btn  btn-outline-green2 border-strong">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</button>   

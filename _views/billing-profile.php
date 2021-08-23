@@ -7,10 +7,10 @@
     <div class="container">
         <?php $arr = [
             "desktop" => [
-                "order-md-0",
-                "order-md-3",
-                "order-md-1",
-                "order-md-4",
+                "order-xl-0",
+                "order-xl-3",
+                "order-xl-1",
+                "order-xl-4",
             ],
             "mobile" => [
                 "order-2",
@@ -22,7 +22,7 @@
         ?>
         <div class="row">
             <?php foreach ($billinginfo as $key => $info) { ?>
-                <div class="col-md-9 <?= $arr["desktop"][$key] ?> <?= $arr["mobile"][$key] ?>">
+                <div class="col-xl-9 <?= $arr["desktop"][$key] ?> <?= $arr["mobile"][$key] ?>">
                     <div class="info-container">
                         <div class="info-title"><?= $info["title"] ?></div>
                         <?php foreach ($info['text'] as $subtitle) { ?>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
             <?php } ?>
-            <div class="col-md-6 action-cont order-md-2 order-0">
+            <div class="col-xl-6 action-cont order-xl-2 order-0">
                 <button type="button" class="btn  btn-black_blue mb-0">ΝΕΟ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</button>
                 <div class="form-right">
                     <div class="arrow-div"></div>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6  action-cont  order-md-5 order-1">
+            <div class="col-xl-6  action-cont  order-xl-5 order-1">
                 <button type="button" class="btn  btn-outline-red2 border-strong">ΔΙΑΓΡΑΦΗ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</button>
             </div>
         </div>

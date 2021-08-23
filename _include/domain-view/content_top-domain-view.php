@@ -10,7 +10,7 @@
         </nav>
         <h2 class="page_title">antoineeurtest.gr</h2>
     </div>
-    <div class="top_right ">
+    <div class="top_right d-none d-xxl-flex ">
         <?php foreach ($label as $key => $value){?>
             <div class="top_frame  <?=$colorClass[$key]?> ">
             <div class="h4 frame_title"><?=$value?></div>

@@ -1,6 +1,9 @@
 .content_top {
     display: flex;
+    justify-content: center;    
+    @media (min-width: $xxl){
     justify-content: space-between;
+    }
 }
 .top_right {
     display: flex;

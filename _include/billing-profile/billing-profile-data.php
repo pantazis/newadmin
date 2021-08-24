@@ -39,4 +39,12 @@ $breadcrumb=[
 "An Ubavicius",
 "Προφλί Τιμολόγησης",  
 ];
+
+$tabs=[
+"Web Hosting",
+"Reseller Hosting",
+"Semi-Dedicated Hosting",
+"VPS Hosting",
+"Dedicated Servers",
+];
 ?>

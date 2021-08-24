@@ -42,7 +42,7 @@
                 </div>
             <?php } ?>
             <div class="col-xl-6 action-cont order-xl-2 order-0">
-                <button type="button" class="btn  btn-black_blue mb-0">ΝΕΟ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</button>
+                <button type="button" class="btn actions btn-black_blue mb-0">ΝΕΟ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</button>
                 <div class="form-right">
                     <div class="arrow-div"></div>
                     <div class="addprofile-shortcut">
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="col-xl-6  action-cont  order-xl-5 order-1">
-                <button type="button" class="btn  btn-outline-red2 border-strong">ΔΙΑΓΡΑΦΗ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</button>
+                <button type="button" class="btn actions btn-outline-red2 border-strong">ΔΙΑΓΡΑΦΗ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</button>
             </div>
         </div>
     </div>

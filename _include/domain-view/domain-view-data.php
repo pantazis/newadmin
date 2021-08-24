@@ -29,10 +29,20 @@ $domaininfo=[
 ]; 
 
 $page_title = "antoineeurtest.gr";
+
 $breadcrumb=["Dashboard ",
 "Users",
 "An Ubavicius",
-"Domains",]
+"Domains",];
+
+
+$tabs=[
+  "Web Hosting",
+  "Reseller Hosting",
+  "Semi-Dedicated Hosting",
+  "VPS Hosting",
+  "Dedicated Servers",
+  ];
 
 
 ?>

@@ -1,8 +1,9 @@
 
 <div class="tab-cont">
-    <?php $tabnum = rand(3,6);?>
+    <?php $tabnum = count($tabs)-1;?>
     <div class="activebox" style="width:<?=(100/($tabnum+1))?>%"></div>
- <?php for ($i = 0; $i <= $tabnum; $i++) { ?>
-    <div class="tab-in" data-active="<?=$i?>"><div class="over">title</div></div>
- <?php } ?>    
+   <?php foreach($tabs as $tab => $value) { ?>
+      <div class="tab-in <?php if($tab==0) echo "active";?>" data-active="<?=$tab?>"><div class="over"><?=$value?></div></div>
+   <?php } ?>    
 </div>
+

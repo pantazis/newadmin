@@ -3,9 +3,9 @@
       <?php include '_include/content_top.php'; ?>       
       </section>
 
-     
-      <section class="section-main "> 
       <?php include '_include/tabs.php'; ?>  
+      <section class="section-main "> 
+      
         <div class="container">
           <?php $arr =[
             "desktop"=>[
@@ -55,9 +55,9 @@
               </div> 
         <?php }?>
         <div class="col-xl-6 action-cont order-xl-2 order-0">
-                <button type="button" class="btn  btn-black_blue">ΑΝΑΝΕΩΣΗ DOMAIN</button>
-                <button type="button" class="btn  btn-outline-blue_purple">ΕΣΩΤΕΡΙΚΗ ΜΕΤΑΦΟΡΑ</button>
-                <button type="button" class="btn  btn-outline-red2">ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</button>                              
+                <button type="button" class="btn actions btn-black_blue">ΑΝΑΝΕΩΣΗ DOMAIN</button>
+                <button type="button" class="btn actions btn-outline-blue_purple">ΕΣΩΤΕΡΙΚΗ ΜΕΤΑΦΟΡΑ</button>
+                <button type="button" class="btn actions btn-outline-red2">ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</button>                              
             </div>
             <div class="col-xl-6  action-cont  order-xl-5 order-1">
             <div class="d-none d-xl-block">
@@ -65,7 +65,7 @@
               <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
             </div>
 
-                <button type="button" class="btn  btn-outline-green2 border-strong">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</button>   
+                <button type="button" class="btn actions btn-outline-green2 border-strong">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</button>   
             </div>
             
 

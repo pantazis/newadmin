@@ -260,6 +260,31 @@
         };
     });
 
+    //create mobile actions
+
+
+
+
+
+    var actions = $(".actions").clone().removeClass("btn");
+    actions.each(function(index){       
+        
+        var classes = this.classList.value.replace("outline-", "");
+        var newel = $(this).attr("class",classes)[0].outerHTML;     
+        var newParent =`<div class="dimensions">
+                    <div class="resio">
+                        ${newel}
+                    </div>
+                </div>`;
+
+        $(".mobile_tabs").append(newParent);
+    });
+
+
+    
+
+
+
 
 
 

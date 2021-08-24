@@ -1,6 +1,6 @@
 <section class="top-section ">
     <?php include '_include/billing-profile/billing-profile-data.php'; ?>
-    <?php include '_include/billing-profile/content_top_bill.php'; ?>
+    <?php include '_include/content_top.php'; ?>
 </section>
 <section class="section-main ">
     <?php include '_include/tabs.php'; ?>

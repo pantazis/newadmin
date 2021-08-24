@@ -1,6 +1,6 @@
       <section class="top-section ">
       <?php include '_include/domain-view/domain-view-data.php'; ?>      
-      <?php include '_include/domain-view/content_top-domain-view.php'; ?>       
+      <?php include '_include/content_top.php'; ?>       
       </section>
 
      

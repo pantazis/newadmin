@@ -30,11 +30,28 @@
         
         </div>
     </div>
-        <div class="mobile-cont">
-            <div class="mobile_actions"></div>
-        </div>
-        <div class="mobile-cont">
+     
+        <div class="mobile-cont ">
             <div class="mobile_tabs">
         </div>    
+
+
+     
 </div>
+<?php
+        $bp =["xs"=>"xs : 0;",
+        "sm"=>"sm : 576px;",
+        "md"=>"md : 768px;",
+        "lg"=>"lg : 992px;",
+        "xl"=>"xl : 1200px;",
+        "xxl"=>"xxl: 1550px;"
+    ]; ?>
+
+        <?php foreach ($bp as $kay =>   $value) {?>
+        <div class="d-none <!--d-<?=$kay;?>-flex--> ">
+                <?=$value;?>
+        </div>
+<?php }?>
+
+
 

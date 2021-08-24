@@ -267,12 +267,18 @@ $section-padding: 1.875rem;
   border-top-right-radius: $border-radius;
   overflow: hidden;
   width: var(--tab-width-decktop);
+
+
   
-  @media (max-width: #{$xl - 1}){   
+  @media (max-width: #{$md - 1}){   
     width: var(--tab-width);
     border-radius: 0;
 
 
+  }
+  @media (max-width: #{$xl - 1}){   
+    width: var(--tab-width-tablet);
+    border-radius: 0;
   }
 }
 
@@ -490,6 +496,9 @@ $section-padding: 1.875rem;
 .mobile_tabs {
   display: flex;
   width: 165%;
+  @media(min-width: $md) {
+    width: 100%;
+  }
 }
 
 .resio {
@@ -513,8 +522,11 @@ $section-padding: 1.875rem;
 }
 
 .dimensions {
-  width: calc(25% - 20px);
+  width: calc(25% - 15px);
   margin-right: 20px;
+  &:last-of-type{
+    margin-right: 0px;
+  }
 }
 
 .mobile-cont {
@@ -522,5 +534,8 @@ $section-padding: 1.875rem;
   overflow: auto;
   margin-bottom: $section-padding;
   margin-top: $section-padding;
+  @media(min-width: $xl) {
+    display: none;
+  }
 }
 

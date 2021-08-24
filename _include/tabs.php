@@ -3,6 +3,7 @@
 :root{
    --tab-width:<?=60*($tabnum+1)?>%;
    --tab-width-decktop:<?=16.6666*($tabnum+1)?>%;
+   --tab-width-tablet:<?=40*($tabnum+1)?>%;
 }
 </style>
 <div class="tab-parent">

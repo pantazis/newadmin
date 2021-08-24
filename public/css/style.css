@@ -11283,9 +11283,13 @@ body.noanimαtion * {
   border-top-right-radius: 0.6rem;
   overflow: hidden;
   width: var(--tab-width-decktop); }
-  @media (max-width: 1199px) {
+  @media (max-width: 767px) {
     .tab-cont {
       width: var(--tab-width);
+      border-radius: 0; } }
+  @media (max-width: 1199px) {
+    .tab-cont {
+      width: var(--tab-width-tablet);
       border-radius: 0; } }
 
 .tab-in {
@@ -11487,6 +11491,9 @@ body.noanimαtion * {
 .mobile_tabs {
   display: flex;
   width: 165%; }
+  @media (min-width: 768px) {
+    .mobile_tabs {
+      width: 100%; } }
 
 .resio {
   width: 100%;
@@ -11505,14 +11512,19 @@ body.noanimαtion * {
     border: 0; }
 
 .dimensions {
-  width: calc(25% - 20px);
+  width: calc(25% - 15px);
   margin-right: 20px; }
+  .dimensions:last-of-type {
+    margin-right: 0px; }
 
 .mobile-cont {
   width: 100%;
   overflow: auto;
   margin-bottom: 1.875rem;
   margin-top: 1.875rem; }
+  @media (min-width: 1200px) {
+    .mobile-cont {
+      display: none; } }
 
 @font-face {
   font-family: 'icomoon';

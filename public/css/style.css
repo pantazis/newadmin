@@ -11251,22 +11251,41 @@ body.noanimαtion * {
 
 /*---------------------------------------------MAIN SECTION---------------------------------------------*/
 .section-main {
-  padding-top: 2.625rem;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
   margin-left: 1.875rem;
   margin-right: 1.875rem;
   margin-bottom: 1.875rem;
   border-radius: 0.6rem; }
+  @media (min-width: 1200px) {
+    .section-main {
+      padding-top: 2.625rem;
+      padding-bottom: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; } }
 
 /*-----------------------------------tabs----------------------------------------*/
+.tab-parent {
+  overflow: auto;
+  margin-left: 1.875rem;
+  margin-right: 1.875rem; }
+  @media (max-width: 1199px) {
+    .tab-parent {
+      margin-bottom: 1.875rem;
+      overflow: auto;
+      border-radius: 0.6rem; } }
+
 .tab-cont {
   display: flex;
-  width: calc(100% - 3.75rem);
+  width: 100%;
   position: relative;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
-  overflow: hidden;
-  margin-left: 1.875rem;
-  margin-right: 1.875rem; }
+  overflow: hidden; }
+  @media (max-width: 1199px) {
+    .tab-cont {
+      width: var(--tab-width);
+      border-radius: 0; } }
 
 .tab-in {
   flex: 1;
@@ -11323,6 +11342,11 @@ body.noanimαtion * {
     color: #fff; }
     .dark .activebox:before {
       color: #0e0c28; }
+  @media (max-width: 1199px) {
+    .activebox {
+      border-radius: 0.6rem; }
+      .activebox:before, .activebox:after {
+        display: none; } }
 
 .over {
   position: relative;

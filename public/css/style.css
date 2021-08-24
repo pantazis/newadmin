@@ -11521,8 +11521,7 @@ body.noanimαtion * {
   width: 100%;
   overflow: auto;
   margin-bottom: 1.875rem;
-  margin-top: 1.875rem;
-  scrollbar-width: none; }
+  margin-top: 1.875rem; }
   @media (min-width: 1200px) {
     .mobile-cont {
       display: none; } }

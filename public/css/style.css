@@ -12895,9 +12895,4 @@ h2.page_title, .page_title.h2 {
 .danger .h2.frame_value {
   color: #d83438; }
 
-.success .h2.frame_value,
-.warning .h2.frame_value,
-.danger .h2.frame_value {
-  font-weight: 800; }
-
 /*# sourceMappingURL=style.css.map */

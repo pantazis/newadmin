@@ -11281,7 +11281,6 @@ body.noanimαtion * {
   position: relative;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
-  overflow: hidden;
   width: var(--tab-width-decktop); }
   @media (max-width: 767px) {
     .tab-cont {
@@ -11302,7 +11301,8 @@ body.noanimαtion * {
   font-size: 0.9rem;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-radius: 0.6rem; }
   .tab-in.active {
     color: #2e435e; }
     .dark .tab-in.active {

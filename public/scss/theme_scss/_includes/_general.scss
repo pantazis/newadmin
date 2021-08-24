@@ -266,6 +266,7 @@ $section-padding: 1.875rem;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
   overflow: hidden;
+  width: var(--tab-width-decktop);
   
   @media (max-width: #{$xl - 1}){   
     width: var(--tab-width);

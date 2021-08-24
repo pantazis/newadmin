@@ -11281,7 +11281,8 @@ body.noanimαtion * {
   position: relative;
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
-  overflow: hidden; }
+  overflow: hidden;
+  width: var(--tab-width-decktop); }
   @media (max-width: 1199px) {
     .tab-cont {
       width: var(--tab-width);

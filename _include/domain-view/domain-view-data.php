@@ -37,8 +37,11 @@ $breadcrumb=["Dashboard ",
 
 
 $tabs=[
-
-  "Dedicated Servers",
+  "Web Hosting",
+  "Reseller Hosting",
+  "Semi-Dedicated Hosting",
+  "VPS Hosting",
+  "Dedicated Servers", 
   ];
 
 

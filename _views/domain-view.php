@@ -35,7 +35,7 @@
               <div class="info-container">
                 <div class="info-title"><?=$info["title"]?>
                           <div class="info-icon">
-                             <span class="icon-fi-sr-angle-down" alt=""></span>
+                             <span class="icon-fi-sr-angle-down" class="button-icon" alt=""></span>
                           </div>
                 </div>
                 <div class="info-row-con">
@@ -45,7 +45,7 @@
                           <div class="info_sub"><?=$subtitle?></div>
                           <div class="info-val">16/04/2021   09:35   (Europe/Athens)</div>
                           <div class="info-icon">
-                          <span class="icon-fi-sr-pencil" alt=""></span>
+                          <span class="icon-fi-sr-pencil" class="button-icon" alt=""></span>
                           </div>
                       </div>
                     <?php }?>
@@ -55,9 +55,9 @@
               </div> 
         <?php }?>
         <div class="col-xl-6 action-cont order-xl-2 order-0">
-                <button type="button" class="btn actions btn-black_blue">ΑΝΑΝΕΩΣΗ DOMAIN</button>
-                <button type="button" class="btn actions btn-outline-blue_purple">ΕΣΩΤΕΡΙΚΗ ΜΕΤΑΦΟΡΑ</button>
-                <button type="button" class="btn actions btn-outline-red2">ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</button>                              
+                <button type="button" class="btn actions btn-black_blue"><img src="public/img/button-icons/fi-sr-refresh.svg" class="button-icon" alt="" >ΑΝΑΝΕΩΣΗ DOMAIN</button>
+                <button type="button" class="btn actions btn-outline-blue_purple"><img src="public/img/button-icons/into-transfer.svg" class="button-icon" alt="" >ΕΣΩΤΕΡΙΚΗ ΜΕΤΑΦΟΡΑ</button>
+                <button type="button" class="btn actions btn-outline-red2"><img src="public/img/button-icons/fi-sr-refresh2.svg" class="button-icon" alt="" >ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</button>                              
             </div>
             <div class="col-xl-6  action-cont  order-xl-5 order-1">
             <div class="d-none d-xl-block">
@@ -65,7 +65,7 @@
               <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
             </div>
 
-                <button type="button" class="btn actions btn-outline-green2 border-strong">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</button>   
+                <button type="button" class="btn actions btn-outline-green2 border-strong"><img src="public/img/button-icons/id_protect.svg" class="button-icon" alt="" >ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</button>   
             </div>
             
 

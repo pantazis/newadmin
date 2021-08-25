@@ -538,4 +538,29 @@ $section-padding: 1.875rem;
     display: none;
   }
 }
+//-------------------------------button-icons------------------------------------------//
+@media(min-width:$xl){
+  .button-icon{
+    display: none;
+  }
+
+}
+.gradientbg {
+  $gradient-light:linear-gradient(40deg, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0) 100%);
+  $gradient-dark: linear-gradient(40deg, rgba(0,0,0,0.8214636196275386) 0%, rgba(0,0,0,0) 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  @include themeColor("background", $gradient-light, $gradient-dark);
+  right: 0;
+  z-index: 1;
+}
+
+
+
+
 

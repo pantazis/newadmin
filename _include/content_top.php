@@ -37,7 +37,7 @@
 
 
      
-</div>
+</div>  
 <?php
         $bp =["xs"=>"xs : 0;",
         "sm"=>"sm : 576px;",
@@ -48,7 +48,7 @@
     ]; ?>
 
         <?php foreach ($bp as $kay =>   $value) {?>
-        <div class="d-none <!--d-<?=$kay;?>-flex--> ">
+        <div class="d-none d-<?=$kay;?>-flex">
                 <?=$value;?>
         </div>
 <?php }?>

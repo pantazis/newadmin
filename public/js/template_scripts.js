@@ -273,6 +273,8 @@
         var newel = $(this).attr("class",classes)[0].outerHTML;     
         var newParent =`<div class="dimensions">
                     <div class="resio">
+                    <div class="gradientbg"></div>
+                    
                         ${newel}
                     </div>
                 </div>`;

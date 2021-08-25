@@ -11536,7 +11536,9 @@ body.noanimαtion * {
 @media (max-width: 1199px) {
   span.btext {
     color: #fff;
-    padding: 10px; } }
+    padding: 10px;
+    position: relative;
+    z-index: 1; } }
 .button-icon2 {
   height: 43px; }
 
@@ -11547,11 +11549,11 @@ body.noanimαtion * {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(40deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.397) 20%, rgba(255, 255, 255, 0.137) 85%);
   right: 0;
   z-index: 1; }
   .dark .gradientbg {
-    background: linear-gradient(40deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0) 100%); }
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.418) 85%); }
 
 @font-face {
   font-family: 'icomoon';

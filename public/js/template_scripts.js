@@ -1,3 +1,6 @@
+
+
+
 (function () {
     var $ = window.$
 
@@ -11,7 +14,11 @@
     var timeout = false;
     var delta = 200;
 
+    
 
+    $(document).ready(function(){
+        $(this).scrollTop(0);
+    });
 
 
 

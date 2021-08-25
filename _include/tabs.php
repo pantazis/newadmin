@@ -1,9 +1,26 @@
 <style>
 <?php $tabnum = count($tabs)-1;?>
 :root{
-   --tab-width:<?=60*($tabnum+1)?>%;
+  
    --tab-width-decktop:<?=16.6666*($tabnum+1)?>%;
-   --tab-width-tablet:<?=40*($tabnum+1)?>%;
+   <?php if(60*($tabnum+1)<100){
+      $mobile = 100;
+
+   }else{
+      $mobile = 60*($tabnum+1);
+
+   }
+
+   if(40*($tabnum+1)<100){
+      $tablet = 100;
+
+   }else{
+      $tablet = 40*($tabnum+1);
+
+   }  
+   ?>
+   --tab-width:<?= $mobile?>%;      
+   --tab-width-tablet:<?=$tablet?>%;
 }
 </style>
 <div class="tab-parent">

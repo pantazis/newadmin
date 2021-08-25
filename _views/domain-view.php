@@ -55,9 +55,9 @@
               </div> 
         <?php }?>
         <div class="col-xl-6 action-cont order-xl-2 order-0">
-                <button type="button" class="btn actions btn-black_blue"><img src="public/img/button-icons/fi-sr-refresh.svg" class="button-icon" alt="" >ΑΝΑΝΕΩΣΗ DOMAIN</button>
-                <button type="button" class="btn actions btn-outline-blue_purple"><img src="public/img/button-icons/into-transfer.svg" class="button-icon" alt="" >ΕΣΩΤΕΡΙΚΗ ΜΕΤΑΦΟΡΑ</button>
-                <button type="button" class="btn actions btn-outline-red2"><img src="public/img/button-icons/fi-sr-refresh2.svg" class="button-icon" alt="" >ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</button>                              
+                <button type="button" class="btn actions btn-black_blue"><img src="public/img/button-icons/fi-sr-refresh.svg" class="button-icon2" alt="" ><span class="btext">ΑΝΑΝΕΩΣΗ DOMAIN</span></button>
+                <button type="button" class="btn actions btn-outline-blue_purple"><img src="public/img/button-icons/into-transfer.svg" class="button-icon2" alt="" ><span class="btext">ΕΣΩΤΕΡΙΚΗ ΜΕΤΑΦΟΡΑ</span></button>
+                <button type="button" class="btn actions btn-outline-red2"><img src="public/img/button-icons/fi-sr-refresh2.svg" class="button-icon2" alt="" ><span class="btext">ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</span></button>                              
             </div>
             <div class="col-xl-6  action-cont  order-xl-5 order-1">
             <div class="d-none d-xl-block">
@@ -65,7 +65,7 @@
               <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
             </div>
 
-                <button type="button" class="btn actions btn-outline-green2 border-strong"><img src="public/img/button-icons/id_protect.svg" class="button-icon" alt="" >ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</button>   
+                <button type="button" class="btn actions btn-outline-green2 border-strong"><img src="public/img/button-icons/id_protect.svg" class="button-icon2" alt="" ><span class="btext">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</span></button>   
             </div>
             
 

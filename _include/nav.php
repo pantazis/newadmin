@@ -110,13 +110,13 @@ $sub1 = [
   
         <div class="nav-list user-icons">
         <?php $arr=[
-        "menu2",
+        "icon-fi-sr-menu-burger_left",
         "logo-mobile",        
         "search",
         "fi-sr-bell1",
         "fi-sr-shopping-cart",
         "fi-sr-user",
-        "fi-sr-menu-burger",       
+        "icon-fi-sr-menu-burger",       
         ];
       
         

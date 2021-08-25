@@ -2,8 +2,8 @@
     <?php include '_include/billing-profile/billing-profile-data.php'; ?>
     <?php include '_include/content_top.php'; ?>
 </section>
+<?php include '_include/tabs.php'; ?>
 <section class="section-main ">
-    <?php include '_include/tabs.php'; ?>
     <div class="container">
         <?php $arr = [
             "desktop" => [

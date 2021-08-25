@@ -235,48 +235,43 @@ $section-padding: 1.875rem;
 .section-main {
   padding-top: $section-padding;
   padding-bottom: $section-padding;
-  @media (min-width: $xl){
-  padding-top: $section-padding + 0.75rem;
-  padding-bottom:0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  }
-
   margin-left: $section-padding;
   margin-right: $section-padding;
   margin-bottom: $section-padding;
   border-radius: $border-radius;
+  @media (min-width: $xl) {
+    padding-top: $section-padding + 0.75rem;
+    padding-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
 
 /*-----------------------------------tabs----------------------------------------*/
 .tab-parent {
   overflow: auto;
-  @media (max-width: #{$xl - 1}){ 
-  margin-bottom:$section-padding;
-  overflow:auto;
-  border-radius: $border-radius;
-}
+  @media (max-width: #{$xl - 1}) {
+    margin-bottom: $section-padding;
+    overflow: auto;
+    border-radius: $border-radius;
+  }
   margin-left: $section-padding;
   margin-right: $section-padding;
 }
 .tab-cont {
   display: flex;
   width: 100%;
-  position: relative; 
+  position: relative;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
-  overflow: hidden;
+  //overflow: hidden;
   width: var(--tab-width-decktop);
 
-
-  
-  @media (max-width: #{$md - 1}){   
+  @media (max-width: #{$md - 1}) {
     width: var(--tab-width);
     border-radius: 0;
-
-
   }
-  @media (max-width: #{$xl - 1}){   
+  @media (max-width: #{$xl - 1}) {
     width: var(--tab-width-tablet);
     border-radius: 0;
   }
@@ -285,17 +280,18 @@ $section-padding: 1.875rem;
 .tab-in {
   flex: 1;
   padding: 1.25rem;
-  &.active{ @include themeColor("color", $dark_blue,  $white)}
+  &.active {
+    @include themeColor("color", $dark_blue, $white);
+  }
   transition: color 0.15s;
-  @include themeColor("color", rgba($dark_blue,0.4),  rgba($white, 0.4));
+  @include themeColor("color", rgba($dark_blue, 0.4), rgba($white, 0.4));
   @include themeColor("background", darken($ice, 1.5%), lighten($bluedarkbl, 1.5%));
   text-align: center;
   font-size: 0.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
- 
-
+  border-radius: $border-radius;
 }
 .activebox {
   position: absolute;
@@ -328,10 +324,6 @@ $section-padding: 1.875rem;
     box-shadow: -$border-radius 0 0 0;
 
     @include themeColor("color", $white, $black_blue);
-   
-
-
-
   }
 
   &:before {
@@ -342,9 +334,10 @@ $section-padding: 1.875rem;
     box-shadow: $border-radius 0 0 0;
     @include themeColor("color", $white, $black_blue);
   }
-  @media (max-width: #{$xl - 1}){
+  @media (max-width: #{$xl - 1}) {
     border-radius: $border-radius;
-    &:before,&:after{
+    &:before,
+    &:after {
       display: none;
     }
   }
@@ -355,23 +348,21 @@ $section-padding: 1.875rem;
 }
 
 /*-----------------------------------tabs-end----------------------------------------*/
-.action-cont{
+.action-cont {
   display: none;
-  @media (min-width: $xl){
+  @media (min-width: $xl) {
     display: block;
-
   }
-
 }
 
 .info-container {
-  @media (min-width: $xl){
-  padding-bottom: 6.25rem;
+  @media (min-width: $xl) {
+    padding-bottom: 6.25rem;
   }
 }
 
 .info-title {
-  .info-icon{
+  .info-icon {
     display: none;
   }
   position: relative;
@@ -380,18 +371,18 @@ $section-padding: 1.875rem;
   font-weight: bold;
   @include themeColor("color", $dark_blue, $ice);
   margin-bottom: 1.25rem;
-  @media (max-width: #{$xl - 1}){
+  @media (max-width: #{$xl - 1}) {
     border-bottom: 1px solid;
     padding: 13px 0;
-    .info-icon{
+    .info-icon {
       display: block;
     }
   }
 }
-.open{
-.icon-fi-sr-angle-down:before {
-  content: "\e94e";
-}
+.open {
+  .icon-fi-sr-angle-down:before {
+    content: "\e94e";
+  }
 }
 
 .info-row {
@@ -403,22 +394,21 @@ $section-padding: 1.875rem;
   line-height: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  position:relative;
+  position: relative;
   flex-wrap: wrap;
 }
 
-.info-row-con{
-  height:0;  
-  @media (min-width: #{$xl}){
-    height:100%;  
-  }
-  
-  transition:height .3s;  
-  overflow: hidden;
-  .open &{
-    height:100%;
+.info-row-con {
+  height: 0;
+  @media (min-width: #{$xl}) {
+    height: 100%;
   }
 
+  transition: height 0.3s;
+  overflow: hidden;
+  .open & {
+    height: 100%;
+  }
 }
 
 .info-row > * {
@@ -429,14 +419,14 @@ $section-padding: 1.875rem;
   min-width: 12.5rem;
 }
 
-.info-val{
+.info-val {
   flex: 2;
   padding-right: 3rem;
 }
 
 .info-icon {
-  position:absolute;
-  right:0;
+  position: absolute;
+  right: 0;
   margin-right: 1.5rem;
 }
 .action-cont .btn {
@@ -448,7 +438,7 @@ $section-padding: 1.875rem;
 }
 .id-protect-text {
   @include themeColor("color", $dark_blue, $ice);
-  font-size:0.875rem;
+  font-size: 0.875rem;
 }
 
 .btn-black_blue {
@@ -496,7 +486,7 @@ $section-padding: 1.875rem;
 .mobile_tabs {
   display: flex;
   width: 165%;
-  @media(min-width: $md) {
+  @media (min-width: $md) {
     width: 100%;
   }
 }
@@ -517,14 +507,13 @@ $section-padding: 1.875rem;
     width: 100%;
     height: 100%;
     border: 0;
-  
   }
 }
 
 .dimensions {
   width: calc(25% - 15px);
   margin-right: 20px;
-  &:last-of-type{
+  &:last-of-type {
     margin-right: 0px;
   }
 }
@@ -534,10 +523,11 @@ $section-padding: 1.875rem;
   overflow: auto;
   margin-bottom: $section-padding;
   margin-top: $section-padding;
-  @media(min-width: $xl) {
+  @media (min-width: $xl) {
     display: none;
   }
 }
+<<<<<<< HEAD
 //-------------------------------button-icons------------------------------------------//
 @media(min-width:$xl){
   .button-icon{
@@ -564,3 +554,5 @@ $section-padding: 1.875rem;
 
 
 
+=======
+>>>>>>> f60f8625d7225c99ae360d9d17bdb27bffcf75be

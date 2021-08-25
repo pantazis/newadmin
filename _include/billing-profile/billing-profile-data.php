@@ -41,10 +41,5 @@ $breadcrumb=[
 ];
 
 $tabs=[
-"Web Hosting",
-"Reseller Hosting",
-"Semi-Dedicated Hosting",
-"VPS Hosting",
-"Dedicated Servers",
+"Στοιχεία Προπώπου",
 ];
-?>

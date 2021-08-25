@@ -110,11 +110,7 @@ $sub1 = [
   
         <div class="nav-list user-icons">
         <?php $arr=[
-<<<<<<< HEAD
-        "icon-fi-sr-signal-alt-2",
-=======
         "icon-fi-sr-menu-burger_left",
->>>>>>> ae6594cc2d22f1257d2324463070995b256c8734
         "logo-mobile",        
         "search",
         "fi-sr-bell1",

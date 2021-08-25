@@ -493,7 +493,7 @@ $section-padding: 1.875rem;
 
 .resio {
   width: 100%;
-  padding-bottom: 100%;
+  padding-bottom: 50%;
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
@@ -544,15 +544,31 @@ $section-padding: 1.875rem;
 @media(max-width:#{$xl - 1 }){
   span.btext {
     color: $white;
-    padding: 10px;
+    font-size: 1.7vw;
   } 
- 
+
+}
+@media(max-width:#{$md - 1 }){
+  span.btext {
+   
+    font-size: 2.3vw;
+  } 
 
 }
 
 .button-icon2{ 
-  height: 43px;  
+  width: 4vw;  
+  margin-right: 0.5rem;
+  @media(max-width:#{$md - 1 }){
+    width: 5vw;
+    margin-right: 0.5rem;
+
+  }
+ 
 } 
+
+
+
 
 .gradientbg {
   $gradient-light:linear-gradient(40deg, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0) 100%);

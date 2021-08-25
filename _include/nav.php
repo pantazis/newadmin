@@ -110,6 +110,8 @@ $sub1 = [
   
         <div class="nav-list user-icons">
         <?php $arr=[
+        "menu2",
+        "logo-mobile",        
         "search",
         "fi-sr-bell1",
         "fi-sr-shopping-cart",
@@ -120,9 +122,10 @@ $sub1 = [
         
         ?>
             <?php foreach($arr as $key => $val){ ?>
-                <div class="nav-icon-3  <?=$val?>  <?php if($key == 0 || $key == 4){ echo "tablet-only";}?> <?php if($key == 0 ){ echo "search-icon";}?> ">
+                <div class="nav-icon-3  <?=$val?><?php if($val == "search" || $val == "fi-sr-menu-burger"){ echo " tablet-only";}?>
+                   <?php if($key == 0 ){ echo "search-icon";}?>">
                     <div class="rel-icon">
-                    <?php if($key == 1 || $key == 2){ ?>
+                    <?php if($val == "fi-sr-bell1" || $val == "fi-sr-shopping-cart"){ ?>
                         <span class="num"><?=rand(1,99)?></span>
                     <?php } ?>
                     

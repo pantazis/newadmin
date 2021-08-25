@@ -11034,6 +11034,12 @@ span.b_in {
   html {
     font-size: 3.5vw; }
 
+  nav.sidebar.top .nav-list.user-icons {
+    width: 100%; }
+
+  .logo-button {
+    display: none; }
+
   .nav-text1 {
     flex-wrap: wrap; }
 
@@ -11048,7 +11054,8 @@ span.b_in {
     margin-top: 2.75rem; }
 
   nav.sidebar.top .nav-list.user-icons .nav-icon-3 {
-    width: 3.9375rem; }
+    width: 20%;
+    border-left: 0; }
 
   nav.sidebar.top .nav-list-item:first-of-type {
     display: none; } }
@@ -11497,7 +11504,7 @@ body.noanimαtion * {
 
 .resio {
   width: 100%;
-  padding-bottom: 100%;
+  padding-bottom: 50%;
   position: relative;
   border-radius: 0.6rem;
   overflow: hidden; }
@@ -11536,9 +11543,17 @@ body.noanimαtion * {
 @media (max-width: 1199px) {
   span.btext {
     color: #fff;
-    padding: 10px; } }
+    font-size: 1.7vw; } }
+@media (max-width: 767px) {
+  span.btext {
+    font-size: 2.3vw; } }
 .button-icon2 {
-  height: 43px; }
+  width: 4vw;
+  margin-right: 0.5rem; }
+  @media (max-width: 767px) {
+    .button-icon2 {
+      width: 5vw;
+      margin-right: 0.5rem; } }
 
 .gradientbg {
   position: absolute;

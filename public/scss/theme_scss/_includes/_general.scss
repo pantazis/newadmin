@@ -541,39 +541,29 @@ $section-padding: 1.875rem;
 @media (max-width:#{$xl - 1 }) {
   span.btext {
     color: $white;
-    font-size: 1.7vw;   
+    font-size: 1.7vw;
     position: relative;
-    z-index: 1 ;
-  } 
-
+    z-index: 1;
+  }
 }
-@media(max-width:#{$md - 1 }){
+@media (max-width:#{$md - 1 }) {
   span.btext {
-   
     font-size: 2.3vw;
-  } 
-
+  }
 }
 
-.button-icon2{ 
-  width: 4vw;  
+.button-icon2 {
+  width: 4vw;
   margin-right: 0.5rem;
-  @media(max-width:#{$md - 1 }){
+  @media (max-width:#{$md - 1 }) {
     width: 5vw;
     margin-right: 0.5rem;
-
   }
- 
-} 
-    
-
+}
 
 .button-icon2 {
   height: 43px;
 }
-
-
-
 
 .gradientbg {
   $gradient-light: linear-gradient(135deg, rgba(255, 255, 255, 0.397) 20%, rgba(255, 255, 255, 0.137) 85%);

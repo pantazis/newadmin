@@ -365,9 +365,7 @@ nav.sidebar.top {
             align-items: center;
             border-left: 0.025rem solid $light_grey;
             cursor: pointer;
-            &.tablet-only {
-                display: none;
-            }
+           
             .rel-icon {
                 position: relative;
                 .num {
@@ -826,8 +824,8 @@ span.b_in {
 //-----------------------------notification popup animation end--------------------------//
 
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
-@media screen and (max-width: 1910px) {
-    nav.sidebar.top .nav-list.user-icons .nav-icon-3.tablet-only.search-icon {
+@media screen and (max-width: $xxxl) {
+    nav.sidebar.top .nav-list.user-icons .nav-icon-3.search-icon {
         display: flex;
     }
     html {
@@ -948,9 +946,7 @@ span.b_in {
         font-size: 100%;
     }
 
-    nav.sidebar.top .nav-list.user-icons .nav-icon-3.tablet-only {
-        display: flex;
-    }
+    
     nav.sidebar.top .nav-list-item:not(.first-el) {
         display: none;
     }
@@ -983,6 +979,8 @@ span.b_in {
     }
     nav.sidebar.top .nav-list.user-icons {
         width: 100%;
+        justify-content: space-between;
+
     }
     .logo-button{
         display: none;

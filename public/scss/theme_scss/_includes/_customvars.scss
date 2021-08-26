@@ -26,5 +26,69 @@ $menuTabletMin:$menuMobileMax + 1px;
 .bluedarkbl{color:$bluedarkbl}
 
 
+$grid-breakpoints: (
+  xs: $xs,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl,
+  xxxl: $xxxl
+) !default;
 
+.only-mobile,
+.only-tablet,
+.only-desktop,
+.only-superlarge{
+  display:none !important;
+}
+
+
+
+
+
+@mixin mediaMobile($class,$prop,$val){
+  @media (min-width: 0) and (max-width: $md) {
+   #{$class} { #{$prop}:$val !important;  }
+      
+  };
+}
+
+@mixin mediaTablet($class,$prop,$val){
+  @media (min-width: #{$md+1}) and (max-width: $xxl) {
+   #{$class} { #{$prop}:$val !important;  }
+      
+  };
+}
+
+@mixin mediaDesktop($class,$prop,$val){
+  @media (min-width: #{$xxl+1}) and (max-width: $xxxl) {
+   #{$class} { #{$prop}:$val !important;  }
+      
+  };
+}
+
+@mixin mediaSuperlarge($class,$prop,$val){
+  @media (min-width: #{$xxxl+1}) {
+   #{$class} { #{$prop}:$val !important;  }
+      
+  };
+}
+
+
+
+
+
+/*skata*/
+
+@include mediaMobile(".only-mobile","display",flex);
+@include mediaTablet(".only-tablet","display",flex);
+@include mediaDesktop(".only-desktop","display",flex);
+@include mediaSuperlarge(".only-superlarge","display",flex);
+
+
+@include mediaMobile(".hide-mobile","display",none);
+@include mediaTablet(".hide-tablet","display",none);
+@include mediaDesktop(".hide-desktop","display",none);
+@include mediaSuperlarge(".hide-superlarge","display",none);
 

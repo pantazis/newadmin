@@ -110,30 +110,59 @@ $sub1 = [
   
         <div class="nav-list user-icons">
         <?php $arr=[
-<<<<<<< HEAD
-        "icon-fi-sr-signal-alt-2",
-=======
-        "icon-fi-sr-menu-burger_left",
->>>>>>> ae6594cc2d22f1257d2324463070995b256c8734
+        "fi-sr-menu-burger_left",
         "logo-mobile",        
         "search",
         "fi-sr-bell1",
         "fi-sr-shopping-cart",
         "fi-sr-user",
-        "icon-fi-sr-menu-burger",       
+        "fi-sr-menu-burger",       
         ];
+
+//.only-mobile,
+//.only-tablet,
+//.only-desktop,
+//.only-superlarge 
+
+   
+    function giveClass($val){ 
+        switch ($val) {           
+            case "logo-mobile":
+            case "fi-sr-menu-burger_left":           
+                    echo "only-mobile";
+            break;
+            case "search":
+                echo "only-desktop only-tablet";
+            break;
+            case "fi-sr-menu-burger":
+                echo "only-mobile only-tablet";
+            break; 
+            case "fi-sr-menu-burger":
+                echo "only-mobile only-tablet";
+            break;
+            case "fi-sr-bell1":            
+            case "fi-sr-shopping-cart":
+            case "fi-sr-user":
+                echo "hide-mobile";
+            break;                   
+            
+            
+        }
+    }
       
         
         ?>
             <?php foreach($arr as $key => $val){ ?>
-                <div class="nav-icon-3  <?=$val?><?php if($val == "search" || $val == "fi-sr-menu-burger"){ echo " tablet-only";}?>
-                   <?php if($key == 0 ){ echo "search-icon";}?>">
+                <div class="nav-icon-3  <?=$val?> <?php giveClass($val); ?>">
                     <div class="rel-icon">
                     <?php if($val == "fi-sr-bell1" || $val == "fi-sr-shopping-cart"){ ?>
                         <span class="num"><?=rand(1,99)?></span>
                     <?php } ?>
-                    
+                    <?php if ($val =="logo-mobile"){?>
+                        <img src="./public/img/nav/logo_mobile.svg" alt="" class="logo-img">
+                    <?php }else{ ?> 
                     <i class="icon-<?=$val?>"></i>
+                    <?php } ?> 
                     </div>                   
                     <?php if($val =="fi-sr-bell1"){?>
                         <div class="arrow-div"></div>                                                

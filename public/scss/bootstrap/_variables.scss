@@ -358,6 +358,7 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1550px;
+$xxxl: 1910px;
 
 
 
@@ -368,7 +369,8 @@ $grid-breakpoints: (
   md: $md,
   lg: $lg,
   xl: $xl,
-  xxl: $xxl
+  xxl: $xxl,
+  xxxl: $xxxl
 ) !default;
 // scss-docs-end grid-breakpoints
 

@@ -21,14 +21,10 @@
 
 
     <?php $arr2 = [
-        "Domains",
-        "Hosting",
-        "SSL Certificates",
-        "Users",
-        "Οικονομικά",
-        "Προϊόντα"
+        "Go Back"
     ];
     ?>
+
     <div class="textdiv">
         <h5>Error 404</h5>
 
@@ -40,10 +36,19 @@
             <?php
             foreach ($arr2 as $value) { ?>
 
-                <button type=button class="btn actions btn-outline-black_blue"><?= $value ?></button>
+                <button type=button class="btn actions btn-outline-black_blue" onClick=" goBack()"><?= $value ?></button>
                 </button>
 
             <?php } ?>
         </div>
+
+
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+
+
 
     </div>

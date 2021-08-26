@@ -86,8 +86,12 @@
     $(".logo").click(function () {
         $("body").toggleClass("closeNav")
     });
+    $(".fi-sr-menu-burger_left.only-mobile").click(function () {
+        $(".logo-button").click();
 
-    $(".logo-button").click(function () {
+    })
+
+    $(".logo-button").click(function () {       
         $("body").addClass("openMenuLeft");
         $("body").removeClass("openMenuRight");
     });

@@ -11369,6 +11369,9 @@ nav.sidebar.navbar {
     margin-right: 0.625em;
     transition: all 0.3s; }
 
+.paddingEl {
+  height: 4.68rem; }
+
 .nav-list.user-icons {
   display: flex;
   font-size: 1.125rem;

@@ -114,7 +114,6 @@
 
 
         <div class="nav-list user-icons">
-<<<<<<< HEAD
         <?php $arr=[
         "fi-sr-menu-burger_left",
         "logo-mobile",        
@@ -172,36 +171,6 @@
                     </div>                   
                     <?php if($val =="fi-sr-bell1"){?>
                         <div class="arrow-div"></div>                                                
-=======
-            <?php $arr = [
-                "icon-fi-sr-menu-burger_left",
-                "logo-mobile",
-                "search",
-                "fi-sr-bell1",
-                "fi-sr-shopping-cart",
-                "fi-sr-user",
-                "icon-fi-sr-menu-burger",
-            ];
-
-
-            ?>
-            <?php foreach ($arr as $key => $val) { ?>
-                <div class="nav-icon-3  <?= $val ?><?php if ($val == "search" || $val == "fi-sr-menu-burger") {
-                                                        echo " tablet-only";
-                                                    } ?>
-                   <?php if ($key == 0) {
-                        echo "search-icon";
-                    } ?>">
-                    <div class="rel-icon">
-                        <?php if ($val == "fi-sr-bell1" || $val == "fi-sr-shopping-cart") { ?>
-                            <span class="num"><?= rand(1, 99) ?></span>
-                        <?php } ?>
-
-                        <i class="icon-<?= $val ?>"></i>
-                    </div>
-                    <?php if ($val == "fi-sr-bell1") { ?>
-                        <div class="arrow-div"></div>
->>>>>>> 601cef5e6e1ce7de301e85ea13959b6fbeb2a4e9
                         <div class="popup-notifications shadow-5-strong">
                             <div class="top-box box1">
                                 <span class="text1">Οι ειδοποιήσεις μου</span>

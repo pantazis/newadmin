@@ -33,12 +33,8 @@ switch ($request) {
         case $url_without_last_part.'/billing-profiles' :
             include '_views/table-list.php';
             break;
-        case $url_without_last_part.'/order-doc' :
-            include '_views/order-doc.php';
+       default:
+            include '_views/404.php';
             break;             
-  //  default:
-      //  http_response_code(404);
-       // include '/views/404.php';
-     //   break;
 };
 ?>

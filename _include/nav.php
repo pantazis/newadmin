@@ -277,7 +277,8 @@
         [$url_without_last_part . '/ssl-list', "ssl-list"],
         [$url_without_last_part . '/billing-profile', "billing-profile"],
         [$url_without_last_part . '/billing-profiles', 'billing-profiles'],
-        [$url_without_last_part . '/order-doc', 'order-doc']
+        [$url_without_last_part . '/order-doc', 'order-doc'],
+        [$url_without_last_part . '/404', '404error']
     ];
 
 

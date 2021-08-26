@@ -15,7 +15,6 @@
       }
       ?>--tab-width: <?= $mobile ?>%;
       --tab-width-tablet: <?= $tablet ?>%;
-   }
 </style>
 <div class="tab-parent">
    <div class="tab-cont">

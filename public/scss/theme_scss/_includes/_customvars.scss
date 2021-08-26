@@ -4,7 +4,7 @@
 
 
 $menuMobileMax: $md;
-$menuTabletMax:1440px;
+$menuTabletMax:$xxl;
 $menuDesktopMin:$menuTabletMax+1px;
 $menuTabletMin:$menuMobileMax + 1px;
 

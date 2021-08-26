@@ -7,7 +7,7 @@
 
 switch ($request) { 
         case $url_without_last_part."/" :      
-            include '_views/dashboard.php';
+            include '_views/domain-view.php'; //dasboard.php
             break;   
         case $url_without_last_part.'/domain-list' :
             include '_views/table-list.php';

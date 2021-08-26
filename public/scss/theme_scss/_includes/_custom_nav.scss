@@ -304,6 +304,9 @@ nav.sidebar.navbar {
         transition: all 0.3s;
     }
 }
+.paddingEl {
+    height: $navSidebarTop;
+}
 
 .nav-list.user-icons {
     display: flex;

@@ -114,34 +114,63 @@
 
 
         <div class="nav-list user-icons">
-            <?php $arr = [
-                "icon-fi-sr-menu-burger_left",
-                "logo-mobile",
-                "search",
-                "fi-sr-bell1",
-                "fi-sr-shopping-cart",
-                "fi-sr-user",
-                "icon-fi-sr-menu-burger",
-            ];
+        <?php $arr=[
+        "fi-sr-menu-burger_left",
+        "logo-mobile",        
+        "search",
+        "fi-sr-bell1",
+        "fi-sr-shopping-cart",
+        "fi-sr-user",
+        "fi-sr-menu-burger",       
+        ];
 
+//.only-mobile,
+//.only-tablet,
+//.only-desktop,
+//.only-superlarge 
 
-            ?>
-            <?php foreach ($arr as $key => $val) { ?>
-                <div class="nav-icon-3  <?= $val ?><?php if ($val == "search" || $val == "fi-sr-menu-burger") {
-                                                        echo " tablet-only";
-                                                    } ?>
-                   <?php if ($key == 0) {
-                        echo "search-icon";
-                    } ?>">
+   
+    function giveClass($val){ 
+        switch ($val) {           
+            case "logo-mobile":
+            case "fi-sr-menu-burger_left":           
+                    echo "only-mobile";
+            break;
+            case "search":
+                echo "only-desktop only-tablet";
+            break;
+            case "fi-sr-menu-burger":
+                echo "only-mobile only-tablet";
+            break; 
+            case "fi-sr-menu-burger":
+                echo "only-mobile only-tablet";
+            break;
+            case "fi-sr-bell1":            
+            case "fi-sr-shopping-cart":
+            case "fi-sr-user":
+                echo "hide-mobile";
+            break;                   
+            
+            
+        }
+    }
+      
+        
+        ?>
+            <?php foreach($arr as $key => $val){ ?>
+                <div class="nav-icon-3  <?=$val?> <?php giveClass($val); ?>">
                     <div class="rel-icon">
-                        <?php if ($val == "fi-sr-bell1" || $val == "fi-sr-shopping-cart") { ?>
-                            <span class="num"><?= rand(1, 99) ?></span>
-                        <?php } ?>
-
-                        <i class="icon-<?= $val ?>"></i>
-                    </div>
-                    <?php if ($val == "fi-sr-bell1") { ?>
-                        <div class="arrow-div"></div>
+                    <?php if($val == "fi-sr-bell1" || $val == "fi-sr-shopping-cart"){ ?>
+                        <span class="num"><?=rand(1,99)?></span>
+                    <?php } ?>
+                    <?php if ($val =="logo-mobile"){?>
+                        <img src="./public/img/nav/logo_mobile.svg" alt="" class="logo-img">
+                    <?php }else{ ?> 
+                    <i class="icon-<?=$val?>"></i>
+                    <?php } ?> 
+                    </div>                   
+                    <?php if($val =="fi-sr-bell1"){?>
+                        <div class="arrow-div"></div>                                                
                         <div class="popup-notifications shadow-5-strong">
                             <div class="top-box box1">
                                 <span class="text1">Οι ειδοποιήσεις μου</span>

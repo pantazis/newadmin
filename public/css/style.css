@@ -13811,5 +13811,14 @@ h2.page_title, .page_title.h2 {
 @media screen and (max-width: 768px) {
   .errorpage {
     background-position: center right; } }
+.dark .errorpage {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/error/404pagedark.svg);
+  background-size: cover;
+  background-position: center center; }
+@media screen and (max-width: 768px) {
+  .dark .errorpage {
+    background-position: center right; } }
 
 /*# sourceMappingURL=style.css.map */

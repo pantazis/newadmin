@@ -22,7 +22,6 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   <?php include "_include/modals.php" ?>
   <?php include "_include/mobile-nav-footer.php" ?>
 
-
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="./public/js/libraries/popper.min.js"></script>

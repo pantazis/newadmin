@@ -16,6 +16,15 @@
             padding-top: 0;
             padding-left: 0;
             transition-property: padding-left;
+            overflow: hidden;
+        }
+
+        .paddingEl {
+            display: none;
+        }
+
+        footer-nav-mobile shadow-2-strong only-mobile {
+            display: none;
         }
     </style>
 

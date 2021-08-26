@@ -17709,7 +17709,7 @@ h2.page_title, .page_title.h2 {
       align-content: center;
       align-items: center;
       padding-top: 1rem; }
-      /* line 56, ../scss/theme_scss/_includes/_404.scss */
+      /* line 54, ../scss/theme_scss/_includes/_404.scss */
       .errorpage .textdiv .buttonserror .btn {
         order: 0;
         flex: 0 1 auto;
@@ -17729,7 +17729,7 @@ h2.page_title, .page_title.h2 {
           color: #efeff6; }
 
 @media screen and (max-width: 768px) {
-  /* line 73, ../scss/theme_scss/_includes/_404.scss */
+  /* line 71, ../scss/theme_scss/_includes/_404.scss */
   .errorpage {
     background-position: center right; } }
 

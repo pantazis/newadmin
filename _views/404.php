@@ -1,1 +1,2 @@
-skata
+<div class=errorpage>
+</div>

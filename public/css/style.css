@@ -13791,4 +13791,29 @@ h2.page_title, .page_title.h2 {
 .danger .h2.frame_value {
   color: #d83438; }
 
+.logo-button {
+  display: none; }
+
+.sidebar.navbar {
+  display: none; }
+
+.sidebar.top.shadow-2-strong {
+  display: none; }
+
+main {
+  padding-top: 0;
+  padding-left: 0;
+  transition-property: padding-left; }
+
+.errorpage {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/error/404page.svg);
+  background-size: cover;
+  background-position: center center; }
+
+@media screen and (max-width: 768px) {
+  .errorpage {
+    background-position: center right; } }
+
 /*# sourceMappingURL=style.css.map */

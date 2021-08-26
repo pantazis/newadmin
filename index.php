@@ -20,6 +20,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   </main>
 
   <?php include "_include/modals.php" ?>
+  <?php include "_include/mobile-nav-footer.php" ?>
 
 
   </div>

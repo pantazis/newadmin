@@ -6,9 +6,8 @@ $hover-move: 0.4375rem;
 $topMargin: #{$navSidebarTop + 0.625}; //5.3125rem;
 
 html {
-  //  font-size: 0.7813vw;
+    //  font-size: 0.7813vw;
 }
-
 
 //--------------------------------------toggle button---------------------------------------------------------------//
 .toggle-container {
@@ -90,19 +89,18 @@ html {
     opacity: 1;
     transform: translate(12em, 2em) rotate(-15deg);
 }
-.footer-nav-mobile{
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    background-color:$white;
-    .nav-list.user-icons{
+.footer-nav-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    .nav-list.user-icons {
         width: 100%;
-        .nav-icon-3 {           
+        .nav-icon-3 {
             flex: 1;
         }
     }
-
 }
 
 //----------------------------------------toggle button end-------------------------------------------------------------//
@@ -143,7 +141,6 @@ html {
 
 .logo {
     cursor: pointer;
-    
 }
 
 .logo-button {
@@ -313,7 +310,7 @@ nav.sidebar.navbar {
     font-size: 1.125rem;
     height: $navSidebarTop;
     padding: 0.781rem 0;
-    
+
     .nav-icon-3 {
         height: auto;
         width: 4.9375rem;
@@ -322,7 +319,7 @@ nav.sidebar.navbar {
         align-items: center;
         border-left: 0.025rem solid $light_grey;
         cursor: pointer;
-       
+
         .rel-icon {
             position: relative;
             .num {
@@ -342,10 +339,7 @@ nav.sidebar.navbar {
             }
         }
     }
-    
 }
-
-
 
 nav.sidebar.top {
     height: $navSidebarTop;
@@ -367,7 +361,6 @@ nav.sidebar.top {
         left: 0.25rem;
 
         .custom-popup {
-          
             a {
                 display: flex;
                 justify-content: space-between;
@@ -399,7 +392,6 @@ nav.sidebar.top {
         background: $white;
         overflow: hidden;
     }
-   
 
     .nav-list-item {
         display: flex;
@@ -609,11 +601,11 @@ input.search-top {
     width: 16.4375rem;
     height: 1.625rem;
     border-radius: 0.8125rem;
-    border: 0.025rem solid darken($ice,8%);
+    border: 0.025rem solid darken($ice, 8%);
 }
 
 .search-cont {
-    border: 0.025rem solid darken($ice,8%);
+    border: 0.025rem solid darken($ice, 8%);
     padding: 0.125rem;
     background-color: $ice;
     border-radius: 0.9375rem;
@@ -637,24 +629,24 @@ input.search-top {
 
 //placeholder
 
-input.search-top{
+input.search-top {
     text-indent: 0.625rem;
     font: 500 0.83rem Arial;
     &::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    top: 0;
-    font-size: 0.625rem;
-    line-height: 2;
-    font-size: 0.625rem;
-    position: relative;
-    left: 0.5rem;
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        top: 0;
+        font-size: 0.625rem;
+        line-height: 2;
+        font-size: 0.625rem;
+        position: relative;
+        left: 0.5rem;
+    }
 }
-}
-
 
 //nav top popup animation
 
-.nav-list-item,.nav-list.search {
+.nav-list-item,
+.nav-list.search {
     .custom-popup {
         transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
         width: 0em;
@@ -793,10 +785,9 @@ span.text1 {
     }
 }
 
-nav.sidebar.top  .custom-popup.ss{
-    overflow:visible;
+nav.sidebar.top .custom-popup.ss {
+    overflow: visible;
     .bubble-cont {
-
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -805,12 +796,10 @@ nav.sidebar.top  .custom-popup.ss{
         align-items: center;
         padding: 11px;
         position: relative;
-        .arrow-div{
-            position:absolute;
+        .arrow-div {
+            position: absolute;
             top: -9px;
-
-        }   
-
+        }
     }
 }
 
@@ -819,19 +808,18 @@ nav.sidebar.top  .custom-popup.ss{
 }
 
 span.b_in {
-    font-size: .8125rem;
+    font-size: 0.8125rem;
     border: 1px solid;
     padding: 5px 5px;
     border-radius: 16px;
     border: 0.025rem solid $light_grey;
     background-color: $ice;
-    -webkit-box-shadow: 0 0 0 0 rgba(14, 12, 40,.21)!important;
-    box-shadow:  0 0 0 0 rgba(14, 12, 40,.21)!important;
-    transition: box-shadow .3s;
-    &:hover{
-        -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40,.21)!important;
-        box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40,.21)!important;
-
+    -webkit-box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
+    box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
+    transition: box-shadow 0.3s;
+    &:hover {
+        -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+        box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
     }
 }
 
@@ -848,7 +836,7 @@ span.b_in {
     nav.sidebar.top .nav-list.search {
         display: none;
     }
-    nav.sidebar.top .nav-list.user-icons {    
+    nav.sidebar.top .nav-list.user-icons {
         margin-left: auto;
     }
 }
@@ -960,7 +948,6 @@ span.b_in {
         font-size: 100%;
     }
 
-    
     nav.sidebar.top .nav-list-item:not(.first-el) {
         display: none;
     }
@@ -994,9 +981,8 @@ span.b_in {
     nav.sidebar.top .nav-list.user-icons {
         width: 100%;
         justify-content: space-between;
-
     }
-    .logo-button{
+    .logo-button {
         display: none;
     }
     .nav-text1 {
@@ -1012,10 +998,10 @@ span.b_in {
         text-align: center;
         margin-top: 2.75rem;
     }
-    nav.sidebar.top .nav-list.user-icons .nav-icon-3 {       
+    nav.sidebar.top .nav-list.user-icons .nav-icon-3 {
         width: 20%;
-       
-        border-left:0;
+
+        border-left: 0;
     }
 
     nav.sidebar.top .nav-list-item:first-of-type {

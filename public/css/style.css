@@ -11624,12 +11624,14 @@ input.search-top {
     position: relative;
     left: 0.5rem; }
 
-.nav-list-item .custom-popup, .nav-list.search .custom-popup {
+.nav-list-item .custom-popup,
+.nav-list.search .custom-popup {
   transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
   width: 0em;
   transform: translate(20px, 50px);
   opacity: 0; }
-.nav-list-item.opennav1 .custom-popup, .nav-list.search.opennav1 .custom-popup {
+.nav-list-item.opennav1 .custom-popup,
+.nav-list.search.opennav1 .custom-popup {
   transition: width 0s 0s, transform 0.3s, opacity 0.3s;
   transform: translate(0px, 0px);
   opacity: 1;
@@ -11742,7 +11744,7 @@ nav.sidebar.top .custom-popup.ss {
   padding: 5px; }
 
 span.b_in {
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   border: 1px solid;
   padding: 5px 5px;
   border-radius: 16px;
@@ -11750,7 +11752,7 @@ span.b_in {
   background-color: #efeff6;
   -webkit-box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
   box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
-  transition: box-shadow .3s; }
+  transition: box-shadow 0.3s; }
   span.b_in:hover {
     -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
     box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important; }
@@ -13801,21 +13803,75 @@ h2.page_title, .page_title.h2 {
 .errorpage {
   width: 100vw;
   height: 100vh;
-  background: url(../img/error/404page.svg);
+  background-image: url(../img/error/404page.svg);
   background-size: cover;
   background-position: center center; }
+  .dark .errorpage {
+    background-image: url(../img/error/404pagedark.svg); }
+  .errorpage .textdiv {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0 215px; }
+    .errorpage .textdiv h1, .errorpage .textdiv .h1 {
+      color: #0e0c28;
+      font-size: 7rem;
+      font-weight: 700;
+      order: 0;
+      flex: 0 1 auto; }
+      .dark .errorpage .textdiv h1, .dark .errorpage .textdiv .h1 {
+        color: #efeff6; }
+    .errorpage .textdiv p {
+      font-size: 2rem;
+      text-align: center;
+      color: #1E1C36; }
+      .dark .errorpage .textdiv p {
+        color: #cacad5; }
+    .errorpage .textdiv h3, .errorpage .textdiv .h3 {
+      font-size: 1rem;
+      text-align: center;
+      padding: 37px 75px;
+      margin-top: 1.5rem;
+      color: #0e0c28; }
+      .dark .errorpage .textdiv h3, .dark .errorpage .textdiv .h3 {
+        color: #efeff6; }
+    .errorpage .textdiv h5, .errorpage .textdiv .h5 {
+      font-size: 2.25rem;
+      margin-bottom: 5rem;
+      color: #0e0c28; }
+      .dark .errorpage .textdiv h5, .dark .errorpage .textdiv .h5 {
+        color: #efeff6; }
+    .errorpage .textdiv .buttonserror {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      padding-top: 1rem; }
+      .errorpage .textdiv .buttonserror .btn {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        padding: 1rem;
+        margin: 1rem;
+        width: 12rem;
+        border-radius: 0.6rem;
+        border: 1px solid;
+        border-color: none;
+        color: none; }
+        .dark .errorpage .textdiv .buttonserror .btn {
+          border-color: #efeff6; }
+        .dark .errorpage .textdiv .buttonserror .btn {
+          color: #efeff6; }
 
 @media screen and (max-width: 768px) {
   .errorpage {
-    background-position: center right; } }
-.dark .errorpage {
-  width: 100vw;
-  height: 100vh;
-  background: url(../img/error/404pagedark.svg);
-  background-size: cover;
-  background-position: center center; }
-@media screen and (max-width: 768px) {
-  .dark .errorpage {
     background-position: center right; } }
 
 /*# sourceMappingURL=style.css.map */

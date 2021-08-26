@@ -1,13 +1,13 @@
-@mixin themeColor($prop,$light,$dark) {
-  #{$prop}:$light;
-    .dark &{
-      #{$prop}:$dark;
-    } 
+@mixin themeColor($prop, $light, $dark) {
+  #{$prop}: $light;
+  .dark & {
+    #{$prop}: $dark;
   }
+}
 
 //nav menu colors
 
-.coverdiv{
+.coverdiv {
   background: $ice;
 }
 
@@ -247,9 +247,7 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
 =======================================================================================================================================*/
 
 .dark {
-
-  .coverdiv{
-
+  .coverdiv {
     background: $black_blue;
   }
 

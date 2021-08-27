@@ -20,7 +20,7 @@
    <div class="tab-cont">
       <div class="activebox" style="width:<?= (100 / ($tabnum + 1)) ?>%"></div>
       <?php foreach ($tabs as $tab => $value) { ?>
-         <div class="tab-in <?php if ($tab == 0) echo "active"; ?>" data-active="<?= $tab ?>" id="<?= $value ?>">
+         <div class="tab-in <?php if ($tab == 0) echo "active"; ?>"  data-active="<?= $tab ?>" id="<?= $value ?>">
             <div class="over"><?= $value ?></div>
          </div>
       <?php } ?>

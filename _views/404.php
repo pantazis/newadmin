@@ -27,20 +27,38 @@
         }
 
         body {
-            background-color: #007aff;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
         }
 
         main {
-            background-color: #007aff;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
         }
     </style>
-    <div class="errorpage">
-        <h1>404</h1>
-        <p>Page not Found</p>
-        <button class="button" onClick=" goBack()">Επιστροφή στην προηγούμενη σελίδα</button>
 
+    <div class="bgcolor">
+        <p>jdfdjslfsjjfdjslfsdkl</p>
+        <gradient-container>
+            <gradient-color></gradient-color>
+            <gradient-color></gradient-color>
+            <gradient-color></gradient-color>
+            <gradient-color></gradient-color>
+            <gradient-backdrop></gradient-backdrop>
+        </gradient-container>
+        <!-- <div class="errorpage">
+            <h1>404</h1>
+            <p>Page not Found</p>
+            <button class="button" onClick=" goBack()">Επιστροφή στην προηγούμενη σελίδα</button>
+
+        </div>-->
     </div>
-
 
     <script>
         function goBack() {

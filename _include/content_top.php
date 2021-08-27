@@ -10,9 +10,7 @@
                         <?php } else { ?>
                             <li class="breadcrumb-item"><a href="#"><?= $value ?> </a></li>
                         <?php } ?>
-
                     <?php } ?>
-
                 </ol>
             </nav>
             <h2 class="page_title"><?= $page_title ?></h2>
@@ -22,21 +20,13 @@
                 <div class="top_frame  <?= $colorClass[$key] ?> ">
                     <div class="h4 frame_title"><?= $value ?></div>
                     <div class="h2 frame_value"><?= $labelval[$key] ?></div>
-
                 </div>
-
             <?php } ?>
-
-
         </div>
     </div>
-
     <div class="mobile-cont ">
         <div class="mobile_tabs">
         </div>
-
-
-
     </div>
     <?php
     $bp = [
@@ -47,7 +37,6 @@
         "xl" => "xl : 1200px;",
         "xxl" => "xxl: 1550px;"
     ]; ?>
-
     <?php foreach ($bp as $kay =>   $value) { ?>
         <div class="d-none d-<?= $kay; ?>-flex">
             <?= $value; ?>

@@ -1,13 +1,11 @@
 <style>
    <?php $tabnum = count($tabs) - 1; ?>:root {
-
       --tab-width-decktop: <?= 16.6666 * ($tabnum + 1) ?>%;
       <?php if (60 * ($tabnum + 1) < 100) {
          $mobile = 100;
       } else {
          $mobile = 60 * ($tabnum + 1);
       }
-
       if (40 * ($tabnum + 1) < 100) {
          $tablet = 100;
       } else {

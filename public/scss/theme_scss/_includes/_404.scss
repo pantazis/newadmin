@@ -5,10 +5,8 @@
     --color-4: #0f4a8d;
     --blur: blur(10vw);
 }
-
 .bgcolor {
     position: relative;
-
     .cont {
         display: flex;
         position: absolute;
@@ -20,7 +18,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
         button.btn.btn-outline-ice {
             width: 200px;
             margin-top: 1vh;
@@ -40,7 +37,6 @@
             color: $ice;
         }
     }
-
     gradient-container {
         width: 100vw;
         height: 100vh;
@@ -50,7 +46,6 @@
         overflow: hidden;
         position: relative;
     }
-
     gradient-color {
         width: 50%;
         height: 50%;
@@ -62,7 +57,6 @@
         animation-iteration-count: infinite;
         animation-direction: alternate;
     }
-
     @keyframes animate {
         0% {
             border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
@@ -73,25 +67,20 @@
             transform: scale(2) rotate(180deg) translate(10%, -10%);
         }
     }
-
     gradient-color:nth-child(1) {
         background-color: var(--color-1);
         animation-direction: backwards;
     }
-
     gradient-color:nth-child(2) {
         background-color: var(--color-2);
     }
-
     gradient-color:nth-child(3) {
         background-color: var(--color-3);
         animation-direction: backwards;
     }
-
     gradient-color:nth-child(4) {
         background-color: var(--color-4);
     }
-
     gradient-backdrop {
         width: 100%;
         height: 100%;
@@ -103,7 +92,6 @@
         backdrop-filter: var(--blur);
     }
 }
-
 @media screen and (max-width: $menuMobileMax) {
     .errorpage {
         background-position: center right;

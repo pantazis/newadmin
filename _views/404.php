@@ -2,30 +2,24 @@
         .logo-button {
             display: none;
         }
-
         .sidebar.navbar {
             display: none;
         }
-
         .sidebar.top.shadow-2-strong {
             display: none;
         }
-
         main {
             padding-top: 0;
             padding-left: 0;
             transition-property: padding-left;
             overflow: hidden;
         }
-
         .paddingEl {
             display: none;
         }
-
         footer-nav-mobile shadow-2-strong only-mobile {
             display: none;
         }
-
         body {
             display: grid;
             place-items: center;
@@ -33,7 +27,6 @@
             margin: 0;
             padding: 0;
         }
-
         main {
             display: grid;
             place-items: center;
@@ -42,14 +35,12 @@
             padding: 0;
         }
     </style>
-
     <div class="bgcolor">
         <div class="cont">
             <h1>Page not found</h1>
             <div class="errornum">
                 <h1>404</h1>
             </div>
-
             <p>Η σελίδα δεν βρέθηκε</p>
             <button class="btn btn-outline-ice" onClick="goBack()">Go Back</button>
         </div>
@@ -64,10 +55,8 @@
             <h1>404</h1>
             <p>Page not Found</p>
             <button class="button" onClick=" goBack()">Επιστροφή στην προηγούμενη σελίδα</button>
-
         </div>-->
     </div>
-
     <script>
         function goBack() {
             window.history.back();

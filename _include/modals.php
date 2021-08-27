@@ -1,7 +1,6 @@
 <?php
 $input = ["#0001 An Ubavicius", "#0005 Γιάννης Παπαδόπουλος", "#0471 Κώστας Δάσκαλος", "#0165 Παντελής Ζαννίκος", "#0006 Γιώργος Θειακός"];
 ?>
-
 <div class="modal fade" id="disableAccount" tabindex="-1" aria-labelledby="disableAccountLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

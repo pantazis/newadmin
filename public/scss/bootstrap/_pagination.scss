@@ -2,7 +2,6 @@
   display: flex;
   @include list-unstyled();
 }
-
 .page-link {
   position: relative;
   display: block;
@@ -11,7 +10,6 @@
   background-color: $pagination-bg;
   border: $pagination-border-width solid $pagination-border-color;
   @include transition($pagination-transition);
-
   &:hover {
     z-index: 2;
     color: $pagination-hover-color;
@@ -19,7 +17,6 @@
     background-color: $pagination-hover-bg;
     border-color: $pagination-hover-border-color;
   }
-
   &:focus {
     z-index: 3;
     color: $pagination-focus-color;
@@ -28,19 +25,16 @@
     box-shadow: $pagination-focus-box-shadow;
   }
 }
-
 .page-item {
   &:not(:first-child) .page-link {
     margin-left: $pagination-margin-start;
   }
-
   &.active .page-link {
     z-index: 3;
     color: $pagination-active-color;
     @include gradient-bg($pagination-active-bg);
     border-color: $pagination-active-border-color;
   }
-
   &.disabled .page-link {
     color: $pagination-disabled-color;
     pointer-events: none;
@@ -48,17 +42,13 @@
     border-color: $pagination-disabled-border-color;
   }
 }
-
-
 //
 // Sizing
 //
 @include pagination-size($pagination-padding-y, $pagination-padding-x, null, $pagination-border-radius);
-
 .pagination-lg {
   @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $pagination-border-radius-lg);
 }
-
 .pagination-sm {
   @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $pagination-border-radius-sm);
 }

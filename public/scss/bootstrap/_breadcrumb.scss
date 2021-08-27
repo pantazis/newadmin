@@ -8,12 +8,10 @@
   background-color: $breadcrumb-bg;
   @include border-radius($breadcrumb-border-radius);
 }
-
 .breadcrumb-item {
   // The separator between breadcrumbs (by default, a forward-slash: "/")
   + .breadcrumb-item {
     padding-left: $breadcrumb-item-padding-x;
-
     &::before {
       float: left; // Suppress inline spacings and underlining of the separator
       padding-right: $breadcrumb-item-padding-x;
@@ -21,7 +19,6 @@
       content: var(--#{$variable-prefix}breadcrumb-divider, escape-svg($breadcrumb-divider)) #{"/* rtl:"} var(--#{$variable-prefix}breadcrumb-divider, escape-svg($breadcrumb-divider-flipped)) #{"*/"};
     }
   }
-
   &.active {
     color: $breadcrumb-active-color;
   }

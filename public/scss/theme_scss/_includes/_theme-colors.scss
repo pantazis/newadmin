@@ -4,24 +4,19 @@
     #{$prop}: $dark;
   }
 }
-
 //nav menu colors
-
 .coverdiv {
   background: $ice;
 }
-
 .noTransition * {
   transition: none !important;
 }
-
 .side-nav-list span.icon-fi-sr-power.icon-t {
   color: $red2;
 }
 .side-nav-list span.icon-fi-sr-sign-out.icon-t {
   color: $dark_blue;
 }
-
 nav.sidebar.navbar {
   background: $black_blue;
   .close-menu {
@@ -58,7 +53,6 @@ nav.sidebar.navbar li.nav-list-item2 {
 nav.sidebar.navbar.right li.nav-list-item2 {
   color: $black_blue;
 }
-
 nav.sidebar.navbar .img-box span.nav-icons-side {
   color: $light_grey;
 }
@@ -119,59 +113,48 @@ input.search-top {
 .message.color3 {
   border-color: $green2;
 }
-
 nav.sidebar.navbar {
   background: $black_blue;
 }
-
 nav.sidebar.top {
   background-color: $white;
 }
 .logo {
   background: $ice;
 }
-
 .curve.c1 {
   fill: $white;
 }
 .curve.c2 {
   fill: $ice;
 }
-
 .backg {
   fill: $black_blue;
 }
-
 input.search-top::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: $light_grey;
   opacity: 1; /* Firefox */
 }
-
 input.search-top::-webkit-input-placeholder {
   /* Edge */
   color: $light_grey;
 }
-
 input.search-top:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: $light_grey;
 }
-
 .nav-list-item.nav-list-item.opennav1 {
   $border: 0.1rem;
   border-bottom: solid $black_blue $border;
   border-top: solid transparent $border;
 }
-
 body {
   background-color: $ice;
 }
-
 .section-main {
   background-color: $white;
 }
-
 main {
   background-color: $ice;
 }
@@ -182,7 +165,6 @@ main {
     color: $bluedarkbl;
     background-color: transparent;
     border: transparent;
-
     &:focus {
       outline: none;
       box-shadow: none;
@@ -196,11 +178,9 @@ main {
   }
 }
 /*====================*/
-
 nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
   color: $white;
 }
-
 .isNotActive {
   #setActiveButton {
     background: $red2;
@@ -237,20 +217,16 @@ nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
     background: $green2;
   }
 }
-
 nav.sidebar.top .nav-list.list1 .custom-popup a {
   color: $black_blue;
 }
-
 /*=======================================================================================================================================
 =====================================================Dark Mode=========================================================================
 =======================================================================================================================================*/
-
 .dark {
   .coverdiv {
     background: $black_blue;
   }
-
   nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
     color: $ice;
   }
@@ -263,7 +239,6 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
   .side-nav-list span.icon-fi-sr-sign-out.icon-t {
     color: $sky_blue;
   }
-
   nav.sidebar.navbar {
     background: $black_blue;
     .close-menu {
@@ -300,7 +275,6 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
   nav.sidebar.navbar.right li.nav-list-item2 {
     color: $ice;
   }
-
   nav.sidebar.navbar .img-box span.nav-icons-side {
     color: $light_grey;
   }
@@ -361,64 +335,51 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
   .message.color3 {
     border-color: $green2;
   }
-
   nav.sidebar.navbar {
     background: $black_blue;
   }
-
   nav.sidebar.top {
     background-color: $black_blue;
   }
   .logo {
     background: $bluedarkbl;
   }
-
   .logo-text {
     color: $white;
   }
-
   span.text1 {
     color: $white;
   }
-
   .rel-icon {
     color: $white;
   }
-
   .flex-c {
     color: $white;
   }
   .burger-menu {
     color: $white;
   }
-
   input.search-top {
     background: $bluedarkbl;
   }
-
   main {
     background-color: $bluedarkbl;
   }
-
   .bg-light {
     background-color: $bluedarkbl;
   }
-
   .curve.c1 {
     fill: $black_blue;
   }
   .curve.c2 {
     fill: $bluedarkbl;
   }
-
   .section-main {
     background-color: $black_blue;
   }
-
   .body-container {
     background-color: $bluedarkbl;
   }
-
   & nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1,
   & .closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 {
     color: $white;
@@ -427,33 +388,25 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
   .relative {
     color: $ice;
   }
-
   .close-menu-cont.right {
     border-left: 10px solid $ice;
   }
-
   .backg {
     fill: $ice;
   }
-
   background-color: $bluedarkbl;
-
   input.search-top::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $ice;
     opacity: 1; /* Firefox */
   }
-
   .dark-label {
     color: $white;
   }
-
   .nav-list-item.nav-list-item.opennav1 {
     border-bottom: solid $ice 0.2rem;
   }
-
   /*===================modal dark================*/
-
   .modal-content {
     background-color: $bluedarkbl;
     .modal-header {
@@ -464,7 +417,6 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
         color: $ice;
       }
     }
-
     .modal-footer {
       .btn-secondary {
         color: $ice;

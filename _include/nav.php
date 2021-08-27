@@ -3,7 +3,6 @@
         <div class="logo-box">
             <img src="./public/img/nav/logo.svg" alt="" class="logo-img">
         </div>
-
         <div class="logo-text">
             <span class="icon-logo_text" alt=""></span>
         </div>
@@ -11,17 +10,13 @@
             <span class="icon-fi-sr-menu-burger" alt=""></span>
         </div>
         <svg class="curve c1" version="1.1" preserveAspectRatio="none" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 75" style="enable-background:new 0 0 30 75;" xml:space="preserve">
-
             <path class="st0" d="M18.2,60.9L18.2,60.9c0.2,0.1,0.4,0.1,0.6,0.2l0,0c6,2,10.6,7.5,10.6,13.9V0c0,6.2-4.4,11.5-10.1,13.7l0,0
 	c-0.5,0.2-1,0.4-1.5,0.5l0,0c-5,1.8-9.2,4.9-12.2,9s-4.8,9-4.8,14.3c0,5.4,1.8,10.4,4.9,14.5S13.1,59.3,18.2,60.9z" />
         </svg>
-
         <svg class="curve c2" version="1.1" preserveAspectRatio="none" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 75" style="enable-background:new 0 0 30 75;" xml:space="preserve">
-
             <path class="st0" d="M11.8,14.1L11.8,14.1c-0.2-0.1-0.4-0.1-0.6-0.2l0,0C5.3,11.8,0.7,6.4,0.7,0v75c0-6.2,4.4-11.5,10.1-13.7l0,0
 	c0.5-0.2,1-0.4,1.5-0.5l0,0c5-1.8,9.2-4.9,12.2-9s4.8-9,4.8-14.3c0-5.4-1.8-10.4-4.9-14.5S16.9,15.7,11.8,14.1z" />
         </svg>
-
     </div>
     <div class="nav-container">
         <div class="nav-list list1">
@@ -34,17 +29,11 @@
                 "SSL Certificates",
                 "Οικονομικά",
             ];
-
             $sub1 = [
                 ["text" => "Πίνακας Ελέγχου", "icon" => "icon-fi-sr-sign-out", "class" => "", "attr" => ""],
                 ["text" => '<span class="activeText">Απενεργοποίηση</span><span class="notActiveText">Eνεργοποίηση</span>', "icon" => "icon-fi-sr-power", "class" => "active button2", "attr" => 'data-bs-toggle="modal" data-bs-target="#disableAccount"'],
             ];
-
-
-
-
             ?>
-
             <?php foreach ($arrmenu as $key1 => $value) { ?>
                 <div class="nav-list-item <?php if ($key1 == 0) {
                                                 echo "first-el";
@@ -89,13 +78,10 @@
             " VAT",
             " Documents"
         ] ?>
-
-
         <div class="nav-list search">
             <div class="search-cont">
                 <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
                 <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
-
                 <div class="custom-popup ss  shadow-2-strong">
                     <div class="search-cont">
                         <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
@@ -107,12 +93,9 @@
                             <div class="bubble"><span class="b_in"><?= $value ?></span></div>
                         <?php } ?>
                     </div>
-
                 </div>
             </div>
         </div>
-
-
         <div class="nav-list user-icons">
             <?php $arr = [
                 "fi-sr-menu-burger_left",
@@ -123,13 +106,10 @@
                 "fi-sr-user",
                 "fi-sr-menu-burger",
             ];
-
             //.only-mobile,
             //.only-tablet,
             //.only-desktop,
-            //.only-superlarge 
-
-
+            //.only-superlarge
             function giveClass($val)
             {
                 switch ($val) {
@@ -153,8 +133,6 @@
                         break;
                 }
             }
-
-
             ?>
             <?php foreach ($arr as $key => $val) { ?>
                 <div class="nav-icon-3  <?= $val ?> <?php giveClass($val); ?>">
@@ -197,7 +175,6 @@
                                     <span class="text1">Ανάγνωση Όλων</span>
                                     <a class="text1">Καθαρισμός</a>
                                 </div>
-
                             </div>
                         </div>
                     <?php } ?>
@@ -236,30 +213,21 @@
                                     </div>
                                 </div>
                             </label>
-
                             <div class="bottom-box box1">
                                 <hr>
                                 <div class="actions-b">
                                     <span class="text1"></span>
                                     <a class="text1"></a>
                                 </div>
-
                             </div>
                         </div>
                     <?php } ?>
-
                 </div>
             <?php } ?>
-
         </div>
-
-
-
     </div>
 </nav>
 <nav class="sidebar navbar left">
-
-
     <div class="close-menu-cont left">
         <div class="relative">
             <svg class="close-menu" xmlns="http://www.w3.org/2000/svg" width="54.03" height="112.601" viewBox="0 0 54.03 112.601">
@@ -271,9 +239,7 @@
                 </g>
             </svg>
         </div>
-
     </div>
-
     <?php $arr = [
         "fi-sr-grid",
         "fi-sr-globe",
@@ -283,7 +249,6 @@
         "fi-sr-money",
         "fi-sr-box",
     ];
-
     $arr2 = [
         "Dashboard",
         "Domains",
@@ -293,8 +258,6 @@
         "Οικονομικά",
         "Προϊόντα"
     ];
-
-
     $links = [
         [$url_without_last_part . "/", "dashboard"],
         [$url_without_last_part . '/domain-list', 'domain-list'],
@@ -308,14 +271,9 @@
         [$url_without_last_part . '/order-doc', 'order-doc'],
         [$url_without_last_part . '/404', '404error']
     ];
-
-
-
-
     ?>
     <ul class="side-nav-list">
         <li class="nav-list-item2">
-
             <div class="nav-text2 title">
                 ADMIN MENU
             </div>
@@ -331,29 +289,19 @@
                     </span>
                 </div>
                 <?php if ($key > 0 && $key < count($arr) - 1) {; ?>
-
                     <div class="sub-category">
-
-
                         <?php foreach ($links as $value) {; ?>
-
                             <a href="<?= $value[0] ?>">
                                 <div class="list-pad"><?= $value[1] ?></div>
                             </a>
-
                         <?php } ?>
-
                     </div>
-
                 <?php } ?>
             </li>
         <?php } ?>
     </ul>
-
 </nav>
 <nav class="sidebar navbar right">
-
-
     <div class="close-menu-cont right">
         <div class="relative">
             <svg xmlns="http://www.w3.org/2000/svg" width="58" height="112.601" viewBox="0 0 58 112.601">
@@ -364,9 +312,7 @@
                 </g>
             </svg>
         </div>
-
     </div>
-
     <?php $arr = [
         "fi-sr-grid",
         "fi-sr-user",
@@ -374,9 +320,7 @@
         "fi-sr-database",
         "fi-sr-shield-check",
         "fi-sr-money",
-
     ];
-
     $arr2 = [
         "Πίνακας Ελέγχου",
         "Λογαρισμός",
@@ -385,26 +329,15 @@
         "SSL Certificates",
         "Οικονομικά",
     ];
-
-
-
-
     ?>
     <ul class="side-nav-list">
         <li class="nav-list-item2">
-
             <div class="nav-text2 title">
                 <span class="nav-text1">
-
                     <span class="light"></span>
                     <span class="user_name">An Ubavicious</span>
-
                     <span class="icon-fi-sr-sign-out icon-t"></span>
                     <span class="icon-fi-sr-power icon-t"></span>
-
-
-
-
                 </span>
             </div>
         </li>
@@ -419,25 +352,17 @@
                     </span>
                 </div>
                 <?php if ($key > 0 && $key < count($arr) - 1) {; ?>
-
                     <div class="sub-category">
-
-
                         <?php for ($i = 0; $i < rand(3, 7); $i++) { ?>
-
                             <a href="#">
                                 <div class="list-pad">subcategory</div>
                             </a>
-
                         <?php } ?>
-
                     </div>
-
                 <?php } ?>
             </li>
         <?php } ?>
     </ul>
-
 </nav>
 <div class="logo-button">
     <svg class="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74.546" height="144.725" viewBox="0 0 74.546 144.725">
@@ -446,23 +371,18 @@
                 .a {
                     fill: none;
                 }
-
                 .c {
                     fill: #f8f8fb;
                 }
-
                 .d {
                     clip-path: url(#a);
                 }
-
                 .e {
                     fill: #1eb6db;
                 }
-
                 .f {
                     fill: #2e435e;
                 }
-
                 .g {
                     fill: #fff;
                 }

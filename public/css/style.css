@@ -13824,7 +13824,7 @@ h2.page_title, .page_title.h2 {
     align-items: center;
     flex-direction: column; }
     .bgcolor .cont button.btn.btn-outline-ice {
-      width: 8vw;
+      width: 200px;
       margin-top: 1vh; }
     .bgcolor .cont .errornum h1, .bgcolor .cont .errornum .h1 {
       font-size: 19vh;

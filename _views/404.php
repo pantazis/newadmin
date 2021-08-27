@@ -25,6 +25,14 @@
         footer-nav-mobile shadow-2-strong only-mobile {
             display: none;
         }
+
+        body {
+            background-color: #007aff;
+        }
+
+        main {
+            background-color: #007aff;
+        }
     </style>
     <div class="errorpage">
         <h1>404</h1>

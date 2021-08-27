@@ -13804,10 +13804,6 @@ h2.page_title, .page_title.h2 {
   color: #d83438; }
 
 .errorpage {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
   background-color: #007aff;
   color: #efeff6;
   font-size: 100%;

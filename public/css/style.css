@@ -13805,29 +13805,54 @@ h2.page_title, .page_title.h2 {
 
 :root {
   --color-1: #427dad;
-  --color-2: #2030c2;
-  --color-3: #074c8d;
+  --color-2: #000c75;
+  --color-3: #79addd;
   --color-4: #0f4a8d;
   --blur: blur(10vw); }
 
-.bgcolor gradient-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background: var(--color-2);
-  flex-wrap: wrap;
-  overflow: hidden;
-  position: absolute; }
-.bgcolor gradient-color {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  border-radius: 30% 80% 75% 40% / 40% 40% 70% 50%;
-  animation-name: animate;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; }
+.bgcolor {
+  position: relative; }
+  .bgcolor .cont {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .bgcolor .cont button.btn.btn-outline-ice {
+      width: 8vw;
+      margin-top: 1vh; }
+    .bgcolor .cont .errornum h1, .bgcolor .cont .errornum .h1 {
+      font-size: 19vh;
+      color: #efeff6; }
+    .bgcolor .cont h1, .bgcolor .cont .h1 {
+      font-size: 2.5vh;
+      color: #efeff6; }
+    .bgcolor .cont p {
+      font-size: 1.5vh;
+      color: #efeff6; }
+  .bgcolor gradient-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: var(--color-2);
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative; }
+  .bgcolor gradient-color {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    border-radius: 30% 80% 75% 40% / 40% 40% 70% 50%;
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
 @keyframes animate {
   0% {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
@@ -13835,25 +13860,25 @@ h2.page_title, .page_title.h2 {
   100% {
     border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
     transform: scale(2) rotate(180deg) translate(10%, -10%); } }
-.bgcolor gradient-color:nth-child(1) {
-  background-color: var(--color-1);
-  animation-direction: backwards; }
-.bgcolor gradient-color:nth-child(2) {
-  background-color: var(--color-2); }
-.bgcolor gradient-color:nth-child(3) {
-  background-color: var(--color-3);
-  animation-direction: backwards; }
-.bgcolor gradient-color:nth-child(4) {
-  background-color: var(--color-4); }
-.bgcolor gradient-backdrop {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: transparent;
-  backdrop-filter: var(--blur); }
+  .bgcolor gradient-color:nth-child(1) {
+    background-color: var(--color-1);
+    animation-direction: backwards; }
+  .bgcolor gradient-color:nth-child(2) {
+    background-color: var(--color-2); }
+  .bgcolor gradient-color:nth-child(3) {
+    background-color: var(--color-3);
+    animation-direction: backwards; }
+  .bgcolor gradient-color:nth-child(4) {
+    background-color: var(--color-4); }
+  .bgcolor gradient-backdrop {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    backdrop-filter: var(--blur); }
 
 @media screen and (max-width: 768px) {
   .errorpage {

@@ -44,7 +44,15 @@
     </style>
 
     <div class="bgcolor">
-        <p>jdfdjslfsjjfdjslfsdkl</p>
+        <div class="cont">
+            <h1>Page not found</h1>
+            <div class="errornum">
+                <h1>404</h1>
+            </div>
+
+            <p>Η σελίδα δεν βρέθηκε</p>
+            <button class="btn btn-outline-ice" onClick="goBack()">Go Back</button>
+        </div>
         <gradient-container>
             <gradient-color></gradient-color>
             <gradient-color></gradient-color>

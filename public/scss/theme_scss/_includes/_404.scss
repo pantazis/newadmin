@@ -1,12 +1,46 @@
 :root {
     --color-1: #427dad;
-    --color-2: #2030c2;
-    --color-3: #074c8d;
+    --color-2: #000c75;
+    --color-3: #79addd;
     --color-4: #0f4a8d;
     --blur: blur(10vw);
 }
 
 .bgcolor {
+    position: relative;
+
+    .cont {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        button.btn.btn-outline-ice {
+            width: 8vw;
+            margin-top: 1vh;
+        }
+        .errornum {
+            h1 {
+                font-size: 19vh;
+                color: $ice;
+            }
+        }
+        h1 {
+            font-size: 2.5vh;
+            color: $ice;
+        }
+        p {
+            font-size: 1.5vh;
+            color: $ice;
+        }
+    }
+
     gradient-container {
         width: 100vw;
         height: 100vh;

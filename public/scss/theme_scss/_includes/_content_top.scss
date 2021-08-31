@@ -1,6 +1,6 @@
 .content_top {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     @media (min-width: $xxl){
     justify-content: space-between;
     }
@@ -14,8 +14,8 @@
 .top_frame {
     width: 100%;
     max-width: 15.9375rem;
-    flex: 1;  
-    border:0.0625rem solid;  
+    flex: 1;
+    border:0.0625rem solid;
     @include themeColor("background-color",$white,$black_blue);
     @include themeColor("color",$black_blue,$ice);
     @include themeColor("border-color",transparent,$white);
@@ -32,31 +32,23 @@
 }
 .breadcrumb {
     font-size: 0.8125rem;
-    margin-bottom:0.5rem; 
-
+    margin-bottom:0.5rem;
 li.breadcrumb-item{
-   
-    &.active{   
-         @include themeColor("color",$dark_blue,$white);             
-        
-    }  
+    &.active{
+         @include themeColor("color",$dark_blue,$white);
+    }
   a {
-    text-decoration: none; 
-    @include themeColor("color",$blue_grey,$light_grey);   
-   
-   
+    text-decoration: none;
+    @include themeColor("color",$blue_grey,$light_grey);
     }
 }
 }
-.breadcrumb-item + .breadcrumb-item::before {   
-    @include themeColor("color",$blue_grey,$light_grey);       
-
+.breadcrumb-item + .breadcrumb-item::before {
+    @include themeColor("color",$blue_grey,$light_grey);
 }
-
 h2.page_title{
     font-size: 2.3125rem;
     @include themeColor("color",$black_blue,$white);
-
 }
 .h4.frame_title{
     font-size:0.9375rem;
@@ -66,26 +58,17 @@ h2.page_title{
 .h2.frame_value{
     font-size: 1.75rem;
 }
-
 .h2.frame_value{
     font-size: 1.75rem;
     margin-bottom: 0;
 }
-
 // scss-docs-start theme-color-variables
-
 .success .h2.frame_value{
     color:$success;
 }
-
 .warning .h2.frame_value{
     color:$warning;
 }
 .danger .h2.frame_value{
     color:$danger;
 }
-
-
-
-
-

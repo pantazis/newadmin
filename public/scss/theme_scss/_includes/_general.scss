@@ -3,7 +3,6 @@ body.noanimαtion * {
   transition: none !important;
   animation-duration: 0 !important;
 }
-
 /*---------------------------------remove animations on load or resize /end------------------------------------*/
 /*LOADER*/
 .coverdiv.hide-loader {
@@ -16,7 +15,6 @@ body.noanimαtion * {
   width: 100px;
   height: auto;
 }
-
 .coverdiv {
   position: fixed;
   top: 0;
@@ -31,11 +29,9 @@ body.noanimαtion * {
   overflow: hidden;
   transition: left 0.5s ease-in;
 }
-
 .inner_div {
   position: relative;
 }
-
 .shadow {
   position: absolute;
   left: 0;
@@ -48,7 +44,6 @@ body.noanimαtion * {
   animation: shadow-pulse 1s infinite linear;
   animation-delay: 1s;
 }
-
 .circle_big {
   fill: transparent;
   stroke-width: 6px;
@@ -60,13 +55,11 @@ body.noanimαtion * {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-
 .circle_small {
   fill: #2e435e;
   animation-name: circle_small;
   animation-duration: 1s;
 }
-
 .inner_div {
   animation-name: inner_div;
   animation-duration: 1s;
@@ -74,11 +67,9 @@ body.noanimαtion * {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
 .lines {
   fill: #fff;
 }
-
 .svgl1,
 .svgl2,
 .svgl3 {
@@ -87,22 +78,18 @@ body.noanimαtion * {
   top: 0;
   width: 100px;
 }
-
 .svgl1 {
   animation-name: svgl1;
   animation-duration: 1s;
 }
-
 .svgl2 {
   animation-name: svgl2;
   animation-duration: 1s;
 }
-
 .svgl3 {
   animation-name: svgl3;
   animation-duration: 1s;
 }
-
 @keyframes inner_div {
   0% {
     transform: scale(1);
@@ -187,17 +174,13 @@ body.noanimαtion * {
     stroke-dashoffset: 0;
   }
 }
-
 /*--------------------------------------------MODAL---------------------------------------------------*/
 .modal-dialog {
   max-width: 40rem;
-
   .modal-content {
     border-radius: $border-radius;
-
     .modal-header {
       justify-content: space-between;
-
       .btn-close {
         padding-top: 0.5rem;
         padding-right: 0.5rem;
@@ -206,13 +189,11 @@ body.noanimαtion * {
         margin: 0;
       }
     }
-
     .modal-body {
       p {
         text-align: center;
       }
     }
-
     .modal-footer {
       .btn-secondary {
         font-size: 0.71rem;
@@ -220,7 +201,6 @@ body.noanimαtion * {
     }
   }
 }
-
 /*---------------------------------------------TOP SECTION---------------------------------------------*/
 $section-padding: 1.875rem;
 .top-section {
@@ -230,7 +210,6 @@ $section-padding: 1.875rem;
   margin-top: $section-padding;
   min-height: 10rem;
 }
-
 /*---------------------------------------------MAIN SECTION---------------------------------------------*/
 .section-main {
   padding-top: $section-padding;
@@ -246,7 +225,6 @@ $section-padding: 1.875rem;
     border-top-right-radius: 0;
   }
 }
-
 /*-----------------------------------tabs----------------------------------------*/
 .tab-parent {
   overflow: auto;
@@ -266,7 +244,6 @@ $section-padding: 1.875rem;
   border-top-right-radius: $border-radius;
   //overflow: hidden;
   width: var(--tab-width-decktop);
-
   @media (max-width: #{$md - 1}) {
     width: var(--tab-width);
     border-radius: 0;
@@ -276,7 +253,6 @@ $section-padding: 1.875rem;
     border-radius: 0;
   }
 }
-
 .tab-in {
   flex: 1;
   padding: 1.25rem;
@@ -304,33 +280,23 @@ $section-padding: 1.875rem;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
   box-shadow: 0rem -0.375rem 2.1875rem -0.75rem rgba(0, 0, 0, 0.29);
-
   &:before,
   &:after {
     content: "";
     position: absolute;
-
     height: 0.625rem;
     width: 1.25rem;
-
     bottom: 0;
   }
-
   &:after {
     right: -1.25rem;
-
     border-radius: 0 0 0 $border-radius;
-
     box-shadow: -$border-radius 0 0 0;
-
     @include themeColor("color", $white, $black_blue);
   }
-
   &:before {
     left: -1.25rem;
-
     border-radius: 0 0 $border-radius 0;
-
     box-shadow: $border-radius 0 0 0;
     @include themeColor("color", $white, $black_blue);
   }
@@ -346,7 +312,6 @@ $section-padding: 1.875rem;
   position: relative;
   z-index: 1;
 }
-
 /*-----------------------------------tabs-end----------------------------------------*/
 .action-cont {
   display: none;
@@ -354,13 +319,11 @@ $section-padding: 1.875rem;
     display: block;
   }
 }
-
 .info-container {
   @media (min-width: $xl) {
     padding-bottom: 6.25rem;
   }
 }
-
 .info-title {
   .info-icon {
     display: none;
@@ -384,7 +347,6 @@ $section-padding: 1.875rem;
     content: "\e94e";
   }
 }
-
 .info-row {
   display: flex;
   width: 100%;
@@ -397,20 +359,17 @@ $section-padding: 1.875rem;
   position: relative;
   flex-wrap: wrap;
 }
-
 .info-row-con {
   height: 0;
   @media (min-width: #{$xl}) {
     height: 100%;
   }
-
   transition: height 0.3s;
   overflow: hidden;
   .open & {
     height: 100%;
   }
 }
-
 .info-row > * {
   flex: 1;
   font-size: 0.875rem;
@@ -418,12 +377,10 @@ $section-padding: 1.875rem;
 .info_sub {
   min-width: 12.5rem;
 }
-
 .info-val {
   flex: 2;
   padding-right: 3rem;
 }
-
 .info-icon {
   position: absolute;
   right: 0;
@@ -446,7 +403,6 @@ $section-padding: 1.875rem;
   @include themeColor("color", $dark_blue, $ice);
   font-size: 0.875rem;
 }
-
 .btn-black_blue {
   border-width: 0.125rem;
   @include themeColor("border-color", none, $ice);
@@ -455,26 +411,21 @@ $section-padding: 1.875rem;
     @include themeColor("color", lighten($dark_blue, 65%), $dark_blue);
   }
 }
-
 .btn {
   border-radius: $border-radius;
 }
-
 /*===================== billig profile ==========================*/
-
 .form-right {
   @include themeColor("color", $black_blue, $black_blue);
   @include themeColor("background-color", $ice, lighten($bluedarkbl, 4%));
   margin-bottom: 1.5rem;
   margin-top: 1.25rem;
-
   .arrow-div {
     top: 27.5rem;
     right: 6rem;
     @include themeColor("background-color", $ice, lighten($bluedarkbl, 4%));
     border: none;
     margin-top: 1.25rem;
-
     .addprofile-shortcut {
       @include themeColor("color", $ice, $bluedarkbl);
     }
@@ -482,12 +433,10 @@ $section-padding: 1.875rem;
   .info-row {
     @include themeColor("color", $bluedarkbl, $ice);
     padding-left: 1rem;
-
     .info-shub {
     }
   }
 }
-
 //---------------------------------------action tabs-------------------------------//
 .mobile_tabs {
   display: flex;
@@ -496,14 +445,12 @@ $section-padding: 1.875rem;
     width: 100%;
   }
 }
-
 .resio {
   width: 100%;
   padding-bottom: 50%;
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
-
   .actions {
     position: absolute;
     top: 0;
@@ -519,7 +466,6 @@ $section-padding: 1.875rem;
     display: flex;
   }
 }
-
 .dimensions {
   width: calc(25% - 15px);
   margin-right: 20px;
@@ -527,7 +473,6 @@ $section-padding: 1.875rem;
     margin-right: 0px;
   }
 }
-
 .mobile-cont {
   width: 100%;
   overflow: auto;
@@ -543,44 +488,30 @@ $section-padding: 1.875rem;
     display: none;
   }
 }
-
 @media (max-width:#{$xl - 1 }) {
   span.btext {
     color: $white;
-    font-size: 1.7vw;   
+    font-size: 1.7vw;
     position: relative;
-    z-index: 1 ;
-  } 
-
+    z-index: 1;
+  }
 }
-@media(max-width:#{$md - 1 }){
+@media (max-width:#{$md - 1 }) {
   span.btext {
-   
     font-size: 2.3vw;
-  } 
-
+  }
 }
-
-.button-icon2{ 
-  width: 4vw;  
+.button-icon2 {
+  width: 4vw;
   margin-right: 0.5rem;
-  @media(max-width:#{$md - 1 }){
+  @media (max-width:#{$md - 1 }) {
     width: 5vw;
     margin-right: 0.5rem;
-
   }
- 
-} 
-    
-
-
+}
 .button-icon2 {
   height: 43px;
 }
-
-
-
-
 .gradientbg {
   $gradient-light: linear-gradient(135deg, rgba(255, 255, 255, 0.397) 20%, rgba(255, 255, 255, 0.137) 85%);
   $gradient-dark: linear-gradient(135deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.418) 85%);
@@ -590,7 +521,6 @@ $section-padding: 1.875rem;
   left: 0;
   width: 100%;
   height: 100%;
-
   @include themeColor("background", $gradient-light, $gradient-dark);
   right: 0;
   z-index: 1;

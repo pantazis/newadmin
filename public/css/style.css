@@ -11627,12 +11627,14 @@ input.search-top {
     position: relative;
     left: 0.5rem; }
 
-.nav-list-item .custom-popup, .nav-list.search .custom-popup {
+.nav-list-item .custom-popup,
+.nav-list.search .custom-popup {
   transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
   width: 0em;
   transform: translate(20px, 50px);
   opacity: 0; }
-.nav-list-item.opennav1 .custom-popup, .nav-list.search.opennav1 .custom-popup {
+.nav-list-item.opennav1 .custom-popup,
+.nav-list.search.opennav1 .custom-popup {
   transition: width 0s 0s, transform 0.3s, opacity 0.3s;
   transform: translate(0px, 0px);
   opacity: 1;
@@ -11745,7 +11747,7 @@ nav.sidebar.top .custom-popup.ss {
   padding: 5px; }
 
 span.b_in {
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   border: 1px solid;
   padding: 5px 5px;
   border-radius: 16px;
@@ -11753,7 +11755,7 @@ span.b_in {
   background-color: #efeff6;
   -webkit-box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
   box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
-  transition: box-shadow .3s; }
+  transition: box-shadow 0.3s; }
   span.b_in:hover {
     -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
     box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important; }
@@ -11873,12 +11875,11 @@ span.b_in {
     display: none; }
 
       /*
-.close-menu-cont.right {   
+.close-menu-cont.right {
         right: auto;
         left: 0;
         border-right: 0;
         border-left: 10px solid $black_blue;
-    
 }
 .close-menu-cont.left {
     right: 0;
@@ -13807,24 +13808,85 @@ h2.page_title, .page_title.h2 {
 .danger .h2.frame_value {
   color: #d83438; }
 
-.errorpage {
-  width: 100vw;
-  height: 100vh;
-  background: url(../img/error/404page.svg);
-  background-size: cover;
-  background-position: center center; }
+:root {
+  --color-1: #427dad;
+  --color-2: #000c75;
+  --color-3: #79addd;
+  --color-4: #0f4a8d;
+  --blur: blur(10vw); }
+
+.bgcolor {
+  position: relative; }
+  .bgcolor .cont {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .bgcolor .cont button.btn.btn-outline-ice {
+      width: 200px;
+      margin-top: 1vh; }
+    .bgcolor .cont .errornum h1, .bgcolor .cont .errornum .h1 {
+      font-size: 19vh;
+      color: #efeff6; }
+    .bgcolor .cont h1, .bgcolor .cont .h1 {
+      font-size: 2.5vh;
+      color: #efeff6; }
+    .bgcolor .cont p {
+      font-size: 1.5vh;
+      color: #efeff6; }
+  .bgcolor gradient-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: var(--color-2);
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative; }
+  .bgcolor gradient-color {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    border-radius: 30% 80% 75% 40% / 40% 40% 70% 50%;
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+@keyframes animate {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+    transform: scale(2) rotate(0deg) translate(10%, 10%); }
+  100% {
+    border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
+    transform: scale(2) rotate(180deg) translate(10%, -10%); } }
+  .bgcolor gradient-color:nth-child(1) {
+    background-color: var(--color-1);
+    animation-direction: backwards; }
+  .bgcolor gradient-color:nth-child(2) {
+    background-color: var(--color-2); }
+  .bgcolor gradient-color:nth-child(3) {
+    background-color: var(--color-3);
+    animation-direction: backwards; }
+  .bgcolor gradient-color:nth-child(4) {
+    background-color: var(--color-4); }
+  .bgcolor gradient-backdrop {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    backdrop-filter: var(--blur); }
 
 @media screen and (max-width: 768px) {
   .errorpage {
-    background-position: center right; } }
-.dark .errorpage {
-  width: 100vw;
-  height: 100vh;
-  background: url(../img/error/404pagedark.svg);
-  background-size: cover;
-  background-position: center center; }
-@media screen and (max-width: 768px) {
-  .dark .errorpage {
     background-position: center right; } }
 
 /*# sourceMappingURL=style.css.map */

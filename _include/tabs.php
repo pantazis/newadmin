@@ -23,11 +23,12 @@
    --tab-width-tablet:<?=$tablet?>%;
 }
 </style>
+
 <div class="tab-parent">
 <div class="tab-cont">   
-    <div class="activebox" style="width:<?=(100/($tabnum+1))?>%"></div>
-   <?php foreach($tabs as $tab => $value) { ?>
-      <div class="tab-in <?php if($tab==0) echo "active";?>" data-active="<?=$tab?>"><div class="over"><?=$value?></div></div>
+    <div class="activebox" style="width:<?=(100/($tabnum+1))?>%"></div>    
+   <?php foreach($tabs as $tab => $value) { ?>      
+      <div id="<?=$value["id"]?>" class="tab-in <?php if($tab==0) echo "active";?>" data-active="<?=$tab?>"><div class="over"><?=$value["name"]?></div></div>
    <?php } ?>    
 </div>
 </div>

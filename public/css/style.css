@@ -12291,7 +12291,13 @@ body.noanimαtion * {
 .info-icon {
   position: absolute;
   right: 0;
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .action-cont .btn {
   width: 100%;

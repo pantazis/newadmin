@@ -40,13 +40,19 @@
                 </div>
                 <div class="info-row-con">
                   <div class="info-row-in">
-                    <?php foreach($info['text'] as $subtitle){?>
+                    <?php foreach($info['text'] as $key2 =>  $subtitle){?>
                       <div class="info-row">
                           <div class="info_sub"><?=$subtitle?></div>
-                          <div class="info-val">16/04/2021   09:35   (Europe/Athens)</div>
-                          <div class="info-icon">
-                          <span class="icon-fi-sr-pencil" class="button-icon" alt=""></span>
+                          <div class="info-val">
+                          
+                                           
+                          <?php foreach($valueArr[$key][$key2] as $key3 => $value3){?>
+                            <?=$value3?>
+                            
+                            
+                          <?php }?>
                           </div>
+                         
                       </div>
                     <?php }?>
                     </div>

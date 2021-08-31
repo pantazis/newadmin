@@ -28,7 +28,7 @@
 <div class="tab-cont">   
     <div class="activebox" style="width:<?=(100/($tabnum+1))?>%"></div>    
    <?php foreach($tabs as $tab => $value) { ?>      
-      <div id="<?=$value["id"]?>" class="tab-in <?php if($tab==0) echo "active";?>" data-active="<?=$tab?>"><div class="over"><?=$value["name"]?></div></div>
+      <div data-tab-id="<?=$value["id"]?>" class="tab-in <?php if($tab==0) echo "active";?>" data-active="<?=$tab?>"><div class="over"><?=$value["name"]?></div></div>
    <?php } ?>    
 </div>
 </div>

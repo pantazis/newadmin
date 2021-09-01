@@ -23,7 +23,7 @@ function HtmlEl($text,$classl,$color,$element,$icon = false) {
   if($element==""){
     $element="span";
   }
-  $iconTemplate =' <div class="info-icon">
+  $iconTemplate =' <div class="info-icon action">
   <span class="icon-fi-sr-pencil" class="button-icon" alt=""></span>
   </div>';
  
@@ -107,6 +107,8 @@ $breadcrumb = [
 
 
 $tabs = [
-  ["name"=>"Στοιχεία Domain","id"=>"1"],
-  ["name"=>"Πρόσθετες Υπηρεσίες","id"=>"2"],  
+  ["name"=>"Στοιχεία Domain"],
+  ["name"=>"Πρόσθετες Υπηρεσίες"], 
 ];
+?>
+

@@ -348,16 +348,19 @@ $section-padding: 1.875rem;
   }
 }
 .info-row {
-  display: flex;
-  width: 100%;
+
   border-bottom: 0.0625rem solid;
   @include themeColor("border-color", lighten($dark_blue, 65%), darken($ice, 65%));
   @include themeColor("color", $dark_blue, $ice);
   line-height: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
+ 
+}
+.info-text-in{
   position: relative;
   flex-wrap: wrap;
+  display: flex;
+  width: 100%;
 }
 .info-row-con {
   height: 0;
@@ -370,7 +373,7 @@ $section-padding: 1.875rem;
     height: 100%;
   }
 }
-.info-row > * {
+.info-text-in> * {
   flex: 1;
   font-size: 0.875rem;
 }
@@ -433,8 +436,7 @@ $section-padding: 1.875rem;
   .info-row {
     @include themeColor("color", $bluedarkbl, $ice);
     padding-left: 1rem;
-    .info-shub {
-    }
+   
   }
 }
 //---------------------------------------action tabs-------------------------------//
@@ -525,3 +527,40 @@ $section-padding: 1.875rem;
   right: 0;
   z-index: 1;
 }
+
+
+//----------------- forms open close---------------------------
+
+.info-text{
+  height: 100%;
+  overflow: hidden;
+  transition: all .2s;
+}
+
+form.info-form {
+  transition: all .2s;
+  height: 0;
+  overflow: hidden;
+ 
+}
+.info-row.open{
+  .info-text{   
+    height: 0;
+  }
+  form.info-form {   
+    height: 100%;    
+  }
+
+}
+
+
+.info-text-in{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.info-form-in{
+   @include themeColor("background-color",$ice,$bluedarkbl);
+   padding: 1rem;
+}
+
+

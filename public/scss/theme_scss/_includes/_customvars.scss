@@ -52,7 +52,7 @@ $grid-breakpoints: (
    #{$class} { #{$prop}:$val !important;  }
   };
 }
-/*skata*/
+
 @include mediaMobile(".only-mobile","display",flex);
 @include mediaTablet(".only-tablet","display",flex);
 @include mediaDesktop(".only-desktop","display",flex);

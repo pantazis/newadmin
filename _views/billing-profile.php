@@ -27,8 +27,8 @@
                         <div class="info-title"><?= $info["title"] ?></div>
                         <div class="info-row-con">
                             <div class="info-row-in">
-                                <?php foreach ($info['text'] as $subtitle) { ?>
-                                    <div class="info-row">
+                                <?php foreach ($info['text'] as $key2 => $subtitle) { ?>
+                                    <div class="info-row <?=$key2?>b">
                                         <div class="info_sub"><?= $subtitle ?></div>
                                         <div class="info-val">12/34/2025</div>
                                         <div class="info-icon">

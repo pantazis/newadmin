@@ -32,18 +32,26 @@
                 <div class="info-row-con">
                   <div class="info-row-in">
                     <?php foreach($info['text'] as $key2 =>  $subtitle){?>
-                      <div class="info-row">
-                          <div class="info_sub"><?=$subtitle?></div>
-                          <div class="info-val">
-                          
-                                           
-                          <?php foreach($valueArr[$key][$key2] as $key3 => $value3){?>
-                            <?=$value3?>
-                            
-                            
-                          <?php }?>
+                      <div class="info-row b<?=$key2?>">
+                        <div class="info-text">
+                          <div class="info-text-in">
+                            <div class="info_sub"><?=$subtitle?></div>
+                            <div class="info-val">
+                                            
+                            <?php foreach($valueArr[$key][$key2] as $key3 => $value3){?>
+                              <?=$value3?>
+                            <?php }?>
+                            </div>
                           </div>
-                         
+                        </div>
+                          <form action="" class="info-form">
+                          <div class="info-form-in">
+
+                           <?php  for($i = 0; $i < rand(10,300); $i++){
+                              echo "pantazis ";  }?>
+                              </div>
+                           
+                          </form>
                       </div>
                     <?php }?>
                     </div>
@@ -67,3 +75,13 @@
           </div>
         </div>
       </section>
+
+
+
+      <style>
+
+
+
+
+
+      </style>

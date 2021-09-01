@@ -531,22 +531,18 @@ $section-padding: 1.875rem;
 
 //----------------- forms open close---------------------------
 
-.info-text{
-  height: 100%;
-  overflow: hidden;
-  transition: all .2s;
+
+
+
+form.info-form { 
+  transition: height .3s;
+  height: 0;
+  overflow: hidden; 
 }
 
-form.info-form {
-  transition: all .2s;
-  height: 0;
-  overflow: hidden;
- 
-}
+
 .info-row.open{
-  .info-text{   
-    height: 0;
-  }
+  
   form.info-form {   
     height: 100%;    
   }

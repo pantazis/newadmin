@@ -12434,18 +12434,11 @@ body.noanimαtion * {
   .dark .gradientbg {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.418) 85%); }
 
-.info-text {
-  height: 100%;
-  overflow: hidden;
-  transition: all .2s; }
-
 form.info-form {
-  transition: all .2s;
+  transition: height .3s;
   height: 0;
   overflow: hidden; }
 
-.info-row.open .info-text {
-  height: 0; }
 .info-row.open form.info-form {
   height: 100%; }
 

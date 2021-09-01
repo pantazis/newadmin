@@ -47,7 +47,8 @@
 
 
  function openEll(height_El2,parent,innercont){
-  var heightEl = parent.find(height_El2).height()
+   
+  var heightEl = parent.find(height_El2)[0].clientHeight;
   innercont.css('height', heightEl + 'px');
 
  }
@@ -86,7 +87,6 @@ openclose(this,".info-container",".info-row-con",".info-row-in");
 
 function toggleForms(el){
 openclose(el,".info-row",".info-form",".info-form-in");
-openclose(el,".info-row",".info-text",".info-text-in",false);
 
 }
 

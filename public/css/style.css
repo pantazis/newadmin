@@ -12452,6 +12452,26 @@ form.info-form {
   .dark .info-form-in {
     background-color: #1E1C36; }
 
+.arrow-div2 {
+  transition: bottom .3s;
+  width: 1.3125rem;
+  height: 0.625rem;
+  background-color: #efeff6;
+  position: absolute;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  z-index: 1;
+  bottom: -10px;
+  margin-right: 1.5rem;
+  right: 0; }
+  .dark .arrow-div2 {
+    background-color: #1E1C36; }
+  .open .arrow-div2 {
+    bottom: 0px; }
+
+.info-text {
+  position: relative;
+  overflow: hidden; }
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/fonts/icomoon.eot?b65kmw");

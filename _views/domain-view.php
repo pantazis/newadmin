@@ -35,6 +35,7 @@
                       <div class="info-row b<?=$key2?>">
                         <div class="info-text">
                           <div class="info-text-in">
+                            <div class="arrow-div2"></div>
                             <div class="info_sub"><?=$subtitle?></div>
                             <div class="info-val">
                                             
@@ -46,9 +47,10 @@
                         </div>
                           <form action="" class="info-form">
                           <div class="info-form-in">
+                          
 
-                           <?php  for($i = 0; $i < rand(10,300); $i++){
-                              echo "pantazis ";  }?>
+
+                        
                               </div>
                            
                           </form>

@@ -559,4 +559,26 @@ form.info-form {
    padding: 1rem;
 }
 
+.arrow-div2 {
+  transition: bottom .3s;
+  width: 1.3125rem;
+  height: 0.625rem; 
+  @include themeColor("background-color",$ice,$bluedarkbl);
+  position: absolute;  
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+  z-index: 1;
+  bottom: -10px;
+  margin-right: 1.5rem;
+  right: 0;
+  .open &{
+    bottom: 0px;
+    
+  }
+}
+.info-text{
+  position: relative;
+  overflow: hidden;
+}
+
+
 

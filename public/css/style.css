@@ -12281,6 +12281,9 @@ body.noanimαtion * {
 .info-val {
   flex: 2;
   padding-right: 3rem; }
+  .info-val .button.green2 {
+    font-weight: 600;
+    cursor: pointer; }
 
 .date {
   font-weight: 600; }
@@ -12438,8 +12441,8 @@ body.noanimαtion * {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.418) 85%); }
 
 form.info-form {
-  transition: height 0.3s;
   height: 0;
+  transition: height 0.3s;
   overflow: hidden; }
 
 .info-row.open form.info-form {
@@ -12456,7 +12459,7 @@ form.info-form {
     background-color: #1e1c36; }
 
 .arrow-div2 {
-  transition: bottom .3s;
+  transition: bottom 0.3s;
   width: 1.3125rem;
   height: 0.625rem;
   background-color: #efeff6;

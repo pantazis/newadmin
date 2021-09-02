@@ -380,7 +380,10 @@ $section-padding: 1.875rem;
 .info-val {
   flex: 2;
   padding-right: 3rem;
-  
+  .button.green2 {
+    font-weight: 600;
+    cursor: pointer;
+  }
 }
 .date {
   font-weight: 600;
@@ -535,8 +538,8 @@ $section-padding: 1.875rem;
 //----------------- forms open close---------------------------
 
 form.info-form {
-  transition: height 0.3s;
   height: 0;
+  transition: height 0.3s;
   overflow: hidden;
 }
 
@@ -556,25 +559,21 @@ form.info-form {
 }
 
 .arrow-div2 {
-  transition: bottom .3s;
+  transition: bottom 0.3s;
   width: 1.3125rem;
-  height: 0.625rem; 
-  @include themeColor("background-color",$ice,$bluedarkbl);
-  position: absolute;  
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+  height: 0.625rem;
+  @include themeColor("background-color", $ice, $bluedarkbl);
+  position: absolute;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   z-index: 1;
   bottom: -10px;
   margin-right: 1.5rem;
   right: 0;
-  .open &{
+  .open & {
     bottom: 0px;
-    
   }
 }
-.info-text{
+.info-text {
   position: relative;
   overflow: hidden;
 }
-
-
-

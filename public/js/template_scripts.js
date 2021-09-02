@@ -47,38 +47,50 @@
 
 
  function openEll(height_El2,parent,innercont){
-   
+
   var heightEl = parent.find(height_El2)[0].clientHeight;
   innercont.css('height', heightEl + 'px');
 
  }
 
- 
+
 
 function openclose(clickEL,parentEl,innercontEl,height_El,checkopen=true){
-  
-  
 
-   
+
+
+
     var parent = $(clickEL).closest(parentEl)
     var innercont = parent.find(innercontEl)
     if (parent.hasClass('open')) {
       if(checkopen){
       parent.removeClass('open');
       }
-      
       openEll(height_El,parent,innercont);
+
+
+
     } else {
+
+
       if(checkopen){
+
       parent.addClass('open')
-      }
+
+    }
       openEll(height_El,parent,innercont);
+
+
     }
     innercont[0].ontransitionend = () => {
       innercont.attr('style', '')
     }
 
 };
+
+
+
+
 
 $(".info-title").click(function () {
 openclose(this,".info-container",".info-row-con",".info-row-in");
@@ -102,10 +114,10 @@ if(arrform.length > 1 ){
     $(".info-row.open").each(function(){
       toggleForms(this);
     });
-    toggleForms(arrform[arrform.length-1]);    
+    toggleForms(arrform[arrform.length-1]);
 
   }
-} 
+}
 
 });
   // navgation open close
@@ -292,15 +304,15 @@ if(arrform.length > 1 ){
 
   function activeTab(){
     if(location.hash!=""){
-      
-      var tablink = location.hash.replace("#", "");    
-      $(".tab-in[data-tab-id='"+tablink+"']").click(); 
+
+      var tablink = location.hash.replace("#", "");
+      $(".tab-in[data-tab-id='"+tablink+"']").click();
 
     }
 
   };
 
-  
+
 
 
 

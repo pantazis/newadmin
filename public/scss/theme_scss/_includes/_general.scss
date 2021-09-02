@@ -348,15 +348,12 @@ $section-padding: 1.875rem;
   }
 }
 .info-row {
-
   border-bottom: 0.0625rem solid;
   @include themeColor("border-color", lighten($dark_blue, 65%), darken($ice, 65%));
   @include themeColor("color", $dark_blue, $ice);
   line-height: 1.5rem;
-
- 
 }
-.info-text-in{
+.info-text-in {
   position: relative;
   flex-wrap: wrap;
   display: flex;
@@ -373,7 +370,7 @@ $section-padding: 1.875rem;
     height: 100%;
   }
 }
-.info-text-in> * {
+.info-text-in > * {
   flex: 1;
   font-size: 0.875rem;
 }
@@ -383,6 +380,13 @@ $section-padding: 1.875rem;
 .info-val {
   flex: 2;
   padding-right: 3rem;
+  .date {
+    font-weight: 600;
+  }
+  .timezone {
+    font-size: 0.675rem;
+    @include themeColor("color", $dark_blue, $light_grey);
+  }
 }
 .info-icon {
   position: absolute;
@@ -436,7 +440,6 @@ $section-padding: 1.875rem;
   .info-row {
     @include themeColor("color", $bluedarkbl, $ice);
     padding-left: 1rem;
-   
   }
 }
 //---------------------------------------action tabs-------------------------------//
@@ -528,35 +531,25 @@ $section-padding: 1.875rem;
   z-index: 1;
 }
 
-
 //----------------- forms open close---------------------------
 
-
-
-
-form.info-form { 
-  transition: height .3s;
+form.info-form {
+  transition: height 0.3s;
   height: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-
-.info-row.open{
-  
-  form.info-form {   
-    height: 100%;    
+.info-row.open {
+  form.info-form {
+    height: 100%;
   }
-
 }
 
-
-.info-text-in{
+.info-text-in {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.info-form-in{
-   @include themeColor("background-color",$ice,$bluedarkbl);
-   padding: 1rem;
+.info-form-in {
+  @include themeColor("background-color", $ice, $bluedarkbl);
+  padding: 1rem;
 }
-
-

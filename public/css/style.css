@@ -12281,6 +12281,13 @@ body.noanimαtion * {
 .info-val {
   flex: 2;
   padding-right: 3rem; }
+  .info-val .date {
+    font-weight: 600; }
+  .info-val .timezone {
+    font-size: 0.675rem;
+    color: #2e435e; }
+    .dark .info-val .timezone {
+      color: #cacad5; }
 
 .info-icon {
   position: absolute;
@@ -12429,7 +12436,7 @@ body.noanimαtion * {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.418) 85%); }
 
 form.info-form {
-  transition: height .3s;
+  transition: height 0.3s;
   height: 0;
   overflow: hidden; }
 

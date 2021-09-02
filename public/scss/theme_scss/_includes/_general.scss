@@ -380,13 +380,14 @@ $section-padding: 1.875rem;
 .info-val {
   flex: 2;
   padding-right: 3rem;
-  .date {
-    font-weight: 600;
-  }
-  .timezone {
-    font-size: 0.675rem;
-    @include themeColor("color", $dark_blue, $light_grey);
-  }
+  
+}
+.date {
+  font-weight: 600;
+}
+.timezone {
+  font-size: 0.675rem;
+  @include themeColor("color", $dark_blue, $light_grey);
 }
 .info-icon {
   position: absolute;

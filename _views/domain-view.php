@@ -1,4 +1,5 @@
       <section class="top-section ">
+      <?php include '_include/form-elements.php'; ?>
       <?php include '_include/domain-view/domain-view-data.php'; ?>
       <?php include '_include/content_top.php'; ?>
       </section>
@@ -29,7 +30,7 @@
                              <span class="icon-fi-sr-angle-down" class="button-icon" alt=""></span>
                           </div>
                 </div>
-                <div class="info-row-con">
+                <div class="info-row-con" data-collapsed="true" style="height: 0px;">
                   <div class="info-row-in">
                     <?php foreach($info['text'] as $key2 =>  $subtitle){?>
                       <div class="info-row b<?=$key2?>">
@@ -45,14 +46,10 @@
                             </div>
                           </div>
                         </div>
-                          <form action="" class="info-form">
-                          <div class="info-form-in">
-                          
-
-
-                        
-                              </div>
-                           
+                          <form action="" class="info-form" data-collapsed="true" style="height: 0px;">
+                            <div class="info-form-in">
+                                <?php echo $formArr[$key][$key2] ?>
+                            </div>
                           </form>
                       </div>
                     <?php }?>
@@ -80,10 +77,19 @@
 
 
 
-      <style>
 
 
 
 
 
-      </style>
+
+
+
+
+
+
+
+
+
+
+

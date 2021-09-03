@@ -22,7 +22,9 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   <script src="./public/js/libraries/bootstrap.min.js?<?= rand(1, 1000) ?>"></script>
   <script src="./public/js/libraries/is.min.js"></script>
   <script src="./public/js/libraries/all.min.js"></script>
+  <script src="./public/js/openclose.js?<?= rand(0, 1000) ?>"></script>
   <script src="./public/js/template_scripts.js?<?= rand(0, 1000) ?>"></script>
+ 
   <script>
     var myModal = document.getElementById('disableAccount');
   </script>

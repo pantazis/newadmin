@@ -44,12 +44,7 @@ $ellink = HtmlEl("300127 - CITIZEN","date","blue","a");
 
 
 
-$ellinkselect='<select class="form-select" aria-label="Default select example">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>';
+
 
 
 $valueArr=[[
@@ -77,6 +72,72 @@ $valueArr=[[
   
   ]
   ];
+
+
+
+
+
+  $valueArr=[[
+    [ $elDate,$eltimezone ],
+    [ $elDate,$eltimezone ],
+    [ $eldomain ],
+    [ $elDate,HtmlEl("Συγχρονισμός Τώρα","button","green2","a") ],
+    
+    ],[
+    [ HtmlEl("300127 - CITIZEN","date","blue","a",true) ],
+    [ HtmlEl("14610 - John Dooe","date","blue","a",true) ],
+    [ HtmlEl("26743 - George Papadogiannakis","date","blue","a",true) ],
+    [ HtmlEl("-","date","","",true) ],
+    
+    ],[
+    [ HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",true) ],
+    [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",true) ],
+    
+    
+    ],[
+    [ HtmlEl("Εισγαγωγή Νέων Εξυπηρετητών","date","","",true) ],
+    [ HtmlEl("ns1.free-host-ns-test.gr","date","","",true) ],
+    [ HtmlEl("ns1.free-host-ns-test.gr","date","","",true) ],
+    [ HtmlEl("ns1.free-host-ns-test.gr","date","","",true) ],
+    
+    ]
+    ];
+
+   
+
+    $formArr=[[
+    "",
+    "",
+    "",
+    "",
+    
+    ],[
+    selectEl(["test","test","test"],"test"),
+    inputEl('test','email','text','','required email'),
+    inputEl('test','domain','text','','required domain'),
+    inputEl('test','nameservers','text','','required nameservers'),
+    
+    ],[
+    selectEl(["test","test","test"],"test"),
+    selectEl(["test","test","test"],"test"),
+    
+    
+    ],[
+    selectEl(["test","test","test"],"test"),
+    selectEl(["test","test","test"],"test"),
+    selectEl(["test","test","test"],"test"),
+    selectEl(["test","test","test"],"test"),
+    
+    ]
+    ];
+
+
+//inputEl('test','email','text','','required email'),
+//inputEl('test','domain','text','','required domain'),
+//inputEl('test','nameservers','text','','required nameservers'),
+///inputEl('test','telephone','text','','required telephone'),
+//inputEl('test','postcode','text','min4 max6','required postcode'),
+//inputEl('test','password','password','','required password'),
 
 
 

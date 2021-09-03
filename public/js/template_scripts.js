@@ -12,13 +12,14 @@
   var rtime
   var timeout = false;
   var delta = 200;
-  var arrform = [];
+  var arrform = [];  
   $(document).ready(function () {
     $(this).scrollTop(0)
   })
 
 
   $(window).resize(function () {
+
     noanimαtion()
   })
 
@@ -46,68 +47,17 @@
  // .info-row-in
 
 
- function openEll(height_El2,parent,innercont){
-   
-  var heightEl = parent.find(height_El2)[0].clientHeight;
-  innercont.css('height', heightEl + 'px');
-
- }
-
+ 
  
 
-function openclose(clickEL,parentEl,innercontEl,height_El,checkopen=true){
-  
-  
-
-   
-    var parent = $(clickEL).closest(parentEl)
-    var innercont = parent.find(innercontEl)
-    if (parent.hasClass('open')) {
-      if(checkopen){
-      parent.removeClass('open');
-      }
-      
-      openEll(height_El,parent,innercont);
-    } else {
-      if(checkopen){
-      parent.addClass('open')
-      }
-      openEll(height_El,parent,innercont);
-    }
-    innercont[0].ontransitionend = () => {
-      innercont.attr('style', '')
-    }
-
-};
-
-$(".info-title").click(function () {
-openclose(this,".info-container",".info-row-con",".info-row-in");
-});
 
 
-function toggleForms(el){
-openclose(el,".info-row",".info-form",".info-form-in");
 
-}
 
-$(".info-row").click(function () {
-arrform.push(this);
-if(arrform.length == 1) {
-toggleForms(this);
-}
-if(arrform.length > 1 ){
- if(arrform[arrform.length-2]===arrform[arrform.length-1]) {
-  toggleForms(arrform[arrform.length-1]);
-  }else{
-    $(".info-row.open").each(function(){
-      toggleForms(this);
-    });
-    toggleForms(arrform[arrform.length-1]);    
 
-  }
-} 
 
-});
+
+
   // navgation open close
 
 

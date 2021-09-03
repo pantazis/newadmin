@@ -12255,6 +12255,9 @@ body.noanimαtion * {
     border-color: #373762; }
   .dark .info-row {
     color: #efeff6; }
+  .info-row.open .icon-fi-sr-pencil:before {
+    content: "\e916";
+    font-size: 20px; }
 
 .info-text-in {
   position: relative;

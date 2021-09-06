@@ -23,7 +23,7 @@ return $template;
 };
 
 
-function select2($optionArr,$placeholder,$id){    
+function select2($optionArr,$placeholder,$id = ""){    
     $template = '<select class="form-select select2"    data-placeholder="'.$placeholder.'">';                                                   
     foreach($optionArr as $group){    
     $template .='<optgroup label="'.$group['group'].'">';

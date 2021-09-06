@@ -39,9 +39,9 @@
     width: 100%;
     border: none;
     line-height: $form-select-line-height;
-    background-color: $form-select-bg;
-    padding: $form-select-padding-x $form-select-padding-y $form-select-padding-y $form-select-padding-y;
-    @include border-radius($form-select-border-radius, 0);
+    background-color: transparent;
+    padding:$form-select-padding-y $form-select-padding-x ;
+   
   }
   
   .material-text-field__input-text:focus {
@@ -60,7 +60,7 @@
   }
   
   .material-text-field__input-text:focus ~.material-text-field__activation-indicator {
-    border-bottom: 2px solid $green2;
+    border: 2px solid $green2;
   }
   
   .material-text-field__input-text:focus ~.js__activation-indicator--warning {
@@ -74,7 +74,7 @@
   .material-text-field__label-text {
     z-index: 1;
     position: absolute;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%); 
     left:$form-select-padding-x;    
     font-size: inherit;
@@ -97,15 +97,17 @@
   }
   
   .material-text-field__activation-indicator {
-    position: relative;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
-    width: 100%;    
-    border-bottom: 1px solid $form-select-border-color;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ced4da;
     border-radius: 2px;
     box-sizing: border-box;
     pointer-events: none;
+    @include border-radius($form-select-border-radius, 0);
   }
   
   .material-text-field__helper-text {
@@ -145,11 +147,12 @@
   .material-text-field__input-text:not(:placeholder-shown) ~.material-text-field__label-text 
   {
     z-index: 2;
-    top: 7px;    
+    top: 0rem;
     padding: 0 4px;
     font-size: 12px;
-    letter-spacing: 0.4px;    
+    letter-spacing: 0.4px;
     transition: all 150ms linear;
+    background-color: #efeff6;
 }
 
 

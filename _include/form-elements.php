@@ -1,7 +1,7 @@
 <?php 
 
 function buttonsEl(){ 
-    return   '<div class="pl-1"><button type="button" class="btn btn-outline-blue_purple">add</button></div>';
+    return   '<div class="button-padding"><a class="button green2">Aποθήκευση</a></div>';
 }
 
 
@@ -21,6 +21,21 @@ $template.='</select>'.buttonsEl().'</div>';
 
 return $template;
 };
+
+
+function select2($optionArr,$placeholder,$id){    
+    $template = '<select class="form-select select2"    data-placeholder="'.$placeholder.'">';                                                   
+    foreach($optionArr as $group){    
+    $template .='<optgroup label="'.$group['group'].'">';
+    foreach($group["option"] as $option){
+        $template .='<option value="'.$option["value"].'">'.$option["name"].'</option>';
+    }
+    $template .='</optgroup>';
+    }
+    $template .='</select>';
+return $template;
+
+}
 
 
                     

@@ -91,7 +91,7 @@ html {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: $white;
+    @include themeColor("background-color",$white,$black_blue);
     .nav-list.user-icons {
         width: 100%;
         .nav-icon-3 {
@@ -168,7 +168,8 @@ main,
     transition-timing-function: ease-in;
 }
 img.logo-img {
-    width: 2.5rem;
+    width: 3rem;
+    transition:width .3s;
 }
 .logo-box {
     height: $navSidebarTop;
@@ -291,6 +292,10 @@ nav.sidebar.navbar {
     height: $navSidebarTop;
     padding: 0.781rem 0;
     .nav-icon-3 {
+        &:first-of-type{
+            border-left: 0rem;
+
+        }
         height: auto;
         width: 4.9375rem;
         display: flex;
@@ -416,7 +421,7 @@ main {
         }
     }
     span.icon-logo_text {
-        font-size: 1.6081rem;
+        font-size: 1.8rem;
         position: relative;
         left: 0;
         padding-left: 0.6875rem;
@@ -884,6 +889,7 @@ span.b_in {
 }*/
 }
 @media screen and (max-width: $menuMobileMax) {
+
     html {
         font-size: 3.5vw;
     }

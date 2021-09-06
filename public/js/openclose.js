@@ -54,7 +54,7 @@ function collapseSection(element,parentel) {
     element.setAttribute('data-collapsed', 'false');
   }
   
-  function openForms(clickEl,el,toggleDiv){      
+  function openForms(clickEl,el,toggleDiv){         
     $(clickEl)[0].addEventListener('click', function(e) { 
     var parent = $(el);
     var section = parent.find(toggleDiv)[0];    

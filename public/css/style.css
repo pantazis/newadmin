@@ -12467,18 +12467,22 @@ form.info-form {
   position: absolute;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   z-index: 1;
-  bottom: -10px;
+  bottom: -100%;
   margin-right: 1.5rem;
   right: 0; }
   .dark .arrow-div2 {
     background-color: #1e1c36; }
-  .open .arrow-div2 {
+  .info-row.open .arrow-div2 {
     bottom: 0px; }
 
 .info-text {
   position: relative;
   overflow: hidden; }
 
+@media screen and (max-width: 768px) {
+  .info_sub,
+  .info-val {
+    min-width: 100%; } }
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/fonts/icomoon.eot?b65kmw");

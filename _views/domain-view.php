@@ -33,7 +33,8 @@
                 <div class="info-row-con" data-collapsed="true" style="height: 0px;">
                   <div class="info-row-in">
                     <?php foreach($info['text'] as $key2 =>  $subtitle){?>
-                      <div class="info-row b<?=$key2?>">
+                     
+                      <div class="info-row <?php if($key2==count($domaininfo))echo "last";?>">
                         <div class="info-text">
                           <div class="info-text-in">
                             <div class="arrow-div2"></div>

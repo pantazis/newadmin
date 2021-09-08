@@ -446,7 +446,9 @@ $nservers = [
                        ] 
 ]; 
 
-
+function buttonBottom() {
+   return '<div class="addAction"><span class="fi-sr-plus-small" alt=""></span>Δημιουργία νέου Προσώπου Επαφής</div>';
+}
 
 function HtmlEl($text,$classl,$color,$element,$icon = false) {
   if($element==""){
@@ -517,6 +519,7 @@ $valueArr=[[
     [ HtmlEl("14610 - John Dooe","date","blue","a",true) ],
     [ HtmlEl("26743 - George Papadogiannakis","date","blue","a",true) ],
     [ HtmlEl("-","date","","",true) ],
+    [ buttonBottom()]
     
     ],[
     [ HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",true) ],
@@ -528,6 +531,7 @@ $valueArr=[[
     [ HtmlEl("ns1.free-host-ns-test.gr","date","","",true) ],
     [ HtmlEl("ns1.free-host-ns-test.gr","date","","",true) ],
     [ HtmlEl("ns1.free-host-ns-test.gr","date","","",true) ],
+    [ buttonBottom()]
     
     ]
     ];
@@ -581,9 +585,9 @@ $valueArr=[[
 
 $domaininfo = [
   ["title" => 'Πληροφορίες', "text" => ['Ημ/νία κατοχύρωσης :', 'Ημ/νία λήξης :', 'Δέσμη ονομάτων :', 'Τελευταίος συγχρονισμός :']],
-  ["title" => 'Πρόσωπα Επαφής', "text" => ['Κάτοχος :', 'Τεχνικός :', 'Διαχειριστής :', 'Οικονομικά :']],
+  ["title" => 'Πρόσωπα Επαφής', "text" => ['Κάτοχος :', 'Τεχνικός :', 'Διαχειριστής :', 'Οικονομικά :',""]],
   ["title" => 'Προσωπικοί Εξυπηρετητές', "text" => ['Εξυπηρετητής :', 'Εξυπηρετητής :']],
-  ["title" => 'Εξυπηρετητές Ονοματοδοσίας', "text" => ['Διαθέσιμες Επιλογές :', 'Εξυπηρετητής :', 'Εξυπηρετητής :', 'Εξυπηρετητής :',]],
+  ["title" => 'Εξυπηρετητές Ονοματοδοσίας', "text" => ['Διαθέσιμες Επιλογές :', 'Εξυπηρετητής :', 'Εξυπηρετητής :', 'Εξυπηρετητής :',""]],
 ];
 
 

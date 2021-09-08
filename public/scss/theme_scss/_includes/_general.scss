@@ -268,7 +268,6 @@ $section-padding: 1.875rem;
   justify-content: center;
   align-items: center;
   border-radius: $border-radius;
-  
 }
 .activebox {
   position: absolute;
@@ -353,12 +352,11 @@ $section-padding: 1.875rem;
   @include themeColor("border-color", lighten($dark_blue, 65%), darken($ice, 65%));
   @include themeColor("color", $dark_blue, $ice);
   line-height: 1.5rem;
-  &.open{
+  &.open {
     .icon-fi-sr-pencil:before {
-    content: "\e916";
-    font-size: 20px;
-}
-
+      content: "\e916";
+      font-size: 20px;
+    }
   }
 }
 .info-text-in {
@@ -378,33 +376,31 @@ $section-padding: 1.875rem;
     height: 100%;
   }
 }
-.info-text-in{
+.info-text-in {
   & > * {
-  flex: 1;
-  font-size: 0.875rem;
+    flex: 1;
+    font-size: 0.875rem;
+  }
 }
-}
-.info-form-in .info-text-in{
+.info-form-in .info-text-in {
   padding-top: 0;
   padding-bottom: 1rem;
   align-items: center;
-   > *:first-child{
-  @media (max-width:$md){
-    flex-basis: 100%;
+  > *:first-child {
+    @media (max-width: $md) {
+      flex-basis: 100%;
+    }
   }
-
-}
 }
 .info_sub {
   max-width: 12.5rem;
-  .info-form-in &{
+  .info-form-in & {
     max-width: 6.5rem;
   }
 }
 .info-val {
   flex: 2;
   padding-right: 3rem;
-  
 }
 .date {
   font-weight: 600;
@@ -565,7 +561,6 @@ form.info-form {
   overflow: hidden;
 }
 
-
 .info-text-in {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -576,44 +571,44 @@ form.info-form {
   padding: 1rem;
   padding-bottom: 0;
 }
-.button-padding{
+.button-padding {
   flex: 0 0 auto;
   margin-left: auto;
   padding-left: 1rem;
 }
 
 .arrow-div2 {
-  transition: bottom .3s;
+  transition: bottom 0.3s;
   width: 1.3125rem;
-  height: 0.625rem; 
-  @include themeColor("background-color",$ice,$bluedarkbl);
-  position: absolute;  
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+  height: 0.625rem;
+  @include themeColor("background-color", $ice, $bluedarkbl);
+  position: absolute;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   z-index: 1;
-  bottom: -100%;  
+  bottom: -100%;
   left: 1rem;
-  .info-row.open &{
+  .info-row.open & {
     bottom: 0px;
-    
   }
 }
-.info-text{
+.info-text {
   position: relative;
   overflow: hidden;
 }
 
 @media screen and (max-width: $menuMobileMax) {
   .info_sub,
-  .info-val{
+  .info-val {
     min-width: 100%;
-
   }
   .info-title {
     margin-bottom: 0rem;
     padding: 1.4rem 0;
+  }
 }
 
+//========================================================//
+
+.info-row.last {
+  border: none;
 }
-
-
-

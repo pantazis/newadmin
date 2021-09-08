@@ -12478,7 +12478,7 @@ form.info-form {
   padding-left: 1rem; }
 
 .arrow-div2 {
-  transition: bottom .3s;
+  transition: bottom 0.3s;
   width: 1.3125rem;
   height: 0.625rem;
   background-color: #efeff6;
@@ -12504,10 +12504,13 @@ form.info-form {
   .info-title {
     margin-bottom: 0rem;
     padding: 1.4rem 0; } }
+.info-row.last {
+  border: none; }
+
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon/fonts/icomoon.eot?b65kmw");
-  src: url("../fonts/icomoon/fonts/icomoon.eot?b65kmw#iefix") format("embedded-opentype"), url("../fonts/icomoon/fonts/icomoon.ttf?b65kmw") format("truetype"), url("../fonts/icomoon/fonts/icomoon.woff?b65kmw") format("woff"), url("../fonts/icomoon/fonts/icomoon.svg?b65kmw#icomoon") format("svg");
+  src: url("../fonts/icomoon/fonts/icomoon.eot?hndonu");
+  src: url("../fonts/icomoon/fonts/icomoon.eot?hndonu#iefix") format("embedded-opentype"), url("../fonts/icomoon/fonts/icomoon.ttf?hndonu") format("truetype"), url("../fonts/icomoon/fonts/icomoon.woff?hndonu") format("woff"), url("../fonts/icomoon/fonts/icomoon.svg?hndonu#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }

@@ -463,7 +463,7 @@ function HtmlEl($text,$classl,$color,$element,$icon=false) {
   if(is_array($icon)){
      
    
-   $template .= "<".$element." class='3".$classl." ".$color."'>".$text."</".$element.">";
+   $template .= "<".$element." class='".$classl." ".$color."'>".$text."</".$element.">";
    foreach($icon as $key =>$val){  
    
    $template .= '<div class="info-icon action skata'.$key.'"><span class="'.$val.'" class="button-icon" alt=""></span></div>';
@@ -477,9 +477,9 @@ function HtmlEl($text,$classl,$color,$element,$icon=false) {
   
  
 if($icon==true && !is_array($icon)){  
-   $template = "<".$element." class='2".$classl." ".$color."'>".$text."</".$element.">".$iconTemplate;
+   $template = "<".$element." class='".$classl." ".$color."'>".$text."</".$element.">".$iconTemplate;
  }if($icon==false && !is_array($icon)){
- $template = "<".$element." class='1".$classl." ".$color."'>".$text."</".$element.">";
+ $template = "<".$element." class='".$classl." ".$color."'>".$text."</".$element.">";
 
 }
 

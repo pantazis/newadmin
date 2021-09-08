@@ -466,7 +466,7 @@ function HtmlEl($text,$classl,$color,$element,$icon=false) {
    $template .= "<".$element." class='".$classl." ".$color."'>".$text."</".$element.">";
    foreach($icon as $key =>$val){  
    
-   $template .= '<div class="info-icon action skata'.$key.'"><span class="'.$val.'" class="button-icon" alt=""></span></div>';
+   $template .= '<div class="info-icon action'.$key.'"><span class="'.$val.'" class="button-icon" alt=""></span></div>';
     
    }
 
@@ -514,8 +514,8 @@ $ellink = HtmlEl("300127 - CITIZEN","date","blue","a");
     [ buttonBottom()]
     
     ],[
-    [ HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",["icon-fi-sr-pencil","icon-fi-sr-pencil"]) ],
-    [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",true) ],
+    [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",["icon-fi-sr-trash","icon-fi-sr-pencil"]) ],
+    [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",["icon-fi-sr-trash","icon-fi-sr-pencil"])  ],
     
     
     ],[

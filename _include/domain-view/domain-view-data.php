@@ -466,7 +466,7 @@ function HtmlEl($text, $classl, $color, $element, $icon = false)
             ">";
         foreach ($icon as $key => $val) {
             $template .=
-                '<div class="info-icon action skata' .
+                '<div class="info-icon action ' .
                 $key .
                 '"><span class="' .
                 $val .

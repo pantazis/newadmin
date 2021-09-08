@@ -540,8 +540,7 @@ $valueArr=[[
     "",
     "",
     
-    ],[
-    select2($nservers,"pant"),
+    ],[  
     selectEl(["300146 ‐ Κωνσταντίνος Χριστόπουλος","300134 ‐ pantazis vastardis"],"Κάτοχος"),
     selectEl(["300146 ‐ Κωνσταντίνος Χριστόπουλος","300134 ‐ pantazis vastardis"],"Κάτοχος"),
     selectEl(["300146 ‐ Κωνσταντίνος Χριστόπουλος","300134 ‐ pantazis vastardis"],"Κάτοχος"),
@@ -549,15 +548,15 @@ $valueArr=[[
    
     
    
-   // inputEl('test','Οικονομικά','text','','required nameservers'),
+   /*inputEl('test','Οικονομικά','text','','required nameservers'),*/
     
     ],[
-    selectEl(["test","test","test"],"test"),
-    selectEl(["test","test","test"],"test"),
+      formPersonal($formPersonalArr),
+      formPersonal($formPersonalArr),
     
     
     ],[
-    selectEl(["test","test","test"],"test"),
+   select2($nservers,"pant"),
     selectEl(["test","test","test"],"test"),
     selectEl(["test","test","test"],"test"),
     selectEl(["test","test","test"],"test"),

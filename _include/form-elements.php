@@ -4,6 +4,23 @@ function buttonsEl(){
     return   '<div class="button-padding"><a class="button green2">Aποθήκευση</a></div>';
 }
 
+$formPersonalArr=[inputEl('test','Εξυπηρετητής','text','','required nameservers',false),inputEl('test','domain','text','','required nameservers',false),inputEl('test','Διεύθυνση IP','text','','required nameservers')];
+
+
+
+function formPersonal($arr) {
+    $template ='<div class="info-text-in">';
+    $template .=inputEl('test','Εξυπηρετητής','text','','required nameservers',false);
+    $template .='<div class="button-padding" style="flex: 1">';
+    $template .=inputEl('test','Εξυπηρετητής','text','','required nameservers',false);
+    $template .='</div>';
+    $template .='</div><div class="info-text-in">';
+    $template .=inputEl('test','Εξυπηρετητής','text','','required nameservers',true);
+    $template .='</div>';                          
+    
+    return $template;
+    };
+
 
 
 function selectEl($arr,$title) {
@@ -39,13 +56,16 @@ return $template;
 
 
                     
-                  
+ $inputprop=[
+     ""
+
+ ];                 
 
 
-function inputEl($title,$name,$type,$validateLength,$validate) {
-    $template ='<div class="info-text-in">';
-    $template .= '<div class="material-text-field__container">
-                <input id="input-password" data-input-num="5" autocomplete="'.$type.'" type="'.$type.'" placeholder=" " class="material-text-field__input-text" data-last-val="" '.($validateLength!=null ? 'data-validate-length="' .$validateLength.'"':"").'  data-validate="'.$validate.'">
+function inputEl($title,$name,$type,$validateLength,$validate,$hasButton=true) {
+    
+    $template = '<div class="material-text-field__container">
+                <input id="input-password" data-input-num="5" autocomplete="'.$type.'" type="'.$type.'" placeholder=" " class="material-text-field__input-text" data-last-val="" '.($validateLength!=null ? 'data-validate-length="' .$validateLength.'"':"").'  data-validate="'.$validate.'" value="antoineeurjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjtest.gr">
                 <div id="label-text" class="material-text-field__label-text">'.$name.'</div>
                 '.($type=="password" ?  '<i id="trailing-icon" class="material-text-field__trailing-icon">
                 <img class="eye" src="img/not_visible.svg" alt="">                       
@@ -55,7 +75,7 @@ function inputEl($title,$name,$type,$validateLength,$validate) {
                    
                 </div>
             </div>';
-    $template.=buttonsEl().'</div>';
+    $template.=($hasButton?buttonsEl():"");
     return $template;
 }
 

@@ -12285,7 +12285,7 @@ body.noanimαtion * {
 
 .info-form-in .info-text-in {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 1rem;
   align-items: center; }
   @media (max-width: 768px) {
     .info-form-in .info-text-in > *:first-child {
@@ -12467,7 +12467,8 @@ form.info-form {
 
 .info-form-in {
   background-color: #efeff6;
-  padding: 1rem; }
+  padding: 1rem;
+  padding-bottom: 0; }
   .dark .info-form-in {
     background-color: #1e1c36; }
 

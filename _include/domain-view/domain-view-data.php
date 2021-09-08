@@ -450,10 +450,11 @@ function buttonBottom() {
    return '<div class="addAction"><span class="icon-fi-sr-plus-small" alt=""></span>Δημιουργία νέου Προσώπου Επαφής</div>';
 }
 
-function HtmlEl($text,$classl,$color,$element,$icon = false) {
+function HtmlEl($text,$classl,$color,$element,$icon=false) {
   if($element==""){
     $element="span";
   }
+
   $template = "";
   $iconTemplate =' <div class="info-icon action">
   <span class="icon-fi-sr-pencil" class="button-icon" alt=""></span>
@@ -462,7 +463,7 @@ function HtmlEl($text,$classl,$color,$element,$icon = false) {
   if(is_array($icon)){
      
    
-   $template .= "<".$element." class='".$classl." ".$color."'>".$text."</".$element.">";
+   $template .= "<".$element." class='3".$classl." ".$color."'>".$text."</".$element.">";
    foreach($icon as $key =>$val){  
    
    $template .= '<div class="info-icon action skata'.$key.'"><span class="'.$val.'" class="button-icon" alt=""></span></div>';
@@ -476,11 +477,12 @@ function HtmlEl($text,$classl,$color,$element,$icon = false) {
   
  
 if($icon==true && !is_array($icon)){  
-   $template = "<".$element." class='1".$classl." ".$color."'>".$text."</".$element.">".$iconTemplate;
+   $template = "<".$element." class='2".$classl." ".$color."'>".$text."</".$element.">".$iconTemplate;
  }if($icon==false && !is_array($icon)){
- $template = "<".$element." class='2".$classl." ".$color."'>".$text."</".$element.">";
+ $template = "<".$element." class='1".$classl." ".$color."'>".$text."</".$element.">";
 
 }
+
 
 return $template;
  
@@ -493,35 +495,6 @@ $elnserver = HtmlEl(".antoineeurtest.gr","date","ice","");
 $ellink = HtmlEl("300127 - CITIZEN","date","blue","a");
 
 
-
-
-
-
-$valueArr=[[
-  [ $elDate,$eltimezone ],
-  [ $elDate,$eltimezone ],
-  [ $eldomain ],
-  [ $elDate,HtmlEl("Συγχρονισμός Τώρα","button","green2","a") ],
-  
-  ],[
-  [ HtmlEl("300127 - CITIZEN","date","blue","a",true) ],
-  [ HtmlEl("14610 - John Dooe","date","blue","a",true) ],
-  [ HtmlEl("26743 - George Papadogiannakis","date","blue","a",true) ],
-  [ HtmlEl("-","date","","",true) ],
-  
-  ],[
-  [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date pantazis","light_grey","",["icon-fi-sr-pencil","icon-fi-sr-pencil"]) ],
-  [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date pantazis","light_grey","",["icon-fi-sr-pencil","icon-fi-sr-pencil"]) ],
-  
-  
-  ],[
-  [ HtmlEl("Εισγαγωγή Νέων Εξυπηρετητών","date","","",true) ],
-  [ HtmlEl("ns1.free-host-ns-test.gr","date","","",true) ],
-  [ HtmlEl("ns1.free-host-ns-test.gr","date","","",true) ],
-  [ HtmlEl("ns1.free-host-ns-test.gr","date","","",true) ],
-  
-  ]
-  ];
 
 
 
@@ -541,7 +514,7 @@ $valueArr=[[
     [ buttonBottom()]
     
     ],[
-    [ HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",true) ],
+    [ HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",["icon-fi-sr-pencil","icon-fi-sr-pencil"]) ],
     [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",true) ],
     
     

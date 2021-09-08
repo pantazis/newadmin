@@ -447,23 +447,42 @@ $nservers = [
 ]; 
 
 function buttonBottom() {
-   return '<div class="addAction"><span class="fi-sr-plus-small" alt=""></span>Δημιουργία νέου Προσώπου Επαφής</div>';
+   return '<div class="addAction"><span class="icon-fi-sr-plus-small" alt=""></span>Δημιουργία νέου Προσώπου Επαφής</div>';
 }
 
 function HtmlEl($text,$classl,$color,$element,$icon = false) {
   if($element==""){
     $element="span";
   }
+  $template = "";
   $iconTemplate =' <div class="info-icon action">
   <span class="icon-fi-sr-pencil" class="button-icon" alt=""></span>
   </div>';
+  
+  if(is_array($icon)){
+     
+   
+   $template .= "<".$element." class='".$classl." ".$color."'>".$text."</".$element.">";
+   foreach($icon as $key =>$val){  
+   
+   $template .= '<div class="info-icon action skata'.$key.'"><span class="'.$val.'" class="button-icon" alt=""></span></div>';
+    
+   }
+
  
-  if($icon==true){  
-    return "<".$element." class='".$classl." ".$color."'>".$text."</".$element.">".$iconTemplate;
-  }else{
-    return "<".$element." class='".$classl." ".$color."'>".$text."</".$element.">";
+  
 
   }
+  
+ 
+if($icon==true && !is_array($icon)){  
+   $template = "<".$element." class='1".$classl." ".$color."'>".$text."</".$element.">".$iconTemplate;
+ }if($icon==false && !is_array($icon)){
+ $template = "<".$element." class='2".$classl." ".$color."'>".$text."</".$element.">";
+
+}
+
+return $template;
  
 };
 $elDate = HtmlEl("16/04/2021","date","","");
@@ -491,8 +510,8 @@ $valueArr=[[
   [ HtmlEl("-","date","","",true) ],
   
   ],[
-  [ HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",true) ],
-  [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date","light_grey","",true) ],
+  [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date pantazis","light_grey","",["icon-fi-sr-pencil","icon-fi-sr-pencil"]) ],
+  [HtmlEl("antoineeurtest.gr","date","",""),HtmlEl(".antoineeurtest.gr","date pantazis","light_grey","",["icon-fi-sr-pencil","icon-fi-sr-pencil"]) ],
   
   
   ],[

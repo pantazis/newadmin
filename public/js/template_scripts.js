@@ -208,20 +208,57 @@
   }
 
   $(".addAction").click(function(){
-    
-    var parent =$(this).closest(".info-row-in");
+    var clikedEL =$(this);
+    var parent =clikedEL.closest(".info-row-in");
+    var countEl =parent.find(".info-row:not(.last):not(.hide)").length;
     var hiddenEl= parent.find(".info-row.hide");
-    if(hiddenEl.length>0){
+    var limit =parseInt($(this).closest(".info-row-con").attr("data-limit"));
+    if(parent.find(".info-icon.action0").length>1){
+      parent.find(".info-icon.action0").show();
+
+    }
+   
+    if(hiddenEl.length>0 && countEl < limit){
       var newElment = hiddenEl.clone().removeClass("hide");
       var allelemnts =parent.find(".info-row:not(.last)");
       $(allelemnts[allelemnts.length-1]).after(newElment);
+      var clickel = newElment.find(".info-icon.action1");
+      openForms(clickel,newElment,'.info-form');
+      $(clickel).click();
+      if(countEl == limit-1){
+        clikedEL.hide();
+
+      }else{
+        clikedEL.show();
+
+      } 
      
 
 
     }
-
-
+    removeRow();
   });
+  function removeRow(){
+
+  $(".info-icon.action0").click(function(){
+   var el = $(this).closest(".info-row-in").find(".info-row:not(.last):not(.hide)");
+    var countEl = el.length;
+    if(countEl>1){
+      
+
+    var row = $(this).closest(".info-row");
+    var ppelment = row.closest(".info-row-in");
+    
+    row.remove();
+  }
+  console.log(countEl,countEl<=2);
+  if(countEl<=2){
+       ppelment.find(".info-icon.action0").hide();
+  }
+  });
+}
+
+removeRow();
 
 
 

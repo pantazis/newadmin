@@ -30,7 +30,7 @@
                              <span class="icon-fi-sr-angle-down" class="button-icon" alt=""></span>
                           </div>
                 </div>
-                <div class="info-row-con" data-collapsed="true" style="height: 0px;">
+                <div class="info-row-con" data-limit="5" data-collapsed="true" style="height: 0px;">
                   <div class="info-row-in">
                     <?php foreach($info['text'] as $key2 =>  $subtitle){?>                      
                       
@@ -38,11 +38,9 @@
                       <div class="info-row <?php
                          if($key > 0 && $key2==count($info['text'])-1)echo "last";
                          if(is_array($subtitle)) {echo "hide"; 
-                         $subtitle = $subtitle[0];}                     
+                         $subtitle = $subtitle[0];}                   
                          
                          ?>
-                         
-                         
                          ">
                         <div class="info-text">
                           <div class="info-text-in">

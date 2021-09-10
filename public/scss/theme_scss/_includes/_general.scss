@@ -352,6 +352,9 @@ $section-padding: 1.875rem;
   @include themeColor("border-color", lighten($dark_blue, 65%), darken($ice, 65%));
   @include themeColor("color", $dark_blue, $ice);
   line-height: 1.5rem;
+  &.hide{
+    display: none;
+  }
   &.open {
     .icon-fi-sr-pencil:before {
       content: "\e916";

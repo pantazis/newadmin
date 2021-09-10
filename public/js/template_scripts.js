@@ -207,6 +207,26 @@
     }
   }
 
+  $(".addAction").click(function(){
+    
+    var parent =$(this).closest(".info-row-in");
+    var hiddenEl= parent.find(".info-row.hide");
+    if(hiddenEl.length>0){
+      var newElment = hiddenEl.clone().removeClass("hide");
+      var allelemnts =parent.find(".info-row:not(.last)");
+      $(allelemnts[allelemnts.length-1]).after(newElment);
+     
+
+
+    }
+
+
+  });
+
+
+
+
+
   $(".select2").select2();
 
   setTimeout(function () {

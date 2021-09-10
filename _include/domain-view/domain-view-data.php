@@ -159,7 +159,13 @@ $valueArr = [
         [HtmlEl("-", "date", "", "", true)],
         [buttonBottom("Δημιουργία νέου Προσώπου Επαφής")],
     ],
-    [
+    [ [
+        HtmlEl("", "date", "", ""),
+        HtmlEl("", "date", "light_grey", "", [
+            "icon-fi-sr-trash",
+            "icon-fi-sr-pencil",
+        ]),
+    ],
         [
             HtmlEl("antoineeurtest.gr", "date", "", ""),
             HtmlEl(".antoineeurtest.gr", "date", "light_grey", "", [
@@ -172,11 +178,15 @@ $valueArr = [
             HtmlEl(".antoineeurtest.gr", "date", "light_grey", "", [
                 "icon-fi-sr-trash",
                 "icon-fi-sr-pencil",
-            ]),
-        ],
+            ])
+        ],[buttonBottom("Δημιουργία Εξυπηρετητή")]
     ],
     [
         [HtmlEl("Εισγαγωγή Νέων Εξυπηρετητών", "date", "", "", true)],
+        [HtmlEl("", "date", "", "", [
+            "icon-fi-sr-trash",
+            "icon-fi-sr-pencil",
+        ])],
         [HtmlEl("ns1.free-host-ns-test.gr", "date", "", "", [
          "icon-fi-sr-trash",
          "icon-fi-sr-pencil",
@@ -233,6 +243,7 @@ $formArr = [
         selectEl(["test", "test", "test"], "test"),
         selectEl(["test", "test", "test"], "test"),
         selectEl(["test", "test", "test"], "test"),
+      
     ],
 ];
 
@@ -260,12 +271,13 @@ $domaininfo = [
     ],
     [
         "title" => "Προσωπικοί Εξυπηρετητές",
-        "text" => ["Εξυπηρετητής :", "Εξυπηρετητής :"],
+        "text" => [["Εξυπηρετητής :","hide"],"Εξυπηρετητής :", "Εξυπηρετητής :",""],
     ],
     [
         "title" => "Εξυπηρετητές Ονοματοδοσίας",
         "text" => [
             "Διαθέσιμες Επιλογές :",
+            ["Εξυπηρετητής :","hide"],
             "Εξυπηρετητής :",
             "Εξυπηρετητής :",
             "Εξυπηρετητής :",

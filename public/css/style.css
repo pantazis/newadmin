@@ -12259,6 +12259,8 @@ body.noanimαtion * {
     border-color: #373762; }
   .dark .info-row {
     color: #efeff6; }
+  .info-row.hide {
+    display: none; }
   .info-row.open .icon-fi-sr-pencil:before {
     content: "\e916";
     font-size: 20px; }
@@ -13912,7 +13914,7 @@ h2.page_title, .page_title.h2 {
 
 /* fallback */
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -13923,7 +13925,7 @@ h2.page_title, .page_title.h2 {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: 'liga';
+  -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased; }
 
 .component__title {
@@ -13968,6 +13970,15 @@ h2.page_title, .page_title.h2 {
 
 .material-text-field__input-text:focus ~ .js__label-text--warning {
   color: #d83438; }
+
+.material-text-field__label-text {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  font-size: inherit;
+  transition: all 150ms linear; }
 
 .material-text-field__trailing-icon {
   position: absolute;
@@ -14018,13 +14029,12 @@ h2.page_title, .page_title.h2 {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.07); }
 
-/* JavaScript Added CSS 
- * notice I'm using a "js" prefix. This will help me
- * see in my code, and source files which classes are
- * controlled with JavaScript more easily.
- */
-.material-text-field__input-text:focus ~ .material-text-field__label-text,
-.material-text-field__input-text:not(:placeholder-shown) ~ .material-text-field__label-text {
+/* JavaScript Added CSS
+   * notice I'm using a "js" prefix. This will help me
+   * see in my code, and source files which classes are
+   * controlled with JavaScript more easily.
+   */
+.material-text-field__input-text:focus ~ .material-text-field__label-text, .material-text-field__input-text:not(:placeholder-shown) ~ .material-text-field__label-text {
   z-index: 2;
   top: 0rem;
   padding: 0 4px;
@@ -14032,6 +14042,9 @@ h2.page_title, .page_title.h2 {
   letter-spacing: 0.4px;
   transition: all 150ms linear;
   background-color: #efeff6; }
+  .dark .material-text-field__input-text:focus ~ .material-text-field__label-text,
+  .dark .material-text-field__input-text:not(:placeholder-shown) ~ .material-text-field__label-text {
+    background-color: #1e1c36; }
 
 .material-text-field__input-text ~ .material-text-field__label-text {
   z-index: 1;
@@ -14055,35 +14068,45 @@ h2.page_title, .page_title.h2 {
   color: #18bf93; }
 
 /* This class is applied this whenever the
- * input doesn't pass our validation tests.
- */
+   * input doesn't pass our validation tests.
+   */
 .shake {
-  animation: shake .82s; }
+  animation: shake 0.82s; }
 
 .noshake {
-  animation: noshake .82s; }
+  animation: noshake 0.82s; }
 
-/* This is a simple animation that will shake 
- * the input. We will apply this whenever the
- * input doesn't pass our validation tests.
- */
+/* This is a simple animation that will shake
+   * the input. We will apply this whenever the
+   * input doesn't pass our validation tests.
+   */
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translateX(-1px); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translateX(2px); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translateX(-4px); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translateX(4px); } }
 @keyframes noshake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translateX(0px); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translateX(0px); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translateX(0px); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translateX(0px); } }
 :root {
   --color-1: #427dad;

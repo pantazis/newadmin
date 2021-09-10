@@ -90,7 +90,7 @@ $('.info-title').each(function(){
    openForms(this,parent,'.info-row-con');
 });
 
-$('.info-icon.action').each(function(){
+$('.info-icon.action1').each(function(){
     var parent = $(this).closest(".info-row"); 
     openForms(this,parent,'.info-form');
 });

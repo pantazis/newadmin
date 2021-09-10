@@ -394,13 +394,29 @@ $section-padding: 1.875rem;
 }
 .info_sub {
   max-width: 12.5rem;
+  .last &{
+    flex:0;
+    
+  }
   .info-form-in & {
     max-width: 6.5rem;
   }
 }
 .info-val {
-  flex: 2;
-  padding-right: 3rem;
+  flex: 2; 
+  @media (max-width: $md) {
+    display: block;
+  } 
+  display: flex;
+  > * {
+    padding: 0 5px;
+
+}
+  .last &{
+    padding-right: 0;
+    text-align: center;    
+    
+  }
 }
 .date {
   font-weight: 600;
@@ -410,16 +426,25 @@ $section-padding: 1.875rem;
   @include themeColor("color", $dark_blue, $light_grey);
 }
 .info-icon {
-  position: absolute;
-  right: 0;
-  width: 3.5rem;
-  top: 0;
-  bottom: 0;
+  width: 2.2rem;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  &:first-of-type{
+    margin-left:auto;
+
+  }
+  &.info-icon.action0 {
+    right: 44px;    
+    @include themeColor("color", $light_grey,$dark_blue);
+    &:hover{
+      @include themeColor("color", $red2,$red2);
+    }
+}
+
+
 }
 .action-cont .btn {
   width: 100%;
@@ -611,4 +636,18 @@ form.info-form {
 
 .info-row.last {
   border: none;
+}
+.addAction{
+  color: $green2;
+  font-weight: bold;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  .icon-fi-sr-plus-small{
+    font-size: 3rem;
+  }
+}
+a.button.green2 {
+  margin-left: auto;
 }

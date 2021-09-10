@@ -67,9 +67,9 @@ $nservers = [
     ],
 ];
 
-function buttonBottom()
+function buttonBottom($text=" ")
 {
-    return '<div class="addAction"><span class="icon-fi-sr-plus-small" alt=""></span>Δημιουργία νέου Προσώπου Επαφής</div>';
+    return '<div class="addAction"><span class="icon-fi-sr-plus-small" alt=""></span>'.$text.'</div>';
 }
 
 function HtmlEl($text, $classl, $color, $element, $icon = false)
@@ -79,7 +79,7 @@ function HtmlEl($text, $classl, $color, $element, $icon = false)
     }
 
     $template = "";
-    $iconTemplate = ' <div class="info-icon action">
+    $iconTemplate = ' <div class="info-icon action1">
   <span class="icon-fi-sr-pencil" class="button-icon" alt=""></span>
   </div>';
 
@@ -157,7 +157,7 @@ $valueArr = [
         [HtmlEl("14610 - John Dooe", "date", "blue", "a", true)],
         [HtmlEl("26743 - George Papadogiannakis", "date", "blue", "a", true)],
         [HtmlEl("-", "date", "", "", true)],
-        [buttonBottom()],
+        [buttonBottom("Δημιουργία νέου Προσώπου Επαφής")],
     ],
     [
         [
@@ -177,10 +177,19 @@ $valueArr = [
     ],
     [
         [HtmlEl("Εισγαγωγή Νέων Εξυπηρετητών", "date", "", "", true)],
-        [HtmlEl("ns1.free-host-ns-test.gr", "date", "", "", true)],
-        [HtmlEl("ns1.free-host-ns-test.gr", "date", "", "", true)],
-        [HtmlEl("ns1.free-host-ns-test.gr", "date", "", "", true)],
-        [buttonBottom()],
+        [HtmlEl("ns1.free-host-ns-test.gr", "date", "", "", [
+         "icon-fi-sr-trash",
+         "icon-fi-sr-pencil",
+     ])],
+        [HtmlEl("ns1.free-host-ns-test.gr", "date", "", "",  [
+         "icon-fi-sr-trash",
+         "icon-fi-sr-pencil",
+     ])],
+        [HtmlEl("ns1.free-host-ns-test.gr", "date", "", "",  [
+         "icon-fi-sr-trash",
+         "icon-fi-sr-pencil",
+     ])],
+        [buttonBottom("Προσθήκη νέου εξυπηρετητή")],
     ],
 ];
 
@@ -216,9 +225,9 @@ $formArr = [
             "Κάτοχος"
         ),
 
-        /*inputEl('test','Οικονομικά','text','','required nameservers'),*/
+      
     ],
-    [formPersonal($formPersonalArr), formPersonal($formPersonalArr)],
+    [formPersonal($dns,$domain,$ip), formPersonal($dns,$domain,$ip)],
     [
         select2($nservers, "pant"),
         selectEl(["test", "test", "test"], "test"),
@@ -227,12 +236,7 @@ $formArr = [
     ],
 ];
 
-//inputEl('test','email','text','','required email'),
-//inputEl('test','domain','text','','required domain'),
-//inputEl('test','nameservers','text','','required nameservers'),
-///inputEl('test','telephone','text','','required telephone'),
-//inputEl('test','postcode','text','min4 max6','required postcode'),
-//inputEl('test','password','password','','required password'),
+
 
 $domaininfo = [
     [

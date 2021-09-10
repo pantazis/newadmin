@@ -12293,12 +12293,22 @@ body.noanimαtion * {
 
 .info_sub {
   max-width: 12.5rem; }
+  .last .info_sub {
+    flex: 0; }
   .info-form-in .info_sub {
     max-width: 6.5rem; }
 
 .info-val {
   flex: 2;
-  padding-right: 3rem; }
+  display: flex; }
+  @media (max-width: 768px) {
+    .info-val {
+      display: block; } }
+  .info-val > * {
+    padding: 0 5px; }
+  .last .info-val {
+    padding-right: 0;
+    text-align: center; }
 
 .date {
   font-weight: 600; }
@@ -12310,16 +12320,23 @@ body.noanimαtion * {
     color: #cacad5; }
 
 .info-icon {
-  position: absolute;
-  right: 0;
-  width: 3.5rem;
-  top: 0;
-  bottom: 0;
+  width: 2.2rem;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer; }
+  .info-icon:first-of-type {
+    margin-left: auto; }
+  .info-icon.info-icon.action0 {
+    right: 44px;
+    color: #cacad5; }
+    .dark .info-icon.info-icon.action0 {
+      color: #2e435e; }
+    .info-icon.info-icon.action0:hover {
+      color: #d83438; }
+      .dark .info-icon.info-icon.action0:hover {
+        color: #d83438; }
 
 .action-cont .btn {
   width: 100%;
@@ -12506,6 +12523,19 @@ form.info-form {
     padding: 1.4rem 0; } }
 .info-row.last {
   border: none; }
+
+.addAction {
+  color: #18bf93;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+  .addAction .icon-fi-sr-plus-small {
+    font-size: 3rem; }
+
+a.button.green2 {
+  margin-left: auto; }
 
 @font-face {
   font-family: "icomoon";

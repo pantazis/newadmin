@@ -13969,15 +13969,6 @@ h2.page_title, .page_title.h2 {
 .material-text-field__input-text:focus ~ .js__label-text--warning {
   color: #d83438; }
 
-.material-text-field__label-text {
-  z-index: 1;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 1rem;
-  font-size: inherit;
-  transition: all 150ms linear; }
-
 .material-text-field__trailing-icon {
   position: absolute;
   top: 50%;
@@ -14041,6 +14032,15 @@ h2.page_title, .page_title.h2 {
   letter-spacing: 0.4px;
   transition: all 150ms linear;
   background-color: #efeff6; }
+
+.material-text-field__input-text ~ .material-text-field__label-text {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  font-size: inherit;
+  transition: all 150ms linear; }
 
 .js__label-text--warning {
   color: #d83438; }

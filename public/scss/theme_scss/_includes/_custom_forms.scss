@@ -71,15 +71,7 @@
     color: $red2;
   }
   
-  .material-text-field__label-text {
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); 
-    left:$form-select-padding-x;    
-    font-size: inherit;
-    transition: all 150ms linear;
-  }
+
   
   .material-text-field__trailing-icon {
     position: absolute;
@@ -143,7 +135,7 @@
    */
 
 
-  .material-text-field__input-text:focus ~.material-text-field__label-text,
+  .material-text-field__input-text:focus~.material-text-field__label-text,
   .material-text-field__input-text:not(:placeholder-shown) ~.material-text-field__label-text 
   {
     z-index: 2;
@@ -153,6 +145,15 @@
     letter-spacing: 0.4px;
     transition: all 150ms linear;
     background-color: #efeff6;
+}
+.material-text-field__input-text ~.material-text-field__label-text {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  left:$form-select-padding-x;    
+  font-size: inherit;
+  transition: all 150ms linear;
 }
 
 

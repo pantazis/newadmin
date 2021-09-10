@@ -1,7 +1,7 @@
 <?php 
 
 function buttonsEl(){ 
-    return   '<div class="button-padding"><a class="button green2">Aποθήκευση</a></div>';
+    return   '<div class="button-padding"><a class="button green2 submit">Aποθήκευση</a></div>';
 }
 
 $domain=[
@@ -112,7 +112,8 @@ function inputEl($inputprop,$hasButton) {
     <input id="input-password"
 
       autocomplete="'.$inputprop["autocomplete"].'"
-      type="'.$inputprop["type"].'"     
+      type="'.$inputprop["type"].'"
+      placeholder=" "
       data-last-val="'.$inputprop["data-last-val"].'"
       data-validate="'.$inputprop["data-validate"].'"
       value="'.$inputprop["value"].'"'.$disabled.'

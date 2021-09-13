@@ -308,10 +308,24 @@ $section-padding: 1.875rem;
     }
   }
 }
+
 .over {
   position: relative;
   z-index: 1;
 }
+
+.tab{
+  display: none; 
+ 
+ 
+  &.active{
+    display: block;    
+    
+  }
+}
+
+
+
 /*-----------------------------------tabs-end----------------------------------------*/
 .action-cont {
   display: none;
@@ -658,3 +672,5 @@ form.info-form {
 a.button.green2 {
   margin-left: auto;
 }
+
+

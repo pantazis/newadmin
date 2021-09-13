@@ -12218,6 +12218,11 @@ body.noanimαtion * {
   position: relative;
   z-index: 1; }
 
+.tab {
+  display: none; }
+  .tab.active {
+    display: block; }
+
 /*-----------------------------------tabs-end----------------------------------------*/
 .action-cont {
   display: none; }

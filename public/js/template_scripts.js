@@ -172,9 +172,21 @@
     $(".mobile_tabs").append(newParent);
   });
 
-  $(".tab-in").click(function () {
+
+  function getActiveTab(el){
     $(".tab-in").removeClass("active");
-    $(this).addClass("active");
+    var activeEL=$(el).addClass("active");
+    var num = activeEL.attr("data-active");
+    $(".container.tab").removeClass("active");    
+    $(".container.tab.tab"+num).addClass("active");
+
+  }
+
+  $(".tab-in").click(function () {
+    getActiveTab(this)
+
+
+
     var allTbas = $(".tab-in").length;
     var isEl = $(this).attr("data-active");
     var elwidth = 100 / allTbas;

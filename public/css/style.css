@@ -12533,6 +12533,8 @@ form.info-form {
   align-items: center;
   justify-content: center;
   width: 100%; }
+  .form_open .addAction {
+    display: none; }
   .addAction .icon-fi-sr-plus-small {
     font-size: 3rem; }
 
@@ -14008,7 +14010,7 @@ h2.page_title, .page_title.h2 {
 
 .material-text-field__helper-text {
   position: absolute;
-  top: 57px;
+  top: 34px;
   left: 12px;
   vertical-align: bottom;
   line-height: 12px;

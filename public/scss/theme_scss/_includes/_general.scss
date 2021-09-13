@@ -647,6 +647,10 @@ form.info-form {
     align-items: center;
     justify-content: center;
     width: 100%;
+    .form_open &{
+      display: none;
+    }
+
   .icon-fi-sr-plus-small{
     font-size: 3rem;
   }

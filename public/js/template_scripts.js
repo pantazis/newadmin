@@ -206,59 +206,82 @@
       $(".tab-in[data-tab-id='" + tablink + "']").click();
     }
   }
-
-  $(".addAction").click(function(){
-    var clikedEL =$(this);
-    var parent =clikedEL.closest(".info-row-in");
-    var countEl =parent.find(".info-row:not(.last):not(.hide)").length;
-    var hiddenEl= parent.find(".info-row.hide");
-    var limit =parseInt($(this).closest(".info-row-con").attr("data-limit"));
-    if(parent.find(".info-icon.action0").length>1){
-      parent.find(".info-icon.action0").show();
-
-    }
+   var addActionObj = {}
    
-    if(hiddenEl.length>0 && countEl < limit){
-      var newElment = hiddenEl.clone().removeClass("hide");
-      var allelemnts =parent.find(".info-row:not(.last)");
-      $(allelemnts[allelemnts.length-1]).after(newElment);
-      var clickel = newElment.find(".info-icon.action1");
-      openForms(clickel,newElment,'.info-form');
-      $(clickel).click();
-      if(countEl == limit-1){
-        clikedEL.hide();
+  $(".addAction").click(function(){
+    makeElement(this);
+      
+   if(addActionObj.cloneEL.length>0){  
+    if(addActionObj.limit > addActionObj.numOfRow){
+      addActionObj.lastEl.before(addActionObj.cloneEL);
+      var openIcon = addActionObj.cloneEL.find(".info-icon.action1")[0];
+      openCloseRow(openIcon);
+      $(openIcon).click();
+      addActionObj.removeEl();   
+    }
+    hideShowElments();
+   
+   }
+   
+   
+  });
 
-      }else{
-        clikedEL.show();
+  
 
-      } 
-     
-
+  function removeRow(el){
+    $(el).click(function(){
+      makeElement(this);        
+      if(addActionObj.numOfRow > 1){
+      $(this).closest(".info-row").remove();
+      
+      if(addActionObj.parent.find(".info-form[data-collapsed='false']").length == 0){
+      addActionObj.parent.removeClass("form_open");
+      }
 
     }
-    removeRow();
-  });
-  function removeRow(){
-
-  $(".info-icon.action0").click(function(){
-   var el = $(this).closest(".info-row-in").find(".info-row:not(.last):not(.hide)");
-    var countEl = el.length;
-    if(countEl>1){
-      
-
-    var row = $(this).closest(".info-row");
-    var ppelment = row.closest(".info-row-in");
+    hideShowElments();   
+  
+    });
     
-    row.remove();
-  }
-  console.log(countEl,countEl<=2);
-  if(countEl<=2){
-       ppelment.find(".info-icon.action0").hide();
-  }
-  });
-}
 
-removeRow();
+  }
+  function hideShowElments(){
+    countRow();
+    if(addActionObj.numOfRow==1){
+      addActionObj.parent.find(".info-icon.action0").hide();
+    }else{         
+      addActionObj.parent.find(".info-icon.action0").show();
+    } 
+    if(addActionObj.limit > addActionObj.numOfRow){       
+      addActionObj.parent.find(".info-row.last").show();
+    }else{
+      addActionObj.parent.find(".info-row.last").hide();
+    }
+
+  }
+  function countRow(){
+    addActionObj.numOfRow =addActionObj.parent.find(".info-row:not(.hide):not(.last)").length;
+  }
+
+
+
+  removeRow(".info-icon.action0");
+
+  
+
+
+  function makeElement(el){   
+   addActionObj.parent = $(el).closest(".info-row-con");
+   addActionObj.lastEl = addActionObj.parent.find(".info-row.last"); 
+   addActionObj.cloneEL = addActionObj.parent.find(".info-row.hide").clone().removeClass("hide");
+   addActionObj.removeEl = () => { removeRow(addActionObj.cloneEL.find(".info-icon.action0")) };
+   addActionObj.numOfRow =addActionObj.parent.find(".info-row:not(.hide):not(.last)").length;
+   addActionObj.length = addActionObj.cloneEL.length;   
+   addActionObj.limit = parseInt(addActionObj.parent.attr("data-limit"));
+  
+
+  }
+  
 
 
 

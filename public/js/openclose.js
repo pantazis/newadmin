@@ -15,19 +15,43 @@ function collapseSection(element,parentel) {
     requestAnimationFrame(function() {
       element.style.height = sectionHeight + 'px';
       element.style.transition = elementTransition;
+     
       
       // on the next frame (as soon as the previous style change has taken effect),
       // have the element transition to height: 0
-      requestAnimationFrame(function() {
+      requestAnimationFrame(function() {       
+        
         element.style.height = 0 + 'px';
+        //isFormEmpty(element);
+        element.addEventListener('transitionend', function() {
+          var parent =$(element).closest(".info-row");
+          var text = parent.find(".info-val").text().trim().length;
+          console.log(text);
+          if(text == 0){
+          parent.remove();
+          }
+        }, false);
+      
+         
+       
+        
+
+
       });
+      
+
+
+
     });
     
     // mark the section as "currently collapsed"
   
-    $(parentel).removeClass("open");
+    
     element.setAttribute('data-collapsed', 'true');
+    addClassToParent(element,parentel);
   }
+
+  
   
   function expandSection(element,parentel) {
       
@@ -50,8 +74,26 @@ function collapseSection(element,parentel) {
     
     // mark the section as "currently not collapsed"
    
-    $(parentel).addClass("open");
+    
     element.setAttribute('data-collapsed', 'false');
+    addClassToParent(element,parentel);
+    
+  }
+  function isFormEmpty(el){
+    
+    
+   $(el).closest(".info-row").remove();
+  }
+
+  function addClassToParent(el,parent){
+    if($(el).attr('data-collapsed')=='false'){
+    $(parent).addClass("open");
+    $(parent).closest(".info-row-con").addClass("form_open");
+    }else{
+    $(parent).removeClass("open");
+    $(parent).closest(".info-row-con").removeClass("form_open");
+    }
+
   }
   
   function openForms(clickEl,el,toggleDiv){         
@@ -91,10 +133,15 @@ $('.info-title').each(function(){
 });
 
 $('.info-icon.action1').each(function(){
-    var parent = $(this).closest(".info-row"); 
-    openForms(this,parent,'.info-form');
+  openCloseRow(this);
     
 });
+
+function openCloseRow(icon){
+    
+  var parent = $(icon).closest(".info-row"); 
+  openForms(icon,parent,'.info-form');  
+}
 
 function toggleClass(section,parent){
     var isCollapsed = $(section).attr('data-collapsed')=='true';    

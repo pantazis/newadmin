@@ -361,7 +361,7 @@ function checkForError(){
 
         $(errorsign).each(function(index){
             var el =errorsign[index];            
-            console.log(el.classList.value);
+            
             el.style.animation = 'noshake .82s';
             setTimeout(function(){
                 el.style.animation = 'shake .82s'; 
@@ -369,7 +369,7 @@ function checkForError(){
                 
           
             
-        console.log(el.classList.value);
+        
 
         })
         

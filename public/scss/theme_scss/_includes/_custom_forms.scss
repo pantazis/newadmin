@@ -224,3 +224,124 @@
     transform: translateX(0px);
   }
 }
+//----------------------------------check-box------------------------------------------------------------//
+$topc:4px;
+.knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.checkbox-parent
+{
+    position: relative;    
+    width: 138px;
+    height: 33px;    
+    overflow: hidden;
+    max-width: 120px;
+    
+}
+
+
+
+
+
+.checkbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+.layer
+{
+    width: 100%;    
+    transition: 0.3s ease all;
+    z-index: 1;
+    border:1px solid $light_grey;
+}
+
+
+.checkbox-parent .knobs:before, .checkbox-parent .knobs:after, .checkbox-parent .knobs span
+{
+   
+    position: absolute;
+    top: $topc;
+    width: calc( 50% - #{$topc * 2} );
+    height: calc( 100% - #{$topc * 2} );
+    font-size: 10px;
+    font-weight: bold;   
+    transition: 0.3s ease all;
+}
+
+.checkbox-parent .knobs:before
+{
+    content: '';
+    left: 4px;
+    background-color: $light_grey;
+}
+
+.checkbox-parent .knobs:after
+{
+    content: '';
+    right: 4px;
+    color: #4e4e4e;
+}
+
+.checkbox-parent .knobs span
+{
+    display: inline-block;
+    left: $topc;
+    color: #fff;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox-parent .knobs span:nth-of-type(2){
+    left: calc(50% + #{$topc});
+    color: #4e4e4e;
+
+
+}
+
+.checkbox-parent .checkbox:checked + .knobs span
+{ 
+  
+    color: #4e4e4e;
+}
+
+.checkbox-parent .checkbox:checked + .knobs span:nth-of-type(2){
+
+    color: #fff;
+}
+
+.checkbox-parent .checkbox:checked + .knobs:before
+{
+    left: calc(50% + #{$topc});
+    background-color: $green2;
+}
+
+.checkbox-parent .checkbox:checked + .knobs:after
+{
+    color: #fff;
+}
+
+.checkbox-parent .checkbox:checked ~ .layer
+{
+    border-color: $green2;
+}
+//----------------------------------check-box-end--------------------------------------------------------//

@@ -14124,6 +14124,87 @@ h2.page_title, .page_title.h2 {
   40%,
   60% {
     transform: translateX(0px); } }
+.knobs, .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.checkbox-parent {
+  position: relative;
+  width: 138px;
+  height: 33px;
+  overflow: hidden;
+  max-width: 120px; }
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3; }
+
+.knobs {
+  z-index: 2; }
+
+.layer {
+  width: 100%;
+  transition: 0.3s ease all;
+  z-index: 1;
+  border: 1px solid #cacad5; }
+
+.checkbox-parent .knobs:before, .checkbox-parent .knobs:after, .checkbox-parent .knobs span {
+  position: absolute;
+  top: 4px;
+  width: calc( 50% - 8px );
+  height: calc( 100% - 8px );
+  font-size: 10px;
+  font-weight: bold;
+  transition: 0.3s ease all; }
+
+.checkbox-parent .knobs:before {
+  content: '';
+  left: 4px;
+  background-color: #cacad5; }
+
+.checkbox-parent .knobs:after {
+  content: '';
+  right: 4px;
+  color: #4e4e4e; }
+
+.checkbox-parent .knobs span {
+  display: inline-block;
+  left: 4px;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.checkbox-parent .knobs span:nth-of-type(2) {
+  left: calc(50% + 4px);
+  color: #4e4e4e; }
+
+.checkbox-parent .checkbox:checked + .knobs span {
+  color: #4e4e4e; }
+
+.checkbox-parent .checkbox:checked + .knobs span:nth-of-type(2) {
+  color: #fff; }
+
+.checkbox-parent .checkbox:checked + .knobs:before {
+  left: calc(50% + 4px);
+  background-color: #18bf93; }
+
+.checkbox-parent .checkbox:checked + .knobs:after {
+  color: #fff; }
+
+.checkbox-parent .checkbox:checked ~ .layer {
+  border-color: #18bf93; }
+
 :root {
   --color-1: #427dad;
   --color-2: #000c75;

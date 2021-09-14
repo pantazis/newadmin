@@ -1,6 +1,6 @@
 // This is the important part!
 arrform=[];
-function collapseSection(element,parentel) {
+function collapseSection(element,parentel) {  
     
     // get the height of the element's inner content, regardless of its actual size
     var sectionHeight = element.scrollHeight;
@@ -26,7 +26,7 @@ function collapseSection(element,parentel) {
         element.addEventListener('transitionend', function() {
           var parent =$(element).closest(".info-row");
           var text = parent.find(".info-val").text().trim().length;
-          console.log(text);
+          
           if(text == 0){
           parent.remove();
           }
@@ -96,13 +96,17 @@ function collapseSection(element,parentel) {
 
   }
   
-  function openForms(clickEl,el,toggleDiv){         
+  function openForms(clickEl,el,toggleDiv){  
+      
+         
     $(clickEl)[0].addEventListener('click', function(e) { 
+   
     var parent = $(el);
-    var section = parent.find(toggleDiv)[0];    
+    var section = parent.find(toggleDiv)[0]; 
+
     arrform.push(el);
       
-    if(arrform.length == 1)  {
+    if(arrform.length == 1)  {       
         toggleClass(section,parent);
     }
     if(arrform.length > 1 ){

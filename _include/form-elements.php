@@ -136,5 +136,18 @@ function inputEl($inputprop,$hasButton) {
     return $template;
 }
 
+function checkbox($text1="",$text2="") {
+$template ='<div class="checkbox-parent">
+        <input type="checkbox" class="checkbox">
+        <div class="knobs">
+          <span>'.$text1.'</span>
+          <span>'.$text2.'</span>
+        </div>
+        <div class="layer"></div>
+      </div>';
+      return $template;
+
+}
+
 
 

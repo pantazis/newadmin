@@ -12016,6 +12016,14 @@ body.noanimαtion * {
   top: 0;
   width: 100px; }
 
+.mask {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  overflow: hidden; }
+
 .svgl1 {
   animation-name: svgl1;
   animation-duration: 1s; }

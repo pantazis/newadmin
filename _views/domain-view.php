@@ -6,9 +6,7 @@
       <?php include '_include/tabs.php'; ?>
       <section class="section-main ">
       <?php include '_include/domain-view/tab1.php'; ?>
-      <?php include '_include/domain-view/tab2.php'; ?>
-     
-       
+      <?php include '_include/domain-view/tab2.php'; ?>   
       </section>
 
 

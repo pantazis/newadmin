@@ -12541,6 +12541,7 @@ form.info-form {
   border: none; }
 
 .addAction {
+  cursor: pointer;
   color: #18bf93;
   font-weight: bold;
   display: flex;
@@ -12553,7 +12554,8 @@ form.info-form {
     font-size: 3rem; }
 
 a.button.green2 {
-  margin-left: auto; }
+  margin-left: auto;
+  cursor: pointer; }
 
 @font-face {
   font-family: "icomoon";

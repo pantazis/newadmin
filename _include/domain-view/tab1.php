@@ -70,6 +70,11 @@
               <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
             </div>
                 <button type="button" class="btn actions btn-outline-green2 border-strong"><img src="public/img/button-icons/id_protect.svg" class="button-icon2" alt="" ><span class="btext">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</span></button>
+                <div class="d-none d-xl-block">
+              <div class="info-title"><span class="light"></span>Υπηρεσία δωρεάν φιλοξενίας ιστοσελίδων</div>
+              
+            </div>
+                <button type="button" class="btn actions btn-outline-green2 border-strong"><img src="public/img/button-icons/id_protect.svg" class="button-icon2" alt="" ><span class="btext">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</span></button>
             </div>
               </div>
           </div>

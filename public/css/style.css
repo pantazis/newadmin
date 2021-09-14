@@ -10926,7 +10926,7 @@ nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
 
 .isNotActive #setActiveButton {
   background: #d83438; }
-.isNotActive .nav-text1 span.light {
+.isNotActive span.light {
   background: #18bf93;
   box-shadow: 0em 0em 0.375em 0.3125em rgba(24, 191, 147, 0.2); }
 .isNotActive .activeText {
@@ -10938,7 +10938,7 @@ nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
 
 .isActive #setActiveButton {
   background: #18bf93; }
-.isActive .nav-text1 span.light {
+.isActive span.light {
   background: #d83438;
   box-shadow: 0em 0em 0.375em 0.3125em rgba(216, 52, 56, 0.2); }
 .isActive .activeText {
@@ -11358,12 +11358,13 @@ nav.sidebar.navbar {
 
 .nav-text1 {
   justify-content: center; }
-  .nav-text1 span.light {
-    width: 0.625em;
-    height: 0.625em;
-    border-radius: 0.3125em;
-    margin-right: 0.625em;
-    transition: all 0.3s; }
+
+span.light {
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 0.3125em;
+  margin-right: 0.625em;
+  transition: all 0.3s; }
 
 .paddingEl {
   height: 4.68rem; }

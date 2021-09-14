@@ -275,13 +275,14 @@ nav.sidebar.navbar {
 }
 .nav-text1 {
     justify-content: center;
-    span.light {
-        width: 0.625em;
-        height: 0.625em;
-        border-radius: 0.3125em;
-        margin-right: 0.625em;
-        transition: all 0.3s;
-    }
+    
+}
+span.light {
+    width: 0.625em;
+    height: 0.625em;
+    border-radius: 0.3125em;
+    margin-right: 0.625em;
+    transition: all 0.3s;
 }
 .paddingEl {
     height: $navSidebarTop;

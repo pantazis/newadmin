@@ -23,12 +23,7 @@
                 </div>
 
             <?php } ?>
-            <script>
-                //diastaseis//
-                 wid = window.screen.width
-                   hei = window.screen.height
-                   document.write(wid,'x',hei);
-                </script>
+
         </div>
     </div>
     <div class="mobile-cont ">
@@ -43,9 +38,21 @@
         "lg" => "lg : 992px;",
         "xl" => "xl : 1200px;",
         "xxl" => "xxl: 1550px;"
-    ]; ?>
+    ]; ?>            <script>
+    //diastaseis//
+     wid =window.innerWidth;
+       hei = window.innerHeight;
+       document.write(wid,'x',hei);
+    </script>
     <?php foreach ($bp as $kay =>   $value) { ?>
         <div class="d-none d-<?= $kay; ?>-flex">
             <?= $value; ?>
         </div>
-    <?php } ?>
+
+    <?php }
+
+
+
+
+
+    ?>

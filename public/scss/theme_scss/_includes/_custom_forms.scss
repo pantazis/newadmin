@@ -237,12 +237,18 @@ $topc:4px;
 
 .checkbox-parent
 {
-    position: relative;    
-    width: 138px;
-    height: 33px;    
-    overflow: hidden;
-    max-width: 120px;
+  position: relative;
+  height: 33px;
+  overflow: hidden;
+  width: 120px;
+  min-width: 140px;
+  flex: 0 0 auto;
+  margin: auto;
     
+}
+label.checkbox_label1 {
+  min-width: 150px;  
+  padding: 10px 0;
 }
 
 

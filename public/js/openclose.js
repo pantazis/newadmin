@@ -1,6 +1,7 @@
 // This is the important part!
 arrform=[];
-function collapseSection(element,parentel) {  
+function collapseSection(element,parentel) { 
+   
     
     // get the height of the element's inner content, regardless of its actual size
     var sectionHeight = element.scrollHeight;
@@ -22,14 +23,11 @@ function collapseSection(element,parentel) {
       requestAnimationFrame(function() {       
         
         element.style.height = 0 + 'px';
-        //isFormEmpty(element);
+       
         element.addEventListener('transitionend', function() {
-          var parent =$(element).closest(".info-row");
-          var text = parent.find(".info-val").text().trim().length;
           
-          if(text == 0){
-          parent.remove();
-          }
+          isFormEmpty(element);
+          
         }, false);
       
          
@@ -79,10 +77,15 @@ function collapseSection(element,parentel) {
     addClassToParent(element,parentel);
     
   }
-  function isFormEmpty(el){
-    
-    
-   $(el).closest(".info-row").remove();
+  function isFormEmpty(el){  
+    countRow(); 
+    addActionObj;    
+    var parent =$(el).closest(".info-row");
+    var text = parent.find(".info-val").text().trim().length;    
+    if(text == 0 && addActionObj.numOfRow>1){
+    parent.remove();
+    }
+   hideShowElments();
   }
 
   function addClassToParent(el,parent){

@@ -18,3 +18,19 @@ $input = ["#0001 An Ubavicius", "#0005 Γιάννης Παπαδόπουλος",
     </div>
   </div>
 </div>
+
+
+<?php modal(
+  $id="noFreeHosting",
+  $title="aaaaaaaaaaa",
+  $mainText="skata1",
+  $btnColorClass="btn-red2",
+  $btnText="shoreos");
+
+  modal(
+    $id="FreeHosting",
+    $title="FreeHosting",
+    $mainText="skata2 <b>dfdfdfdfd",
+    $btnColorClass="btn-green2",
+    $btnText="shoreos2");
+  ?>

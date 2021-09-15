@@ -1,5 +1,6 @@
 (function () {
   var $ = window.$;
+  window.addActionObj = {};
   // noanιmαtion
   $(document).ready(function () {
     $("body").removeClass("noanimαtion");
@@ -218,7 +219,7 @@
       $(".tab-in[data-tab-id='" + tablink + "']").click();
     }
   }
-   var addActionObj = {}
+   
    
   $(".addAction").click(function(){
     makeElement(this);
@@ -272,6 +273,7 @@
 
   }
   function countRow(){
+    
     addActionObj.numOfRow =addActionObj.parent.find(".info-row:not(.hide):not(.last)").length;
   }
 
@@ -293,7 +295,16 @@
   
 
   }
-  
+
+
+
+  $(".checkbox").click(function(){    
+    if ($(this).prop('checked')) {
+      $('#FreeHosting').modal('show');  
+    } else {
+      $('#noFreeHosting').modal('show'); 
+    }
+  });
 
 
 

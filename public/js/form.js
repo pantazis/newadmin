@@ -63,11 +63,14 @@
         inputIsFocused=false;
     });
     $("form input").focusin(function(){
+        debugger;
         inputIsFocused=true;
 
     });
-
-    $("form input").keyup(function() {       
+     
+    $("form input").keyup(function() {
+        debugger; 
+             
         if(inputIsFocused){
             submit();
 

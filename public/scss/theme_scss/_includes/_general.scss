@@ -322,17 +322,13 @@ $section-padding: 1.875rem;
   z-index: 1;
 }
 
-.tab{
-  display: none; 
- 
- 
-  &.active{
-    display: block;    
-    
+.tab {
+  display: none;
+
+  &.active {
+    display: block;
   }
 }
-
-
 
 /*-----------------------------------tabs-end----------------------------------------*/
 .action-cont {
@@ -374,7 +370,7 @@ $section-padding: 1.875rem;
   @include themeColor("border-color", lighten($dark_blue, 65%), darken($ice, 65%));
   @include themeColor("color", $dark_blue, $ice);
   line-height: 1.5rem;
-  &.hide{
+  &.hide {
     display: none;
   }
   &.open {
@@ -419,28 +415,25 @@ $section-padding: 1.875rem;
 }
 .info_sub {
   max-width: 12.5rem;
-  .last &{
-    flex:0;
-    
+  .last & {
+    flex: 0;
   }
   .info-form-in & {
     max-width: 6.5rem;
   }
 }
 .info-val {
-  flex: 2; 
+  flex: 2;
   @media (max-width: $md) {
     display: block;
-  } 
+  }
   display: flex;
   > * {
     padding: 0 5px;
-
-}
-  .last &{
+  }
+  .last & {
     padding-right: 0;
-    text-align: center;    
-    
+    text-align: center;
   }
 }
 .date {
@@ -457,19 +450,21 @@ $section-padding: 1.875rem;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  &:first-of-type{
-    margin-left:auto;
-
+  
+  &:first-of-type {
+    margin-left: auto;
+  }
+  /*skata*/
+  &[style*="none"] ~ .info-icon{
+    margin-left: auto;
   }
   &.info-icon.action0 {
-    right: 44px;    
-    @include themeColor("color", $light_grey,$dark_blue);
-    &:hover{
-      @include themeColor("color", $red2,$red2);
+    right: 44px;
+    @include themeColor("color", $light_grey, $dark_blue);
+    &:hover {
+      @include themeColor("color", $red2, $red2);
     }
-}
-
-
+  }
 }
 .action-cont .btn {
   width: 100%;
@@ -605,7 +600,7 @@ $section-padding: 1.875rem;
 
 //----------------- forms open close---------------------------
 
-form.info-form {
+.info-form {
   transition: height 0.3s linear;
   height: auto;
   overflow: hidden;
@@ -662,23 +657,23 @@ form.info-form {
 .info-row.last {
   border: none;
 }
-.addAction{
+.addAction {
+  cursor: pointer;
   color: $green2;
   font-weight: bold;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    .form_open &{
-      display: none;
-    }
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .form_open & {
+    display: none;
+  }
 
-  .icon-fi-sr-plus-small{
+  .icon-fi-sr-plus-small {
     font-size: 3rem;
   }
 }
 a.button.green2 {
   margin-left: auto;
+  cursor: pointer;
 }
-
-

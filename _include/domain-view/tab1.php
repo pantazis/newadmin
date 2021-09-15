@@ -13,6 +13,13 @@
                 "order-5",
               ]
           ];
+
+          $formAction =[
+            "",
+            "",
+            "Nameservers",
+            "new_host_form"
+          ];
           ?>
               <div class="row">
               <?php foreach($domaininfo as $key => $info){?>
@@ -24,7 +31,8 @@
                           </div>
                 </div>
                 <div class="info-row-con" data-limit="5" data-collapsed="true" style="height: 0px;">
-                  <div class="info-row-in">
+                  <form action="<?=$formAction[$key]?>" class="info-row-in" accept-charset="UTF-8">
+                  <input name="_token" type="hidden" value="hJP56IA1aIfmzZHoqvxKDnh7c8LSv4NyhwLtPRV411">
                     <?php foreach($info['text'] as $key2 =>  $subtitle){?>                      
                       
           
@@ -47,14 +55,14 @@
                             </div>
                           </div>
                         </div>
-                          <form action="" class="info-form" data-collapsed="true" style="height: 0px;">
+                          <div  class="info-form" data-collapsed="true" style="height: 0px;">
                             <div class="info-form-in">
                                 <?php echo $formArr[$key][$key2] ?>
                             </div>
-                          </form>
+                          </div>
                       </div>
                     <?php }?>
-                    </div>
+                    </form>
                 </div>
                 </div>
               </div>
@@ -82,7 +90,7 @@
                       <div class="info-row-con"   data-collapsed="true" style="height: 0px;">
                       <div class="info-row">
                           <div class="info-text-in align-items-center ">
-                              <span>Υπηρεσία δωρεάν φιλοξενίας ιστοσελίδων</span>           
+                              <label class="checkbox_label1" >Υπηρεσία δωρεάν φιλοξενίας ιστοσελίδων</label>           
                               <?= checkbox("off","on") ?>
                           </div>
                         </div>

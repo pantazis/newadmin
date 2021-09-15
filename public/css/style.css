@@ -12341,8 +12341,11 @@ body.noanimαtion * {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  /*skata*/ }
   .info-icon:first-of-type {
+    margin-left: auto; }
+  .info-icon[style*="none"] ~ .info-icon {
     margin-left: auto; }
   .info-icon.info-icon.action0 {
     right: 44px;
@@ -12489,7 +12492,7 @@ body.noanimαtion * {
   .dark .gradientbg {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.418) 85%); }
 
-form.info-form {
+.info-form {
   transition: height 0.3s linear;
   height: auto;
   overflow: hidden; }
@@ -12541,6 +12544,7 @@ form.info-form {
   border: none; }
 
 .addAction {
+  cursor: pointer;
   color: #18bf93;
   font-weight: bold;
   display: flex;
@@ -12553,7 +12557,8 @@ form.info-form {
     font-size: 3rem; }
 
 a.button.green2 {
-  margin-left: auto; }
+  margin-left: auto;
+  cursor: pointer; }
 
 @font-face {
   font-family: "icomoon";
@@ -14133,10 +14138,16 @@ h2.page_title, .page_title.h2 {
 
 .checkbox-parent {
   position: relative;
-  width: 138px;
   height: 33px;
   overflow: hidden;
-  max-width: 120px; }
+  width: 120px;
+  min-width: 140px;
+  flex: 0 0 auto;
+  margin: auto; }
+
+label.checkbox_label1 {
+  min-width: 150px;
+  padding: 10px 0; }
 
 .checkbox {
   position: relative;

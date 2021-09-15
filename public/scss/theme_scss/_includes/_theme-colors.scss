@@ -203,7 +203,7 @@ nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
   #setActiveButton {
     background: $green2;
   }
-   span.light {
+  span.light {
     background: $red2;
     box-shadow: 0em 0em 0.375em 0.3125em rgba(216, 52, 56, 0.2);
   }
@@ -299,6 +299,7 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
   &.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 {
     color: $white;
     background: $bluedarkbl;
+    border-right: 0.125rem solid $ice;
   }
   &:not(.closeNav) nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 a,
   &.closeNav.hover nav.sidebar.navbar li.nav-list-item2.nav-list-item2.opennav1 a {

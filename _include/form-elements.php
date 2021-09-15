@@ -12,18 +12,20 @@ $domain=[
     "data-validate"=>"",
     "label"=>"domain",
     "value"=>".antoineeurtest.gr",
-    "disabled"=>"disabled"
+    "disabled"=>"disabled",
+    "validate-length"=>""
 
  ];
- $dns=[
-    "autocomplete"=>"dns",
+ $host=[
+    "autocomplete"=>"host",
     "type"=>"text",
     "placeholder"=>"",
     "data-last-val"=>"",
-    "data-validate"=>"required name_servers",
+    "data-validate"=>"required host",
     "label"=>"Εξυπηρετητής",
     "value"=>"",
-    "disabled"=>""
+    "disabled"=>"",
+    "validate-length"=>""
 
  ]; 
  $ip=[
@@ -31,11 +33,11 @@ $domain=[
     "type"=>"text",
     "placeholder"=>"",
     "data-last-val"=>"",
-    "data-validate"=>"",
+    "data-validate"=>"ip required",
     "label"=>"Διεύθυνση IP",
     "value"=>"",
-    "disabled"=>""
-
+    "disabled"=>"",
+    "validate-length"=>""
  ]; 
 
  $password=[
@@ -46,7 +48,8 @@ $domain=[
     "data-validate"=>"",
     "label"=>"Διεύθυνση IP",
     "value"=>"",
-    "disabled"=>""
+    "disabled"=>"",
+    "validate-length"=>""
 
  ]; 
    
@@ -109,6 +112,7 @@ return $template;
 function inputEl($inputprop,$hasButton) {
     $disabled= $inputprop["disabled"]!=""?'disabled="'.$inputprop["disabled"].'"':"";
     $template = '<div class="material-text-field__container ">
+    <div class="material-text-field">  
     <input id="input-password"
 
       autocomplete="'.$inputprop["autocomplete"].'"
@@ -116,7 +120,7 @@ function inputEl($inputprop,$hasButton) {
       placeholder=" "
       data-last-val="'.$inputprop["data-last-val"].'"
       data-validate="'.$inputprop["data-validate"].'"
-      data-validate-length="min1 max5";
+      data-validate-length="'.$inputprop["validate-length"].'";
       value="'.$inputprop["value"].'"'.$disabled.'
       
       
@@ -129,9 +133,11 @@ function inputEl($inputprop,$hasButton) {
             <img class="eye" src="img/not_visible.svg" alt="">   
         </i>
     <div id="activation-indicator" class="material-text-field__activation-indicator"></div>
-    <div id="helper-text" class="material-text-field__helper-text">
-       
-    </div>
+   
+   
+</div>
+<div id="helper-text" class="material-text-field__helper-text">      
+</div>
 </div>';
     $template.=($hasButton?buttonsEl():"");
     return $template;

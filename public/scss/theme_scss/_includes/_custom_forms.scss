@@ -24,11 +24,15 @@
 }
 
 .material-text-field__container {
-  position: relative;
+ 
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   animation: none;
+}
+.material-text-field{
+  position: relative;
+
 }
 
 .material-text-field__input-text {
@@ -50,13 +54,12 @@
   left: 10px;
   padding: 0 4px;
   font-size: 12px;
-  letter-spacing: 0.4px;
-  color: $green2;
+  letter-spacing: 0.4px; 
   transition: all 150ms linear;
 }
 
 .material-text-field__input-text:focus ~ .material-text-field__activation-indicator {
-  border: 2px solid $green2;
+  border: 2px solid ;
 }
 
 .material-text-field__input-text:focus ~ .js__activation-indicator--warning {
@@ -107,14 +110,12 @@
 }
 
 .material-text-field__helper-text {
-  position: absolute;
-  top: 34px;
-  left: 12px;
-  vertical-align: bottom;
+
   line-height: 12px;
   font-size: 12px;
   letter-spacing: 0.4px;
   color: rgba(0, 0, 0, 0.6);
+  padding:10px 0;
 }
 
 .reset-input {
@@ -156,6 +157,7 @@
   left:$form-select-padding-x;    
   font-size: inherit;
   transition: all 150ms linear;
+  pointer-events: none;
 }
 
 .js__label-text--warning {

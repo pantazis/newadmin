@@ -406,7 +406,7 @@ $section-padding: 1.875rem;
 .info-form-in .info-text-in {
   padding-top: 0;
   padding-bottom: 1rem;
-  align-items: center;
+  align-items: flex-start;
   > *:first-child {
     @media (max-width: $md) {
       flex-basis: 100%;

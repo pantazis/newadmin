@@ -9,6 +9,8 @@
         nameservers:/^(([a-zA-Z]{1})|([a-zA-Z]{1}[a-zA-Z]{1})|([a-zA-Z]{1}[0-9]{1})|([0-9]{1}[a-zA-Z]{1})|([a-zA-Z0-9][a-zA-Z0-9-_]{1,61}[a-zA-Z0-9]))\.([a-zA-Z]{2,6}|[a-zA-Z0-9-]{2,30}\.[a-zA-Z]{2,3})$/i,
         telephone:/^[0-9]{10}(?!.)/i,
         postcode:/^[0-9]{5}(?!.)/i,
+        host:/^(([a-zA-Z]|[a-zA-Z][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z]|[A-Za-z][A-Za-z0-9\-]*[A-Za-z0-9])$/i,
+        ip:/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/i
         
     }
    
@@ -22,7 +24,10 @@
         password: `<div class="password_strength_bar"><div class="bar_l"></div><div class="pass_power"></div></div>`,
         min:(charactercount) => {return `Ελάχιστο μήκος ${charactercount} χαρακτήρων`},
         max:(charactercount)=> {return `Mέγιστο μήκος ${charactercount} χαρακτήρων`},
-        required :"input is required",       
+        required :"Παρακαλώ συμπλήρωσε όλα τα απαιτούμενα πεδία",
+        host:"Ο nameserver που θέλεις να αποθηκεύσεις περιέχει μη αποδεκτούς χαρακτήρες.",
+        ip:"Πρέπει να δηλώσεις μια έγκυρη IP διεύθυνση."
+       
 
     }
 
@@ -98,8 +103,8 @@ Array.from(formEL.elements).forEach((input) => {
     $(form).each(function(){
         inputsObj = {};       
         inputsObj.element=this;
-        inputsObj.valueEl=$(this).val();
-        inputsObj.lengthEL=$(this).val().length;        
+        inputsObj.valueEl=$(this).val();        
+        inputsObj.lengthEL=$(this).val().length;            
         getattrforvalidation(this);
         inputArr.push(inputsObj);
         
@@ -134,19 +139,21 @@ Array.from(formEL.elements).forEach((input) => {
    //validate different properties
 
   function  validateProperties(){
-    resetForm();
+    resetForm(); 
+
+    
     
       
     $(inputArr).each(function(){   
             
-       var input =this;
+       var input =this;      
              
        if(input["data-validate-length"]!=undefined){
-        debugger;
+        
             validateLength(input);
        }
        
-       if(input["data-validate"]!=undefined){        
+       if(input["data-validate"]!=undefined){                            
             validateType(input);
        }
        
@@ -176,6 +183,12 @@ function validateType(el){
                 checkvalidation(singleprop,el.valueEl,el);
             break;
             case "postcode":
+                checkvalidation(singleprop,el.valueEl,el);
+            break;
+            case "host":
+                checkvalidation(singleprop,el.valueEl,el);
+            break;
+            case "ip":
                 checkvalidation(singleprop,el.valueEl,el);
             break;
             case "password":
@@ -270,6 +283,7 @@ function checkvalidation(attr,inputValue,element){
 
 
     function validateLength(inputEl){
+       
         var elValue = inputEl["data-validate-length"].split(" ");
         var len =  parseInt(inputEl["lengthEL"]);
         var curentInput = inputEl.element;

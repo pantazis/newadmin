@@ -237,7 +237,7 @@ $formArr = [
 
       
     ],
-    [formPersonal($dns,$domain,$ip),formPersonal($dns,$domain,$ip), formPersonal($dns,$domain,$ip)],
+    [formPersonal($host,$domain,$ip),formPersonal($host,$domain,$ip), formPersonal($host,$domain,$ip)],
     [
         select2($nservers, "pant"),
         selectEl(["test", "test", "test"], "test"),

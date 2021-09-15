@@ -59,7 +59,8 @@
                         </div>
                           <div  class="info-form" data-collapsed="true" style="height: 0px;">
                             <div class="info-form-in">
-                                <?php echo $formArr[$key][$key2] ?>
+                            <?php  if($key > 0 && $key2!=count($info['text'])-1){;
+                                echo $formArr[$key][$key2];} ?>
                             </div>
                           </div>
                       </div>

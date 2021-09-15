@@ -286,6 +286,7 @@
 
 
   function makeElement(el){
+    debugger;
    addActionObj.parent = $(el).closest(".info-row-con");
    addActionObj.lastEl = addActionObj.parent.find(".info-row.last");
    addActionObj.cloneEL = addActionObj.parent.find(".info-row.hide").clone().removeClass("hide");
@@ -293,6 +294,7 @@
    addActionObj.numOfRow =addActionObj.parent.find(".info-row:not(.hide):not(.last)").length;
    addActionObj.length = addActionObj.cloneEL.length;
    addActionObj.limit = parseInt(addActionObj.parent.attr("data-limit"));
+   addActionObj.countRow = countRow();
 
 
   }

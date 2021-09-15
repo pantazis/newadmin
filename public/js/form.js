@@ -322,16 +322,14 @@ function checkvalidation(attr,inputValue,element){
 
 
 function input_validation_error(messege,el,inputEl){
- 
     
-   
     if(inputEl!=0){    
     var inputConatainer =$(el).closest(".material-text-field__container");
     var textbox = inputConatainer.find("#helper-text");  
     var border =$(inputConatainer).find(".material-text-field__activation-indicator")
     var label = $(inputConatainer).find("#label-text");
     
-    textbox.html(messege);
+    textbox.html("<div class='messege'>"+messege+"</div>");
     textbox.addClass(textWarning);
     border.addClass(borderWarning); 
     label.addClass(labelWarning);
@@ -358,8 +356,9 @@ resetForm=function (inputel){
     }
     
 }
-function checkRequired(){  
-    var forminput = $(".material-text-field__input-text");
+function checkRequired(form){ 
+    
+    var forminput = form.find(".material-text-field__input-text");
 
     $(forminput).each(function(){
         var validate = $(this).attr("data-validate");
@@ -393,14 +392,14 @@ function checkRequired(){
 }
 
 function checkForError(){
+   
     
     var errorsign = $(".js__activation-indicator--warning");
     if(errorsign.length!= 0){
-        console.log(2);
-        errorflag = true;
+       errorflag = true;
 
-        $(errorsign).each(function(index){
-            var el =errorsign[index];            
+        $(errorsign).each(function(index){            
+            var el =errorsign[index].closest(".material-text-field__container" );            
             
             el.style.animation = 'noshake .82s';
             setTimeout(function(){
@@ -424,9 +423,10 @@ function checkForError(){
     e.preventDefault(); 
     $(".shake").removeClass("shake"); 
 
-    errorflag = false;    
+    errorflag = false; 
+    var formrow =$(this).closest(".info-form");   
     checkForError();
-    checkRequired();
+    checkRequired(formrow);
 
     if(errorflag){
         return;

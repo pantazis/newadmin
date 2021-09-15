@@ -38,12 +38,23 @@
         "lg" => "lg : 992px;",
         "xl" => "xl : 1200px;",
         "xxl" => "xxl: 1550px;"
-    ]; ?>            <script>
-    //diastaseis//
-     wid =window.innerWidth;
-       hei = window.innerHeight;
-       document.write(wid,'x',hei);
-    </script>
+    ]; ?>
+
+<!--diastaseis -->
+<script>
+function screenSize() {
+  var w = window.outerWidth;
+  var h = window.outerHeight;
+  var txt = "Window size: width=" + w + ", height=" + h;
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+
+
+<p id="demo"></p>
+<!--diastaseis -->
     <?php foreach ($bp as $kay =>   $value) { ?>
         <div class="d-none d-<?= $kay; ?>-flex">
             <?= $value; ?>

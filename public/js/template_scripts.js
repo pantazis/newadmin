@@ -5,8 +5,7 @@
   $(document).ready(function () {
     $("body").removeClass("noanimαtion");
     activeTab();
-    console.log(window.screen.width);
-    console.log(window.screen.height);
+    screenSize()
   });
 
   var rtime;

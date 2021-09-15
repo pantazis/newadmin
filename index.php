@@ -7,7 +7,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
 <head>
   <?php include './_include/head.php' ?>
 </head>
-<body class="isNotActive noanimαtion">
+<body class="isNotActive noanimαtion" onresize="screenSize()">
   <?php include "./_include/loader.php" ?>
   <?php include "./_include/nav.php" ?>
   <?php include "./_include/mobile-nav.php" ?>
@@ -26,7 +26,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   <script src="./public/js/select2.js"></script>
   <script src="./public/js/template_scripts.js?<?= rand(0, 1000) ?>"></script>
   <script src="./public/js/form.js?<?= rand(0, 1000) ?>"></script>
- 
+
   <script>
     var myModal = document.getElementById('disableAccount');
 

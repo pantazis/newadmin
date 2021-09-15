@@ -91,7 +91,7 @@ html {
     bottom: 0;
     left: 0;
     width: 100%;
-    @include themeColor("background-color",$white,$black_blue);
+    @include themeColor("background-color", $white, $black_blue);
     .nav-list.user-icons {
         width: 100%;
         .nav-icon-3 {
@@ -169,7 +169,7 @@ main,
 }
 img.logo-img {
     width: 3rem;
-    transition:width .3s;
+    transition: width 0.3s;
 }
 .logo-box {
     height: $navSidebarTop;
@@ -275,7 +275,6 @@ nav.sidebar.navbar {
 }
 .nav-text1 {
     justify-content: center;
-    
 }
 span.light {
     width: 0.625em;
@@ -293,9 +292,8 @@ span.light {
     height: $navSidebarTop;
     padding: 0.781rem 0;
     .nav-icon-3 {
-        &:first-of-type{
+        &:first-of-type {
             border-left: 0rem;
-
         }
         height: auto;
         width: 4.9375rem;
@@ -723,25 +721,25 @@ nav.sidebar.top .custom-popup.ss {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        max-width: 300px;
+        max-width: 18.75rem;
         justify-content: center;
         align-items: center;
-        padding: 11px;
+        padding: 0.6875rem;
         position: relative;
         .arrow-div {
             position: absolute;
-            top: -9px;
+            top: -0.5625rem;
         }
     }
 }
 .bubble {
-    padding: 5px;
+    padding: 0.3125rem;
 }
 span.b_in {
     font-size: 0.8125rem;
-    border: 1px solid;
-    padding: 5px 5px;
-    border-radius: 16px;
+    border: 0.0625rem solid;
+    padding: 0.3125rem 0.3125rem;
+    border-radius: 1rem;
     border: 0.025rem solid $light_grey;
     background-color: $ice;
     -webkit-box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
@@ -890,7 +888,6 @@ span.b_in {
 }*/
 }
 @media screen and (max-width: $menuMobileMax) {
-
     html {
         font-size: 3.5vw;
     }

@@ -4,7 +4,7 @@
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -17,22 +17,18 @@
 }
 
 .component__title {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 0.1px;
-  margin: 0 0 25px 0;
+  letter-spacing: 0.0063rem;
+  margin: 0 0 1.5625rem 0;
 }
 
 .material-text-field__container {
- 
+  position: relative;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   animation: none;
-}
-.material-text-field{
-  position: relative;
-
 }
 
 .material-text-field__input-text {
@@ -51,19 +47,20 @@
 .material-text-field__input-text:focus ~ .material-text-field__label-text {
   z-index: 1;
   top: 0;
-  left: 10px;
-  padding: 0 4px;
-  font-size: 12px;
-  letter-spacing: 0.4px; 
+  left: 0.625rem;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
+  color: $green2;
   transition: all 150ms linear;
 }
 
 .material-text-field__input-text:focus ~ .material-text-field__activation-indicator {
-  border: 2px solid ;
+  border: 0.125rem solid $green2;
 }
 
 .material-text-field__input-text:focus ~ .js__activation-indicator--warning {
-  border: 2px solid $red2;
+  border: 0.125rem solid $red2;
 }
 
 .material-text-field__input-text:focus ~ .js__label-text--warning {
@@ -83,9 +80,9 @@
 .material-text-field__trailing-icon {
   position: absolute;
   top: 50%;
-  right: 8px;
+  right: 0.5rem;
   transform: translateY(-50%);
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
@@ -102,33 +99,31 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid #ced4da;
-  border-radius: 2px;
+  border: 0.0625rem solid #ced4da;
+  border-radius: 0.125rem;
   box-sizing: border-box;
   pointer-events: none;
   @include border-radius($form-select-border-radius, 0);
 }
 
 .material-text-field__helper-text {
-
-  line-height: 16px;
-  font-size: 12px;
-  letter-spacing: 0.4px;
+  position: absolute;
+  top: 2.125rem;
+  left: 0.75rem;
+  vertical-align: bottom;
+  line-height: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
   color: rgba(0, 0, 0, 0.6);
-  
 }
-.messege {
-  padding-top: 0.4rem;
-}
-
 
 .reset-input {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
-  padding: 8px 16px;
-  font-size: 12px;
-  letter-spacing: 1.25px;
+  bottom: 0.3125rem;
+  right: 0.3125rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.0781rem;
   text-transform: uppercase;
 }
 
@@ -147,28 +142,27 @@
 .material-text-field__input-text:not(:placeholder-shown) ~ .material-text-field__label-text {
   z-index: 2;
   top: 0rem;
-  padding: 0 4px;
-  font-size: 12px;
-  letter-spacing: 0.4px;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
   transition: all 150ms linear;
   @include themeColor("background-color", $ice, $bluedarkbl);
 }
-.material-text-field__input-text ~.material-text-field__label-text {
+.material-text-field__input-text ~ .material-text-field__label-text {
   z-index: 1;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); 
-  left:$form-select-padding-x;    
+  transform: translateY(-50%);
+  left: $form-select-padding-x;
   font-size: inherit;
   transition: all 150ms linear;
-  pointer-events: none;
 }
 
 .js__label-text--warning {
   color: $red2;
 }
 .js__activation-indicator--warning {
-  border: 1px solid $red2;
+  border: 0.0625rem solid $red2;
 }
 .js__helper-text--warning {
   color: $red2;
@@ -231,129 +225,108 @@
   }
 }
 //----------------------------------check-box------------------------------------------------------------//
-$topc:4px;
-.knobs, .layer
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+$topc: 0.25rem;
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.checkbox-parent
-{
+.checkbox-parent {
   position: relative;
-  height: 33px;
+  height: 2.0625rem;
   overflow: hidden;
-  width: 120px;
-  min-width: 140px;
+  width: 7.5rem;
+  min-width: 8.75rem;
   flex: 0 0 auto;
   margin: auto;
-    
 }
 label.checkbox_label1 {
-  min-width: 150px;  
-  padding: 10px 0;
+  min-width: 9.375rem;
+  padding: 0.625rem 0;
 }
 
-
-
-
-
-.checkbox
-{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 3;
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
 }
 
-.knobs
-{
-    z-index: 2;
+.knobs {
+  z-index: 2;
 }
 
-.layer
-{
-    width: 100%;    
-    transition: 0.3s ease all;
-    z-index: 1;
-    border:1px solid $light_grey;
+.layer {
+  width: 100%;
+  transition: 0.3s ease all;
+  z-index: 1;
+  border: 0.0625rem solid $light_grey;
 }
 
-
-.checkbox-parent .knobs:before, .checkbox-parent .knobs:after, .checkbox-parent .knobs span
-{
-   
-    position: absolute;
-    top: $topc;
-    width: calc( 50% - #{$topc * 2} );
-    height: calc( 100% - #{$topc * 2} );
-    font-size: 10px;
-    font-weight: bold;   
-    transition: 0.3s ease all;
+.checkbox-parent .knobs:before,
+.checkbox-parent .knobs:after,
+.checkbox-parent .knobs span {
+  position: absolute;
+  top: $topc;
+  width: calc(50% - #{$topc * 2});
+  height: calc(100% - #{$topc * 2});
+  font-size: 0.625rem;
+  font-weight: bold;
+  transition: 0.3s ease all;
 }
 
-.checkbox-parent .knobs:before
-{
-    content: '';
-    left: 4px;
-    background-color: $light_grey;
+.checkbox-parent .knobs:before {
+  content: "";
+  left: 0.25rem;
+  background-color: $light_grey;
 }
 
-.checkbox-parent .knobs:after
-{
-    content: '';
-    right: 4px;
-    color: #4e4e4e;
+.checkbox-parent .knobs:after {
+  content: "";
+  right: 0.25rem;
+  color: #4e4e4e;
 }
 
-.checkbox-parent .knobs span
-{
-    display: inline-block;
-    left: $topc;
-    color: #fff;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.checkbox-parent .knobs span {
+  display: inline-block;
+  left: $topc;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.checkbox-parent .knobs span:nth-of-type(2){
-    left: calc(50% + #{$topc});
-    color: #4e4e4e;
-
-
+.checkbox-parent .knobs span:nth-of-type(2) {
+  left: calc(50% + #{$topc});
+  color: #4e4e4e;
 }
 
-.checkbox-parent .checkbox:checked + .knobs span
-{ 
-  
-    color: #4e4e4e;
+.checkbox-parent .checkbox:checked + .knobs span {
+  color: #4e4e4e;
 }
 
-.checkbox-parent .checkbox:checked + .knobs span:nth-of-type(2){
-
-    color: #fff;
+.checkbox-parent .checkbox:checked + .knobs span:nth-of-type(2) {
+  color: #fff;
 }
 
-.checkbox-parent .checkbox:checked + .knobs:before
-{
-    left: calc(50% + #{$topc});
-    background-color: $green2;
+.checkbox-parent .checkbox:checked + .knobs:before {
+  left: calc(50% + #{$topc});
+  background-color: $green2;
 }
 
-.checkbox-parent .checkbox:checked + .knobs:after
-{
-    color: #fff;
+.checkbox-parent .checkbox:checked + .knobs:after {
+  color: #fff;
 }
 
-.checkbox-parent .checkbox:checked ~ .layer
-{
-    border-color: $green2;
+.checkbox-parent .checkbox:checked ~ .layer {
+  border-color: $green2;
 }
 //----------------------------------check-box-end--------------------------------------------------------//

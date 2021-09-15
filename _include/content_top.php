@@ -21,7 +21,9 @@
                     <div class="h4 frame_title"><?= $value ?></div>
                     <div class="h2 frame_value"><?= $labelval[$key] ?></div>
                 </div>
+
             <?php } ?>
+
         </div>
     </div>
     <div class="mobile-cont ">
@@ -37,8 +39,31 @@
         "xl" => "xl : 1200px;",
         "xxl" => "xxl: 1550px;"
     ]; ?>
+
+<!--diastaseis -->
+<script>
+function screenSize() {
+  var w = window.outerWidth;
+  var h = window.outerHeight;
+  var txt = "Window size: width=" + w + ", height=" + h;
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+
+
+<p id="demo"></p>
+<!--diastaseis -->
     <?php foreach ($bp as $kay =>   $value) { ?>
         <div class="d-none d-<?= $kay; ?>-flex">
             <?= $value; ?>
         </div>
-    <?php } ?>
+
+    <?php }
+
+
+
+
+
+    ?>

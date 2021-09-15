@@ -58,26 +58,44 @@
     })
 
 
+  $("form[action]").each(function(){
+      
+      var form = this;
+      var inputarr = $(form)[0];
+      const formEL = inputarr;
 
-  $("form input").focusout(function(){
+Array.from(formEL.elements).forEach((input) => {
+    inputkeyactions(input,form.elements);
+});
+
+  });
+
+  function inputkeyactions(el,form){
+  $(el).focusout(function(){
         inputIsFocused=false;
     });
-    $("form input").focusin(function(){
-        debugger;
+
+    $(el).focusin(function(){
+            
         inputIsFocused=true;
 
     });
-     
-    $("form input").keyup(function() {
-        debugger; 
+
+    $(el).keyup(function() {
+        
              
-        if(inputIsFocused){
-            submit();
+        if(inputIsFocused){            
+            submit(form);
 
         }  
 });
-    function submit(){        
-    $("form input").each(function(){
+  }
+
+
+
+    function submit(form){
+         
+    $(form).each(function(){
         inputsObj = {};       
         inputsObj.element=this;
         inputsObj.valueEl=$(this).val();
@@ -88,6 +106,8 @@
        
         
     });
+    
+
     validateProperties();
     inputArr=[];
 }
@@ -115,11 +135,14 @@
 
   function  validateProperties(){
     resetForm();
+    
       
     $(inputArr).each(function(){   
             
-       var input =this;       
+       var input =this;
+             
        if(input["data-validate-length"]!=undefined){
+        debugger;
             validateLength(input);
        }
        

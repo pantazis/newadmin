@@ -1,4 +1,4 @@
-<div class="container tab tab0 active">
+<div class="container tab tab1 active">
           <?php $arr =[
             "desktop"=>[
                 "order-xl-0",
@@ -30,8 +30,10 @@
                              <span class="icon-fi-sr-angle-down" class="button-icon" alt=""></span>
                           </div>
                 </div>
+                
                 <div class="info-row-con" data-limit="5" data-collapsed="true" style="height: 0px;">
-                  <form action="<?=$formAction[$key]?>" class="info-row-in" accept-charset="UTF-8">
+                
+                  <form <?php if($formAction[$key]!=""){ ?>action="<?=$formAction[$key]?>"<?php } ?> class="info-row-in" accept-charset="UTF-8">
                   <input name="_token" type="hidden" value="hJP56IA1aIfmzZHoqvxKDnh7c8LSv4NyhwLtPRV411">
                     <?php foreach($info['text'] as $key2 =>  $subtitle){?>                      
                       

@@ -116,6 +116,7 @@ function inputEl($inputprop,$hasButton) {
       placeholder=" "
       data-last-val="'.$inputprop["data-last-val"].'"
       data-validate="'.$inputprop["data-validate"].'"
+      data-validate-length="min1 max5";
       value="'.$inputprop["value"].'"'.$disabled.'
       
       

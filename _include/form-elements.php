@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-function buttonsEl(){ 
+function buttonsEl(){
     return   '<div class="button-padding"><a class="button green2 submit">Aποθήκευση</a></div>';
 }
 
@@ -25,7 +25,7 @@ $domain=[
     "value"=>"",
     "disabled"=>""
 
- ]; 
+ ];
  $ip=[
     "autocomplete"=>"ip",
     "type"=>"text",
@@ -36,7 +36,7 @@ $domain=[
     "value"=>"",
     "disabled"=>""
 
- ]; 
+ ];
 
  $password=[
     "autocomplete"=>"ip",
@@ -48,8 +48,8 @@ $domain=[
     "value"=>"",
     "disabled"=>""
 
- ]; 
-   
+ ];
+
 
 
 
@@ -61,8 +61,8 @@ function formPersonal($inputprop1,$inputprop2,$inputprop3) {
     $template .='</div>';
     $template .='</div><div class="info-text-in">';
     $template .=inputEl($inputprop3,true);
-    $template .='</div>';                          
-    
+    $template .='</div>';
+
     return $template;
     };
 
@@ -74,9 +74,9 @@ $template = '<div class="info-text-in">';
 $template.='<select class="form-select" aria-label="">';
 foreach($arr as $key => $val){
  $value=$key+1;
- $template.='<option '.($value==1?"selected":"").' value="'.$value.'">'.$val.'</option>'; 
- 
-}; 
+ $template.='<option '.($value==1?"selected":"").' value="'.$value.'">'.$val.'</option>';
+
+};
 $template.='</select>'.buttonsEl().'</div>';
 
 
@@ -85,9 +85,9 @@ return $template;
 };
 
 
-function select2($optionArr,$placeholder,$id = ""){    
-    $template = '<select class="form-select select2"    data-placeholder="'.$placeholder.'">';                                                   
-    foreach($optionArr as $group){    
+function select2($optionArr,$placeholder,$id = ""){
+    $template = '<select class="form-select select2"    data-placeholder="'.$placeholder.'">';
+    foreach($optionArr as $group){
     $template .='<optgroup label="'.$group['group'].'">';
     foreach($group["option"] as $option){
         $template .='<option value="'.$option["value"].'">'.$option["name"].'</option>';
@@ -100,9 +100,9 @@ return $template;
 }
 
 
-                    
 
- 
+
+
  $formPersonalArr=[inputEl($password,false),inputEl($password,false), inputEl($password,false)];
 
 
@@ -118,19 +118,19 @@ function inputEl($inputprop,$hasButton) {
       data-validate="'.$inputprop["data-validate"].'"
       data-validate-length="min1 max5";
       value="'.$inputprop["value"].'"'.$disabled.'
-      
-      
-      
+
+
+
       class="material-text-field__input-text" >
     <div id="label-text" class="material-text-field__label-text">
     '.$inputprop["label"].'
     </div>
         <i id="trailing-icon" class="material-text-field__trailing-icon">
-            <img class="eye" src="img/not_visible.svg" alt="">   
+            <img class="eye" src="img/not_visible.svg" alt="">
         </i>
     <div id="activation-indicator" class="material-text-field__activation-indicator"></div>
     <div id="helper-text" class="material-text-field__helper-text">
-       
+
     </div>
 </div>';
     $template.=($hasButton?buttonsEl():"");
@@ -164,14 +164,11 @@ function modal($id="",$title="",$mainText="",$btnColorClass="",$btnText="") {
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
-          <button type="button"  class="btn '.$btnColorClass.'"><span class="activeText">Απενεργοποίηση</span><span class="notActiveText">Eνεργοποίηση</span></button>
+          <button type="button"  class="btn '.$btnColorClass.'">'.$btnText.'</button>
         </div>
       </div>
     </div>
   </div>';
   echo $template;
-    
+
     }
-
-
-

@@ -20,17 +20,57 @@ $input = ["#0001 An Ubavicius", "#0005 Γιάννης Παπαδόπουλος",
 </div>
 
 
+
+
+
+<?php
+$domainList=[
+"vimeo.com",
+"businesswire.com",
+"adobe.com",
+"tamu.edu",
+"blogs.com",
+"baidu.com",
+"mediafire.com",
+"webeden.co.uk",
+"ustream.tv",
+"bloglines.com",
+"un.org",
+"istockphoto.com",
+"timesonline.co.uk",
+"who.int",
+"bloglines.com",
+"purevolume.com",
+"w3.org",
+"storify.com",
+"npr.org",
+"yellowpages.com",
+"dot.gov",
+"linkedin.com",
+"fc2.com",
+"reddit.com",
+"wikispaces.com",
+"sbwire.com",
+"php.net",
+"utexas.edu",
+"google.com.hk",
+"oakley.com",
+"netvibes.com",
+]
+?>
+
+
 <?php modal(
   $id="noFreeHosting",
-  $title="aaaaaaaaaaa",
-  $mainText="skata1",
+  $title="Απενεργοποίηση Δωρεάν Φιλοξενίας",
+  $mainText="Πρόκειται να απενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0,count($domainList) )]."</b>",
   $btnColorClass="btn-red2",
-  $btnText="shoreos");
+  $btnText="Απενεργοποίηση");
 
   modal(
     $id="FreeHosting",
-    $title="FreeHosting",
-    $mainText="skata2 <b>dfdfdfdfd",
+    $title="Ενεργοποίηση Δωρεάν Φιλοξενίας",
+    $mainText="Πρόκειται να ενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0,count($domainList) )]."</b>",
     $btnColorClass="btn-green2",
-    $btnText="shoreos2");
+    $btnText="Ενεργοποίηση");
   ?>

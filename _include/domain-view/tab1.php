@@ -33,14 +33,14 @@
                 <div class="info-row-con" data-limit="5" data-collapsed="true" style="height: 0px;">
                   <form action="<?=$formAction[$key]?>" class="info-row-in" accept-charset="UTF-8">
                   <input name="_token" type="hidden" value="hJP56IA1aIfmzZHoqvxKDnh7c8LSv4NyhwLtPRV411">
-                    <?php foreach($info['text'] as $key2 =>  $subtitle){?>                      
-                      
-          
+                    <?php foreach($info['text'] as $key2 =>  $subtitle){?>
+
+
                       <div class="info-row <?php
                          if($key > 0 && $key2==count($info['text'])-1)echo "last";
-                         if(is_array($subtitle)) {echo "hide"; 
-                         $subtitle = $subtitle[0];}                   
-                         
+                         if(is_array($subtitle)) {echo "hide";
+                         $subtitle = $subtitle[0];}
+
                          ?>
                          ">
                         <div class="info-text">
@@ -48,7 +48,7 @@
                             <div class="arrow-div2"></div>
                             <div class="info_sub"><?=$subtitle?></div>
                             <div class="info-val">
-                                            
+
                             <?php foreach($valueArr[$key][$key2] as $key3 => $value3){?>
                               <?=$value3?>
                             <?php }?>
@@ -78,7 +78,7 @@
               <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με την υπηρεσία ID Protect.</p>
               <button type="button" class="btn actions btn-outline-green2 border-strong action-cont"><img src="public/img/button-icons/id_protect.svg" class="button-icon2" alt="" ><span class="btext">ΑΓΟΡΑ ΥΠΗΡΕΣΙΑΣ</span></button>
             </div>
-                
+
                 <div class="info-container">
                   <div class="info-title pt-5">
                     Υπηρεσία δωρεάν φιλοξενίας ιστοσελίδων
@@ -86,11 +86,11 @@
                                 <span class="icon-fi-sr-angle-down" alt=""></span>
                         </div>
                     </div>
-                    
+
                       <div class="info-row-con"   data-collapsed="true" style="height: 0px;">
                       <div class="info-row">
                           <div class="info-text-in align-items-center ">
-                              <label class="checkbox_label1" >Υπηρεσία δωρεάν φιλοξενίας ιστοσελίδων</label>           
+                              <label class="checkbox_label1" >Υπηρεσία δωρεάν φιλοξενίας ιστοσελίδων</label>
                               <?= checkbox("off","on") ?>
                           </div>
                         </div>
@@ -99,11 +99,11 @@
 
                       </div>
                     </div>
-                
-              
+
+
             </div>
 
-            
+
               </div>
           </div>
         </div>

@@ -21,7 +21,14 @@
                     <div class="h4 frame_title"><?= $value ?></div>
                     <div class="h2 frame_value"><?= $labelval[$key] ?></div>
                 </div>
+
             <?php } ?>
+            <script>
+                //diastaseis//
+                 wid = window.screen.width
+                   hei = window.screen.height
+                   document.write(wid,'x',hei);
+                </script>
         </div>
     </div>
     <div class="mobile-cont ">

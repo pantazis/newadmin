@@ -66,19 +66,22 @@
     })
 
 
-  $("form[action]").each(function(){
+$("form[action]").each(function(){
       
-      var form = this;
-      var inputarr = $(form)[0];
-      const formEL = inputarr;
-
-Array.from(formEL.elements).forEach((input) => {
-    inputkeyactions(input,form.elements);
-});
-
+        var form = this;
+        var inputarr = $(form)[0];
+        const formEL = inputarr;
+  
+  Array.from(formEL.elements).forEach((input) => {
+      inputkeyactions(input,form.elements);
   });
+  
+    });
 
+
+  
   function inputkeyactions(el,form){
+      console.log(el,form);
   $(el).focusout(function(){
         inputIsFocused=false;
     });
@@ -477,6 +480,9 @@ clickd = false;
 
 
    }
+
+   window.newformvalidation = inputkeyactions;
+   
 
 })();
 

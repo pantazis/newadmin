@@ -431,14 +431,24 @@ function checkForError(){
     if(errorflag){
         return;
     }
-    console.log("estila");
-    errorflag = false; 
 
-   
-        
+    sendform()
+
+    
+
+
+
+
+
+    
+    errorflag = false;        
   
 
    });
+
+   function sendform(){
+
+   }
 
 })();
 

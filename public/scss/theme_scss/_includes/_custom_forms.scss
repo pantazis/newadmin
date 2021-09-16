@@ -23,12 +23,15 @@
   margin: 0 0 1.5625rem 0;
 }
 
-.material-text-field__container {
-  position: relative;
+
+.material-text-field__container { 
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   animation: none;
+}
+.material-text-field{
+  position: relative;
 }
 
 .material-text-field__input-text {
@@ -107,14 +110,14 @@
 }
 
 .material-text-field__helper-text {
-  position: absolute;
-  top: 2.125rem;
-  left: 0.75rem;
-  vertical-align: bottom;
-  line-height: 0.75rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.025rem;
+  line-height: 16px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
   color: rgba(0, 0, 0, 0.6);
+  
+}
+.messege {
+  padding-top: 0.4rem;
 }
 
 .reset-input {

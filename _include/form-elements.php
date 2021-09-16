@@ -178,3 +178,22 @@ function modal($id="",$title="",$mainText="",$btnColorClass="",$btnText="") {
   echo $template;
 
     }
+
+
+    function alertbox() {
+                         $template='<div class="message color1">
+                                    <div class="mm flex-c">
+                                        <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci pellentesque, pulvinar diam a, euismod lacus.</span>
+                                    </div>
+                                    <div class="date_m flex-c">
+                                        <span class="date">
+                                            12/07/2021<br>
+                                            23:05
+                                        </span>
+                                    </div>
+                                    <div class="remove flex-c">
+                                        <i class="icon-fi-sr-cross-small"></i>
+                                    </div>
+                                </div>';
+                                echo $template;
+    }

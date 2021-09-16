@@ -53,10 +53,6 @@
             document.getElementById("demo").innerHTML = txt;
         }
     </script>
-
-
-
-
     <p id="demo"></p>
     <!--diastaseis -->
     <?php foreach ($bp as $kay =>   $value) { ?>

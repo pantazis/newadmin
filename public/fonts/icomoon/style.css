@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?hndonu');
-  src:  url('fonts/icomoon.eot?hndonu#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?hndonu') format('truetype'),
-    url('fonts/icomoon.woff?hndonu') format('woff'),
-    url('fonts/icomoon.svg?hndonu#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?1sl92v');
+  src:  url('fonts/icomoon.eot?1sl92v#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1sl92v') format('truetype'),
+    url('fonts/icomoon.woff?1sl92v') format('woff'),
+    url('fonts/icomoon.svg?1sl92v#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-danger:before {
+  content: "\eaa8";
+}
+.icon-success:before {
+  content: "\eaa9";
+}
+.icon-warning:before {
+  content: "\eaaa";
+}
 .icon-fi-sr-menu-burger_left:before {
   content: "\eaa7";
 }

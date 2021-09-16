@@ -453,6 +453,7 @@ function checkForError(){
    });
 
    function sendform(){
+
    
    
    
@@ -460,7 +461,7 @@ function checkForError(){
     $(".opennav1").removeClass("opennav1");    
     $(".alert-server").addClass("opennav1");
     $(".alert-server").click(function(){
-        
+        clearTimeout(myVar);        
         $(".alert-server").removeClass("opennav1");
       
     })

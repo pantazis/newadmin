@@ -11710,12 +11710,34 @@ span.text1 {
   width: 100%;
   background: #efeff6;
   display: flex; }
+  .alert-box .message {
+    background: #fff; }
+    .dark .alert-box .message {
+      background: #0e0c28; }
   .message.color1 {
     border-color: #d83438; }
+    .message.color1 .icon1 {
+      color: #d83438; }
+    .message.color1 .icon2 {
+      display: none; }
+    .message.color1 .icon3 {
+      display: none; }
   .message.color2 {
     border-color: #f08a24; }
+    .message.color2 .icon1 {
+      display: none; }
+    .message.color2 .icon2 {
+      color: #f08a24; }
+    .message.color2 .icon3 {
+      display: none; }
   .message.color3 {
     border-color: #18bf93; }
+    .message.color3 .icon1 {
+      display: none; }
+    .message.color3 .icon2 {
+      display: none; }
+    .message.color3 .icon3 {
+      color: #18bf93; }
   .message:last-of-type {
     margin-bottom: 0; }
 

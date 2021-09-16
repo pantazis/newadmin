@@ -11687,11 +11687,20 @@ span.text1 {
   width: 18.75rem;
   padding-left: 1.25rem; }
 
+.mm2 {
+  height: 100%;
+  width: 18.75rem; }
+
 .date_m {
   height: 100%;
   width: 6.25rem;
   text-align: center;
   padding-left: 0.625rem; }
+
+.icon_m {
+  height: 100%;
+  width: 5rem;
+  text-align: center; }
 
 .remove {
   flex: 1;
@@ -11714,6 +11723,8 @@ span.text1 {
     background: #fff; }
     .dark .alert-box .message {
       background: #0e0c28; }
+  .message .icon-s {
+    font-size: 2rem; }
   .message.color1 {
     border-color: #d83438; }
     .message.color1 .icon1 {
@@ -11742,12 +11753,14 @@ span.text1 {
     margin-bottom: 0; }
 
 .nav-icon-3 .arrow-div,
-.nav-icon-3 .popup-notifications {
+.nav-icon-3 .popup-notifications, .alert-server .arrow-div,
+.alert-server .popup-notifications {
   transition: transform 0.3s ease-in;
-  transform: translateX(30.25rem); }
+  transform: translateX(31.875rem); }
 
 .nav-icon-3.opennav1 .arrow-div,
-.nav-icon-3.opennav1 .popup-notifications {
+.nav-icon-3.opennav1 .popup-notifications, .alert-server.opennav1 .arrow-div,
+.alert-server.opennav1 .popup-notifications {
   transform: translateX(0); }
 
 nav.sidebar.top .custom-popup.ss {

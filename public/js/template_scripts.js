@@ -145,13 +145,17 @@
     // top_nav.parent_Element;
     // top_nav.top_nav.listChildElement;
     // top_nav.class;
-    if ($(e.target).closest(top_nav.parent_Element).length == 0) {
+  
+  
+    if ($(e.target).closest(top_nav.parent_Element).length == 0&&top_nav.parent_Element==".alert-server") {
       $(top_nav.parent_Element).removeClass(top_nav.class);
     }
-    if ($(e.target).closest(top_nav.listChildElement).length != 0) {
+
+    if ($(e.target).closest(top_nav.listChildElement).length != 0 && top_nav.parent_Element !=".alert-server") {
       $(e.target).closest(top_nav.parent_Element).addClass(top_nav.class);
       top_nav.num = 0;
     }
+    top_nav.parent_Element ="";
   });
 
   $("li.nav-list-item2").each(function () {
@@ -201,6 +205,7 @@
   menu_subcategory_open(".nav-list-item2", "opennav1", ".sub-category");
   menu_subcategory_open(".nav-icon-3", "opennav1", ".popup-notifications");
   menu_subcategory_open(".nav-list.search", "opennav1", ".custom-popup");
+  menu_subcategory_open(".alert-server", "opennav1", ".custom-popup");
 
   /* hide loader */
   // console.log(sessionStorage.getItem('loaded'));
@@ -273,20 +278,19 @@
     }
 
   }
-  function countRow(){
-
-    addActionObj.numOfRow =addActionObj.parent.find(".info-row:not(.hide):not(.last)").length;
-  }
+  
 
 
 
   removeRow(".info-icon.action0");
 
 
+  function countRow(){
+    addActionObj.numOfRow =addActionObj.parent.find(".info-row:not(.hide):not(.last)").length;
+  }
 
-
-  function makeElement(el){
-    debugger;
+window.makeElement = function(el){
+    
    addActionObj.parent = $(el).closest(".info-row-con");
    addActionObj.lastEl = addActionObj.parent.find(".info-row.last");
    addActionObj.cloneEL = addActionObj.parent.find(".info-row.hide").clone().removeClass("hide");
@@ -294,7 +298,8 @@
    addActionObj.numOfRow =addActionObj.parent.find(".info-row:not(.hide):not(.last)").length;
    addActionObj.length = addActionObj.cloneEL.length;
    addActionObj.limit = parseInt(addActionObj.parent.attr("data-limit"));
-   addActionObj.countRow = countRow();
+   addActionObj.countRow = () => {countRow()};
+   addActionObj.hideShowElments = () => {hideShowElments()};
 
 
   }

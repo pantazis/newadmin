@@ -1,4 +1,5 @@
 (function () {
+    var clickd = true;
     var textWarning = "js__helper-text--warning";
     var borderWarning = "js__activation-indicator--warning"
     var labelWarning ="js__label-text--warning";
@@ -13,6 +14,8 @@
         ip:/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/i
         
     }
+
+   
    
 
     var errorMessages={
@@ -447,6 +450,31 @@ function checkForError(){
    });
 
    function sendform(){
+   
+   
+   
+     
+    $(".opennav1").removeClass("opennav1");    
+    $(".alert-server").addClass("opennav1");
+    $(".alert-server").click(function(){
+        
+        $(".alert-server").removeClass("opennav1");
+      
+    })
+    
+    if(clickd){
+    var myVar =  setTimeout(function(){
+        $(".alert-server").removeClass("opennav1");
+        clearTimeout(myVar);
+        clickd = true;
+
+
+    },7000);
+   
+}
+clickd = false;
+
+
 
    }
 

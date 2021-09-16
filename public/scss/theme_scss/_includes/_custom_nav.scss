@@ -663,11 +663,21 @@ span.text1 {
     width: 18.75rem;
     padding-left: 1.25rem;
 }
+.mm2 {
+    height: 100%;
+    width: 18.75rem;    
+}
 .date_m {
     height: 100%;
     width: 6.25rem;
     text-align: center;
     padding-left: 0.625rem;
+}
+.icon_m {
+    height: 100%;
+    width: 5rem;
+    text-align: center;
+    
 }
 .remove {
     flex: 1;
@@ -689,6 +699,9 @@ span.text1 {
         @include themeColor("background",$white,$black_blue)
     }
     display: flex;
+    .icon-s{
+        font-size: 2rem;
+    }
     &.color1 {
         border-color: $red2;
         .icon1{color: $red2}
@@ -714,18 +727,19 @@ span.text1 {
 //-----------------------------notification popup animation--------------------------//
 //$popup-notifications-width: 29.6875rem;
 //$popup-notifications-right: 0.5625rem;
-.nav-icon-3 {
+.nav-icon-3,.alert-server {
     .arrow-div,
     .popup-notifications {
         transition: transform 0.3s ease-in;
-        transform: translateX(#{$popup-notifications-width + $popup-notifications-right});
+        transform: translateX(#{$popup-notifications-width + $popup-notifications-right + 1.625rem});
     }
 }
-.nav-icon-3.opennav1 {
+.nav-icon-3,.alert-server{&.opennav1 {
     .arrow-div,
     .popup-notifications {
         transform: translateX(0);
     }
+}
 }
 nav.sidebar.top .custom-popup.ss {
     overflow: visible;

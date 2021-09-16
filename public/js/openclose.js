@@ -78,14 +78,18 @@ function collapseSection(element,parentel) {
     
   }
   function isFormEmpty(el){  
-    countRow(); 
-    addActionObj;    
+    if(addActionObj.parent==undefined){
+       makeElement();
+    }
+   
+    addActionObj.countRow(); 
+       
     var parent =$(el).closest(".info-row");
     var text = parent.find(".info-val").text().trim().length;    
     if(text == 0 && addActionObj.numOfRow>1){
     parent.remove();
     }
-   hideShowElments();
+    addActionObj.hideShowElments();
   }
 
   function addClassToParent(el,parent){

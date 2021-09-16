@@ -9,11 +9,13 @@ $input = ["#0001 An Ubavicius", "#0005 Γιάννης Παπαδόπουλος",
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Πρόκειται να απενεργοποιήσετε το λογαριασμό του χρήστη <br> <?php echo $input[rand(0, 4)] ?></p>
+        <p>Πρόκειται να απενεργοποιήσετε το λογαριασμό του χρήστη <br> <?php echo $input[rand(0, 4)] ?>
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Κλείσιμο</button>
-        <button type="button" id="setActiveButton" class="btn btn-primary"><span class="activeText">Απενεργοποίηση</span><span class="notActiveText">Eνεργοποίηση</span></button>
+        <button type="button" id="setActiveButton" class="btn btn-primary"><span
+            class="activeText">Απενεργοποίηση</span><span class="notActiveText">Eνεργοποίηση</span></button>
       </div>
     </div>
   </div>
@@ -61,16 +63,17 @@ $domainList=[
 
 
 <?php modal(
-  $id="noFreeHosting",
-  $title="Απενεργοποίηση Δωρεάν Φιλοξενίας",
-  $mainText="Πρόκειται να απενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0,count($domainList) )]."</b>",
-  $btnColorClass="btn-red2",
-  $btnText="Απενεργοποίηση");
+    $id="noFreeHosting",
+    $title="Απενεργοποίηση Δωρεάν Φιλοξενίας",
+    $mainText="Πρόκειται να απενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0, count($domainList))]."</b>",
+    $btnColorClass="btn-red2",
+    $btnText="Απενεργοποίηση"
+);
 
   modal(
-    $id="FreeHosting",
-    $title="Ενεργοποίηση Δωρεάν Φιλοξενίας",
-    $mainText="Πρόκειται να ενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0,count($domainList) )]."</b>",
-    $btnColorClass="btn-green2",
-    $btnText="Ενεργοποίηση");
-  ?>
+      $id="FreeHosting",
+      $title="Ενεργοποίηση Δωρεάν Φιλοξενίας",
+      $mainText="Πρόκειται να ενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0, count($domainList))]."</b>",
+      $btnColorClass="btn-green2",
+      $btnText="Ενεργοποίηση"
+  );

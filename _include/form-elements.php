@@ -1,6 +1,7 @@
 <?php
 
-function buttonsEl(){
+function buttonsEl()
+{
     return   '<div class="button-padding"><a class="button green2 submit">Aποθήκευση</a></div>';
 }
 
@@ -38,7 +39,7 @@ $domain=[
     "value"=>"",
     "disabled"=>"",
     "validate-length"=>""
- ]; 
+ ];
 
  $password=[
     "autocomplete"=>"ip",
@@ -56,63 +57,64 @@ $domain=[
 
 
 
-function formPersonal($inputprop1,$inputprop2,$inputprop3) {
+function formPersonal($inputprop1, $inputprop2, $inputprop3)
+{
     $template ='<div class="info-text-in">';
-    $template .=inputEl($inputprop1,false);
+    $template .=inputEl($inputprop1, false);
     $template .='<div class="button-padding" style="flex: 1">';
-    $template .=inputEl($inputprop2,false);
+    $template .=inputEl($inputprop2, false);
     $template .='</div>';
     $template .='</div><div class="info-text-in">';
-    $template .=inputEl($inputprop3,true);
+    $template .=inputEl($inputprop3, true);
     $template .='</div>';
 
     return $template;
+};
+
+
+
+function selectEl($arr, $title)
+{
+    $template = '<div class="info-text-in">';
+    $template.='<select class="form-select" aria-label="">';
+    foreach ($arr as $key => $val) {
+        $value=$key+1;
+        $template.='<option '.($value==1?"selected":"").' value="'.$value.'">'.$val.'</option>';
     };
+    $template.='</select>'.buttonsEl().'</div>';
 
 
 
-function selectEl($arr,$title) {
-
-$template = '<div class="info-text-in">';
-$template.='<select class="form-select" aria-label="">';
-foreach($arr as $key => $val){
- $value=$key+1;
- $template.='<option '.($value==1?"selected":"").' value="'.$value.'">'.$val.'</option>';
-
-};
-$template.='</select>'.buttonsEl().'</div>';
-
-
-
-return $template;
+    return $template;
 };
 
 
-function select2($optionArr,$placeholder,$id = ""){
+function select2($optionArr, $placeholder, $id = "")
+{
     $template = '<select class="form-select select2"    data-placeholder="'.$placeholder.'">';
-    foreach($optionArr as $group){
-    $template .='<optgroup label="'.$group['group'].'">';
-    foreach($group["option"] as $option){
-        $template .='<option value="'.$option["value"].'">'.$option["name"].'</option>';
-    }
-    $template .='</optgroup>';
+    foreach ($optionArr as $group) {
+        $template .='<optgroup label="'.$group['group'].'">';
+        foreach ($group["option"] as $option) {
+            $template .='<option value="'.$option["value"].'">'.$option["name"].'</option>';
+        }
+        $template .='</optgroup>';
     }
     $template .='</select>';
-return $template;
-
+    return $template;
 }
 
 
 
 
 
- $formPersonalArr=[inputEl($password,false),inputEl($password,false), inputEl($password,false)];
+ $formPersonalArr=[inputEl($password, false),inputEl($password, false), inputEl($password, false)];
 
 
-function inputEl($inputprop,$hasButton) {
+function inputEl($inputprop, $hasButton)
+{
     $disabled= $inputprop["disabled"]!=""?'disabled="'.$inputprop["disabled"].'"':"";
     $template = '<div class="material-text-field__container ">
-    <div class="material-text-field">  
+    <div class="material-text-field">
     <input id="input-password"
 
       autocomplete="'.$inputprop["autocomplete"].'"
@@ -133,18 +135,19 @@ function inputEl($inputprop,$hasButton) {
             <img class="eye" src="img/not_visible.svg" alt="">
         </i>
     <div id="activation-indicator" class="material-text-field__activation-indicator"></div>
-   
-   
+
+
 </div>
-<div id="helper-text" class="material-text-field__helper-text">      
+<div id="helper-text" class="material-text-field__helper-text">
 </div>
 </div>';
     $template.=($hasButton?buttonsEl():"");
     return $template;
 }
 
-function checkbox($text1="",$text2="") {
-$template ='<div class="checkbox-parent">
+function checkbox($text1="", $text2="")
+{
+    $template ='<div class="checkbox-parent">
         <input type="checkbox" class="checkbox">
         <div class="knobs">
           <span>'.$text1.'</span>
@@ -152,12 +155,12 @@ $template ='<div class="checkbox-parent">
         </div>
         <div class="layer"></div>
       </div>';
-      return $template;
-
+    return $template;
 }
 
 
-function modal($id="",$title="",$mainText="",$btnColorClass="",$btnText="") {
+function modal($id="", $title="", $mainText="", $btnColorClass="", $btnText="")
+{
     $template = '<div class="modal fade" id="'.$id.'" tabindex="-1" aria-labelledby="'.$id.'Label" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -175,13 +178,13 @@ function modal($id="",$title="",$mainText="",$btnColorClass="",$btnText="") {
       </div>
     </div>
   </div>';
-  echo $template;
+    echo $template;
+}
 
-    }
 
-
-    function alertbox() {
-                         $template='<div class="message color1">
+    function alertbox()
+    {
+        $template='<div class="message color1">
                                     <div class="mm flex-c">
                                         <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci pellentesque, pulvinar diam a, euismod lacus.</span>
                                     </div>
@@ -195,5 +198,5 @@ function modal($id="",$title="",$mainText="",$btnColorClass="",$btnText="") {
                                         <i class="icon-fi-sr-cross-small"></i>
                                     </div>
                                 </div>';
-                                echo $template;
+        echo $template;
     }

@@ -12,7 +12,7 @@
   @include font-size($form-select-font-size);
   font-weight: $form-select-font-weight;
   line-height: $form-select-line-height;
-  color: $form-select-color;
+ // color: $form-select-color;
   background-color: $form-select-bg;
   background-image: escape-svg($form-select-indicator);
   background-repeat: no-repeat;

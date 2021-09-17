@@ -2638,7 +2638,6 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -12615,7 +12614,8 @@ body.noanimαtion * {
   line-height: 1.5;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: transparent; }
 
 @font-face {
   font-family: "icomoon";
@@ -14015,6 +14015,20 @@ h2.page_title, .page_title.h2 {
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased; }
 
+.form-select {
+  background-image: url("../img/button-icons/selectArrow.svg"); }
+  .dark .form-select {
+    background-image: url("../img/button-icons/selectArrowDark.svg"); }
+
+input, select, .select2-selection__rendered {
+  color: #2e435e; }
+  .dark input, .dark select, .dark .select2-selection__rendered {
+    color: #efeff6; }
+  input option, select option, .select2-selection__rendered option {
+    background-color: #efeff6; }
+    .dark input option, .dark select option, .dark .select2-selection__rendered option {
+      background-color: #2e435e; }
+
 .component__title {
   font-size: 0.875rem;
   font-weight: 500;
@@ -14050,10 +14064,18 @@ h2.page_title, .page_title.h2 {
   letter-spacing: 0.025rem;
   transition: all 150ms linear; }
 
-.material-text-field__input-text[disabled] ~ .material-text-field__label-text {
-  color: red; }
-  .material-text-field__input-text[disabled] ~ .material-text-field__label-text ~ .material-text-field__activation-indicator {
-    border-color: red; }
+.material-text-field__input-text[disabled] {
+  color: #9191a8; }
+  .dark .material-text-field__input-text[disabled] {
+    color: #9191a8; }
+  .material-text-field__input-text[disabled] ~ .material-text-field__label-text {
+    color: #9191a8; }
+    .dark .material-text-field__input-text[disabled] ~ .material-text-field__label-text {
+      color: #9191a8; }
+    .material-text-field__input-text[disabled] ~ .material-text-field__label-text ~ .material-text-field__activation-indicator {
+      border-color: #cacad5; }
+      .dark .material-text-field__input-text[disabled] ~ .material-text-field__label-text ~ .material-text-field__activation-indicator {
+        border-color: #9191a8; }
 
 .material-text-field__input-text:focus ~ .material-text-field__activation-indicator {
   border: 0.125rem solid; }
@@ -14145,7 +14167,8 @@ h2.page_title, .page_title.h2 {
   transform: translateY(-50%);
   left: 1rem;
   font-size: inherit;
-  transition: all 150ms linear; }
+  transition: all 150ms linear;
+  pointer-events: none; }
 
 .js__label-text--warning {
   color: #d83438; }
@@ -14269,13 +14292,19 @@ label.checkbox_label1 {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .dark .checkbox-parent .knobs span {
+    color: #2e435e; }
 
 .checkbox-parent .knobs span:nth-of-type(2) {
   left: calc(50% + 0.25rem);
-  color: #4e4e4e; }
+  color: #707070; }
+  .dark .checkbox-parent .knobs span:nth-of-type(2) {
+    color: #efeff6; }
 
 .checkbox-parent .checkbox:checked + .knobs span {
-  color: #4e4e4e; }
+  color: #707070; }
+  .dark .checkbox-parent .checkbox:checked + .knobs span {
+    color: #efeff6; }
 
 .checkbox-parent .checkbox:checked + .knobs span:nth-of-type(2) {
   color: #fff; }
@@ -14515,7 +14544,6 @@ label.checkbox_label1 {
   border: 1px solid #aaa;
   border-radius: 4px; }
   .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #444;
     line-height: 28px; }
   .select2-container--default .select2-selection--single .select2-selection__clear {
     cursor: pointer;

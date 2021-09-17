@@ -15,6 +15,18 @@
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
+//form input colors
+.form-select {
+  @include themeColor("background-image",url('../img/button-icons/selectArrow.svg'),url('../img/button-icons/selectArrowDark.svg'));
+
+}
+input,select,.select2-selection__rendered{
+  @include themeColor("color",$dark_blue,$ice);
+  option {
+    @include themeColor("background-color",$ice,$dark_blue);
+  }
+  
+}
 
 .component__title {
   font-size: 0.875rem;
@@ -58,10 +70,11 @@
   transition: all 150ms linear;
 }
 .material-text-field__input-text[disabled]{
+  @include themeColor("color", darken($light_grey,20), darken($light_grey,20));
   & ~ .material-text-field__label-text {
-  color:red;
+ @include themeColor("color", darken($light_grey,20), darken($light_grey,20));
   & ~ .material-text-field__activation-indicator {
-  border-color:red;
+    @include themeColor("border-color", $light_grey, darken($light_grey,20));
 
   }
 
@@ -169,6 +182,7 @@
   left: $form-select-padding-x;
   font-size: inherit;
   transition: all 150ms linear;
+  pointer-events: none;
 }
 
 .js__label-text--warning {
@@ -311,19 +325,19 @@ label.checkbox_label1 {
 .checkbox-parent .knobs span {
   display: inline-block;
   left: $topc;
-  color: #fff;
+  @include themeColor("color",$white,$dark_blue);
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .checkbox-parent .knobs span:nth-of-type(2) {
-  left: calc(50% + #{$topc});
-  color: #4e4e4e;
+  left: calc(50% + #{$topc}); 
+  @include themeColor("color",$dark_grey,$ice)
 }
 
 .checkbox-parent .checkbox:checked + .knobs span {
-  color: #4e4e4e;
+  @include themeColor("color",$dark_grey,$ice)
 }
 
 .checkbox-parent .checkbox:checked + .knobs span:nth-of-type(2) {

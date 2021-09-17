@@ -674,30 +674,35 @@ $section-padding: 1.875rem;
   }
 }
 .button {
-  border:0;  
+  border: 0;
   text-align: center;
   margin-left: auto;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  svg{display:none;
-    stroke:$green2;
-  width:25px;}
-  &.loader{
-    .save{height:0;
-      overflow:hidden;
-    display:block}   
-    svg{display:inline;}
+  svg {
+    display: none;
+    stroke: $green2;
+    width: 25px;
+  }
+  &.loader {
+    .save {
+      height: 0;
+      overflow: hidden;
+      display: block;
+    }
+    svg {
+      display: inline;
+    }
   }
 }
 
-.info-form{
-  .button{
+.info-form {
+  .button {
     padding: $form-select-padding-y $form-select-padding-x;
     line-height: $form-select-line-height;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }

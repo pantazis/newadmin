@@ -1,8 +1,14 @@
 <?php
 
-function buttonsEl()
-{
-    return   '<div class="button-padding"><a class="button green2 submit">Aποθήκευση</a></div>';
+function buttonsEl(){
+  $tempalte = '<div class="button-padding"><button class="button green2 submit">';
+  $tempalte .='<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style=" margin: auto; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; shape-rendering: auto;"  viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+  <circle cx="50" cy="50" fill="none"  stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138">
+    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+  </circle>
+  </svg>';
+  $tempalte .='<span class="save">Aποθήκευση<span></button></div>';
+  return  $tempalte;
 }
 
 $domain=[
@@ -182,21 +188,4 @@ function modal($id="", $title="", $mainText="", $btnColorClass="", $btnText="")
 }
 
 
-    function alertbox()
-    {
-        $template='<div class="message color1">
-                                    <div class="mm flex-c">
-                                        <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci pellentesque, pulvinar diam a, euismod lacus.</span>
-                                    </div>
-                                    <div class="date_m flex-c">
-                                        <span class="date">
-                                            12/07/2021<br>
-                                            23:05
-                                        </span>
-                                    </div>
-                                    <div class="remove flex-c">
-                                        <i class="icon-fi-sr-cross-small"></i>
-                                    </div>
-                                </div>';
-        echo $template;
-    }
+

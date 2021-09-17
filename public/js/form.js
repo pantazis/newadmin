@@ -11,6 +11,8 @@
         telephone:/^[0-9]{10}(?!.)/i,
         postcode:/^[0-9]{5}(?!.)/i,
         host:/^(([a-zA-Z]|[a-zA-Z][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z]|[A-Za-z][A-Za-z0-9\-]*[A-Za-z0-9])$/i,
+       // host:/.*/i,
+       // ip:/.*/i
         ip:/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/i
         
     }
@@ -66,22 +68,28 @@
     })
 
 
+function initValidation(form){
+    console.log(form);
+    var form = form;
+    var inputarr = $(form)[0];
+    const formEL = inputarr;
+
+Array.from(formEL.elements).forEach((input) => {
+  inputkeyactions(input,form.elements);
+});
+submitForm();
+
+}
+
 $("form[action]").each(function(){
-      
-        var form = this;
-        var inputarr = $(form)[0];
-        const formEL = inputarr;
-  
-  Array.from(formEL.elements).forEach((input) => {
-      inputkeyactions(input,form.elements);
-  });
-  
+    initValidation(this);     
+
     });
 
 
   
   function inputkeyactions(el,form){
-      console.log(el,form);
+     
   $(el).focusout(function(){
         inputIsFocused=false;
     });
@@ -424,8 +432,10 @@ function checkForError(){
 
 }
 
-
+    function submitForm(){
     $(".submit").click(function(e){
+    var submitButton = this;
+     
     e.preventDefault(); 
     $(".shake").removeClass("shake"); 
 
@@ -437,52 +447,57 @@ function checkForError(){
     if(errorflag){
         return;
     }
-
-    sendform()
-
-    
-
-
-
-
-
-    
+   
+    delayResponse(submitButton);
     errorflag = false;        
   
 
    });
+}
+
 
    function sendform(){
-
-   
-   
-   
-     
+    
     $(".opennav1").removeClass("opennav1");    
     $(".alert-server").addClass("opennav1");
     $(".alert-server").click(function(){
         clearTimeout(myVar);        
         $(".alert-server").removeClass("opennav1");
       
-    })
+    });
+
+    if(clickd){   
     
-    if(clickd){
     var myVar =  setTimeout(function(){
         $(".alert-server").removeClass("opennav1");
         clearTimeout(myVar);
         clickd = true;
 
-
-    },7000);
+    },3000);
    
 }
 clickd = false;
+}
 
+function delayResponse(submitButton){
 
+    $(submitButton).addClass("loader");
+    
 
-   }
+    var myVar =  setTimeout(function(){
+       
+        sendform();        
+        clearTimeout(myVar);
+        $(submitButton).removeClass("loader");
+      
 
-   window.newformvalidation = inputkeyactions;
+    },3000);
+   
+
+}
+
+  
+   window.initValidation = initValidation;
    
 
 })();

@@ -38,9 +38,10 @@
   z-index: 1;
   width: 100%;
   border: none;
-  line-height: $form-select-line-height;
+ 
   background-color: transparent;
   padding: $form-select-padding-y $form-select-padding-x;
+  line-height: $form-select-line-height;
 }
 
 .material-text-field__input-text:focus {
@@ -53,13 +54,22 @@
   left: 0.625rem;
   padding: 0 0.25rem;
   font-size: 0.75rem;
-  letter-spacing: 0.025rem;
-  color: $green2;
+  letter-spacing: 0.025rem; 
   transition: all 150ms linear;
+}
+.material-text-field__input-text[disabled]{
+  & ~ .material-text-field__label-text {
+  color:red;
+  & ~ .material-text-field__activation-indicator {
+  border-color:red;
+
+  }
+
+}
 }
 
 .material-text-field__input-text:focus ~ .material-text-field__activation-indicator {
-  border: 0.125rem solid $green2;
+  border: 0.125rem solid;
 }
 
 .material-text-field__input-text:focus ~ .js__activation-indicator--warning {

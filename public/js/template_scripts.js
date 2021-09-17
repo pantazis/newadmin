@@ -235,6 +235,10 @@
       addActionObj.lastEl.before(addActionObj.cloneEL);
       var openIcon = addActionObj.cloneEL.find(".info-icon.action1")[0];
       openCloseRow(openIcon);
+      var form =addActionObj.parent.find("form[action]")[0];
+      debugger;
+      initValidation(form);
+
       $(openIcon).click();
       addActionObj.removeEl();
     }

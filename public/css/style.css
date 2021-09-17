@@ -10758,6 +10758,9 @@ textarea.form-control-lg {
 @media (min-width: 1911px) {
   .hide-superlarge {
     display: none !important; } }
+.btn-green2 {
+  color: #efeff6; }
+
 .coverdiv {
   background: #efeff6; }
 
@@ -10957,6 +10960,8 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
 .dark {
   background-color: #1e1c36;
   /*===================modal dark================*/ }
+  .dark .btn-green2 {
+    color: #efeff6; }
   .dark .coverdiv {
     background: #0e0c28; }
   .dark nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
@@ -11753,13 +11758,15 @@ span.text1 {
     margin-bottom: 0; }
 
 .nav-icon-3 .arrow-div,
-.nav-icon-3 .popup-notifications, .alert-server .arrow-div,
+.nav-icon-3 .popup-notifications,
+.alert-server .arrow-div,
 .alert-server .popup-notifications {
   transition: transform 0.3s ease-in;
   transform: translateX(31.875rem); }
 
 .nav-icon-3.opennav1 .arrow-div,
-.nav-icon-3.opennav1 .popup-notifications, .alert-server.opennav1 .arrow-div,
+.nav-icon-3.opennav1 .popup-notifications,
+.alert-server.opennav1 .arrow-div,
 .alert-server.opennav1 .popup-notifications {
   transform: translateX(0); }
 

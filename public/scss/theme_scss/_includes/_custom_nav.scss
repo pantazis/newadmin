@@ -665,7 +665,7 @@ span.text1 {
 }
 .mm2 {
     height: 100%;
-    width: 18.75rem;    
+    width: 18.75rem;
 }
 .date_m {
     height: 100%;
@@ -677,7 +677,6 @@ span.text1 {
     height: 100%;
     width: 5rem;
     text-align: center;
-    
 }
 .remove {
     flex: 1;
@@ -695,30 +694,48 @@ span.text1 {
     height: 4.4375rem;
     width: 100%;
     background: $ice;
-    .alert-box &{
-        @include themeColor("background",$white,$black_blue)
+    .alert-box & {
+        @include themeColor("background", $white, $black_blue);
     }
     display: flex;
-    .icon-s{
+    .icon-s {
         font-size: 2rem;
     }
     &.color1 {
         border-color: $red2;
-        .icon1{color: $red2}
-        .icon2{display:none;}
-        .icon3{display:none;}
+        .icon1 {
+            color: $red2;
+        }
+        .icon2 {
+            display: none;
+        }
+        .icon3 {
+            display: none;
+        }
     }
     &.color2 {
         border-color: $orange2;
-        .icon1{display:none;}
-        .icon2{color: $orange2;}
-        .icon3{display:none;}
+        .icon1 {
+            display: none;
+        }
+        .icon2 {
+            color: $orange2;
+        }
+        .icon3 {
+            display: none;
+        }
     }
     &.color3 {
         border-color: $green2;
-        .icon1{display:none;}
-        .icon2{display:none;}
-        .icon3{color: $green2;}
+        .icon1 {
+            display: none;
+        }
+        .icon2 {
+            display: none;
+        }
+        .icon3 {
+            color: $green2;
+        }
     }
     &:last-of-type {
         margin-bottom: 0;
@@ -727,19 +744,22 @@ span.text1 {
 //-----------------------------notification popup animation--------------------------//
 //$popup-notifications-width: 29.6875rem;
 //$popup-notifications-right: 0.5625rem;
-.nav-icon-3,.alert-server {
+.nav-icon-3,
+.alert-server {
     .arrow-div,
     .popup-notifications {
         transition: transform 0.3s ease-in;
         transform: translateX(#{$popup-notifications-width + $popup-notifications-right + 1.625rem});
     }
 }
-.nav-icon-3,.alert-server{&.opennav1 {
-    .arrow-div,
-    .popup-notifications {
-        transform: translateX(0);
+.nav-icon-3,
+.alert-server {
+    &.opennav1 {
+        .arrow-div,
+        .popup-notifications {
+            transform: translateX(0);
+        }
     }
-}
 }
 nav.sidebar.top .custom-popup.ss {
     overflow: visible;

@@ -1,8 +1,8 @@
 .content_top {
     display: flex;
     justify-content: center;
-    @media (min-width: $xxl){
-    justify-content: space-between;
+    @media (min-width: $xxl) {
+        justify-content: space-between;
     }
 }
 .top_right {
@@ -15,13 +15,13 @@
     width: 100%;
     max-width: 15.9375rem;
     flex: 1;
-    border:0.0625rem solid;
-    @include themeColor("background-color",$white,$black_blue);
-    @include themeColor("color",$black_blue,$ice);
-    @include themeColor("border-color",transparent,$white);
+    border: 0.0625rem solid;
+    @include themeColor("background-color", $white, $black_blue);
+    @include themeColor("color", $black_blue, $ice);
+    @include themeColor("border-color", transparent, $white);
     padding: 1.25rem;
     margin-left: 1.3125rem;
-    text-align:center;
+    text-align: center;
     border-radius: $border-radius;
     display: flex;
     flex-direction: column;
@@ -32,43 +32,43 @@
 }
 .breadcrumb {
     font-size: 0.8125rem;
-    margin-bottom:0.5rem;
-li.breadcrumb-item{
-    &.active{
-         @include themeColor("color",$dark_blue,$white);
+    margin-bottom: 0.5rem;
+    li.breadcrumb-item {
+        &.active {
+            @include themeColor("color", $dark_blue, $white);
+        }
+        a {
+            text-decoration: none;
+            @include themeColor("color", $blue_grey, $light_grey);
+        }
     }
-  a {
-    text-decoration: none;
-    @include themeColor("color",$blue_grey,$light_grey);
-    }
-}
 }
 .breadcrumb-item + .breadcrumb-item::before {
-    @include themeColor("color",$blue_grey,$light_grey);
+    @include themeColor("color", $blue_grey, $light_grey);
 }
-h2.page_title{
+h2.page_title {
     font-size: 2.3125rem;
-    @include themeColor("color",$black_blue,$white);
+    @include themeColor("color", $black_blue, $white);
 }
-.h4.frame_title{
-    font-size:0.9375rem;
+.h4.frame_title {
+    font-size: 0.9375rem;
     margin-bottom: 0.625rem;
-    font-weight:400;
+    font-weight: 400;
 }
-.h2.frame_value{
+.h2.frame_value {
     font-size: 1.75rem;
 }
-.h2.frame_value{
+.h2.frame_value {
     font-size: 1.75rem;
     margin-bottom: 0;
 }
 // scss-docs-start theme-color-variables
-.success .h2.frame_value{
-    color:$success;
+.success .h2.frame_value {
+    color: $success;
 }
-.warning .h2.frame_value{
-    color:$warning;
+.warning .h2.frame_value {
+    color: $warning;
 }
-.danger .h2.frame_value{
-    color:$danger;
+.danger .h2.frame_value {
+    color: $danger;
 }

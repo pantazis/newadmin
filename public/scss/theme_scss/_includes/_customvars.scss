@@ -1,22 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 $menuMobileMax: $md;
-$menuTabletMax:$xxl;
-$menuDesktopMin:$menuTabletMax+1px;
-$menuTabletMin:$menuMobileMax + 1px;
-.ice{color:$ice}
-.light_grey{color:$light_grey}
-.pal_pink{color:$pal_pink}
-.green2{color:$green2}
-.sky_blue{color:$sky_blue}
-.orange2{color:$orange2}
-.pomegranade{color:$pomegranade}
-.blue_grey{color:$blue_grey}
-.red2{color:$red2}
-.blue_purple{color:$blue_purple}
-.dark_grey{color:$dark_grey}
-.dark_blue{color:$dark_blue}
-.black_blue{color:$black_blue}
-.bluedarkbl{color:$bluedarkbl}
+$menuTabletMax: $xxl;
+$menuDesktopMin: $menuTabletMax + 1px;
+$menuTabletMin: $menuMobileMax + 1px;
+.ice {
+  color: $ice;
+}
+.light_grey {
+  color: $light_grey;
+}
+.pal_pink {
+  color: $pal_pink;
+}
+.green2 {
+  color: $green2;
+}
+.sky_blue {
+  color: $sky_blue;
+}
+.orange2 {
+  color: $orange2;
+}
+.pomegranade {
+  color: $pomegranade;
+}
+.blue_grey {
+  color: $blue_grey;
+}
+.red2 {
+  color: $red2;
+}
+.blue_purple {
+  color: $blue_purple;
+}
+.dark_grey {
+  color: $dark_grey;
+}
+.dark_blue {
+  color: $dark_blue;
+}
+.black_blue {
+  color: $black_blue;
+}
+.bluedarkbl {
+  color: $bluedarkbl;
+}
 $grid-breakpoints: (
   xs: $xs,
   sm: $sm,
@@ -24,40 +52,48 @@ $grid-breakpoints: (
   lg: $lg,
   xl: $xl,
   xxl: $xxl,
-  xxxl: $xxxl
+  xxxl: $xxxl,
 ) !default;
 .only-mobile,
 .only-tablet,
 .only-desktop,
-.only-superlarge{
-  display:none !important;
+.only-superlarge {
+  display: none !important;
 }
-@mixin mediaMobile($class,$prop,$val){
+@mixin mediaMobile($class, $prop, $val) {
   @media (min-width: 0) and (max-width: $md) {
-   #{$class} { #{$prop}:$val !important;  }
-  };
+    #{$class} {
+      #{$prop}: $val !important;
+    }
+  }
 }
-@mixin mediaTablet($class,$prop,$val){
+@mixin mediaTablet($class, $prop, $val) {
   @media (min-width: #{$md+1}) and (max-width: $xxl) {
-   #{$class} { #{$prop}:$val !important;  }
-  };
+    #{$class} {
+      #{$prop}: $val !important;
+    }
+  }
 }
-@mixin mediaDesktop($class,$prop,$val){
+@mixin mediaDesktop($class, $prop, $val) {
   @media (min-width: #{$xxl+1}) and (max-width: $xxxl) {
-   #{$class} { #{$prop}:$val !important;  }
-  };
+    #{$class} {
+      #{$prop}: $val !important;
+    }
+  }
 }
-@mixin mediaSuperlarge($class,$prop,$val){
+@mixin mediaSuperlarge($class, $prop, $val) {
   @media (min-width: #{$xxxl+1}) {
-   #{$class} { #{$prop}:$val !important;  }
-  };
+    #{$class} {
+      #{$prop}: $val !important;
+    }
+  }
 }
 
-@include mediaMobile(".only-mobile","display",flex);
-@include mediaTablet(".only-tablet","display",flex);
-@include mediaDesktop(".only-desktop","display",flex);
-@include mediaSuperlarge(".only-superlarge","display",flex);
-@include mediaMobile(".hide-mobile","display",none);
-@include mediaTablet(".hide-tablet","display",none);
-@include mediaDesktop(".hide-desktop","display",none);
-@include mediaSuperlarge(".hide-superlarge","display",none);
+@include mediaMobile(".only-mobile", "display", flex);
+@include mediaTablet(".only-tablet", "display", flex);
+@include mediaDesktop(".only-desktop", "display", flex);
+@include mediaSuperlarge(".only-superlarge", "display", flex);
+@include mediaMobile(".hide-mobile", "display", none);
+@include mediaTablet(".hide-tablet", "display", none);
+@include mediaDesktop(".hide-desktop", "display", none);
+@include mediaSuperlarge(".hide-superlarge", "display", none);

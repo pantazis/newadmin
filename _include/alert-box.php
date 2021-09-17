@@ -7,9 +7,7 @@
                 <span class="icon-success icon-s icon3" alt=""></span>
             </div>
             <div class="mm2 flex-c">
-                <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci
-                    pellentesque,
-                    pulvinar diam a, euismod lacus.</span>
+                <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci pellentesque, pulvinar diam a, euismod lacus.</span>
             </div>
 
             <div class="remove flex-c">

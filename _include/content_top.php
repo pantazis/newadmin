@@ -47,8 +47,8 @@
     <!--diastaseis -->
     <script>
         function screenSize() {
-            var w = window.outerWidth;
-            var h = window.outerHeight;
+            var w = window.innerWidth;
+            var h = window.innerHeight;
             var txt = "Window size: width=" + w + ", height=" + h;
             document.getElementById("demo").innerHTML = txt;
         }

@@ -143,11 +143,15 @@ function inputEl($inputprop, $hasButton)
       class="material-text-field__input-text" >
     <div id="label-text" class="material-text-field__label-text">
     '.$inputprop["label"].'
-    </div>
-        <i id="trailing-icon" class="material-text-field__trailing-icon">
+    </div>';
+     if($inputprop["type"]=='password'){
+      $template .= '<i id="trailing-icon" class="material-text-field__trailing-icon">
             <img class="eye" src="img/not_visible.svg" alt="">
-        </i>
-    <div id="activation-indicator" class="material-text-field__activation-indicator"></div>
+        </i>';
+     }
+
+
+        $template .= '<div id="activation-indicator" class="material-text-field__activation-indicator"></div>
 
 
 </div>

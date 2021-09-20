@@ -3,6 +3,11 @@
   width: 100%;
   padding-right: var(--#{$variable-prefix}gutter-x, #{$gutter});
   padding-left: var(--#{$variable-prefix}gutter-x, #{$gutter});
+  @media (max-width:$md){
+  padding-right: var(--#{$variable-prefix}gutter-x, 1rem);
+  padding-left: var(--#{$variable-prefix}gutter-x, 1rem);   
+  }
+
   margin-right: auto;
   margin-left: auto;
 }

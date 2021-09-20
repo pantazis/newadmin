@@ -210,24 +210,24 @@ body.noanimαtion * {
   }
 }
 /*---------------------------------------------TOP SECTION---------------------------------------------*/
-$section-padding: 1.875rem;
+
 .top-section {
-  margin-left: $section-padding;
-  margin-right: $section-padding;
-  margin-bottom: $section-padding;
-  margin-top: $section-padding;
+  margin-left: var(--section-padding);
+  margin-right: var(--section-padding);
+  margin-bottom: var(--section-padding);
+  margin-top: var(--section-padding);
   min-height: 10rem;
 }
 /*---------------------------------------------MAIN SECTION---------------------------------------------*/
 .section-main {
-  padding-top: $section-padding;
-  padding-bottom: $section-padding;
-  margin-left: $section-padding;
-  margin-right: $section-padding;
-  margin-bottom: $section-padding;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  margin-left: var(--section-padding);
+  margin-right: var(--section-padding);
+  margin-bottom: var(--section-padding);
   border-radius: $border-radius;
   @media (min-width: $xl) {
-    padding-top: $section-padding + 0.75rem;
+    padding-top: var(--section-padding) + 0.75rem;
     padding-bottom: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -237,12 +237,12 @@ $section-padding: 1.875rem;
 .tab-parent {
   overflow: auto;
   @media (max-width: #{$xl - 1}) {
-    margin-bottom: $section-padding;
+    margin-bottom: var(--section-padding);
     overflow: auto;
     border-radius: $border-radius;
   }
-  margin-left: $section-padding;
-  margin-right: $section-padding;
+  margin-left: var(--section-padding);
+  margin-right: var(--section-padding);
 }
 .tab-cont {
   display: flex;
@@ -459,12 +459,14 @@ $section-padding: 1.875rem;
 
 
 .info-icon {
-  width: 2.2rem;
+  width: 20px;
   height: 100%;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-left: 15px;
+  line-height: 1.5;
 
 
   
@@ -559,8 +561,8 @@ $section-padding: 1.875rem;
 .mobile-cont {
   width: 100%;
   overflow: auto;
-  margin-bottom: $section-padding;
-  margin-top: $section-padding;
+  margin-bottom: var(--section-padding);
+  margin-top: var(--section-padding);
   @media (min-width: $xl) {
     display: none;
   }
@@ -631,6 +633,11 @@ $section-padding: 1.875rem;
   flex: 0 0 auto;
   margin-left: auto;
   padding-left: 1rem;
+  @media (max-width: $md) {
+    padding-left: 0;
+    padding-top: 1rem;
+
+  }
 }
 
 .arrow-div2 {

@@ -109,3 +109,19 @@ border-radius:$border-radius;
 }
 
 
+:root{
+
+  --section-padding:1.875rem;
+
+
+}
+@media (max-width: $md){
+  :root{
+    --section-padding:1rem;
+  
+  
+  }
+
+}
+
+

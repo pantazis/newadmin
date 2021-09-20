@@ -2,8 +2,11 @@
 //
 // Generate semantic grid columns with these mixins.
 @mixin make-row($gutter: $grid-gutter-width) {
-  --#{$variable-prefix}gutter-x: #{$gutter};
+  --#{$variable-prefix}gutter-x: #{$gutter};// #{$gutter}
   --#{$variable-prefix}gutter-y: 0;
+  @media (max-width:$md){
+    --#{$variable-prefix}gutter-x: 1rem;   
+  }
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--#{$variable-prefix}gutter-y) * -1); // stylelint-disable-line function-disallowed-list

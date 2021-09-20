@@ -125,7 +125,7 @@
                         echo "only-mobile";
                         break;
                     case "search":
-                        echo "only-desktop only-tablet";
+                       // echo "only-desktop only-tablet";
                         break;
                     case "fi-sr-menu-burger":
                         echo "only-mobile only-tablet";

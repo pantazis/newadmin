@@ -287,7 +287,6 @@ span.light {
     @media (max-width: $md) {
         height: $navSidebarTop;
     }
-    
 }
 .nav-list.user-icons {
     display: flex;
@@ -557,9 +556,8 @@ input.search-top {
     border-radius: 0.8125rem;
     border: 0.025rem solid darken($ice, 8%);
 }
-.custom-popup .search-cont{
-  display: none;
-
+.custom-popup .search-cont {
+    display: none;
 }
 .search-cont {
     border: 0.025rem solid darken($ice, 8%);
@@ -636,7 +634,6 @@ $popup-notifications-right: 0.5625rem;
     border-radius: $border-radius;
     padding-left: 0.3125rem;
     padding-right: 0.3125rem;
-
 }
 span.text1 {
     line-height: 2.6;

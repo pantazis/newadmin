@@ -17,15 +17,19 @@
 }
 //form input colors
 .form-select {
-  @include themeColor("background-image",url('../img/button-icons/selectArrow.svg'),url('../img/button-icons/selectArrowDark.svg'));
-
+  @include themeColor(
+    "background-image",
+    url("../img/button-icons/selectArrow.svg"),
+    url("../img/button-icons/selectArrowDark.svg")
+  );
 }
-input,select,.select2-selection__rendered{
-  @include themeColor("color",$dark_blue,$ice);
+input,
+select,
+.select2-selection__rendered {
+  @include themeColor("color", $dark_blue, $ice);
   option {
-    @include themeColor("background-color",$ice,$dark_blue);
+    @include themeColor("background-color", $ice, $dark_blue);
   }
-  
 }
 
 .component__title {
@@ -35,14 +39,13 @@ input,select,.select2-selection__rendered{
   margin: 0 0 1.5625rem 0;
 }
 
-
-.material-text-field__container { 
+.material-text-field__container {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   animation: none;
 }
-.material-text-field{
+.material-text-field {
   position: relative;
 }
 
@@ -50,7 +53,7 @@ input,select,.select2-selection__rendered{
   z-index: 1;
   width: 100%;
   border: none;
- 
+
   background-color: transparent;
   padding: $form-select-padding-y $form-select-padding-x;
   line-height: $form-select-line-height;
@@ -66,19 +69,17 @@ input,select,.select2-selection__rendered{
   left: 0.625rem;
   padding: 0 0.25rem;
   font-size: 0.75rem;
-  letter-spacing: 0.025rem; 
+  letter-spacing: 0.025rem;
   transition: all 150ms linear;
 }
-.material-text-field__input-text[disabled]{
-  @include themeColor("color", darken($light_grey,20), darken($light_grey,20));
+.material-text-field__input-text[disabled] {
+  @include themeColor("color", darken($light_grey, 20), darken($light_grey, 20));
   & ~ .material-text-field__label-text {
- @include themeColor("color", darken($light_grey,20), darken($light_grey,20));
-  & ~ .material-text-field__activation-indicator {
-    @include themeColor("border-color", $light_grey, darken($light_grey,20));
-
+    @include themeColor("color", darken($light_grey, 20), darken($light_grey, 20));
+    & ~ .material-text-field__activation-indicator {
+      @include themeColor("border-color", $light_grey, darken($light_grey, 20));
+    }
   }
-
-}
 }
 
 .material-text-field__input-text:focus ~ .material-text-field__activation-indicator {
@@ -137,7 +138,6 @@ input,select,.select2-selection__rendered{
   font-size: 12px;
   letter-spacing: 0.4px;
   color: rgba(0, 0, 0, 0.6);
-  
 }
 .messege {
   padding-top: 0.4rem;
@@ -325,19 +325,19 @@ label.checkbox_label1 {
 .checkbox-parent .knobs span {
   display: inline-block;
   left: $topc;
-  @include themeColor("color",$white,$dark_blue);
+  @include themeColor("color", $white, $dark_blue);
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .checkbox-parent .knobs span:nth-of-type(2) {
-  left: calc(50% + #{$topc}); 
-  @include themeColor("color",$dark_grey,$ice)
+  left: calc(50% + #{$topc});
+  @include themeColor("color", $dark_grey, $ice);
 }
 
 .checkbox-parent .checkbox:checked + .knobs span {
-  @include themeColor("color",$dark_grey,$ice)
+  @include themeColor("color", $dark_grey, $ice);
 }
 
 .checkbox-parent .checkbox:checked + .knobs span:nth-of-type(2) {

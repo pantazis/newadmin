@@ -350,6 +350,7 @@ $section-padding: 1.875rem;
   display: flex;
   font-size: 1rem;
   font-weight: bold;
+  align-items:center;
   @include themeColor("color", $dark_blue, $ice);
   margin-bottom: 1.25rem;
   @media (max-width: #{$xl - 1}) {
@@ -357,6 +358,7 @@ $section-padding: 1.875rem;
     padding: 0.8125rem 0;
     .info-icon {
       display: flex;
+      margin-left: auto;
     }
   }
 }
@@ -446,6 +448,12 @@ $section-padding: 1.875rem;
 .icon-cont {
   margin-left: auto;  
   display: flex;
+  @media (max-width: $md) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top:1rem;
+}
 
 }
 

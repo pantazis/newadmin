@@ -12290,6 +12290,7 @@ body.noanimαtion * {
   display: flex;
   font-size: 1rem;
   font-weight: bold;
+  align-items: center;
   color: #2e435e;
   margin-bottom: 1.25rem; }
   .info-title .info-icon {
@@ -12301,7 +12302,8 @@ body.noanimαtion * {
       border-bottom: 0.0625rem solid;
       padding: 0.8125rem 0; }
       .info-title .info-icon {
-        display: flex; } }
+        display: flex;
+        margin-left: auto; } }
 
 .open .icon-fi-sr-angle-down:before {
   content: "\e94e"; }
@@ -12380,6 +12382,12 @@ body.noanimαtion * {
 .icon-cont {
   margin-left: auto;
   display: flex; }
+  @media (max-width: 768px) {
+    .icon-cont {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-top: 1rem; } }
 
 .info-icon {
   width: 2.2rem;

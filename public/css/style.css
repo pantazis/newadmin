@@ -10775,7 +10775,7 @@ textarea.form-control-lg {
 
 @media (max-width: 768px) {
   :root {
-    --section-padding:1rem; } }
+    --section-padding: 1rem; } }
 .btn-green2 {
   color: #efeff6; }
 
@@ -14072,7 +14072,9 @@ h2.page_title, .page_title.h2 {
 
 input, select, .select2-selection__rendered {
   color: #2e435e; }
-  .dark input, .dark select, .dark .select2-selection__rendered {
+  .dark input,
+  .dark select,
+  .dark .select2-selection__rendered {
     color: #efeff6; }
   input option, select option, .select2-selection__rendered option {
     background-color: #efeff6; }

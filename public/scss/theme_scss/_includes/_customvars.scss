@@ -3,7 +3,7 @@ $menuMobileMax: $md;
 $menuTabletMax: $xxl;
 $menuDesktopMin: $menuTabletMax + 1px;
 $menuTabletMin: $menuMobileMax + 1px;
-$section-padding:1.875rem;
+$section-padding: 1.875rem;
 .ice {
   color: $ice;
 }
@@ -99,29 +99,21 @@ $grid-breakpoints: (
 @include mediaDesktop(".hide-desktop", "display", none);
 @include mediaSuperlarge(".hide-superlarge", "display", none);
 
-@mixin inputstyle{
-line-height:21px;
-font-size:14px;
-padding: $form-select-padding-y $form-select-padding-x;
-line-height: $form-select-line-height;
-background-color: transparent;
-border: $form-select-border-width solid $form-select-border-color;
-border-radius:$border-radius;
+@mixin inputstyle {
+  line-height: 21px;
+  font-size: 14px;
+  padding: $form-select-padding-y $form-select-padding-x;
+  line-height: $form-select-line-height;
+  background-color: transparent;
+  border: $form-select-border-width solid $form-select-border-color;
+  border-radius: $border-radius;
 }
 
-
-:root{
-
+:root {
   --section-padding: #{$section-padding};
-
-
 }
-@media (max-width: $md){
-  :root{
-    --section-padding:1rem; 
-  
+@media (max-width: $md) {
+  :root {
+    --section-padding: 1rem;
   }
-
 }
-
-

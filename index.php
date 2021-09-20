@@ -7,6 +7,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
 
 <head>
   <?php include './_include/head.php' ?>
+  <?php include '_include/form-elements.php'; ?>
 </head>
 
 <body class="isNotActive noanimαtion" onresize="screenSize()">

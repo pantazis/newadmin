@@ -5,7 +5,7 @@
   $(document).ready(function () {
     $("body").removeClass("noanimαtion");
     activeTab();
-    screenSize()
+   // screenSize()
   });
 
   var rtime;
@@ -112,7 +112,10 @@
   top_nav.open_class = [];
 
   function menu_subcategory_open(parent_Element, open_class, listChildElement) {
+    
+    
     $(parent_Element).click(function () {
+      
       top_nav.parent_Element = parent_Element;
       top_nav.listChildElement = listChildElement;
       top_nav.class = open_class;
@@ -204,7 +207,6 @@
   menu_subcategory_open(".nav-list-item", "opennav1", ".custom-popup");
   menu_subcategory_open(".nav-list-item2", "opennav1", ".sub-category");
   menu_subcategory_open(".nav-icon-3", "opennav1", ".popup-notifications");
-  menu_subcategory_open(".nav-list.search", "opennav1", ".custom-popup");
   menu_subcategory_open(".alert-server", "opennav1", ".custom-popup");
 
   /* hide loader */

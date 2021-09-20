@@ -11398,7 +11398,8 @@ span.light {
   display: flex;
   font-size: 1.125rem;
   height: 4.68rem;
-  padding: 0.781rem 0; }
+  padding: 0.781rem 0;
+  margin-left: auto; }
   .nav-list.user-icons .nav-icon-3 {
     height: auto;
     width: 4.9375rem;
@@ -11406,9 +11407,14 @@ span.light {
     justify-content: center;
     align-items: center;
     border-left: 0.025rem solid #cacad5;
-    cursor: pointer; }
+    cursor: pointer;
+    flex: 1 0 4.9375rem; }
     .nav-list.user-icons .nav-icon-3:first-of-type {
       border-left: 0rem; }
+    .nav-list.user-icons .nav-icon-3.search {
+      min-width: 4.9375rem;
+      width: auto;
+      flex: 1 0 auto; }
     .nav-list.user-icons .nav-icon-3 .rel-icon {
       position: relative; }
       .nav-list.user-icons .nav-icon-3 .rel-icon .num {
@@ -11476,8 +11482,8 @@ nav.sidebar.top {
     nav.sidebar.top .nav-list-item:first-of-type {
       margin-left: 1.094rem; }
   nav.sidebar.top .nav-list.search {
-    margin-left: auto;
-    padding-right: 1.7337rem; }
+    margin-left: 0;
+    padding-right: 0; }
     nav.sidebar.top .nav-list.search .nav-text1 {
       justify-content: center; }
 

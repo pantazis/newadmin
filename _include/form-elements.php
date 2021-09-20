@@ -199,4 +199,32 @@ function modal($id="", $title="", $mainText="", $btnColorClass="", $btnText="")
 }
 
 
+function search(){
+  $template='<div class="nav-list search">
+      
+  <div class="search-cont">
+      <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
+      <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
+      <div class="custom-popup ss  shadow-2-strong">
+          <div class="search-cont">
+              <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
+              <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
+          </div>
+          <div class="bubble-cont popup-notifications shadow-5-strong">
+              <div class="arrow-div"></div>
+                                      <div class="bubble"><span class="b_in">Διάλεξε πίνακα</span></div>
+                                      <div class="bubble"><span class="b_in"> Domain</span></div>
+                                      <div class="bubble"><span class="b_in"> Domain (orders)</span></div>
+                                      <div class="bubble"><span class="b_in"> Domain (trades)</span></div>
+                                      <div class="bubble"><span class="b_in"> Email (users)</span></div>
+                                      <div class="bubble"><span class="b_in"> VAT</span></div>
+                                      <div class="bubble"><span class="b_in"> Documents</span></div>
+                                  </div>
+      </div>
+  </div>
+</div>';
+return $template;
+};
+
+
 

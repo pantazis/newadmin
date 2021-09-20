@@ -76,33 +76,8 @@
             </div>
             <?php } ?>
         </div>
-        <?php $bubbles = [
-            "Διάλεξε πίνακα",
-            " Domain",
-            " Domain (orders)",
-            " Domain (trades)",
-            " Email (users)",
-            " VAT",
-            " Documents"
-        ] ?>
-        <div class="nav-list search">
-            <div class="search-cont">
-                <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
-                <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
-                <div class="custom-popup ss  shadow-2-strong">
-                    <div class="search-cont">
-                        <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
-                        <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
-                    </div>
-                    <div class="bubble-cont">
-                        <div class="arrow-div"></div>
-                        <?php foreach ($bubbles as  $value) { ?>
-                        <div class="bubble"><span class="b_in"><?= $value ?></span></div>
-                        <?php } ?>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
+       
         <div class="nav-list user-icons">
             <?php $arr = [
                 "fi-sr-menu-burger_left",
@@ -186,6 +161,11 @@
                         </div>
                     </div>
                 </div>
+                <?php } ?>
+                <?php if ($val == "search") { ?>
+                    <?php echo search() ?>
+                  
+
                 <?php } ?>
                 <?php if ($val == "fi-sr-user") { ?>
                 <div class="arrow-div"></div>

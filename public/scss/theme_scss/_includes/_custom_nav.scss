@@ -290,21 +290,30 @@ span.light {
     
 }
 .nav-list.user-icons {
+    $width: 4.9375rem;
     display: flex;
     font-size: 1.125rem;
     height: $navSidebarTop;
     padding: 0.781rem 0;
+    margin-left: auto;
     .nav-icon-3 {
         &:first-of-type {
             border-left: 0rem;
         }
+        &.search{
+            min-width: $width;
+            width: auto;
+            flex:1 0 auto;
+            
+        }
         height: auto;
-        width: 4.9375rem;
+        width: $width;
         display: flex;
         justify-content: center;
         align-items: center;
         border-left: 0.025rem solid $light_grey;
         cursor: pointer;
+        flex: 1 0 4.9375rem;
         .rel-icon {
             position: relative;
             .num {
@@ -386,8 +395,8 @@ nav.sidebar.top {
         }
     }
     .nav-list.search {
-        margin-left: auto;
-        padding-right: 1.7337rem;
+        margin-left: 0;
+        padding-right: 0;
         .nav-text1 {
             justify-content: center;
         }

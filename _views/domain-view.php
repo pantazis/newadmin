@@ -1,5 +1,5 @@
       <section class="top-section ">
-      <?php include '_include/form-elements.php'; ?>
+     
       <?php include '_include/domain-view/domain-view-data.php'; ?>
       <?php include '_include/content_top.php'; ?>
       </section>

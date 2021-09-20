@@ -449,10 +449,12 @@ body.noanimαtion * {
   margin-left: auto;  
   display: flex;
   @media (max-width: $md) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top:1rem;
+    
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+
 }
 
 }
@@ -673,7 +675,9 @@ body.noanimαtion * {
 //========================================================//
 
 .info-row.last {
-  border: none;
+  @media (min-width: #{$xl+1} ){
+  border: none; 
+  }
 }
 .addAction {
   cursor: pointer;

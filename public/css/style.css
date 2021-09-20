@@ -12407,9 +12407,9 @@ body.noanimαtion * {
   @media (max-width: 768px) {
     .icon-cont {
       position: absolute;
-      top: 0;
+      top: 50%;
       right: 0;
-      padding-top: 1rem; } }
+      transform: translateY(-50%); } }
 
 .info-icon {
   width: 20px;
@@ -12617,8 +12617,9 @@ body.noanimαtion * {
   .info-title {
     margin-bottom: 0rem;
     padding: 1.4rem 0; } }
-.info-row.last {
-  border: none; }
+@media (min-width: 1201px) {
+  .info-row.last {
+    border: none; } }
 
 .addAction {
   cursor: pointer;

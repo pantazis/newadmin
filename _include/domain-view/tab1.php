@@ -82,10 +82,10 @@
       <button type="button" class="btn actions btn-black_blue"><img src="public/img/button-icons/fi-sr-refresh.svg"
           class="button-icon2" alt=""><span class="btext">ΑΝΑΝΕΩΣΗ DOMAIN</span></button>
       <button type="button" class="btn actions btn-outline-blue_purple"><img
-          src="public/img/button-icons/into-transfer.svg" class="button-icon2" alt=""><span class="btext">ΕΣΩΤΕΡΙΚΗ
-          ΜΕΤΑΦΟΡΑ</span></button>
-      <button type="button" class="btn actions btn-outline-red2"><img src="public/img/button-icons/fi-sr-refresh2.svg"
+          src="public/img/button-icons/into-transfer.svg" class="button-icon2" alt=""><span class="btext">ΕΣΩΤΕΡΙΚΗ  ΜΕΤΑΦΟΡΑ</span></button>
+      <button type="button" class="btn actions btn-outline-pal_pink"><img src="public/img/button-icons/fi-sr-refresh2.svg"
           class="button-icon2" alt=""><span class="btext">ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</span></button>
+          <button type="button" class="btn actions btn-outline-red2"><img src="public/img/button-icons/fi-sr-key.svg" class="button-icon2" alt=""><span class="btext">ΚΩΔΙΚΟΣ ΕΞΟΥΣΙΟΔΟΤΗΣΗΣ</span></button>
     </div>
     <div class="col-xl-6 order-xl-5 order-1">
       <div class="d-none d-xl-block action-cont">

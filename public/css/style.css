@@ -14546,38 +14546,40 @@ label.checkbox_label1 {
   width: 1px !important;
   white-space: nowrap !important; }
 
-.select2-container--default .select2-selection--single {
-  background-color: #fff;
-  border: 1px solid #aaa;
-  border-radius: 4px; }
-  .select2-container--default .select2-selection--single .select2-selection__rendered {
-    line-height: 28px; }
-  .select2-container--default .select2-selection--single .select2-selection__clear {
-    cursor: pointer;
-    float: right;
-    font-weight: bold;
-    height: 26px;
-    margin-right: 20px;
-    padding-right: 0px; }
-  .select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: #999; }
-  .select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 26px;
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 21px;
+  font-size: 14px;
+  padding: 0.375rem 1rem;
+  line-height: 1.5;
+  background-color: transparent;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem; }
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+  height: 26px;
+  margin-right: 20px;
+  padding-right: 0px; }
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #999; }
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 26px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 20px; }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
     position: absolute;
-    top: 1px;
-    right: 1px;
-    width: 20px; }
-    .select2-container--default .select2-selection--single .select2-selection__arrow b {
-      border-color: #888 transparent transparent transparent;
-      border-style: solid;
-      border-width: 5px 4px 0 4px;
-      height: 0;
-      left: 50%;
-      margin-left: -4px;
-      margin-top: -2px;
-      position: absolute;
-      top: 50%;
-      width: 0; }
+    top: 50%;
+    width: 0; }
 .select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear {
   float: left; }
 .select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {

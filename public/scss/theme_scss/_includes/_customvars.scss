@@ -97,3 +97,15 @@ $grid-breakpoints: (
 @include mediaTablet(".hide-tablet", "display", none);
 @include mediaDesktop(".hide-desktop", "display", none);
 @include mediaSuperlarge(".hide-superlarge", "display", none);
+
+@mixin inputstyle{
+line-height:21px;
+font-size:14px;
+padding: $form-select-padding-y $form-select-padding-x;
+line-height: $form-select-line-height;
+background-color: transparent;
+border: $form-select-border-width solid $form-select-border-color;
+border-radius:$border-radius;
+}
+
+

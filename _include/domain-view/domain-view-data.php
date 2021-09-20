@@ -240,10 +240,10 @@ $formArr = [
     [formPersonal($host,$domain,$ip),formPersonal($host,$domain,$ip), formPersonal($host,$domain,$ip)],
     [
         select2($nservers, "pant"),
-        selectEl(["test", "test", "test"], "test"),
-        selectEl(["test", "test", "test"], "test"),
-        selectEl(["test", "test", "test"], "test"),
-        selectEl(["test", "test", "test"], "test"),
+        formPersonal2($host),
+        formPersonal2($host),
+        formPersonal2($host),
+        formPersonal2($host)
       
     ],
 ];

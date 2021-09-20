@@ -60,7 +60,14 @@ $domain=[
 
  ];
 
-
+ function formPersonal2($inputprop1)
+ {
+     $template ='<div class="info-text-in">';    
+     $template .=inputEl($inputprop1, true);
+     $template .='</div>';
+ 
+     return $template;
+ };
 
 
 function formPersonal($inputprop1, $inputprop2, $inputprop3)
@@ -97,7 +104,7 @@ function selectEl($arr, $title)
 
 function select2($optionArr, $placeholder, $id = "")
 {
-    $template = '<select class="form-select select2"    data-placeholder="'.$placeholder.'">';
+    $template = '<div class="info-text-in"><select class="form-select select2"    data-placeholder="'.$placeholder.'">';
     foreach ($optionArr as $group) {
         $template .='<optgroup label="'.$group['group'].'">';
         foreach ($group["option"] as $option) {
@@ -105,7 +112,7 @@ function select2($optionArr, $placeholder, $id = "")
         }
         $template .='</optgroup>';
     }
-    $template .='</select>';
+    $template .='</select></div>';
     return $template;
 }
 

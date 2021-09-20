@@ -227,7 +227,7 @@ body.noanimαtion * {
   margin-bottom: var(--section-padding);
   border-radius: $border-radius;
   @media (min-width: $xl) {
-    padding-top: var(--section-padding) + 0.75rem;
+    padding-top: $section-padding + 0.75rem;
     padding-bottom: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;

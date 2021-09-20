@@ -3,6 +3,7 @@ $menuMobileMax: $md;
 $menuTabletMax: $xxl;
 $menuDesktopMin: $menuTabletMax + 1px;
 $menuTabletMin: $menuMobileMax + 1px;
+$section-padding:1.875rem;
 .ice {
   color: $ice;
 }
@@ -111,14 +112,13 @@ border-radius:$border-radius;
 
 :root{
 
-  --section-padding:1.875rem;
+  --section-padding: #{$section-padding};
 
 
 }
 @media (max-width: $md){
   :root{
-    --section-padding:1rem;
-  
+    --section-padding:1rem; 
   
   }
 

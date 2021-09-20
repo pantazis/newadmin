@@ -53,11 +53,12 @@
             document.getElementById("demo").innerHTML = txt;
         }
     </script>
-    <p id="demo"></p>
-    <!--diastaseis -->
+
+    <!-- <p  id="demo"></p>
+    
     <?php foreach ($bp as $kay =>   $value) { ?>
-    <div class="d-none d-<?= $kay; ?>-flex">
+    <div class=" d-none d-<?= $kay; ?>-flex">
         <?= $value; ?>
     </div>
 
-    <?php }
+    <?php }?>-->

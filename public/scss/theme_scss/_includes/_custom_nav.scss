@@ -284,7 +284,10 @@ span.light {
     transition: all 0.3s;
 }
 .paddingEl {
-    height: $navSidebarTop;
+    @media (max-width: $md) {
+        height: $navSidebarTop;
+    }
+    
 }
 .nav-list.user-icons {
     display: flex;

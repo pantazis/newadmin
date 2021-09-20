@@ -10771,7 +10771,7 @@ textarea.form-control-lg {
   .hide-superlarge {
     display: none !important; } }
 :root {
-  --section-padding:1.875rem; }
+  --section-padding: 1.875rem; }
 
 @media (max-width: 768px) {
   :root {
@@ -11390,8 +11390,9 @@ span.light {
   margin-right: 0.625em;
   transition: all 0.3s; }
 
-.paddingEl {
-  height: 4.68rem; }
+@media (max-width: 768px) {
+  .paddingEl {
+    height: 4.68rem; } }
 
 .nav-list.user-icons {
   display: flex;
@@ -12193,7 +12194,7 @@ body.noanimαtion * {
   border-radius: 0.25rem; }
   @media (min-width: 1200px) {
     .section-main {
-      padding-top: var(--section-padding)0.75rem;
+      padding-top: 2.625rem;
       padding-bottom: 0;
       border-top-left-radius: 0;
       border-top-right-radius: 0; } }

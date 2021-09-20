@@ -12377,18 +12377,17 @@ body.noanimαtion * {
   .dark .timezone {
     color: #cacad5; }
 
+.icon-cont {
+  margin-left: auto;
+  display: flex; }
+
 .info-icon {
   width: 2.2rem;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  /*skata*/ }
-  .info-icon:first-of-type {
-    margin-left: auto; }
-  .info-icon[style*="none"] ~ .info-icon {
-    margin-left: auto; }
+  cursor: pointer; }
   .info-icon.info-icon.action0 {
     right: 2.75rem;
     color: #cacad5; }

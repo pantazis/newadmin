@@ -79,9 +79,9 @@ function HtmlEl($text, $classl, $color, $element, $icon = false)
     }
 
     $template = "";
-    $iconTemplate = ' <div class="info-icon action1">
+    $iconTemplate = '<div class="icon-cont"> <div class="info-icon action1">
   <span class="icon-fi-sr-pencil" class="button-icon" alt=""></span>
-  </div>';
+  </div></div>';
 
     if (is_array($icon)) {
         $template .=
@@ -96,6 +96,8 @@ function HtmlEl($text, $classl, $color, $element, $icon = false)
             "</" .
             $element .
             ">";
+            $template.='<div class="icon-cont">';
+
         foreach ($icon as $key => $val) {
             $template .=
                 '<div class="info-icon action' .
@@ -103,7 +105,9 @@ function HtmlEl($text, $classl, $color, $element, $icon = false)
                 '"><span class="' .
                 $val .
                 '" class="button-icon" alt=""></span></div>';
+               
         }
+        $template.='</div>';
     }
 
     if ($icon == true && !is_array($icon)) {

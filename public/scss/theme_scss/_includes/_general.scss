@@ -443,6 +443,13 @@ $section-padding: 1.875rem;
   font-size: 0.675rem;
   @include themeColor("color", $dark_blue, $light_grey);
 }
+.icon-cont {
+  margin-left: auto;  
+  display: flex;
+
+}
+
+
 .info-icon {
   width: 2.2rem;
   height: 100%;
@@ -451,13 +458,9 @@ $section-padding: 1.875rem;
   align-items: center;
   cursor: pointer;
 
-  &:first-of-type {
-    margin-left: auto;
-  }
-  /*skata*/
-  &[style*="none"] ~ .info-icon {
-    margin-left: auto;
-  }
+
+  
+
   &.info-icon.action0 {
     right: 2.75rem;
     @include themeColor("color", $light_grey, $dark_blue);

@@ -10873,6 +10873,8 @@ input.search-top {
 
 .message {
   background: #efeff6; }
+  .message.read {
+    background: transparent; }
 
 .message.color1 {
   border-color: #d83438; }
@@ -11049,6 +11051,8 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
     border: solid #efeff6 0.1rem; }
   .dark .message {
     background: #9a9ab4; }
+    .dark .message.read {
+      background: transparent; }
   .dark .message.color1 {
     border-color: #d83438; }
   .dark .message.color2 {

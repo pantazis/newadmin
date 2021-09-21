@@ -108,6 +108,10 @@ input.search-top {
 }
 .message {
   background: $ice;
+  &.read{
+    background: transparent;
+
+  }
 }
 .message.color1 {
   border-color: $red;
@@ -335,6 +339,10 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
   }
   .message {
     background: $blue_grey;
+    &.read{
+      background: transparent;
+
+    }
   }
   .message.color1 {
     border-color: $red;

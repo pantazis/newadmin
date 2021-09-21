@@ -161,7 +161,7 @@
                     <div class="bottom-box box1">
                         <hr>
                         <div class="actions-b">
-                            <span class="text1">Ανάγνωση Όλων</span>
+                            <span class="text1 read-all">Ανάγνωση Όλων</span>
                             <a class="text1">Καθαρισμός</a>
                         </div>
                     </div>

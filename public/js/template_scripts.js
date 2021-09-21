@@ -141,7 +141,7 @@
   function menu_subcategory_open(parent_Element, open_class, listChildElement) {
    
    
-    $(parent_Element).click(function (event) {
+    $(parent_Element).click(function (event) { 
       
       
       top_nav.parent_Element = parent_Element;
@@ -356,6 +356,24 @@ window.makeElement = function(el){
       $('#noFreeHosting').modal('show');
     }
   });
+
+  $(".message").click(function(e){
+    var del = $(e.target).closest(".remove").length;
+    var el = $(this);
+   /*
+    if(del > 0){
+      el.remove();
+    }*/
+    el.addClass("read") 
+
+    }
+  )
+
+  $(".read-all").click(function(){
+    $(".message").addClass("read")
+
+  })
+  
 
 
 

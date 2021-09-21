@@ -86,19 +86,7 @@ html {
     opacity: 1;
     transform: translate(12em, 2em) rotate(-15deg);
 }
-.footer-nav-mobile {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    @include themeColor("background-color", $white, $black_blue);
-    .nav-list.user-icons {
-        width: 100%;
-        .nav-icon-3 {
-            flex: 1;
-        }
-    }
-}
+
 //----------------------------------------toggle button end-------------------------------------------------------------//
 .nav-text1 {
     display: flex;
@@ -559,7 +547,15 @@ input.search-top {
     border: 0.025rem solid darken($ice, 8%);
 }
 .custom-popup .search-cont {
+    display: flex;
+ @media (min-width: #{$xxxl+1}){
     display: none;
+}
+    
+   
+
+
+    
 }
 .search-cont {
     border: 0.025rem solid darken($ice, 8%);
@@ -957,8 +953,12 @@ span.b_in {
         margin-top: 2.75rem;
     }
     nav.sidebar.top .nav-list.user-icons .nav-icon-3 {
-        width: 20%;
+       flex:1 1 0;
         border-left: 0;
+        &.logo-mobile{
+            width: 40%;
+            flex-grow: 2;
+        }
     }
     nav.sidebar.top .nav-list-item:first-of-type {
         display: none;
@@ -992,3 +992,67 @@ span.b_in {
     }
 }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
+
+
+/*-----------------------------------footer-nav-------------------------------------*/
+.footer-nav-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index:3;
+    @include themeColor("background-color", $white, $black_blue);
+    .nav-list.user-icons {
+        width: 100%;
+        .nav-icon-3 {
+            flex: 1;
+        }
+    }
+    .popup-notifications {      
+        position: fixed;
+        bottom:0;
+        left: 0;
+        right: 0;
+        top:100%;
+        width:100%;
+        height:100%;
+        border-radius: $border-radius;
+        padding-left: 0;
+        padding-right: 0;
+        transition: top .3s;
+        z-index: 2;
+        transform:none;
+    }
+    .opennav1{
+        .popup-notifications { 
+            
+         top:25%;     
+            
+        }
+    }
+}
+.overlay.footer{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    width:100%;
+    height:0;
+    background:#000000;
+    opacity: 0;
+    transition: opacity .5s,0s height .5s;
+    z-index: 1;
+    .opennav1 &{
+        height:100%;
+        opacity: .5;
+        transition: opacity .5s, height 0s;
+       
+
+    }
+    
+
+
+
+}
+/*-----------------------------------footer-nav-------------------------------------*/
+

@@ -204,26 +204,26 @@ function search(){
       
   <div class="search-cont search-cont only-superlarge">
       <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
-      <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
-      <div class="arrow-div"></div>
-      <div class="custom-popup ss popup-notifications  shadow-2-strong">
-          <div class="search-cont">
-              <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
-              <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
-          </div>
-          <div class="bubble-cont ">
-             
-                                      <div class="bubble"><span class="b_in">Διάλεξε πίνακα</span></div>
-                                      <div class="bubble"><span class="b_in"> Domain</span></div>
-                                      <div class="bubble"><span class="b_in"> Domain (orders)</span></div>
-                                      <div class="bubble"><span class="b_in"> Domain (trades)</span></div>
-                                      <div class="bubble"><span class="b_in"> Email (users)</span></div>
-                                      <div class="bubble"><span class="b_in"> VAT</span></div>
-                                      <div class="bubble"><span class="b_in"> Documents</span></div>
-                                  </div>
-      </div>
+      <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">     
   </div>
-</div>';
+ 
+</div>
+<div class="arrow-div"></div>
+<div class="custom-popup ss popup-notifications  shadow-2-strong">
+        <div class="search-cont mobile-only tablet-only">
+            <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
+            <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
+        </div>
+        <div class="bubble-cont ">             
+                                    <div class="bubble"><span class="b_in">Διάλεξε πίνακα</span></div>
+                                    <div class="bubble"><span class="b_in"> Domain</span></div>
+                                    <div class="bubble"><span class="b_in"> Domain (orders)</span></div>
+                                    <div class="bubble"><span class="b_in"> Domain (trades)</span></div>
+                                    <div class="bubble"><span class="b_in"> Email (users)</span></div>
+                                    <div class="bubble"><span class="b_in"> VAT</span></div>
+                                    <div class="bubble"><span class="b_in"> Documents</span></div>
+       </div>
+    </div>';
 return $template;
 };
 

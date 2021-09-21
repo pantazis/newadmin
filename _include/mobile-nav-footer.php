@@ -16,13 +16,15 @@
         ]; ?>
         
         <?php foreach ($arrfooter as $key => $val) { ?>
-        <div class="nav-icon-3 fi-sr-menu-burger_left <?= $arrclass[$key] ?>">
+        <div class="nav-icon-3 <?= $arrclass[$key] ?>">
             <div class="rel-icon">
                 <?php if ($val == "icon-fi-sr-bell1" || $val == "icon-fi-sr-shopping-cart") { ?>
                 <span class="num"><?= rand(1, 100) ?></span>
                 <?php } ?>
                 <i class="<?= $val ?>"></i>
             </div>
+            <div class="popup-notifications footer"><?=$key?>aaaa</div>
+            <div class="overlay footer"></div>
         </div>
         <?php } ?>
     </div>

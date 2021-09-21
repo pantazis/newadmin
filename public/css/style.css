@@ -11219,19 +11219,6 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
   opacity: 1;
   transform: translate(12em, 2em) rotate(-15deg); }
 
-.footer-nav-mobile {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff; }
-  .dark .footer-nav-mobile {
-    background-color: #0e0c28; }
-  .footer-nav-mobile .nav-list.user-icons {
-    width: 100%; }
-    .footer-nav-mobile .nav-list.user-icons .nav-icon-3 {
-      flex: 1; }
-
 .nav-text1 {
   display: flex;
   align-items: center;
@@ -11618,7 +11605,10 @@ input.search-top {
   border: 0.025rem solid #d5d5e7; }
 
 .custom-popup .search-cont {
-  display: none; }
+  display: flex; }
+  @media (min-width: 1911px) {
+    .custom-popup .search-cont {
+      display: none; } }
 
 .search-cont {
   border: 0.025rem solid #d5d5e7;
@@ -11964,8 +11954,11 @@ span.b_in {
     margin-top: 2.75rem; }
 
   nav.sidebar.top .nav-list.user-icons .nav-icon-3 {
-    width: 20%;
+    flex: 1 1 0;
     border-left: 0; }
+    nav.sidebar.top .nav-list.user-icons .nav-icon-3.logo-mobile {
+      width: 40%;
+      flex-grow: 2; }
 
   nav.sidebar.top .nav-list-item:first-of-type {
     display: none; } }
@@ -11993,6 +11986,54 @@ span.b_in {
     height: 5.85rem;
     width: 6.015rem; } }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
+/*-----------------------------------footer-nav-------------------------------------*/
+.footer-nav-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: #fff; }
+  .dark .footer-nav-mobile {
+    background-color: #0e0c28; }
+  .footer-nav-mobile .nav-list.user-icons {
+    width: 100%; }
+    .footer-nav-mobile .nav-list.user-icons .nav-icon-3 {
+      flex: 1; }
+  .footer-nav-mobile .popup-notifications {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    padding-left: 0;
+    padding-right: 0;
+    transition: top .3s;
+    z-index: 2;
+    transform: none; }
+  .footer-nav-mobile .opennav1 .popup-notifications {
+    top: 25%; }
+
+.overlay.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background: #000000;
+  opacity: 0;
+  transition: opacity .5s,0s height .5s;
+  z-index: 1; }
+  .opennav1 .overlay.footer {
+    height: 100%;
+    opacity: .5;
+    transition: opacity .5s, height 0s; }
+
+/*-----------------------------------footer-nav-------------------------------------*/
 /*---------------------------------remove animations on load or resize-----------------------------------------*/
 body.noanimαtion * {
   transition: none !important;

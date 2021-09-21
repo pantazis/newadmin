@@ -54,11 +54,11 @@
         }
     </script>
 
-    <!-- <p  id="demo"></p>
+    <p  id="demo"></p>
     
     <?php foreach ($bp as $kay =>   $value) { ?>
     <div class=" d-none d-<?= $kay; ?>-flex">
         <?= $value; ?>
     </div>
 
-    <?php }?>-->
+    <?php }?>

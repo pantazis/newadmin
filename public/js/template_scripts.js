@@ -11,7 +11,7 @@
   var rtime;
   var timeout = false;
   var delta = 200;
-  var arrform = [];
+
   $(document).ready(function () {
     $(this).scrollTop(0);
   });
@@ -142,20 +142,20 @@
   }
 
   $("body").click(function (e) {
-    // top_nav.parent_Element;
-    // top_nav.top_nav.listChildElement;
-    // top_nav.class;
+    
+   
+
   
   
-    if ($(e.target).closest(top_nav.parent_Element).length == 0&&top_nav.parent_Element==".alert-server") {
+    if ($(e.target).closest(top_nav.parent_Element).length == 0) {
       $(top_nav.parent_Element).removeClass(top_nav.class);
     }
 
-    if ($(e.target).closest(top_nav.listChildElement).length != 0 && top_nav.parent_Element !=".alert-server") {
+    if ($(e.target).closest(top_nav.listChildElement).length != 0 ) {
       $(e.target).closest(top_nav.parent_Element).addClass(top_nav.class);
       top_nav.num = 0;
     }
-    top_nav.parent_Element ="";
+    
   });
 
   $("li.nav-list-item2").each(function () {
@@ -166,6 +166,8 @@
 
   //create mobile actions
   var actions = $(".actions").clone().removeClass("btn");
+  $(':root').css('--elNum', $(".actions").length);
+  debugger;
   actions.each(function (index) {
     var classes = this.classList.value.replace("outline-", "");
     var newel = $(this).attr("class", classes)[0].outerHTML;

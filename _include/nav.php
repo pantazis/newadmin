@@ -80,9 +80,9 @@
        
         <div class="nav-list user-icons">
             <?php $arr = [
-                "fi-sr-menu-burger_left",
-                "logo-mobile",
                 "search",
+                "fi-sr-menu-burger_left",
+                "logo-mobile",                
                 "fi-sr-bell1",
                 "fi-sr-shopping-cart",
                 "fi-sr-user",
@@ -100,7 +100,7 @@
                         echo "only-mobile";
                         break;
                     case "search":
-                       // echo "only-desktop only-tablet";
+                      // echo "only-desktop only-tablet";
                         break;
                     case "fi-sr-menu-burger":
                         echo "only-mobile only-tablet";
@@ -126,7 +126,7 @@
                     <?php if ($val == "logo-mobile") { ?>
                     <img src="./public/img/nav/logo_mobile.svg" alt="" class="logo-img">
                     <?php } else { ?>
-                    <i class="icon-<?= $val ?>"></i>
+                    <i class="icon-<?php echo $val; if($val=="search") echo " only-desktop only-tablet"  ?>"></i>
                     <?php } ?>
                 </div>
                 <?php if ($val == "fi-sr-bell1") { ?>

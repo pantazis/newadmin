@@ -11475,8 +11475,7 @@ nav.sidebar.top {
     nav.sidebar.top .nav-list-item:first-of-type {
       margin-left: 1.094rem; }
   nav.sidebar.top .nav-list.search {
-    margin-left: 0;
-    padding-right: 0; }
+    padding-right: 1.25rem; }
     nav.sidebar.top .nav-list.search .nav-text1 {
       justify-content: center; }
 
@@ -11788,6 +11787,18 @@ span.text1 {
 .alert-server.opennav1 .arrow-div,
 .alert-server.opennav1 .popup-notifications {
   transform: translateX(0); }
+
+.bubble-cont {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6875rem;
+  position: relative; }
+
+.bubble {
+  padding: 5px 5px; }
 
 span.b_in {
   font-size: 0.8125rem;
@@ -12469,10 +12480,10 @@ body.noanimαtion * {
 
 .mobile_tabs {
   display: flex;
-  width: 165%; }
+  width: calc(var( --elNum ) * 40% ); }
   @media (min-width: 768px) {
     .mobile_tabs {
-      width: 100%; } }
+      width: calc(var( --elNum ) * 28.57% ); } }
 
 .resio {
   width: 100%;

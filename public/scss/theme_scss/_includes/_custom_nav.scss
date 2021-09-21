@@ -387,8 +387,8 @@ nav.sidebar.top {
         }
     }
     .nav-list.search {
-        margin-left: 0;
-        padding-right: 0;
+       
+        padding-right:1.25rem;
         .nav-text1 {
             justify-content: center;
         }
@@ -768,7 +768,18 @@ span.text1 {
     }
 }
 
-
+.bubble-cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;   
+    justify-content: center;
+    align-items: center;
+    padding: 0.6875rem;
+    position: relative;
+}
+.bubble {
+    padding: 5px 5px;
+}
 span.b_in {
     font-size: 0.8125rem;
     border: 0.0625rem solid;

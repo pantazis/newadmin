@@ -527,9 +527,9 @@ body.noanimαtion * {
 //---------------------------------------action tabs-------------------------------//
 .mobile_tabs {
   display: flex;
-  width: 165%;
+  width: calc(var( --elNum ) * 40% );
   @media (min-width: $md) {
-    width: 100%;
+    width: calc(var( --elNum ) * 28.57% );
   }
 }
 .resio {

@@ -139,8 +139,10 @@
       }
       if (top_nav.num % 2 == 0) {
         $(lastElement).addClass(open_class);
+        $("body").addClass("noscroll");
       } else {
         $(lastElement).removeClass(open_class);
+        $("body").removeClass("noscroll");
       }
     });
   }
@@ -153,10 +155,12 @@
   
     if ($(e.target).closest(top_nav.parent_Element).length == 0) {
       $(top_nav.parent_Element).removeClass(top_nav.class);
+      $("body").removeClass("noscroll");
     }
 
     if ($(e.target).closest(top_nav.listChildElement).length != 0 ) {
       $(e.target).closest(top_nav.parent_Element).addClass(top_nav.class);
+      $("body").addClass("noscroll");
       top_nav.num = 0;
     }
     

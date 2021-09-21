@@ -65,7 +65,7 @@ $domainList=[
 <?php modal(
     $id="noFreeHosting",
     $title="Απενεργοποίηση Δωρεάν Φιλοξενίας",
-    $mainText="Πρόκειται να απενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0, count($domainList))]."</b>",
+    $mainText="Πρόκειται να απενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0, count($domainList)-1)]."</b>",
     $btnColorClass="btn-red2",
     $btnText="Απενεργοποίηση"
 );
@@ -73,7 +73,7 @@ $domainList=[
   modal(
       $id="FreeHosting",
       $title="Ενεργοποίηση Δωρεάν Φιλοξενίας",
-      $mainText="Πρόκειται να ενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0, count($domainList))]."</b>",
+      $mainText="Πρόκειται να ενεργοποιήσετε το την δωράν φιλοξενία για το domain <br> <b style= 'font-size:20px'>". $domainList[rand(0, count($domainList)-1)]."</b>",
       $btnColorClass="btn-green2",
       $btnText="Ενεργοποίηση"
   );

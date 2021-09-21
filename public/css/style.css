@@ -12018,6 +12018,7 @@ span.b_in {
     top: 25%; }
 
 .overlay.footer {
+  pointer-events: none;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -12027,13 +12028,23 @@ span.b_in {
   background: #000000;
   opacity: 0;
   transition: opacity .5s,0s height .5s;
-  z-index: 1; }
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto; }
   .opennav1 .overlay.footer {
     height: 100%;
     opacity: .5;
     transition: opacity .5s, height 0s; }
 
 /*-----------------------------------footer-nav-------------------------------------*/
+/*------------------------noscroll-------------------------------------------------*/
+@media (max-width: 768px) {
+  body.noscroll {
+    overflow: hidden; }
+    body.noscroll .mobile-cont {
+      overflow: hidden; } }
+
+/*------------------------noscroll-end---------------------------------------------*/
 /*---------------------------------remove animations on load or resize-----------------------------------------*/
 body.noanimαtion * {
   transition: none !important;

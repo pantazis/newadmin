@@ -132,12 +132,15 @@
                 <?php if ($val == "fi-sr-bell1") { ?>
                 <div class="arrow-div"></div>
                 <div class="popup-notifications shadow-5-strong">
-                    <div class="top-box box1">
-                        <span class="text1">Οι ειδοποιήσεις μου</span>
-                        <hr>
+                    <div class="top-el">
+                        <div class="top-box box1">
+                            <span class="text1">Οι ειδοποιήσεις μου</span>
+                            <hr>
+                        </div>
                     </div>
-                    <?php for ($x = 0; $x <= 2; $x++) { ?>
-                    <div class="message color<?= $x + 1 ?>">
+                    <div class="main-el">
+                    <?php for ($x = 0; $x <= 10; $x++) { ?>
+                    <div class="message color<?= ($x%3) + 1 ?>">
                         <div class="mm flex-c">
                             <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci
                                 pellentesque, pulvinar diam a, euismod lacus.</span>
@@ -153,6 +156,8 @@
                         </div>
                     </div>
                     <?php } ?>
+                    </div>
+                   <div class="action-el">
                     <div class="bottom-box box1">
                         <hr>
                         <div class="actions-b">
@@ -160,6 +165,8 @@
                             <a class="text1">Καθαρισμός</a>
                         </div>
                     </div>
+                    </div>
+
                 </div>
                 <?php } ?>
                 <?php if ($val == "search") { ?>
@@ -170,10 +177,12 @@
                 <?php if ($val == "fi-sr-user") { ?>
                 <div class="arrow-div"></div>
                 <div class="popup-notifications shadow-5-strong">
+                    
                     <div class="top-box box1">
                         <span class="text1">Ρυθμίσεις Προφίλ</span>
                         <hr>
                     </div>
+
                     <label class="toggle-container">
                         <input class="toggle-checkbox" type="checkbox">
                         <div class="toggle-slot">

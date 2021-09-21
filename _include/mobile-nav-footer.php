@@ -23,7 +23,7 @@
                 <?php } ?>
                 <i class="<?= $val ?>"></i>
             </div>
-            <div class="popup-notifications footer"><?=$key?>aaaa</div>
+            <div class="popup-notifications footer"></div>
             <div class="overlay footer"></div>
         </div>
         <?php } ?>

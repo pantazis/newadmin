@@ -223,6 +223,7 @@ function search(){
                                     <div class="bubble"><span class="b_in"> VAT</span></div>
                                     <div class="bubble"><span class="b_in"> Documents</span></div>
        </div>
+       <button type="button" class="d-block d-md-none btn search-btn btn-blue_purple">ΕΣΩΤΕΡΙΚΗ  ΜΕΤΑΦΟΡΑ</button>
     </div>';
 return $template;
 };

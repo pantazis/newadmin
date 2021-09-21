@@ -68,8 +68,7 @@
     })
 
 
-function initValidation(form){
-    console.log(form);
+function initValidation(form){  
     var form = form;
     var inputarr = $(form)[0];
     const formEL = inputarr;

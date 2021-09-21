@@ -205,12 +205,12 @@ function search(){
   <div class="search-cont">
       <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
       <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
-      <div class="custom-popup ss  shadow-2-strong">
+      <div class="custom-popup ss popup-notifications  shadow-2-strong">
           <div class="search-cont">
               <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
               <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
           </div>
-          <div class="bubble-cont popup-notifications shadow-5-strong">
+          <div class="bubble-cont ">
               <div class="arrow-div"></div>
                                       <div class="bubble"><span class="b_in">Διάλεξε πίνακα</span></div>
                                       <div class="bubble"><span class="b_in"> Domain</span></div>

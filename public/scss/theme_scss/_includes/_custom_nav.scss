@@ -369,14 +369,7 @@ nav.sidebar.top {
             }
         }
     }
-    .custom-popup {
-        position: absolute;
-        top: $topMargin;
-        text-align: center;
-        border-radius: $border-radius;
-        background: $white;
-        overflow: hidden;
-    }
+    
     .nav-list-item {
         display: flex;
         align-items: center;
@@ -605,8 +598,7 @@ input.search-top {
     }
 }
 //nav top popup animation
-.nav-list-item,
-.nav-list.search {
+.nav-list-item {
     .custom-popup {
         transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
         width: 0em;
@@ -775,26 +767,8 @@ span.text1 {
         }
     }
 }
-nav.sidebar.top .custom-popup.ss {
-    overflow: visible;
-    .bubble-cont {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 18.75rem;
-        justify-content: center;
-        align-items: center;
-        padding: 0.6875rem;
-        position: relative;
-        .arrow-div {
-            position: absolute;
-            top: -0.5625rem;
-        }
-    }
-}
-.bubble {
-    padding: 0.3125rem;
-}
+
+
 span.b_in {
     font-size: 0.8125rem;
     border: 0.0625rem solid;

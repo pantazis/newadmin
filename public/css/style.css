@@ -11461,13 +11461,6 @@ nav.sidebar.top {
         border-radius: 0.6rem; }
       nav.sidebar.top .nav-list.list1 .custom-popup a:hover {
         padding-left: 1.875rem; }
-  nav.sidebar.top .custom-popup {
-    position: absolute;
-    top: 5.305rem;
-    text-align: center;
-    border-radius: 0.25rem;
-    background: #fff;
-    overflow: hidden; }
   nav.sidebar.top .nav-list-item {
     display: flex;
     align-items: center;
@@ -11660,14 +11653,12 @@ input.search-top {
     position: relative;
     left: 0.5rem; }
 
-.nav-list-item .custom-popup,
-.nav-list.search .custom-popup {
+.nav-list-item .custom-popup {
   transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
   width: 0em;
   transform: translate(20px, 50px);
   opacity: 0; }
-.nav-list-item.opennav1 .custom-popup,
-.nav-list.search.opennav1 .custom-popup {
+.nav-list-item.opennav1 .custom-popup {
   transition: width 0s 0s, transform 0.3s, opacity 0.3s;
   transform: translate(0px, 0px);
   opacity: 1;
@@ -11797,24 +11788,6 @@ span.text1 {
 .alert-server.opennav1 .arrow-div,
 .alert-server.opennav1 .popup-notifications {
   transform: translateX(0); }
-
-nav.sidebar.top .custom-popup.ss {
-  overflow: visible; }
-  nav.sidebar.top .custom-popup.ss .bubble-cont {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 18.75rem;
-    justify-content: center;
-    align-items: center;
-    padding: 0.6875rem;
-    position: relative; }
-    nav.sidebar.top .custom-popup.ss .bubble-cont .arrow-div {
-      position: absolute;
-      top: -0.5625rem; }
-
-.bubble {
-  padding: 0.3125rem; }
 
 span.b_in {
   font-size: 0.8125rem;

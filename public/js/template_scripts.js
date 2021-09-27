@@ -395,6 +395,16 @@ messageCont.mouseleave(function(){
       
     }
   };
+
+
+  $(".bubble").click(function(){
+    $(".bubble").removeClass("active");
+    $(this).addClass("active");
+
+  });
+
+
+
   
 
 

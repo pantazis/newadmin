@@ -784,11 +784,13 @@ span.text1 {
     width: 100%;   
     position: relative;
     flex-direction: column;
+    padding:0 1rem;
 }
 .bubble {
     width:100%;    
     display: flex;
     border-bottom: 0.0625rem solid $light_grey;
+    opacity: .6;
     
 }
 .icon-anim {
@@ -800,7 +802,7 @@ span.text1 {
 }
 
 .search_icon {
-    background: red;
+    background: $light_grey;
     color: rgba(255, 255, 255, 0);
     border-radius: 50%;
     display: block;
@@ -817,6 +819,7 @@ span.text1 {
 }
 
 .bubble.active{
+    opacity: 1;
     .search_icon {
         transition: height .3s,width .3s, .5s color .2s;
         height: 2.1875rem;
@@ -824,6 +827,7 @@ span.text1 {
     }
     .search_icon {       
         color:  rgba(255, 255, 255, 1);
+        background:$green2;
     }
 
 }

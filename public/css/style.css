@@ -11648,7 +11648,7 @@ input.search-top {
 .nav-list-item .custom-popup {
   transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
   width: 0em;
-  transform: translate(20px, 50px);
+  transform: translate(1.25rem, 3.125rem);
   opacity: 0; }
 .nav-list-item.opennav1 .custom-popup {
   transition: width 0s 0s, transform 0.3s, opacity 0.3s;
@@ -11674,7 +11674,7 @@ input.search-top {
   border-radius: 0.25rem;
   padding-left: 0.3125rem;
   padding-right: 0.3125rem;
-  max-height: calc(100vh - 5.305rem - 10px);
+  max-height: calc(100vh - 5.305rem - 0.625rem);
   display: flex;
   flex-direction: column; }
   .popup-notifications.custom-popup {
@@ -11794,12 +11794,14 @@ span.text1 {
   display: flex;
   width: 100%;
   position: relative;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 0 1rem; }
 
 .bubble {
   width: 100%;
   display: flex;
-  border-bottom: 0.0625rem solid #cacad5; }
+  border-bottom: 0.0625rem solid #cacad5;
+  opacity: .6; }
 
 .icon-anim {
   height: 3.125rem;
@@ -11809,7 +11811,7 @@ span.text1 {
   align-items: center; }
 
 .search_icon {
-  background: red;
+  background: #cacad5;
   color: rgba(255, 255, 255, 0);
   border-radius: 50%;
   display: block;
@@ -11824,12 +11826,15 @@ span.text1 {
   display: flex;
   align-items: center; }
 
-.bubble.active .search_icon {
-  transition: height .3s,width .3s, .5s color .2s;
-  height: 2.1875rem;
-  width: 2.1875rem; }
-.bubble.active .search_icon {
-  color: white; }
+.bubble.active {
+  opacity: 1; }
+  .bubble.active .search_icon {
+    transition: height .3s,width .3s, .5s color .2s;
+    height: 2.1875rem;
+    width: 2.1875rem; }
+  .bubble.active .search_icon {
+    color: white;
+    background: #18bf93; }
 
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
 @media screen and (max-width: 1910px) {
@@ -12477,13 +12482,13 @@ body.noanimαtion * {
       transform: translateY(-50%); } }
 
 .info-icon {
-  width: 20px;
+  width: 1.25rem;
   height: 100%;
   display: inline-block;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 0.9375rem;
   line-height: 1.5; }
   .info-icon.info-icon.action0 {
     right: 2.75rem;
@@ -12580,7 +12585,7 @@ body.noanimαtion * {
     display: flex; }
 
 .dimensions {
-  width: calc(25% - 15px);
+  width: calc(25% - 0.9375rem);
   margin-right: 1.25rem; }
   .dimensions:last-of-type {
     margin-right: 0rem; }
@@ -12709,7 +12714,7 @@ body.noanimαtion * {
   .button svg {
     display: none;
     stroke: #18bf93;
-    width: 25px; }
+    width: 1.5625rem; }
   .button.loader .save {
     height: 0;
     overflow: hidden;

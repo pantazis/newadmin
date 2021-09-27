@@ -219,7 +219,7 @@ function search(){
         foreach ($buttons as $key => $value) {            
         $template .= '<div class="bubble'.($key==2 ? ' active':'').'">
             <div class="icon-anim">
-              <span class="icon-fi-sr-trash search_icon" alt=""></span>          
+              <span class="icon-success search_icon" alt=""></span>          
             </div>
             <div class="b_in">'.$value.'</div>
           </div>' ;

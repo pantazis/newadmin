@@ -100,8 +100,8 @@ $grid-breakpoints: (
 @include mediaSuperlarge(".hide-superlarge", "display", none);
 
 @mixin inputstyle {
-  line-height: 21px;
-  font-size: 14px;
+  line-height: 1.3125rem;
+  font-size: 0.875rem;
   padding: $form-select-padding-y $form-select-padding-x;
   line-height: $form-select-line-height;
   background-color: transparent;

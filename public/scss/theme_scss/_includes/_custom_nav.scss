@@ -278,8 +278,7 @@ span.light {
 }
 .nav-list.user-icons {
     $width: 4.9375rem;
-    display: flex;
-    font-size: 1.125rem;
+    display: flex;    
     height: $navSidebarTop;
     padding: 0.781rem 0;
     margin-left: auto;
@@ -598,13 +597,13 @@ input.search-top {
     .custom-popup {
         transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
         width: 0em;
-        transform: translate(20px, 50px);
+        transform: translate(1.25rem, 3.125rem);
         opacity: 0;
     }
     &.opennav1 {
         .custom-popup {
             transition: width 0s 0s, transform 0.3s, opacity 0.3s;
-            transform: translate(0px, 0px);
+            transform: translate(0, 0);
             opacity: 1;
             width: 15.875em;
         }
@@ -631,9 +630,12 @@ $popup-notifications-right: 0.5625rem;
     border-radius: $border-radius;
     padding-left: 0.3125rem;
     padding-right: 0.3125rem;
-    max-height: calc(100vh - #{$topMargin} - 10px);
+    max-height: calc(100vh - #{$topMargin} - 0.625rem);
     display: flex;
     flex-direction: column;
+    &.custom-popup{
+        padding:0;
+    }
     
     
 }
@@ -779,36 +781,57 @@ span.text1 {
 
 .bubble-cont {
     display: flex;   
-    width: 100%;
-    padding: 0.6875rem;
+    width: 100%;   
     position: relative;
     flex-direction: column;
 }
 .bubble {
     width:100%;    
     display: flex;
+    border-bottom: 0.0625rem solid $light_grey;
     
 }
 .icon-anim {
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.bbbb {
+.search_icon {
     background: red;
-    color: transparent;
+    color: rgba(255, 255, 255, 0);
     border-radius: 50%;
     display: block;
-    height: 10px;
-    width: 10px;
+    transition: height .3s,width .3s,color .3s;
+    height: 0.625rem;
+    width: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .b_in {
     display: flex;
     align-items: center;
 }
+
+.bubble.active{
+    .search_icon {
+        transition: height .3s,width .3s, .5s color .2s;
+        height: 2.1875rem;
+        width: 2.1875rem;
+    }
+    .search_icon {       
+        color:  rgba(255, 255, 255, 1);
+    }
+
+}
+
+
+
+
+
 //-----------------------------notification popup animation end--------------------------//
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
 @media screen and (max-width: $xxxl) {
@@ -934,17 +957,7 @@ span.text1 {
     }
     .logo {
         display: none;
-    } /*
-.close-menu-cont.right {
-        right: auto;
-        left: 0;
-        border-right: 0;
-        border-left: 10px solid $black_blue;
-}
-.close-menu-cont.left {
-    right: 0;
-    left: auto;
-}*/
+    } 
 }
 @media screen and (max-width: $menuMobileMax) {
     html {

@@ -200,6 +200,7 @@ function modal($id="", $title="", $mainText="", $btnColorClass="", $btnText="")
 
 
 function search(){
+  $buttons = [1,2,3,4,5];
   $template='<div class="nav-list search">
       
   <div class="search-cont search-cont only-superlarge">
@@ -214,15 +215,18 @@ function search(){
             <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
             <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
         </div>
-        <div class="bubble-cont ">             
-                                    <div class="bubble"><span class="b_in">Διάλεξε πίνακα</span></div>
-                                    <div class="bubble"><span class="b_in"> Domain</span></div>
-                                    <div class="bubble"><span class="b_in"> Domain (orders)</span></div>
-                                    <div class="bubble"><span class="b_in"> Domain (trades)</span></div>
-                                    <div class="bubble"><span class="b_in"> Email (users)</span></div>
-                                    <div class="bubble"><span class="b_in"> VAT</span></div>
-                                    <div class="bubble"><span class="b_in"> Documents</span></div>
-       </div>
+        <div class="bubble-cont">';
+        foreach ($buttons as $value) {            
+        $template .= '<div class="bubble">
+            <div class="icon-anim">
+              <span class="icon-fi-sr-trash bbbb" alt=""></span>          
+            </div>
+            <div class="b_in">'.$value.'</div>
+          </div>' ;
+        };
+
+
+    $template .=  '</div>
        <button type="button" class="d-block d-md-none btn search-btn btn-blue_purple">ΕΣΩΤΕΡΙΚΗ  ΜΕΤΑΦΟΡΑ</button>
     </div>';
 return $template;

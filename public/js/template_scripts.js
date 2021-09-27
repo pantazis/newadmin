@@ -372,20 +372,36 @@ window.makeElement = function(el){
   $(".read-all").click(function(){
     $(".message").addClass("read")
 
-  })
+  });
+
+ var messageCont =  $(".popup-notifications .main-el");
+ messageCont.mouseenter(function(){
+  noScrollToBody(true);
+
+  }); 
+messageCont.mouseleave(function(){
+  noScrollToBody(false);
+
+  });
+
+  function noScrollToBody(isTrue){
+   var hasScrollBar = messageCont[0].scrollHeight > messageCont[0].clientHeight ? true : false;
+    
+    if(isTrue && hasScrollBar){
+      $("body").css("overflow","hidden");
+      
+    }else{      
+      $("body")[0].style.removeProperty("overflow");
+      
+    }
+  };
   
 
 
 
 
 
-
-
-
-
-
   
-
 
 
 

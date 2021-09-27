@@ -631,6 +631,11 @@ $popup-notifications-right: 0.5625rem;
     border-radius: $border-radius;
     padding-left: 0.3125rem;
     padding-right: 0.3125rem;
+    max-height: calc(100vh - #{$topMargin} - 10px);
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 span.text1 {
     line-height: 2.6;
@@ -696,6 +701,13 @@ span.text1 {
     height: 4.4375rem;
     width: 100%;
     background: $ice;
+    &:first-of-type{
+        margin-top: 0;
+    }
+   
+    &:last-of-type{
+        margin-bottom: 0;
+    }
     .alert-box & {
         @include themeColor("background", $white, $black_blue);
     }
@@ -764,32 +776,38 @@ span.text1 {
     }
 }
 
+
 .bubble-cont {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;   
-    justify-content: center;
-    align-items: center;
+    display: flex;   
+    width: 100%;
     padding: 0.6875rem;
     position: relative;
+    flex-direction: column;
 }
 .bubble {
-    padding: 5px 5px;
+    width:100%;    
+    display: flex;
+    
 }
-span.b_in {
-    font-size: 0.8125rem;
-    border: 0.0625rem solid;
-    padding: 0.3125rem 0.3125rem;
-    border-radius: 1rem;
-    border: 0.025rem solid $light_grey;
-    background-color: $ice;
-    -webkit-box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
-    box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
-    transition: box-shadow 0.3s;
-    &:hover {
-        -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
-        box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
-    }
+.icon-anim {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bbbb {
+    background: red;
+    color: transparent;
+    border-radius: 50%;
+    display: block;
+    height: 10px;
+    width: 10px;
+}
+.b_in {
+    display: flex;
+    align-items: center;
 }
 //-----------------------------notification popup animation end--------------------------//
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
@@ -1022,8 +1040,7 @@ span.b_in {
         transition: top .3s;
         z-index: 2;
         transform:none;      
-        display: flex;
-        flex-direction: column;
+   
     }
     .opennav1{
         .popup-notifications { 

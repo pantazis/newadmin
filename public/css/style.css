@@ -11674,7 +11674,10 @@ input.search-top {
   right: 0.5625rem;
   border-radius: 0.25rem;
   padding-left: 0.3125rem;
-  padding-right: 0.3125rem; }
+  padding-right: 0.3125rem;
+  max-height: calc(100vh - 5.305rem - 10px);
+  display: flex;
+  flex-direction: column; }
 
 span.text1 {
   line-height: 2.6; }
@@ -11736,6 +11739,10 @@ span.text1 {
   width: 100%;
   background: #efeff6;
   display: flex; }
+  .message:first-of-type {
+    margin-top: 0; }
+  .message:last-of-type {
+    margin-bottom: 0; }
   .alert-box .message {
     background: #fff; }
     .dark .alert-box .message {
@@ -11784,29 +11791,33 @@ span.text1 {
 
 .bubble-cont {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   padding: 0.6875rem;
-  position: relative; }
+  position: relative;
+  flex-direction: column; }
 
 .bubble {
-  padding: 5px 5px; }
+  width: 100%;
+  display: flex; }
 
-span.b_in {
-  font-size: 0.8125rem;
-  border: 0.0625rem solid;
-  padding: 0.3125rem 0.3125rem;
-  border-radius: 1rem;
-  border: 0.025rem solid #cacad5;
-  background-color: #efeff6;
-  -webkit-box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
-  box-shadow: 0 0 0 0 rgba(14, 12, 40, 0.21) !important;
-  transition: box-shadow 0.3s; }
-  span.b_in:hover {
-    -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
-    box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important; }
+.icon-anim {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.bbbb {
+  background: red;
+  color: transparent;
+  border-radius: 50%;
+  display: block;
+  height: 10px;
+  width: 10px; }
+
+.b_in {
+  display: flex;
+  align-items: center; }
 
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
 @media screen and (max-width: 1910px) {
@@ -12017,9 +12028,7 @@ span.b_in {
     padding-right: 0;
     transition: top .3s;
     z-index: 2;
-    transform: none;
-    display: flex;
-    flex-direction: column; }
+    transform: none; }
   .footer-nav-mobile .opennav1 .popup-notifications {
     top: 25%; }
 

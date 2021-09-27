@@ -162,7 +162,7 @@
                         <hr>
                         <div class="actions-b">
                             <span class="text1 read-all">Ανάγνωση Όλων</span>
-                            <a class="text1">Καθαρισμός</a>
+                            <span class="text1">Καθαρισμός</a>
                         </div>
                     </div>
                     </div>

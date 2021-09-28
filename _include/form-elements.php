@@ -200,11 +200,11 @@ function modal($id="", $title="", $mainText="", $btnColorClass="", $btnText="")
 
 
 function search(){
-  $buttons = ["Διάλεξε πίνακα","Domain","Domain (orders)","Domain (trades)","Email (users)","VAT","Documents"]; 
+  $buttons = ["Domain","Domain (orders)","Domain (trades)","Email (users)","VAT","Documents"]; 
   $template='<div class="nav-list search">
       
   <div class="search-cont search-cont only-superlarge">
-      <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
+      <span class="search-text"><span class="text">Domains</span> <div class="icon-fi-sr-caret-down navdown"></div></span>
       <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">     
   </div>
  
@@ -217,13 +217,17 @@ function search(){
         </div>
         <div class="bubble-cont">';
         foreach ($buttons as $key => $value) {            
-        $template .= '<div class="bubble'.($key==2 ? ' active':'').'">
+        $template .= '<div class="bubble'.($key==0 ? ' active':'').'">
             <div class="icon-anim">
               <span class="icon-success search_icon" alt=""></span>          
             </div>
             <div class="b_in">'.$value.'</div>
           </div>' ;
         };
+        $template .= '<div class="bubble button_search">
+                          Αναζήτηση            
+           
+          </div>';
 
 
     $template .=  '</div>

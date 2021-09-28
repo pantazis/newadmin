@@ -11602,6 +11602,7 @@ nav.sidebar.navbar li.nav-list-item2.subcategory .nav-text2 span.arrow-right .ic
   align-items: center; }
 
 input.search-top {
+  flex: 1 1 auto;
   width: 16.4375rem;
   height: 1.625rem;
   border-radius: 0.8125rem;
@@ -11621,13 +11622,17 @@ input.search-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 22.93rem; }
   .search-cont .search-text {
-    line-height: 0;
+    line-height: 1;
     font-size: 0.8125rem;
     padding: 0 1rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    flex: 1 0 auto;
+    text-align: center;
+    justify-content: center; }
   .search-cont .navdown {
     margin-right: 0;
     top: 0rem;
@@ -11802,6 +11807,13 @@ span.text1 {
   display: flex;
   border-bottom: 0.0625rem solid #cacad5;
   opacity: .6; }
+
+.button_search {
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; }
 
 .icon-anim {
   height: 3.125rem;

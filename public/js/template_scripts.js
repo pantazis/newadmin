@@ -138,10 +138,36 @@
   top_nav.num = 0;
   top_nav.open_class = [];
 
+
+  function directSearchCategories(target,parent){
+    
+      
+    var hasClassSearchTop =$(target).closest(".search-top").length;
+    console.log($(target));
+ 
+    if(hasClassSearchTop ){
+      return  true;
+    }else{
+      return  false;
+    }
+  
+    
+        
+  }
+
   function menu_subcategory_open(parent_Element, open_class, listChildElement) {
    
    
-    $(parent_Element).click(function (event) { 
+    $(parent_Element).click(function (event) {
+      
+     
+       
+     var stopFun = directSearchCategories(event.target,this);
+      console.log(stopFun)
+      if(stopFun){
+        return;
+      }
+      
       
       
       top_nav.parent_Element = parent_Element;
@@ -241,7 +267,7 @@
   menu_subcategory_open(".nav-list-item", "opennav1", ".custom-popup");
   menu_subcategory_open(".nav-list-item2", "opennav1", ".sub-category");
   menu_subcategory_open(".nav-icon-3", "opennav1", ".popup-notifications");
-  menu_subcategory_open(".nav-list.search", "opennav1", ".custom-popup");
+ // menu_subcategory_open(".nav-list.search", "opennav1", ".custom-popup");
   menu_subcategory_open(".alert-server", "opennav1", ".custom-popup");
 
 
@@ -398,8 +424,10 @@ messageCont.mouseleave(function(){
 
 
   $(".bubble").click(function(){
+    var textin = $(this).text();
     $(".bubble").removeClass("active");
     $(this).addClass("active");
+    $(".search-textcustom>.text").text(textin);
 
   });
 

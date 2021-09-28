@@ -4,6 +4,7 @@ $navSidebarTop: 4.68rem;
 $transitiontime: 0.3s;
 $hover-move: 0.4375rem;
 $topMargin: #{$navSidebarTop + 0.625}; //5.3125rem;
+$searchHeight: 3.125rem;
 html {
     //  font-size: 0.7813vw;
 }
@@ -540,6 +541,7 @@ nav.sidebar.navbar li.nav-list-item2 {
     align-items: center;
 }
 input.search-top {
+    flex: 1 1 auto;
     width: 16.4375rem;
     height: 1.625rem;
     border-radius: 0.8125rem;
@@ -565,12 +567,17 @@ input.search-top {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    width:22.93rem;
     .search-text {
-        line-height: 0;
+        line-height: 1;
         font-size: 0.8125rem;
         padding: 0 1rem;
         display: flex;
         align-items: center;
+        flex: 1 0 auto;
+        text-align: center;
+        justify-content: center;
+        
     }
     .navdown {
         margin-right: 0;
@@ -793,9 +800,18 @@ span.text1 {
     opacity: .6;
     
 }
+
+.button_search {
+    height: $searchHeight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
 .icon-anim {
-    height: 3.125rem;
-    width: 3.125rem;
+    height: $searchHeight;
+    width: $searchHeight;
     display: flex;
     justify-content: center;
     align-items: center;

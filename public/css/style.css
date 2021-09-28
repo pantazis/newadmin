@@ -12732,21 +12732,32 @@ body.noanimαtion * {
 
 @media screen and (min-width: 1200px) {
   /* Works on Firefox */
-  * {
+  body {
     scrollbar-width: thin;
-    scrollbar-color: #2e435e #efeff6; }
+    scrollbar-color: #1e1c36 #efeff6; }
 
   /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     width: 12px; }
 
-  *::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track {
     background: #efeff6; }
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #2e435e;
+  body::-webkit-scrollbar-thumb {
+    background-color: #1e1c36;
     border-radius: 20px;
-    border: 3px solid #efeff6; } }
+    border: 3px solid #efeff6; }
+
+  body.dark {
+    scrollbar-color: #efeff6 #1e1c36; }
+
+  /* Works on Chrome, Edge, and Safari */
+  body.dark::-webkit-scrollbar-track {
+    background: #1e1c36; }
+
+  body.dark::-webkit-scrollbar-thumb {
+    background-color: #efeff6;
+    border: 3px solid #1e1c36; } }
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/fonts/icomoon.eot?1sl92v");

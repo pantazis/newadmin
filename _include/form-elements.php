@@ -225,7 +225,7 @@ function search(){
             <div class="b_in">'.$value.'</div>
           </div>' ;
         };
-        $template .= '<div class="bubble button_search">
+        $template .= '<div class="button_search">
                           Αναζήτηση            
            
           </div>';

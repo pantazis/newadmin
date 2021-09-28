@@ -11835,7 +11835,8 @@ span.text1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1; }
+  opacity: 1;
+  width: 100%; }
 
 .icon-anim {
   height: 3.125rem;

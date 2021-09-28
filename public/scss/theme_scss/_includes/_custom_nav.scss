@@ -5,6 +5,7 @@ $transitiontime: 0.3s;
 $hover-move: 0.4375rem;
 $topMargin: #{$navSidebarTop + 0.625}; //5.3125rem;
 $searchHeight: 3.125rem;
+$search-padding:1rem;
 html {
     //  font-size: 0.7813vw;
 }
@@ -279,7 +280,7 @@ span.light {
 }
 .nav-list.user-icons {
     $width: 4.9375rem;
-    display: flex;    
+    display: flex;
     height: $navSidebarTop;
     padding: 0.781rem 0;
     margin-left: auto;
@@ -287,11 +288,10 @@ span.light {
         &:first-of-type {
             border-left: 0rem;
         }
-        &.search{
+        &.search {
             min-width: $width;
             width: auto;
-            flex:1 0 auto;
-            
+            flex: 1 0 auto;
         }
         height: auto;
         width: $width;
@@ -357,7 +357,7 @@ nav.sidebar.top {
             }
         }
     }
-    
+
     .nav-list-item {
         display: flex;
         align-items: center;
@@ -375,8 +375,7 @@ nav.sidebar.top {
         }
     }
     .nav-list.search {
-       
-        padding-right:1.25rem;
+        padding-right: 1.25rem;
         .nav-text1 {
             justify-content: center;
         }
@@ -547,16 +546,27 @@ input.search-top {
     border-radius: 0.8125rem;
     border: 0.025rem solid darken($ice, 8%);
 }
+input.search-mobile {
+    width: 100%;
+    height: $searchHeight;
+    border-radius: $border-radius;
+    border: 0.025rem solid darken($ice, 8%);
+    &[type="search" i]{
+        padding: 0 $search-padding;
+
+    }
+    
+}
+.padd-search {
+    width: 100%;
+    padding: $search-padding;
+}
+
 .custom-popup .search-cont {
     display: flex;
- @media (min-width: #{$xxxl+1}){
-    display: none;
-}
-    
-   
-
-
-    
+    @media (min-width: #{$xxxl+1}) {
+        display: none;
+    }
 }
 .search-cont {
     border: 0.025rem solid darken($ice, 8%);
@@ -637,14 +647,12 @@ $popup-notifications-right: 0.5625rem;
     border-radius: $border-radius;
     padding-left: 0.3125rem;
     padding-right: 0.3125rem;
-    max-height: calc(100vh - #{$topMargin} - 0.625rem);
+    
     display: flex;
     flex-direction: column;
-    &.custom-popup{
-        padding:0;
+    &.custom-popup {
+        padding: 0;
     }
-    
-    
 }
 span.text1 {
     line-height: 2.6;
@@ -710,11 +718,11 @@ span.text1 {
     height: 4.4375rem;
     width: 100%;
     background: $ice;
-    &:first-of-type{
+    &:first-of-type {
         margin-top: 0;
     }
-   
-    &:last-of-type{
+
+    &:last-of-type {
         margin-bottom: 0;
     }
     .alert-box & {
@@ -784,21 +792,28 @@ span.text1 {
         }
     }
 }
-
+.seperator{
+    height:100px;
+}
 
 .bubble-cont {
-    display: flex;   
-    width: 100%;   
+    display: flex;
+    width: 100%;
     position: relative;
     flex-direction: column;
-    padding:0 1rem;
+    padding: 0 $search-padding;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    background: $white;
+}
+.custom-popup.ss {
+    @include themeColor("background", lighten($ice,3%), $bluedarkbl);
 }
 .bubble {
-    width:100%;    
+    width: 100%;
     display: flex;
     border-bottom: 0.0625rem solid $light_grey;
-    opacity: .6;
-    
+    opacity: 0.6;
 }
 
 .button_search {
@@ -822,7 +837,7 @@ span.text1 {
     color: rgba(255, 255, 255, 0);
     border-radius: 50%;
     display: block;
-    transition: height .3s,width .3s,color .3s;
+    transition: height 0.3s, width 0.3s, color 0.3s;
     height: 0.625rem;
     width: 0.625rem;
     display: flex;
@@ -834,23 +849,18 @@ span.text1 {
     align-items: center;
 }
 
-.bubble.active{
+.bubble.active {
     opacity: 1;
     .search_icon {
-        transition: height .3s,width .3s, .5s color .2s;
+        transition: height 0.3s, width 0.3s, 0.5s color 0.2s;
         height: 2.1875rem;
         width: 2.1875rem;
     }
-    .search_icon {       
-        color:  rgba(255, 255, 255, 1);
-        background:$green2;
+    .search_icon {
+        color: rgba(255, 255, 255, 1);
+        background: $green2;
     }
-
 }
-
-
-
-
 
 //-----------------------------notification popup animation end--------------------------//
 /*-----------------------------------------responsive nav properties--------------------------------------------*/
@@ -977,7 +987,7 @@ span.text1 {
     }
     .logo {
         display: none;
-    } 
+    }
 }
 @media screen and (max-width: $menuMobileMax) {
     html {
@@ -1004,9 +1014,9 @@ span.text1 {
         margin-top: 2.75rem;
     }
     nav.sidebar.top .nav-list.user-icons .nav-icon-3 {
-       flex:1 1 0;
+        flex: 1 1 0;
         border-left: 0;
-        &.logo-mobile{
+        &.logo-mobile {
             width: 40%;
             flex-grow: 2;
         }
@@ -1044,14 +1054,13 @@ span.text1 {
 }
 /*-----------------------------------------responsive nav properties end--------------------------------------------*/
 
-
 /*-----------------------------------footer-nav-------------------------------------*/
 .footer-nav-mobile {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index:3;
+    z-index: 3;
     @include themeColor("background-color", $white, $black_blue);
     .nav-list.user-icons {
         width: 100%;
@@ -1059,54 +1068,62 @@ span.text1 {
             flex: 1;
         }
     }
-    .popup-notifications {      
-        position: fixed;
-        bottom:0;
-        left: 0;
-        right: 0;
-        top:100%;
-        width:100%;
-        height:auto;
+    .popup-notifications {
+        position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;   
         border-radius: $border-radius;
         padding-left: 0;
         padding-right: 0;
-        transition: top .3s;
-        z-index: 2;
-        transform:none;      
-   
+        
+        
+        transform: none;
+        max-height: 75vh;
     }
-    .opennav1{
-        .popup-notifications { 
-            
-         top:25%;     
-            
+    .popup_flex {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+    flex-direction: column;
+    transition: top 0.3s;
+
+    }
+    .separator {
+        flex: 1;
+    }
+    
+    .opennav1 {
+        .popup_flex {
+            top: 0%;
         }
     }
 }
-.overlay.footer{
+.overlay.footer {
     pointer-events: none;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     left: 0;
     right: 0;
-    width:100%;
-    height:0;
-    background:#000000;
+    width: 100%;
+    height: 0;
+    background: #000000;
     opacity: 0;
-    transition: opacity .5s,0s height .5s;
+    transition: opacity 0.5s, 0s height 0.5s;
     z-index: 1;
     overflow-x: hidden;
     overflow-y: auto;
-    .opennav1 &{
-        height:100%;
-        opacity: .5;
-        transition: opacity .5s, height 0s;       
-
+    .opennav1 & {
+        height: 100%;
+        opacity: 0.5;
+        transition: opacity 0.5s, height 0s;
     }
-    
-
-
-
 }
 
 .top-el {
@@ -1117,18 +1134,24 @@ span.text1 {
     flex: 1 1 auto;
     overflow: auto;
 }
+.search-f{
+    .popup-notifications.footer{
+        background-color: $ice;
+
+    }
+
+}
+
+
 /*-----------------------------------footer-nav-------------------------------------*/
 /*------------------------noscroll-------------------------------------------------*/
-body.noscroll{
-    @media (max-width: $md){
-        overflow:hidden;
-        .mobile-cont {          
+body.noscroll {
+    @media (max-width: $md) {
+        overflow: hidden;
+        .mobile-cont {
             overflow: hidden;
         }
     }
 }
 
-
-
 /*------------------------noscroll-end---------------------------------------------*/
-

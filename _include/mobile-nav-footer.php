@@ -23,7 +23,11 @@
                 <?php } ?>
                 <i class="<?= $val ?>"></i>
             </div>
+            <div class="popup_flex">
+                <div class="separator"></div>   
             <div class="popup-notifications footer"></div>
+            </div> 
+
             <div class="overlay footer"></div>
         </div>
         <?php } ?>

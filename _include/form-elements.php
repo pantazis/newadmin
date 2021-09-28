@@ -209,13 +209,14 @@ function search(){
   </div>
  
 </div>
-<div class="arrow-div"></div>
+<div class="arrow-div dark"></div>
 <div class="custom-popup ss popup-notifications  shadow-2-strong">
-        <div class="search-cont mobile-only tablet-only">
-            <span class="search-text">Domains <div class="icon-fi-sr-caret-down navdown"></div></span>
-            <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">
-        </div>
-        <div class="bubble-cont">';
+      
+        <div class="padd-search">
+          <input class="search-mobile" type="search" placeholder="Αναζήτηση" name="" id="">
+        </div>        
+        
+        <div class="bubble-cont shadow-1-strong">';
         foreach ($buttons as $key => $value) {            
         $template .= '<div class="bubble'.($key==0 ? ' active':'').'">
             <div class="icon-anim">
@@ -231,7 +232,7 @@ function search(){
 
 
     $template .=  '</div>
-       <button type="button" class="d-block d-md-none btn search-btn btn-blue_purple">ΕΣΩΤΕΡΙΚΗ  ΜΕΤΑΦΟΡΑ</button>
+       
     </div>';
 return $template;
 };

@@ -76,13 +76,13 @@
             </div>
             <?php } ?>
         </div>
-      
-       
+
+
         <div class="nav-list user-icons">
             <?php $arr = [
                 "search",
                 "fi-sr-menu-burger_left",
-                "logo-mobile",                
+                "logo-mobile",
                 "fi-sr-bell1",
                 "fi-sr-shopping-cart",
                 "fi-sr-user",
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="main-el">
-                    <?php for ($x = 0; $x <= 10; $x++) { ?>
+                    <?php for ($x = 0; $x <= 19; $x++) { ?>
                     <div class="message color<?= ($x%3) + 1 ?>">
                         <div class="mm flex-c">
                             <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci
@@ -171,13 +171,13 @@
                 <?php } ?>
                 <?php if ($val == "search") { ?>
                     <?php echo search() ?>
-                  
+
 
                 <?php } ?>
                 <?php if ($val == "fi-sr-user") { ?>
                 <div class="arrow-div"></div>
                 <div class="popup-notifications shadow-5-strong">
-                    
+
                     <div class="top-box box1">
                         <span class="text1">Ρυθμίσεις Προφίλ</span>
                         <hr>

@@ -41,7 +41,8 @@
         "md" => "md : 768px;",
         "lg" => "lg : 992px;",
         "xl" => "xl : 1200px;",
-        "xxl" => "xxl: 1550px;"
+        "xxl" => "xxl: 1550px;",
+        "xxxl" => "xxxl: 1910px;;"
     ]; ?>
 
     <!--diastaseis -->
@@ -55,7 +56,7 @@
     </script>
 
     <p  id="demo"></p>
-    
+
     <?php foreach ($bp as $kay =>   $value) { ?>
     <div class=" d-none d-<?= $kay; ?>-flex">
         <?= $value; ?>

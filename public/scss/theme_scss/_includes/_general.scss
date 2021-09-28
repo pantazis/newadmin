@@ -350,7 +350,7 @@ body.noanimαtion * {
   display: flex;
   font-size: 1rem;
   font-weight: bold;
-  align-items:center;
+  align-items: center;
   @include themeColor("color", $dark_blue, $ice);
   margin-bottom: 1.25rem;
   @media (max-width: #{$xl - 1}) {
@@ -446,19 +446,15 @@ body.noanimαtion * {
   @include themeColor("color", $dark_blue, $light_grey);
 }
 .icon-cont {
-  margin-left: auto;  
+  margin-left: auto;
   display: flex;
   @media (max-width: $md) {
-    
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
 }
-
-}
-
 
 .info-icon {
   width: 1.25rem;
@@ -469,9 +465,6 @@ body.noanimαtion * {
   cursor: pointer;
   margin-left: 0.9375rem;
   line-height: 1.5;
-
-
-  
 
   &.info-icon.action0 {
     right: 2.75rem;
@@ -527,9 +520,9 @@ body.noanimαtion * {
 //---------------------------------------action tabs-------------------------------//
 .mobile_tabs {
   display: flex;
-  width: calc(var( --elNum ) * 40% );
+  width: calc(var(--elNum) * 40%);
   @media (min-width: $md) {
-    width: calc(var( --elNum ) * 28.57% );
+    width: calc(var(--elNum) * 28.57%);
   }
 }
 .resio {
@@ -638,7 +631,6 @@ body.noanimαtion * {
   @media (max-width: $md) {
     padding-left: 0;
     padding-top: 1rem;
-
   }
 }
 
@@ -675,8 +667,8 @@ body.noanimαtion * {
 //========================================================//
 
 .info-row.last {
-  @media (min-width: #{$xl+1} ){
-  border: none; 
+  @media (min-width: #{$xl+1} ) {
+    border: none;
   }
 }
 .addAction {
@@ -728,4 +720,27 @@ body.noanimαtion * {
     align-items: center;
     background-color: transparent;
   }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $dark_blue $ice;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $ice;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $dark_blue;
+  border-radius: 20px;
+  border: 3px solid $ice;
 }

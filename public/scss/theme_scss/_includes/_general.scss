@@ -723,24 +723,25 @@ body.noanimαtion * {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media screen and (min-width: $xl) {
+  /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: $dark_blue $ice;
+  }
 
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: $dark_blue $ice;
-}
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
 
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 12px;
-}
+  *::-webkit-scrollbar-track {
+    background: $ice;
+  }
 
-*::-webkit-scrollbar-track {
-  background: $ice;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: $dark_blue;
-  border-radius: 20px;
-  border: 3px solid $ice;
+  *::-webkit-scrollbar-thumb {
+    background-color: $dark_blue;
+    border-radius: 20px;
+    border: 3px solid $ice;
+  }
 }

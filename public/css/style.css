@@ -12730,23 +12730,23 @@ body.noanimαtion * {
   align-items: center;
   background-color: transparent; }
 
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #2e435e #efeff6; }
+@media screen and (min-width: 1200px) {
+  /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2e435e #efeff6; }
 
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 12px; }
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px; }
 
-*::-webkit-scrollbar-track {
-  background: #efeff6; }
+  *::-webkit-scrollbar-track {
+    background: #efeff6; }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #2e435e;
-  border-radius: 20px;
-  border: 3px solid #efeff6; }
-
+  *::-webkit-scrollbar-thumb {
+    background-color: #2e435e;
+    border-radius: 20px;
+    border: 3px solid #efeff6; } }
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/fonts/icomoon.eot?1sl92v");

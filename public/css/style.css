@@ -14174,10 +14174,12 @@ body.noanimαtion * {
 
 h2.page_title, .page_title.h2 {
   font-size: 2.3125rem;
-  color: #0e0c28;
-  text-align: center; }
+  color: #0e0c28; }
   .dark h2.page_title, .dark .page_title.h2 {
     color: #fff; }
+  @media (max-width: 1503px) {
+    h2.page_title, .page_title.h2 {
+      text-align: center; } }
 
 .h4.frame_title {
   font-size: 0.9375rem;

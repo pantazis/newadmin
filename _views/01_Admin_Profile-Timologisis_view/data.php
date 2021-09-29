@@ -167,8 +167,8 @@ $valueArr = [
     ],
     [
         [HtmlEl("DE812871812", "date", "", "", false) ],
-        [HtmlEl("ΕΓΚΕΚΡΙΜΕΝΟ", "date", "green2", "", false), HtmlEl("Επανέλεγχος", "button", "green2", "a")],
-        [HtmlEl("ΣΕ ΑΝΑΜΟΝΗ", "date", "green2", "", true)],
+        [HtmlEl("ΕΓΚΕΚΡΙΜΕΝΟ", "date", "green2", "", false), HtmlEl("Επανέλεγχος", "button", "", "a")],
+        [HtmlEl("ΣΕ ΑΝΑΜΟΝΗ", "date", "orange2", "", true)],
         [HtmlEl($vies, "date", "blue", "", false)],
         [HtmlEl("-", "date", "", "", true)],
         
@@ -192,7 +192,7 @@ $valueArr = [
 ];
 
 $formArr = [
-    ["", "", "", ""],
+    ["", ""],
     [
         selectEl(
             [

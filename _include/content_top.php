@@ -41,8 +41,8 @@
         "md" => "md : 768px;",
         "lg" => "lg : 992px;",
         "xl" => "xl : 1200px;",
-        "xxl" => "xxl: 1550px;",
-        "xxxl" => "xxxl: 1910px;;"
+        "xxl" => "xxl: 1503px;",
+        "xxxl" => "xxxl: 1910px;"
     ]; ?>
 
     <!--diastaseis -->

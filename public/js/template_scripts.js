@@ -5,7 +5,7 @@
   $(document).ready(function () {
     $("body").removeClass("noanimαtion");
     activeTab();
-    screenSize()
+   // screenSize()
   });
 
   var rtime;
@@ -227,7 +227,20 @@
 
   //create mobile actions
   var actions = $(".actions").clone().removeClass("btn");
-  $(':root').css('--elNum', $(".actions").length);
+  /*
+ 
+  var elLength =   $(".actions").length;
+
+  if(elLength < 4){
+    elLength = 1;
+    elPercent = "100%" ;
+    elPercentMobile = "100%" ;
+
+  }
+  var root = $(':root');
+  root.css('--elPercent',elPercent);
+  */
+
 
   actions.each(function (index) {
     var classes = this.classList.value.replace("outline-", "");

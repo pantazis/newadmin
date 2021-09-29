@@ -84,43 +84,18 @@
     <?php }?>
     <div class="col-xl-6 action-cont order-xl-2 order-0">
       <button type="button" class="btn actions btn-black_blue"><img src="public/img/button-icons/fi-sr-refresh.svg"
-          class="button-icon2" alt=""><span class="btext">ΑΝΑΝΕΩΣΗ DOMAIN</span></button>
-      <button type="button" class="btn actions btn-outline-blue_purple"><img
-          src="public/img/button-icons/into-transfer.svg" class="button-icon2" alt=""><span class="btext">ΕΣΩΤΕΡΙΚΗ  ΜΕΤΑΦΟΡΑ</span></button>
-      <button type="button" class="btn actions btn-outline-pal_pink"><img src="public/img/button-icons/fi-sr-refresh2.svg"
-          class="button-icon2" alt=""><span class="btext">ΑΙΤΗΣΗ ΜΕΤΑΒΙΒΑΣΗΣ</span></button>
-          <button type="button" class="btn actions btn-outline-red2"><img src="public/img/button-icons/fi-sr-key.svg" class="button-icon2" alt=""><span class="btext">ΚΩΔΙΚΟΣ ΕΞΟΥΣΙΟΔΟΤΗΣΗΣ</span></button>
-    </div>
-    <div class="col-xl-6 order-xl-5 order-1">
-      <div class="d-none d-xl-block action-cont">
-        <div class="info-title">ID Protect <span class="ms-4 icon-id_protect green2"></span></div>
-        <p class="id-protect-text">Τα στοιχεία καταχώρησης του domain είναι ορατά σε δημόσιο Whois. Προστάτευσέ τα με
-          την υπηρεσία ID Protect.</p>
-        <button type="button" class="btn actions btn-outline-green2 border-strong action-cont"><img
-            src="public/img/button-icons/id_protect.svg" class="button-icon2" alt=""><span class="btext">ΑΓΟΡΑ
-            ΥΠΗΡΕΣΙΑΣ</span></button>
-      </div>
+          class="button-icon2" alt=""><span class="btext">ΝΕΟ ΠΡΟΣΩΠΟ ΕΠΑΦΗΣ</span></button>
+          
+    
 
-      <div class="info-container">
-        <div class="info-title pt-5">
-          Υπηρεσία δωρεάν φιλοξενίας ιστοσελίδων
-          <div class="info-icon">
-            <span class="icon-fi-sr-angle-down" alt=""></span>
-          </div>
-        </div>
 
-        <div class="info-row-con" data-collapsed="true" style="height: 0px;">
-          <div class="info-row">
-            <div class="info-text-in align-items-center ">
-              <label class="checkbox_label1">Υπηρεσία δωρεάν φιλοξενίας ιστοσελίδων</label>
-              <?= checkbox("off", "on") ?>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+          <button type="button" class="btn actions btn-outline-red2"><img src="public/img/button-icons/fi-sr-key.svg" class="button-icon2" alt=""><span class="btext">ΔΙΑΓΡΑΦΗ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</span></button>
 
 
     </div>
+    
 
 
   </div>

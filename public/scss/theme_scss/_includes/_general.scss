@@ -519,11 +519,10 @@ body.noanimαtion * {
 }
 //---------------------------------------action tabs-------------------------------//
 .mobile_tabs {
-  display: flex;
-  width: calc(var(--elNum) * 40%);
-  @media (min-width: $md) {
-    width: calc(var(--elNum) * 28.57%);
-  }
+  display: flex;  
+  width:auto;
+  margin:auto;
+
 }
 .resio {
   width: 100%;
@@ -547,7 +546,13 @@ body.noanimαtion * {
   }
 }
 .dimensions {
-  width: calc(25% - 0.9375rem);
+   width: calc(40vw - 0.9375rem);
+   flex-shrink: 0;
+  
+  @media (min-width: $md) {
+    width: calc(25vw - 0.9375rem);
+
+  }
   margin-right: 1.25rem;
   &:last-of-type {
     margin-right: 0rem;
@@ -558,6 +563,7 @@ body.noanimαtion * {
   overflow: auto;
   margin-bottom: var(--section-padding);
   margin-top: var(--section-padding);
+  display: flex;
   @media (min-width: $xl) {
     display: none;
   }

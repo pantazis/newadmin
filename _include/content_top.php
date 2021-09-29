@@ -47,7 +47,9 @@
 
     <!--diastaseis -->
     <script>
+        
         function screenSize() {
+            return;
             var w = window.innerWidth;
             var h = window.innerHeight;
             var txt = "Window size: width=" + w + ", height=" + h;
@@ -55,11 +57,11 @@
         }
     </script>
 
-    <p  id="demo"></p>
+   <!-- <p  id="demo"></p>
 
     <?php foreach ($bp as $kay =>   $value) { ?>
     <div class=" d-none d-<?= $kay; ?>-flex">
         <?= $value; ?>
     </div>
 
-    <?php }?>
+    <?php }?>-->

@@ -1,13 +1,13 @@
 <?php
 $label = [
-    "Domain ID",
-    "Ημερομηνία Κατοχύρωσης",
-    "Ημερομηνία Λήξης",
+    "Αριθμός Προφίλ",
     "Κατάσταση",
+    "Ενημερώθηκε στις",
+    
 ];
-$labelval = ["201173", "16/04/2021", "16/04/2023", "ΚΑΤΑΧΩΡΗΜΕΝΟ"];
+$labelval = ["500218", "ΕΝΕΡΓΟ", "16/04/2023"];
 
-$colorClass = ["", "", "", "success"];
+$colorClass = ["","success",""];
 
 $nservers = [
     [
@@ -184,8 +184,8 @@ $valueArr = [
     ],
     [
         [HtmlEl("-", "date", "", "")],
-        [HtmlEl("2", "date", "", "",)],
-        [HtmlEl("3", "date", "", "", )],       
+        [checkbox("off", "on")],
+        [checkbox("off", "on")],       
        
        
     ],
@@ -274,9 +274,10 @@ $domaininfo = [
     ],
 ];
 
-$page_title = "antoineeurtest.gr";
+$page_title = "Hetzner";
 
-$breadcrumb = ["Dashboard ", "Users", "An Ubavicius", "Domains"];
+$breadcrumb = ["Dashboard ", "Users", "An Ubavicius", "Προφίλ Τιμολόγησης"];
+
 
 $tabs = [["name" => "Στοιχεία προσώπου"]];
 ?>

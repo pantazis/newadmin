@@ -11693,6 +11693,9 @@ input.search-top {
   padding-right: 0.3125rem;
   display: flex;
   flex-direction: column; }
+  @media (min-width: 768px) {
+    .popup-notifications {
+      max-height: calc(100vh - 5.305rem - 0.625rem); } }
   .popup-notifications.custom-popup {
     padding: 0; }
 
@@ -11818,6 +11821,11 @@ span.text1 {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   background: #fff; }
+
+.arrow-div.dark {
+  background: #f9f9fc; }
+  .dark .arrow-div.dark {
+    background: #1e1c36; }
 
 .custom-popup.ss {
   background: #f9f9fc; }

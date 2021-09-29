@@ -639,6 +639,11 @@ $popup-notifications-right: 0.5625rem;
     z-index: 1;
 }
 .popup-notifications {
+    @media  (min-width:$md) {
+        max-height: calc(100vh - 5.305rem - 0.625rem);
+        
+    }
+    
     width: $popup-notifications-width;
     background: #fff;
     position: fixed;
@@ -806,8 +811,12 @@ span.text1 {
     border-top-right-radius: $border-radius;
     background: $white;
 }
+.arrow-div.dark{
+    @include themeColor("background", lighten($ice,3%), $bluedarkbl);
+}
 .custom-popup.ss {
     @include themeColor("background", lighten($ice,3%), $bluedarkbl);
+
 }
 .bubble {
     width: 100%;

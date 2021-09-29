@@ -84,7 +84,7 @@
     <?php }?>
     <div class="col-xl-6 action-cont order-xl-2 order-0">
       <button type="button" class="btn actions btn-black_blue"><img src="public/img/button-icons/fi-sr-user-add.svg"
-          class="button-icon2" alt=""><span class="btext">ΝΕΟ ΠΡΟΣΩΠΟ ΕΠΑΦΗΣ</span></button>
+          class="button-icon2" alt=""><span class="btext">ΝΕΟ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</span></button>
 
 
 

@@ -89,12 +89,13 @@ function formPersonal($inputprop1, $inputprop2, $inputprop3)
 function selectEl($arr, $title)
 {
     $template = '<div class="info-text-in">';
-    $template.='<select class="form-select" aria-label="">';
+    $template.='<div class="select-parent"><select class="form-select" aria-label="" required>
+    <option value="" disabled selected style="display: none;"></option>';
     foreach ($arr as $key => $val) {
         $value=$key+1;
-        $template.='<option '.($value==1?"selected":"").' value="'.$value.'">'.$val.'</option>';
+        $template.='<option value="'.$value.'">'.$val.'</option>';
     };
-    $template.='</select>'.buttonsEl().'</div>';
+    $template.='</select><label class="select-label">Επίλεξε κατάσταση</label></div>'.buttonsEl().'</div>';
 
 
 

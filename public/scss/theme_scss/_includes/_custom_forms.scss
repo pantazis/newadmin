@@ -1,4 +1,24 @@
 /* fallback */
+@mixin label {
+  z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    font-size: inherit;
+    transition: all 150ms linear;
+    pointer-events: none;
+  
+}
+@mixin labelF {
+z-index: 2;
+top: 0rem;
+padding: 0 0.25rem;
+font-size: 0.75rem;
+letter-spacing: 0.025rem;
+transition: all 150ms linear;
+@include themeColor("background-color", $ice, $bluedarkbl);
+}
 
 .material-icons {
   font-family: "Material Icons";
@@ -166,23 +186,10 @@ select,
 
 .material-text-field__input-text:focus ~ .material-text-field__label-text,
 .material-text-field__input-text:not(:placeholder-shown) ~ .material-text-field__label-text {
-  z-index: 2;
-  top: 0rem;
-  padding: 0 0.25rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.025rem;
-  transition: all 150ms linear;
-  @include themeColor("background-color", $ice, $bluedarkbl);
+  @include labelF 
 }
 .material-text-field__input-text ~ .material-text-field__label-text {
-  z-index: 1;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: $form-select-padding-x;
-  font-size: inherit;
-  transition: all 150ms linear;
-  pointer-events: none;
+ @include label;
 }
 
 .js__label-text--warning {
@@ -357,3 +364,15 @@ label.checkbox_label1 {
   border-color: $green2;
 }
 //----------------------------------check-box-end--------------------------------------------------------//
+//--------------------------------------custom-select-----------------------------------------//
+.select-parent{
+  position: relative;
+}
+label.select-label {
+  @include label;
+}
+
+.form-select:focus ~ .select-label, .form-select:valid ~ .select-label {
+  @include labelF;
+}
+//--------------------------------------custom-select-end-----------------------------------------//

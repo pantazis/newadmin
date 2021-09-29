@@ -2533,7 +2533,7 @@ progress {
   .form-control:focus {
     color: #212529;
     background-color: transparent;
-    border-color: #18bf93;
+    border-color: initial;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(91, 91, 220, 0.25); }
   .form-control::-webkit-date-and-time-value {
@@ -2665,7 +2665,7 @@ textarea.form-control-lg {
       transition: none; } }
   .form-select:focus {
     border-width: 2px;
-    border-color: #18bf93;
+    border-color: initial;
     outline: 0; }
   .form-select[multiple], .form-select[size]:not([size="1"]) {
     padding-right: 1rem;
@@ -2716,7 +2716,7 @@ textarea.form-control-lg {
   .form-check-input:active {
     filter: brightness(90%); }
   .form-check-input:focus {
-    border-color: #18bf93;
+    border-color: initial;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(91, 91, 220, 0.25); }
   .form-check-input:checked {
@@ -2750,7 +2750,7 @@ textarea.form-control-lg {
       .form-switch .form-check-input {
         transition: none; } }
     .form-switch .form-check-input:focus {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2318bf93'/%3e%3c/svg%3e"); }
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='initial'/%3e%3c/svg%3e"); }
     .form-switch .form-check-input:checked {
       background-position: right center;
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); }
@@ -4885,7 +4885,7 @@ textarea.form-control-lg {
     z-index: 2; }
   .accordion-button:focus {
     z-index: 3;
-    border-color: #18bf93;
+    border-color: initial;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(91, 91, 220, 0.25); }
 
@@ -14523,6 +14523,30 @@ label.checkbox_label1 {
 
 .checkbox-parent .checkbox:checked ~ .layer {
   border-color: #18bf93; }
+
+.select-parent {
+  position: relative; }
+
+label.select-label {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  font-size: inherit;
+  transition: all 150ms linear;
+  pointer-events: none; }
+
+.form-select:focus ~ .select-label, .form-select:valid ~ .select-label {
+  z-index: 2;
+  top: 0rem;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
+  transition: all 150ms linear;
+  background-color: #efeff6; }
+  .dark .form-select:focus ~ .select-label, .dark .form-select:valid ~ .select-label {
+    background-color: #1e1c36; }
 
 :root {
   --color-1: #427dad;

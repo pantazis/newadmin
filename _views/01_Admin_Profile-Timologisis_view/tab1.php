@@ -21,7 +21,7 @@
             "new_host_form"
           ];
           ?>
-  <div class="row">  
+  <div class="row">
     <?php foreach ($domaininfo as $key => $info) {?>
     <div
       class="col-xl-9 <?=$arr["desktop"][$key]?> <?=$arr["mobile"][$key]?>">
@@ -37,13 +37,13 @@
           <form <?php if ($formAction[$key]!="") { ?>action="<?=$formAction[$key]?>"<?php } ?> class="info-row-in" accept-charset="UTF-8">
             <input name="_token" type="hidden" value="hJP56IA1aIfmzZHoqvxKDnh7c8LSv4NyhwLtPRV411">
             <?php foreach ($info['text'] as $key2 =>  $subtitle) {?>
-              
-       
-              
 
-            
+
+
+
+
             <div class="info-row <?php
-                                                              
+
                          if (false) {
                              echo "last";
                          }
@@ -83,19 +83,19 @@
     </div>
     <?php }?>
     <div class="col-xl-6 action-cont order-xl-2 order-0">
-      <button type="button" class="btn actions btn-black_blue"><img src="public/img/button-icons/fi-sr-refresh.svg"
-          class="button-icon2" alt=""><span class="btext">ΝΕΟ ΠΡΟΣΩΠΟ ΕΠΑΦΗΣ</span></button>
-          
-    
+      <button type="button" class="btn actions btn-black_blue"><img src="public/img/button-icons/fi-sr-user-add.svg"
+          class="button-icon2" alt=""><span class="btext">ΝΕΟ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</span></button>
 
 
 
 
-          <button type="button" class="btn actions btn-outline-red2"><img src="public/img/button-icons/fi-sr-key.svg" class="button-icon2" alt=""><span class="btext">ΔΙΑΓΡΑΦΗ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</span></button>
+
+
+          <button type="button" class="btn actions btn-outline-red2"><img src="public/img/button-icons/fi-sr-user-delete.svg" class="button-icon2" alt=""><span class="btext">ΔΙΑΓΡΑΦΗ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</span></button>
 
 
     </div>
-    
+
 
 
   </div>

@@ -19,6 +19,8 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   </main>
   <?php include "_include/modals.php" ?>
   <?php include "_include/mobile-nav-footer.php" ?>
+  <?php var_dump( get_included_files()) ?>
+
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

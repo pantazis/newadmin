@@ -3,7 +3,7 @@ $label = [
     "Αριθμός Προφίλ",
     "Κατάσταση",
     "Ενημερώθηκε στις",
-    
+
 ];
 
 $addressInput=[
@@ -32,7 +32,7 @@ $addressInput=[
  $countryInput["disabled"]="disabled";
 
 
- 
+
 
 $labelval = ["500218", "ΕΝΕΡΓΟ", "16/04/2023"];
 
@@ -134,7 +134,7 @@ function HtmlEl($text, $classl, $color, $element, $icon = false)
                 '"><span class="' .
                 $val .
                 '" class="button-icon" alt=""></span></div>';
-               
+
         }
         $template.='</div>';
     }
@@ -192,7 +192,7 @@ $valueArr = [
     [
         [HtmlEl("ΔΙΑΜΑΝΤΗΣ ΣΤΥΛΙΑΝΟΣ ΒΑΣΙΛΕΙΟΣ", "date", "","", true) ],
         [HtmlEl("-", "date", "","", true) ],
-       
+
     ],
     [
         [HtmlEl("DE812871812", "date", "", "", false) ],
@@ -200,23 +200,23 @@ $valueArr = [
         [HtmlEl("ΣΕ ΑΝΑΜΟΝΗ", "date", "orange2", "", true)],
         [HtmlEl($vies, "date", "blue", "", false)],
         [HtmlEl("-", "date", "", "", true)],
-        
-        
-       
+
+
+
     ],
-    [ 
+    [
       [
         HtmlEl($address, "date", "", "",true),
-     
-      ]      
-       
+
+      ]
+
     ],
     [
         [HtmlEl("-", "date", "", "")],
-        [checkbox("off", "on")],
-        [checkbox("off", "on")],       
-       
-       
+        [checkbox("OFF", "ON")],
+        [checkbox("OFF", "ON")],
+
+
     ],
 ];
 
@@ -226,20 +226,20 @@ $formArr = [
   "",
   "",
   selectEl(
-    [    
+    [
     "Εγκεκριμένο",
     "Απορρίφθηκε",
     ],
     "Κατάσταση"
 ),"",simpleTextArea("Δραστηριότητα")
-      
 
-      
+
+
     ],
     [formAddress($addressInput,$cityInput,$zipInput,$countryInput)],
     [
-        
-      
+
+
     ],
 ];
 
@@ -250,10 +250,10 @@ function formAddress($prop1,$prop2,$prop3,$prop4)
 
 {   $template ='<div class="info-text-in">';
     $template .=inputEl($prop1, false);
-    $template .='</div><div class="info-text-in">';    
+    $template .='</div><div class="info-text-in">';
     $template .=inputEl($prop2, false);
-    $template .='</div><div class="info-text-in">';    
-    $template .=inputEl($prop3, false);    
+    $template .='</div><div class="info-text-in">';
+    $template .=inputEl($prop3, false);
     $template .='</div><div class="info-text-in">';
     $template .=inputEl($prop4, true);
     $template .='</div>';
@@ -270,7 +270,7 @@ $domaininfo = [
         "text" => [
             "Επωνυμία :",
             "Διακριτικός τίτλος :",
-            
+
         ],
     ],
     [
@@ -281,8 +281,8 @@ $domaininfo = [
             "Αφαίρεση ΦΠΑ :",
             "Απάντηση απο VIES :",
             "Δραστηριότητα :",
-          
-            
+
+
         ],
     ],
     [
@@ -295,7 +295,7 @@ $domaininfo = [
             "Κωδικός ERP :",
             "Κατάσταση Προφίλ τιμολόγησης :",
             "Χρήση ως προεπιλεγμένου :",
-      
+
         ],
     ],
 ];

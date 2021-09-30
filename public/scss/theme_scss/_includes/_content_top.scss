@@ -49,8 +49,8 @@
 h2.page_title {
     font-size: 2.3125rem;
     @include themeColor("color", $black_blue, $white);
-    @media (max-width:$xxl){
-    text-align: center;
+    @media (max-width: $xxl) {
+        text-align: center;
     }
 }
 .h4.frame_title {

@@ -14402,31 +14402,31 @@ input, select, .select2-selection__rendered {
    */
 @keyframes shake {
   10%,
-    90% {
+  90% {
     transform: translateX(-0.0625rem); }
   20%,
-    80% {
+  80% {
     transform: translateX(0.125rem); }
   30%,
-    50%,
-    70% {
+  50%,
+  70% {
     transform: translateX(-0.25rem); }
   40%,
-    60% {
+  60% {
     transform: translateX(0.25rem); } }
 @keyframes noshake {
   10%,
-    90% {
+  90% {
     transform: translateX(0rem); }
   20%,
-    80% {
+  80% {
     transform: translateX(0rem); }
   30%,
-    50%,
-    70% {
+  50%,
+  70% {
     transform: translateX(0rem); }
   40%,
-    60% {
+  60% {
     transform: translateX(0rem); } }
 .knobs,
 .layer {
@@ -14545,7 +14545,8 @@ label.select-label {
   letter-spacing: 0.025rem;
   transition: all 150ms linear;
   background-color: #efeff6; }
-  .dark .form-select:focus ~ .select-label, .dark .form-select:valid ~ .select-label {
+  .dark .form-select:focus ~ .select-label,
+  .dark .form-select:valid ~ .select-label {
     background-color: #1e1c36; }
 
 :root {

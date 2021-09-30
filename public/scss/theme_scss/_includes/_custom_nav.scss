@@ -5,7 +5,7 @@ $transitiontime: 0.3s;
 $hover-move: 0.4375rem;
 $topMargin: #{$navSidebarTop + 0.625}; //5.3125rem;
 $searchHeight: 3.125rem;
-$search-padding:1rem;
+$search-padding: 1rem;
 html {
     //  font-size: 0.7813vw;
 }
@@ -551,11 +551,9 @@ input.search-mobile {
     height: $searchHeight;
     border-radius: $border-radius;
     border: 0.025rem solid darken($ice, 8%);
-    &[type="search" i]{
+    &[type="search" i] {
         padding: 0 $search-padding;
-
     }
-    
 }
 .padd-search {
     width: 100%;
@@ -577,7 +575,7 @@ input.search-mobile {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    width:22.93rem;
+    width: 22.93rem;
     .search-text {
         line-height: 1;
         font-size: 0.8125rem;
@@ -587,7 +585,6 @@ input.search-mobile {
         flex: 1 0 auto;
         text-align: center;
         justify-content: center;
-        
     }
     .navdown {
         margin-right: 0;
@@ -639,11 +636,10 @@ $popup-notifications-right: 0.5625rem;
     z-index: 1;
 }
 .popup-notifications {
-    @media  (min-width:$md) {
+    @media (min-width: $md) {
         max-height: calc(100vh - 5.305rem - 0.625rem);
-        
     }
-    
+
     width: $popup-notifications-width;
     background: #fff;
     position: fixed;
@@ -652,7 +648,7 @@ $popup-notifications-right: 0.5625rem;
     border-radius: $border-radius;
     padding-left: 0.3125rem;
     padding-right: 0.3125rem;
-    
+
     display: flex;
     flex-direction: column;
     &.custom-popup {
@@ -797,8 +793,8 @@ span.text1 {
         }
     }
 }
-.seperator{
-    height:100px;
+.seperator {
+    height: 100px;
 }
 
 .bubble-cont {
@@ -811,12 +807,11 @@ span.text1 {
     border-top-right-radius: $border-radius;
     background: $white;
 }
-.arrow-div.dark{
-    @include themeColor("background", lighten($ice,3%), $bluedarkbl);
+.arrow-div.dark {
+    @include themeColor("background", lighten($ice, 3%), $bluedarkbl);
 }
 .custom-popup.ss {
-    @include themeColor("background", lighten($ice,3%), $bluedarkbl);
-
+    @include themeColor("background", lighten($ice, 3%), $bluedarkbl);
 }
 .bubble {
     width: 100%;
@@ -831,7 +826,7 @@ span.text1 {
     justify-content: center;
     align-items: center;
     opacity: 1;
-    width:100%;
+    width: 100%;
 }
 
 .icon-anim {
@@ -1082,12 +1077,11 @@ span.text1 {
         position: relative;
         width: 100%;
         top: 0;
-        right: 0;   
+        right: 0;
         border-radius: $border-radius;
         padding-left: 0;
         padding-right: 0;
-        
-        
+
         transform: none;
         max-height: 75vh;
     }
@@ -1101,14 +1095,13 @@ span.text1 {
         height: 100%;
         z-index: 2;
         display: flex;
-    flex-direction: column;
-    transition: top 0.3s;
-
+        flex-direction: column;
+        transition: top 0.3s;
     }
     .separator {
         flex: 1;
     }
-    
+
     .opennav1 {
         .popup_flex {
             top: 0%;
@@ -1144,14 +1137,11 @@ span.text1 {
     flex: 1 1 auto;
     overflow: auto;
 }
-.search-f{
-    .popup-notifications.footer{
+.search-f {
+    .popup-notifications.footer {
         background-color: $ice;
-
     }
-
 }
-
 
 /*-----------------------------------footer-nav-------------------------------------*/
 /*------------------------noscroll-------------------------------------------------*/

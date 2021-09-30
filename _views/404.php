@@ -1,4 +1,10 @@
     <style>
+
+        @media (min-width: 0) and (max-width: 768px) {
+            .only-mobile {
+                 display: none !important;
+       } }
+
         .logo-button {
             display: none;
         }

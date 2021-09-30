@@ -372,7 +372,39 @@ label.select-label {
   @include label;
 }
 
-.form-select:focus ~ .select-label, .form-select:valid ~ .select-label {
-  @include labelF;
+.form-select{
+&:focus,
+&:valid{
+  & ~ .select-label{
+    @include labelF;
+
+  }
+
+};
 }
+.textareaCustom{
+  &:focus,&:not(:placeholder-shown){
+    & ~ .select-label{
+      @include labelF;  
+    }  
+  }
+  }
+ 
+
 //--------------------------------------custom-select-end-----------------------------------------//
+//------------------------------------custom textarea --------------------------------------------//
+
+.textareaCustom {
+  overflow-y: hidden;
+  margin: 0px;
+  width: 100%;
+  resize: none;
+  background-color:transparent;
+  line-height: 1.5;
+  padding: 0.375rem 1rem;  
+  font-size: 1rem;
+  border-radius: $border-radius;
+  color:inherit;
+  display: block;
+}
+//------------------------------------custom textarea end-----------------------------------------//

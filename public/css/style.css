@@ -14548,6 +14548,30 @@ label.select-label {
   .dark .form-select:focus ~ .select-label, .dark .form-select:valid ~ .select-label {
     background-color: #1e1c36; }
 
+.textareaCustom:focus ~ .select-label, .textareaCustom:not(:placeholder-shown) ~ .select-label {
+  z-index: 2;
+  top: 0rem;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
+  transition: all 150ms linear;
+  background-color: #efeff6; }
+  .dark .textareaCustom:focus ~ .select-label, .dark .textareaCustom:not(:placeholder-shown) ~ .select-label {
+    background-color: #1e1c36; }
+
+.textareaCustom {
+  overflow-y: hidden;
+  margin: 0px;
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+  line-height: 1.5;
+  padding: 0.375rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  color: inherit;
+  display: block; }
+
 :root {
   --color-1: #427dad;
   --color-2: #000c75;

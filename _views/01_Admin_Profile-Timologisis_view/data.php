@@ -5,6 +5,35 @@ $label = [
     "Ενημερώθηκε στις",
     
 ];
+
+$addressInput=[
+    "autocomplete"=>"address",
+    "type"=>"text",
+    "placeholder"=>"",
+    "data-last-val"=>"",
+    "data-validate"=>"",
+    "label"=>"Οδός",
+    "value"=>"Falkenstr. 5,",
+    "disabled"=>"",
+    "validate-length"=>""
+
+ ];
+ $cityInput = $addressInput;
+ $cityInput["value"]="GeorgsmarienhÜTte,";
+ $cityInput["label"]="Πόλη";
+
+ $zipInput = $addressInput;
+ $zipInput["value"]="49124,";
+ $zipInput["label"]="Τ.Κ.";
+
+ $countryInput = $addressInput;
+ $countryInput["value"]="Greece";
+ $countryInput["label"]="Χώρα κατοικίας";
+ $countryInput["disabled"]="disabled";
+
+
+ 
+
 $labelval = ["500218", "ΕΝΕΡΓΟ", "16/04/2023"];
 
 $colorClass = ["","success",""];
@@ -192,31 +221,46 @@ $valueArr = [
 ];
 
 $formArr = [
-    ["1", "2"],
+    [simpleTextArea("Επωνυμία"),simpleTextArea("Διακριτικός τίτλος")],
     [
-  "1",
-  "2",
+  "",
+  "",
   selectEl(
     [    
     "Εγκεκριμένο",
     "Απορρίφθηκε",
     ],
     "Κατάσταση"
-),"3",inputEl($password, false)
+),"",simpleTextArea("Δραστηριότητα")
       
 
       
     ],
-    [formPersonal($host,$domain,$ip),formPersonal($host,$domain,$ip), formPersonal($host,$domain,$ip)],
+    [formAddress($addressInput,$cityInput,$zipInput,$countryInput)],
     [
-        select2($nservers, "pant"),
-        formPersonal2($host),
-        formPersonal2($host),
-        formPersonal2($host),
-        formPersonal2($host)
+        
       
     ],
 ];
+
+
+
+
+function formAddress($prop1,$prop2,$prop3,$prop4)
+
+{   $template ='<div class="info-text-in">';
+    $template .=inputEl($prop1, false);
+    $template .='</div><div class="info-text-in">';    
+    $template .=inputEl($prop2, false);
+    $template .='</div><div class="info-text-in">';    
+    $template .=inputEl($prop3, false);    
+    $template .='</div><div class="info-text-in">';
+    $template .=inputEl($prop4, true);
+    $template .='</div>';
+
+    return $template;
+};
+
 
 
 

@@ -60,12 +60,22 @@ $domain=[
 
  ];
 
- function formPersonal2($inputprop1)
+ function simpleTextArea($label="****")
  {
      $template ='<div class="info-text-in">';    
-     $template .=inputEl($inputprop1, true);
+     $template .=textareaEL($label,true);
      $template .='</div>';
  
+     return $template;
+ };
+
+ function formPersonal2($inputprop1)
+ {
+ 
+      
+     $template ='<div class="info-text-in">';    
+     $template .=inputEl($inputprop1, true);
+     $template .='</div>'; 
      return $template;
  };
 
@@ -122,7 +132,16 @@ function select2($optionArr, $placeholder, $id = "")
 
 
  $formPersonalArr=[inputEl($password, false),inputEl($password, false), inputEl($password, false)];
+ 
+ function textareaEL($label,$hasButton){
+  $template ='<div class="select-parent">';
+  $template.='<textarea class="textareaCustom" placeholder=" " rows="1"></textarea>';
+  $template.='<label class="select-label">'.$label.'</label>';
+  $template.='</div>';
+  $template.=($hasButton?buttonsEl():"");
+  return $template;
 
+ }
 
 function inputEl($inputprop, $hasButton)
 {

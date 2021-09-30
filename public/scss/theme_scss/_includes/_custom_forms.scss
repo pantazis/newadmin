@@ -1,23 +1,22 @@
 /* fallback */
 @mixin label {
   z-index: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1rem;
-    font-size: inherit;
-    transition: all 150ms linear;
-    pointer-events: none;
-  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  font-size: inherit;
+  transition: all 150ms linear;
+  pointer-events: none;
 }
 @mixin labelF {
-z-index: 2;
-top: 0rem;
-padding: 0 0.25rem;
-font-size: 0.75rem;
-letter-spacing: 0.025rem;
-transition: all 150ms linear;
-@include themeColor("background-color", $ice, $bluedarkbl);
+  z-index: 2;
+  top: 0rem;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
+  transition: all 150ms linear;
+  @include themeColor("background-color", $ice, $bluedarkbl);
 }
 
 .material-icons {
@@ -186,10 +185,10 @@ select,
 
 .material-text-field__input-text:focus ~ .material-text-field__label-text,
 .material-text-field__input-text:not(:placeholder-shown) ~ .material-text-field__label-text {
-  @include labelF 
+  @include labelF;
 }
 .material-text-field__input-text ~ .material-text-field__label-text {
- @include label;
+  @include label;
 }
 
 .js__label-text--warning {
@@ -219,45 +218,45 @@ select,
    * the input. We will apply this whenever the
    * input doesn't pass our validation tests.
    */
-   @keyframes shake {
-    10%,
-    90% {
-      transform: translateX( -0.0625rem );
-    }
-    20%,
-    80% {
-      transform: translateX( 0.125rem );
-    }
-    30%,
-    50%,
-    70% {
-      transform: translateX( -0.25rem );
-    }
-    40%,
-    60% {
-      transform: translateX( 0.25rem );
-    }
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(-0.0625rem);
   }
-  
-  @keyframes noshake {
-    10%,
-    90% {
-      transform: translateX( 0rem );
-    }
-    20%,
-    80% {
-      transform: translateX( 0rem );
-    }
-    30%,
-    50%,
-    70% {
-      transform: translateX( 0rem );
-    }
-    40%,
-    60% {
-      transform: translateX( 0rem );
-    }
+  20%,
+  80% {
+    transform: translateX(0.125rem);
   }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-0.25rem);
+  }
+  40%,
+  60% {
+    transform: translateX(0.25rem);
+  }
+}
+
+@keyframes noshake {
+  10%,
+  90% {
+    transform: translateX(0rem);
+  }
+  20%,
+  80% {
+    transform: translateX(0rem);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(0rem);
+  }
+  40%,
+  60% {
+    transform: translateX(0rem);
+  }
+}
 //----------------------------------check-box------------------------------------------------------------//
 $topc: 0.25rem;
 .knobs,
@@ -365,7 +364,7 @@ label.checkbox_label1 {
 }
 //----------------------------------check-box-end--------------------------------------------------------//
 //--------------------------------------custom-select-----------------------------------------//
-.select-parent{
+.select-parent {
   position: relative;
 }
 label.select-label {

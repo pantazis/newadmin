@@ -519,10 +519,9 @@ body.noanimαtion * {
 }
 //---------------------------------------action tabs-------------------------------//
 .mobile_tabs {
-  display: flex;  
-  width:auto;
-  margin:auto;
-
+  display: flex;
+  width: auto;
+  margin: auto;
 }
 .resio {
   width: 100%;
@@ -546,12 +545,11 @@ body.noanimαtion * {
   }
 }
 .dimensions {
-   width: calc(40vw - 0.9375rem);
-   flex-shrink: 0;
-  
+  width: calc(40vw - 0.9375rem);
+  flex-shrink: 0;
+
   @media (min-width: $md) {
     width: calc(25vw - 0.9375rem);
-
   }
   margin-right: 1.25rem;
   &:last-of-type {

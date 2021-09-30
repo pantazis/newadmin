@@ -108,9 +108,8 @@ input.search-top {
 }
 .message {
   background: $ice;
-  &.read{
+  &.read {
     background: transparent;
-
   }
 }
 .message.color1 {
@@ -339,9 +338,8 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
   }
   .message {
     background: $blue_grey;
-    &.read{
+    &.read {
       background: transparent;
-
     }
   }
   .message.color1 {

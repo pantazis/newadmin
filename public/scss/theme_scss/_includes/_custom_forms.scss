@@ -74,7 +74,7 @@ select,
   border: none;
 
   background-color: transparent;
-  padding: $form-select-padding-y $form-select-padding-x;
+  padding: $form-select-padding-x;
   line-height: $form-select-line-height;
 }
 
@@ -371,24 +371,22 @@ label.select-label {
   @include label;
 }
 
-.form-select{
-&:focus,
-&:valid{
-  & ~ .select-label{
-    @include labelF;
-
+.form-select {
+  &:focus,
+  &:valid {
+    & ~ .select-label {
+      @include labelF;
+    }
   }
-
-};
 }
-.textareaCustom{
-  &:focus,&:not(:placeholder-shown){
-    & ~ .select-label{
-      @include labelF;  
-    }  
+.textareaCustom {
+  &:focus,
+  &:not(:placeholder-shown) {
+    & ~ .select-label {
+      @include labelF;
+    }
   }
-  }
- 
+}
 
 //--------------------------------------custom-select-end-----------------------------------------//
 //------------------------------------custom textarea --------------------------------------------//
@@ -398,12 +396,12 @@ label.select-label {
   margin: 0px;
   width: 100%;
   resize: none;
-  background-color:transparent;
+  background-color: transparent;
   line-height: 1.5;
-  padding: 0.375rem 1rem;  
+  padding: $form-select-padding-x;
   font-size: 1rem;
   border-radius: $border-radius;
-  color:inherit;
+  color: inherit;
   display: block;
 }
 //------------------------------------custom textarea end-----------------------------------------//

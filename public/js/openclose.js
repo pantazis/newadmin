@@ -103,7 +103,9 @@ function collapseSection(element,parentel) {
 
   }
   
-  function openForms(clickEl,el,toggleDiv){  
+  function openForms(clickEl,el,toggleDiv){ 
+    console.log(clickEl,el,toggleDiv);
+   
       
          
     $(clickEl)[0].addEventListener('click', function(e) { 

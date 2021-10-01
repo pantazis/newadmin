@@ -368,8 +368,7 @@ body.noanimαtion * {
   }
 }
 .info-row {
-  border-bottom: 0.0625rem solid;
-  @include themeColor("border-color", lighten($dark_blue, 65%), darken($ice, 65%));
+  @include border-bottom();
   @include themeColor("color", $dark_blue, $ice);
   line-height: 1.5rem;
   &.hide {
@@ -440,6 +439,14 @@ body.noanimαtion * {
 }
 .date {
   font-weight: 600;
+  &.big{
+    font-size: $font-big;
+
+  }
+  &.small{
+    font-weight: normal;
+
+  }
 }
 .timezone {
   font-size: 0.675rem;
@@ -767,15 +774,34 @@ body.noanimαtion * {
 
 /*--------------------------------new-list1-----------------------------------------*/
 .big-row-parent{
-  display:flex;
+  display:flex;  
+  padding: 1rem 0;
+  border-bottom:inherit;
+  @include themeColor("color", $dark_blue, $ice);
+  @include border-bottom();
 }
 .el-right{
-margin-left:auto;
+margin-left: auto;
+display: flex;
+flex-direction: column;
+align-items: end;
+}
+.el-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .info-title-big{
-  font-size:1.125rem;
-  
+  font-size:$font-big;
+  font-weight:bold;
+  margin-left: 1rem; 
+}
 
+span.small-gray {
+  font-size: small;
+  font-weight: normal;
+  padding-left: .5rem;
+  opacity: 0.5;
 }
 
 

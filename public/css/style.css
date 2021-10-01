@@ -12520,6 +12520,10 @@ body.noanimαtion * {
 
 .date {
   font-weight: 600; }
+  .date.big {
+    font-size: 1.125rem; }
+  .date.small {
+    font-weight: normal; }
 
 .timezone {
   font-size: 0.675rem;
@@ -12817,6 +12821,42 @@ body.noanimαtion * {
   body.dark::-webkit-scrollbar-thumb {
     background-color: #efeff6;
     border: 3px solid #1e1c36; } }
+/*--------------------------------new-list1-----------------------------------------*/
+.big-row-parent {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: inherit;
+  color: #2e435e;
+  border-bottom: 0.0625rem solid;
+  border-color: #e5ebf2; }
+  .dark .big-row-parent {
+    color: #efeff6; }
+  .dark .big-row-parent {
+    border-color: #373762; }
+
+.el-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end; }
+
+.el-left {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.info-title-big {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-left: 1rem; }
+
+span.small-gray {
+  font-size: small;
+  font-weight: normal;
+  padding-left: .5rem;
+  opacity: 0.5; }
+
+/*--------------------------------new-list1-end-------------------------------------*/
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/fonts/icomoon.eot?1sl92v");

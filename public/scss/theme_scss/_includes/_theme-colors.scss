@@ -5,6 +5,13 @@
   }
 }
 
+@mixin border-bottom(){
+border-bottom: 0.0625rem solid;
+@include themeColor("border-color", lighten($dark_blue, 65%), darken($ice, 65%));
+}
+
+
+
 .btn-green2 {
   color: $ice;
 }
@@ -445,3 +452,5 @@ nav.sidebar.top .nav-list.list1 .custom-popup a {
     }
   }
 }
+
+$font-big:1.125rem;

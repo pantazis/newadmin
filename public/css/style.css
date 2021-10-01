@@ -12822,16 +12822,16 @@ body.noanimαtion * {
     background-color: #efeff6;
     border: 3px solid #1e1c36; } }
 /*--------------------------------new-list1-----------------------------------------*/
-.big-row-parent {
+.big-row-in {
   display: flex;
   padding: 1rem 0;
   border-bottom: inherit;
   color: #2e435e;
   border-bottom: 0.0625rem solid;
   border-color: #e5ebf2; }
-  .dark .big-row-parent {
+  .dark .big-row-in {
     color: #efeff6; }
-  .dark .big-row-parent {
+  .dark .big-row-in {
     border-color: #373762; }
 
 .el-right {

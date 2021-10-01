@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-xl-16 order-xl-0 order-2">
       
-      
+      <div class="info-container">
         <div class="info-title">Πληροφορίες επιχείρησης <div class="info-icon">
             <span class="icon-fi-sr-angle-down" alt=""></span>
           </div>
@@ -51,11 +51,9 @@
            
           </form>
         </div>
-      
+      </div>
     </div>
     <div class="col-xl-2 order-xl-0 order-2"></div>
-    
-   
     <div class="col-xl-6 action-cont order-xl-2 order-0">
       <button type="button" class="btn actions btn-black_blue"><img src="public/img/button-icons/fi-sr-user-add.svg"
           class="button-icon2" alt=""><span class="btext">ΝΕΟ ΠΡΟΦΙΛ ΤΙΜΟΛΟΓΗΣΗΣ</span></button>

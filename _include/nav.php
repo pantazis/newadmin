@@ -272,16 +272,16 @@
         "Προϊόντα"
     ];
     $links = [
-        [$url_without_last_part . "/", "dashboard"],
-        [$url_without_last_part . '/domain-list', 'domain-list'],
-        [$url_without_last_part . '/domain', 'domain'],
-        [$url_without_last_part . '/orders', 'orders'],
-        [$url_without_last_part . '/order', "order"],
-        [$url_without_last_part . '/ssl', "ssl"],
-        [$url_without_last_part . '/ssl-list', "ssl-list"],
-        [$url_without_last_part . '/billing-profile', "billing-profile"],
-        [$url_without_last_part . '/billing-profiles', 'billing-profiles'],
-        [$url_without_last_part . '/order-doc', 'order-doc'],
+        [$url_without_last_part . "/", "Ready_00"],
+        [$url_without_last_part . '/01', 'Ready_01'],
+        [$url_without_last_part . '/02', 'Ready_02'],
+        [$url_without_last_part . '/03', 'Ready_03'],
+        [$url_without_last_part . '/04', "Test_04"],
+        [$url_without_last_part . '/05', "Test_05"],
+        [$url_without_last_part . '/06', "Test_06"],
+        [$url_without_last_part . '/07', "Test_07"],
+        [$url_without_last_part . '/08', 'Test_08'],
+        [$url_without_last_part . '/09', 'Test_09'],
         [$url_without_last_part . '/404', '404error']
     ];
     ?>

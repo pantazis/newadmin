@@ -8,6 +8,14 @@ switch ($request) {
         $folder = "01_Admin_Profile-Timologisis_view";        
         include '_views/'.$folder.'/index.php'; //dasboard.php
         break;
+    case $url_without_last_part . "/02":
+        $folder = "02_Admin_Profile-Timologisis_view_VIES";        
+        include '_views/'.$folder.'/index.php'; //dasboard.php
+        break;
+    case $url_without_last_part . "/03":
+        $folder = "03_Admin_Transaction-Order_parastatika_view";        
+        include '_views/'.$folder.'/index.php'; //dasboard.php
+        break;
 
     default:
         include '_views/404.php';

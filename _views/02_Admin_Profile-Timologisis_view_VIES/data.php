@@ -300,7 +300,7 @@ $domaininfo = [
     ],
 ];
 
-$page_title = "ΔΙΑΜΑΝΤΗΣ ΣΤΥΛΙΑΝΟΣ ΒΑΣΙΛΕΙΟΣ";
+$page_title = "Hetzner";
 
 $breadcrumb = ["Dashboard ", "Users", "An Ubavicius", "Προφίλ Τιμολόγησης"];
 

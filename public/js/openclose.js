@@ -104,6 +104,7 @@ function collapseSection(element,parentel) {
   }
   
   function openForms(clickEl,el,toggleDiv){ 
+    debugger;
     console.log(clickEl,el,toggleDiv);
    
       

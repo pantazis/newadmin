@@ -103,6 +103,29 @@
     }
   });
 
+
+function checklocked(el){
+  var parent =$(el).closest(".big-row-parent");
+  var islocked =parent.hasClass("lock");
+  if(islocked){
+    parent.removeClass("lock");
+    parent.find(".small-gray").html("Unlocked");
+  }else{
+    parent.addClass("lock");
+    parent.find(".small-gray").html("locked");
+  }
+}
+$(".d1").each(function(){
+  checklocked(this);
+});
+
+
+
+$(".d1").click(function(){
+  checklocked(this);
+  
+});
+
   var isDark = localStorage.getItem("dark");
   if (isDark == null) {
     localStorage.setItem("dark", "false");
@@ -459,7 +482,6 @@ messageCont.mouseleave(function(){
 
 
   
-
 
 
 

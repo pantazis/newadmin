@@ -1,0 +1,179 @@
+/*LOADER*/
+.coverdiv.hide-loader {
+    left: -100%;
+    .disable {
+      display: none;
+    }
+  }
+  .loaderimg {
+    width: 100px;
+    height: auto;
+  }
+  .coverdiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    transition: left 0.5s ease-in;
+  }
+  .inner_div {
+    position: relative;
+  }
+  .shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: shadow-pulse 1s infinite linear;
+    animation-delay: 1s;
+  }
+  .circle_big {
+    fill: transparent;
+    stroke-width: 6px;
+    stroke: #1eb6db;
+    r: 17px;
+    stroke-dasharray: 107;
+    stroke-dashoffset: -107;
+    animation-name: circle_big;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .circle_small {
+    fill: #2e435e;
+    animation-name: circle_small;
+    animation-duration: 1s;
+  }
+  .inner_div {
+    animation-name: inner_div;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .lines {
+    fill: #fff;
+  }
+  .svgl1,
+  .svgl2,
+  .svgl3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+  }
+  .mask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .svgl1 {
+    animation-name: svgl1;
+    animation-duration: 1s;
+  }
+  .svgl2 {
+    animation-name: svgl2;
+    animation-duration: 1s;
+  }
+  .svgl3 {
+    animation-name: svgl3;
+    animation-duration: 1s;
+  }
+  @keyframes inner_div {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+    }
+    50% {
+      box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.05);
+    }
+    100% {
+      box-shadow: 0 0 0 100px rgba(0, 0, 0, 0);
+    }
+  }
+  @keyframes svgl1 {
+    0% {
+      top: -117px;
+      left: 71.2564px;
+    }
+    50% {
+      top: -117px;
+      left: 71.2564px;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  @keyframes svgl2 {
+    0% {
+      top: 117px;
+      left: -71.2564px;
+    }
+    50% {
+      top: 117px;
+      left: -71.2564px;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  @keyframes svgl3 {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /* The animation code */
+  @keyframes circle_small {
+    0% {
+      r: 0px;
+    }
+    50% {
+      r: 17px;
+    }
+    100% {
+      r: 17px;
+    }
+  }
+  @keyframes circle_big {
+    0% {
+      stroke-dashoffset: -107;
+    }
+    50% {
+      stroke-dashoffset: -107;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  

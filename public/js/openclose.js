@@ -104,7 +104,7 @@ function collapseSection(element,parentel) {
   }
   
   function openForms(clickEl,el,toggleDiv){ 
-    debugger;
+
     console.log(clickEl,el,toggleDiv);
    
       
@@ -139,6 +139,11 @@ function collapseSection(element,parentel) {
    
   });
 }
+
+$('.big-row-in').each(function(){  
+  var parent = $(this).closest(".big-row-parent");
+   openForms(this,parent,'.info-form');
+});
 
 
 $('.info-title').each(function(){  

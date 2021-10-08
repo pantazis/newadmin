@@ -1,0 +1,6 @@
+-------> επαναφορά σε προηγούμενο commit<---------
+
+git reset --hard "commit_number"
+git status
+git push -f
+git status

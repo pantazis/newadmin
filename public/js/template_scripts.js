@@ -479,6 +479,11 @@ messageCont.mouseleave(function(){
 }
 
 
+window.bindinput={
+val:(el)=>{ $(".search-top,.search-mobile").val($(el).val())}
+}
+
+
 
 
   

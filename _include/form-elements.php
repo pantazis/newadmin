@@ -225,7 +225,7 @@ function search(){
       
   <div class="search-cont search-cont only-superlarge">
       <span class="search-text"><span class="text">Domains</span> <div class="icon-fi-sr-caret-down navdown"></div></span>
-      <input class="search-top" type="search" placeholder="Αναζήτηση" name="" id="">     
+      <input class="search-top" oninput="bindinput.val(this)" type="search" placeholder="Αναζήτηση" name="" id="">     
   </div>
  
 </div>
@@ -233,7 +233,7 @@ function search(){
 <div class="custom-popup ss popup-notifications  shadow-2-strong">
       
         <div class="padd-search">
-          <input class="search-mobile" type="search" placeholder="Αναζήτηση" name="" id="">
+          <input class="search-mobile" oninput="bindinput.val(this)"  type="search" placeholder="Αναζήτηση" name="" id="">
         </div>        
         
         <div class="bubble-cont shadow-1-strong">';

@@ -11448,7 +11448,7 @@ nav.sidebar.top {
       text-decoration: none; }
       nav.sidebar.top .nav-list.list1 .custom-popup a.button2 {
         color: #ffffff;
-        border-radius: 0.6rem; }
+        border-radius: 0.25rem; }
       nav.sidebar.top .nav-list.list1 .custom-popup a:hover {
         padding-left: 1.875rem; }
   nav.sidebar.top .nav-list-item {
@@ -11666,12 +11666,15 @@ input.search-top {
   transition: width 0.001s 0.299s, transform 0.3s, opacity 0.3s;
   width: 0em;
   transform: translate(1.25rem, 3.125rem);
-  opacity: 0; }
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 0.625rem); }
 .nav-list-item.opennav1 .custom-popup {
   transition: width 0s 0s, transform 0.3s, opacity 0.3s;
   transform: translate(0, 0);
   opacity: 1;
-  width: 15.875em; }
+  width: 15.875em;
+  border-radius: 0.25rem; }
 
 .arrow-div {
   width: 1.3125rem;

@@ -3,7 +3,8 @@ $sidebarWidthClosed: 4.8125rem;
 $navSidebarTop: 4.68rem;
 $transitiontime: 0.3s;
 $hover-move: 0.4375rem;
-$topMargin: #{$navSidebarTop + 0.625}; //5.3125rem;
+$marginfromnav:0.625rem;
+$topMargin: #{$navSidebarTop + $marginfromnav}; //5.3125rem;
 $searchHeight: 3.125rem;
 $search-padding: 1rem;
 html {
@@ -349,7 +350,7 @@ nav.sidebar.top {
                 text-decoration: none;
                 &.button2 {
                     color: #ffffff;
-                    border-radius: 0.6rem;
+                    border-radius: $border-radius;
                 }
                 &:hover {
                     padding-left: 1.875rem;
@@ -613,6 +614,8 @@ input.search-top {
         width: 0em;
         transform: translate(1.25rem, 3.125rem);
         opacity: 0;
+        position: absolute;
+        top: calc(100% + #{$marginfromnav});
     }
     &.opennav1 {
         .custom-popup {
@@ -620,6 +623,7 @@ input.search-top {
             transform: translate(0, 0);
             opacity: 1;
             width: 15.875em;
+            border-radius: $border-radius;
         }
     }
 }

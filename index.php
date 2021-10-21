@@ -34,6 +34,15 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   <script src="./public/js/template_scripts.js?<?=rand(0, 1000) ?>"></script>
   <script src="./public/js/form.js?<?=rand(0, 1000) ?>"></script>
 
+  <?php if($folder=="dashboard"){ ?>
+
+    <script src="./public/js/libraries/muuri.min.js"></script>
+    <script src="./public/js/libraries/web-animations.min.js"></script>
+    <script src="./public/js/dashboardOrder.js"></script> 
+  <?php }?>
+
+
+
   <script>
     var myModal = document.getElementById('disableAccount');
   </script>

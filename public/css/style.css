@@ -14644,6 +14644,48 @@ label.select-label {
   color: inherit;
   display: block; }
 
+body {
+  overflow-y: scroll; }
+
+.grid {
+  position: relative; }
+
+.item {
+  display: block;
+  position: absolute;
+  width: 25%;
+  height: 20vh;
+  margin: 0;
+  z-index: 1;
+  padding: 0.625rem;
+  color: #000;
+  box-sizing: border-box; }
+
+.item.t3 {
+  width: 50%;
+  height: 40vh; }
+
+.item.muuri-item-dragging {
+  z-index: 3; }
+
+.item.muuri-item-releasing {
+  z-index: 2; }
+
+.item.muuri-item-hidden {
+  z-index: 0; }
+
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+  box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important; }
+
+.template {
+  display: none; }
+
 :root {
   --color-1: #427dad;
   --color-2: #000c75;

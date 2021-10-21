@@ -72,8 +72,22 @@
 
   // navgation open close
 
+  function gridRefresh(){   
+    if(grid!=undefined){
+      var navbarleft = $("nav.sidebar.navbar.left")[0];
+      navbarleft.addEventListener("webkitTransitionEnd",function(){ grid.refreshItems().layout()});
+      navbarleft.addEventListener("transitionend",function(){     
+         grid.refreshItems().layout(); 
+         });
+   
+    }
+
+  }
+
   $(".logo").click(function () {
     $("body").toggleClass("closeNav");
+    gridRefresh();
+
   });
   $(".fi-sr-menu-burger_left.only-mobile").click(function () {
     $(".logo-button").click();

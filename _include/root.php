@@ -16,6 +16,10 @@ switch ($request) {
         $folder = "03_Admin_Transaction-Order_parastatika_view";        
         include '_views/'.$folder.'/index.php'; //dasboard.php
         break;
+    case $url_without_last_part . "/dashboard":
+            $folder = "dashboard";        
+            include '_views/'.$folder.'/index.php'; //dasboard.php
+            break;    
 
     default:
         include '_views/404.php';

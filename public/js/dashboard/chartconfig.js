@@ -6,7 +6,7 @@ chartConfig.chart1 =  {
       maintainAspectRatio:false,
       plugins: {
         title: {
-          display: true,
+          display: false,
           text: 'Chart.js Bar Chart - Stacked'
         },
       },
@@ -40,7 +40,7 @@ chartConfig.chart2= {
           position: 'top',
         },
         title: {
-          display: true,
+          display: false,
           text: 'Chart.js Line Chart'
         }
       }
@@ -59,7 +59,7 @@ chartConfig.chart2= {
           position: 'right',
         },
         title: {
-          display: true,
+          display: false,
           text: 'Chart.js Doughnut Chart'
         }
       }
@@ -77,7 +77,7 @@ chartConfig.chart2= {
           propagate: false,
         },
         title: {
-          display: true,
+          display: false,
           text: (ctx) => 'Fill: ' + 'start'
         }
       },

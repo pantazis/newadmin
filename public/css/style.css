@@ -14654,7 +14654,7 @@ body {
   display: block;
   position: absolute;
   width: 25%;
-  height: 25vh;
+  height: 18vh;
   margin: 0;
   z-index: 1;
   padding: 0.625rem;
@@ -14662,7 +14662,7 @@ body {
   box-sizing: border-box; }
   .item.t3 {
     width: 50%;
-    height: 50vh; }
+    height: 36vh; }
 
 .item.muuri-item-dragging {
   z-index: 3; }

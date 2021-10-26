@@ -23,8 +23,7 @@ function backgroundColorchart3  () {
 	
 	$(colors).each(function(){		
 		var product =this;		
-		localData.chart3.datasets[0].backgroundColor.push(product.backgroundColor)
-
+		localData.chart3.datasets[0].backgroundColor.push(product.backgroundColor);
 	})
 	
 }

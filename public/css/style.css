@@ -14663,6 +14663,9 @@ body {
   .item.t3 {
     width: 50%;
     height: 36vh; }
+  .item.t1 {
+    width: 100%;
+    height: 36vh; }
 
 .container1 {
   padding-right: 1.25rem;
@@ -14684,50 +14687,13 @@ body {
   border-radius: 0.25rem;
   background-color: #fff;
   -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
-  box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important; }
+  box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+  background-color: #fff; }
+  .dark .item-content {
+    background-color: #0e0c28; }
 
 .template {
   display: none; }
-
-/*----------------------------------------------------------------------*/
-.boxD {
-  display: flex;
-  width: 75px;
-  height: 75px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.25rem;
-  font-size: 30px;
-  color: red;
-  background: #ffe6e6; }
-
-.s-top {
-  display: flex; }
-
-.s-bottom {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  margin-top: auto; }
-
-.data-link {
-  flex-direction: column;
-  height: 100%;
-  display: flex; }
-
-.b-right {
-  padding-left: 12px;
-  display: flex;
-  flex-direction: column; }
-
-.r-d {
-  padding-left: 10px; }
-
-.numD {
-  font-size: 42px;
-  font-weight: bold;
-  line-height: 34px;
-  margin-top: auto; }
 
 :root {
   --color-1: #427dad;

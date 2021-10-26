@@ -50,8 +50,10 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
     <script src="./public/js/dashboard/chartdata.js?<?=rand(1,1000)?>"></script>
     <script src="./public/js/dashboard/chartconfig.js?<?=rand(1,1000)?>"></script>
     <script src="./public/js/dashboard/initChart.js?<?=rand(1,1000)?>"></script>
-    
-    
+
+    <script>
+      $(".item:not(.t3) .item-content").html($(".data-link")[0].outerHTML);
+    </script>
   
   <?php }?>
 

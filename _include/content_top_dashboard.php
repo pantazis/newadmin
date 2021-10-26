@@ -1,4 +1,9 @@
 <div class="content_top_parent">
+    <style>
+    .top-section {            
+        min-height: auto;
+    }
+    </style>
     <div class="content_top">
         <div class="top_left">
             <nav aria-label="breadcrumb">

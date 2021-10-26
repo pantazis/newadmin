@@ -272,11 +272,11 @@
         "Προϊόντα"
     ];
     $links = [
-        [$url_without_last_part . "/", "Ready_00"],
+        [$url_without_last_part . "", "Ready_00"],
         [$url_without_last_part . '/01', 'Ready_01'],
         [$url_without_last_part . '/02', 'Ready_02'],
         [$url_without_last_part . '/03', 'Ready_03'],
-        [$url_without_last_part . '/04', "Test_04"],
+        [$url_without_last_part . '/dashboard', "Dashboard"],
         [$url_without_last_part . '/05', "Test_05"],
         [$url_without_last_part . '/06', "Test_06"],
         [$url_without_last_part . '/07', "Test_07"],

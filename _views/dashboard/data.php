@@ -300,9 +300,9 @@ $domaininfo = [
     ],
 ];
 
-$page_title = "ΔΙΑΜΑΝΤΗΣ ΣΤΥΛΙΑΝΟΣ ΒΑΣΙΛΕΙΟΣ";
+$page_title = "ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ";
 
-$breadcrumb = ["Dashboard ", "Users", "An Ubavicius", "Προφίλ Τιμολόγησης"];
+$breadcrumb = ["Dashboard "];
 
 
 $tabs = [["name" => "Στοιχεία προσώπου"],["name" => "Στοιχεία προσώπου"],["name" => "Στοιχεία προσώπου"],["name" => "Στοιχεία προσώπου"]];

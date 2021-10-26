@@ -1,12 +1,12 @@
 /*--------------------init chart ------------------------------------*/
-var chart1 = $('.chart1')[0].getContext('2d')
-var myChart = new Chart(chart1, chartConfig.chart1)
-var chart2 = $('.chart2')[0].getContext('2d')
-var myChart2 = new Chart(chart2, chartConfig.chart2)
-var chart3 = $('.chart3')[0].getContext('2d')
-var myChart3 = new Chart(chart3, chartConfig.chart3)
-var chart4 = $('.chart4')[0].getContext('2d')
-var myChart4 = new Chart(chart4, chartConfig.chart4)
+var chart1 = $(".chart1")[0].getContext("2d");
+var myChart = new Chart(chart1, chartConfig.chart1);
+var chart2 = $(".chart2")[0].getContext("2d");
+var myChart2 = new Chart(chart2, chartConfig.chart2);
+var chart3 = $(".chart3")[0].getContext("2d");
+var myChart3 = new Chart(chart3, chartConfig.chart3);
+var chart4 = $(".chart4")[0].getContext("2d");
+var myChart4 = new Chart(chart4, chartConfig.chart4);
 
 /*--------------------init chart end ------------------------------------*/
 /*
@@ -18,356 +18,351 @@ Line Chart Boundaries
 /*get data form daterangepicker*/
 
 var template = {
-  label: 'date1',
-  data: [],
-  backgroundColor: [
-    'rgb(255, 99, 132)',
-    'rgb(255, 159, 64)',
-    'rgb(255, 205, 86)',
-    'rgb(75, 192, 192)',
-    'rgb(54, 162, 235)',
-    'rgb(153, 102, 255)',
-    'rgb(201, 203, 207)'
-  ]
-}
+	label: "date1",
+	data: [],
+	backgroundColor: [
+		"rgb(255, 99, 132)",
+		"rgb(255, 159, 64)",
+		"rgb(255, 205, 86)",
+		"rgb(75, 192, 192)",
+		"rgb(54, 162, 235)",
+		"rgb(153, 102, 255)",
+		"rgb(201, 203, 207)",
+	],
+};
 
-var dateFormat = 'DD/MM/YYYY'
+var dateFormat = "DD/MM/YYYY";
 var Obj = {
-  startDate: '',
-  endDate: ''
-}
+	startDate: "",
+	endDate: "",
+};
 const searchDataObj = {
-  startDate: null,
-  endDate: null,
-  period: null
-}
+	startDate: null,
+	endDate: null,
+	period: null,
+};
 //cofiguration for each chart
-const tableConfig = {}
+const tableConfig = {};
 
 //data after selection
-var filteredData
-var parentDatesChart3 = []
-var hasNoData
+var filteredData;
+var parentDatesChart3 = [];
+var hasNoData;
 
-$('.dateButton').daterangepicker(
-  {
-    ranges: {
-      'Προηγούμενος μήνας': [moment().subtract(1, 'months'), moment()],
-      'Τελευταίοι 6 μήνες': [moment().subtract(180, 'days'), moment()],
-      'Πρηγούμενο έτος': [
-        moment()
-          .subtract(1, 'year')
-          .add(2, 'day')
-          .startOf('year'),
-        moment()
-      ],
-      'Όλα τα έτη': 'all-time' /* [minDate, maxDate] */,
-      'Custom Range': 'custom'
-    },
-    minDate: moment(Object.keys(data.day)[0], 'DDMMYYYY'),
-    firstDayOfWeek: 1,
-    orientation: 'left',
-    expanded: true
-    // forceUpdate: true
-  },
-  function (startDate, endDate, period) {
-    Obj.startDate = startDate.format(dateFormat)
-    Obj.endDate = endDate.format(dateFormat)
+$(".dateButton").daterangepicker(
+	{
+		ranges: {
+			"Προηγούμενος μήνας": [moment().subtract(1, "months"), moment()],
+			"Τελευταίοι 6 μήνες": [moment().subtract(180, "days"), moment()],
+			"Πρηγούμενο έτος": [
+				moment().subtract(1, "year").add(2, "day").startOf("year"),
+				moment(),
+			],
+			"Όλα τα έτη": "all-time" /* [minDate, maxDate] */,
+			"Custom Range": "custom",
+		},
+		minDate: moment(Object.keys(data.day)[0], "DDMMYYYY"),
+		firstDayOfWeek: 1,
+		orientation: "left",
+		expanded: true,
+		// forceUpdate: true
+	},
+	function (startDate, endDate, period) {
+		Obj.startDate = startDate.format(dateFormat);
+		Obj.endDate = endDate.format(dateFormat);
 
-    //setInputval(period);
+		//setInputval(period);
 
-    var start = Obj.startDate
-    var end = Obj.endDate
+		var start = Obj.startDate;
+		var end = Obj.endDate;
 
-    $(this).html(start + ' – ' + end)
-    hasNoData = false
-    getCalendarData(start, end, period)
-    getQueriedData()
-    if (hasNoData == true) {
-      return
-    }
-    updatecharts()
-  }
-)
+		$(this).html(start + " – " + end);
+		hasNoData = false;
+		getCalendarData(start, end, period);
+		getQueriedData();
+		if (hasNoData == true) {
+			return;
+		}
+		updatecharts();
+	}
+);
 
-function updatecharts () {
-  myChart.update()
-  myChart2.update()
-  myChart3.update()
-  myChart4.update()
+function updatecharts() {
+	myChart.update();
+	myChart2.update();
+	myChart3.update();
+	myChart4.update();
 }
 
-function getCalendarData (start, end, period) {
-  searchDataObj.startDate = start
-  searchDataObj.endDate = end
-  searchDataObj.period = period
+function getCalendarData(start, end, period) {
+	searchDataObj.startDate = start;
+	searchDataObj.endDate = end;
+	searchDataObj.period = period;
 }
 
-function setInputval (period) {
-  switch (period) {
-    case 'day':
-      Obj.startDate = Object.keys(data.day)[0]
-      Obj.endDate = Object.keys(data.day)[2]
-      break
-    case 'week':
-      Obj.startDate = Object.keys(data.week)[0]
-      Obj.endDate = Object.keys(data.week)[1]
-      break
-    case 'month':
-      Obj.startDate = Object.keys(data.month)[0]
-      Obj.endDate = Object.keys(data.month)[3]
-      break
-    case 'quarter':
-      Obj.startDate = Object.keys(data.quarter)[0]
-      Obj.endDate = Object.keys(data.quarter)[2]
-      break
-    case 'year':
-      Obj.startDate = Object.keys(data.year)[5]
-      Obj.endDate = Object.keys(data.year)[3]
+function setInputval(period) {
+	switch (period) {
+		case "day":
+			Obj.startDate = Object.keys(data.day)[0];
+			Obj.endDate = Object.keys(data.day)[2];
+			break;
+		case "week":
+			Obj.startDate = Object.keys(data.week)[0];
+			Obj.endDate = Object.keys(data.week)[1];
+			break;
+		case "month":
+			Obj.startDate = Object.keys(data.month)[0];
+			Obj.endDate = Object.keys(data.month)[3];
+			break;
+		case "quarter":
+			Obj.startDate = Object.keys(data.quarter)[0];
+			Obj.endDate = Object.keys(data.quarter)[2];
+			break;
+		case "year":
+			Obj.startDate = Object.keys(data.year)[5];
+			Obj.endDate = Object.keys(data.year)[3];
 
-      break
-  }
+			break;
+	}
 }
 
-function gefilteredDatat () {}
+function gefilteredDatat() {}
 
-function getQueriedData () {
-  var period = searchDataObj.period
-  var startDate = searchDataObj.startDate
-  var endDate = searchDataObj.endDate
+function getQueriedData() {
+	var period = searchDataObj.period;
+	var startDate = searchDataObj.startDate;
+	var endDate = searchDataObj.endDate;
 
-  var starDateEndOfDay = moment(startDate, 'DDMMYYYY').endOf(period)
-  var endDateEndOfDay = moment(endDate, 'DDMMYYYY').endOf(period)
+	var starDateEndOfDay = moment(startDate, "DDMMYYYY").endOf(period);
+	var endDateEndOfDay = moment(endDate, "DDMMYYYY").endOf(period);
 
-  //console.log(starDateEndOfDay.format("DD/MM/YYYY"));
-  //console.log(endDateEndOfDay.format("DD/MM/YYYY"));
+	//console.log(starDateEndOfDay.format("DD/MM/YYYY"));
+	//console.log(endDateEndOfDay.format("DD/MM/YYYY"));
 
-  filteredData = {}
+	filteredData = {};
 
-  filteredData[period] = {}
+	filteredData[period] = {};
 
-  filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] =
-    data[period][starDateEndOfDay.endOf(period).format(dateFormat)]
+	filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] =
+		data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
 
-  while (
-    starDateEndOfDay
-      .add(1, period + 's')
-      .endOf(period)
-      .diff(endDateEndOfDay) <= 0
-  ) {
-    filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] =
-      data[period][starDateEndOfDay.endOf(period).format(dateFormat)]
-  }
+	while (
+		starDateEndOfDay
+			.add(1, period + "s")
+			.endOf(period)
+			.diff(endDateEndOfDay) <= 0
+	) {
+		filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] =
+			data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
+	}
 
-  mergeAndGiveData(period)
+	mergeAndGiveData(period);
 }
 
-function loopAndPush (Value, arrs) {
-  for (const singleValue in Value) {
-    if (Value[singleValue] == undefined) {
-      nodata([singleValue]['chart1'])
+function loopAndPush(Value, arrs) {
+	for (const singleValue in Value) {
+		if (Value[singleValue] == undefined) {
+			nodata([singleValue]["chart1"]);
 
-      hasNoData = true
-      return
-    }
+			hasNoData = true;
+			return;
+		}
 
-    var datasets = Value[singleValue]['chart1']['datasets']
-    $(datasets).each(function (index) {
-      if (arrs.length < datasets.length) {
-        arrs.push(this.data[0])
-      } else {
-        arrs[index] = arrs[index] + this.data[0]
-      }
-    })
-  }
+		var datasets = Value[singleValue]["chart1"]["datasets"];
+		$(datasets).each(function (index) {
+			if (arrs.length < datasets.length) {
+				arrs.push(this.data[0]);
+			} else {
+				arrs[index] = arrs[index] + this.data[0];
+			}
+		});
+	}
 }
 
-function nodata (data) {
-  var charts = [myChart, myChart2, myChart3, myChart4]
+function nodata(data) {
+	var charts = [myChart, myChart2, myChart3, myChart4];
 
-  $(charts).each(function () {
-    var Chart = this
+	$(charts).each(function () {
+		var Chart = this;
 
-    // No data is present
-    var ctx = Chart.ctx
-    var width = Chart.width
-    var height = Chart.height
+		// No data is present
+		var ctx = Chart.ctx;
+		var width = Chart.width;
+		var height = Chart.height;
 
-    ctx.save()
-    ctx.textAlign = 'center'
-    ctx.textBaseline = 'middle'
-    ctx.font = "16px normal 'Helvetica Nueue'"
-    ctx.fillText('No data to display', width / 2, height / 2)
-    ctx.restore()
-  })
+		ctx.save();
+		ctx.textAlign = "center";
+		ctx.textBaseline = "middle";
+		ctx.font = "16px normal 'Helvetica Nueue'";
+		ctx.fillText("No data to display", width / 2, height / 2);
+		ctx.restore();
+	});
 }
 
-function joinvalues (sumValue) {
-  console.log(0)
+function joinvalues(sumValue) {
+	console.log(0);
 
-  var parentArr = []
-  var arrSum = []
-  var arrSum2 = []
-  var arrSum3 = []
+	var parentArr = [];
+	var arrSum = [];
+	var arrSum2 = [];
+	var arrSum3 = [];
 
-  loopAndPush(sumValue, arrSum)
-  if (hasNoData) {
-    return
-  }
+	loopAndPush(sumValue, arrSum);
+	if (hasNoData) {
+		return;
+	}
 
-  if (
-    moment(Obj.startDate, 'DDMMYYYY').add(1, 'years') >
-    moment(Obj.endDate, 'DDMMYYYY')
-  ) {
-    console.log(1)
+	if (
+		moment(Obj.startDate, "DDMMYYYY").add(1, "years") >
+		moment(Obj.endDate, "DDMMYYYY")
+	) {
+		console.log(1);
 
-    var yearEndEndOf = moment(Obj.endDate, 'DDMMYYYY').endOf('year')
-    var yearEndOfformat = yearEndEndOf.format('YYYY')
-    var yearStartEndOf = moment(Obj.startDate, 'DDMMYYYY').endOf('year')
-    var yearStartEndOfformat = yearStartEndOf.format('YYYY')
+		var yearEndEndOf = moment(Obj.endDate, "DDMMYYYY").endOf("year");
+		var yearEndOfformat = yearEndEndOf.format("YYYY");
+		var yearStartEndOf = moment(Obj.startDate, "DDMMYYYY").endOf("year");
+		var yearStartEndOfformat = yearStartEndOf.format("YYYY");
 
-    if (yearStartEndOfformat != yearEndOfformat) {
-      console.log(2)
-      var Value1 =
-        data['year'][yearStartEndOf.format('DD/MM/YYYY')]['chart1']['datasets']
-      var Value2 =
-        data['year'][yearEndEndOf.format('DD/MM/YYYY')]['chart1']['datasets']
+		if (yearStartEndOfformat != yearEndOfformat) {
+			console.log(2);
+			var Value1 =
+				data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
+			var Value2 =
+				data["year"][yearEndEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
 
-      $(Value1).each(function (index) {
-        arrSum2.push(this['data'][0])
-      })
-      parentDatesChart3.push(yearStartEndOfformat)
+			$(Value1).each(function (index) {
+				arrSum2.push(this["data"][0]);
+			});
+			parentDatesChart3.push(yearStartEndOfformat);
 
-      $(Value2).each(function (index) {
-        arrSum3.push(this['data'][0])
-      })
+			$(Value2).each(function (index) {
+				arrSum3.push(this["data"][0]);
+			});
 
-      parentDatesChart3.push(yearEndOfformat)
-    } else {
-      var sumValue2 =
-        data['year'][yearStartEndOf.format('DD/MM/YYYY')]['chart1']['datasets']
-      $(sumValue2).each(function (index) {
-        arrSum2.push(this['data'][0])
-      })
+			parentDatesChart3.push(yearEndOfformat);
+		} else {
+			var sumValue2 =
+				data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
+			$(sumValue2).each(function (index) {
+				arrSum2.push(this["data"][0]);
+			});
 
-      parentDatesChart3.push(yearStartEndOfformat)
-    }
-    //console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
-    //console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
-  }
+			parentDatesChart3.push(yearStartEndOfformat);
+		}
+		//console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
+		//console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
+	}
 
-  parentDatesChart3.push(
-    moment(Obj.startDate, 'DDMMYYYY').format('DD/MM/YYYY') +
-      ' - ' +
-      moment(Obj.endDate, 'DDMMYYYY').format('DD/MM/YYYY')
-  )
-  parentArr = [arrSum, arrSum2, arrSum3]
+	parentDatesChart3.push(
+		moment(Obj.startDate, "DDMMYYYY").format("DD/MM/YYYY") +
+			" - " +
+			moment(Obj.endDate, "DDMMYYYY").format("DD/MM/YYYY")
+	);
+	parentArr = [arrSum, arrSum2, arrSum3];
 
-  return parentArr
+	return parentArr;
 }
 
-function mergeAndGiveData (period) {
-  emptyLocalDataArr()
-  var datanew = filteredData[period]
+function mergeAndGiveData(period) {
+	emptyLocalDataArr();
+	var datanew = filteredData[period];
 
-  var elValuesSort = joinvalues(datanew)
+	var elValuesSort = joinvalues(datanew);
 
-  var i = 0
-  for (const singleData in datanew) {
-    date = datanew[singleData]
+	var i = 0;
+	for (const singleData in datanew) {
+		date = datanew[singleData];
 
-    for (const chart in date) {
-      if (chart != 'chart3') {
-        var label = createLabel(date[chart], singleData, period)
+		for (const chart in date) {
+			if (chart != "chart3") {
+				var label = createLabel(date[chart], singleData, period);
 
-        var datasets = date[chart]['datasets']
-        localData[chart]['labels'].push(label)
+				var datasets = date[chart]["datasets"];
+				localData[chart]["labels"].push(label);
 
-        $(datasets).each(function (index) {
-          var localdataset = localData[chart]['datasets'][index]
-          localdataset['label'] = datasets[index]['label']
-          localdataset['data'].push(datasets[index]['data'][0])
-        })
-      }
-      if (chart == 'chart3') {
-        if (i == 0) {
-          var obj = {}
-          $(date['chart1'].datasets).each(function () {
-            obj[this.label] = this.label
-          })
+				$(datasets).each(function (index) {
+					var localdataset = localData[chart]["datasets"][index];
+					localdataset["label"] = datasets[index]["label"];
+					localdataset["data"].push(datasets[index]["data"][0]);
+				});
+			}
+			if (chart == "chart3") {
+				if (i == 0) {
+					var obj = {};
+					$(date["chart1"].datasets).each(function () {
+						obj[this.label] = this.label;
+					});
 
-          for (const label in obj) {
-            localData['chart3']['labels'].push(label)
-          }
+					for (const label in obj) {
+						localData["chart3"]["labels"].push(label);
+					}
 
-          localData['chart3']['datasets'] = []
+					localData["chart3"]["datasets"] = [];
 
-          $(elValuesSort).each(function (index) {
-            var timeperiod = parentDatesChart3
+					$(elValuesSort).each(function (index) {
+						var timeperiod = parentDatesChart3;
 
-            var valueArr = this
-            if (valueArr.length != 0) {
-              var ArrNum = index
+						var valueArr = this;
+						if (valueArr.length != 0) {
+							var ArrNum = index;
 
-              var newdata = JSON.parse(JSON.stringify(template))
-              newdata.label = timeperiod[ArrNum]
-              localData['chart3']['datasets'].push(newdata)
+							var newdata = JSON.parse(JSON.stringify(template));
+							newdata.label = timeperiod[ArrNum];
+							localData["chart3"]["datasets"].push(newdata);
 
-              //localData["chart3"]["datasets"][ArrNum]["label"]="asas"+ ArrNum;
-              $(valueArr).each(function () {
-                localData['chart3']['datasets'][ArrNum]['data'].push(this)
-              })
-            }
-          })
-        }
-      }
+							//localData["chart3"]["datasets"][ArrNum]["label"]="asas"+ ArrNum;
+							$(valueArr).each(function () {
+								localData["chart3"]["datasets"][ArrNum]["data"].push(this);
+							});
+						}
+					});
+				}
+			}
 
-      //localData[chart]["datasets"]
-    }
+			//localData[chart]["datasets"]
+		}
 
-    i++
-  }
+		i++;
+	}
 }
 
-function emptyLocalDataArr () {
-  for (const chart in localData) {
-    localData[chart]['labels'] = []
-    var datasets = localData[chart]['datasets']
-    $(datasets).each(function (index) {
-      var localdataset = localData[chart]['datasets'][index]
-      localdataset['data'] = []
-    })
-  }
+function emptyLocalDataArr() {
+	for (const chart in localData) {
+		localData[chart]["labels"] = [];
+		var datasets = localData[chart]["datasets"];
+		$(datasets).each(function (index) {
+			var localdataset = localData[chart]["datasets"][index];
+			localdataset["data"] = [];
+		});
+	}
 }
 
-function createLabel (el, date, period) {
-  switch (period) {
-    case 'year':
-      return moment(date, 'DDMMYYYY').format('YYYY')
-      break
-    case 'quarter':
-      var quarter = moment(date, 'DDMMYYYY')
-        .utc()
-        .quarter()
-      return 'Q' + quarter + ' ' + moment(date, 'DDMMYYYY').format('YYYY')
+function createLabel(el, date, period) {
+	switch (period) {
+		case "year":
+			return moment(date, "DDMMYYYY").format("YYYY");
+			break;
+		case "quarter":
+			var quarter = moment(date, "DDMMYYYY").utc().quarter();
+			return "Q" + quarter + " " + moment(date, "DDMMYYYY").format("YYYY");
 
-      break
-    case 'month':
-      return moment(date, 'DDMMYYYY').format('MMMM')
+			break;
+		case "month":
+			return moment(date, "DDMMYYYY").format("MMMM");
 
-      break
+			break;
 
-    case 'week':
-      return moment(date, 'DDMMYYYY').format('dddd DD MMM')
-      break
-    case 'day':
-      return moment(date, 'DDMMYYYY').format('dd DD MMM')
-      break
-    default:
-      return el['labels'][0]
+		case "week":
+			return moment(date, "DDMMYYYY").format("dddd DD MMM");
+			break;
+		case "day":
+			return moment(date, "DDMMYYYY").format("dd DD MMM");
+			break;
+		default:
+			return el["labels"][0];
 
-    // code block
-  }
+		// code block
+	}
 }
 /*
 period = data.year;

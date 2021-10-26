@@ -65,7 +65,7 @@
              
              <div class="s-top">
                <div class="img-box1">
-               <span class="icon-fi-sr-globe boxD" alt=""></span>
+               <span class="icon-fi-sr-globe boxD color3" alt=""></span>
              </div>
              <div class="b-right">
                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
@@ -90,7 +90,7 @@
              
              <div class="s-top">
                <div class="img-box1">
-               <span class="icon-fi-sr-globe boxD" alt=""></span>
+               <span class="icon-fi-sr-globe boxD color4" alt=""></span>
              </div>
              <div class="b-right">
                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
@@ -115,7 +115,7 @@
              
              <div class="s-top">
                <div class="img-box1">
-               <span class="icon-fi-sr-globe boxD" alt=""></span>
+               <span class="icon-fi-sr-globe boxD color1" alt=""></span>
              </div>
              <div class="b-right">
                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
@@ -140,7 +140,7 @@
              
              <div class="s-top">
                <div class="img-box1">
-               <span class="icon-fi-sr-globe boxD" alt=""></span>
+               <span class="icon-fi-sr-globe boxD color3" alt=""></span>
              </div>
              <div class="b-right">
                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
@@ -165,7 +165,7 @@
              
               <div class="s-top">
                 <div class="img-box1">
-                <span class="icon-fi-sr-globe boxD" alt=""></span>
+                <span class="icon-fi-sr-globe boxD color2" alt=""></span>
               </div>
               <div class="b-right">
                     <div class="titleD">Ατιμολόγητες Κινήσεις</div>
@@ -190,7 +190,7 @@
              
               <div class="s-top">
                 <div class="img-box1">
-                <span class="icon-fi-sr-globe boxD" alt=""></span>
+                <span class="icon-fi-sr-globe boxD color2" alt=""></span>
               </div>
               <div class="b-right">
                     <div class="titleD">Ατιμολόγητες Κινήσεις</div>
@@ -215,7 +215,7 @@
              
              <div class="s-top">
                <div class="img-box1">
-               <span class="icon-fi-sr-globe boxD" alt=""></span>
+               <span class="icon-fi-sr-globe boxD color2" alt=""></span>
              </div>
              <div class="b-right">
                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>

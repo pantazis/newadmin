@@ -55,6 +55,10 @@ $elheight: 18vh;
 
 
   /*----------------------------------------------------------------------*/
+  @mixin iconColors($color,$amount) {
+    color:$color;
+    background: lighten($color,$amount);
+  }
   .boxD {
     display: flex;
     width: 75px;
@@ -63,9 +67,16 @@ $elheight: 18vh;
     align-items: center;   
     border-radius: $border-radius;    
     font-size: 30px;
-    color:red;
-    background: lighten(red,45%);
+    &.color1{ @include iconColors(red,45%);}
+    &.color2{ @include iconColors(green,70%);}
+    &.color3{ @include iconColors(red,45%);}
+    &.color4{ @include iconColors(red,45%);}
+     
+     
+    
 
+
+   
 
 }
 

@@ -14703,9 +14703,19 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 0.25rem;
-  font-size: 30px;
-  color: red;
-  background: #ffe6e6; }
+  font-size: 30px; }
+  .boxD.color1 {
+    color: red;
+    background: #ffe6e6; }
+  .boxD.color2 {
+    color: green;
+    background: #e6ffe6; }
+  .boxD.color3 {
+    color: red;
+    background: #ffe6e6; }
+  .boxD.color4 {
+    color: red;
+    background: #ffe6e6; }
 
 .s-top {
   display: flex; }

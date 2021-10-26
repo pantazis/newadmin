@@ -17,17 +17,13 @@ Line Chart Boundaries
 */
 /*get data form daterangepicker*/
 backgroundColorchart3();
-function backgroundColorchart3  () {
+function backgroundColorchart3() {
+	var colors = localData.chart1.datasets;
 
-	var colors =localData.chart1.datasets;
-
-	$(colors).each(function(){
-		var product =this;
+	$(colors).each(function () {
+		var product = this;
 		localData.chart3.datasets[0].backgroundColor.push(product.backgroundColor);
-	})
-
-}
-
+	});
 
 	$(colors).each(function () {
 		var product = this;

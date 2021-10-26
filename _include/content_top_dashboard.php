@@ -11,6 +11,7 @@
                                                         </ol>
             </nav>
             <h2 class="page_title">ΔΙΑΜΑΝΤΗΣ ΣΤΥΛΙΑΝΟΣ ΒΑΣΙΛΕΙΟΣ            </h2>
+            <button class="dateButton"  data-bind="daterangepicker: dateRange'">Επιλογή Εύρους Ημερομηνιών</button>
         </div>
        
     </div>
@@ -18,6 +19,7 @@
         <div class="mobile_tabs">
         </div>
     </div>
+    
     
     <!--diastaseis -->
     <script>

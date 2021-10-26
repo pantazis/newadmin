@@ -3,6 +3,7 @@ chartConfig.chart1 =  {
     type: 'bar',
     data: localData.chart1,
     options: {
+      maintainAspectRatio:false,
       plugins: {
         title: {
           display: true,
@@ -32,6 +33,7 @@ chartConfig.chart2= {
     type: 'line',
     data: localData.chart2,
     options: {
+      maintainAspectRatio:false,
       responsive: true,
       plugins: {
         legend: {
@@ -50,10 +52,11 @@ chartConfig.chart2= {
     type: 'doughnut',
     data: localData.chart3,
     options: {
+      maintainAspectRatio:false,
       responsive: true,
       plugins: {
         legend: {
-          position: 'top',
+          position: 'right',
         },
         title: {
           display: true,
@@ -68,6 +71,7 @@ chartConfig.chart2= {
     type: 'line',
     data: localData.chart4 ,
     options: {
+      maintainAspectRatio:false,
       plugins: {
         filler: {
           propagate: false,

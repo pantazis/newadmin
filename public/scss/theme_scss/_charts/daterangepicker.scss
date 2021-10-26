@@ -22,6 +22,7 @@ $border-radius: 4px;
   font-size: 13px;
   font-family: "Roboto";
   line-height: 1.5em;
+  z-index: 99;
 
   // reset
   ul,
@@ -179,12 +180,10 @@ $border-radius: 4px;
   font-size: 11pt;
   font-family: 'Roboto';
   margin-top: 1px;
-  margin-right: 2px;
-  position: absolute;
-  top: 15px;
-  right: 5px;
+  margin-right: 2px; 
   height: 41px;
   border-radius: 10px;
+  float: right;
 }
 
 .daterangepicker .custom-range-buttons button.apply-btn {
@@ -206,6 +205,14 @@ $border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.item-content {
+  padding: 1.25rem;
+}
+
+.my-custom-content {
+  height: 100%;
 }
 
 

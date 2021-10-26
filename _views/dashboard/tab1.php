@@ -16,21 +16,22 @@
     
 
    </div>
+   <canvas class="chart1"  ></canvas>
  
    <div class="template">
-     <div class="item" data-num="0">
+     <div class="item t3" data-num="0">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
-         1
+         <canvas class="chart1"  ></canvas>
          <!-- Safe zone ends -->
        </div>
      </div>
    
-     <div class="item" data-num="1">
+     <div class="item t3" data-num="1">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          2
+         <canvas class="chart2"  ></canvas>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -40,17 +41,17 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-           Yippee!
+         <canvas class="chart3"  ></canvas>
          </div>
          <!-- Safe zone ends -->
        </div>
        
      </div>
-     <div class="item" data-num="3">
+     <div class="item t3" data-num="3">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          2
+         <canvas class="chart4"  ></canvas>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -86,7 +87,7 @@
        </div>
        
      </div>
-     <div class="item" data-num="7">
+     <div class="item " data-num="7">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
@@ -106,7 +107,7 @@
        </div>
        
      </div>
-     <div class="item t3" data-num="9">
+     <div class="item " data-num="9">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
@@ -116,7 +117,7 @@
        </div>
        
      </div>
-     <div class="item t3" data-num="10">
+     <div class="item " data-num="10">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">

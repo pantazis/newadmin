@@ -14708,14 +14708,26 @@ body {
     color: #f08a24;
     background: #fef8f1; }
   .boxD.color2 {
-    color: #4791FF;
-    background: #eaf3ff; }
+    color: #0d6efd;
+    background: #f1f6ff; }
   .boxD.color3 {
     color: #18bf93;
     background: #f2fdfa; }
   .boxD.color4 {
     color: #f08a24;
     background: #fef8f1; }
+  .dark .boxD.color1 {
+    color: #f08a24;
+    background: #351c04; }
+  .dark .boxD.color2 {
+    color: #0d6efd;
+    background: #012457; }
+  .dark .boxD.color3 {
+    color: #18bf93;
+    background: #0a4e3c; }
+  .dark .boxD.color4 {
+    color: #f08a24;
+    background: #351c04; }
 
 .s-top {
   display: flex; }
@@ -14724,7 +14736,10 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-top: auto; }
+  margin-top: auto;
+  color: #0e0c28; }
+  .dark .s-bottom {
+    color: #efeff6; }
 
 .data-link {
   flex-direction: column;
@@ -14743,7 +14758,15 @@ body {
   font-size: 42px;
   font-weight: bold;
   line-height: 34px;
-  margin-top: auto; }
+  margin-top: auto;
+  color: #0e0c28; }
+  .dark .numD {
+    color: #fff; }
+
+.titleD {
+  color: #0e0c28; }
+  .dark .titleD {
+    color: #efeff6; }
 
 :root {
   --color-1: #427dad;

@@ -55,10 +55,15 @@ $elheight: 18vh;
 
 
   /*----------------------------------------------------------------------*/
-  @mixin iconColors($color,$amount) {
+  @mixin iconColors($color,$amount,$theme: true) {
     color:$color;
+    @if $theme{
     background: lighten($color,$amount);
+    } @else {
+      background: darken($color,$amount);
+    }
   }
+
   .boxD {
     display: flex;
     width: 75px;
@@ -67,10 +72,17 @@ $elheight: 18vh;
     align-items: center;   
     border-radius: $border-radius;    
     font-size: 30px;
-    &.color1{ @include iconColors($orange2,43%);}
-    &.color2{ @include iconColors(#4791FF,32%);}
-    &.color3{ @include iconColors($green2,55%);}
-    &.color4{ @include iconColors($orange2,43%);}
+    &.color1{ @include iconColors($orange2,43%,$theme:true);}
+    &.color2{ @include iconColors($blue,45%,$theme:true);}
+    &.color3{ @include iconColors($green2,55%,$theme:true);}
+    &.color4{ @include iconColors($orange2,43%,$theme:true);}
+
+    .dark &{
+    &.color1{ @include iconColors($orange2,43%,$theme:false);}
+    &.color2{ @include iconColors($blue,35%,$theme:false);}
+    &.color3{ @include iconColors($green2,25%,$theme:false);}
+    &.color4{ @include iconColors($orange2,43%,$theme:false);}
+    }
      
      
 
@@ -89,6 +101,7 @@ $elheight: 18vh;
   justify-content: end;
   align-items: center;
   margin-top: auto;
+  @include themeColor("color", $black_blue, $ice);
 }
 .data-link {
   flex-direction: column;
@@ -111,4 +124,8 @@ $elheight: 18vh;
   font-weight: bold;
   line-height: 34px;
   margin-top: auto;
+  @include themeColor("color", $black_blue, $white);
+}
+.titleD{
+  @include themeColor("color", $black_blue, $ice);
 }

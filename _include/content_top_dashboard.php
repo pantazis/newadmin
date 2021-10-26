@@ -9,13 +9,11 @@
             <nav aria-label="breadcrumb">
                 <!--active" aria-current="page"-->
                 <ol class="breadcrumb">
-                                                            <li class="breadcrumb-item"><a href="#">Dashboard  </a></li>
-                                                                                <li class="breadcrumb-item"><a href="#">Users </a></li>
-                                                                                <li class="breadcrumb-item"><a href="#">An Ubavicius </a></li>
-                                                                                <li class="breadcrumb-item active" aria-current="page">Προφίλ Τιμολόγησης                    </li>
+                                                            <li class="breadcrumb-item active"><a href="/dashboard">Πίνακας Ελέγχου  </a></li>
+                                                                               
                                                         </ol>
             </nav>
-            <h2 class="page_title">ΔΙΑΜΑΝΤΗΣ ΣΤΥΛΙΑΝΟΣ ΒΑΣΙΛΕΙΟΣ            </h2>
+            <h2 class="page_title">Πίνακας Ελέγχου           </h2>
            
         </div>
         <div class="top_right">

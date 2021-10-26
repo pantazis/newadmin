@@ -16,7 +16,7 @@
 
 
    </div>
-   <canvas class="chart1"  ></canvas>
+  
 
    <div class="template">
      <div class="item t1" data-num="0">
@@ -230,8 +230,35 @@
          </div>
          <!-- Safe zone ends -->
        </div>
-
      </div>
+
+     <div class="item " data-num="11">
+       <div class="item-content">
+         <!-- Safe zone, enter your custom markup -->
+         <div class="my-custom-content">
+         <div class="data-link">
+             
+             <div class="s-top">
+               <div class="img-box1">
+               <span class="icon-fi-sr-globe boxD color2" alt=""></span>
+             </div>
+             <div class="b-right">
+                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="numD">1473</div>
+             </div>
+             </div>
+             <div class="s-bottom">
+                <span class="show_all">Προβολή Όλων</span>
+                <span class="icon-fi-sr-angle-right r-d "></span>
+             </div>
+       </div>
+         </div>
+         <!-- Safe zone ends -->
+       </div>
+     </div>
+
+     
+     
      </div>
 
 

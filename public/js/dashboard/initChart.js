@@ -16,20 +16,23 @@ Doughnut
 Line Chart Boundaries
 */
 /*get data form daterangepicker*/
+backgroundColorchart3();
+function backgroundColorchart3  () {
+										
+	var colors =localData.chart1.datasets;
+	
+	$(colors).each(function(){		
+		var product =this;		
+		localData.chart3.datasets[0].backgroundColor.push(product.backgroundColor)
 
-var template = {
-	label: "date1",
-	data: [],
-	backgroundColor: [
-		"rgb(255, 99, 132)",
-		"rgb(255, 159, 64)",
-		"rgb(255, 205, 86)",
-		"rgb(75, 192, 192)",
-		"rgb(54, 162, 235)",
-		"rgb(153, 102, 255)",
-		"rgb(201, 203, 207)",
-	],
-};
+	})
+	
+}
+
+
+
+var template = localData.chart3.datasets[0];
+
 
 var dateFormat = "DD/MM/YYYY";
 var Obj = {

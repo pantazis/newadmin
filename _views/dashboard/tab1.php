@@ -61,7 +61,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          2
+         <div class="data-link">
+             
+             <div class="s-top">
+               <div class="img-box1">
+               <span class="icon-fi-sr-globe boxD" alt=""></span>
+             </div>
+             <div class="b-right">
+                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="numD">1473</div>
+             </div>
+             </div>
+             <div class="s-bottom">
+                <span class="show_all">Προβολή Όλων</span>
+                <span class="icon-fi-sr-angle-right r-d "></span>
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -71,7 +86,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          2
+         <div class="data-link">
+             
+             <div class="s-top">
+               <div class="img-box1">
+               <span class="icon-fi-sr-globe boxD" alt=""></span>
+             </div>
+             <div class="b-right">
+                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="numD">1473</div>
+             </div>
+             </div>
+             <div class="s-bottom">
+                <span class="show_all">Προβολή Όλων</span>
+                <span class="icon-fi-sr-angle-right r-d "></span>
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -81,7 +111,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          2
+         <div class="data-link">
+             
+             <div class="s-top">
+               <div class="img-box1">
+               <span class="icon-fi-sr-globe boxD" alt=""></span>
+             </div>
+             <div class="b-right">
+                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="numD">1473</div>
+             </div>
+             </div>
+             <div class="s-bottom">
+                <span class="show_all">Προβολή Όλων</span>
+                <span class="icon-fi-sr-angle-right r-d "></span>
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -91,7 +136,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          2
+         <div class="data-link">
+             
+             <div class="s-top">
+               <div class="img-box1">
+               <span class="icon-fi-sr-globe boxD" alt=""></span>
+             </div>
+             <div class="b-right">
+                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="numD">1473</div>
+             </div>
+             </div>
+             <div class="s-bottom">
+                <span class="show_all">Προβολή Όλων</span>
+                <span class="icon-fi-sr-angle-right r-d "></span>
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -101,7 +161,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          2
+         <div class="data-link">
+             
+              <div class="s-top">
+                <div class="img-box1">
+                <span class="icon-fi-sr-globe boxD" alt=""></span>
+              </div>
+              <div class="b-right">
+                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                    <div class="numD">1473</div>
+              </div>
+              </div>
+              <div class="s-bottom">
+                 <span class="show_all">Προβολή Όλων</span>
+                 <span class="icon-fi-sr-angle-right r-d "></span>
+              </div>
+        </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -111,7 +186,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          2
+          <div class="data-link">
+             
+              <div class="s-top">
+                <div class="img-box1">
+                <span class="icon-fi-sr-globe boxD" alt=""></span>
+              </div>
+              <div class="b-right">
+                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                    <div class="numD">1473</div>
+              </div>
+              </div>
+              <div class="s-bottom">
+                 <span class="show_all">Προβολή Όλων</span>
+                 <span class="icon-fi-sr-angle-right r-d "></span>
+              </div>
+        </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -121,7 +211,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          2
+         <div class="data-link">
+             
+             <div class="s-top">
+               <div class="img-box1">
+               <span class="icon-fi-sr-globe boxD" alt=""></span>
+             </div>
+             <div class="b-right">
+                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="numD">1473</div>
+             </div>
+             </div>
+             <div class="s-bottom">
+                <span class="show_all">Προβολή Όλων</span>
+                <span class="icon-fi-sr-angle-right r-d "></span>
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>

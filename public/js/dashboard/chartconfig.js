@@ -18,7 +18,7 @@ chartConfig.chart1 = {
 		},
 		responsive: true,
 		interaction: {
-			intersect: false,
+			intersect: true,
 		},
 		scales: {
 			x: {
@@ -37,6 +37,10 @@ chartConfig.chart2 = {
 	type: "line",
 	data: localData.chart2,
 	options: {
+		interaction: {
+			intersect: false,
+			mode: "index",
+		},
 		maintainAspectRatio: false,
 		responsive: true,
 		plugins: {
@@ -94,6 +98,7 @@ chartConfig.chart4 = {
 		},
 		interaction: {
 			intersect: false,
+			mode: "index",
 		},
 	},
 };

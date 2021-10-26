@@ -4,6 +4,7 @@ body{
 .grid {
     position: relative;  
   }
+  $dashelpad:0.625rem;
   $elheight:18vh;
   .item {
     display: block;
@@ -12,7 +13,7 @@ body{
     height: $elheight;
     margin: 0;
     z-index: 1;
-    padding:0.625rem; 
+    padding:$dashelpad; 
     color: #000;
     box-sizing: border-box;
     &.t3{
@@ -21,6 +22,11 @@ body{
     
     }
   }
+  .container1{
+    padding-right: #{$section-padding - $dashelpad};
+    padding-left:  #{$section-padding - $dashelpad};
+  }
+  
 
   .item.muuri-item-dragging {
     z-index: 3;

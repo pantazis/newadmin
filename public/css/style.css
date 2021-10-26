@@ -14664,6 +14664,10 @@ body {
     width: 50%;
     height: 36vh; }
 
+.container1 {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem; }
+
 .item.muuri-item-dragging {
   z-index: 3; }
 
@@ -14885,8 +14889,9 @@ body {
   margin-top: 1px;
   margin-right: 2px;
   height: 41px;
-  border-radius: 10px;
-  float: right; }
+  border-radius: 4px;
+  float: right;
+  margin-top: auto; }
 
 .daterangepicker .custom-range-buttons button.apply-btn {
   width: 70%; }

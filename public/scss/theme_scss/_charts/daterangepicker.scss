@@ -182,9 +182,12 @@ $border-radius: 4px;
   margin-top: 1px;
   margin-right: 2px; 
   height: 41px;
-  border-radius: 10px;
+  border-radius: $border-radius;
   float: right;
+  margin-top:auto;
 }
+
+
 
 .daterangepicker .custom-range-buttons button.apply-btn {
   width: 70%;

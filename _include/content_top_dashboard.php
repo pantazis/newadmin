@@ -11,8 +11,13 @@
                                                         </ol>
             </nav>
             <h2 class="page_title">ΔΙΑΜΑΝΤΗΣ ΣΤΥΛΙΑΝΟΣ ΒΑΣΙΛΕΙΟΣ            </h2>
-            <button class="dateButton"  data-bind="daterangepicker: dateRange'">Επιλογή Εύρους Ημερομηνιών</button>
+           
         </div>
+        <div class="top_right">
+        <button class="dateButton"  data-bind="daterangepicker: dateRange'">Επιλογή Εύρους Ημερομηνιών</button>
+
+        </div>
+
        
     </div>
     <div class="mobile-cont ">

@@ -63,7 +63,9 @@ chartConfig.chart3 = {
 				display: true,
 				labels: {
 					boxWidth: 10,
-					maxHeight: 50,
+					font: {
+						size: 13,
+					},
 				},
 				position: "right",
 			},

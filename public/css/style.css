@@ -14705,17 +14705,17 @@ body {
   border-radius: 0.25rem;
   font-size: 30px; }
   .boxD.color1 {
-    color: red;
-    background: #ffe6e6; }
+    color: #f08a24;
+    background: #fef8f1; }
   .boxD.color2 {
-    color: green;
-    background: #e6ffe6; }
+    color: #4791FF;
+    background: #eaf3ff; }
   .boxD.color3 {
-    color: red;
-    background: #ffe6e6; }
+    color: #18bf93;
+    background: #f2fdfa; }
   .boxD.color4 {
-    color: red;
-    background: #ffe6e6; }
+    color: #f08a24;
+    background: #fef8f1; }
 
 .s-top {
   display: flex; }

@@ -373,12 +373,14 @@ function createLabel(el, date, period) {
 }
 
 function statsLabel() { // Labels me deiktes apodosis sto dashboard
-	//debugger;
 	var count = localData.chart1.datasets[0].data.length;
-	var period = searchDataObj.period + "s";
-	var startDateStat =moment(searchDataObj.startDate, "DDMMYYYY").subtract(count,period).endOf(period).format("DD/MM/YYYY") ;
-	var endDateStat =moment(searchDataObj.startDate, "DDMMYYYY").subtract(1,period).endOf(period).format("DD/MM/YYYY");
-//	debugger;
+	var period = searchDataObj.period;
+	var startDateStat =moment(searchDataObj.startDate, "DDMMYYYY").subtract(count,period + "s").endOf(period).format("DD/MM/YYYY") ;
+	var endDateStat =moment(searchDataObj.startDate, "DDMMYYYY").subtract(1,period).endOf(period + "s").format("DD/MM/YYYY");
+
+
+debugger;
+
 console.log("count select", count);
 console.log(startDateStat,endDateStat)
 }

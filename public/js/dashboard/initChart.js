@@ -51,19 +51,19 @@ var filteredData;
 var parentDatesChart3 = [];
 var hasNoData;
 
-
 $(".dateButton").daterangepicker(
 	{
-
 		//default dates
-		startDate: moment().subtract(120, 'weeks'),
-		endDate: moment().subtract(118, 'weeks'),
-
+		startDate: moment().subtract(120, "weeks"),
+		endDate: moment().subtract(118, "weeks"),
 
 		ranges: {
 			"Προηγούμενος μήνας": [moment().subtract(1, "months"), moment()],
 			"Τελευταίοι 6 μήνες": [moment().subtract(180, "days"), moment()],
-			"Πρηγούμενο έτος": [moment().subtract(1, "year").add(2, "day").startOf("year"),	moment()],
+			"Πρηγούμενο έτος": [
+				moment().subtract(1, "year").add(2, "day").startOf("year"),
+				moment(),
+			],
 			"Όλα τα έτη": "all-time" /* [minDate, maxDate] */,
 			"Χειροκίνητη επιλογή": "custom",
 		},
@@ -71,7 +71,7 @@ $(".dateButton").daterangepicker(
 		firstDayOfWeek: 1,
 		orientation: "left",
 		expanded: true,
-		forceUpdate: true
+		forceUpdate: true,
 	},
 	function (startDate, endDate, period) {
 		Obj.startDate = startDate.format(dateFormat);
@@ -372,19 +372,42 @@ function createLabel(el, date, period) {
 	}
 }
 
-function statsLabel() { // Labels me deiktes apodosis sto dashboard
+function statsLabel() {
+	// Labels me deiktes apodosis sto dashboard
+	//debugger;
 	var count = localData.chart1.datasets[0].data.length;
 	var period = searchDataObj.period;
-	var startDateStat =moment(searchDataObj.startDate, "DDMMYYYY").subtract(count,period + "s").endOf(period).format("DD/MM/YYYY") ;
-	var endDateStat =moment(searchDataObj.startDate, "DDMMYYYY").subtract(1,period).endOf(period + "s").format("DD/MM/YYYY");
+	var startDateStat = moment(searchDataObj.startDate, "DDMMYYYY")
+		.subtract(count, period + "s")
+		.endOf(period);
+	var startDateStatFormat = startDateStat.format(dateFormat);
+	var endDateStat = moment(searchDataObj.startDate, "DDMMYYYY")
+		.subtract(1, period)
+		.endOf(period + "s");
+	var endDateStatFormat = endDateStat.format(dateFormat);
 
 
-debugger;
 
-console.log("count select", count);
-console.log(startDateStat,endDateStat)
+	while (
+		startDateStat
+			.add(1, period + "s")
+			.endOf(period)
+			.diff(endDateStat) <= 0
+	) {
+
+
+
+	}
+
+	var value =data[period][startDateStatFormat]["chart1"]["datasets"][0]["data"][0];
+	var valueRound = value.toFixed(2)
+
+
+	$(".numD").each(function () {
+		$(".numD").html(valueRound);
+	});
+	console.log("count select", count);
 }
-
 /*
 period = data.year;
 for(var date in period){

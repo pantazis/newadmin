@@ -57,7 +57,7 @@ $(".dateButton").daterangepicker(
 
 		//default dates
 		startDate: moment().subtract(120, 'weeks'),
-		endDate: moment().subtract(119, 'weeks'),
+		endDate: moment().subtract(118, 'weeks'),
 
 
 		ranges: {

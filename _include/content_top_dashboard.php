@@ -4,7 +4,7 @@
         min-height: auto;
     }
     </style>
-    <div class="content_top">
+    <div class="content_top dashboard">
         <div class="top_left">
             <nav aria-label="breadcrumb">
                 <!--active" aria-current="page"-->
@@ -41,7 +41,7 @@
         }
     </script>
 
-   <!-- <p  id="demo"></p>
+   <p  id="demo"></p>
 
         <div class=" d-none d-xs-flex">
         xs : 0;    </div>
@@ -64,5 +64,5 @@
         <div class=" d-none d-xxxl-flex">
         xxxl: 1910px;    </div>
 
-    -->
+   
       </div>

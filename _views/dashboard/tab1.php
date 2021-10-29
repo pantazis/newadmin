@@ -50,7 +50,6 @@
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
          <div class="data-link">
-
              <div class="s-top">
                <div class="img-box1">
                <span class="icon-fi-sr-globe boxD color4" alt=""></span>
@@ -173,7 +172,6 @@
          </div>
          <!-- Safe zone ends -->
        </div>
-
      </div>
 
      <div class="item t3" data-num="6">
@@ -184,7 +182,6 @@
          </div>
          <!-- Safe zone ends -->
        </div>
-
      </div>
 
 
@@ -244,7 +241,7 @@
      <div class="item t1" data-num="9">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
-         <canvas class="chart1"  ></canvas>
+         <canvas class="chart1"></canvas>
          <!-- Safe zone ends -->
        </div>
      </div>

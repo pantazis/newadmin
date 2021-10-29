@@ -1,8 +1,15 @@
 .content_top {
     display: flex;
     justify-content: center;
-    @media (min-width: $xxl) {
+        @media (min-width: $xxl) {
         justify-content: space-between;
+    }
+    &.dashboard{
+        @media (max-width: $xxl){
+        justify-content: center;
+        flex-direction: column;
+        }
+
     }
 }
 .top_right {
@@ -10,6 +17,11 @@
     width: auto;
     flex: 1;
     justify-content: flex-end;
+    .dashboard &{
+        @media (max-width: $xxl){
+        justify-content:center;
+        }
+    }
 }
 .top_frame {
     width: 100%;
@@ -33,6 +45,9 @@
 .breadcrumb {
     font-size: 0.8125rem;
     margin-bottom: 0.5rem;
+    @media (max-width: $xxl) {
+        justify-content: center;
+    }
     li.breadcrumb-item {
         &.active {
             @include themeColor("color", $dark_blue, $white);

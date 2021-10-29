@@ -5,30 +5,117 @@ body {
   position: relative;
 }
 $dashelpad: 0.625rem;
-$elheight: 18vh;
-.item {
+
+
+@mixin height-1($property){
+  padding-bottom: $property;
+}
+@mixin height-2($property){
+  padding-bottom: $property * 2;
+}
+@mixin height-3($property){
+  padding-bottom: $property * 4;
+}
+
+@mixin small-padd {
+  width: 25%; 
+}
+
+@mixin medium-padd {
+  width: 50%;
+}
+
+@mixin large-padd {
+  width: 100%;   
+}
+
+
+
+
+
+
+.item { 
   display: block;
-  position: absolute;
-  width: 25%;
-  height: $elheight;
+  position: absolute;  
+  height: 0;
   margin: 0;
-  z-index: 1;
-  padding: $dashelpad;
+  z-index: 1;   
   color: #000;
   box-sizing: border-box;
+
+  $elheight: 11%;
+  @include small-padd;
+  @include height-1($elheight);
   &.t3 {
-    width: 50%;
-    height: $elheight * 2;
+    @include medium-padd;
+    @include height-2($elheight);
   }
   &.t1 {
-    width: 100%;
-    height: $elheight * 2;
+    @include large-padd;
+    @include height-2($elheight);
   }
 }
+@media (max-width: $xxl){
+  $elheight: 15%;
+  .item {
+    @include medium-padd;
+    @include height-1($elheight);
+  }
+  .item.t3{
+    @include large-padd;
+    @include height-2($elheight);
+  }
+  .item.t1{
+    @include large-padd;
+    @include height-2($elheight);
+  }
+}
+
+
+@media (max-width: $lg){
+   $elheight: 15%;
+  .item{
+    @include medium-padd;
+    @include height-2($elheight);
+  }
+  .item.t3{
+    @include large-padd;
+    @include height-3($elheight);
+  }
+  .item.t1{
+    @include large-padd;
+    @include height-3($elheight);
+  }
+ 
+}
+
+@media (max-width: $md){
+  $elheight: 20%;
+ .item{
+   @include large-padd;
+   @include height-2($elheight);
+ }
+ .item.t3{
+   @include large-padd;
+   @include height-3($elheight);
+ }
+ .item.t1{
+   @include large-padd;
+   @include height-3($elheight);
+ }
+
+}
+
+
 .container1 {
   padding-right: #{$section-padding - $dashelpad};
   padding-left: #{$section-padding - $dashelpad};
   padding-bottom: #{$section-padding - $dashelpad};
+  @media (max-width: $md){
+    padding-right:0;
+    padding-left:0;
+
+  }
 }
 
 .item.muuri-item-dragging {
@@ -41,14 +128,16 @@ $elheight: 18vh;
   z-index: 0;
 }
 .item-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
   border-radius: $border-radius;
   background-color: #fff;
   -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
   box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
   @include themeColor("background-color", $white, $black_blue);
+  position: absolute;
+  left: $dashelpad;
+  right: $dashelpad;
+  top: $dashelpad;
+  bottom: $dashelpad;
 }
 .template {
   display: none;

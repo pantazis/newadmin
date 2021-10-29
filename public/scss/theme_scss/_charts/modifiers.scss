@@ -1,6 +1,8 @@
 .daterangepicker {
   &.opened {
     display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 550px;
   }
 
   &.expanded .calendar {

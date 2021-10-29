@@ -34,6 +34,9 @@ $dashelpad: 0.625rem;
 
 
 
+
+
+
 .item { 
   display: block;
   position: absolute;  
@@ -107,7 +110,27 @@ $dashelpad: 0.625rem;
 }
 
 
-.container1 {
+.buttonContainer {
+  position: relative;
+  padding:$dashelpad; 
+  @media (max-width: $md){
+    @include large-padd;
+  }
+ 
+  margin-left: auto;
+  .icon-fi-sr-angle-down {
+    position: absolute;
+    right: 2rem;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0,-50%);
+    
+}
+ 
+}
+
+
+.container1,.container1.a2 {
   padding-right: #{$section-padding - $dashelpad};
   padding-left: #{$section-padding - $dashelpad};
   padding-bottom: #{$section-padding - $dashelpad};
@@ -116,6 +139,11 @@ $dashelpad: 0.625rem;
     padding-left:0;
 
   }
+}
+.container1.a2{ 
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .item.muuri-item-dragging {
@@ -127,9 +155,22 @@ $dashelpad: 0.625rem;
 .item.muuri-item-hidden {
   z-index: 0;
 }
+
+.dateButton{
+  @include themeColor("color", $black_blue, $white);
+  border-radius: $border-radius;
+  -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+  box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+  @include themeColor("background-color", $white, $black_blue);
+  padding: 1.25rem;
+  padding-right: 3rem;
+  
+}
+
+
 .item-content {
   border-radius: $border-radius;
-  background-color: #fff;
+
   -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
   box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
   @include themeColor("background-color", $white, $black_blue);

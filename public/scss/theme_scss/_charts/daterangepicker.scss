@@ -23,6 +23,26 @@ $border-radius: 4px;
   font-family: "Roboto";
   line-height: 1.5em;
   z-index: 99;
+  @media (max-width:$md ) {    
+    flex-direction: column;
+    width: calc(100% - 20px) !important;
+    right: 10px !important;
+    left: 10px !important;
+    max-width: 528px;
+    margin: auto;
+    
+  }
+  @media (min-width: #{$md + 1} ) {
+
+  .calendar{
+    width: calc(50% - 8px);
+  }
+  .controls {
+    width: 100%;
+}
+  }
+ 
+
 
   // reset
   ul,
@@ -175,16 +195,10 @@ $border-radius: 4px;
 }
 
 .dateButton{
-  line-height: 12px;
-  width: 239px;
-  font-size: 11pt;
-  font-family: 'Roboto';
-  margin-top: 1px;
-  margin-right: 2px; 
-  height: 41px;
-  border-radius: $border-radius;
-  float: right;
-  margin-top:auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ 
 }
 
 

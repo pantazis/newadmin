@@ -11,11 +11,14 @@
 
   </style>
   <div class="row">
+  <div class="container1 a2">
+      <div class="buttonContainer">
+      <div class="icon-fi-sr-angle-down"></div>
+        <div class="dateButton"  data-bind="daterangepicker: dateRange'">Επιλογή Εύρους Ημερομηνιών</div>
+      </div>
+  </div>
   <div class="container1">
   <div class="grid">
-
-
-
    </div>
 
 

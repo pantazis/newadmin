@@ -7,6 +7,10 @@
   border-bottom: $size solid $color;
   border-left: $size solid transparent;
   content: '';
+  @media (max-width: $md) {
+    #{$alignment}: calc(50% -  #{$size});
+
+  }
 }
 
 .daterangepicker.orientation-right:not(.standalone):before {

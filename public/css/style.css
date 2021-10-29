@@ -14713,14 +14713,33 @@ body {
   .item.t1 {
     width: 100%;
     padding-bottom: 80%; } }
-.container1 {
+.buttonContainer {
+  position: relative;
+  padding: 0.625rem;
+  margin-left: auto; }
+  @media (max-width: 768px) {
+    .buttonContainer {
+      width: 100%; } }
+  .buttonContainer .icon-fi-sr-angle-down {
+    position: absolute;
+    right: 2rem;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, -50%); }
+
+.container1, .container1.a2 {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   padding-bottom: 1.25rem; }
   @media (max-width: 768px) {
-    .container1 {
+    .container1, .container1.a2 {
       padding-right: 0;
       padding-left: 0; } }
+
+.container1.a2 {
+  padding-bottom: 0;
+  display: flex;
+  justify-content: flex-end; }
 
 .item.muuri-item-dragging {
   z-index: 3; }
@@ -14731,9 +14750,21 @@ body {
 .item.muuri-item-hidden {
   z-index: 0; }
 
+.dateButton {
+  color: #0e0c28;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+  box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+  background-color: #fff;
+  padding: 1.25rem;
+  padding-right: 3rem; }
+  .dark .dateButton {
+    color: #fff; }
+  .dark .dateButton {
+    background-color: #0e0c28; }
+
 .item-content {
   border-radius: 0.25rem;
-  background-color: #fff;
   -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
   box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
   background-color: #fff;
@@ -14913,6 +14944,19 @@ body {
   font-family: "Roboto";
   line-height: 1.5em;
   z-index: 99; }
+  @media (max-width: 768px) {
+    .daterangepicker {
+      flex-direction: column;
+      width: calc(100% - 20px) !important;
+      right: 10px !important;
+      left: 10px !important;
+      max-width: 528px;
+      margin: auto; } }
+  @media (min-width: 769px) {
+    .daterangepicker .calendar {
+      width: calc(50% - 8px); }
+    .daterangepicker .controls {
+      width: 100%; } }
   .daterangepicker ul,
   .daterangepicker li,
   .daterangepicker button,
@@ -15014,16 +15058,9 @@ body {
       transform: translate(6px, -3.5px); }
 
 .dateButton {
-  line-height: 12px;
-  width: 239px;
-  font-size: 11pt;
-  font-family: 'Roboto';
-  margin-top: 1px;
-  margin-right: 2px;
-  height: 41px;
-  border-radius: 4px;
-  float: right;
-  margin-top: auto; }
+  justify-content: center;
+  align-items: center;
+  display: flex; }
 
 .daterangepicker .custom-range-buttons button.apply-btn {
   width: 70%; }
@@ -15055,6 +15092,9 @@ body {
   border-bottom: 7px solid rgba(0, 0, 0, 0.2);
   border-left: 7px solid transparent;
   content: ''; }
+  @media (max-width: 768px) {
+    .daterangepicker.orientation-right:not(.standalone):before {
+      left: calc(50% -  7px); } }
 
 .daterangepicker.orientation-left:not(.standalone):before {
   position: absolute;
@@ -15065,6 +15105,9 @@ body {
   border-bottom: 7px solid rgba(0, 0, 0, 0.2);
   border-left: 7px solid transparent;
   content: ''; }
+  @media (max-width: 768px) {
+    .daterangepicker.orientation-left:not(.standalone):before {
+      right: calc(50% -  7px); } }
 
 .daterangepicker.orientation-right:not(.standalone):after {
   position: absolute;
@@ -15075,6 +15118,9 @@ body {
   border-bottom: 6px solid #fff;
   border-left: 6px solid transparent;
   content: ''; }
+  @media (max-width: 768px) {
+    .daterangepicker.orientation-right:not(.standalone):after {
+      left: calc(50% -  6px); } }
 
 .daterangepicker.orientation-left:not(.standalone):after {
   position: absolute;
@@ -15085,6 +15131,9 @@ body {
   border-bottom: 6px solid #fff;
   border-left: 6px solid transparent;
   content: ''; }
+  @media (max-width: 768px) {
+    .daterangepicker.orientation-left:not(.standalone):after {
+      right: calc(50% -  6px); } }
 
 .daterangepicker select {
   width: 100%;
@@ -15203,7 +15252,9 @@ body {
         font-weight: bold; }
 
 .daterangepicker.opened {
-  display: inline-flex; }
+  display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 550px; }
 .daterangepicker.expanded .calendar {
   display: block; }
 .daterangepicker.hide-periods .periods {

@@ -9,16 +9,13 @@
             <nav aria-label="breadcrumb">
                 <!--active" aria-current="page"-->
                 <ol class="breadcrumb">
-                                                            <li class="breadcrumb-item active"><a href="/dashboard">Πίνακας Ελέγχου  </a></li>
-                                                                               
-                                                        </ol>
+                    <li class="breadcrumb-item active"><a href="/dashboard">Πίνακας Ελέγχου</a></li>
+                 </ol>
             </nav>
-            <h2 class="page_title">Πίνακας Ελέγχου           </h2>
+            <h2 class="page_title">Πίνακας Ελέγχου</h2>
            
         </div>
-        <div class="top_right">
-        <button class="dateButton"  data-bind="daterangepicker: dateRange'">Επιλογή Εύρους Ημερομηνιών</button>
-
+        <div class="top_right">       
         </div>
 
        
@@ -40,8 +37,8 @@
             document.getElementById("demo").innerHTML = txt;
         }
     </script>
-
-   <p  id="demo"></p>
+<!--
+<p  id="demo"></p>
 
         <div class=" d-none d-xs-flex">
         xs : 0;    </div>
@@ -65,4 +62,4 @@
         xxxl: 1910px;    </div>
 
    
-      </div>
+      </div>-->

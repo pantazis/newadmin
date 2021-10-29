@@ -28,6 +28,7 @@ $elheight: 18vh;
 .container1 {
   padding-right: #{$section-padding - $dashelpad};
   padding-left: #{$section-padding - $dashelpad};
+  padding-bottom: #{$section-padding - $dashelpad};
 }
 
 .item.muuri-item-dragging {

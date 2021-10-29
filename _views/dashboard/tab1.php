@@ -1,5 +1,6 @@
 <div class="container tab tab1 active">
   <style>
+    /*4,8,6,10,11,5,1,9,7,0,3,2*/
       body {
     scrollbar-width: 0;
   }

@@ -53,6 +53,10 @@ var hasNoData;
 
 $(".dateButton").daterangepicker(
 	{
+		//default dates
+		startDate: moment().subtract(120, "weeks"),
+		endDate: moment().subtract(118, "weeks"),
+
 		ranges: {
 			"Προηγούμενος μήνας": [moment().subtract(1, "months"), moment()],
 			"Τελευταίοι 6 μήνες": [moment().subtract(180, "days"), moment()],
@@ -61,13 +65,13 @@ $(".dateButton").daterangepicker(
 				moment(),
 			],
 			"Όλα τα έτη": "all-time" /* [minDate, maxDate] */,
-			"Custom Range": "custom",
+			"Χειροκίνητη επιλογή": "custom",
 		},
 		minDate: moment(Object.keys(data.day)[0], "DDMMYYYY"),
 		firstDayOfWeek: 1,
 		orientation: "left",
 		expanded: true,
-		// forceUpdate: true
+		forceUpdate: true,
 	},
 	function (startDate, endDate, period) {
 		Obj.startDate = startDate.format(dateFormat);
@@ -86,6 +90,7 @@ $(".dateButton").daterangepicker(
 			return;
 		}
 		updatecharts();
+		statsLabel();
 	}
 );
 
@@ -138,8 +143,8 @@ function getQueriedData() {
 	var starDateEndOfDay = moment(startDate, "DDMMYYYY").endOf(period);
 	var endDateEndOfDay = moment(endDate, "DDMMYYYY").endOf(period);
 
-	//console.log(starDateEndOfDay.format("DD/MM/YYYY"));
-	//console.log(endDateEndOfDay.format("DD/MM/YYYY"));
+	////console.log(starDateEndOfDay.format("DD/MM/YYYY"));
+	////console.log(endDateEndOfDay.format("DD/MM/YYYY"));
 
 	filteredData = {};
 
@@ -195,14 +200,14 @@ function nodata(data) {
 		ctx.save();
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
-		ctx.font = "16px normal 'Helvetica Nueue'";
-		ctx.fillText("No data to display", width / 2, height / 2);
+		ctx.font = "22px normal 'Roboto'";
+		ctx.fillText("Δεν υπάρχουν δεδομένα", width / 2, height / 2);
 		ctx.restore();
 	});
 }
 
 function joinvalues(sumValue) {
-	console.log(0);
+	//console.log(0);
 
 	var parentArr = [];
 	var arrSum = [];
@@ -218,7 +223,7 @@ function joinvalues(sumValue) {
 		moment(Obj.startDate, "DDMMYYYY").add(1, "years") >
 		moment(Obj.endDate, "DDMMYYYY")
 	) {
-		console.log(1);
+		//console.log(1);
 
 		var yearEndEndOf = moment(Obj.endDate, "DDMMYYYY").endOf("year");
 		var yearEndOfformat = yearEndEndOf.format("YYYY");
@@ -226,7 +231,7 @@ function joinvalues(sumValue) {
 		var yearStartEndOfformat = yearStartEndOf.format("YYYY");
 
 		if (yearStartEndOfformat != yearEndOfformat) {
-			console.log(2);
+			//console.log(2);
 			var Value1 =
 				data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
 			var Value2 =
@@ -251,8 +256,8 @@ function joinvalues(sumValue) {
 
 			parentDatesChart3.push(yearStartEndOfformat);
 		}
-		//console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
-		//console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
+		////console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
+		////console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
 	}
 
 	parentDatesChart3.push(
@@ -365,6 +370,43 @@ function createLabel(el, date, period) {
 
 		// code block
 	}
+}
+
+function statsLabel() {
+	// Labels me deiktes apodosis sto dashboard
+	//debugger;
+	var count = localData.chart1.datasets[0].data.length;
+	var period = searchDataObj.period;
+	var startDateStat = moment(searchDataObj.startDate, "DDMMYYYY")
+		.subtract(count, period + "s")
+		.endOf(period);
+	var startDateStatFormat = startDateStat.format(dateFormat);
+	var endDateStat = moment(searchDataObj.startDate, "DDMMYYYY")
+		.subtract(1, period)
+		.endOf(period + "s");
+	var endDateStatFormat = endDateStat.format(dateFormat);
+
+
+
+	while (
+		startDateStat
+			.add(1, period + "s")
+			.endOf(period)
+			.diff(endDateStat) <= 0
+	) {
+
+
+
+	}
+
+	var value =data[period][startDateStatFormat]["chart1"]["datasets"][0]["data"][0];
+	var valueRound = value.toFixed(2)
+
+
+	$(".numD").each(function () {
+		$(".numD").html(valueRound);
+	});
+	console.log("count select", count);
 }
 /*
 period = data.year;

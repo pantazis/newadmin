@@ -26,7 +26,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
   <script src="./public/js/libraries/popper.min.js"></script>
-  <script src="./public/js/libraries/bootstrap.min.js?<?=rand(1, 1000) ?>"></script> 
+  <script src="./public/js/libraries/bootstrap.min.js?<?=rand(1, 1000) ?>"></script>
   <script src="./public/js/libraries/is.min.js"></script>
   <script src="./public/js/libraries/all.min.js"></script>
   <script src="./public/js/openclose.js?<?=rand(0, 1000) ?>"></script>
@@ -52,14 +52,15 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
     <script src="./public/js/dashboard/initChart.js?<?=rand(1,1000)?>"></script>
 
 
-  
+
+
   <?php }?>
 
 
 
   <script>
     var myModal = document.getElementById('disableAccount');
-    
+
   </script>
 </body>
 

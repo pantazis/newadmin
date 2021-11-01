@@ -90,9 +90,60 @@ $(".dateButton").daterangepicker(
 			return;
 		}
 		updatecharts();
-		statsLabel();
+		//statsLabel();
+		sumValues();
 	}
 );
+
+function sumValues(){
+	obj = {};
+	
+	$(filteredData).each(function(){
+		
+	var allperiod =	this[searchDataObj.period];
+	for(date in allperiod){
+	var singledate = allperiod[date];
+	for(stat in singledate){
+
+		
+		if(stat.search("data")!=-1){
+			if(obj[stat] == undefined){
+				obj[stat]=[];
+			}
+			var val =singledate[stat].datasets[0].data[0]
+			obj[stat].push(val)
+			
+	
+
+		}
+	}
+
+
+	}
+
+	});
+	
+	for(stat in obj){
+		
+		var value = obj[stat].reduce(function(a, b){
+            return a + b;
+        }, 0);
+		value= Math.round(value);
+
+		
+		$("."+stat+" .numD").html(value);
+		
+		
+
+	}
+	
+
+
+
+};
+
+
+
 
 function updatecharts() {
 	myChart.update();
@@ -133,7 +184,7 @@ function setInputval(period) {
 	}
 }
 
-function gefilteredDatat() {}
+
 
 function getQueriedData() {
 	var period = searchDataObj.period;
@@ -282,15 +333,21 @@ function mergeAndGiveData(period) {
 
 		for (const chart in date) {
 			if (chart != "chart3") {
-				var label = createLabel(date[chart], singleData, period);
+				if(localData[chart]==undefined){
+					localData[chart] ={};
+					localData[chart]["labels"]=[];
+					localData[chart]["datasets"]=[{label:"","data":[]}];
 
-				var datasets = date[chart]["datasets"];
+				}
+				var label = createLabel(date[chart], singleData, period);             
+				var datasets = date[chart]["datasets"];				
 				localData[chart]["labels"].push(label);
 
 				$(datasets).each(function (index) {
 					var localdataset = localData[chart]["datasets"][index];
 					localdataset["label"] = datasets[index]["label"];
 					localdataset["data"].push(datasets[index]["data"][0]);
+					
 				});
 			}
 			if (chart == "chart3") {
@@ -325,6 +382,8 @@ function mergeAndGiveData(period) {
 					});
 				}
 			}
+	
+
 
 			//localData[chart]["datasets"]
 		}
@@ -372,7 +431,7 @@ function createLabel(el, date, period) {
 	}
 }
 
-function statsLabel() {
+function compStatsLabel() {
 	// Labels me deiktes apodosis sto dashboard
 	//debugger;
 	var count = localData.chart1.datasets[0].data.length;
@@ -403,10 +462,6 @@ function statsLabel() {
 	var valueRound = value.toFixed(2)
 
 
-	$(".numD").each(function () {
-		$(".numD").html(valueRound);
-	});
-	console.log("count select", count);
 }
 /*
 period = data.year;

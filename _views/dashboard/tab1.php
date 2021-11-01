@@ -25,14 +25,12 @@
   <div class="container1">
   <div class="grid">
    </div>
-
-
    <div class="template">
    <div class="item" data-num="0">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link">
+         <div class="data-link data1">
 
              <div class="s-top">
                <div class="img-box1">
@@ -40,7 +38,7 @@
              </div>
              <div class="b-right">
                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
-                   <div class="numD">1473</div>
+                   <div class="numD">352.25</div>
              </div>
              </div>
              <div class="s-bottom">
@@ -57,14 +55,14 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link">
+         <div class="data-link data2">
              <div class="s-top">
                <div class="img-box1">
                <span class="icon-fi-sr-globe boxD color4" alt=""></span>
              </div>
              <div class="b-right">
                    <div class="titleD">Παραγγελίες για ενέργειες admin</div>
-                   <div class="numD">1473</div>
+                   <div class="numD">352.25</div>
              </div>
              </div>
              <div class="s-bottom">
@@ -82,7 +80,7 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          <div class="data-link">
+          <div class="data-link data3">
 
               <div class="s-top">
                 <div class="img-box1">
@@ -90,7 +88,7 @@
               </div>
               <div class="b-right">
                     <div class="titleD">Πελάτες με Πιστωτικό Όριο</div>
-                    <div class="numD">1473</div>
+                    <div class="numD">352.25</div>
               </div>
               </div>
               <div class="s-bottom">
@@ -109,7 +107,7 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link">
+         <div class="data-link data4">
 
              <div class="s-top">
                <div class="img-box1">
@@ -117,7 +115,7 @@
              </div>
              <div class="b-right">
                    <div class="titleD">Αναμονή Εγκαταστάσεων SSL</div>
-                   <div class="numD">1473</div>
+                   <div class="numD">352.25</div>
              </div>
              </div>
              <div class="s-bottom">
@@ -134,13 +132,13 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link center">
+         <div class="data-link center data5">
 
              <div class="s-top">
         
              <div class="b-right">
                    <div class="titleD">Παραγγελίες</div>
-                   <div class="numD">1473</div>
+                   <div class="numD">352.25</div>
                    
              </div>
              </div>
@@ -160,13 +158,13 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link center">
+         <div class="data-link center data6">
 
              <div class="s-top">
         
              <div class="b-right">
                    <div class="titleD">Domains</div>
-                   <div class="numD">1473</div>
+                   <div class="numD">352.25</div>
                    
              </div>
              </div>
@@ -198,13 +196,13 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link center">
+         <div class="data-link center data7">
 
              <div class="s-top">
         
              <div class="b-right">
                    <div class="titleD">Πακέτα Hosting</div>
-                   <div class="numD">1473</div>
+                   <div class="numD">352.25</div>
                    
              </div>
              </div>
@@ -224,13 +222,13 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link center">
+         <div class="data-link center data8">
 
              <div class="s-top">
         
              <div class="b-right">
                    <div class="titleD">SSL Certificates</div>
-                   <div class="numD">1473</div>
+                   <div class="numD">352.25</div>
                    
              </div>
              </div>
@@ -285,13 +283,13 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link center">
+         <div class="data-link center data9">
 
              <div class="s-top">
         
              <div class="b-right">
-                   <div class="titleD">data1</div>
-                   <div class="numD">1473</div>
+                   <div class="titleD">data9</div>
+                   <div class="numD">352.25</div>
                    
              </div>
              </div>
@@ -311,13 +309,13 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link center">
+         <div class="data-link center data10">
 
              <div class="s-top">
         
              <div class="b-right">
-                   <div class="titleD">data2</div>
-                   <div class="numD">1473</div>
+                   <div class="titleD">data10</div>
+                   <div class="numD">352.25</div>
                    
              </div>
              </div>
@@ -337,13 +335,13 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link center">
+         <div class="data-link center data11">
 
              <div class="s-top">
         
              <div class="b-right">
-                   <div class="titleD">data3</div>
-                   <div class="numD">1473</div>
+                   <div class="titleD">data11</div>
+                   <div class="numD">352.25</div>
                    
              </div>
              </div>
@@ -363,18 +361,21 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link center">
+         <div class="data-link center data12">
 
              <div class="s-top">
         
              <div class="b-right">
-                   <div class="titleD">data4</div>
-                   <div class="numD">1473</div>
+                   <div class="titleD">data12</div>
+                   <div class="numD">352.25</div>
                    
              </div>
              </div>
              <div class="s-bottom">
-               <div class="percent"><span class="plus">↑ +</span><span class="minus">↓ -</span>20%</div>
+               <div class="percent"><span class="plus">↑ +</span>
+               <span class="minus">↓ -</span>
+               20%
+              </div>
                 <span class="show_all">Από την προηγούμενη περίοδο</span>
                
              </div>
@@ -389,47 +390,11 @@
      </div>
 
 
-
-
-</div>
-</div>
-</div>
-<!--<script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>-->
-<script>
- 
- 
- /*
-var arr = [
-"Ατιμολόγητες Κινήσεις",
-"Παραγγελίες για ενέργειες admin",
-"Πελάτες με Πιστωτικό Όριο",
-"Αναμονή Εγκαταστάσεων SSL",
-"Παραγγελίες",
-"Domains",
-"Πακέτα Hosting",
-"SSL Certificates",
-"data1",
-"data2",
-"data3",
-"data4",
-];
-
-  $(".template .titleD").each(function(index){
-    $(this).html(arr[index]);
    
 
 
-    
-    
 
 
-    
-  })*/
-
-  
- 
-
-  </script>
+</div>
+</div>
+</div>

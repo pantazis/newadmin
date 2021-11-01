@@ -37,7 +37,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   <?php if($folder=="dashboard"){ ?>
     <?php include "fakeData/data.php" ?>
 
-    <script src="./public/js/libraries/muuri.min.js"></script>
+   <script src="./public/js/libraries/muuri.min.js"></script>
     <script src="./public/js/libraries/web-animations.min.js"></script>
     <script src="./public/js/dashboardOrder.js"></script>
 

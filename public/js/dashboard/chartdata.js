@@ -133,20 +133,8 @@ var localData = {
 				data: [],
 				backgroundColor: "#db9065",
 				stack: "Stack 4",
-			},
-			//delete this//
-			{
-				label: "Core Branded -1 HDD",
-				data: [],
-				backgroundColor: "#c47c52",
-				stack: "Stack 4",
-			},
-			{
-				label: "Core Branded -1 NVMe",
-				data: [],
-				backgroundColor: "#b97249",
-				stack: "Stack 4",
-			}, //delete this//
+			},			
+			
 			{
 				label: "Core Branded -1 HDD",
 				data: [],

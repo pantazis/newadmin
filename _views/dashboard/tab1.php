@@ -40,7 +40,7 @@
              </div>
              <div class="s-bottom">
                 <span class="show_all">Προβολή Όλων</span>
-                <span class="icon-fi-sr-angle-right r-d "></span>
+                <span class="icon-fi-sr-arrow-small-right r-d "></span>
              </div>
        </div>
          </div>
@@ -64,7 +64,7 @@
              </div>
              <div class="s-bottom">
                 <span class="show_all">Προβολή Όλων</span>
-                <span class="icon-fi-sr-angle-right r-d "></span>
+                <span class="icon-fi-sr-arrow-small-right r-d "></span>
              </div>
        </div>
          </div>
@@ -90,7 +90,7 @@
               </div>
               <div class="s-bottom">
                  <span class="show_all">Προβολή Όλων</span>
-                 <span class="icon-fi-sr-angle-right r-d "></span>
+                 <span class="icon-fi-sr-arrow-small-right r-d "></span>
               </div>
         </div>
          </div>
@@ -117,7 +117,7 @@
              </div>
              <div class="s-bottom">
                 <span class="show_all">Προβολή Όλων</span>
-                <span class="icon-fi-sr-angle-right r-d "></span>
+                <span class="icon-fi-sr-arrow-small-right r-d "></span>
              </div>
        </div>
          </div>

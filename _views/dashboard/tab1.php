@@ -10,6 +10,11 @@
   }
 
   </style>
+
+
+
+
+
   <div class="row">
   <div class="container1 a2">
       <div class="buttonContainer">
@@ -58,7 +63,7 @@
                <span class="icon-fi-sr-globe boxD color4" alt=""></span>
              </div>
              <div class="b-right">
-                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="titleD">Παραγγελίες για ενέργειες admin</div>
                    <div class="numD">1473</div>
              </div>
              </div>
@@ -84,7 +89,7 @@
                 <span class="icon-fi-sr-globe boxD color2" alt=""></span>
               </div>
               <div class="b-right">
-                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                    <div class="titleD">Πελάτες με Πιστωτικό Όριο</div>
                     <div class="numD">1473</div>
               </div>
               </div>
@@ -111,7 +116,7 @@
                <span class="icon-fi-sr-globe boxD color1" alt=""></span>
              </div>
              <div class="b-right">
-                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="titleD">Αναμονή Εγκαταστάσεων SSL</div>
                    <div class="numD">1473</div>
              </div>
              </div>
@@ -125,51 +130,50 @@
        </div>
 
      </div>
-
-
      <div class="item " data-num="4">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link">
+         <div class="data-link center">
 
              <div class="s-top">
-               <div class="img-box1">
-               <span class="icon-fi-sr-globe boxD color2" alt=""></span>
-             </div>
+        
              <div class="b-right">
-                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="titleD">Παραγγελίες</div>
                    <div class="numD">1473</div>
+                   
              </div>
              </div>
              <div class="s-bottom">
-                <span class="show_all">Προβολή Όλων</span>
-                <span class="icon-fi-sr-angle-right r-d "></span>
+               <div class="percent"><span class="plus">↑ +</span><span class="minus">↓ -</span>20%</div>
+                <span class="show_all">Από την προηγούμενη περίοδο</span>
+               
              </div>
        </div>
          </div>
          <!-- Safe zone ends -->
        </div>
      </div>
+
 
      <div class="item " data-num="5">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link">
+         <div class="data-link center">
 
              <div class="s-top">
-               <div class="img-box1">
-               <span class="icon-fi-sr-globe boxD color3" alt=""></span>
-             </div>
+        
              <div class="b-right">
-                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="titleD">Domains</div>
                    <div class="numD">1473</div>
+                   
              </div>
              </div>
              <div class="s-bottom">
-                <span class="show_all">Προβολή Όλων</span>
-                <span class="icon-fi-sr-angle-right r-d "></span>
+               <div class="percent"><span class="plus">↑ +</span><span class="minus">↓ -</span>20%</div>
+                <span class="show_all">Από την προηγούμενη περίοδο</span>
+               
              </div>
        </div>
          </div>
@@ -177,11 +181,13 @@
        </div>
      </div>
 
+    
+
      <div class="item t3" data-num="6">
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <canvas class="chart2"  ></canvas>
+         <canvas class="chart2"></canvas>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -192,20 +198,20 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link">
+         <div class="data-link center">
 
              <div class="s-top">
-               <div class="img-box1">
-               <span class="icon-fi-sr-globe boxD color2" alt=""></span>
-             </div>
+        
              <div class="b-right">
-                   <div class="titleD">Ατιμολόγητες Κινήσεις</div>
+                   <div class="titleD">Πακέτα Hosting</div>
                    <div class="numD">1473</div>
+                   
              </div>
              </div>
              <div class="s-bottom">
-                <span class="show_all">Προβολή Όλων</span>
-                <span class="icon-fi-sr-angle-right r-d "></span>
+               <div class="percent"><span class="plus">↑ +</span><span class="minus">↓ -</span>20%</div>
+                <span class="show_all">Από την προηγούμενη περίοδο</span>
+               
              </div>
        </div>
          </div>
@@ -218,22 +224,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <div class="data-link">
+         <div class="data-link center">
 
-              <div class="s-top">
-                <div class="img-box1">
-                <span class="icon-fi-sr-globe boxD color2" alt=""></span>
-              </div>
-              <div class="b-right">
-                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
-                    <div class="numD">1473</div>
-              </div>
-              </div>
-              <div class="s-bottom">
-                 <span class="show_all">Προβολή Όλων</span>
-                 <span class="icon-fi-sr-angle-right r-d "></span>
-              </div>
-        </div>
+             <div class="s-top">
+        
+             <div class="b-right">
+                   <div class="titleD">SSL Certificates</div>
+                   <div class="numD">1473</div>
+                   
+             </div>
+             </div>
+             <div class="s-bottom">
+               <div class="percent"><span class="plus">↑ +</span><span class="minus">↓ -</span>20%</div>
+                <span class="show_all">Από την προηγούμενη περίοδο</span>
+               
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -254,7 +260,7 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <canvas class="chart3"  ></canvas>
+         <canvas class="chart3"></canvas>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -264,7 +270,7 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-         <canvas class="chart4"  ></canvas>
+         <canvas class="chart4"></canvas>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -279,22 +285,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          <div class="data-link">
+         <div class="data-link center">
 
-              <div class="s-top">
-                <div class="img-box1">
-                <span class="icon-fi-sr-globe boxD color2" alt=""></span>
-              </div>
-              <div class="b-right">
-                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
-                    <div class="numD">1473</div>
-              </div>
-              </div>
-              <div class="s-bottom">
-                 <span class="show_all">Προβολή Όλων</span>
-                 <span class="icon-fi-sr-angle-right r-d "></span>
-              </div>
-        </div>
+             <div class="s-top">
+        
+             <div class="b-right">
+                   <div class="titleD">data1</div>
+                   <div class="numD">1473</div>
+                   
+             </div>
+             </div>
+             <div class="s-bottom">
+               <div class="percent"><span class="plus">↑ +</span><span class="minus">↓ -</span>20%</div>
+                <span class="show_all">Από την προηγούμενη περίοδο</span>
+               
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -305,22 +311,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          <div class="data-link">
+         <div class="data-link center">
 
-              <div class="s-top">
-                <div class="img-box1">
-                <span class="icon-fi-sr-globe boxD color2" alt=""></span>
-              </div>
-              <div class="b-right">
-                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
-                    <div class="numD">1473</div>
-              </div>
-              </div>
-              <div class="s-bottom">
-                 <span class="show_all">Προβολή Όλων</span>
-                 <span class="icon-fi-sr-angle-right r-d "></span>
-              </div>
-        </div>
+             <div class="s-top">
+        
+             <div class="b-right">
+                   <div class="titleD">data2</div>
+                   <div class="numD">1473</div>
+                   
+             </div>
+             </div>
+             <div class="s-bottom">
+               <div class="percent"><span class="plus">↑ +</span><span class="minus">↓ -</span>20%</div>
+                <span class="show_all">Από την προηγούμενη περίοδο</span>
+               
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -331,22 +337,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          <div class="data-link">
+         <div class="data-link center">
 
-              <div class="s-top">
-                <div class="img-box1">
-                <span class="icon-fi-sr-globe boxD color2" alt=""></span>
-              </div>
-              <div class="b-right">
-                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
-                    <div class="numD">1473</div>
-              </div>
-              </div>
-              <div class="s-bottom">
-                 <span class="show_all">Προβολή Όλων</span>
-                 <span class="icon-fi-sr-angle-right r-d "></span>
-              </div>
-        </div>
+             <div class="s-top">
+        
+             <div class="b-right">
+                   <div class="titleD">data3</div>
+                   <div class="numD">1473</div>
+                   
+             </div>
+             </div>
+             <div class="s-bottom">
+               <div class="percent"><span class="plus">↑ +</span><span class="minus">↓ -</span>20%</div>
+                <span class="show_all">Από την προηγούμενη περίοδο</span>
+               
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -357,22 +363,22 @@
        <div class="item-content">
          <!-- Safe zone, enter your custom markup -->
          <div class="my-custom-content">
-          <div class="data-link">
+         <div class="data-link center">
 
-              <div class="s-top">
-                <div class="img-box1">
-                <span class="icon-fi-sr-globe boxD color2" alt=""></span>
-              </div>
-              <div class="b-right">
-                    <div class="titleD">Ατιμολόγητες Κινήσεις</div>
-                    <div class="numD">1473</div>
-              </div>
-              </div>
-              <div class="s-bottom">
-                 <span class="show_all">Προβολή Όλων</span>
-                 <span class="icon-fi-sr-angle-right r-d "></span>
-              </div>
-        </div>
+             <div class="s-top">
+        
+             <div class="b-right">
+                   <div class="titleD">data4</div>
+                   <div class="numD">1473</div>
+                   
+             </div>
+             </div>
+             <div class="s-bottom">
+               <div class="percent"><span class="plus">↑ +</span><span class="minus">↓ -</span>20%</div>
+                <span class="show_all">Από την προηγούμενη περίοδο</span>
+               
+             </div>
+       </div>
          </div>
          <!-- Safe zone ends -->
        </div>
@@ -388,14 +394,42 @@
 </div>
 </div>
 </div>
-<style>
-
-</style>
-
+<!--<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>-->
 <script>
+ 
+ 
+ /*
+var arr = [
+"Ατιμολόγητες Κινήσεις",
+"Παραγγελίες για ενέργειες admin",
+"Πελάτες με Πιστωτικό Όριο",
+"Αναμονή Εγκαταστάσεων SSL",
+"Παραγγελίες",
+"Domains",
+"Πακέτα Hosting",
+"SSL Certificates",
+"data1",
+"data2",
+"data3",
+"data4",
+];
+
+  $(".template .titleD").each(function(index){
+    $(this).html(arr[index]);
+   
 
 
+    
+    
 
 
+    
+  })*/
 
-</script>
+  
+ 
+
+  </script>

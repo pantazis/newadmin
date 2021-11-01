@@ -14821,6 +14821,15 @@ body {
     justify-content: center;
     height: 100%; }
 
+.percent.minus-p {
+  color: #d83438; }
+  .percent.minus-p .plus {
+    display: none; }
+.percent.plus-p {
+  color: #18bf93; }
+  .percent.plus-p .minus {
+    display: none; }
+
 .s-bottom {
   display: flex;
   justify-content: end;

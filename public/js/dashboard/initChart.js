@@ -48,6 +48,7 @@ const tableConfig = {};
 
 //data after selection
 var filteredData;
+var filteredDataBack;
 var parentDatesChart3 = [];
 var hasNoData;
 
@@ -95,10 +96,10 @@ $(".dateButton").daterangepicker(
 	}
 );
 
-function sumValues(){
-	obj = {};
+function loopData(data,obj) {
 	
-	$(filteredData).each(function(){
+	 
+		$(data).each(function(){
 		
 	var allperiod =	this[searchDataObj.period];
 	for(date in allperiod){
@@ -109,9 +110,11 @@ function sumValues(){
 		if(stat.search("data")!=-1){
 			if(obj[stat] == undefined){
 				obj[stat]=[];
+				
 			}
 			var val =singledate[stat].datasets[0].data[0]
 			obj[stat].push(val)
+			console.log(obj[stat]);
 			
 	
 
@@ -122,20 +125,69 @@ function sumValues(){
 	}
 
 	});
-	
-	for(stat in obj){
-		
+
+}
+
+function loopValues(obj,html){
+
+	for(stat in obj){		
 		var value = obj[stat].reduce(function(a, b){
             return a + b;
         }, 0);
 		value= Math.round(value);
+		obj[stat]=value;
 
+		if (html == true){	
+		$("."+stat+" .numD").html(value);	
+		}
+	}
+
+}
+function compareVal(beforeObj,afterOBj){
+	for( dataName in afterOBj){
+		var newval =afterOBj[dataName];
+		var oldval =beforeObj[dataName];
+		var percent = ((newval-oldval)/oldval)*100;
+		percent =percent.toFixed(2);
+		var el =$("."+dataName);
+		el.find(".num-p").html(percent);
+
+		if(percent>=0){
+			el.find(".percent").addClass("plus-p")
+			el.find(".percent").removeClass("minus-p")
+
+		}
 		
-		$("."+stat+" .numD").html(value);
-		
-		
+		if(percent<0){
+			el.find(".percent").removeClass("plus-p")
+			el.find(".percent").addClass("minus-p")
+
+		}
+
 
 	}
+
+
+}
+
+
+
+
+function sumValues(){
+	obj = {};
+	obj2 = {};
+	
+	
+
+	
+	loopData(filteredData,obj);
+	loopData(filteredDataBack,obj2);
+	
+
+	loopValues(obj,true)
+	loopValues (obj2,false)
+
+	compareVal(obj2,obj);
 	
 
 
@@ -196,7 +248,8 @@ function getQueriedData() {
 
 	////console.log(starDateEndOfDay.format("DD/MM/YYYY"));
 	////console.log(endDateEndOfDay.format("DD/MM/YYYY"));
-
+	filteredDataBack = {};
+	filteredDataBack[period] = {};
 	filteredData = {};
 
 	filteredData[period] = {};
@@ -213,6 +266,35 @@ function getQueriedData() {
 		filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] =
 			data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
 	}
+
+
+
+
+
+
+	var count = Object.keys(filteredData[period]).length;
+	
+	var startDateStat = moment(searchDataObj.startDate, "DDMMYYYY").subtract(count, period + "s").endOf(period);
+	var startDateStatFormat = startDateStat.format(dateFormat);
+	var endDateStat = moment(searchDataObj.startDate, "DDMMYYYY").subtract(1, period).endOf(period + "s");
+	var endDateStatFormat = endDateStat.format(dateFormat);
+
+	while (
+		startDateStat.add(1, period + "s").endOf(period).diff(endDateStat) <= 0
+	) {
+		filteredDataBack[period][startDateStat.endOf(period).format(dateFormat)] =
+			data[period][startDateStat.endOf(period).format(dateFormat)];
+
+
+
+	}
+
+	
+
+
+
+
+
 
 	mergeAndGiveData(period);
 }

@@ -224,6 +224,26 @@ $dashelpad: 0.625rem;
   }
 }
 
+.percent{
+  &.minus-p{
+    color:$red2;
+    .plus{
+      display: none;
+      
+    }
+
+  }
+  &.plus-p{
+    color:$green2;
+    .minus{
+      display: none;
+      
+    }
+    
+  }
+
+}
+
 .s-bottom {
   .center &{
     justify-content: space-evenly;

@@ -55,6 +55,15 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
 
 
   <?php }?>
+  <?php if($folder=="tables"){ ?>
+    <script src="./public/js/tables/tableData.js?<?=rand(1,1000)?>"></script>
+    <script src="./public/js/tables/tables.js?<?=rand(1,1000)?>"></script>
+    
+
+
+  <?php }?>
+  
+
 
 
 

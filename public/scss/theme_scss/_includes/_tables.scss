@@ -1,0 +1,192 @@
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .title_mobile{
+      display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .title_mobile{
+        display: block;
+        font-weight: bold;
+        text-align: center;
+    }
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+        border-bottom: 1px solid #ddd;
+            display: flex;
+            font-size: .8em;
+            text-align: center;
+            flex-direction: column;
+            
+    }
+    table .hide-t{
+        display: none;
+    }
+    
+
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+
+  //----------------------------------------filter arrows------------------------------
+  .filter-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .filter-title {
+    flex: 1;
+    text-align: center;
+  }
+  
+  img.filtericon {
+    height: 20px;
+  }
+
+  
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+}
+
+//----------------------------------------date el------------------------------
+
+
+
+.flex-date {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+span.table-time {
+    font-size: 10px;
+}
+//---------------------------------------------status ---------------------------------------
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.isNotActive{
+        color:$green2;
+
+    }
+    &.isActive{
+        color:$red2;
+
+    }
+    .active-text {
+       
+        
+    }
+    
+}
+
+//-----------------------------------------------------action--------------------------------
+
+.actions-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+//-----------------------------------------------------singleIcon--------------------------------
+
+
+.singleIcon{    
+&.red{color:$red2}
+&.green{color:$green2}
+&.noColor{opacity:.5}
+
+}
+  
+//--------------------------------------DOMAIN NAME-----------------------------------------
+.domain-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    .icon {
+        color:$orange2;
+        margin-right: 5px;
+        &.hideIcon{
+            opacity: 0;
+        }
+    }
+    a.link {    
+    overflow: hidden;
+    
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

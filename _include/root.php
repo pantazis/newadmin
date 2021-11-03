@@ -19,7 +19,11 @@ switch ($request) {
     case $url_without_last_part . "/dashboard":
             $folder = "dashboard";        
             include '_views/'.$folder.'/index.php'; //dasboard.php
-            break;    
+            break;
+    case $url_without_last_part . "/tables":
+        $folder = "tables";        
+        include '_views/'.$folder.'/index.php'; //dasboard.php
+        break;        
 
     default:
         include '_views/404.php';

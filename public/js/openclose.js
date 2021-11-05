@@ -1,6 +1,7 @@
 // This is the important part!
 arrform=[];
 function collapseSection(element,parentel) { 
+  
    
     
     // get the height of the element's inner content, regardless of its actual size
@@ -46,7 +47,9 @@ function collapseSection(element,parentel) {
   
     
     element.setAttribute('data-collapsed', 'true');
-    addClassToParent(element,parentel);
+    if(parentel!=undefined){
+      addClassToParent(element,parentel);
+    }
   }
 
   
@@ -74,7 +77,9 @@ function collapseSection(element,parentel) {
    
     
     element.setAttribute('data-collapsed', 'false');
-    addClassToParent(element,parentel);
+    if(parentel!=undefined){
+      addClassToParent(element,parentel);
+    }
     
   }
   function isFormEmpty(el){  

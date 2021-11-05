@@ -73,7 +73,7 @@
   // navgation open close
 
   function gridRefresh(){   
-    if(grid!=undefined){
+    if(typeof grid  != "undefined"){
       var navbarleft = $("nav.sidebar.navbar.left")[0];
       navbarleft.addEventListener("webkitTransitionEnd",function(){ grid.refreshItems().layout()});
       navbarleft.addEventListener("transitionend",function(){     

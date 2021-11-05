@@ -176,7 +176,24 @@ createDataOfTable();
 
 
 
+var open = 0;
+$(".filters-label").click(function(){
+  togglefilters();
+  
 
+});
+
+var element =$(".filters-conatiner")[0];
+
+function togglefilters(){
+  if(open%2){
+    expandSection(element);
+
+  }else{   
+    collapseSection(element);
+  }
+  open++;
+};
 
 
 

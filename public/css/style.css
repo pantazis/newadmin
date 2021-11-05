@@ -12320,6 +12320,9 @@ body.noanimαtion * {
   margin-right: var(--section-padding);
   margin-bottom: var(--section-padding);
   border-radius: 0.25rem; }
+  .section-main.tables {
+    padding: var(--section-padding);
+    border-radius: 0.25rem; }
   @media (min-width: 1200px) {
     .section-main {
       padding-top: 2.625rem;
@@ -14881,6 +14884,27 @@ body {
     text-align: center; }
   .dark .titleD {
     color: #efeff6; }
+
+.filter-parent {
+  margin-left: var(--section-padding);
+  margin-right: var(--section-padding);
+  padding-bottom: var(--section-padding); }
+
+.filters-padding {
+  height: 100px;
+  background: red;
+  display: flex;
+  flex-wrap: wrap; }
+
+.input-padding {
+  flex: 1 1 auto; }
+  .input-padding input {
+    width: 100%; }
+
+.filters-conatiner {
+  transition: height 0.3s linear;
+  height: auto;
+  overflow: hidden; }
 
 table {
   border: 1px solid #ccc;

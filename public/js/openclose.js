@@ -55,6 +55,7 @@ function collapseSection(element,parentel) {
   
   
   function expandSection(element,parentel) {
+    
       
     // get the height of the element's inner content, regardless of its actual size
     var sectionHeight = element.scrollHeight;
@@ -66,7 +67,8 @@ function collapseSection(element,parentel) {
     element.addEventListener('transitionend', function(e) {
        
       // remove this event listener so it only gets triggered once
-      element.removeEventListener('transitionend', arguments.callee);      
+      element.removeEventListener('transitionend', arguments.callee);
+         
       
       // remove "height" from the element's inline styles, so it can return to its initial value
      

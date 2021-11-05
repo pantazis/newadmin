@@ -1,3 +1,31 @@
+//-----------------------------------------------------filters----------------------------------
+.filter-parent{
+  margin-left: var(--section-padding);
+  margin-right: var(--section-padding);
+  padding-bottom: var(--section-padding);
+
+}
+.filters-padding{
+    height: 100px;
+    background: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-padding {
+  input{width: 100%;}
+  flex: 1 1 auto;
+  
+}
+
+.filters-conatiner{      
+transition: height 0.3s linear;
+height: auto;
+overflow: hidden;
+  }
+
+//-----------------------------------------------------filters-end----------------------------------
+
 table {
     border: 1px solid #ccc;
     border-collapse: collapse;

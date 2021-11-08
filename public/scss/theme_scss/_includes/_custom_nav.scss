@@ -341,6 +341,7 @@ nav.sidebar.top {
         position: relative;
         left: 0.25rem;
         .custom-popup {
+            pointer-events: none;
             a {
                 display: flex;
                 justify-content: space-between;

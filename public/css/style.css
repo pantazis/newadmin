@@ -15065,11 +15065,14 @@ span.table-time {
 .selectionActionsContainer {
   bottom: 0%;
   width: 100%;
-  height: 70px;
+  height: 0px;
   background: #1e1c36;
   color: #efeff6;
   position: sticky;
-  border-radius: 0.25rem; }
+  overflow: hidden;
+  transition: height 0.3s ease-in; }
+  .selectionActionsContainer.open {
+    height: 70px; }
   .selectionActionsContainer .actions {
     display: flex;
     flex-direction: row;

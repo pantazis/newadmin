@@ -199,6 +199,7 @@ function multiRowSelection() {
       selectOneRowPar.removeClass('selected')
 		});
 	}
+	openActions()
 
 
 }
@@ -215,4 +216,16 @@ function oneRowSelection(el) {
     else {
       $(el).closest("tr").removeClass('selected')
     }
+	openActions()
 }
+
+function openActions(){
+	var ischecked =	$("table input").is(":checked");
+	if(ischecked){
+		$(".selectionActionsContainer").addClass("open");
+	
+	}else{
+		$(".selectionActionsContainer").removeClass("open");
+	}
+	
+	}

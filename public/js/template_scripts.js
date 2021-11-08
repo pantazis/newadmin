@@ -6,7 +6,7 @@
     $("body").removeClass("noanimαtion");
     activeTab();
     $(this).scrollTop(0);
-    tableHeadtop();
+    tableHeadtop(0);
    // screenSize()
   });
 
@@ -18,14 +18,14 @@
 
   $(window).resize(function () {
     noanimαtion();
-    tableHeadtop();
+    tableHeadtop(0);
 
   });
 
 
-  function tableHeadtop(){
+  window.tableHeadtop=function(addheight){
     var navheight =$("nav.sidebar.top").height();
-var filterheight =$(".filter-parent")[0].offsetHeight;
+var filterheight =$(".filter-parent")[0].offsetHeight+addheight;
 
 
 $("thead").css("top",navheight+filterheight+"px");

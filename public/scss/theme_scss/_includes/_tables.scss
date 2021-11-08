@@ -17,6 +17,7 @@
   position: sticky;
   top: $navSidebarTop;
   background:$ice;
+  z-index: 1;
   
   border-bottom: var(--section-padding) solid #fff;
 
@@ -84,6 +85,8 @@ table {
 
   thead{
     position: sticky;
+    z-index: 1;
+    transition: top 0.3s linear;
   tr {
     background-color: $ice;
   }

@@ -1,11 +1,13 @@
 // This is the important part!
 arrform=[];
+
 function collapseSection(element,parentel) { 
   
    
     
     // get the height of the element's inner content, regardless of its actual size
     var sectionHeight = element.scrollHeight;
+    
     
     // temporarily disable all css transitions
     var elementTransition = element.style.transition;
@@ -16,7 +18,11 @@ function collapseSection(element,parentel) {
     // aren't transitioning out of 'auto'
     requestAnimationFrame(function() {
       element.style.height = sectionHeight + 'px';
+      var addHeight = sectionHeight
+      tableHeadtop(-Math.abs(addHeight));
       element.style.transition = elementTransition;
+    
+      
      
       
       // on the next frame (as soon as the previous style change has taken effect),
@@ -24,6 +30,8 @@ function collapseSection(element,parentel) {
       requestAnimationFrame(function() {       
         
         element.style.height = 0 + 'px';
+        
+        
        
         element.addEventListener('transitionend', function() {
           
@@ -59,6 +67,8 @@ function collapseSection(element,parentel) {
       
     // get the height of the element's inner content, regardless of its actual size
     var sectionHeight = element.scrollHeight;
+    var addHeight = sectionHeight
+    tableHeadtop(addHeight);
     
     // have the element transition to the height of its inner content
     element.style.height = sectionHeight + 'px';

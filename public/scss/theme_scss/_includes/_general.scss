@@ -39,6 +39,11 @@ body.noanimαtion * {
   margin-bottom: var(--section-padding);
   margin-top: var(--section-padding);
   min-height: 10rem;
+  &.tables{
+    min-height:0;
+    margin-bottom: 0;
+
+  }
 }
 /*---------------------------------------------MAIN SECTION---------------------------------------------*/
 .section-main {

@@ -150,11 +150,23 @@ var element = $(".filters-conatiner")[0];
 function togglefilters() {
 	if (open % 2) {
 		expandSection(element);
+				
+	
 	} else {
 		collapseSection(element);
+		
+	
+		
 	}
 	open++;
+
+	$(".filter-parent")[0].ontransitionend = () => {
+		tableHeadtop();
+	};
+	
+	
 }
+
 
 
 
@@ -208,7 +220,7 @@ function multiRowSelection() {
 
 
 function oneRowSelection(el) {
-  console.log(el)
+
       if ($(el).is(":checked")){
       $(el).closest("tr").addClass('selected')
     }

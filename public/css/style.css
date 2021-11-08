@@ -12311,6 +12311,9 @@ body.noanimαtion * {
   margin-bottom: var(--section-padding);
   margin-top: var(--section-padding);
   min-height: 10rem; }
+  .top-section.tables {
+    min-height: 0;
+    margin-bottom: 0; }
 
 /*---------------------------------------------MAIN SECTION---------------------------------------------*/
 .section-main {
@@ -14893,6 +14896,7 @@ body {
   position: sticky;
   top: 4.68rem;
   background: #efeff6;
+  z-index: 1;
   border-bottom: var(--section-padding) solid #fff; }
 
 .filters-padding {
@@ -14944,7 +14948,9 @@ tbody tr {
       border-radius: 0.25rem; } }
 
 thead {
-  position: sticky; }
+  position: sticky;
+  z-index: 1;
+  transition: top 0.3s linear; }
   thead tr {
     background-color: #efeff6; }
 

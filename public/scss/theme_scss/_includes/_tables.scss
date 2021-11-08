@@ -39,7 +39,7 @@
 }
 
 
-.filters-conatiner{      
+.filters-conatiner{
 transition: height 0.3s linear;
 height: auto;
 overflow: hidden;
@@ -48,32 +48,47 @@ overflow: hidden;
 //-----------------------------------------------------filters-end----------------------------------
 
 table {
-    border: 1px solid #ccc;
     border-collapse: collapse;
     margin: 0;
     padding: 0;
     width: 100%;
     table-layout: fixed;
-    
+
   }
-  
+
   table caption {
     font-size: 1.5em;
     margin: .5em 0 .75em;
   }
-  
-  table tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
+
+  tbody {
+    tr {
+      @media screen and (min-width: 600px) {
+        &.selected{
+          background-color: lighten($bluedarkbl,15%);
+          border-radius: $border-radius ;
+                }
+    &:hover{
+      background-color: $bluedarkbl;
+      border-radius: $border-radius ;
+    }}
+    background-color: $white;
     padding: .35em;
   }
-  
+  }
+
+  thead{
+  tr {
+    background-color: $ice;
+  }
+}
+
   table th,
   table td {
     padding: .625em;
     text-align: center;
   }
-  
+
   table th {
     font-size: .85em;
     letter-spacing: .1em;
@@ -82,7 +97,7 @@ table {
   .title_mobile{
       display: none;
   }
-  
+
   @media screen and (max-width: 600px) {
     .title_mobile{
         display: block;
@@ -92,11 +107,11 @@ table {
     table {
       border: 0;
     }
-  
+
     table caption {
       font-size: 1.3em;
     }
-    
+
     table thead {
       border: none;
       clip: rect(0 0 0 0);
@@ -107,27 +122,27 @@ table {
       position: absolute;
       width: 1px;
     }
-    
+
     table tr {
       border-bottom: 3px solid #ddd;
       display: block;
       margin-bottom: .625em;
     }
-    
+
     table td {
         border-bottom: 1px solid #ddd;
             display: flex;
             font-size: .8em;
             text-align: center;
             flex-direction: column;
-            
+
     }
     table .hide-t{
         display: none;
     }
-    
 
-    
+
+
     table td:last-child {
       border-bottom: 0;
     }
@@ -140,17 +155,17 @@ table {
     align-items: center;
     width: 100%;
   }
-  
+
   .filter-title {
     flex: 1;
     text-align: center;
   }
-  
+
   img.filtericon {
     height: 20px;
   }
 
-  
+
 
   .filters {
     display: flex;
@@ -184,10 +199,10 @@ span.table-time {
 
     }
     .active-text {
-       
-        
+
+
     }
-    
+
 }
 
 //-----------------------------------------------------action--------------------------------
@@ -204,18 +219,18 @@ span.table-time {
 //-----------------------------------------------------singleIcon--------------------------------
 
 
-.singleIcon{    
+.singleIcon{
 &.red{color:$red2}
 &.green{color:$green2}
 &.noColor{opacity:.5}
 
 }
-  
+
 //--------------------------------------DOMAIN NAME-----------------------------------------
 .domain-name {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     .icon {
         color:$orange2;
         margin-right: 5px;
@@ -223,19 +238,8 @@ span.table-time {
             opacity: 0;
         }
     }
-    a.link {    
+    a.link {
     overflow: hidden;
-    
+
     }
 }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  

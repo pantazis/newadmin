@@ -14917,7 +14917,6 @@ body {
   overflow: hidden; }
 
 table {
-  border: 1px solid #ccc;
   border-collapse: collapse;
   margin: 0;
   padding: 0;
@@ -14928,10 +14927,19 @@ table caption {
   font-size: 1.5em;
   margin: .5em 0 .75em; }
 
-table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
+tbody tr {
+  background-color: #fff;
   padding: .35em; }
+  @media screen and (min-width: 600px) {
+    tbody tr.selected {
+      background-color: #3a3668;
+      border-radius: 0.25rem; }
+    tbody tr:hover {
+      background-color: #1e1c36;
+      border-radius: 0.25rem; } }
+
+thead tr {
+  background-color: #efeff6; }
 
 table th,
 table td {

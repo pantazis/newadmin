@@ -16,6 +16,11 @@ tableElements.filters = function (title) {
 	return el;
 };
 
+tableElements.email = function (title) {
+	var el = `<a href="" class="email">${title}</a>`;
+	return el;
+};
+
 tableElements.link = function (title) {
 	var el = `<a href="">${title}</a>`;
 	return el;

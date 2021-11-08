@@ -14891,15 +14891,25 @@ body {
   padding-bottom: var(--section-padding); }
 
 .filters-padding {
-  height: 100px;
-  background: red;
+  background: #fff;
+  border-radius: 0.25rem;
   display: flex;
   flex-wrap: wrap; }
 
 .input-padding {
-  flex: 1 1 auto; }
+  padding: 1.25rem;
+  flex: 1 1 16.6666%; }
   .input-padding input {
     width: 100%; }
+  .input-padding.half {
+    flex: 1 1 8.3333%; }
+  .input-padding.double {
+    flex: 1 1 33.3332%; }
+
+.filters-label {
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+  padding: 4px 0px; }
 
 .filters-conatiner {
   transition: height 0.3s linear;

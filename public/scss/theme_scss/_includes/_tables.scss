@@ -1,4 +1,15 @@
 //-----------------------------------------------------filters----------------------------------
+@mixin inputsize($size){
+  flex: 1 1 $size;
+
+  &.half{
+    flex: 1 1 $size/2 ;
+  }
+  &.double{
+    flex: 1 1 $size*2 ;
+  }
+
+}
 .filter-parent{
   margin-left: var(--section-padding);
   margin-right: var(--section-padding);
@@ -6,17 +17,27 @@
 
 }
 .filters-padding{
-    height: 100px;
-    background: red;
+    
+    background: $white;
+    border-radius:$border-radius;
     display: flex;
     flex-wrap: wrap;
 }
 
 .input-padding {
+
   input{width: 100%;}
-  flex: 1 1 auto;
+  padding:1.25rem;
+ 
+  @include inputsize(16.6666%);
   
 }
+.filters-label {
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+  padding: 4px 0px;
+}
+
 
 .filters-conatiner{      
 transition: height 0.3s linear;

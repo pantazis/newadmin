@@ -17,12 +17,12 @@
   position: sticky;
   top: $navSidebarTop;
   background:$ice;
-  
+
   border-bottom: var(--section-padding) solid #fff;
 
 }
 .filters-padding{
-    
+
     background: $white;
     border-radius:$border-radius;
     display: flex;
@@ -33,9 +33,9 @@
 
   input{width: 100%;}
   padding:1.25rem;
- 
+
   @include inputsize(16.6666%);
-  
+
 }
 .filters-label {
   border-bottom: 1px solid;
@@ -250,3 +250,34 @@ span.table-time {
     }
 }
 
+.selectionActionsContainer{
+  bottom: 0%;
+  width: 100%;
+  height: 70px;
+  background: $bluedarkbl;
+  color: $ice;
+ position: sticky;
+  border-radius: $border-radius;
+
+
+.actions{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+
+  .actionBtn {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    background: crimson;
+    width: 20rem;
+    height: auto;
+border-radius: $border-radius;
+}}}

@@ -50,6 +50,7 @@ body.noanimαtion * {
   border-radius: $border-radius;
   &.tables{
     padding:var(--section-padding);
+    padding-top:0;
     border-radius:$border-radius;
 
   }

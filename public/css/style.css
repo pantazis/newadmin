@@ -12322,6 +12322,7 @@ body.noanimαtion * {
   border-radius: 0.25rem; }
   .section-main.tables {
     padding: var(--section-padding);
+    padding-top: 0;
     border-radius: 0.25rem; }
   @media (min-width: 1200px) {
     .section-main {
@@ -14888,7 +14889,11 @@ body {
 .filter-parent {
   margin-left: var(--section-padding);
   margin-right: var(--section-padding);
-  padding-bottom: var(--section-padding); }
+  padding-bottom: var(--section-padding);
+  position: sticky;
+  top: 4.68rem;
+  background: #efeff6;
+  border-bottom: var(--section-padding) solid #fff; }
 
 .filters-padding {
   background: #fff;
@@ -14938,8 +14943,10 @@ tbody tr {
       background-color: #1e1c36;
       border-radius: 0.25rem; } }
 
-thead tr {
-  background-color: #efeff6; }
+thead {
+  position: sticky; }
+  thead tr {
+    background-color: #efeff6; }
 
 table th,
 table td {

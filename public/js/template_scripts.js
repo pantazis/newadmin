@@ -5,6 +5,8 @@
   $(document).ready(function () {
     $("body").removeClass("noanimαtion");
     activeTab();
+    $(this).scrollTop(0);
+    tableHeadtop();
    // screenSize()
   });
 
@@ -12,13 +14,23 @@
   var timeout = false;
   var delta = 200;
 
-  $(document).ready(function () {
-    $(this).scrollTop(0);
-  });
+
 
   $(window).resize(function () {
     noanimαtion();
+    tableHeadtop();
+
   });
+
+
+  function tableHeadtop(){
+    var navheight =$("nav.sidebar.top").height();
+var filterheight =$(".filter-parent")[0].offsetHeight;
+
+
+$("thead").css("top",navheight+filterheight+"px");
+
+  }
 
   function noanimαtion() {
     $("body").addClass("noanimαtion");

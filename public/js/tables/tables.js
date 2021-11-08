@@ -220,47 +220,4 @@ function oneRowSelection(el) {
 
 
 
-//
-//$(selectOneRowPar).click(function () {
-//  var row = $(this).find("tr")
-//  if (selectOneRowPar) {
-//    debugger
-//    $(row).addClass("selected");
-//  } else {
-//    $(row).removeClass("selected");
-//  }
-//});
 
-
-
-
-
-
-
-
-
-//   var allCheck =  $(' td input[type="checkbox"]')
-
-//   $(".hide-t").click(function () {
-//     if (isChecked) {
-//       debugger;
-//       $(checkoPar).addClass("selected");
-
-//     } else {
-//       $(checkoPar).removeClass("selected");
-//     }
-//   });
-
-//   $("th").click(function () {
-
-//   if (onAllCheck){
-//     allCheck.each(function () {
-//       this.checked=false
-
-//     });
-//   }
-//   else{
-//     allCheck.each(function () {
-//       this.checked=true
-
-//   })}})

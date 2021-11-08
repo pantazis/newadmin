@@ -14,6 +14,11 @@
   margin-left: var(--section-padding);
   margin-right: var(--section-padding);
   padding-bottom: var(--section-padding);
+  position: sticky;
+  top: $navSidebarTop;
+  background:$ice;
+  
+  border-bottom: var(--section-padding) solid #fff;
 
 }
 .filters-padding{
@@ -78,6 +83,7 @@ table {
   }
 
   thead{
+    position: sticky;
   tr {
     background-color: $ice;
   }
@@ -243,3 +249,4 @@ span.table-time {
 
     }
 }
+

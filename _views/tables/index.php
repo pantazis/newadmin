@@ -3,7 +3,7 @@
     "Action 1","Action 2","Action 3"
 ];
     ?>
-    <section class="top-section ">
+    <section class="top-section tables">
 
       <?php include '_views/'.$folder.'/data.php'; ?>
       <?php include '_include/content_top.php'; ?>

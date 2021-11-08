@@ -1,10 +1,4 @@
 tableElements = {};
-var element = $(".filters-conatiner")[0];
-var open = 0;
-var selectOneRowPar = $("tbody tr");
-var selectOneRow = $(' tbody input[type="checkbox"]');
-var selectAllCheckPar = $("thead tr");
-var selectAllCheck = $(' thead input[type="checkbox"]');
 
 tableElements.checkbox = function (title) {
 	var el = `<input type="checkbox" id="${title}" name="${title}" value="Bike",>`;
@@ -143,30 +137,24 @@ function createDataOfTable() {
 	$("tbody").html(headTemplate);
 }
 
+createHeadOfTable();
+createDataOfTable();
 
+var open = 0;
+$(".filters-label").click(function () {
+	togglefilters();
+});
 
-
+var element = $(".filters-conatiner")[0];
 
 function togglefilters() {
 	if (open % 2) {
 		expandSection(element);
-				
-	
 	} else {
 		collapseSection(element);
-		
-	
-		
 	}
 	open++;
-
-	$(".filter-parent")[0].ontransitionend = () => {
-		tableHeadtop();
-	};
-	
-	
 }
-
 
 
 
@@ -197,21 +185,30 @@ selectOneRow.click(function() {oneRowSelection(this) });
 
 
 function multiRowSelection() {
+
+
 	if (selectAllCheck.is(":checked")) {
+
 		selectOneRowPar.find(selectOneRow).each(function () {
 			this.checked = true;
-			selectOneRowPar.addClass("selected");
+      selectOneRowPar.addClass('selected')
 		});
 	} else {
 		selectOneRowPar.find(selectOneRow).each(function () {
 			this.checked = false;
-			selectOneRowPar.removeClass("selected");
+      selectOneRowPar.removeClass('selected')
 		});
 	}
+
+
 }
 
-function oneRowSelection(el) {
 
+
+
+
+function oneRowSelection(el) {
+  console.log(el)
       if ($(el).is(":checked")){
       $(el).closest("tr").addClass('selected')
     }
@@ -219,9 +216,3 @@ function oneRowSelection(el) {
       $(el).closest("tr").removeClass('selected')
     }
 }
-
-selectAllCheckPar.click(function () {multiRowSelection();});
-selectOneRow.click(function () {oneRowSelection(this);});
-createHeadOfTable();
-createDataOfTable();
-$(".filters-label").click(function () {togglefilters();});

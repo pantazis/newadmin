@@ -15062,6 +15062,33 @@ span.table-time {
   .domain-name a.link {
     overflow: hidden; }
 
+.selectionActionsContainer {
+  bottom: 0%;
+  width: 100%;
+  height: 70px;
+  background: #1e1c36;
+  color: #efeff6;
+  position: sticky;
+  border-radius: 0.25rem; }
+  .selectionActionsContainer .actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center; }
+    .selectionActionsContainer .actions .actionBtn {
+      display: block;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      align-self: auto;
+      order: 0;
+      background: crimson;
+      width: 20rem;
+      height: auto;
+      border-radius: 0.25rem; }
+
 :root {
   --color-1: #427dad;
   --color-2: #000c75;

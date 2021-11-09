@@ -18,7 +18,7 @@
   top: $navSidebarTop;
   background:$ice;
   z-index: 1;
-  
+
   border-bottom: var(--section-padding) solid #fff;
 
 }
@@ -260,7 +260,7 @@ span.table-time {
   background: $bluedarkbl;
   color: $ice;
  position: sticky;
- 
+
   overflow: hidden;
   transition:  height 0.3s ease-in;
 
@@ -271,7 +271,7 @@ span.table-time {
   }
 
 
-.actions{
+.actionsSel{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -280,7 +280,7 @@ span.table-time {
   align-content: center;
 
 
-  .actionBtn {
+  .actionSelBtn {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;

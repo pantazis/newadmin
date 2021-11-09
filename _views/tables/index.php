@@ -1,6 +1,6 @@
 
     <?php $actions = [
-    "Action 1","Action 2","Action 3"
+          "","Action 1","Action 2","Action 3","Action 4"
 ];
     ?>
     <section class="top-section tables">
@@ -12,13 +12,18 @@
             <?php include '_include/filters.php'; ?>
       <section class="section-main tables">
             <?php include '_views/'.$folder.'/tab1.php'; ?>
-            
+
 
       </section>
       <div class="selectionActionsContainer">
-                  <div class="actions">
-                                           <div class="actionBtn Action 1">Action 1</div>
-                                            <div class="actionBtn Action 2">Action 2</div>
-                                            <div class="actionBtn Action 3">Action 3</div>
-                                     </div>
-            </div>
+                  <div class="actionsSel">
+              <?php    foreach ($actions as $action){ ?>
+                   <?php
+
+                   if ($action == ""){?>
+                        <span class="selectionCount <?php  echo $action ?>"><?php echo $action ?></span>
+                   <?php }
+                   if ($action != ""){?>
+                   <div class="actionSelBtn <?php  echo $action ?>"><?php echo $action ?></div>
+                <?php }  }?>
+    </div>

@@ -180,15 +180,8 @@ selectAllCheckPar.click(function() {multiRowSelection() });
 selectOneRow.click(function() {oneRowSelection(this) });
 
 
-
-
-
-
 function multiRowSelection() {
-
-
 	if (selectAllCheck.is(":checked")) {
-
 		selectOneRowPar.find(selectOneRow).each(function () {
 			this.checked = true;
       selectOneRowPar.addClass('selected')
@@ -200,7 +193,7 @@ function multiRowSelection() {
 		});
 	}
 	openActions()
-
+	printSelectCount()
 
 }
 
@@ -217,15 +210,40 @@ function oneRowSelection(el) {
       $(el).closest("tr").removeClass('selected')
     }
 	openActions()
+	printSelectCount()
 }
+
+
+
+
 
 function openActions(){
 	var ischecked =	$("table input").is(":checked");
+
 	if(ischecked){
 		$(".selectionActionsContainer").addClass("open");
-	
+
+
 	}else{
 		$(".selectionActionsContainer").removeClass("open");
 	}
-	
+
+	}
+
+
+
+
+	function printSelectCount() {
+		var counterSel = $(".selected").length
+
+
+		if (counterSel == 1){
+		$(".selectionCount").html("Έχετε επιλέξει "+counterSel+" στοιχείo")
+		}
+
+		if (counterSel != 1){
+			$(".selectionCount").html("Έχετε επιλέξει "+counterSel+" στοιχεία")
+			}
+
+
 	}

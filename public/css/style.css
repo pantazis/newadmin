@@ -15075,14 +15075,14 @@ span.table-time {
   transition: height 0.3s ease-in; }
   .selectionActionsContainer.open {
     height: 70px; }
-  .selectionActionsContainer .actions {
+  .selectionActionsContainer .actionsSel {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     align-content: center; }
-    .selectionActionsContainer .actions .actionBtn {
+    .selectionActionsContainer .actionsSel .actionSelBtn {
       display: block;
       flex-grow: 0;
       flex-shrink: 1;

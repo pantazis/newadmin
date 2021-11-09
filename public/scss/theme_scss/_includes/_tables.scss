@@ -1,12 +1,12 @@
 //-----------------------------------------------------filters----------------------------------
-@mixin inputsize($size) {
+@mixin inputsize($size,$num,$num2) {
   flex: 1 1 $size;
 
   &.half {
-    flex: 1 1 $size/2;
+    flex: 1 1 $size*$num;
   }
   &.double {
-    flex: 1 1 $size * 2;
+    flex: 1 1 $size * $num2;
   }
 }
 
@@ -38,7 +38,7 @@
   }
   padding: 1.25rem;
 
-  @include inputsize(16.6666%);
+  @include inputsize(16.6666%,0.5,2);
 }
 .filters-label {
   border-bottom: 1px solid;
@@ -321,13 +321,17 @@ input[type="checkbox"] {
 
 .selectionActionsContainer {
   bottom: 0%;
+  width: calc(100% - #{$sidebarWidth});
+  .closeNav & {
   width: calc(100% - #{$sidebarWidthClosed});
+  }
+ 
   height: 0px;
   @include themeColor("background", $black_blue, $pomegranade);
   color: $ice;
   position: fixed;
   overflow: hidden;
-  transition: height 0.3s ease-in;
+  transition-property: height ,width;
   &.open {
     height: 70px;
   }

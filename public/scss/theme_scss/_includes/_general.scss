@@ -54,7 +54,7 @@ body.noanimαtion * {
   margin-bottom: var(--section-padding);
   border-radius: $border-radius;
   &.tables{
-    padding:var(--section-padding);
+   padding:var(--section-padding);
     padding-top:0;
     border-radius:$border-radius;
 
@@ -622,7 +622,7 @@ body.noanimαtion * {
   .icon-fi-sr-unlock{
     display: block;
   }
-} 
+}
 
 .info-flex {
   display: flex;
@@ -649,7 +649,7 @@ body.noanimαtion * {
 }
 
 .big-row-in{
-  display:flex;  
+  display:flex;
   padding: 1rem 0;
   border-bottom:inherit;
   @include themeColor("color", $dark_blue, $ice);
@@ -669,7 +669,7 @@ align-items: end;
 .info-title-big{
   font-size:$font-big;
   font-weight:bold;
-  margin-left: 1rem; 
+  margin-left: 1rem;
 }
 
 span.small-gray {
@@ -688,4 +688,3 @@ span.small-gray {
 
 
 /*--------------------------------new-list1-end-------------------------------------*/
-

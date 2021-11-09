@@ -158,29 +158,21 @@ function togglefilters() {
 
 
 
-
-
-
-
-
-
-
-
-
 var selectOneRowPar = $("tbody tr");
 var selectOneRow = $(' tbody input[type="checkbox"]');
-
+var clearAllSelections = $(".clearSelections")
 var selectAllCheckPar = $("thead tr");
 var selectAllCheck = $(' thead input[type="checkbox"]');
 
-
 selectAllCheckPar.click(function() {multiRowSelection() });
-
-
 selectOneRow.click(function() {oneRowSelection(this) });
+clearAllSelections.click(function() {multiRowSelection(true) });
 
 
-function multiRowSelection() {
+
+
+
+function multiRowSelection(clear=false) {
 	if (selectAllCheck.is(":checked")) {
 		selectOneRowPar.find(selectOneRow).each(function () {
 			this.checked = true;
@@ -192,6 +184,15 @@ function multiRowSelection() {
       selectOneRowPar.removeClass('selected')
 		});
 	}
+
+	if(clear==true ){
+		selectOneRowPar.find(selectOneRow).each(function () {
+			this.checked = false;
+      selectOneRowPar.removeClass('selected')
+		});
+		selectAllCheck.prop("checked", false)
+
+	}
 	openActions()
 	printSelectCount()
 
@@ -202,7 +203,7 @@ function multiRowSelection() {
 
 
 function oneRowSelection(el) {
-  console.log(el)
+
       if ($(el).is(":checked")){
       $(el).closest("tr").addClass('selected')
     }
@@ -216,18 +217,14 @@ function oneRowSelection(el) {
 
 
 
-
 function openActions(){
 	var ischecked =	$("table input").is(":checked");
 
 	if(ischecked){
 		$(".selectionActionsContainer").addClass("open");
-
-
 	}else{
 		$(".selectionActionsContainer").removeClass("open");
 	}
-
 	}
 
 
@@ -235,15 +232,10 @@ function openActions(){
 
 	function printSelectCount() {
 		var counterSel = $(".selected").length
-
-
 		if (counterSel == 1){
 		$(".selectionCount").html("Έχετε επιλέξει "+counterSel+" στοιχείo")
 		}
-
 		if (counterSel != 1){
 			$(".selectionCount").html("Έχετε επιλέξει "+counterSel+" στοιχεία")
 			}
-
-
 	}

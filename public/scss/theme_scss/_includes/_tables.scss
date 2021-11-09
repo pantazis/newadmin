@@ -1,294 +1,300 @@
 //-----------------------------------------------------filters----------------------------------
-@mixin inputsize($size){
+@mixin inputsize($size) {
   flex: 1 1 $size;
 
-  &.half{
-    flex: 1 1 $size/2 ;
+  &.half {
+    flex: 1 1 $size/2;
   }
-  &.double{
-    flex: 1 1 $size*2 ;
+  &.double {
+    flex: 1 1 $size * 2;
   }
-
 }
-.filter-parent{
+
+.filter-parent {
   margin-left: var(--section-padding);
   margin-right: var(--section-padding);
   padding-bottom: var(--section-padding);
   position: sticky;
   top: $navSidebarTop;
-  background:$ice;
+  @include themeColor("background-color", $ice, $bluedarkbl);
   z-index: 1;
 
-  border-bottom: var(--section-padding) solid #fff;
-
+  border-bottom: var(--section-padding) solid;
+  @include themeColor("border-color", $white, $black_blue);
 }
-.filters-padding{
 
-    background: $white;
-    border-radius:$border-radius;
-    display: flex;
-    flex-wrap: wrap;
+.filters-padding {
+  @include themeColor("background-color", $white, $black_blue);
+
+  background: $white;
+  border-radius: $border-radius;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .input-padding {
-
-  input{width: 100%;}
-  padding:1.25rem;
+  input {
+    width: 100%;
+  }
+  padding: 1.25rem;
 
   @include inputsize(16.6666%);
-
 }
 .filters-label {
   border-bottom: 1px solid;
   margin-bottom: 20px;
   padding: 4px 0px;
+  @include themeColor("color", $bluedarkbl, $ice);
 }
 
-
-.filters-conatiner{
-transition: height 0.3s linear;
-height: auto;
-overflow: hidden;
-  }
+.filters-conatiner {
+  transition: height 0.3s linear;
+  height: auto;
+  overflow: hidden;
+}
 
 //-----------------------------------------------------filters-end----------------------------------
 
 table {
-    border-collapse: collapse;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    table-layout: fixed;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
 
-  }
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
 
-  table caption {
-    font-size: 1.5em;
-    margin: .5em 0 .75em;
-  }
-
-  tbody {
-    tr {
-      @media screen and (min-width: 600px) {
-        &.selected{
-          background-color: lighten($bluedarkbl,15%);
-          border-radius: $border-radius ;
-                }
-    &:hover{
-      background-color: $bluedarkbl;
-      border-radius: $border-radius ;
-    }}
-    background-color: $white;
-    padding: .35em;
-  }
-  }
-
-  thead{
-    position: sticky;
-    z-index: 1;
-    transition: top 0.3s linear;
+tbody {
   tr {
-    background-color: $ice;
+    @include themeColor("background", $white, $black_blue);
+
+    @media screen and (min-width: 600px) {
+      &.selected {
+        @include themeColor("background-color",lighten($bluedarkbl, 15%),$light_grey);
+        border-radius: $border-radius;
+      }
+      &:hover {
+        .flex-date{
+        @include themeColor("color",$ice,$black_blue);}
+      }
+    }
+    background-color: $white;
+    padding: 0.35em;
   }
 }
 
-  table th,
+thead {
+  position: sticky;
+  z-index: 1;
+  transition: top 0.3s linear;
+  tr {
+     @include themeColor("border-color", $ice, $ice);
+    @include themeColor("background-color", $ice, $bluedarkbl);
+  }
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.title_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .title_mobile {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
   table td {
-    padding: .625em;
-    text-align: center;
-  }
-
-  table th {
-    font-size: .85em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  .title_mobile{
-      display: none;
-  }
-
-  @media screen and (max-width: 600px) {
-    .title_mobile{
-        display: block;
-        font-weight: bold;
-        text-align: center;
-    }
-    table {
-      border: 0;
-    }
-
-    table caption {
-      font-size: 1.3em;
-    }
-
-    table thead {
-      border: none;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
-
-    table tr {
-      border-bottom: 3px solid #ddd;
-      display: block;
-      margin-bottom: .625em;
-    }
-
-    table td {
-        border-bottom: 1px solid #ddd;
-            display: flex;
-            font-size: .8em;
-            text-align: center;
-            flex-direction: column;
-
-    }
-    table .hide-t{
-        display: none;
-    }
-
-
-
-    table td:last-child {
-      border-bottom: 0;
-    }
-  }
-
-
-  //----------------------------------------filter arrows------------------------------
-  .filter-box {
+    border-bottom: 1px solid #ddd;
     display: flex;
-    align-items: center;
-    width: 100%;
-  }
-
-  .filter-title {
-    flex: 1;
+    font-size: 0.8em;
     text-align: center;
-  }
-
-  img.filtericon {
-    height: 20px;
-  }
-
-
-
-  .filters {
-    display: flex;
     flex-direction: column;
+  }
+  table .hide-t {
+    display: none;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+//----------------------------------------filter arrows------------------------------
+.filter-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @include themeColor("color", $black_blue, $ice);
+}
+
+.filter-title {
+  flex: 1;
+  text-align: center;
+}
+
+img.filtericon {
+  height: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
 }
 
 //----------------------------------------date el------------------------------
 
-
-
 .flex-date {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include themeColor("color", $black_blue, $ice);
+  .selected & {
+    @include themeColor("color",$ice,$black_blue);
+  }
+
 }
 
 span.table-time {
-    font-size: 10px;
+  font-size: 10px;
 }
 //---------------------------------------------status ---------------------------------------
 .status {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &.isNotActive{
-        color:$green2;
-
-    }
-    &.isActive{
-        color:$red2;
-
-    }
-    .active-text {
-
-
-    }
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.isNotActive {
+    color: $green2;
+  }
+  &.isActive {
+    color: $red2;
+  }
+  .active-text {
+  }
 }
 
 //-----------------------------------------------------action--------------------------------
 
 .actions-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-
-
-
-
 
 //-----------------------------------------------------singleIcon--------------------------------
 
-
-.singleIcon{
-&.red{color:$red2}
-&.green{color:$green2}
-&.noColor{opacity:.5}
-
+.singleIcon {
+  &.red {
+    color: $red2;
+  }
+  &.green {
+    color: $green2;
+  }
+  &.noColor {
+    opacity: 0.5;
+  }
 }
 
 //--------------------------------------DOMAIN NAME-----------------------------------------
 .domain-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .icon {
-        color:$orange2;
-        margin-right: 5px;
-        &.hideIcon{
-            opacity: 0;
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon {
+    color: $orange2;
+    margin-right: 5px;
+    &.hideIcon {
+      opacity: 0;
     }
-    a.link {
+  }
+  a.link {
     overflow: hidden;
-
-    }
+  }
 }
 
-.selectionActionsContainer{
+input[type="checkbox"] {
+  transform: scale(1.4);
+}
+
+.selectionActionsContainer {
   bottom: 0%;
-  width: 100%;
+  width: calc(100% - #{$sidebarWidthClosed});
   height: 0px;
-  background: $bluedarkbl;
+  @include themeColor("background", $black_blue,$pomegranade);
   color: $ice;
- position: sticky;
-
+  position: fixed;
   overflow: hidden;
-  transition:  height 0.3s ease-in;
+  transition: height 0.3s ease-in;
+  padding-right: var(--section-padding);
 
-  &.open{
+  &.open {
     height: 70px;
-
-
   }
 
+  .actionsSel {
+    justify-content: space-around;
+    display: flex;
+    width: inherit;
 
-.actionsSel{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+    .clearSelections {
+      @include themeColor("color", $ice, $ice);
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
 
+    .selectionCount {
+      @include themeColor("color", $ice, $ice);
+      cursor: pointer;
+    }
 
-  .actionSelBtn {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    background: crimson;
-    width: 20rem;
-    height: auto;
-border-radius: $border-radius;
-}}}
+    .actionSelBtn {
+      display: block;
+      order: 0;
+      @include themeColor("color", $black_blue, $black_blue);
+      @include themeColor("background-color", $ice, $ice);
+      width: 7vw;
+      height: auto;
+      border-radius: $border-radius;
+      cursor: pointer;
+    }
+  }
+}

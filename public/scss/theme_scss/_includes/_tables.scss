@@ -125,7 +125,9 @@ thead {
   transition: top 0.3s linear;
   tr {
     @include themeColor("border-color", $ice, $ice);
-    @include themeColor("background-color", $ice, $bluedarkbl);
+    @include themeColor("background-color", $ice, $light_grey);
+    @include themeColor("color", $black_blue,$black_blue)
+
   }
 }
 
@@ -133,6 +135,13 @@ table th,
 table td {
   padding: 0.625em;
   text-align: center;
+
+    a {
+      @include themeColor("color", $blue_purple, $sky_blue);
+    }
+
+
+
 }
 
 table th {
@@ -202,6 +211,7 @@ table th {
 .filter-title {
   flex: 1;
   text-align: center;
+  @include themeColor("color", $black_blue, $black_blue);
 }
 
 img.filtericon {
@@ -249,9 +259,10 @@ span.table-time {
 .actions-container {
   display: flex;
   justify-content: space-around;
+  @include themeColor("color",$dark_blue, darken($ice,25%));
+  font-size: 120%;
   :hover {
     @include themeColor("color", $white, $white);
-    font-size: 120%;
     cursor: pointer;
   }
 }
@@ -266,7 +277,7 @@ span.table-time {
     color: $green2;
   }
   &.noColor {
-    opacity: 0.5;
+    color: $light_grey;
   }
 }
 

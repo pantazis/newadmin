@@ -15003,16 +15003,24 @@ thead {
   transition: top 0.3s linear; }
   thead tr {
     border-color: #efeff6;
-    background-color: #efeff6; }
+    background-color: #efeff6;
+    color: #0e0c28; }
     .dark thead tr {
       border-color: #efeff6; }
     .dark thead tr {
-      background-color: #1e1c36; }
+      background-color: #cacad5; }
+    .dark thead tr {
+      color: #0e0c28; }
 
 table th,
 table td {
   padding: 0.625em;
   text-align: center; }
+  table th a, table td a {
+    color: #5b5bdc; }
+    .dark table th a,
+    .dark table td a {
+      color: #1eb6db; }
 
 table th {
   font-size: 0.85em;
@@ -15071,7 +15079,10 @@ table th {
 
 .filter-title {
   flex: 1;
-  text-align: center; }
+  text-align: center;
+  color: #0e0c28; }
+  .dark .filter-title {
+    color: #0e0c28; }
 
 img.filtericon {
   height: 20px; }
@@ -15108,10 +15119,13 @@ span.table-time {
 
 .actions-container {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  color: #2e435e;
+  font-size: 120%; }
+  .dark .actions-container {
+    color: #9d9dc8; }
   .actions-container :hover {
     color: #fff;
-    font-size: 120%;
     cursor: pointer; }
     .dark .actions-container :hover {
       color: #fff; }
@@ -15121,7 +15135,7 @@ span.table-time {
 .singleIcon.green {
   color: #18bf93; }
 .singleIcon.noColor {
-  opacity: 0.5; }
+  color: #cacad5; }
 
 .domain-name {
   display: flex;

@@ -24,9 +24,11 @@
   if (menuIsClose == "true"){
     $("body").addClass("closeNav");
     }
+
   if (menuIsClose == "false"){
     $("body").removeClass("closeNav");
   }
+
 
 
 

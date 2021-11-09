@@ -45,6 +45,7 @@
   margin-bottom: 20px;
   padding: 4px 0px;
   @include themeColor("color", $bluedarkbl, $ice);
+  cursor: pointer;
 }
 
 .filters-conatiner {
@@ -54,6 +55,26 @@
 }
 
 //-----------------------------------------------------filters-end----------------------------------
+body > * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+table > * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
 
 table {
   border-collapse: collapse;
@@ -126,8 +147,7 @@ thead {
   tr {
     @include themeColor("border-color", $ice, $ice);
     @include themeColor("background-color", $ice, $light_grey);
-    @include themeColor("color", $black_blue,$black_blue)
-
+    @include themeColor("color", $black_blue, $black_blue);
   }
 }
 
@@ -136,12 +156,9 @@ table td {
   padding: 0.625em;
   text-align: center;
 
-    a {
-      @include themeColor("color", $blue_purple, $sky_blue);
-    }
-
-
-
+  a {
+    @include themeColor("color", $blue_purple, darken($blue, 10%));
+  }
 }
 
 table th {
@@ -259,7 +276,7 @@ span.table-time {
 .actions-container {
   display: flex;
   justify-content: space-around;
-  @include themeColor("color",$dark_blue, darken($ice,25%));
+  @include themeColor("color", $dark_blue, darken($ice, 25%));
   font-size: 120%;
   :hover {
     @include themeColor("color", $white, $white);
@@ -323,14 +340,23 @@ input[type="checkbox"] {
 
     .clearSelections {
       display: block;
-
       @include themeColor("color", $ice, $ice);
       font-size: 1rem;
       font-weight: 500;
       cursor: pointer;
+      :hover {
+        text-decoration: underline;
+      }
     }
 
     .selectionCount {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
       display: block;
 
       @include themeColor("color", $ice, $ice);

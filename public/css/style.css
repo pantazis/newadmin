@@ -14929,7 +14929,8 @@ body {
   border-bottom: 1px solid;
   margin-bottom: 20px;
   padding: 4px 0px;
-  color: #1e1c36; }
+  color: #1e1c36;
+  cursor: pointer; }
   .dark .filters-label {
     color: #efeff6; }
 
@@ -14937,6 +14938,22 @@ body {
   transition: height 0.3s linear;
   height: auto;
   overflow: hidden; }
+
+body > * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+table > * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 table {
   border-collapse: collapse;
@@ -15020,7 +15037,7 @@ table td {
     color: #5b5bdc; }
     .dark table th a,
     .dark table td a {
-      color: #1eb6db; }
+      color: #0257d5; }
 
 table th {
   font-size: 0.85em;
@@ -15178,7 +15195,15 @@ input[type="checkbox"] {
       cursor: pointer; }
       .dark .selectionActionsContainer .actionsSel .clearSelections {
         color: #efeff6; }
+      .selectionActionsContainer .actionsSel .clearSelections :hover {
+        text-decoration: underline; }
     .selectionActionsContainer .actionsSel .selectionCount {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
       display: block;
       color: #efeff6;
       cursor: none; }

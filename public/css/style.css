@@ -14959,12 +14959,43 @@ tbody tr {
     tbody tr.selected {
       background-color: #3a3668;
       border-radius: 0.25rem; }
+      tbody tr.selected td a {
+        color: #efeff6; }
+        .dark tbody tr.selected td a {
+          color: #efeff6; }
+      tbody tr.selected .email {
+        color: #efeff6; }
+        .dark tbody tr.selected .email {
+          color: #efeff6; }
+      tbody tr.selected .flex-date {
+        color: #efeff6; }
+        .dark tbody tr.selected .flex-date {
+          color: #efeff6; }
+      tbody tr.selected .actions-container {
+        color: #efeff6; }
+        .dark tbody tr.selected .actions-container {
+          color: #aeaed1; }
       .dark tbody tr.selected {
-        background-color: #cacad5; }
-    tbody tr:hover .flex-date {
-      color: #efeff6; }
-      .dark tbody tr:hover .flex-date {
-        color: #0e0c28; } }
+        background-color: #2e435e; }
+    tbody tr:hover {
+      background-color: #1e1c36;
+      border-radius: 0.25rem; }
+      tbody tr:hover td a {
+        color: #efeff6; }
+        .dark tbody tr:hover td a {
+          color: #efeff6; }
+      tbody tr:hover .email {
+        color: #efeff6; }
+        .dark tbody tr:hover .email {
+          color: #efeff6; }
+      tbody tr:hover .flex-date {
+        color: #efeff6; }
+        .dark tbody tr:hover .flex-date {
+          color: #efeff6; }
+      tbody tr:hover .actions-container {
+        color: #efeff6; }
+        .dark tbody tr:hover .actions-container {
+          color: #aeaed1; } }
 
 thead {
   position: sticky;
@@ -15072,10 +15103,18 @@ span.table-time {
     color: #18bf93; }
   .status.isActive {
     color: #d83438; }
+  .status .active-text {
+    font-weight: 600; }
 
 .actions-container {
   display: flex;
   justify-content: space-around; }
+  .actions-container :hover {
+    color: #fff;
+    font-size: 120%;
+    cursor: pointer; }
+    .dark .actions-container :hover {
+      color: #fff; }
 
 .singleIcon.red {
   color: #d83438; }
@@ -15107,17 +15146,18 @@ input[type="checkbox"] {
   color: #efeff6;
   position: fixed;
   overflow: hidden;
-  transition: height 0.3s ease-in;
-  padding-right: var(--section-padding); }
+  transition: height 0.3s ease-in; }
   .dark .selectionActionsContainer {
     background: #ff7761; }
   .selectionActionsContainer.open {
     height: 70px; }
   .selectionActionsContainer .actionsSel {
+    padding: 1.4rem;
     justify-content: space-around;
     display: flex;
-    width: inherit; }
+    height: 100%; }
     .selectionActionsContainer .actionsSel .clearSelections {
+      display: block;
       color: #efeff6;
       font-size: 1rem;
       font-weight: 500;
@@ -15125,11 +15165,13 @@ input[type="checkbox"] {
       .dark .selectionActionsContainer .actionsSel .clearSelections {
         color: #efeff6; }
     .selectionActionsContainer .actionsSel .selectionCount {
+      display: block;
       color: #efeff6;
-      cursor: pointer; }
+      cursor: none; }
       .dark .selectionActionsContainer .actionsSel .selectionCount {
         color: #efeff6; }
     .selectionActionsContainer .actionsSel .actionSelBtn {
+      text-align: center;
       display: block;
       order: 0;
       color: #0e0c28;

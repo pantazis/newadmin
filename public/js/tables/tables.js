@@ -54,9 +54,10 @@ tableElements.isActive = function () {
 
 tableElements.action = function () {
 	var el = `<div class="actions-container">
-    <div class="icon-fi-sr-chess"></div>
-    <div class="icon-fi-sr-clock1"></div>
-    <div class="icon-fi-sr-comment-alt"></div>
+    <div class="icon-fi-sr-time-past">				</div>
+    <div class="icon-fi-sr-pulse">				</div>
+    <div class="icon-fi-sr-receipt">			</div>
+	<div class="icon-fi-sr-power1">				</div>
 </div>`;
 	return el;
 };

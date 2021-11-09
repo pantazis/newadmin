@@ -26,7 +26,7 @@
                               <div class="actionSelBtn "><?php echo $action ?></div>
                         <?php }
                         if ($action == "clear"){?>
-                              <a class="clearSelections "><?php echo $action ?></a>
+                              <a class="clearSelections "><?php echo "ΚΑΘΑΡΙΣΜΟΣ ΟΛΩΝ ΤΩΝ ΕΠΙΛΟΓΩΝ" ?></a>
                   <?php }} ?>
                   </div>
 </div>

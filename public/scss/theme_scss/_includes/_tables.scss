@@ -74,12 +74,44 @@ tbody {
 
     @media screen and (min-width: 600px) {
       &.selected {
-        @include themeColor("background-color",lighten($bluedarkbl, 15%),$light_grey);
+        td {
+          a {
+            @include themeColor("color", $ice, $ice);
+          }
+        }
+        .email {
+          @include themeColor("color", $ice, $ice);
+        }
+        .flex-date {
+          @include themeColor("color", $ice, $ice);
+        }
+        .actions-container {
+          @include themeColor("color", $ice, darken($ice, 20%));
+        }
+
+        @include themeColor("background-color", lighten($bluedarkbl, 15%), $dark_blue);
         border-radius: $border-radius;
       }
+
       &:hover {
-        .flex-date{
-        @include themeColor("color",$ice,$black_blue);}
+        td {
+          a {
+            @include themeColor("color", $ice, $ice);
+          }
+        }
+        .email {
+          @include themeColor("color", $ice, $ice);
+        }
+        .flex-date {
+          @include themeColor("color", $ice, $ice);
+        }
+
+        .actions-container {
+          @include themeColor("color", $ice, darken($ice, 20%));
+        }
+
+        background-color: $bluedarkbl;
+        border-radius: $border-radius;
       }
     }
     background-color: $white;
@@ -92,7 +124,7 @@ thead {
   z-index: 1;
   transition: top 0.3s linear;
   tr {
-     @include themeColor("border-color", $ice, $ice);
+    @include themeColor("border-color", $ice, $ice);
     @include themeColor("background-color", $ice, $bluedarkbl);
   }
 }
@@ -189,9 +221,8 @@ img.filtericon {
   flex-direction: column;
   @include themeColor("color", $black_blue, $ice);
   .selected & {
-    @include themeColor("color",$ice,$black_blue);
+    @include themeColor("color", $ice, $black_blue);
   }
-
 }
 
 span.table-time {
@@ -209,6 +240,7 @@ span.table-time {
     color: $red2;
   }
   .active-text {
+    font-weight: 600;
   }
 }
 
@@ -217,6 +249,11 @@ span.table-time {
 .actions-container {
   display: flex;
   justify-content: space-around;
+  :hover {
+    @include themeColor("color", $white, $white);
+    font-size: 120%;
+    cursor: pointer;
+  }
 }
 
 //-----------------------------------------------------singleIcon--------------------------------
@@ -258,23 +295,24 @@ input[type="checkbox"] {
   bottom: 0%;
   width: calc(100% - #{$sidebarWidthClosed});
   height: 0px;
-  @include themeColor("background", $black_blue,$pomegranade);
+  @include themeColor("background", $black_blue, $pomegranade);
   color: $ice;
   position: fixed;
   overflow: hidden;
   transition: height 0.3s ease-in;
-  padding-right: var(--section-padding);
-
   &.open {
     height: 70px;
   }
 
   .actionsSel {
+    padding: 1.4rem;
     justify-content: space-around;
     display: flex;
-    width: inherit;
+    height: 100%;
 
     .clearSelections {
+      display: block;
+
       @include themeColor("color", $ice, $ice);
       font-size: 1rem;
       font-weight: 500;
@@ -282,11 +320,15 @@ input[type="checkbox"] {
     }
 
     .selectionCount {
+      display: block;
+
       @include themeColor("color", $ice, $ice);
-      cursor: pointer;
+      cursor: none;
     }
 
     .actionSelBtn {
+      text-align: center;
+
       display: block;
       order: 0;
       @include themeColor("color", $black_blue, $black_blue);

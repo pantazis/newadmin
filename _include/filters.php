@@ -1,6 +1,6 @@
 <div class="filter-parent">
     <div class="filters-label">
-        pantazis
+        Φίλτρα Αναζήτησης
     </div>
     <div class="filters-conatiner" data-collapsed="true" style="height:0">
     <div class="filters-padding">

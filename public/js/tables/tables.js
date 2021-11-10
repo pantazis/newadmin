@@ -54,10 +54,10 @@ tableElements.isActive = function () {
 
 tableElements.action = function () {
 	var el = `<div class="actions-container">
-    <div class="icon-fi-sr-time-past">				</div>
-    <div class="icon-fi-sr-pulse">				</div>
-    <div class="icon-fi-sr-receipt">			</div>
-	<div class="icon-fi-sr-power1">				</div>
+    <div class="p-icon"><div class="icon-fi-sr-time-past"><div class="popaction shadow-1-strong">action1</div></div></div>
+    <div class="p-icon"><div class="icon-fi-sr-pulse"><div class="popaction shadow-1-strong">action2</div></div></div>
+    <div class="p-icon"><div class="icon-fi-sr-receipt"><div class="popaction shadow-1-strong">action3</div></div></div>
+	<div class="p-icon"><div class="icon-fi-sr-power1"><div class="popaction shadow-1-strong">action4</div></div></div>
 </div>`;
 	return el;
 };
@@ -90,10 +90,34 @@ tableElements.domainName = function (title) {
 	} else {
 		var hideIcon = "";
 	}
+	
+
+	var isActive = Math.round(Math.random() * 2);
+
+	switch (isActive) {
+		case 0:
+			var elClass = "red";
+			break;
+		case 1:
+			var elClass = "green";
+			break;
+		case 2:
+			var elClass = "noColor";
+			break;
+	}
+     
+	icon = `<div class="singleIcon ${elClass}">
+        <span class="icon-id_protect1"></span>
+        </div>`;
+
 	var el = `<div class="domain-name">
+	<div class="flex-left-el">
      <div class="icon-fi-sr-clock1 icon ${hideIcon}"></div>
      <a href="" class="link" title="${title}">${title}</a>
+	 </div>
+	 ${icon}
     </div>`;
+		
 	return el;
 };
 
@@ -141,21 +165,28 @@ function createDataOfTable() {
 createHeadOfTable();
 createDataOfTable();
 
-var open = 0;
+
 $(".filters-label").click(function () {
+	
+
+	togglefilters();	
 	localStorageFilters();
-	togglefilters();
 });
 
 var element = $(".filters-conatiner")[0];
 
+
+
+
 function togglefilters() {
-	if (open % 2) {
+	
+	if ($(".filters-conatiner").attr("data-collapsed")=="true") {
 		expandSection(element);
-	} else {
+	}
+	 else { 
 		collapseSection(element);
 	}
-	open++;
+	
 }
 
 var selectOneRowPar = $("tbody tr");
@@ -228,37 +259,44 @@ function printSelectCount() {
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-localStorageFilters();
+
+
 
 function localStorageFilters() {
-	var filterCollapsedLoc = localStorage.getItem("closed_filters");
+	
 	var tableFilters = $(".filters-conatiner").attr("data-collapsed");
 
-	if (tableFilters == "false"|| tableFilters== undefined) {
-		localStorage.setItem("closed_filters", "false");
+	if (tableFilters == "false") {
+		localStorage.setItem("collapsed", "false");
 
 	}
 
 
 	if (tableFilters == "true") {
-		localStorage.setItem("closed_filters", "true");
+		localStorage.setItem("collapsed", "true");
 
 	}
 
-	/*
-	 if (filterCollapsedLoc == "true") {
-		 debugger;
-	 	console.log(filterCollapsedLoc);
-	 	tableFilterContainer[0].setAttribute("data-collapsed","true")
-	 	tableFilterContainer[0].setAttribute("style", "height:auto");
-	 }
-	 if (filterCollapsedLoc == "true") {
-		 debugger;
-	 	console.log(filterCollapsedLoc);
-	 	tableFilterContainer[0].setAttribute("data-collapsed","false")
-	 	tableFilterContainer[0].setAttribute("style", "height:0px");
-	 }
-	 */
+	
+	
+	
+		
+	
 }
+
+
+var filterCollapsedLoc = localStorage.getItem("collapsed");
+console.log("collapsed "+filterCollapsedLoc)
+
+	 if (filterCollapsedLoc == "true") {
+		$(".filters-conatiner").attr("data-collapsed","true").css("height",0);
+		
+
+	 }
+	 if (filterCollapsedLoc == "false") {
+		$(".filters-conatiner").attr("data-collapsed","false").removeAttr("style")
+		
+	
+	 }
+

@@ -49,10 +49,9 @@
 
 
   window.tableHeadtop=function(addheight){
+if($(".filter-parent").length==0){return}
     var navheight =$("nav.sidebar.top").height();
 var filterheight =$(".filter-parent")[0].offsetHeight+addheight;
-
-
 $("thead").css("top",navheight+filterheight+"px");
 
   }

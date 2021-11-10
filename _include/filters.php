@@ -2,7 +2,7 @@
     <div class="filters-label">
         pantazis
     </div>
-    <div class="filters-conatiner">
+    <div class="filters-conatiner" data-collapsed="true" style="height:0">
     <div class="filters-padding">
             <div class="input-padding">
                 <input type="text">

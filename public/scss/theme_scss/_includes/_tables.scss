@@ -1,4 +1,5 @@
 //-----------------------------------------------------filters----------------------------------
+$filterpadding:.5rem;
 @mixin inputsize($size,$num,$num2) {
   flex: 1 1 $size;
 
@@ -14,17 +15,20 @@
   margin-left: var(--section-padding);
   margin-right: var(--section-padding);
   padding-bottom: var(--section-padding);
-  position: sticky;
-  top: $navSidebarTop;
+ 
+  
   @include themeColor("background-color", $ice, $bluedarkbl);
   z-index: 1;
-
-  border-bottom: var(--section-padding) solid;
   @include themeColor("border-color", $white, $black_blue);
+  @media (min-width: $xxl){
+  top: $navSidebarTop;
+  border-bottom: var(--section-padding) solid;
+  position: sticky;}
 }
 
 .filters-padding {
   @include themeColor("background-color", $white, $black_blue);
+  padding: $filterpadding;
 
   background: $white;
   border-radius: $border-radius;
@@ -36,9 +40,21 @@
   input {
     width: 100%;
   }
-  padding: 1.25rem;
+  padding: $filterpadding;
+  @include inputsize(100%,1,1);
 
-  @include inputsize(16.6666%,0.5,2);
+  @media (min-width:$md) {  
+  @include inputsize(50%,1,1);
+  }
+    
+  @media (min-width:$lg) {
+  @include inputsize(33.3333%,1,1);
+  }
+ 
+  @media (min-width:$xxl) {
+    @include inputsize(16.6666%,0.5,2);
+        
+  }
 }
 .filters-label {
   border-bottom: 1px solid;
@@ -48,10 +64,13 @@
   cursor: pointer;
 }
 
+
 .filters-conatiner {
-  transition: height 0.3s linear;
+  transition: height .3s linear;
   height: auto;
   overflow: hidden;
+
+  
 }
 
 //-----------------------------------------------------filters-end----------------------------------
@@ -90,7 +109,7 @@ tbody {
   tr {
     @include themeColor("background", $white, $black_blue);
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: $xxl) {
       &.selected {
         td {
           a {
@@ -133,7 +152,9 @@ tbody {
       }
     }
     background-color: $white;
+    @media (min-width: $xxl){
     padding: 0.35em;
+    }
   }
 }
 
@@ -167,7 +188,38 @@ table th {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+
+table tr  td{
+  @media (max-width: $xxl) {
+  justify-content: center;
+  align-items: space-around;
+  display: flex; 
+  flex: 0 0 25%;
+  margin-bottom: -1px;}
+  
+  
+
+  @media (max-width: $lg) {
+    flex: 0 0 33.3333%;
+    
+    
+    }
+    @media (max-width: $md) {
+      flex: 0 0 50%;
+      
+      
+      }
+      @media (max-width: $sm) {
+        flex: 0 0 100%;
+        
+        
+        }
+}
+
+@media screen and (max-width: $xxl) {
+  .section-main.tables {
+    background-color: transparent;
+  }
   .title_mobile {
     display: block;
     font-weight: bold;
@@ -194,8 +246,11 @@ table th {
 
   table tr {
     border-bottom: 3px solid #ddd;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 0.625em;
+    justify-content: space-between;
+   
   }
 
   table td {
@@ -203,7 +258,8 @@ table th {
     display: flex;
     font-size: 0.8em;
     text-align: center;
-    flex-direction: column;
+    flex-direction: column;  
+    
   }
   table .hide-t {
     display: none;
@@ -269,15 +325,44 @@ span.table-time {
 }
 
 //-----------------------------------------------------action--------------------------------
-
+.p-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .actions-container {
   display: flex;
   justify-content: space-around;
   @include themeColor("color", $dark_blue, darken($ice, 25%));
   font-size: 120%;
-  :hover {
+  & > *{
+    position: relative;
+  }
+  .popaction {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    opacity: 0;    
+    transition:all .3s linear;
+    transform: translate(20px, 20px);
+    z-index: 1;
+}
+  & > *:hover {
+    font-size: 120%;
     @include themeColor("color", $white, $white);
     cursor: pointer;
+    .popaction {
+      opacity: 1;
+      background-color: #ffffff;
+      color: #000;
+      padding: 10px;
+      border-radius: $border-radius;
+      
+      transform: translate(0, 0);
+
+    }
   }
 }
 
@@ -296,10 +381,15 @@ span.table-time {
 }
 
 //--------------------------------------DOMAIN NAME-----------------------------------------
+.flex-left-el {
+  display: flex;
+  align-items: center;
+}
 .domain-name {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  
   .icon {
     color: $orange2;
     margin-right: 5px;

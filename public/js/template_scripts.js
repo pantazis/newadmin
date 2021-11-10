@@ -41,11 +41,10 @@
 
 
 
-
   $(window).resize(function () {
     noanimαtion();
     tableHeadtop(0);
-
+  
   });
 
 

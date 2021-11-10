@@ -11507,7 +11507,10 @@ main {
     padding-right: 0.9375rem; }
 
 .closeNav nav.sidebar.navbar {
-  width: 4.8125rem; }
+  width: 15.5rem; }
+  @media (min-width: 1503px) {
+    .closeNav nav.sidebar.navbar {
+      width: 4.8125rem; } }
 .closeNav main {
   padding-left: 4.8125rem; }
 .closeNav .logo {
@@ -15174,7 +15177,7 @@ input[type="checkbox"] {
   bottom: 0%;
   width: calc(100% - 15.5rem);
   height: 0px;
-  background: #0e0c28;
+  background: #ff7761;
   color: #efeff6;
   position: fixed;
   overflow: hidden;

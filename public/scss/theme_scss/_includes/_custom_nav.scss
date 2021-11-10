@@ -424,7 +424,11 @@ main {
 }
 .closeNav {
     nav.sidebar.navbar {
+        width: $sidebarWidth;
+        @media  (min-width:$xxl){
         width: $sidebarWidthClosed;
+        }
+
     }
     main {
         padding-left: $sidebarWidthClosed;

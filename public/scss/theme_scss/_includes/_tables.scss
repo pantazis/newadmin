@@ -73,9 +73,6 @@ table > * {
   user-select: none;
 }
 
-
-
-
 table {
   border-collapse: collapse;
   margin: 0;
@@ -327,7 +324,7 @@ input[type="checkbox"] {
   }
  
   height: 0px;
-  @include themeColor("background", $black_blue, $pomegranade);
+  @include themeColor("background", $pomegranade, $pomegranade);
   color: $ice;
   position: fixed;
   overflow: hidden;

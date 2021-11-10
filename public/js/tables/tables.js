@@ -198,7 +198,7 @@ function createDataOfTable() {
 
 createHeadOfTable();
 createDataOfTable();
-localStorageFilters()
+
 
 
 

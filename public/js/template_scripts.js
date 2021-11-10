@@ -44,7 +44,7 @@
   $(window).resize(function () {
     noanimαtion();
     tableHeadtop(0);
-  
+
   });
 
 
@@ -132,6 +132,7 @@ $("thead").css("top",navheight+filterheight+"px");
 
 
 var menuIsCloseCheck = $("body").hasClass("closeNav");
+
 if (menuIsCloseCheck == true ){
   localStorage.setItem("closeNav", "false");
 }
@@ -200,6 +201,8 @@ $(".d1").click(function(){
 });
 
   var isDark = localStorage.getItem("dark");
+
+
   if (isDark == null) {
     localStorage.setItem("dark", "false");
   }

@@ -120,9 +120,15 @@ $("thead").css("top",navheight+filterheight+"px");
     }
 
   }
+  $(".logo-box,.logo-text").click(function(){
+    url = $(this).attr("data-href");
+    window.location.assign(url);
+    l
 
-  $(".logo").click(function () {
-/////////////////////////////////////////////////////////////////////
+  });
+
+  $(".burger-menu").click(function () {
+
 
 
 var menuIsCloseCheck = $("body").hasClass("closeNav");
@@ -133,16 +139,15 @@ if (menuIsCloseCheck == false ){
   localStorage.setItem("closeNav", "true");
 }
 
-//////////////////////////////////////////////////////////////////////
-
-
-
-
 
     $("body").toggleClass("closeNav");
     gridRefresh();
 
   });
+
+
+
+
   $(".fi-sr-menu-burger_left.only-mobile").click(function () {
     $(".logo-button").click();
   });

@@ -186,7 +186,12 @@ nav.sidebar.navbar {
         display: none;
     }
     .closeNav.hover & {
-        width: $sidebarWidth;
+      
+
+        @media (min-width: $xxl) { 
+            width: $sidebarWidth;
+        }
+       
     }
     ul.side-nav-list {
         list-style: none;
@@ -424,14 +429,16 @@ main {
 }
 .closeNav {
     nav.sidebar.navbar {
-        width: $sidebarWidth;
+        width:0;
         @media  (min-width:$xxl){
         width: $sidebarWidthClosed;
         }
 
     }
     main {
+        @media (min-width: $xxl) { 
         padding-left: $sidebarWidthClosed;
+        }
     }
     .logo {
         width: $sidebarWidthClosed;

@@ -11308,8 +11308,9 @@ nav.sidebar.navbar {
   overflow: hidden; }
   nav.sidebar.navbar.right {
     display: none; }
-  .closeNav.hover nav.sidebar.navbar {
-    width: 15.5rem; }
+  @media (min-width: 1503px) {
+    .closeNav.hover nav.sidebar.navbar {
+      width: 15.5rem; } }
   nav.sidebar.navbar ul.side-nav-list {
     list-style: none;
     margin: 0;
@@ -11507,12 +11508,13 @@ main {
     padding-right: 0.9375rem; }
 
 .closeNav nav.sidebar.navbar {
-  width: 15.5rem; }
+  width: 0; }
   @media (min-width: 1503px) {
     .closeNav nav.sidebar.navbar {
       width: 4.8125rem; } }
-.closeNav main {
-  padding-left: 4.8125rem; }
+@media (min-width: 1503px) {
+  .closeNav main {
+    padding-left: 4.8125rem; } }
 .closeNav .logo {
   width: 4.8125rem; }
   .closeNav .logo img {

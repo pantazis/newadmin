@@ -1,11 +1,11 @@
 
 
 <nav class="sidebar top shadow-2-strong">
-    <div class="logo">
-        <div class="logo-box">
+    <div class="logo" >
+        <div class="logo-box" data-href="<?=$url_without_last_part?>">
             <img src="./public/img/nav/logo.svg" alt="" class="logo-img">
         </div>
-        <div class="logo-text">
+        <div class="logo-text" data-href="<?=$url_without_last_part?>">
             <span class="icon-logo_text" alt=""></span>
         </div>
         <div class="burger-menu">
@@ -23,7 +23,7 @@
             <path class="st0" d="M11.8,14.1L11.8,14.1c-0.2-0.1-0.4-0.1-0.6-0.2l0,0C5.3,11.8,0.7,6.4,0.7,0v75c0-6.2,4.4-11.5,10.1-13.7l0,0
 	c0.5-0.2,1-0.4,1.5-0.5l0,0c5-1.8,9.2-4.9,12.2-9s4.8-9,4.8-14.3c0-5.4-1.8-10.4-4.9-14.5S16.9,15.7,11.8,14.1z" />
         </svg>
-    </div>
+</div>
     <div class="nav-container">
         <div class="nav-list list1">
             <?php $arrmenu = [
@@ -279,7 +279,7 @@
         [$url_without_last_part . '/02', 'Ready_02'],
         [$url_without_last_part . '/03', 'Ready_03'],
         [$url_without_last_part . '/dashboard', "Dashboard"],
-        [$url_without_last_part . '/05', "Test_05"],
+        [$url_without_last_part . '/tables', "tables"],
         [$url_without_last_part . '/06', "Test_06"],
         [$url_without_last_part . '/07', "Test_07"],
         [$url_without_last_part . '/08', 'Test_08'],

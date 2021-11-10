@@ -208,7 +208,7 @@ createDataOfTable();
 var open = 0;
 $(".filters-label").click(function () {
 	localStorageFilters();
-	togglefilters();
+		togglefilters();
 });
 
 
@@ -348,6 +348,7 @@ var filterCollapsedLoc = localStorage.getItem("filters_open");
 	function localStorageFilters(){
 		var tableFilterContainer = $(".filters-conatiner")
 		var tableFilters = tableFilterContainer.attr("data-collapsed");
+
 		if (filterCollapsedLoc == undefined){
 			localStorage.setItem("filters_open", "false")
 
@@ -360,19 +361,21 @@ var filterCollapsedLoc = localStorage.getItem("filters_open");
 			localStorage.setItem("filters_open", "false")
 
 		}
-
+/*
 		if (filterCollapsedLoc == "true" ){
 
-			tableFilterContainer.css("height","0px;")
+			tableFilterContainer.css("height","")
+			debugger;
 
 		}
 		if (filterCollapsedLoc == "false" ){
 
-			tableFilterContainer.css("")
+			tableFilterContainer.css("height","0px;")
+			debugger;
 
 
 
-		}
+		}*/
 	}
 
 

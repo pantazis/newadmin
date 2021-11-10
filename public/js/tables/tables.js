@@ -1,15 +1,9 @@
 tableElements = {};
 
-
-
 tableElements.checkbox = function (title) {
 	var el = `<input type="checkbox" id="${title}" name="${title}" value="Bike",>`;
 	return el;
 };
-
-
-
-
 
 tableElements.filters = function (title) {
 	var el = `<div class="filter-box">
@@ -22,25 +16,15 @@ tableElements.filters = function (title) {
 	return el;
 };
 
-
-
-
 tableElements.email = function (title) {
 	var el = `<a href="" class="email">${title}</a>`;
 	return el;
 };
 
-
-
-
 tableElements.link = function (title) {
 	var el = `<a href="">${title}</a>`;
 	return el;
 };
-
-
-
-
 
 tableElements.date = function (title) {
 	title = title.split(" ");
@@ -50,12 +34,6 @@ tableElements.date = function (title) {
     </div>`;
 	return el;
 };
-
-
-
-
-
-
 
 tableElements.isActive = function () {
 	var isActive = Math.round(Math.random());
@@ -74,12 +52,6 @@ tableElements.isActive = function () {
 	return el;
 };
 
-
-
-
-
-
-
 tableElements.action = function () {
 	var el = `<div class="actions-container">
     <div class="icon-fi-sr-time-past">				</div>
@@ -89,13 +61,6 @@ tableElements.action = function () {
 </div>`;
 	return el;
 };
-
-
-
-
-
-
-
 
 tableElements.singleIcon = function (title) {
 	var isActive = Math.round(Math.random() * 2);
@@ -118,12 +83,6 @@ tableElements.singleIcon = function (title) {
 	return el;
 };
 
-
-
-
-
-
-
 tableElements.domainName = function (title) {
 	var isActive = Math.round(Math.random());
 	if (isActive) {
@@ -137,12 +96,6 @@ tableElements.domainName = function (title) {
     </div>`;
 	return el;
 };
-
-
-
-
-
-
 
 function createHeadOfTable() {
 	var headTemplate = "<tr>";
@@ -160,12 +113,6 @@ function createHeadOfTable() {
 	headTemplate += "</tr>";
 	$("thead").html(headTemplate);
 }
-
-
-
-
-
-
 
 function createDataOfTable() {
 	var headTemplate = "";
@@ -191,41 +138,16 @@ function createDataOfTable() {
 	$("tbody").html(headTemplate);
 }
 
-
-
-
-
-
 createHeadOfTable();
 createDataOfTable();
-
-
-
-
-
-
 
 var open = 0;
 $(".filters-label").click(function () {
 	localStorageFilters();
-		togglefilters();
+	togglefilters();
 });
 
-
-
-
-
-
-
 var element = $(".filters-conatiner")[0];
-
-
-
-
-
-
-
-
 
 function togglefilters() {
 	if (open % 2) {
@@ -235,13 +157,6 @@ function togglefilters() {
 	}
 	open++;
 }
-
-
-
-
-
-
-
 
 var selectOneRowPar = $("tbody tr");
 var selectOneRow = $(' tbody input[type="checkbox"]');
@@ -258,13 +173,6 @@ selectOneRow.click(function () {
 clearAllSelections.click(function () {
 	multiRowSelection(true);
 });
-
-
-
-
-
-
-
 
 function multiRowSelection(clear = false) {
 	if (selectAllCheck.is(":checked")) {
@@ -290,12 +198,6 @@ function multiRowSelection(clear = false) {
 	printSelectCount();
 }
 
-
-
-
-
-
-
 function oneRowSelection(el) {
 	if ($(el).is(":checked")) {
 		$(el).closest("tr").addClass("selected");
@@ -305,11 +207,6 @@ function oneRowSelection(el) {
 	openActions();
 	printSelectCount();
 }
-
-
-
-
-
 
 function openActions() {
 	var ischecked = $("table input").is(":checked");
@@ -321,12 +218,6 @@ function openActions() {
 	}
 }
 
-
-
-
-
-
-
 function printSelectCount() {
 	var counterSel = $(".selected").length;
 	if (counterSel == 1) {
@@ -337,66 +228,37 @@ function printSelectCount() {
 	}
 }
 
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+localStorageFilters();
 
-var filterCollapsedLoc = localStorage.getItem("filters_open");
+function localStorageFilters() {
+	var filterCollapsedLoc = localStorage.getItem("closed_filters");
+	var tableFilters = $(".filters-conatiner").attr("data-collapsed");
 
+	if (tableFilters == "false"|| tableFilters== undefined) {
+		localStorage.setItem("closed_filters", "false");
 
-	function localStorageFilters(){
-		var tableFilterContainer = $(".filters-conatiner")
-		var tableFilters = tableFilterContainer.attr("data-collapsed");
-
-		if (filterCollapsedLoc == undefined){
-			localStorage.setItem("filters_open", "false")
-
-		}
-		if (tableFilters == 'true'){
-			localStorage.setItem("filters_open", "true")
-
-		}
-		if (tableFilters == 'false'){
-			localStorage.setItem("filters_open", "false")
-
-		}
-/*
-		if (filterCollapsedLoc == "true" ){
-
-			tableFilterContainer.css("height","")
-			debugger;
-
-		}
-		if (filterCollapsedLoc == "false" ){
-
-			tableFilterContainer.css("height","0px;")
-			debugger;
-
-
-
-		}*/
 	}
 
 
+	if (tableFilters == "true") {
+		localStorage.setItem("closed_filters", "true");
 
+	}
 
-
-	/*function localStorageFilters(){
-		////
-
-
-	var tableFilters = $(".filters-conatiner"+"[data-collapsed='false']")[0];
-
-	/////
-	var elem = $(".filters-conatiner")
-
-	if (filterCollapsed == true ){
-		localStorage.setItem("filtersOpen", "false");	}
-  	if (filterCollapsed == false ){
-		localStorage.setItem("filtersOpen", "true");	}
-	if (filterCollapsedLoc == 'true'){
-		elem[0].setAttribute('data-collapsed', 'true');	}
-	if (filterCollapsedLoc == 'false'){
-		elem[0].setAttribute('data-collapsed', 'false');		;
-	}}*/
+	/*
+	 if (filterCollapsedLoc == "true") {
+		 debugger;
+	 	console.log(filterCollapsedLoc);
+	 	tableFilterContainer[0].setAttribute("data-collapsed","true")
+	 	tableFilterContainer[0].setAttribute("style", "height:auto");
+	 }
+	 if (filterCollapsedLoc == "true") {
+		 debugger;
+	 	console.log(filterCollapsedLoc);
+	 	tableFilterContainer[0].setAttribute("data-collapsed","false")
+	 	tableFilterContainer[0].setAttribute("style", "height:0px");
+	 }
+	 */
+}

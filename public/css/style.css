@@ -11278,7 +11278,8 @@ main,
 .curve,
 .burger-menu,
 .logo-text,
-.icon-fi-sr-menu-burger {
+.icon-fi-sr-menu-burger,
+.selectionActionsContainer {
   transition-duration: 0.3s;
   transition-timing-function: ease-in; }
 
@@ -15171,13 +15172,15 @@ input[type="checkbox"] {
 
 .selectionActionsContainer {
   bottom: 0%;
-  width: calc(100% - 4.8125rem);
+  width: calc(100% -  15.5rem);
   height: 0px;
-  background: #0e0c28;
+  background: #ff7761;
   color: #efeff6;
   position: fixed;
   overflow: hidden;
-  transition: height 0.3s ease-in; }
+  transition: height width; }
+  .closeNav .selectionActionsContainer {
+    width: calc(100% - 4.8125rem); }
   .dark .selectionActionsContainer {
     background: #ff7761; }
   .selectionActionsContainer.open {

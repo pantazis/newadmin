@@ -29,8 +29,9 @@
     $("body").removeClass("closeNav");
   }
 
-
-
+  function mediaQueryClosedMenu(size) {
+  debugger;
+  }
 
 
 
@@ -45,7 +46,7 @@
   $(window).resize(function () {
     noanimαtion();
     tableHeadtop(0);
-
+    mediaQueryClosedMenu();
   });
 
 

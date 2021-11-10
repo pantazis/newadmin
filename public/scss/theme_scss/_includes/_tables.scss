@@ -73,9 +73,6 @@ table > * {
   user-select: none;
 }
 
-
-
-
 table {
   border-collapse: collapse;
   margin: 0;
@@ -321,13 +318,17 @@ input[type="checkbox"] {
 
 .selectionActionsContainer {
   bottom: 0%;
-  width: calc(100% - #{$sidebarWidthClosed});
+  width: calc(100% -  #{$sidebarWidth});
+  .closeNav & {
+    width: calc(100% - #{$sidebarWidthClosed});
+
+  }
   height: 0px;
-  @include themeColor("background", $black_blue, $pomegranade);
+  @include themeColor("background", $pomegranade, $pomegranade);
   color: $ice;
   position: fixed;
   overflow: hidden;
-  transition: height 0.3s ease-in;
+  transition: height width;
   &.open {
     height: 70px;
   }

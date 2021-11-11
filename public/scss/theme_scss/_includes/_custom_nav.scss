@@ -3,7 +3,7 @@ $sidebarWidthClosed: 4.8125rem;
 $navSidebarTop: 4.68rem;
 $transitiontime: 0.3s;
 $hover-move: 0.4375rem;
-$marginfromnav:0.625rem;
+$marginfromnav: 0.625rem;
 $topMargin: #{$navSidebarTop + $marginfromnav}; //5.3125rem;
 $searchHeight: 3.125rem;
 $search-padding: 1rem;
@@ -186,12 +186,9 @@ nav.sidebar.navbar {
         display: none;
     }
     .closeNav.hover & {
-
-
         @media (min-width: $xxl) {
             width: $sidebarWidth;
         }
-
     }
     ul.side-nav-list {
         list-style: none;
@@ -346,10 +343,13 @@ nav.sidebar.top {
         height: $navSidebarTop;
         position: relative;
         left: 0.25rem;
+
         .custom-popup {
-            :not(.opennav1) &{
-                pointer-events:all;
+            pointer-events: none;
+            .opennav1 & {
+                pointer-events: all;
             }
+
             a {
                 display: flex;
                 justify-content: space-between;
@@ -431,15 +431,14 @@ main {
 }
 .closeNav {
     nav.sidebar.navbar {
-        width:0;
-        @media  (min-width:$xxl){
-        width: $sidebarWidthClosed;
+        width: 0;
+        @media (min-width: $xxl) {
+            width: $sidebarWidthClosed;
         }
-
     }
     main {
         @media (min-width: $xxl) {
-        padding-left: $sidebarWidthClosed;
+            padding-left: $sidebarWidthClosed;
         }
     }
     .logo {

@@ -82,7 +82,7 @@ $filterpadding:.3rem;
   span{
     margin-left:5px;
   }
- 
+
 }
 
 .filters-conatiner {
@@ -126,6 +126,11 @@ table caption {
 tbody {
   tr {
     @include themeColor("background", $white, $black_blue);
+    @include themeColor("border-color", $gray-200, $gray-900);
+
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
 
     @media screen and (min-width: $xxl) {
       &.selected {
@@ -210,34 +215,34 @@ table tr td {
   @media (max-width: $xxl) {
   justify-content: center;
   align-items: stretch;
-  display: flex; 
+  display: flex;
   flex: 1 0 33.3333%;
   margin-bottom: -1px;
   &:last-of-type{
     flex-basis:100%;
-    
-    
+
+
   }
 
 }
-  
-  
+
+
 
   @media (max-width: $lg) {
     flex-basis: 33.3333%;
-    
-    
+
+
     }
     @media (max-width: $md) {
       flex-basis: 50%;
-      
-      
+
+
       }
       @media (max-width: $sm) {
         flex-basis: 100%;
-        
-        
-        
+
+
+
         }
 }
 

@@ -339,6 +339,7 @@ var filterCollapsedLoc = localStorage.getItem("collapsed");
 					selectedChecked.closest('tr').removeClass("selected");
 
 				}
+				printSelectCount();
 			}
 
 			lastChecked = this;

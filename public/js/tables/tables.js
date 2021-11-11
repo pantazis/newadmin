@@ -149,18 +149,14 @@ function createDataOfTable() {
 			
 			var title = tabledata.head[index].title;
 			var hideTitle = tabledata.head[index].hideMobile == true ? "hide-t" : "";
-			var hideAllMobile =
-				tabledata.head[index].hideAllMobile == true ? "hide-t" : "";
+			var hideAllMobile =	tabledata.head[index].hideAllMobile == true ? "hide-t" : "";
 			var value = this.value;
 
 			if (this.element != null) {
-				if(this.element=="checkbox"){
-					
+				if(this.element=="checkbox"){					
 					value = tableElements[this.element](value,rownum);
-
 				}else{
-					value = tableElements[this.element](value);
-				
+					value = tableElements[this.element](value);				
 				}
 			}
 

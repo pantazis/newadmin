@@ -186,12 +186,12 @@ nav.sidebar.navbar {
         display: none;
     }
     .closeNav.hover & {
-      
 
-        @media (min-width: $xxl) { 
+
+        @media (min-width: $xxl) {
             width: $sidebarWidth;
         }
-       
+
     }
     ul.side-nav-list {
         list-style: none;
@@ -347,7 +347,9 @@ nav.sidebar.top {
         position: relative;
         left: 0.25rem;
         .custom-popup {
-            pointer-events: none;
+            :not(.opennav1) &{
+                pointer-events:all;
+            }
             a {
                 display: flex;
                 justify-content: space-between;
@@ -436,7 +438,7 @@ main {
 
     }
     main {
-        @media (min-width: $xxl) { 
+        @media (min-width: $xxl) {
         padding-left: $sidebarWidthClosed;
         }
     }

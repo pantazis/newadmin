@@ -1,10 +1,20 @@
 //-----------------------------------------------------filters----------------------------------
-$filterpadding:.5rem;
+$filterpadding:.3rem;
+
+.section-main.tables{
+  @media (min-width:$xxl){
+  padding:var(--section-padding);
+  padding-top:0;
+  }
+   padding-top:0;
+   border-radius:$border-radius;
+
+ }
 @mixin inputsize($size,$num,$num2) {
   flex: 1 1 $size;
 
   &.half {
-    flex: 1 1 $size*$num;
+    flex: 1 1 $size * $num;
   }
   &.double {
     flex: 1 1 $size * $num2;
@@ -19,8 +29,9 @@ $filterpadding:.5rem;
   
   @include themeColor("background-color", $ice, $bluedarkbl);
   z-index: 1;
-  @include themeColor("border-color", $white, $black_blue);
+ 
   @media (min-width: $xxl){
+  @include themeColor("border-color", $white, $black_blue);
   top: $navSidebarTop;
   border-bottom: var(--section-padding) solid;
   position: sticky;}
@@ -194,23 +205,23 @@ table tr  td{
   justify-content: center;
   align-items: space-around;
   display: flex; 
-  flex: 0 0 25%;
+  flex: 1 0 25%;
   margin-bottom: -1px;}
   
   
 
   @media (max-width: $lg) {
-    flex: 0 0 33.3333%;
+    flex-basis: 33.3333%;
     
     
     }
     @media (max-width: $md) {
-      flex: 0 0 50%;
+      flex-basis: 50%;
       
       
       }
       @media (max-width: $sm) {
-        flex: 0 0 100%;
+        flex-basis: 100%;
         
         
         }
@@ -369,6 +380,7 @@ span.table-time {
 //-----------------------------------------------------singleIcon--------------------------------
 
 .singleIcon {
+  margin-left: 5px;
   &.red {
     color: $red2;
   }
@@ -387,7 +399,10 @@ span.table-time {
 }
 .domain-name {
   display: flex;
+  justify-content: center;
+  @media(min-width: $xxl){
   justify-content: space-between;
+  }
   align-items: center;
   
   .icon {

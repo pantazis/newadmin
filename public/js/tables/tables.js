@@ -269,7 +269,7 @@ function localStorageFilters() {
 }
 
 var filterCollapsedLoc = localStorage.getItem("collapsed");
-//console.log("collapsed "+filterCollapsedLoc)
+////console.log("collapsed "+filterCollapsedLoc)
 
 if (filterCollapsedLoc == "true") {
 	$(".filters-conatiner").attr("data-collapsed", "true").css("height", 0);

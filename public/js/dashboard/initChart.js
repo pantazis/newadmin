@@ -97,26 +97,26 @@ $(".dateButton").daterangepicker(
 );
 
 function loopData(data,obj) {
-	
-	 
+
+
 		$(data).each(function(){
-		
+
 	var allperiod =	this[searchDataObj.period];
 	for(date in allperiod){
 	var singledate = allperiod[date];
 	for(stat in singledate){
 
-		
+
 		if(stat.search("data")!=-1){
 			if(obj[stat] == undefined){
 				obj[stat]=[];
-				
+
 			}
 			var val =singledate[stat].datasets[0].data[0]
 			obj[stat].push(val)
-			console.log(obj[stat]);
-			
-	
+			//console.log(obj[stat]);
+
+
 
 		}
 	}
@@ -130,15 +130,15 @@ function loopData(data,obj) {
 
 function loopValues(obj,html){
 
-	for(stat in obj){		
+	for(stat in obj){
 		var value = obj[stat].reduce(function(a, b){
             return a + b;
         }, 0);
 		value= Math.round(value);
 		obj[stat]=value;
 
-		if (html == true){	
-		$("."+stat+" .numD").html(value);	
+		if (html == true){
+		$("."+stat+" .numD").html(value);
 		}
 	}
 
@@ -157,7 +157,7 @@ function compareVal(beforeObj,afterOBj){
 			el.find(".percent").removeClass("minus-p")
 
 		}
-		
+
 		if(percent<0){
 			el.find(".percent").removeClass("plus-p")
 			el.find(".percent").addClass("minus-p")
@@ -176,19 +176,19 @@ function compareVal(beforeObj,afterOBj){
 function sumValues(){
 	obj = {};
 	obj2 = {};
-	
-	
 
-	
+
+
+
 	loopData(filteredData,obj);
 	loopData(filteredDataBack,obj2);
-	
+
 
 	loopValues(obj,true)
 	loopValues (obj2,false)
 
 	compareVal(obj2,obj);
-	
+
 
 
 
@@ -246,8 +246,8 @@ function getQueriedData() {
 	var starDateEndOfDay = moment(startDate, "DDMMYYYY").endOf(period);
 	var endDateEndOfDay = moment(endDate, "DDMMYYYY").endOf(period);
 
-	////console.log(starDateEndOfDay.format("DD/MM/YYYY"));
-	////console.log(endDateEndOfDay.format("DD/MM/YYYY"));
+	//////console.log(starDateEndOfDay.format("DD/MM/YYYY"));
+	//////console.log(endDateEndOfDay.format("DD/MM/YYYY"));
 	filteredDataBack = {};
 	filteredDataBack[period] = {};
 	filteredData = {};
@@ -273,7 +273,7 @@ function getQueriedData() {
 
 
 	var count = Object.keys(filteredData[period]).length;
-	
+
 	var startDateStat = moment(searchDataObj.startDate, "DDMMYYYY").subtract(count, period + "s").endOf(period);
 	var startDateStatFormat = startDateStat.format(dateFormat);
 	var endDateStat = moment(searchDataObj.startDate, "DDMMYYYY").subtract(1, period).endOf(period + "s");
@@ -289,7 +289,7 @@ function getQueriedData() {
 
 	}
 
-	
+
 
 
 
@@ -340,7 +340,7 @@ function nodata(data) {
 }
 
 function joinvalues(sumValue) {
-	//console.log(0);
+	////console.log(0);
 
 	var parentArr = [];
 	var arrSum = [];
@@ -356,7 +356,7 @@ function joinvalues(sumValue) {
 		moment(Obj.startDate, "DDMMYYYY").add(1, "years") >
 		moment(Obj.endDate, "DDMMYYYY")
 	) {
-		//console.log(1);
+		////console.log(1);
 
 		var yearEndEndOf = moment(Obj.endDate, "DDMMYYYY").endOf("year");
 		var yearEndOfformat = yearEndEndOf.format("YYYY");
@@ -364,7 +364,7 @@ function joinvalues(sumValue) {
 		var yearStartEndOfformat = yearStartEndOf.format("YYYY");
 
 		if (yearStartEndOfformat != yearEndOfformat) {
-			//console.log(2);
+			////console.log(2);
 			var Value1 =
 				data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
 			var Value2 =
@@ -389,8 +389,8 @@ function joinvalues(sumValue) {
 
 			parentDatesChart3.push(yearStartEndOfformat);
 		}
-		////console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
-		////console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
+		//////console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
+		//////console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
 	}
 
 	parentDatesChart3.push(
@@ -421,15 +421,15 @@ function mergeAndGiveData(period) {
 					localData[chart]["datasets"]=[{label:"","data":[]}];
 
 				}
-				var label = createLabel(date[chart], singleData, period);             
-				var datasets = date[chart]["datasets"];				
+				var label = createLabel(date[chart], singleData, period);
+				var datasets = date[chart]["datasets"];
 				localData[chart]["labels"].push(label);
 
 				$(datasets).each(function (index) {
 					var localdataset = localData[chart]["datasets"][index];
 					localdataset["label"] = datasets[index]["label"];
 					localdataset["data"].push(datasets[index]["data"][0]);
-					
+
 				});
 			}
 			if (chart == "chart3") {
@@ -464,7 +464,7 @@ function mergeAndGiveData(period) {
 					});
 				}
 			}
-	
+
 
 
 			//localData[chart]["datasets"]

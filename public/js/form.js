@@ -3,7 +3,7 @@
     var textWarning = "js__helper-text--warning";
     var borderWarning = "js__activation-indicator--warning"
     var labelWarning ="js__label-text--warning";
-    var inputIsFocused = false;    
+    var inputIsFocused = false;
     var regularExpressions={
         email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i,
         domain:/^(([a-zA-Z]{1})|([a-zA-Z]{1}[a-zA-Z]{1})|([a-zA-Z]{1}[0-9]{1})|([0-9]{1}[a-zA-Z]{1})|([a-zA-Z0-9][a-zA-Z0-9-_]{1,61}[a-zA-Z0-9]))\.([a-zA-Z]{2,6}|[a-zA-Z0-9-]{2,30}\.[a-zA-Z]{2,3})$/i,
@@ -14,11 +14,11 @@
        // host:/.*/i,
        // ip:/.*/i
         ip:/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/i
-        
+
     }
 
-   
-   
+
+
 
     var errorMessages={
         email: `error mail`,
@@ -32,43 +32,43 @@
         required :"Παρακαλώ συμπλήρωσε όλα τα απαιτούμενα πεδία",
         host:"Ο nameserver που θέλεις να αποθηκεύσεις περιέχει μη αποδεκτούς χαρακτήρες.",
         ip:"Πρέπει να δηλώσεις μια έγκυρη IP διεύθυνση."
-       
+
 
     }
 
 
     //get all input
-   
+
     inputArr=[];
 
     var toggle = 0;
     $("i.material-text-field__trailing-icon").click((e)=>{
-     
-        
+
+
          var input=$(e.target).closest(".material-text-field__container").find("input");
         input.focus();
-        
+
 
         if(toggle%2==0){
-           
-        
-            input.attr("type","text");            
+
+
+            input.attr("type","text");
             $("i.material-text-field__trailing-icon").html('<img class="eye "  src="img/visible.svg" alt="">')
 
         }else{
-           
+
             input.attr("type","password");
             $("i.material-text-field__trailing-icon").html('<img class="eye" src="img/not_visible.svg" alt=""></img>');
 
-        }       
-        
-        
-        
+        }
+
+
+
         toggle++
     })
 
 
-function initValidation(form){  
+function initValidation(form){
     var form = form;
     var inputarr = $(form)[0];
     const formEL = inputarr;
@@ -81,50 +81,50 @@ submitForm();
 }
 
 $("form[action]").each(function(){
-    initValidation(this);     
+    initValidation(this);
 
     });
 
 
-  
+
   function inputkeyactions(el,form){
-     
+
   $(el).focusout(function(){
         inputIsFocused=false;
     });
 
     $(el).focusin(function(){
-            
+
         inputIsFocused=true;
 
     });
 
     $(el).keyup(function() {
-        
-             
-        if(inputIsFocused){            
+
+
+        if(inputIsFocused){
             submit(form);
 
-        }  
+        }
 });
   }
 
 
 
     function submit(form){
-         
+
     $(form).each(function(){
-        inputsObj = {};       
+        inputsObj = {};
         inputsObj.element=this;
-        inputsObj.valueEl=$(this).val();        
-        inputsObj.lengthEL=$(this).val().length;            
+        inputsObj.valueEl=$(this).val();
+        inputsObj.lengthEL=$(this).val().length;
         getattrforvalidation(this);
         inputArr.push(inputsObj);
-        
-       
-        
+
+
+
     });
-    
+
 
     validateProperties();
     inputArr=[];
@@ -134,16 +134,16 @@ $("form[action]").each(function(){
     //get propertis for validation
     function getattrforvalidation(el){
         var elAttributes = el.attributes;
-        $(elAttributes).each(function(index){ 
-                          
-            if(elAttributes[index].name.search("validate")!=-1){
-               // get all Validation props              
-                             
-               inputsObj[elAttributes[index].name]=elAttributes[index].value;
-             
+        $(elAttributes).each(function(index){
 
-                
-                
+            if(elAttributes[index].name.search("validate")!=-1){
+               // get all Validation props
+
+               inputsObj[elAttributes[index].name]=elAttributes[index].value;
+
+
+
+
             }
         });
 
@@ -152,37 +152,37 @@ $("form[action]").each(function(){
    //validate different properties
 
   function  validateProperties(){
-    resetForm(); 
+    resetForm();
 
-    
-    
-      
-    $(inputArr).each(function(){   
-            
-       var input =this;      
-             
+
+
+
+    $(inputArr).each(function(){
+
+       var input =this;
+
        if(input["data-validate-length"]!=undefined){
-        
+
             validateLength(input);
        }
-       
-       if(input["data-validate"]!=undefined){                            
+
+       if(input["data-validate"]!=undefined){
             validateType(input);
        }
-       
+
 
     });
 }
 function validateType(el){
-    
+
     var validationProps =el["data-validate"].split(" ");
-     
+
     $(validationProps).each(function(){
-       var singleprop = this; 
-   
+       var singleprop = this;
+
        singleprop=singleprop.valueOf()
         switch (singleprop) {
-            
+
             case "email":
                 checkvalidation(singleprop,el.valueEl,el);
             break;
@@ -192,7 +192,7 @@ function validateType(el){
             case "nameservers":
                 checkvalidation(singleprop,el.valueEl,el);
             break;
-            case "telephone":                
+            case "telephone":
                 checkvalidation(singleprop,el.valueEl,el);
             break;
             case "postcode":
@@ -209,14 +209,14 @@ function validateType(el){
                 checkvalidation(singleprop,el.valueEl,el);
             break;
             case "required":
-            
-            break;  
+
+            break;
         }
 
 
     });
-    
-   
+
+
 
 };
 
@@ -229,17 +229,17 @@ let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z
  var password_conatainer =$(el).parent().find(".password_strength_bar");
 var first =false;
  if(inputEL.valueEl.length>0 ){
-    if(password_conatainer.length==0){        
-    $(errorMessages.password).insertAfter( el ); 
+    if(password_conatainer.length==0){
+    $(errorMessages.password).insertAfter( el );
     password_conatainer =$(el).parent().find(".password_strength_bar");
     first =true;
-     
+
     }
 
 
-    
-    
-    
+
+
+
 
 if(inputValue.match(strongPassword)) {
     password_conatainer.attr("class","password_strength_bar strong");
@@ -248,19 +248,19 @@ if(inputValue.match(strongPassword)) {
    } else if(inputValue.match(mediumPassword)){
     password_conatainer.attr("class","password_strength_bar medium");
     password_conatainer.find(".pass_power").html("medium");
-           
-} else{ 
+
+} else{
     if(first){
     setTimeout(function(){
         password_conatainer.attr("class","password_strength_bar weak");
-        first =false;  
-      }, 100); 
+        first =false;
+      }, 100);
     }else{
         password_conatainer.attr("class","password_strength_bar weak");
 
-    }    
-    
-    password_conatainer.find(".pass_power").html("weak");     
+    }
+
+    password_conatainer.find(".pass_power").html("weak");
 }
  }else{
     password_conatainer.find(".pass_power").html("");
@@ -269,7 +269,7 @@ if(inputValue.match(strongPassword)) {
             $(".password_strength_bar").remove();
         },500)
 
-  
+
 
  }
 };
@@ -282,38 +282,38 @@ if(inputValue.match(strongPassword)) {
 function checkvalidation(attr,inputValue,element){
 
     var reg = inputValue.match(regularExpressions[attr]);
-    
-    
+
+
     if(reg==null){
-       
-      
+
+
         input_validation_error(errorMessages[attr],element.element,element.lengthEL);
 
     };
-    
+
 
 };
 
 
     function validateLength(inputEl){
-       
+
         var elValue = inputEl["data-validate-length"].split(" ");
         var len =  parseInt(inputEl["lengthEL"]);
         var curentInput = inputEl.element;
-        
-        
-      
+
+
+
         $(elValue).each(function(){
             if(this.search("min") != -1){
               var minCharacters = parseInt(this.replace("min",""));
-         
+
                if(minCharacters > len){
-                charactercount= minCharacters;                   
+                charactercount= minCharacters;
                 input_validation_error(errorMessages.min(charactercount),curentInput,inputEl.lengthEL);
 
 
                }
-                
+
 
             }
             if(this.search("max") != -1){
@@ -321,7 +321,7 @@ function checkvalidation(attr,inputValue,element){
 
               if(maxCharacters < len){
                  charactercount= maxCharacters;
-                 
+
                 input_validation_error(errorMessages.max(charactercount),curentInput,inputEl.lengthEL);
 
 
@@ -329,32 +329,32 @@ function checkvalidation(attr,inputValue,element){
 
             }
         })
-        
+
 
     }
 
 
 function input_validation_error(messege,el,inputEl){
-    
-    if(inputEl!=0){    
+
+    if(inputEl!=0){
     var inputConatainer =$(el).closest(".material-text-field__container");
-    var textbox = inputConatainer.find("#helper-text");  
+    var textbox = inputConatainer.find("#helper-text");
     var border =$(inputConatainer).find(".material-text-field__activation-indicator")
     var label = $(inputConatainer).find("#label-text");
-    
+
     textbox.html("<div class='messege'>"+messege+"</div>");
     textbox.addClass(textWarning);
-    border.addClass(borderWarning); 
+    border.addClass(borderWarning);
     label.addClass(labelWarning);
     }else{
         resetForm(inputEl);
-        
+
     }
 }
 
-resetForm=function (inputel){    
+resetForm=function (inputel){
     if(inputel==undefined){
- 
+
     $(".material-text-field__helper-text").html("");
     $("."+textWarning).removeClass(textWarning);
     $("."+borderWarning).removeClass(borderWarning);
@@ -367,29 +367,29 @@ resetForm=function (inputel){
     container.find("."+labelWarning ).removeClass(labelWarning);
 
     }
-    
+
 }
-function checkRequired(form){ 
-    
+function checkRequired(form){
+
     var forminput = form.find(".material-text-field__input-text");
 
     $(forminput).each(function(){
         var validate = $(this).attr("data-validate");
         if(validate.search("required")!= -1 && $(this).val().length==0 ){
-            console.log(1);            
-            errorflag = true;            
+            //console.log(1);
+            errorflag = true;
             input_validation_error(errorMessages.required,this,1);
             var inputparent = $(this).closest(".material-text-field__container")[0];
-            
-            
-            
+
+
+
             inputparent.style.animation = 'noshake .82s';
             setTimeout(function(){
-                inputparent.style.animation = 'shake .82s'; 
+                inputparent.style.animation = 'shake .82s';
             },100)
-            
-    
-    
+
+
+
         }else{
 
         }
@@ -397,34 +397,34 @@ function checkRequired(form){
 
     });
 
-    
-   
-   
+
+
+
 
 
 }
 
 function checkForError(){
-   
-    
+
+
     var errorsign = $(".js__activation-indicator--warning");
     if(errorsign.length!= 0){
        errorflag = true;
 
-        $(errorsign).each(function(index){            
-            var el =errorsign[index].closest(".material-text-field__container" );            
-            
+        $(errorsign).each(function(index){
+            var el =errorsign[index].closest(".material-text-field__container" );
+
             el.style.animation = 'noshake .82s';
             setTimeout(function(){
-                el.style.animation = 'shake .82s'; 
+                el.style.animation = 'shake .82s';
             },100)
-                
-          
-            
-        
+
+
+
+
 
         })
-        
+
 
     }
 
@@ -434,46 +434,46 @@ function checkForError(){
     function submitForm(){
     $(".submit").click(function(e){
     var submitButton = this;
-     
-    e.preventDefault(); 
-    $(".shake").removeClass("shake"); 
 
-    errorflag = false; 
-    var formrow =$(this).closest(".info-form");   
+    e.preventDefault();
+    $(".shake").removeClass("shake");
+
+    errorflag = false;
+    var formrow =$(this).closest(".info-form");
     checkForError();
     checkRequired(formrow);
 
     if(errorflag){
         return;
     }
-   
+
     delayResponse(submitButton);
-    errorflag = false;        
-  
+    errorflag = false;
+
 
    });
 }
 
 
    function sendform(){
-    
-    $(".opennav1").removeClass("opennav1");    
+
+    $(".opennav1").removeClass("opennav1");
     $(".alert-server").addClass("opennav1");
     $(".alert-server").click(function(){
-        clearTimeout(myVar);        
+        clearTimeout(myVar);
         $(".alert-server").removeClass("opennav1");
-      
+
     });
 
-    if(clickd){   
-    
+    if(clickd){
+
     var myVar =  setTimeout(function(){
         $(".alert-server").removeClass("opennav1");
         clearTimeout(myVar);
         clickd = true;
 
     },3000);
-   
+
 }
 clickd = false;
 }
@@ -481,23 +481,22 @@ clickd = false;
 function delayResponse(submitButton){
 
     $(submitButton).addClass("loader");
-    
+
 
     var myVar =  setTimeout(function(){
-       
-        sendform();        
+
+        sendform();
         clearTimeout(myVar);
         $(submitButton).removeClass("loader");
-      
+
 
     },3000);
-   
+
 
 }
 
-  
+
    window.initValidation = initValidation;
-   
+
 
 })();
-

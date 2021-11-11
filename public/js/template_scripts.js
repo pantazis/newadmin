@@ -241,7 +241,7 @@ $(".d1").click(function(){
 
 
     var hasClassSearchTop =$(target).closest(".search-top").length;
-    //console.log($(target));
+    ////console.log($(target));
 
     if(hasClassSearchTop ){
       return  true;
@@ -261,7 +261,7 @@ $(".d1").click(function(){
 
 
      var stopFun = directSearchCategories(event.target,this);
-      //console.log(stopFun)
+      ////console.log(stopFun)
       if(stopFun){
         return;
       }

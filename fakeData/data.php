@@ -27,7 +27,7 @@ var period =data.month
 for (const date in period) {
    sinagleVal = period[date];
 
-   
+
    for (const name in sinagleVal) {
            if(name.search("data")!=-1){
                 value = sinagleVal[name]
@@ -35,18 +35,18 @@ for (const date in period) {
                         labels:[name],
                         datasets:[{label:name,data:[ value ]}]
                 };
-                  
+
            }
    }
 
 
 
-  
-  
+
+
 
 
 };
-console.log(period);
+//console.log(period);
 
 */
 

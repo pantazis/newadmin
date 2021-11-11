@@ -58,40 +58,7 @@ var tabledata ={
     }
   ],
   "rows": [
-    [
-      {
-        "value": "checkbox",
-        "element": "checkbox"
-      },
-      {
-        "value": 340015,
-        "element": "link"
-      },
-      {
-        "value": " accuweather.com",
-        "element": "domainName"
-      },
-      {
-        "value": "amorrillyq@hubpages.com",
-        "element": "email"
-      },
-      {
-        "value": "randomDate",
-        "element": "date"
-      },
-      {
-        "value": "ΕΧΕΙ ΛΗΞΕΙ",
-        "element": "isActive"
-      },
-      {
-        "value": "Luis Ferschke",
-        "element": "link"
-      },
-      {
-        "value": "icons",
-        "element": "action"
-      }
-    ],
+
     [
       {
         "value": "checkbox",

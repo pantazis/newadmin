@@ -9,7 +9,7 @@ var tabledata ={
     },
     {
       "title": "ID",
-      "width": "150px",
+      "width": "120px",
       "element": "filters",
       "hideMobile": false,
       "hideAllMobile": false
@@ -30,14 +30,14 @@ var tabledata ={
     },
     {
       "title": "ΗΜΕΡΟΜΗΝΙΑ ΛΗΞΗΣ",
-      "width": "20%",
+      "width": "12%",
       "element": "filters",
       "hideMobile": false,
       "hideAllMobile": false
     },
     {
       "title": "ΚΑΤΑΣΤΑΣΗ",
-      "width": "10%",
+      "width": "15%",
       "element": "filters",
       "hideMobile": false,
       "hideAllMobile": false

@@ -1,10 +1,10 @@
 //-----------------------------------------------------filters----------------------------------
-$filterpadding:.5rem;
-@mixin inputsize($size,$num,$num2) {
+$filterpadding: 0.5rem;
+@mixin inputsize($size, $num, $num2) {
   flex: 1 1 $size;
 
   &.half {
-    flex: 1 1 $size*$num;
+    flex: 1 1 $size * $num;
   }
   &.double {
     flex: 1 1 $size * $num2;
@@ -12,18 +12,19 @@ $filterpadding:.5rem;
 }
 
 .filter-parent {
+  @media (min-width: $xxl) {
+    top: $navSidebarTop;
+    border-bottom: var(--section-padding) solid;
+    position: sticky;
+    @include themeColor("border-color", $white, $black_blue);
+  }
   margin-left: var(--section-padding);
   margin-right: var(--section-padding);
   padding-bottom: var(--section-padding);
- 
-  
+
   @include themeColor("background-color", $ice, $bluedarkbl);
   z-index: 1;
-  @include themeColor("border-color", $white, $black_blue);
-  @media (min-width: $xxl){
-  top: $navSidebarTop;
-  border-bottom: var(--section-padding) solid;
-  position: sticky;}
+
 }
 
 .filters-padding {
@@ -41,36 +42,33 @@ $filterpadding:.5rem;
     width: 100%;
   }
   padding: $filterpadding;
-  @include inputsize(100%,1,1);
+  @include inputsize(100%, 1, 1);
 
-  @media (min-width:$md) {  
-  @include inputsize(50%,1,1);
+  @media (min-width: $md) {
+    @include inputsize(50%, 1, 1);
   }
-    
-  @media (min-width:$lg) {
-  @include inputsize(33.3333%,1,1);
+
+  @media (min-width: $lg) {
+    @include inputsize(33.3333%, 1, 1);
   }
- 
-  @media (min-width:$xxl) {
-    @include inputsize(16.6666%,0.5,2);
-        
+
+  @media (min-width: $xxl) {
+    @include inputsize(16.6666%, 0.5, 2);
   }
 }
 .filters-label {
   border-bottom: 1px solid;
   margin-bottom: 20px;
-  padding: 4px 0px;
+  padding: 8px 0px;
   @include themeColor("color", $bluedarkbl, $ice);
   cursor: pointer;
+  font-weight: 600;
 }
 
-
 .filters-conatiner {
-  transition: height .3s linear;
+  transition: height 0.3s linear;
   height: auto;
   overflow: hidden;
-
-  
 }
 
 //-----------------------------------------------------filters-end----------------------------------
@@ -152,8 +150,8 @@ tbody {
       }
     }
     background-color: $white;
-    @media (min-width: $xxl){
-    padding: 0.35em;
+    @media (min-width: $xxl) {
+      padding: 0.35em;
     }
   }
 }
@@ -188,32 +186,24 @@ table th {
   display: none;
 }
 
-
-table tr  td{
+table tr td {
   @media (max-width: $xxl) {
-  justify-content: center;
-  align-items: space-around;
-  display: flex; 
-  flex: 0 0 25%;
-  margin-bottom: -1px;}
-  
-  
+    justify-content: center;
+    align-items: space-around;
+    display: flex;
+    flex: 0 0 25%;
+    margin-bottom: -1px;
+  }
 
   @media (max-width: $lg) {
     flex: 0 0 33.3333%;
-    
-    
-    }
-    @media (max-width: $md) {
-      flex: 0 0 50%;
-      
-      
-      }
-      @media (max-width: $sm) {
-        flex: 0 0 100%;
-        
-        
-        }
+  }
+  @media (max-width: $md) {
+    flex: 0 0 50%;
+  }
+  @media (max-width: $sm) {
+    flex: 0 0 100%;
+  }
 }
 
 @media screen and (max-width: $xxl) {
@@ -250,7 +240,6 @@ table tr  td{
     flex-wrap: wrap;
     margin-bottom: 0.625em;
     justify-content: space-between;
-   
   }
 
   table td {
@@ -258,8 +247,7 @@ table tr  td{
     display: flex;
     font-size: 0.8em;
     text-align: center;
-    flex-direction: column;  
-    
+    flex-direction: column;
   }
   table .hide-t {
     display: none;
@@ -337,18 +325,18 @@ span.table-time {
   justify-content: space-around;
   @include themeColor("color", $dark_blue, darken($ice, 25%));
   font-size: 120%;
-  & > *{
+  & > * {
     position: relative;
   }
   .popaction {
     position: absolute;
     top: 24px;
     right: 0;
-    opacity: 0;    
-    transition:all .3s linear;
+    opacity: 0;
+    transition: all 0.3s linear;
     transform: translate(20px, 20px);
     z-index: 1;
-}
+  }
   & > *:hover {
     font-size: 120%;
     @include themeColor("color", $white, $white);
@@ -359,9 +347,8 @@ span.table-time {
       color: #000;
       padding: 10px;
       border-radius: $border-radius;
-      
-      transform: translate(0, 0);
 
+      transform: translate(0, 0);
     }
   }
 }
@@ -389,7 +376,7 @@ span.table-time {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   .icon {
     color: $orange2;
     margin-right: 5px;
@@ -410,15 +397,15 @@ input[type="checkbox"] {
   bottom: 0%;
   width: calc(100% - #{$sidebarWidth});
   .closeNav & {
-  width: calc(100% - #{$sidebarWidthClosed});
+    width: calc(100% - #{$sidebarWidthClosed});
   }
- 
+
   height: 0px;
   @include themeColor("background", $pomegranade, $pomegranade);
   color: $ice;
   position: fixed;
   overflow: hidden;
-  transition-property: height ,width;
+  transition-property: height, width;
   &.open {
     height: 70px;
   }

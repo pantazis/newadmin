@@ -14902,17 +14902,17 @@ body {
   margin-right: var(--section-padding);
   padding-bottom: var(--section-padding);
   background-color: #efeff6;
-  z-index: 1;
-  border-color: #fff; }
-  .dark .filter-parent {
-    background-color: #1e1c36; }
-  .dark .filter-parent {
-    border-color: #0e0c28; }
+  z-index: 1; }
   @media (min-width: 1503px) {
     .filter-parent {
       top: 4.68rem;
       border-bottom: var(--section-padding) solid;
-      position: sticky; } }
+      position: sticky;
+      border-color: #fff; }
+      .dark .filter-parent {
+        border-color: #0e0c28; } }
+  .dark .filter-parent {
+    background-color: #1e1c36; }
 
 .filters-padding {
   background-color: #fff;
@@ -14958,14 +14958,15 @@ body {
 .filters-label {
   border-bottom: 1px solid;
   margin-bottom: 20px;
-  padding: 4px 0px;
+  padding: 8px 0px;
   color: #1e1c36;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 600; }
   .dark .filters-label {
     color: #efeff6; }
 
 .filters-conatiner {
-  transition: height .3s linear;
+  transition: height 0.3s linear;
   height: auto;
   overflow: hidden; }
 
@@ -15209,7 +15210,7 @@ span.table-time {
     top: 24px;
     right: 0;
     opacity: 0;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     transform: translate(20px, 20px);
     z-index: 1; }
   .actions-container > *:hover {
@@ -15260,7 +15261,7 @@ input[type="checkbox"] {
   color: #efeff6;
   position: fixed;
   overflow: hidden;
-  transition-property: height ,width; }
+  transition-property: height, width; }
   .closeNav .selectionActionsContainer {
     width: calc(100% - 4.8125rem); }
   .dark .selectionActionsContainer {

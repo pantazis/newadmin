@@ -1,6 +1,8 @@
 <div class="filter-parent">
     <div class="filters-label">
         Φίλτρα Αναζήτησης
+        <span class="icon-fi-sr-angle-down"></span>
+
     </div>
     <div class="filters-conatiner" data-collapsed="true" style="height:0">
     <div class="filters-padding">

@@ -1,7 +1,7 @@
 tableElements = {};
 
-tableElements.checkbox = function (title) {
-	var el = `<input type="checkbox" id="${title}" name="${title}" value="Bike",>`;
+tableElements.checkbox = function (title,index) {
+	var el = `<input type="checkbox" id="${title}${index}" name="${title}" value="Bike",>`;
 	return el;
 };
 
@@ -142,9 +142,11 @@ function createDataOfTable() {
 	var headTemplate = "";
 	$(tabledata.rows).each(function (index) {
 		var row = this;
+		var rownum = index;
 
 		headTemplate += "<tr>";
 		$(row).each(function (index) {
+			
 			var title = tabledata.head[index].title;
 			var hideTitle = tabledata.head[index].hideMobile == true ? "hide-t" : "";
 			var hideAllMobile =
@@ -152,7 +154,14 @@ function createDataOfTable() {
 			var value = this.value;
 
 			if (this.element != null) {
-				value = tableElements[this.element](value);
+				if(this.element=="checkbox"){
+					
+					value = tableElements[this.element](value,rownum);
+
+				}else{
+					value = tableElements[this.element](value);
+				
+				}
 			}
 
 			headTemplate += `<td data-label="${title}" class="${hideAllMobile}"><span class="title_mobile ${hideTitle}">${title}</span>${value}</td>`;
@@ -182,9 +191,11 @@ function togglefilters() {
 	
 	if ($(".filters-conatiner").attr("data-collapsed")=="true") {
 		expandSection(element);
+		$(".filters-label").addClass("open");	
 	}
 	 else { 
 		collapseSection(element);
+		$(".filters-label").removeClass("open");
 	}
 	
 }
@@ -291,12 +302,15 @@ console.log("collapsed "+filterCollapsedLoc)
 
 	 if (filterCollapsedLoc == "true") {
 		$(".filters-conatiner").attr("data-collapsed","true").css("height",0);
-		
+		$(".filters-label").removeClass("open");
+	
 
 	 }
+
 	 if (filterCollapsedLoc == "false") {
-		$(".filters-conatiner").attr("data-collapsed","false").removeAttr("style")
-		
+		$(".filters-conatiner").attr("data-collapsed","false").removeAttr("style");
+		$(".filters-label").addClass("open");	
+				
 	
 	 }
 

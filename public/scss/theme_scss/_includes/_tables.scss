@@ -66,12 +66,23 @@ $filterpadding:.3rem;
   }
 }
 .filters-label {
+  display:none;
+  @media (min-width:$xxl){
+    display:block;
+
+  }
   border-bottom: 1px solid;
   margin-bottom: 20px;
   padding: 8px 0px;
   @include themeColor("color", $bluedarkbl, $ice);
   cursor: pointer;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  span{
+    margin-left:5px;
+  }
+ 
 }
 
 .filters-conatiner {
@@ -198,10 +209,17 @@ table th {
 table tr td {
   @media (max-width: $xxl) {
   justify-content: center;
-  align-items: space-around;
+  align-items: stretch;
   display: flex; 
-  flex: 1 0 25%;
-  margin-bottom: -1px;}
+  flex: 1 0 33.3333%;
+  margin-bottom: -1px;
+  &:last-of-type{
+    flex-basis:100%;
+    
+    
+  }
+
+}
   
   
 
@@ -217,6 +235,7 @@ table tr td {
       }
       @media (max-width: $sm) {
         flex-basis: 100%;
+        
         
         
         }
@@ -338,7 +357,7 @@ span.table-time {
 }
 .actions-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   @include themeColor("color", $dark_blue, darken($ice, 25%));
   font-size: 120%;
   & > * {
@@ -454,16 +473,13 @@ input[type="checkbox"] {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-
       display: block;
-
       @include themeColor("color", $ice, $ice);
       cursor: none;
     }
 
     .actionSelBtn {
       text-align: center;
-
       display: block;
       order: 0;
       @include themeColor("color", $black_blue, $black_blue);

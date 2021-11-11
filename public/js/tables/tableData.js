@@ -60,7 +60,7 @@ var tabledata ={
   "rows": [
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -94,7 +94,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -128,7 +128,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -162,7 +162,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -196,7 +196,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -230,7 +230,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -264,7 +264,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -298,7 +298,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -332,7 +332,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -366,7 +366,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -400,7 +400,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -434,7 +434,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -468,7 +468,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -502,7 +502,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -536,7 +536,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -570,7 +570,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -604,7 +604,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -638,7 +638,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -672,7 +672,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -706,7 +706,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -740,7 +740,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -774,7 +774,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -808,7 +808,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -842,7 +842,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -876,7 +876,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -910,7 +910,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -944,7 +944,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -978,7 +978,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1012,7 +1012,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1046,7 +1046,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1080,7 +1080,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1114,7 +1114,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1148,7 +1148,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1182,7 +1182,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1216,7 +1216,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1250,7 +1250,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1284,7 +1284,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1318,7 +1318,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1352,7 +1352,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1386,7 +1386,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1420,7 +1420,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1454,7 +1454,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1488,7 +1488,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1522,7 +1522,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1556,7 +1556,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1590,7 +1590,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1624,7 +1624,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1658,7 +1658,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1692,7 +1692,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1726,7 +1726,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1760,7 +1760,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1794,7 +1794,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1828,7 +1828,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1862,7 +1862,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1896,7 +1896,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1930,7 +1930,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1964,7 +1964,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -1998,7 +1998,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2032,7 +2032,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2066,7 +2066,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2100,7 +2100,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2134,7 +2134,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2168,7 +2168,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2202,7 +2202,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2236,7 +2236,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2270,7 +2270,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2304,7 +2304,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2338,7 +2338,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2372,7 +2372,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2406,7 +2406,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2440,7 +2440,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2474,7 +2474,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2508,7 +2508,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2542,7 +2542,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2576,7 +2576,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2610,7 +2610,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2644,7 +2644,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2678,7 +2678,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2712,7 +2712,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2746,7 +2746,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2780,7 +2780,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2814,7 +2814,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2848,7 +2848,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2882,7 +2882,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2916,7 +2916,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2950,7 +2950,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -2984,7 +2984,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3018,7 +3018,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3052,7 +3052,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3086,7 +3086,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3120,7 +3120,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3154,7 +3154,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3188,7 +3188,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3222,7 +3222,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3256,7 +3256,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3290,7 +3290,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3324,7 +3324,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3358,7 +3358,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3392,7 +3392,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3426,7 +3426,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3460,7 +3460,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3494,7 +3494,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3528,7 +3528,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3562,7 +3562,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3596,7 +3596,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3630,7 +3630,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3664,7 +3664,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3698,7 +3698,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3732,7 +3732,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3766,7 +3766,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3800,7 +3800,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3834,7 +3834,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3868,7 +3868,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3902,7 +3902,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3936,7 +3936,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -3970,7 +3970,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4004,7 +4004,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4038,7 +4038,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4072,7 +4072,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4106,7 +4106,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4140,7 +4140,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4174,7 +4174,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4208,7 +4208,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4242,7 +4242,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4276,7 +4276,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4310,7 +4310,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4344,7 +4344,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4378,7 +4378,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4412,7 +4412,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4446,7 +4446,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4480,7 +4480,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4514,7 +4514,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4548,7 +4548,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4582,7 +4582,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4616,7 +4616,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4650,7 +4650,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4684,7 +4684,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4718,7 +4718,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4752,7 +4752,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4786,7 +4786,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4820,7 +4820,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4854,7 +4854,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4888,7 +4888,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4922,7 +4922,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4956,7 +4956,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -4990,7 +4990,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -5024,7 +5024,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -5058,7 +5058,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -5092,7 +5092,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {
@@ -5126,7 +5126,7 @@ var tabledata ={
     ],
     [
       {
-        "value": "checkobox",
+        "value": "checkbox",
         "element": "checkbox"
       },
       {

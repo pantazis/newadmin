@@ -22,7 +22,7 @@
       "hideMobile": false,
       "hideAllMobile": false
     },
-    
+
     {
       "title": "EMAIL ΧΡΗΣΤΗ",
       "width": null,
@@ -62,7 +62,7 @@
   "rows": [
     [
       {
-         "value":"checkobox",
+         "value":"checkbox",
          "element":"checkbox"
       },
       {
@@ -73,7 +73,7 @@
          "value":" accuweather.com",
          "element":"domainName"
       },
-     
+
       {
          "value":"amorrillyq@hubpages.com",
          "element":"email"
@@ -428,7 +428,7 @@ function randomNumber(multiple) {
 
 var arrA = [
   {
-    value: "checkobox",
+    value: "checkbox",
     element: "checkbox",
   },
   {
@@ -479,7 +479,7 @@ function tableData() {
         tabledata.rows[i][3].element ="email";
         tabledata.rows[i][2].value = domainArr[Math.floor(Math.random() * domainArr.length)];
         tabledata.rows[i][6].value = nameArr[Math.floor(Math.random() * nameArr.length)];
-        
+
       }
     }
 

@@ -151,17 +151,10 @@ function createDataOfTable() {
 			var value = this.value;
 
 			if (this.element != null) {
-<<<<<<< HEAD
-				if(this.element=="checkbox"){					
-					value = tableElements[this.element](value,rownum);
-				}else{
-					value = tableElements[this.element](value);				
-=======
 				if (this.element == "checkbox") {
 					value = tableElements[this.element](value, rownum);
 				} else {
 					value = tableElements[this.element](value);
->>>>>>> 9a176052e0867277f13a5273c99058434316486a
 				}
 			}
 

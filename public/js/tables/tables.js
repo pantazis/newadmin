@@ -1,6 +1,6 @@
 tableElements = {};
 
-tableElements.checkbox = function (title,index) {
+tableElements.checkbox = function (title, index) {
 	var el = `<input class="checkboxTable" type="checkbox" id="${title}${index}" name="${title}" value="Bike",>`;
 	return el;
 };
@@ -91,7 +91,6 @@ tableElements.domainName = function (title) {
 		var hideIcon = "";
 	}
 
-
 	var isActive = Math.round(Math.random() * 2);
 
 	switch (isActive) {
@@ -146,7 +145,6 @@ function createDataOfTable() {
 
 		headTemplate += "<tr>";
 		$(row).each(function (index) {
-
 			var title = tabledata.head[index].title;
 			var hideTitle = tabledata.head[index].hideMobile == true ? "hide-t" : "";
 			var hideAllMobile =
@@ -154,13 +152,10 @@ function createDataOfTable() {
 			var value = this.value;
 
 			if (this.element != null) {
-				if(this.element=="checkbox"){
-
-					value = tableElements[this.element](value,rownum);
-
-				}else{
+				if (this.element == "checkbox") {
+					value = tableElements[this.element](value, rownum);
+				} else {
 					value = tableElements[this.element](value);
-
 				}
 			}
 
@@ -174,30 +169,21 @@ function createDataOfTable() {
 createHeadOfTable();
 createDataOfTable();
 
-
 $(".filters-label").click(function () {
-
-
 	togglefilters();
 	localStorageFilters();
 });
 
 var element = $(".filters-conatiner")[0];
 
-
-
-
 function togglefilters() {
-
-	if ($(".filters-conatiner").attr("data-collapsed")=="true") {
+	if ($(".filters-conatiner").attr("data-collapsed") == "true") {
 		expandSection(element);
 		$(".filters-label").addClass("open");
-	}
-	 else {
+	} else {
 		collapseSection(element);
 		$(".filters-label").removeClass("open");
 	}
-
 }
 
 var selectOneRowPar = $("tbody tr");
@@ -270,78 +256,58 @@ function printSelectCount() {
 	}
 }
 
-
-
 function localStorageFilters() {
-
 	var tableFilters = $(".filters-conatiner").attr("data-collapsed");
 
 	if (tableFilters == "false") {
 		localStorage.setItem("collapsed", "false");
-
 	}
-
 
 	if (tableFilters == "true") {
 		localStorage.setItem("collapsed", "true");
-
 	}
-
-
-
-
-
-
 }
-
 
 var filterCollapsedLoc = localStorage.getItem("collapsed");
 //console.log("collapsed "+filterCollapsedLoc)
 
-	 if (filterCollapsedLoc == "true") {
-		$(".filters-conatiner").attr("data-collapsed","true").css("height",0);
-		$(".filters-label").removeClass("open");
+if (filterCollapsedLoc == "true") {
+	$(".filters-conatiner").attr("data-collapsed", "true").css("height", 0);
+	$(".filters-label").removeClass("open");
+}
 
+if (filterCollapsedLoc == "false") {
+	$(".filters-conatiner").attr("data-collapsed", "false").removeAttr("style");
+	$(".filters-label").addClass("open");
+}
 
-	 }
+$(document).ready(function () {
+	var $chkboxes = $(".checkboxTable");
+	var lastChecked = null;
 
-	 if (filterCollapsedLoc == "false") {
-		$(".filters-conatiner").attr("data-collapsed","false").removeAttr("style");
-		$(".filters-label").addClass("open");
-
-
-	 }
-
-	 $(document).ready(function() {
-		var $chkboxes = $('.checkboxTable');
-		var lastChecked = null;
-
-		$chkboxes.click(function(e) {
-			if (!lastChecked) {
-				lastChecked = this;
-				return;
-			}
-
-			if (e.shiftKey) {
-				var start = $chkboxes.index(this);
-				var end = $chkboxes.index(lastChecked);
-				var selectedChecked = $chkboxes.slice(Math.min(start,end), Math.max(start,end)+ 1)
-
-
-				selectedChecked.prop('checked', lastChecked.checked)
-				if  ( lastChecked.checked == true ){
-
-					selectedChecked.closest('tr').addClass("selected");
-
-				}
-			else {
-
-					selectedChecked.closest('tr').removeClass("selected");
-
-				}
-				printSelectCount();
-			}
-
+	$chkboxes.click(function (e) {
+		if (!lastChecked) {
 			lastChecked = this;
-		});
+			return;
+		}
+
+		if (e.shiftKey) {
+			var start = $chkboxes.index(this);
+			var end = $chkboxes.index(lastChecked);
+			var selectedChecked = $chkboxes.slice(
+				Math.min(start, end),
+				Math.max(start, end) + 1
+			);
+
+			selectedChecked.prop("checked", lastChecked.checked);
+			if (lastChecked.checked == true) {
+				selectedChecked.closest("tr").addClass("selected");
+			} else {
+				selectedChecked.closest("tr").removeClass("selected");
+			}
+			printSelectCount();
+		}
+
+		lastChecked = this;
 	});
+});

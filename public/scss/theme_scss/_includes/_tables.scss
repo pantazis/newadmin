@@ -1,16 +1,15 @@
 //-----------------------------------------------------filters----------------------------------
-$filterpadding:.3rem;
+$filterpadding: 0.3rem;
 
-.section-main.tables{
-  @media (min-width:$xxl){
-  padding:var(--section-padding);
-  padding-top:0;
+.section-main.tables {
+  @media (min-width: $xxl) {
+    padding: var(--section-padding);
+    padding-top: 0;
   }
-   padding-top:0;
-   border-radius:$border-radius;
-
- }
-@mixin inputsize($size,$num,$num2) {
+  padding-top: 0;
+  border-radius: $border-radius;
+}
+@mixin inputsize($size, $num, $num2) {
   flex: 1 1 $size;
 
   &.half {
@@ -66,10 +65,9 @@ $filterpadding:.3rem;
   }
 }
 .filters-label {
-  display:none;
-  @media (min-width:$xxl){
-    display:block;
-
+  display: none;
+  @media (min-width: $xxl) {
+    display: block;
   }
   border-bottom: 1px solid;
   margin-bottom: 20px;
@@ -79,10 +77,9 @@ $filterpadding:.3rem;
   font-weight: 600;
   display: flex;
   align-items: center;
-  span{
-    margin-left:5px;
+  span {
+    margin-left: 5px;
   }
-
 }
 
 .filters-conatiner {
@@ -213,37 +210,25 @@ table th {
 
 table tr td {
   @media (max-width: $xxl) {
-  justify-content: center;
-  align-items: stretch;
-  display: flex;
-  flex: 1 0 33.3333%;
-  margin-bottom: -1px;
-  &:last-of-type{
-    flex-basis:100%;
-
-
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    flex: 1 0 33.3333%;
+    margin-bottom: -1px;
+    &:last-of-type {
+      flex-basis: 100%;
+    }
   }
-
-}
-
-
 
   @media (max-width: $lg) {
     flex-basis: 33.3333%;
-
-
-    }
-    @media (max-width: $md) {
-      flex-basis: 50%;
-
-
-      }
-      @media (max-width: $sm) {
-        flex-basis: 100%;
-
-
-
-        }
+  }
+  @media (max-width: $md) {
+    flex-basis: 50%;
+  }
+  @media (max-width: $sm) {
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (max-width: $xxl) {
@@ -416,8 +401,8 @@ span.table-time {
 .domain-name {
   display: flex;
   justify-content: center;
-  @media(min-width: $xxl){
-  justify-content: space-between;
+  @media (min-width: $xxl) {
+    justify-content: space-between;
   }
   align-items: center;
 

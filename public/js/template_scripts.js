@@ -1,6 +1,16 @@
 (function () {
   var $ = window.$;
   window.addActionObj = {};
+  window.style = getComputedStyle(document.documentElement);
+  window.breakpoints = {} 
+  breakpoints.xs= parseInt(style.getPropertyValue("--xs"));
+  breakpoints.sm= parseInt(style.getPropertyValue("--sm"));
+  breakpoints.md= parseInt(style.getPropertyValue("--md"));
+  breakpoints.lg= parseInt(style.getPropertyValue("--lg"));
+  breakpoints.xl= parseInt(style.getPropertyValue("--xl"));
+  breakpoints.xxl= parseInt(style.getPropertyValue("--xxl"));
+  breakpoints.xxxl=  parseInt(style.getPropertyValue("--xxxl"));
+
   // noanιmαtion
   $(document).ready(function () {
     $("body").removeClass("noanimαtion");
@@ -39,11 +49,17 @@
 
 
 
+ 
+ window.resizefunctions = [
+  function(){noanimαtion()},
+  function(){tableHeadtop(0)}
+]
 
 
   $(window).resize(function () {
-    noanimαtion();
-    tableHeadtop(0);
+    for (i = 0; i < resizefunctions.length; i++) {
+      resizefunctions[i]();
+  }
 
   });
 
@@ -97,7 +113,7 @@ $("thead").css("top",navheight+filterheight+"px");
     }
 
     function clonePopup(value1,target){
-     var htmlel =  $(value1).find(".popup-notifications").html();
+     var htmlel = $(value1).find(".popup-notifications").html();
      $(footerTarget[target]).html(htmlel);
     }
 
@@ -327,7 +343,7 @@ $(".d1").click(function(){
   var actions = $(".actions").clone().removeClass("btn");
   /*
 
-  var elLength =   $(".actions").length;
+  var elLength =  $(".actions").length;
 
   if(elLength < 4){
     elLength = 1;
@@ -336,7 +352,7 @@ $(".d1").click(function(){
 
   }
   var root = $(':root');
-  root.css('--elPercent',elPercent);
+  root.css('"--elPercent"',elPercent);
   */
 
 
@@ -511,7 +527,7 @@ window.makeElement = function(el){
 
   });
 
- var messageCont =  $(".popup-notifications .main-el");
+ var messageCont = $(".popup-notifications .main-el");
  messageCont.mouseenter(function(){
   noScrollToBody(true);
 

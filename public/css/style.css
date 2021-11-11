@@ -14896,7 +14896,7 @@ body {
     color: #efeff6; }
 
 .section-main.tables {
-  padding-top: 0;
+  padding-top: var(--section-padding);
   border-radius: 0.25rem; }
   @media (min-width: 1503px) {
     .section-main.tables {
@@ -14904,16 +14904,20 @@ body {
       padding-top: 0; } }
 
 .filter-parent {
+  transition: all .3s;
+  top: 4.68rem;
+  position: sticky;
   margin-left: var(--section-padding);
   margin-right: var(--section-padding);
-  padding-bottom: var(--section-padding);
   background-color: #efeff6;
   z-index: 1; }
+  .filter-parent .shadow-1-strong {
+    -webkit-box-shadow: 0 0 0 0 transparent  !important;
+    box-shadow: 0 0 0 0 transparent  !important; }
   @media (min-width: 1503px) {
     .filter-parent {
-      top: 4.68rem;
+      padding-bottom: var(--section-padding);
       border-bottom: var(--section-padding) solid;
-      position: sticky;
       border-color: #fff; }
       .dark .filter-parent {
         border-color: #0e0c28; } }
@@ -14976,6 +14980,10 @@ body {
       display: block; } }
   .dark .filters-label {
     color: #efeff6; }
+  @media (max-width: 1503px) {
+    .filters-label {
+      justify-content: center;
+      margin-bottom: 0px; } }
   .filters-label span {
     margin-left: 5px; }
 
@@ -14983,6 +14991,15 @@ body {
   transition: height 0.3s linear;
   height: auto;
   overflow: hidden; }
+
+.mobilefilters.filter-parent {
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 0;
+  -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+  box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important; }
+  .mobilefilters.filter-parent .filters-label {
+    border-bottom-width: 0; }
 
 body > * {
   -webkit-touch-callout: none;
@@ -15281,6 +15298,7 @@ input[type="checkbox"] {
   transform: scale(1.4); }
 
 .selectionActionsContainer {
+  display: none;
   bottom: 0%;
   width: calc(100% - 15.5rem);
   height: 0px;
@@ -15289,6 +15307,9 @@ input[type="checkbox"] {
   position: fixed;
   overflow: hidden;
   transition-property: height, width; }
+  @media (min-width: 1503px) {
+    .selectionActionsContainer {
+      display: block; } }
   .closeNav .selectionActionsContainer {
     width: calc(100% - 4.8125rem); }
   .dark .selectionActionsContainer {

@@ -97,9 +97,6 @@ $dashelpad: 0.625rem;
   }
 }
 
-
-
-
 .buttonContainer {
   position: relative;
   padding: $dashelpad;
@@ -218,34 +215,29 @@ $dashelpad: 0.625rem;
 
 .s-top {
   display: flex;
-  .center &{
+  .center & {
     justify-content: center;
     height: 100%;
   }
 }
 
-.percent{
-  &.minus-p{
-    color:$red2;
-    .plus{
+.percent {
+  &.minus-p {
+    color: $red2;
+    .plus {
       display: none;
-      
     }
-
   }
-  &.plus-p{
-    color:$green2;
-    .minus{
+  &.plus-p {
+    color: $green2;
+    .minus {
       display: none;
-      
     }
-    
   }
-
 }
 
 .s-bottom {
-  .center &{
+  .center & {
     justify-content: space-evenly;
   }
   display: flex;
@@ -266,8 +258,8 @@ $dashelpad: 0.625rem;
 
 .b-right {
   padding-left: 12px;
-  .center &{
-    padding-left:0;
+  .center & {
+    padding-left: 0;
   }
   display: flex;
   flex-direction: column;
@@ -282,20 +274,18 @@ $dashelpad: 0.625rem;
   font-weight: bold;
   line-height: 34px;
   margin-top: auto;
-  .center &{
-    text-align:center;
-    display: flex;    
+  .center & {
+    text-align: center;
+    display: flex;
     align-items: center;
     height: 100%;
     font-size: 50px;
-    
-
   }
   @include themeColor("color", $black_blue, $white);
 }
 .titleD {
-  .center &{
-    text-align:center;
+  .center & {
+    text-align: center;
   }
   @include themeColor("color", $black_blue, $ice);
 }

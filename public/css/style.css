@@ -12899,7 +12899,7 @@ body.noanimαtion * {
 span.small-gray {
   font-size: small;
   font-weight: normal;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   opacity: 0.5; }
 
 /*--------------------------------new-list1-end-------------------------------------*/
@@ -14904,7 +14904,7 @@ body {
       padding-top: 0; } }
 
 .filter-parent {
-  transition: all .3s;
+  transition: all 0.3s;
   top: 4.68rem;
   position: sticky;
   margin-left: var(--section-padding);
@@ -14912,8 +14912,8 @@ body {
   background-color: #efeff6;
   z-index: 1; }
   .filter-parent .shadow-1-strong {
-    -webkit-box-shadow: 0 0 0 0 transparent  !important;
-    box-shadow: 0 0 0 0 transparent  !important; }
+    -webkit-box-shadow: 0 0 0 0 transparent !important;
+    box-shadow: 0 0 0 0 transparent !important; }
   @media (min-width: 1503px) {
     .filter-parent {
       padding-bottom: var(--section-padding);

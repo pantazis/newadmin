@@ -2,7 +2,7 @@
 $filterpadding: 0.3rem;
 
 .section-main.tables {
-  padding-top:var(--section-padding);
+  padding-top: var(--section-padding);
   @media (min-width: $xxl) {
     padding: var(--section-padding);
     padding-top: 0;
@@ -22,23 +22,22 @@ $filterpadding: 0.3rem;
 }
 
 .filter-parent {
-  transition: all .3s;
+  transition: all 0.3s;
   top: $navSidebarTop;
   .shadow-1-strong {
-    -webkit-box-shadow: 0 0 0 0 transparent  !important;
-    box-shadow: 0 0 0 0 transparent  !important;
-}
+    -webkit-box-shadow: 0 0 0 0 transparent !important;
+    box-shadow: 0 0 0 0 transparent !important;
+  }
   @media (min-width: $xxl) {
     padding-bottom: var(--section-padding);
-   
+
     border-bottom: var(--section-padding) solid;
-    
+
     @include themeColor("border-color", $white, $black_blue);
   }
   position: sticky;
   margin-left: var(--section-padding);
   margin-right: var(--section-padding);
-  
 
   @include themeColor("background-color", $ice, $bluedarkbl);
   z-index: 1;
@@ -86,10 +85,10 @@ $filterpadding: 0.3rem;
   font-weight: 600;
   display: flex;
   align-items: center;
-  @media (max-width:  $xxl ) {
-  justify-content: center;
-   margin-bottom: 0px;
-}
+  @media (max-width: $xxl) {
+    justify-content: center;
+    margin-bottom: 0px;
+  }
 
   span {
     margin-left: 5px;
@@ -102,20 +101,17 @@ $filterpadding: 0.3rem;
   overflow: hidden;
 }
 
-.mobilefilters{
+.mobilefilters {
   &.filter-parent {
-  margin-left: 0;
-  margin-right:0 ;
-  padding-bottom: 0;  
-  -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
-  box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
-  .filters-label {
-    border-bottom-width: 0;
-
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+    -webkit-box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+    box-shadow: 0 0.0625rem 0.3125rem 0 rgba(14, 12, 40, 0.21) !important;
+    .filters-label {
+      border-bottom-width: 0;
+    }
   }
-
-}
-
 }
 
 //-----------------------------------------------------filters-end----------------------------------
@@ -453,9 +449,10 @@ input[type="checkbox"] {
 }
 
 .selectionActionsContainer {
- 
-  display:none;
-  @media (min-width:  $xxl) {display: block; }
+  display: none;
+  @media (min-width: $xxl) {
+    display: block;
+  }
   bottom: 0%;
   width: calc(100% - #{$sidebarWidth});
   .closeNav & {

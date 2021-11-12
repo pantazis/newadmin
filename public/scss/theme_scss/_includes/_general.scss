@@ -39,10 +39,9 @@ body.noanimαtion * {
   margin-bottom: var(--section-padding);
   margin-top: var(--section-padding);
   min-height: 10rem;
-  &.tables{
-    min-height:0;
+  &.tables {
+    min-height: 0;
     margin-bottom: 0;
-
   }
 }
 /*---------------------------------------------MAIN SECTION---------------------------------------------*/
@@ -267,13 +266,11 @@ body.noanimαtion * {
 }
 .date {
   font-weight: 600;
-  &.big{
+  &.big {
     font-size: $font-big;
-
   }
-  &.small{
+  &.small {
     font-weight: normal;
-
   }
 }
 .timezone {
@@ -601,20 +598,19 @@ body.noanimαtion * {
 }
 
 /*--------------------------------new-list1-----------------------------------------*/
-.big-row-parent{
-  &.lock{
-    .icon-fi-sr-lock{
-      display:block;
+.big-row-parent {
+  &.lock {
+    .icon-fi-sr-lock {
+      display: block;
     }
-    .icon-fi-sr-unlock{
+    .icon-fi-sr-unlock {
       display: none;
     }
-
   }
-  .icon-fi-sr-lock{
-    display:  none;
+  .icon-fi-sr-lock {
+    display: none;
   }
-  .icon-fi-sr-unlock{
+  .icon-fi-sr-unlock {
     display: block;
   }
 }
@@ -640,46 +636,37 @@ body.noanimαtion * {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-
 }
 
-.big-row-in{
-  display:flex;
+.big-row-in {
+  display: flex;
   padding: 1rem 0;
-  border-bottom:inherit;
+  border-bottom: inherit;
   @include themeColor("color", $dark_blue, $ice);
   @include border-bottom();
 }
-.el-right{
-margin-left: auto;
-display: flex;
-flex-direction: column;
-align-items: end;
+.el-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .el-left {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.info-title-big{
-  font-size:$font-big;
-  font-weight:bold;
+.info-title-big {
+  font-size: $font-big;
+  font-weight: bold;
   margin-left: 1rem;
 }
 
 span.small-gray {
   font-size: small;
   font-weight: normal;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   opacity: 0.5;
 }
-
-
-
-
-
-
-
-
 
 /*--------------------------------new-list1-end-------------------------------------*/

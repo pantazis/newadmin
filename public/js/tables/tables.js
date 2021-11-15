@@ -336,6 +336,36 @@ function animateFilters() {
 	}
 }
 
+function aaa(){
+	debugger;
+  return $(this).val("asasasa");
+
+}
+
+
+var option = function(inputD) {
+return { single: true,
+periods: ['day'],
+daterangepickerFormat: 'DD/MM/YYYY',
+daterangepickerOptions: {
+
+  },callback: function(startDate){
+	var title = startDate.format('L');
+	$(inputD).val(title)
+  }
+}
+};
+
+var el1 = $(".daterangepicker-field2");
+var el2 = $(".daterangepicker-field3");
+el1.daterangepicker(option(el1))
+el2.daterangepicker(option(el2))
+
+
+
+
+
+
 resizefunctions.push(function () {
 	animateFilters();
 });

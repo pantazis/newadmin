@@ -68,7 +68,7 @@ select,
   position: relative;
 }
 
-.material-text-field__input-text {
+.material-text-field__input-text,.input-date {
   z-index: 1;
   width: 100%;
   border: none;
@@ -76,6 +76,10 @@ select,
   background-color: transparent;
   padding: $form-select-padding-x;
   line-height: $form-select-line-height;
+}
+.input-date{
+  border-radius: $border-radius;
+  border: 0.0625rem solid $gray-400;
 }
 
 .material-text-field__input-text:focus {
@@ -405,3 +409,19 @@ label.select-label {
   display: block;
 }
 //------------------------------------custom textarea end-----------------------------------------//
+
+//------------------------------------------input-date---------------------------------------------//
+.input-date{
+  &:focus,
+  &:not(:placeholder-shown) {
+    & ~ .select-label {
+      @include labelF;
+    }
+  }
+}
+
+
+
+
+
+//------------------------------------------input-date-end-----------------------------------------//

@@ -14345,13 +14345,17 @@ input, select, .select2-selection__rendered {
 .material-text-field {
   position: relative; }
 
-.material-text-field__input-text {
+.material-text-field__input-text, .input-date {
   z-index: 1;
   width: 100%;
   border: none;
   background-color: transparent;
   padding: 1rem;
   line-height: 1.5; }
+
+.input-date {
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #ced4da; }
 
 .material-text-field__input-text:focus {
   outline: none; }
@@ -14667,6 +14671,17 @@ label.select-label {
   border-radius: 0.25rem;
   color: inherit;
   display: block; }
+
+.input-date:focus ~ .select-label, .input-date:not(:placeholder-shown) ~ .select-label {
+  z-index: 2;
+  top: 0rem;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
+  transition: all 150ms linear;
+  background-color: #efeff6; }
+  .dark .input-date:focus ~ .select-label, .dark .input-date:not(:placeholder-shown) ~ .select-label {
+    background-color: #1e1c36; }
 
 body {
   overflow-y: scroll; }

@@ -320,8 +320,7 @@ var filters = $(".filter-parent");
 var sticky = filters[0].offsetTop;
 
 function animateFilters() {
-	console.log("offsetTop " + sticky);
-	console.log("pageYOffset " + window.pageYOffset);
+
 
 	var pagewidth = window.innerWidth;
 
@@ -336,31 +335,39 @@ function animateFilters() {
 	}
 }
 
-function aaa(){
-	debugger;
-  return $(this).val("asasasa");
+var inputdate = $(".input-date");
+inputdate.each(function(){
+	isempty($(this),false);
+});
+
+function isempty(el,istrue){
+	var value=el.val();
+	var inputisEmpty=value.length==0;
+	
+	if(inputisEmpty){
+		el.closest(".select-parent").removeClass("not-empty");
+		if(istrue){
+			el.closest(".select-parent").addClass("not-empty");
+		}
+
+	}else{
+		el.closest(".select-parent").addClass("not-empty");
+	}
+
+	
 
 }
 
 
-var option = function(inputD) {
-return { single: true,
-periods: ['day'],
-daterangepickerFormat: 'DD/MM/YYYY',
-daterangepickerOptions: {
 
-  },callback: function(startDate){
-	var title = startDate.format('L');
-	$(inputD).val(title)
-  }
-}
-};
 
-var el1 = $(".daterangepicker-field2");
-var el2 = $(".daterangepicker-field3");
-el1.daterangepicker(option(el1))
-el2.daterangepicker(option(el2))
+inputdate.focusin(function(){	
+	isempty($(this),true);
+});
 
+inputdate.focusout(function(){
+	isempty($(this),false);
+});
 
 
 

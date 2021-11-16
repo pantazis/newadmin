@@ -14464,6 +14464,10 @@ input, select, .select2-selection__rendered {
   .dark .material-text-field__input-text:focus ~ .material-text-field__label-text,
   .dark .material-text-field__input-text:not(:placeholder-shown) ~ .material-text-field__label-text {
     background-color: #1e1c36; }
+  .filter-parent .material-text-field__input-text:focus ~ .material-text-field__label-text, .filter-parent .material-text-field__input-text:not(:placeholder-shown) ~ .material-text-field__label-text {
+    background: #fff; }
+    .dark .filter-parent .material-text-field__input-text:focus ~ .material-text-field__label-text, .dark .filter-parent .material-text-field__input-text:not(:placeholder-shown) ~ .material-text-field__label-text {
+      background: #0e0c28; }
 
 .material-text-field__input-text ~ .material-text-field__label-text {
   z-index: 1;
@@ -14647,6 +14651,10 @@ label.select-label {
   background-color: #efeff6; }
   .dark .form-select:focus ~ .select-label, .dark .form-select:valid ~ .select-label {
     background-color: #1e1c36; }
+  .filter-parent .form-select:focus ~ .select-label, .filter-parent .form-select:valid ~ .select-label {
+    background: #fff; }
+    .dark .filter-parent .form-select:focus ~ .select-label, .dark .filter-parent .form-select:valid ~ .select-label {
+      background: #0e0c28; }
 
 .textareaCustom:focus ~ .select-label, .textareaCustom:not(:placeholder-shown) ~ .select-label {
   z-index: 2;
@@ -14672,16 +14680,28 @@ label.select-label {
   color: inherit;
   display: block; }
 
-.input-date:focus ~ .select-label, .input-date:not(:placeholder-shown) ~ .select-label {
-  z-index: 2;
-  top: 0rem;
-  padding: 0 0.25rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.025rem;
-  transition: all 150ms linear;
-  background-color: #efeff6; }
-  .dark .input-date:focus ~ .select-label, .dark .input-date:not(:placeholder-shown) ~ .select-label {
-    background-color: #1e1c36; }
+.select-parent .input-date {
+  color: transparent; }
+.select-parent.not-empty {
+  color: inherit; }
+  .select-parent.not-empty .input-date {
+    color: #2e435e; }
+    .dark .select-parent.not-empty .input-date {
+      color: #efeff6; }
+    .select-parent.not-empty .input-date ~ .select-label {
+      z-index: 2;
+      top: 0rem;
+      padding: 0 0.25rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.025rem;
+      transition: all 150ms linear;
+      background-color: #efeff6; }
+      .dark .select-parent.not-empty .input-date ~ .select-label {
+        background-color: #1e1c36; }
+      .filter-parent .select-parent.not-empty .input-date ~ .select-label {
+        background: #fff; }
+        .dark .filter-parent .select-parent.not-empty .input-date ~ .select-label {
+          background: #0e0c28; }
 
 body {
   overflow-y: scroll; }

@@ -376,7 +376,7 @@ function checkRequired(form){
     $(forminput).each(function(){
         var validate = $(this).attr("data-validate");
         if(validate.search("required")!= -1 && $(this).val().length==0 ){
-            //console.log(1);
+            ////console.log(1);
             errorflag = true;
             input_validation_error(errorMessages.required,this,1);
             var inputparent = $(this).closest(".material-text-field__container")[0];

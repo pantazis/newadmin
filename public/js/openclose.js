@@ -93,7 +93,7 @@ function addClassToParent(el, parent) {
 }
 
 function openForms(clickEl, el, toggleDiv) {
-	//console.log(clickEl,el,toggleDiv);
+	////console.log(clickEl,el,toggleDiv);
 
 	$(clickEl)[0].addEventListener("click", function (e) {
 		var parent = $(el);

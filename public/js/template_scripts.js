@@ -222,7 +222,7 @@
 
 	function directSearchCategories(target, parent) {
 		var hasClassSearchTop = $(target).closest(".search-top").length;
-		////console.log($(target));
+		//////console.log($(target));
 
 		if (hasClassSearchTop) {
 			return true;
@@ -234,7 +234,7 @@
 	function menu_subcategory_open(parent_Element, open_class, listChildElement) {
 		$(parent_Element).click(function (event) {
 			var stopFun = directSearchCategories(event.target, this);
-			////console.log(stopFun)
+			//////console.log(stopFun)
 			if (stopFun) {
 				return;
 			}

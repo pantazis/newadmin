@@ -114,7 +114,7 @@ function loopData(data,obj) {
 			}
 			var val =singledate[stat].datasets[0].data[0]
 			obj[stat].push(val)
-			//console.log(obj[stat]);
+			////console.log(obj[stat]);
 
 
 
@@ -246,8 +246,8 @@ function getQueriedData() {
 	var starDateEndOfDay = moment(startDate, "DDMMYYYY").endOf(period);
 	var endDateEndOfDay = moment(endDate, "DDMMYYYY").endOf(period);
 
-	//////console.log(starDateEndOfDay.format("DD/MM/YYYY"));
-	//////console.log(endDateEndOfDay.format("DD/MM/YYYY"));
+	////////console.log(starDateEndOfDay.format("DD/MM/YYYY"));
+	////////console.log(endDateEndOfDay.format("DD/MM/YYYY"));
 	filteredDataBack = {};
 	filteredDataBack[period] = {};
 	filteredData = {};
@@ -340,7 +340,7 @@ function nodata(data) {
 }
 
 function joinvalues(sumValue) {
-	////console.log(0);
+	//////console.log(0);
 
 	var parentArr = [];
 	var arrSum = [];
@@ -356,7 +356,7 @@ function joinvalues(sumValue) {
 		moment(Obj.startDate, "DDMMYYYY").add(1, "years") >
 		moment(Obj.endDate, "DDMMYYYY")
 	) {
-		////console.log(1);
+		//////console.log(1);
 
 		var yearEndEndOf = moment(Obj.endDate, "DDMMYYYY").endOf("year");
 		var yearEndOfformat = yearEndEndOf.format("YYYY");
@@ -364,7 +364,7 @@ function joinvalues(sumValue) {
 		var yearStartEndOfformat = yearStartEndOf.format("YYYY");
 
 		if (yearStartEndOfformat != yearEndOfformat) {
-			////console.log(2);
+			//////console.log(2);
 			var Value1 =
 				data["year"][yearStartEndOf.format("DD/MM/YYYY")]["chart1"]["datasets"];
 			var Value2 =
@@ -389,8 +389,8 @@ function joinvalues(sumValue) {
 
 			parentDatesChart3.push(yearStartEndOfformat);
 		}
-		//////console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
-		//////console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
+		////////console.log(moment(Obj.startDate,"DDMMYYYY").format("DD/MM/YYYY"));
+		////////console.log(moment(Obj.endDate,"DDMMYYYY").format("DD/MM/YYYY"));
 	}
 
 	parentDatesChart3.push(

@@ -75,7 +75,6 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
     var myModal = document.getElementById('disableAccount');
 
   </script>
- <!-- <script src="./public/js/scrooth.js?<?=rand(0, 1000) ?>"></script>-->
 </body>
 
 </html>

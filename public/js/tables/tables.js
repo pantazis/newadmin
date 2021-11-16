@@ -269,7 +269,7 @@ function localStorageFilters() {
 }
 
 var filterCollapsedLoc = localStorage.getItem("collapsed");
-////console.log("collapsed "+filterCollapsedLoc)
+//////console.log("collapsed "+filterCollapsedLoc)
 
 if (filterCollapsedLoc == "true") {
 	$(".filters-conatiner").attr("data-collapsed", "true").css("height", 0);
@@ -320,8 +320,8 @@ var filters = $(".filter-parent");
 var sticky = filters[0].offsetTop;
 
 function animateFilters() {
-	console.log("offsetTop " + sticky);
-	console.log("pageYOffset " + window.pageYOffset);
+	//console.log("offsetTop " + sticky);
+	//console.log("pageYOffset " + window.pageYOffset);
 
 	var pagewidth = window.innerWidth;
 

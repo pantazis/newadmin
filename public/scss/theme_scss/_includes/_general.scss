@@ -524,6 +524,7 @@ body.noanimαtion * {
   }
 }
 .button {
+ 
   border: 0;
   text-align: center;
   margin-left: auto;
@@ -555,6 +556,10 @@ body.noanimαtion * {
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    &.submit{
+      padding: 1rem 1.2rem;
+  
+    }
   }
 }
 

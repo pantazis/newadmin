@@ -12808,6 +12808,8 @@ body.noanimαtion * {
   justify-content: center;
   align-items: center;
   background-color: transparent; }
+  .info-form .button.submit {
+    padding: 1rem 1.2rem; }
 
 @media screen and (min-width: 1200px) {
   /* Works on Firefox */

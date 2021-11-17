@@ -36,7 +36,7 @@ grid.on("dragReleaseEnd", function (item) {
 	}
 });
 
-obj = {
+obj1 = {
 	top: {},
 	left: {},
 };
@@ -49,7 +49,7 @@ function getposition() {
 
 		info.el = this;
 		info.left = Math.round($(this).offset().left);
-		info.top = Math.round($(this).offset().top);
+		info.top = Math.round($(this).offset().top);		
 		info.val = pythagorean(info.top, info.left, info.el);
 		allElementObj.push(info);
 	});
@@ -66,20 +66,21 @@ var num = 1;
 var num2 = 1;
 
 function pythagorean(top, left, el) {
-	obj.top[top] = top;
-	obj.left[left] = left;
+	
+	obj1.top[top] = top;
+	obj1.left[left] = left;
 }
 
 function giveval() {
 	var i = 1;
 	var v = 1;
 
-	for (const property in obj.top) {
-		obj.top[property] = i;
+	for (const property in obj1.top) {
+		obj1.top[property] = i;
 		i++;
 	}
-	for (const property in obj.left) {
-		obj.left[property] = v;
+	for (const property in obj1.left) {
+		obj1.left[property] = v;
 		v++;
 	}
 }
@@ -91,7 +92,7 @@ function loop() {
 
 	$(allElementObj).each(function () {
 		var item = this;
-		var num = obj.top[item.top] + "" + obj.left[item.left];
+		var num = obj1.top[item.top] + "" + obj1.left[item.left];
 		newObj[num] = item.el;
 	});
 }

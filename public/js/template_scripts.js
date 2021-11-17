@@ -12,6 +12,7 @@
 	breakpoints.xxxl = parseInt(style.getPropertyValue("--xxxl"));
 
 	// noanιmαtion
+	window.readyfunctions=[];
 	$(document).ready(function () {
 		$("body").removeClass("noanimαtion");
 		activeTab();

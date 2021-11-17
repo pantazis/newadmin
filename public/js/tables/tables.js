@@ -375,3 +375,6 @@ inputdate.focusout(function(){
 resizefunctions.push(function () {
 	animateFilters();
 });
+
+
+

@@ -45,6 +45,7 @@ $filterpadding: 0.3rem;
 
 .filters-padding {
   @include themeColor("background-color", $white, $black_blue);
+  @include themeColor("color", $dark_blue, $ice);
   padding: $filterpadding;
 
   background: $white;

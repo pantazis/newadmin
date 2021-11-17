@@ -39,7 +39,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
 
    <script src="./public/js/libraries/muuri.min.js"></script>
     <script src="./public/js/libraries/web-animations.min.js"></script>
-    <script src="./public/js/dashboardOrder.js"></script>
+    <script src="./public/js/dashboardOrder.js?<?=rand(1,1000)?>"></script>
 
     <script src="./public/js/libraries/sizzle.js"></script>
     <script src="./public/js/libraries/moment.min.js"></script>
@@ -75,7 +75,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
     var myModal = document.getElementById('disableAccount');
 
   </script>
- <!-- <script src="./public/js/scrooth.js?<?=rand(0, 1000) ?>"></script>-->
+
 </body>
 
 </html>

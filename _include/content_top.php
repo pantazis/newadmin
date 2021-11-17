@@ -17,7 +17,7 @@
             <h2 class="page_title"><?= $page_title ?>
             </h2>
         </div>
-        <div class="top_right d-none d-xxl-flex ">
+       <!-- <div class="top_right d-none d-xxl-flex ">
             <?php foreach ($label as $key => $value) { ?>
             <div class="top_frame  <?= $colorClass[$key] ?> ">
                 <div class="h4 frame_title"><?= $value ?>
@@ -28,7 +28,7 @@
 
             <?php } ?>
 
-        </div>
+        </div>-->
     </div>
     <div class="mobile-cont ">
         <div class="mobile_tabs">

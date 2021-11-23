@@ -75,10 +75,6 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
     var myModal = document.getElementById('disableAccount');
 
   </script>
-<<<<<<< HEAD
-
-=======
->>>>>>> 45c7ad25b0543e6a6a0e7b51fc28bcd19840eb2b
 </body>
 
 </html>

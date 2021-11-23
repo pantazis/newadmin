@@ -23,8 +23,10 @@
   @include box-shadow($form-select-box-shadow);
   @include transition($form-select-transition);
   appearance: none;
-  &:focus {
-    border-width: 2px;
+  &:focus {    
+    $boreder: 0.125rem;
+    border-width: $boreder;
+    padding: $form-select-padding-x - ($boreder * 2);
     border-color: $form-select-focus-border-color;
     outline: 0;
     @if $enable-shadows {

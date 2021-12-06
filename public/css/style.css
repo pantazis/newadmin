@@ -2664,10 +2664,17 @@ textarea.form-control-lg {
     .form-select {
       transition: none; } }
   .form-select:focus {
-    border-width: 0.125rem;
-    padding: 0.75rem;
     border-color: initial;
-    outline: 0; }
+    outline: 0;
+    position: relative; }
+    .form-select:focus:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 1px solid red; }
   .form-select[multiple], .form-select[size]:not([size="1"]) {
     padding-right: 1rem;
     background-image: none; }

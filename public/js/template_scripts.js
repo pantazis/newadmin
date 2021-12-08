@@ -51,6 +51,8 @@
 	});
 
 	window.tableHeadtop = function (addheight) {
+		
+
 		if ($(".filter-parent").length == 0) {
 			return;
 		}

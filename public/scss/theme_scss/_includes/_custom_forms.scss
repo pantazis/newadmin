@@ -1,4 +1,7 @@
 /* fallback */
+.form-select {
+  padding: 0.9375rem;
+}
 @mixin label {
   z-index: 1;
   position: absolute;
@@ -109,11 +112,11 @@ select,
 }
 
 .material-text-field__input-text:focus ~ .material-text-field__activation-indicator {
-  border: 0.125rem solid;
+  border: 0.0625rem solid;
 }
 
 .material-text-field__input-text:focus ~ .js__activation-indicator--warning {
-  border: 0.125rem solid $red2;
+  border: 0.0625rem solid $red2;
 }
 
 .material-text-field__input-text:focus ~ .js__label-text--warning {
@@ -153,7 +156,7 @@ select,
   width: 100%;
   height: 100%;
   border: 0.0625rem solid #ced4da;
-  border-radius: 0.125rem;
+  border-radius: 0.0625rem;
   box-sizing: border-box;
   pointer-events: none;
   @include border-radius($form-select-border-radius, 0);
@@ -235,7 +238,7 @@ select,
   }
   20%,
   80% {
-    transform: translateX(0.125rem);
+    transform: translateX(0.0625rem);
   }
   30%,
   50%,

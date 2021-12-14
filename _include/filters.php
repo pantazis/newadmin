@@ -9,10 +9,23 @@
   
     <div class="filters-conatiner" data-collapsed="false">
 
+   
 
 
 
         <div class="filters-padding">
+        <div class="input-padding title">
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" width="54.03" height="112.601" viewBox="0 0 54.03 112.601">
+                <g transform="translate(-320.97 -4)">
+                    <path d="M0,56.278C0,40.251,12.709,26.584,30.548,21.309h0q1.407-.311,2.766-.74h0C43.6,17.323,54.03,9.337,54.03,0h0V112.6h0c0-9.6-10.838-17.769-21.581-20.829l-.009,0q-.494-.14-1-.266l-.006,0C13.134,86.424.87,75.022,0,56.278Z" transform="translate(320.97 4)"></path>
+                    <g transform="translate(344.718 51.035)">
+                        <path d="M.455,8.2,8.165.491a1.557,1.557,0,0,1,2.2,2.2L3.759,9.3l6.608,6.608a1.557,1.557,0,1,1-2.2,2.2L.455,10.4A1.556,1.556,0,0,1,.455,8.2Zm9.27-.467,6.121-6.451a1.519,1.519,0,0,1,2.226,0,1.722,1.722,0,0,1,0,2.346L13.064,8.906l5.008,5.278a1.722,1.722,0,0,1,0,2.346,1.519,1.519,0,0,1-2.226,0L9.725,10.079A1.722,1.722,0,0,1,9.725,7.733Z" transform="translate(0.001 -0.035)" class="arrow"></path>
+                    </g>
+                </g>
+            </svg>
+            Φίλτρα Αναζήτησης
+        </div>
+
             <div class="input-padding num0">
                 <div class="material-text-field__container ">
                     <div class="material-text-field">

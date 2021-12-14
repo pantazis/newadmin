@@ -15081,6 +15081,16 @@ body {
         flex: 1 1 33.3332%; }
       .input-padding.oneandhalf {
         flex: 1 1 24.9999%; } }
+  .input-padding.title {
+    flex: 1 1 100%;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    padding: 1.5rem;
+    display: none; }
+    @media (max-width: 992px) {
+      .input-padding.title {
+        display: flex; } }
 
 .filters-label {
   display: none;

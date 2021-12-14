@@ -280,7 +280,7 @@ if (filterCollapsedLoc == "false") {
 	$(".filters-conatiner").attr("data-collapsed", "false").removeAttr("style");
 	$("body").addClass("filteropen");
 }
-$(".filters-conatiner").click(function(){
+$(".input-padding.title .close,.num11").click(function(){
 	$(".filters-label").click();
 });
 

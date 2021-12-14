@@ -136,6 +136,17 @@ body.filteropen{
   @media (min-width: $xxl) {
     @include inputsize(16.6666%, 0.5, 2,1.5);
   }
+  &.title {
+    flex: 1 1 100%;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    padding: 1.5rem;
+    display:none;
+    @media(max-width:$lg){
+      display: flex;
+    }
+}
 }
 .filters-label {
   display: none;

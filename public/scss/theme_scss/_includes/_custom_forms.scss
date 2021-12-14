@@ -1,13 +1,12 @@
 /* fallback */
-.form-select {
-  padding: 0.9375rem;
-}
+$borderWidth: 0.125rem;
+$labelpadding:0.25rem;
 @mixin label {
   z-index: 1;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 1rem;
+  left:  #{$form-select-padding-x - $labelpadding};
   font-size: inherit;
   transition: all 150ms linear;
   pointer-events: none;
@@ -15,7 +14,7 @@
 @mixin labelF {
   z-index: 2;
   top: 0rem;
-  padding: 0 0.25rem;
+  padding: 0 #{$labelpadding};
   font-size: 0.75rem;
   letter-spacing: 0.025rem;
   transition: all 150ms linear;  
@@ -23,6 +22,12 @@
  
 
 
+}
+
+
+select.form-select:focus {
+  border-width: $borderWidth;
+  padding: #{$form-select-padding-x - ($borderWidth/2)};
 }
 
 .material-icons {
@@ -93,12 +98,12 @@ select,
 }
 
 .material-text-field__input-text:focus ~ .material-text-field__label-text {
-  z-index: 1;
+ /* z-index: 1;
   top: 0;
   left: 0.625rem;
   padding: 0 0.25rem;
   font-size: 0.75rem;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.025rem;*/
   transition: all 150ms linear;
 }
 .material-text-field__input-text[disabled] {
@@ -112,11 +117,11 @@ select,
 }
 
 .material-text-field__input-text:focus ~ .material-text-field__activation-indicator {
-  border: 0.0625rem solid;
+  border: $borderWidth solid;
 }
 
 .material-text-field__input-text:focus ~ .js__activation-indicator--warning {
-  border: 0.0625rem solid $red2;
+  border: $borderWidth solid $red2;
 }
 
 .material-text-field__input-text:focus ~ .js__label-text--warning {
@@ -156,7 +161,7 @@ select,
   width: 100%;
   height: 100%;
   border: 0.0625rem solid #ced4da;
-  border-radius: 0.0625rem;
+  border-radius: $borderWidth;
   box-sizing: border-box;
   pointer-events: none;
   @include border-radius($form-select-border-radius, 0);
@@ -238,7 +243,7 @@ select,
   }
   20%,
   80% {
-    transform: translateX(0.0625rem);
+    transform: translateX($borderWidth);
   }
   30%,
   50%,
@@ -450,3 +455,4 @@ label.select-label {
 
 
 //------------------------------------------input-date-end-----------------------------------------//
+

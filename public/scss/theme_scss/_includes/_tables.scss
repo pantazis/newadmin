@@ -1,6 +1,13 @@
 //-----------------------------------------------------filters----------------------------------
 $filterpadding: 0.3rem;
 
+
+body.filteropen{
+  @media (max-width:$lg){
+  overflow: hidden;
+  }
+}
+
 .section-main.tables {
   padding-top: var(--section-padding);
   @media (min-width: $xxl) {
@@ -10,14 +17,18 @@ $filterpadding: 0.3rem;
 
   border-radius: $border-radius;
 }
-@mixin inputsize($size, $num, $num2) {
+@mixin inputsize($size, $num, $num2,$num3) {
   flex: 1 1 $size;
 
+  
   &.half {
     flex: 1 1 $size * $num;
   }
   &.double {
     flex: 1 1 $size * $num2;
+  }
+  &.oneandhalf {
+    flex: 1 1 $size * $num3;
   }
 }
 
@@ -35,6 +46,12 @@ $filterpadding: 0.3rem;
 
     @include themeColor("border-color", $white, $black_blue);
   }
+  @media screen and (max-width: $lg) { 
+    .filteropen &{ 
+    z-index: 4;
+    }
+
+  }
   position: sticky;
   margin-left: var(--section-padding);
   margin-right: var(--section-padding);
@@ -44,14 +61,61 @@ $filterpadding: 0.3rem;
 }
 
 .filters-padding {
+  $form-select-padding-x:0.4rem;
   @include themeColor("background-color", $white, $black_blue);
   @include themeColor("color", $dark_blue, $ice);
   padding: $filterpadding;
+  .material-text-field__input-text, .input-date,.form-select {
+    padding:$form-select-padding-x;
+
+  }
 
   background: $white;
   border-radius: $border-radius;
   display: flex;
   flex-wrap: wrap;
+  .filter_checkbox {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .checkbox-parent {
+    height: 100%;   
+    width: 50%;
+    min-width: 0;   
+    margin: 0;
+  }
+  .checkbox_filter{
+    width: 50%;
+    text-align: center;
+    padding: $form-select-padding-x 0;
+  }
+  input[type="checkbox"].checkbox{
+    transform: scale(1);
+    
+
+  }
+  .layer {
+    border-radius: $border-radius;
+}
+.checkbox-parent{
+   .knobs:before,
+   .knobs:after{
+    border-radius: $border-radius;
+   }
+  }
+  button.btn {
+    width: 100%;
+    height: 100%;
+    padding: $form-select-padding-x 0;
+} 
+.checkbox-parent .knobs:before, .checkbox-parent .knobs:after, .checkbox-parent .knobs span {
+  font-size:0.8rem;
+
+}
+  
 }
 
 .input-padding {
@@ -59,18 +123,18 @@ $filterpadding: 0.3rem;
     width: 100%;
   }
   padding: $filterpadding;
-  @include inputsize(100%, 1, 1);
+  @include inputsize(100%, 1, 1,1);
 
   @media (min-width: $md) {
-    @include inputsize(50%, 1, 1);
+    @include inputsize(50%, 1, 1,1);
   }
 
   @media (min-width: $lg) {
-    @include inputsize(33.3333%, 1, 1);
+    @include inputsize(33.3333%, 1, 1,1);
   }
 
   @media (min-width: $xxl) {
-    @include inputsize(16.6666%, 0.5, 2);
+    @include inputsize(16.6666%, 0.5, 2,1.5);
   }
 }
 .filters-label {
@@ -99,7 +163,26 @@ $filterpadding: 0.3rem;
 .filters-conatiner {
   transition: height 0.3s linear;
   height: auto;
-  overflow: hidden;
+  overflow: hidden;   
+  @media screen and (max-width: $lg) { 
+    overflow: auto; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%!important;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ffffff;
+    left: 0;
+    right: auto;
+    width: 100%;
+    transition:left .3s;    
+    &[data-collapsed="true"]{
+      left: -100%;
+    }
+  }
 }
 
 .mobilefilters {
@@ -114,6 +197,10 @@ $filterpadding: 0.3rem;
     }
   }
 }
+
+
+
+
 
 //-----------------------------------------------------filters-end----------------------------------
 body > * {
@@ -512,3 +599,66 @@ input[type="checkbox"] {
     }
   }
 }
+/*------------------------------------------pagination-----------------------------------------------*/
+
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  border-bottom: 1px solid;
+  @include themeColor("background", $white, $black_blue);
+  @include themeColor("border-color", $gray-200, $gray-900);
+  flex-wrap: wrap;
+}
+.bb1 {
+  flex: 1 1 0;
+  text-align: center;
+}
+.row_per_page.bb1 {
+  text-align: left;
+  @media (max-width:$md){
+    display:none;
+  }
+}
+.page_number.bb1{
+  @media (max-width:$lg){
+    display:none;
+  }
+
+}
+.controls_pagination.bb1 {
+  text-align: right;
+  @media (max-width:$md){
+  text-align: center;
+  }
+}
+.page_number.bb1{
+@media (max-width:$md){
+  text-align:left;
+  } 
+}
+.p_box {
+  display: inline-flex;
+}
+.page {
+  width: 24px;
+  height: 24px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid transparent;
+  &.active{
+    background-color:red;
+    &:hover{
+      background-color:red;
+    }
+  }
+  &:hover{
+    background-color:green;
+  }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/

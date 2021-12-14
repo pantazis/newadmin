@@ -6,8 +6,7 @@
 
 
 
-
-
+  
     <div class="filters-conatiner" data-collapsed="false">
 
 
@@ -74,19 +73,7 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="input-padding num4">
-                <div class="material-text-field__container ">
-                    <div class="material-text-field">
-                        <input id="input-password" autocomplete="host" type="text" placeholder=" " data-last-val=""
-                            data-validate="required host" data-validate-length="" ;="" value=""
-                            class="material-text-field__input-text">
-                        <div id="label-text" class="material-text-field__label-text">Πρόσωπο Επαφής</div>
-                        <div id="activation-indicator" class="material-text-field__activation-indicator"></div>
-                    </div>
-                    <div id="helper-text" class="material-text-field__helper-text">
-                    </div>
-                </div>
-            </div>-->
+            
             <div class="input-padding num5">
                 <div class="select-parent"><select class="form-select" aria-label="" required="">
                         <option value="" disabled="" selected="" style="display: none;">
@@ -126,50 +113,28 @@
                     <label class="select-label">Κατάσταση Επιβεβαίωσης</label>
                 </div>
             </div>
-            <div class="input-padding half num9">
-                <div class="material-text-field__container ">
-                    <div class="material-text-field">
-                        <input id="input-password" autocomplete="host" type="text" placeholder=" " data-last-val=""
-                            data-validate="required host" data-validate-length="" ;="" value=""
-                            class="material-text-field__input-text">
-                        <div id="label-text" class="material-text-field__label-text">Προϋποθεση</div>
-                        <div id="activation-indicator" class="material-text-field__activation-indicator"></div>
-
-
-                    </div>
-                    <div id="helper-text" class="material-text-field__helper-text">
-                    </div>
+            <div class="input-padding  num9">
+            <div class="filter_checkbox">
+                <label class="checkbox_filter">Προϋπόθεση</label>
+                <div class="checkbox-parent">
+                <input type="checkbox" class="checkbox">
+                <div class="knobs">
+                <span>off</span>
+                <span>on</span>
                 </div>
+                <div class="layer"></div>
+                </div> 
+             </div>
+
+
+
             </div>
             <div class="input-padding half num10">
-                <div class="material-text-field__container ">
-                    <div class="material-text-field">
-                        <input id="input-password" autocomplete="host" type="text" placeholder=" " data-last-val=""
-                            data-validate="required host" data-validate-length="" ;="" value=""
-                            class="material-text-field__input-text">
-                        <div id="label-text" class="material-text-field__label-text">Clear all</div>
-                        <div id="activation-indicator" class="material-text-field__activation-indicator"></div>
-
-
-                    </div>
-                    <div id="helper-text" class="material-text-field__helper-text">
-                    </div>
-                </div>
+            <button type="button" class="btn">Clear all</button>
             </div>
-            <div class="input-padding double num11">
-                <div class="material-text-field__container ">
-                    <div class="material-text-field">
-                        <input id="input-password" autocomplete="host" type="text" placeholder=" " data-last-val=""
-                            data-validate="required host" data-validate-length="" ;="" value=""
-                            class="material-text-field__input-text">
-                        <div id="label-text" class="material-text-field__label-text">ΑΝΑΖΗΤΗΣΗ</div>
-                        <div id="activation-indicator" class="material-text-field__activation-indicator"></div>
-
-
-                    </div>
-                    <div id="helper-text" class="material-text-field__helper-text">
-                    </div>
-                </div>
+            <div class="input-padding oneandhalf  num11">
+            <button type="button" class="btn btn-green2">ΑΝΑΖΗΤΗΣΗ</button>
+                        
             </div>
         </div>
 
@@ -186,6 +151,7 @@
 
 
 </div>
+
 
 
 <script>

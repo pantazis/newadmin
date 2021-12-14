@@ -179,10 +179,10 @@ var element = $(".filters-conatiner")[0];
 function togglefilters() {
 	if ($(".filters-conatiner").attr("data-collapsed") == "true") {
 		expandSection(element);
-		$(".filters-label").addClass("open");
+		$("body").addClass("filteropen");	
 	} else {
 		collapseSection(element);
-		$(".filters-label").removeClass("open");
+		$("body").removeClass("filteropen");
 	}
 }
 
@@ -273,13 +273,16 @@ var filterCollapsedLoc = localStorage.getItem("collapsed");
 
 if (filterCollapsedLoc == "true") {
 	$(".filters-conatiner").attr("data-collapsed", "true").css("height", 0);
-	$(".filters-label").removeClass("open");
+	$("body").removeClass("filteropen");
 }
 
 if (filterCollapsedLoc == "false") {
 	$(".filters-conatiner").attr("data-collapsed", "false").removeAttr("style");
-	$(".filters-label").addClass("open");
+	$("body").addClass("filteropen");
 }
+$(".filters-conatiner").click(function(){
+	$(".filters-label").click();
+});
 
 $(document).ready(function () {
 	var $chkboxes = $(".checkboxTable");

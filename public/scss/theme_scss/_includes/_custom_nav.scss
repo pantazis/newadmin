@@ -694,6 +694,7 @@ span.text1 {
         max-width: 23.5rem;
         width: 100%;
         height: 0.0313rem;
+        @include themeColor("background-color",$dark_blue, $ice);
     }
     .actions-b {
         display: flex;
@@ -733,12 +734,29 @@ span.text1 {
     font-size: 0.8rem;
 }
 .message {
+    $Mheight:4.4375rem;
     border-left: 0.4375rem solid;
     margin: 0.625rem 0;
-    height: 4.4375rem;
+    height: $Mheight;
     width: 100%;
     background: $ice;
-    &:first-of-type {
+    position: relative;
+    &.NoMessage {
+        justify-content: center;
+        align-items: center;
+        max-height:0;
+        overflow: hidden;
+        @include themeColor("color",$gray-900,$white);
+        background: transparent;
+        border-left:0;
+        margin: 0;        
+        .NoMessageIn{
+        height: $Mheight;
+        display: flex;
+        align-items: center;
+        }
+    }
+    &:nth-of-type(2) {
         margin-top: 0;
     }
 
@@ -1154,7 +1172,8 @@ span.text1 {
 
 .main-el {
     flex: 1 1 auto;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .search-f {
     .popup-notifications.footer {

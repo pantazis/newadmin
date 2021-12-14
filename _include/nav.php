@@ -141,8 +141,13 @@
                         </div>
                     </div>
                     <div class="main-el">
-                    <?php for ($x = 0; $x <= 19; $x++) { ?>
-                    <div class="message color<?= ($x%3) + 1 ?>">
+                    <div class="message NoMessage color">
+                        <div class="NoMessageIn">
+                            No Messages
+                        </div>
+                    </div>
+                    <?php for ($x = 0; $x <= 20; $x++) { ?>
+                    <div class="message color<?= ($x%3) + 1 ?> a<?=$x?>">
                         <div class="mm flex-c">
                             <span class="m_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci
                                 pellentesque, pulvinar diam a, euismod lacus.</span>
@@ -164,7 +169,7 @@
                         <hr>
                         <div class="actions-b">
                             <span class="text1 read-all">Ανάγνωση Όλων</span>
-                            <span class="text1">Καθαρισμός</a>
+                            <span class="text1 clearM">Καθαρισμός</a>
                         </div>
                     </div>
                     </div>

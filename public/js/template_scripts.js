@@ -480,6 +480,7 @@
 
 
  function step() {
+		 
 	dontstopanimetion = false;	
 	$(arrMessege).each(function(index){
 		el=arrMessege[index];
@@ -491,12 +492,15 @@
 		window.requestAnimationFrame(step);
 	};
   }
-
+  
   $(".actions-b .clearM").click(function(){
+	var clicked = $(this);
 	arrMessege =[];
 
-	//123
-	var messeges=$(".fi-sr-bell1 .message:not(.NoMessage)");
+	//333
+	var messeges=clicked.closest(".popup-notifications").find(".message:not(.NoMessage)");
+	
+	
 	messeges.each(function(){
 		var el = $(this);
 		el.all =true;
@@ -505,7 +509,7 @@
 	}); 
 
 	step2();
-	console.log(1)
+	
 
 
 	  
@@ -531,7 +535,7 @@
 	};
 	
   }
-
+//333
   function loop(el,index){
 	var amount =el.css("left")=="auto" ? 0 : parseInt(el.css("left"));
 	el.left=amount;
@@ -547,7 +551,7 @@
 		 if (elHeight > 0) {
 		dontstopanimetion = true;
 		el.css("height",elHeight - 20+"px");
-		open_no_messeges();
+		open_no_messeges(el);
 
 	}
 	
@@ -563,19 +567,25 @@
 
 
 
-  function open_no_messeges(){	
-	var el_length = $(".fi-sr-bell1 .message:not(.NoMessage)").length;
+  function open_no_messeges(el){	
+	var el_length = $(el).closest(".popup-notifications").find(".message:not(.NoMessage)").length;
 	
-	if(el_length<=1){
-		dontstopanimetion = false;
-		var outer = $(".message.NoMessage").height();
-		var inner = $(".NoMessageIn").height();
+	
+	if(el_length<=1){		
+		dontstopanimetion = true;
+		var outer = $(el).closest(".popup-notifications").find(".message.NoMessage").height();
+		var inner =$(el).closest(".popup-notifications").find(".NoMessageIn").height();
 	
 
 		if(outer < inner){
 			$(".message.NoMessage").css("min-height",(outer+20)+"px")			
 			dontstopanimetion = true;
 		}
+
+	}
+	
+	if(el_length==0){
+		dontstopanimetion = false;
 
 	}
 
@@ -600,7 +610,7 @@
 		 if (elHeight > 0) {
 		dontstopanimetion = true;
 		el.css("height",elHeight - 20+"px");
-		open_no_messeges();
+		open_no_messeges(el);
 
 	}
 	

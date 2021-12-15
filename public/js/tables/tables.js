@@ -379,5 +379,126 @@ resizefunctions.push(function () {
 	animateFilters();
 });
 
+/*-----------------------------pagination-------------------------------------*/
+
+var pagination = {
+maxrow:undefined,
+currentrow:0,
+pagesArr:[],
+last:undefined,
+pagesArrLen:undefined,
+first: 1,
+}
+
+function getPagesArr(){	
+	var pageNums =$(".controls_pagination .num");
+	$(pageNums).each(function(){
+		var num = parseInt($(this).text());
+		pagination.pagesArr.push(num);
+	});	
+	pagination.pagesArrLen=pagination.pagesArr.length
+
+}
+
+function getLast(){
+	var last = parseInt($(".last").html());
+	pagination.last=last;
+	
+
+}
+function getMaxrow(){
+	var maxrow =Math.floor(pagination.last/pagination.pagesArr.length);
+	pagination.maxrow=maxrow;
+
+}
+pagination.next = function(){	
+	pagination.currentrow= pagination.currentrow + 1 <=  pagination.maxrow ? pagination.currentrow + 1 : 0;	
+
+};
+pagination.prev = function(){	
+	pagination.currentrow= pagination.currentrow - 1 <=  0 ? pagination.maxrow  : pagination.currentrow - 1;	
+
+};
+pagination.gotolast = function(){	
+	pagination.currentrow=pagination.maxrow;	
+
+};
+pagination.gotofirst = function(){	
+	pagination.currentrow=0;	
+
+};
+
+pagination.renewPagesArr = function(){
+	
+	$(pagination.pagesArr).each(function(index){
+		var newpage = (index+1)+(pagination.pagesArrLen*pagination.currentrow);
+		pagination.pagesArr[index]=newpage;
+
+	});
+	console.log(pagination.pagesArr);	
+
+};
+
+pagination.printNewPages=function(){
+	var lastofarr=pagination.pagesArr[pagination.pagesArr.length-1];
+	var diff =0;
+	if(lastofarr>pagination.last){
+		diff =lastofarr-pagination.last;
+		
+
+	}
+	var pageTemplate=""
+	$(pagination.pagesArr).each(function(index){	              
+		var page=pagination.pagesArr[index]-diff;		
+		 pageTemplate+=`<div class="page num">${page}</div>`;		
+	});	
+	$(".pagination .pages").html(pageTemplate);
+
+}
+
+
+
+
+
+/*--------------------------------fuctions after-----------------------------------*/
+getPagesArr();
+ getLast();
+ getMaxrow();
+
+ //jqeary
+$(".controls_pagination .next").click(function(){
+	pagination.next();
+	pagination.renewPagesArr();
+	pagination.printNewPages();	
+
+});
+$(".controls_pagination .last").click(function(){
+	pagination.gotolast();
+	pagination.renewPagesArr();
+	pagination.printNewPages();	
+
+});
+$(".controls_pagination .prev").click(function(){
+	pagination.prev();
+	pagination.renewPagesArr();
+	pagination.printNewPages();	
+
+});
+$(".controls_pagination .first").click(function(){
+	pagination.gotofirst();
+	pagination.renewPagesArr();
+	pagination.printNewPages();	
+
+});
+
+ console.log(pagination);
+
+
+
+
+
+
+/*-----------------------------pagination-------------------------------------*/
+
 
 

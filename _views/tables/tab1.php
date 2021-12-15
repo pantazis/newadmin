@@ -7,14 +7,19 @@
   </table>
   <div class="pagination">
       <div class="row_per_page bb1">Ανα σελίδα 20</div>
-      <div class="page_number bb1">Εμφάνιση 1-20 από 165</div>
+      <div class="page_number bb1">Εμφάνιση 1-20 από <span class="last">165</span></div>
       <div class="controls_pagination bb1">
-        <div class="p_box">
-        <?php
-        $arr=["<<",1,2,3,4,5,"...",11,">>"];        
-        foreach($arr as $key => $value){?>
-          <div class="page<?php if($key==1) echo " active"?>"><?=$value?></div>
-        <?php } ?>
+      <div class="p_box">
+                  <div class="page"><span class="first">first<span></span></span></div>
+                  <div class="page active"><span class="prev">prev<span></span></span></div>
+                  <div class="pages">
+                  <div class="page num">1</div>
+                  <div class="page num">2</div>
+                  <div class="page num">3</div>
+                  <div class="page num">4</div>
+                  </div>
+                  <div class="page"><span class="next">next<span></span></span></div>
+                  <div class="page"><span class="last">last<span></span></span></div>
         </div>
       </div>
 </div>

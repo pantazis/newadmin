@@ -143,7 +143,7 @@
 
             </div>
             <div class="input-padding half num10">
-            <button type="button" class="btn">Clear all</button>
+            <button type="button" class="btn clear">Clear all</button>
             </div>
             <div class="input-padding oneandhalf  num11">
             <button type="button" class="btn btn-green2">ΑΝΑΖΗΤΗΣΗ</button>

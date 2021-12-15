@@ -15013,7 +15013,7 @@ body {
   .dark .filters-padding {
     color: #efeff6; }
   .filters-padding .material-text-field__input-text, .filters-padding .input-date, .filters-padding .form-select {
-    padding: 0.4rem; }
+    padding: 0.5rem; }
   .filters-padding .filter_checkbox {
     display: flex;
     height: 100%;
@@ -15028,7 +15028,7 @@ body {
   .filters-padding .checkbox_filter {
     width: 50%;
     text-align: center;
-    padding: 0.4rem 0; }
+    padding: 0.5rem 0; }
   .filters-padding input[type="checkbox"].checkbox {
     transform: scale(1); }
   .filters-padding .layer {
@@ -15039,7 +15039,7 @@ body {
   .filters-padding button.btn {
     width: 100%;
     height: 100%;
-    padding: 0.4rem 0; }
+    padding: 0.5rem 0; }
   .filters-padding .checkbox-parent .knobs:before, .filters-padding .checkbox-parent .knobs:after, .filters-padding .checkbox-parent .knobs span {
     font-size: 0.8rem; }
 
@@ -15087,10 +15087,25 @@ body {
     font-weight: 600;
     position: relative;
     padding: 1.5rem;
-    display: none; }
+    display: none;
+    height: 5rem;
+    justify-content: center; }
     @media (max-width: 992px) {
       .input-padding.title {
         display: flex; } }
+    .input-padding.title svg.close {
+      position: absolute;
+      right: -0.3rem;
+      height: 5rem;
+      width: 2.595rem;
+      top: 0;
+      fill: #efeff6; }
+      .dark .input-padding.title svg.close {
+        fill: #efeff6; }
+      .input-padding.title svg.close .arrow {
+        fill: #0e0c28; }
+        .dark .input-padding.title svg.close .arrow {
+          fill: #0e0c28; }
 
 .filters-label {
   display: none;
@@ -15129,13 +15144,15 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      background-color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.6);
       left: 0;
       right: auto;
       width: 100%;
-      transition: left .3s; }
+      transition: left .3s,.3s background-color .3s; }
       .filters-conatiner[data-collapsed="true"] {
-        left: -100%; } }
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0);
+        transition: .3s left .3s,background-color .3s; } }
 
 .mobilefilters.filter-parent {
   margin-left: 0;
@@ -15546,8 +15563,11 @@ input[type="checkbox"] {
 .p_box {
   display: inline-flex; }
 
+.pages {
+  display: flex; }
+
 .page {
-  width: 24px;
+  padding: 0 1rem;
   height: 24px;
   display: flex;
   align-items: center;

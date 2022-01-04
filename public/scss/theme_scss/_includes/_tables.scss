@@ -48,9 +48,9 @@ body.filteropen{
     @include themeColor("border-color", $white, $black_blue);
   }
   @media screen and (max-width: $lg) { 
-    .filteropen &{ 
+    
     z-index: 4;
-    }
+    
 
   }
   position: sticky;

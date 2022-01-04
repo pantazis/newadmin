@@ -695,7 +695,7 @@ $input-group-addon-border-color: $input-border-color !default;
 // scss-docs-end input-group-variables
 // scss-docs-start form-select-variables
 $form-select-padding-y: $input-padding-y !default;
-$form-select-padding-x:1rem  !default;
+$form-select-padding-x:0.5rem  !default;
 $form-select-font-family: $input-font-family !default;
 $form-select-font-size: $input-font-size !default;
 $form-select-indicator-padding: $form-select-padding-x * 3 !default; // Extra padding for background-image

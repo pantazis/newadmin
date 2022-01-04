@@ -385,6 +385,7 @@ var pagination = {
 maxrow:undefined,
 currentrow:0,
 pagesArr:[],
+active:1,
 last:undefined,
 pagesArrLen:undefined,
 first: 1,
@@ -400,6 +401,9 @@ function getPagesArr(){
 
 }
 
+
+
+
 function getLast(){
 	var last = parseInt($(".last").html());
 	pagination.last=last;
@@ -411,12 +415,25 @@ function getMaxrow(){
 	pagination.maxrow=maxrow;
 
 }
+function setActive(){
+	$(".pages .page.num").each(function(){
+		var num=parseInt($(this).html());
+		if(num==pagination.active){
+			$(this).addClass("active");
+
+		}
+
+	})
+	
+	
+
+}
 pagination.next = function(){	
 	pagination.currentrow= pagination.currentrow + 1 <=  pagination.maxrow ? pagination.currentrow + 1 : 0;	
 
 };
-pagination.prev = function(){	
-	pagination.currentrow= pagination.currentrow - 1 <=  0 ? pagination.maxrow  : pagination.currentrow - 1;	
+pagination.prev = function(){		
+	pagination.currentrow= pagination.currentrow - 1 <=  -1 ? pagination.maxrow  : pagination.currentrow - 1;	
 
 };
 pagination.gotolast = function(){	
@@ -448,12 +465,28 @@ pagination.printNewPages=function(){
 
 	}
 	var pageTemplate=""
-	$(pagination.pagesArr).each(function(index){	              
-		var page=pagination.pagesArr[index]-diff;		
-		 pageTemplate+=`<div class="page num">${page}</div>`;		
+	$(pagination.pagesArr).each(function(index){
+		var activeClass="";			              
+		var page=pagination.pagesArr[index]-diff;
+		if(pagination.active==page){
+			activeClass="active";
+
+		}		
+		 pageTemplate+=`<div class="page num ${activeClass}">${page}</div>`;		
 	});	
 	$(".pagination .pages").html(pageTemplate);
+	$(".controls_pagination .num").click(function(){	
+		pagination.setNewActive(this);	
+	
+	});
 
+}
+pagination.setNewActive = function(el){
+	
+	var activeNum = parseInt($(el).html());
+	pagination.active=activeNum;
+	$(".controls_pagination .num").removeClass("active");
+	$(el).addClass("active");
 }
 
 
@@ -464,32 +497,44 @@ pagination.printNewPages=function(){
 getPagesArr();
  getLast();
  getMaxrow();
+ setActive();
 
  //jqeary
 $(".controls_pagination .next").click(function(){
 	pagination.next();
 	pagination.renewPagesArr();
-	pagination.printNewPages();	
+	pagination.printNewPages();
+	
 
 });
 $(".controls_pagination .last").click(function(){
 	pagination.gotolast();
 	pagination.renewPagesArr();
-	pagination.printNewPages();	
+	pagination.printNewPages();
+		
 
 });
 $(".controls_pagination .prev").click(function(){
 	pagination.prev();
 	pagination.renewPagesArr();
-	pagination.printNewPages();	
+	pagination.printNewPages();
+		
 
 });
 $(".controls_pagination .first").click(function(){
 	pagination.gotofirst();
 	pagination.renewPagesArr();
-	pagination.printNewPages();	
+	pagination.printNewPages();
+		
 
 });
+
+$(".controls_pagination .num").click(function(){	
+	pagination.setNewActive(this);	
+
+});
+
+
 
  console.log(pagination);
 

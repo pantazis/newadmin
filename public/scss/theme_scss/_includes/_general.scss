@@ -649,6 +649,12 @@ body.noanimαtion * {
   border-bottom: inherit;
   @include themeColor("color", $dark_blue, $ice);
   @include border-bottom();
+  &.table_style > * {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 .el-right {
   margin-left: auto;
@@ -675,3 +681,48 @@ span.small-gray {
 }
 
 /*--------------------------------new-list1-end-------------------------------------*/
+
+
+
+.scroll_box {
+  @media screen and (min-width: $xl) {
+    max-height: 50vh;
+    overflow-y: auto;    
+  }
+  
+}
+
+
+
+.container_grid {  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-rows: min-content max-content auto;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+    width: 100%;
+    height: 100%;
+    @include themeColor("color", $dark_blue, $ice);
+    & > * {
+      padding: 6px 0;
+  }
+
+    .left{
+      display: flex;
+      justify-content: end;
+      &.border_top {
+        border-bottom: dotted 0.0625rem;
+        @include themeColor("border-color", $dark_blue, $ice);
+      }    
+    }
+    .strong {
+      font-weight: bold;
+  }
+  }
+
+  
+  
+
+

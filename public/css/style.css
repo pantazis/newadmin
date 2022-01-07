@@ -12909,6 +12909,11 @@ body.noanimαtion * {
     color: #efeff6; }
   .dark .big-row-in {
     border-color: #373762; }
+  .big-row-in.table_style > * {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .el-right {
   margin-left: auto;
@@ -12933,6 +12938,35 @@ span.small-gray {
   opacity: 0.5; }
 
 /*--------------------------------new-list1-end-------------------------------------*/
+@media screen and (min-width: 1200px) {
+  .scroll_box {
+    max-height: 50vh;
+    overflow-y: auto; } }
+
+.container_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-auto-rows: min-content max-content auto;
+  grid-template-areas: ". ." ". ." ". .";
+  width: 100%;
+  height: 100%;
+  color: #2e435e; }
+  .dark .container_grid {
+    color: #efeff6; }
+  .container_grid > * {
+    padding: 6px 0; }
+  .container_grid .left {
+    display: flex;
+    justify-content: end; }
+    .container_grid .left.border_top {
+      border-bottom: dotted 0.0625rem;
+      border-color: #2e435e; }
+      .dark .container_grid .left.border_top {
+        border-color: #efeff6; }
+  .container_grid .strong {
+    font-weight: bold; }
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/fonts/icomoon.eot?1sl92v");

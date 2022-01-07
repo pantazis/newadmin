@@ -58,7 +58,7 @@
     </script>
 
     <p  id="demo"></p>
-    <!--
+  
 
    <?php foreach ($bp as $kay =>   $value) { ?>
     <div class=" d-none d-<?= $kay; ?>-flex">
@@ -66,4 +66,4 @@
     </div>
 
     <?php }?>
-   -->
+   

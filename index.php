@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+$folder="";
 $request = $_SERVER['REQUEST_URI'];
 $url_without_last_part = substr($request, 0, strrpos($request, "/"));
 ?>
@@ -15,6 +16,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   <?php include "./_include/nav.php" ?>
   <?php include "./_include/mobile-nav.php" ?>
   <main role="main">
+    <?php var_dump($request)?>
     <?php include "./_include/root.php" ?>
   </main>
   <?php include "_include/modals.php" ?>
@@ -40,7 +42,6 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
    <script src="./public/js/libraries/muuri.min.js"></script>
     <script src="./public/js/libraries/web-animations.min.js"></script>
     <script src="./public/js/dashboardOrder.js?<?=rand(1,1000)?>"></script>
-
     <script src="./public/js/libraries/sizzle.js"></script>
     <script src="./public/js/libraries/moment.min.js"></script>
     <script src="./public/js/libraries/el.js"></script>

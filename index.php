@@ -15,8 +15,7 @@ $url_without_last_part = substr($request, 0, strrpos($request, "/"));
   <?php include "./_include/loader.php" ?>
   <?php include "./_include/nav.php" ?>
   <?php include "./_include/mobile-nav.php" ?>
-  <main role="main">
-    <?php var_dump($request)?>
+  <main role="main">   
     <?php include "./_include/root.php" ?>
   </main>
   <?php include "_include/modals.php" ?>

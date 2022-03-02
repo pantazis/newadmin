@@ -81,6 +81,8 @@ h2.page_title {
     margin-bottom: 0;
 }
 // scss-docs-start theme-color-variables
+
+
 .success .h2.frame_value {
     color: $success;
 }
@@ -90,3 +92,14 @@ h2.page_title {
 .danger .h2.frame_value {
     color: $danger;
 }
+
+.link-color .h2.frame_value {
+    color: $link-color;
+}
+
+$colors: $success2, $warning, $danger, $link-color;
+
+@each $colors in $colors {
+  
+}
+

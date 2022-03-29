@@ -501,10 +501,10 @@ function createLabel(el, date, period) {
 			break;
 
 		case "week":
-			return moment(date, "DDMMYYYY").format("dddd DD MMM");
+			return moment(date, "DDMMYYYY").format("dddd DD MMM YYYY");
 			break;
 		case "day":
-			return moment(date, "DDMMYYYY").format("dd DD MMM");
+			return moment(date, "DDMMYYYY").format("dd DD MMM YYYY");
 			break;
 		default:
 			return el["labels"][0];

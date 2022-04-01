@@ -130,6 +130,7 @@ function loopData(data,obj) {
 
 function loopValues(obj,html){
 
+
 	for(stat in obj){
 		var value = obj[stat].reduce(function(a, b){
             return a + b;
@@ -141,6 +142,7 @@ function loopValues(obj,html){
 		$("."+stat+" .numD").html(value);
 		}
 	}
+	
 
 }
 function compareVal(beforeObj,afterOBj){
@@ -155,13 +157,11 @@ function compareVal(beforeObj,afterOBj){
 		if(percent>=0){
 			el.find(".percent").addClass("plus-p")
 			el.find(".percent").removeClass("minus-p")
-
 		}
 
 		if(percent<0){
 			el.find(".percent").removeClass("plus-p")
 			el.find(".percent").addClass("minus-p")
-
 		}
 
 
@@ -182,6 +182,9 @@ function sumValues(){
 
 	loopData(filteredData,obj);
 	loopData(filteredDataBack,obj2);
+
+	console.log(obj)
+	console.log(obj2)
 
 
 	loopValues(obj,true)
@@ -243,15 +246,15 @@ function getQueriedData() {
 	var startDate = searchDataObj.startDate;
 	var endDate = searchDataObj.endDate;
 
+	
+	
+
 	var starDateEndOfDay = moment(startDate, "DDMMYYYY").endOf(period);
 	var endDateEndOfDay = moment(endDate, "DDMMYYYY").endOf(period);
 
-	////////console.log(starDateEndOfDay.format("DD/MM/YYYY"));
-	////////console.log(endDateEndOfDay.format("DD/MM/YYYY"));
 	filteredDataBack = {};
 	filteredDataBack[period] = {};
 	filteredData = {};
-
 	filteredData[period] = {};
 
 	filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] =
@@ -266,13 +269,13 @@ function getQueriedData() {
 		filteredData[period][starDateEndOfDay.endOf(period).format(dateFormat)] =
 			data[period][starDateEndOfDay.endOf(period).format(dateFormat)];
 	}
-
-
-
-
-
-
 	var count = Object.keys(filteredData[period]).length;
+
+
+
+
+
+
 
 	var startDateStat = moment(searchDataObj.startDate, "DDMMYYYY").subtract(count, period + "s").endOf(period);
 	var startDateStatFormat = startDateStat.format(dateFormat);
@@ -284,58 +287,57 @@ function getQueriedData() {
 	) {
 		filteredDataBack[period][startDateStat.endOf(period).format(dateFormat)] =
 			data[period][startDateStat.endOf(period).format(dateFormat)];
+	}	
 
-
-
-	}
-
-
-
-
-
-
-
-
+	
 	mergeAndGiveData(period);
 }
 
 function loopAndPush(Value, arrs) {
-	for (const singleValue in Value) {
+	for (const singleValue in Value) {		
+		
 		if (Value[singleValue] == undefined) {
-			nodata([singleValue]["chart1"]);
+			
+			nodata();
 
 			hasNoData = true;
-			return;
+			
+		}else{
+			var datasets = Value[singleValue]["chart1"]["datasets"];
+			$(datasets).each(function (index) {
+				if (arrs.length < datasets.length) {
+					arrs.push(this.data[0]);
+				} else {
+					arrs[index] = arrs[index] + this.data[0];
+				}
+			});
 		}
 
-		var datasets = Value[singleValue]["chart1"]["datasets"];
-		$(datasets).each(function (index) {
-			if (arrs.length < datasets.length) {
-				arrs.push(this.data[0]);
-			} else {
-				arrs[index] = arrs[index] + this.data[0];
-			}
-		});
+	
 	}
 }
 
-function nodata(data) {
+function nodata() {
 	var charts = [myChart, myChart2, myChart3, myChart4];
 
+
 	$(charts).each(function () {
+	
 		var Chart = this;
+		console.log(this);
 
 		// No data is present
 		var ctx = Chart.ctx;
 		var width = Chart.width;
 		var height = Chart.height;
-
+		
+		ctx.clearRect(0, 0, width, height);
 		ctx.save();
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
 		ctx.font = "22px normal 'Roboto'";
 		ctx.fillText("Δεν υπάρχουν δεδομένα", width / 2, height / 2);
-		ctx.restore();
+		//ctx.restore();
 	});
 }
 
@@ -406,8 +408,10 @@ function joinvalues(sumValue) {
 function mergeAndGiveData(period) {
 	emptyLocalDataArr();
 	var datanew = filteredData[period];
+	
 
 	var elValuesSort = joinvalues(datanew);
+	
 
 	var i = 0;
 	for (const singleData in datanew) {

@@ -4,17 +4,10 @@
       body {
     scrollbar-width: 0;
   }
-
   body::-webkit-scrollbar {
     width: 0px;
   }
-
   </style>
-
-
-
-
-
   <div class="row">
   <div class="container1 a2">
       <div class="buttonContainer">
@@ -143,7 +136,7 @@
              </div>
              </div>
              <div class="s-bottom">
-               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span>%</div>
+               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span><span class="per">%</span></div>
                 <span class="show_all">Από την προηγούμενη περίοδο</span>
                
              </div>
@@ -169,7 +162,7 @@
              </div>
              </div>
              <div class="s-bottom">
-               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span>%</div>
+               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span><span class="per">%</span></div>
                 <span class="show_all">Από την προηγούμενη περίοδο</span>
                
              </div>
@@ -207,7 +200,7 @@
              </div>
              </div>
              <div class="s-bottom">
-               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span>%</div>
+               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span><span class="per">%</span></div>
                 <span class="show_all">Από την προηγούμενη περίοδο</span>
                
              </div>
@@ -233,7 +226,7 @@
              </div>
              </div>
              <div class="s-bottom">
-               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span>%</div>
+               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span><span class="per">%</span></div>
                 <span class="show_all">Από την προηγούμενη περίοδο</span>
                
              </div>
@@ -294,7 +287,7 @@
              </div>
              </div>
              <div class="s-bottom">
-               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span>%</div>
+               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span><span class="per">%</span></div>
                 <span class="show_all">Από την προηγούμενη περίοδο</span>
                
              </div>
@@ -320,7 +313,7 @@
              </div>
              </div>
              <div class="s-bottom">
-               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span>%</div>
+               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span><span class="per">%</span></div>
                 <span class="show_all">Από την προηγούμενη περίοδο</span>
                
              </div>
@@ -346,7 +339,7 @@
              </div>
              </div>
              <div class="s-bottom">
-               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span>%</div>
+               <div class="percent"><span class="plus">↑</span><span class="minus">↓</span><span class="num-p"></span><span class="per">%</span></div>
                 <span class="show_all">Από την προηγούμενη περίοδο</span>
                
              </div>
@@ -374,7 +367,7 @@
              <div class="s-bottom">
                <div class="percent"><span class="plus">↑</span>
                <span class="minus">↓</span>
-               <span class="num-p"></span>%
+               <span class="num-p"></span><span class="per">%</span>
               </div>
                 <span class="show_all">Από την προηγούμενη περίοδο</span>
                

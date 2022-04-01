@@ -245,6 +245,16 @@ $dashelpad: 0.625rem;
   align-items: center;
   margin-top: auto;
   @include themeColor("color", $black_blue, $ice);
+  .percent.hide{
+    .plus,.minus,.per{
+      display:none;
+
+    }
+
+
+  }
+
+
 }
 .data-link {
   flex-direction: column;

@@ -14960,6 +14960,8 @@ body {
     justify-content: space-evenly; }
   .dark .s-bottom {
     color: #efeff6; }
+  .s-bottom .percent.hide .plus, .s-bottom .percent.hide .minus, .s-bottom .percent.hide .per {
+    display: none; }
 
 .data-link {
   flex-direction: column;

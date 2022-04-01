@@ -51,6 +51,7 @@ var filteredData;
 var filteredDataBack;
 var parentDatesChart3 = [];
 var hasNoData;
+var excludeCharts = {};
 
 $(".dateButton").daterangepicker(
 	{
@@ -75,6 +76,7 @@ $(".dateButton").daterangepicker(
 		forceUpdate: true,
 	},
 	function (startDate, endDate, period) {
+	
 		Obj.startDate = startDate.format(dateFormat);
 		Obj.endDate = endDate.format(dateFormat);
 
@@ -90,7 +92,8 @@ $(".dateButton").daterangepicker(
 		if (hasNoData == true) {
 			return;
 		}
-		updatecharts();
+		
+		updatecharts(excludeCharts);
 		//statsLabel();
 		sumValues();
 	}
@@ -145,24 +148,37 @@ function loopValues(obj,html){
 	
 
 }
-function compareVal(beforeObj,afterOBj){
+function compareVal(beforeObj,afterOBj){	
+
 	for( dataName in afterOBj){
 		var newval =afterOBj[dataName];
 		var oldval =beforeObj[dataName];
-		var percent = ((newval-oldval)/oldval)*100;
-		percent =percent.toFixed(2);
 		var el =$("."+dataName);
-		el.find(".num-p").html(percent);
+		el.find(".percent").removeClass("hide");
+		if(oldval==undefined){
+			el.find(".num-p").html("No Data");
+			el.find(".percent").addClass("hide");
+			
 
-		if(percent>=0){
-			el.find(".percent").addClass("plus-p")
-			el.find(".percent").removeClass("minus-p")
+		}else{
+			var percent = ((newval-oldval)/oldval)*100;
+			percent =percent.toFixed(2);
+			
+			
+			el.find(".num-p").html(percent);
+	
+			if(percent>=0){
+				el.find(".percent").addClass("plus-p")
+				el.find(".percent").removeClass("minus-p")
+			}
+	
+			if(percent<0){
+				el.find(".percent").removeClass("plus-p")
+				el.find(".percent").addClass("minus-p")
+			}
 		}
 
-		if(percent<0){
-			el.find(".percent").removeClass("plus-p")
-			el.find(".percent").addClass("minus-p")
-		}
+	
 
 
 	}
@@ -183,8 +199,8 @@ function sumValues(){
 	loopData(filteredData,obj);
 	loopData(filteredDataBack,obj2);
 
-	console.log(obj)
-	console.log(obj2)
+
+
 
 
 	loopValues(obj,true)
@@ -200,17 +216,37 @@ function sumValues(){
 
 
 
-function updatecharts() {
-	myChart.update();
-	myChart2.update();
-	myChart3.update();
-	myChart4.update();
+function updatecharts(excludeCharts) {
+
+
+	if(excludeCharts['myChart']==undefined){
+		myChart.update();
+	}
+	if(excludeCharts['myChart2']==undefined){
+		myChart2.update();
+	}
+	if(excludeCharts['myChart3']==undefined){
+		myChart3.update();
+	}
+	if(excludeCharts['myChart4']==undefined){
+		myChart4.update();
+
+	}	
+
 }
 
 function getCalendarData(start, end, period) {
 	searchDataObj.startDate = start;
 	searchDataObj.endDate = end;
 	searchDataObj.period = period;
+
+//searchDataObj.startDate = "31/12/1999";
+//console.log("")	searchDataObj.endDate = "31/12/2002";
+//searchDataObj.period = "year";
+//console.log("searchDataObj.startDate = "+searchDataObj.startDate);
+//console.log("searchDataObj.endDate = "+searchDataObj.endDate);
+//console.log("searchDataObj.period = "+searchDataObj.period);
+	
 }
 
 function setInputval(period) {
@@ -234,7 +270,6 @@ function setInputval(period) {
 		case "year":
 			Obj.startDate = Object.keys(data.year)[5];
 			Obj.endDate = Object.keys(data.year)[3];
-
 			break;
 	}
 }
@@ -245,6 +280,8 @@ function getQueriedData() {
 	var period = searchDataObj.period;
 	var startDate = searchDataObj.startDate;
 	var endDate = searchDataObj.endDate;
+
+
 
 	
 	
@@ -300,7 +337,7 @@ function loopAndPush(Value, arrs) {
 			
 			nodata();
 
-			hasNoData = true;
+			//hasNoData = true;
 			
 		}else{
 			var datasets = Value[singleValue]["chart1"]["datasets"];
@@ -317,15 +354,19 @@ function loopAndPush(Value, arrs) {
 	}
 }
 
-function nodata() {
-	var charts = [myChart, myChart2, myChart3, myChart4];
+function nodata(Chart1) {
+	
+	if(Chart1==undefined){
+		var charts = [myChart, myChart2, myChart3, myChart4];
+	}else{
+		var charts = [Chart1];
+	}
 
 
 	$(charts).each(function () {
+		
 	
 		var Chart = this;
-		console.log(this);
-
 		// No data is present
 		var ctx = Chart.ctx;
 		var width = Chart.width;
@@ -335,7 +376,7 @@ function nodata() {
 		ctx.save();
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
-		ctx.font = "22px normal 'Roboto'";
+		ctx.font = "60px normal 'Roboto'";
 		ctx.fillText("Δεν υπάρχουν δεδομένα", width / 2, height / 2);
 		//ctx.restore();
 	});
@@ -405,7 +446,7 @@ function joinvalues(sumValue) {
 	return parentArr;
 }
 
-function mergeAndGiveData(period) {
+function mergeAndGiveData(period) {	
 	emptyLocalDataArr();
 	var datanew = filteredData[period];
 	
@@ -414,10 +455,12 @@ function mergeAndGiveData(period) {
 	
 
 	var i = 0;
+	var chartNoData= true;
 	for (const singleData in datanew) {
 		date = datanew[singleData];
 
 		for (const chart in date) {
+		
 			if (chart != "chart3") {
 				if(localData[chart]==undefined){
 					localData[chart] ={};
@@ -437,13 +480,19 @@ function mergeAndGiveData(period) {
 				});
 			}
 			if (chart == "chart3") {
+								    
 				if (i == 0) {
+					chartNoData= false;
+				
 					var obj = {};
 					$(date["chart1"].datasets).each(function () {
 						obj[this.label] = this.label;
+						console.log(this.label);
 					});
 
 					for (const label in obj) {
+						
+
 						localData["chart3"]["labels"].push(label);
 					}
 
@@ -466,12 +515,21 @@ function mergeAndGiveData(period) {
 							});
 						}
 					});
+
+				}
+				
+				if(chartNoData){
+				
+					nodata(myChart3);
+					excludeCharts["myChart3"]=true;
+					
+
 				}
 			}
 
 
 
-			//localData[chart]["datasets"]
+			
 		}
 
 		i++;

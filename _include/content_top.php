@@ -43,7 +43,7 @@
     ]; ?>
 
     <!--diastaseis -->
-    <script>
+    <!-- <script>
         function screenSize() {
             return;
             var w = window.innerWidth;
@@ -57,4 +57,4 @@
         <div class=" d-none d-<?= $kay; ?>-flex">
             <?= $value; ?>
         </div>
-    <?php } ?>
+    <?php } ?> -->
